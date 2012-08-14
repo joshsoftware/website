@@ -1,0 +1,25 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title Ruby on Rails Development India  | JOSH SOFTWARE PVT. LTD.
+    = stylesheet_link_tag 'application', params[:controller]
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    #header
+      .wrap
+        .logo
+          %a{:href => "#"} Josh Software Pvt. Ltd
+        .main-menu
+          %ul.nav.nav-pills
+            %li
+              %a{:href => "#"} technology
+            %li
+              %a{:href => "#"} portfolio
+            %li
+              %a{:href => "#"} team
+            %li
+              %a{:href => "#"} open source
+    = yield
+  = javascript_include_tag "application", params[:controller]

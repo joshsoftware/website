@@ -1,0 +1,93 @@
+@import url("http://fonts.googleapis.com/css?family=Jura:500");
+
+@import url("dev_helpers.css");
+@import "compass/css3";
+@import "compass/utilities/text/replacement";
+@import "compass/support";
+
+
+body {
+  background: #05060c url("tunnel.jpg") no-repeat center top;
+  font-family: 'Jura', Helvetica, sans-serif;
+}
+
+$logo: "Josh-Software-Logo.svg";
+
+#header {
+  background: url("header_bkg.png") no-repeat center;
+  width:100%;
+  float:left;
+  height:107px;
+  min-height: 107px;
+  margin-bottom:0;
+  .wrap {
+    position:relative;
+    margin:0 auto;
+    width:940px;
+    .logo {
+      a {
+        @include replace-text($logo);
+        display: block;
+        width: 215px;
+        height: 58px;
+        margin-top: 10px;
+        float: left;
+      }
+    }
+    .main-menu {
+      float: left;
+      width: auto;
+      margin: 25px 0 0 280px;
+      font-size: 1.4em;
+      a {
+        color: #621003;
+        padding-bottom:11px;
+      }
+    }
+  }
+}
+.container {
+}
+.splash {
+  margin-top: -5px;
+  .splash-text {
+    padding: 40px;
+    p {
+      text-align: justify;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      margin-bottom: 18px;
+    }
+  }
+  .splash-gem {
+    margin: 0;
+    padding-top: 40px;
+  }
+}
+
+
+.well {
+  @include border-radius(0);
+  border:0;
+}
+.well-trans {
+  padding: 0;
+  background: none;
+  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+  .top, .bottom {
+    display: block;
+    width: 100%;
+    background-color: rgba(255,255,255,0.35)
+  }
+  .top {
+    height: 16px ;
+    min-height: 16px ;
+  }
+  .bottom {
+    height: 4px ;
+    min-height: 4px ;
+  }
+  .center {
+    background-color: rgba(255,255,255,0.65)
+  }
+}
