@@ -47,6 +47,7 @@ $logo: "Josh-Software-Logo.svg";
   }
 }
 .container {
+  padding-bottom: 30px;
 }
 .splash {
   margin-top: -5px;
@@ -91,3 +92,68 @@ $logo: "Josh-Software-Logo.svg";
     background-color: rgba(255,255,255,0.65)
   }
 }
+
+.well-home-callout {
+  padding: 0;
+  padding-top: 0;
+  margin: 0;
+  width: 260px;
+  margin-left: 60px;
+  background: none;
+  
+  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+  .top {
+    display:block;
+    height: 16px;
+    min-height: 16px;
+    width:100%;
+    background-color: rgba(255,255,255,0.35)
+  }
+  
+  .center {
+    padding: 16px;
+    background: url("70-trans-with-corner.png") no-repeat right bottom;
+    min-height: 280px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.4em;
+  }
+  .graphic {
+    padding:0 0 10px 15px;
+  }
+}
+.well-home-callout.first {
+  margin-left: 0;
+}
+
+
+
+.team-bios {
+  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+  padding: 30px;
+  padding-top: 20px;
+  background: url("70-trans-with-corner.png") no-repeat right bottom;
+  width: 420px;
+  position: absolute;
+  .bio-text {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

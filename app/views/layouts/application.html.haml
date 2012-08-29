@@ -10,7 +10,7 @@
     #header
       .wrap
         .logo
-          %a{:href => "#"} Josh Software Pvt. Ltd
+          %a{:href => "/"} Josh Software Pvt. Ltd
         .main-menu
           %ul.nav.nav-pills
             %li
@@ -18,8 +18,9 @@
             %li
               %a{:href => "#"} portfolio
             %li
-              %a{:href => "#"} team
+              %a{:href => "team.html"} team
             %li
               %a{:href => "#"} open source
-    = yield
+    .container
+      = yield
   = javascript_include_tag "application", params[:controller]
