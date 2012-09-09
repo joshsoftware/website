@@ -56,6 +56,8 @@ GEM
     jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
+    jquery-scrollto-rails (1.4.2)
+      railties (~> 3.1)
     json (1.7.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -118,6 +120,7 @@ DEPENDENCIES
   compass-rails
   haml
   jquery-rails
+  jquery-scrollto-rails
   rails (= 3.2.8)
   sass
   sass-rails (~> 3.2.3)

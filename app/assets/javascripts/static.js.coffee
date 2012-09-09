@@ -3,6 +3,13 @@ jQuery ($) ->
   # Potfolio
   $("#sticker").sticky({topSpacing:10});
 
+  $(".portfolio-menu a").click (event) ->
+    scrollToElement = $($(this).attr("href"))
+    $.scrollTo.window().queue([]).stop();
+    $.scrollTo scrollToElement, "easeOut", {offset:-10}
+    event.preventDefault()
+
+
 
   # Team Members
   fadeBio = (clicked, bio) ->

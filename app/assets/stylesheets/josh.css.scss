@@ -7,7 +7,7 @@
 
 
 body {
-  background: #05060c url("tunnel.jpg") no-repeat center top;
+  background: #0a1017 url("tunnel.jpg") no-repeat center top;
   font-family: 'Jura', Helvetica, sans-serif;
 }
 
@@ -89,7 +89,7 @@ $logo: "Josh-Software-Logo.svg";
     min-height: 4px ;
   }
   .center {
-    background-color: rgba(255,255,255,0.65)
+    background-color: rgba(255,255,255,0.65);
   }
 }
 
@@ -149,9 +149,58 @@ $logo: "Josh-Software-Logo.svg";
 
 
 
+$portfolio_menu_width: 195px;
+.portfolio-menu{
+  position: relative;
+  width: $portfolio_menu_width;
+  .is-sticky {
+    width:$portfolio_menu_width;
+  }
+  .center {
+    padding: 15px;
+    min-height: 260px;
+    a {
+      color: #000;
+      font-size: 1.1em;
+    }
+    .top-link {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-left: -15px;
+    }
+  }
+}
 
-
-
+.portfolio-site {
+  width:720px;
+  margin-bottom: 30px;
+  .center {
+    padding: 25px 35px;
+    min-height: 240px;
+    .screenshot {
+      margin-right: 25px;
+    }
+    .site-info {
+      .site-title {
+        color:#a20f13;
+        font-size: 1.15em;
+        font-weight: bold;
+      }
+      .site-description {
+        margin-top: 10px;
+        min-height: 130px;
+      }
+      .geek-specs {
+        b {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
 
 
 
