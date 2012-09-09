@@ -1,5 +1,10 @@
 jQuery ($) ->
 
+  # Potfolio
+  $("#sticker").sticky({topSpacing:10});
+
+
+  # Team Members
   fadeBio = (clicked, bio) ->
     $(".team-thumbnails .thumbnail img").stop().animate({opacity:.5}, "fast")
     $(".current").fadeOut(->
