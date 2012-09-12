@@ -7,11 +7,11 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'haml'
-gem 'sass'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'sass'
 	gem 'compass-rails'
 	gem 'bootstrap-sass', '~>2.0.1'
   gem 'sass-rails',   '~> 3.2.3'
