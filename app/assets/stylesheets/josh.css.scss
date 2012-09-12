@@ -1,4 +1,9 @@
-@import url("http://fonts.googleapis.com/css?family=Jura:500");
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Jura Medium'), local('Jura-Medium'), url(/assets/google-content.woff) format('woff');
+}
 
 @import url("dev_helpers.css");
 @import "compass/css3";
