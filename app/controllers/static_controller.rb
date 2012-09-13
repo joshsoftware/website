@@ -4,4 +4,9 @@ class StaticController < ApplicationController
   def portfolio
     @projects = PROJECTS.select { |p| p[:display] }
   end
+
+  def team
+    @team_members = TEAM_MEMBERS.select { |t| t[:display] }
+  end
+
 end
