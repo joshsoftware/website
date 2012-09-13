@@ -5,6 +5,7 @@
   src: local('Jura Medium'), local('Jura-Medium'), url(/google-content.woff) format('woff');
 }
 
+// @import "dev_helpers";
 @import "compass/css3";
 @import "compass/utilities/text/replacement";
 @import "compass/support";
@@ -16,6 +17,12 @@ body {
 }
 
 $logo: "Josh-Software-Logo.svg";
+@mixin transWhite($trans){
+  background-color: rgba(255,255,255, $trans);
+}
+@mixin shadow {
+  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+}
 
 #header {
   background: url("header_bkg.png") no-repeat center;
@@ -53,23 +60,41 @@ $logo: "Josh-Software-Logo.svg";
 .container {
   padding-bottom: 30px;
 }
+
+.footer{
+  display: block;
+  @include transWhite(0.5);
+  @include shadow;
+  margin-top : 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 .splash {
   margin-top: -5px;
+  margin-bottom: 10px;
   .splash-text {
-    padding: 40px;
+    padding: 25px;
     p {
       text-align: justify;
-      font-size: 1.2em;
-      line-height: 1.4em;
-      margin-bottom: 18px;
+      font-size: 1.1em;
+      line-height: 1.3em;
+      margin-bottom: 16px;
     }
   }
   .splash-gem {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 15px;
   }
 }
 
+.sepatator {
+  display: block;
+  height: 5px;
+  background: url('section-separator.png');
+  margin:0 0 10px 0;
+  @include shadow;
+}
 
 .well {
   @include border-radius(0);
@@ -78,11 +103,11 @@ $logo: "Josh-Software-Logo.svg";
 .well-trans {
   padding: 0;
   background: none;
-  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+  @include shadow;
   .top, .bottom {
     display: block;
     width: 100%;
-    background-color: rgba(255,255,255,0.35)
+    @include transWhite(0.35)
   }
   .top {
     height: 16px ;
@@ -93,7 +118,7 @@ $logo: "Josh-Software-Logo.svg";
     min-height: 4px ;
   }
   .center {
-    background-color: rgba(255,255,255,0.65);
+     @include transWhite(0.65)
   }
 }
 
@@ -101,17 +126,17 @@ $logo: "Josh-Software-Logo.svg";
   padding: 0;
   padding-top: 0;
   margin: 0;
-  width: 260px;
-  margin-left: 60px;
+  width: 280px;
+  margin-left: 30px;
   background: none;
   
-  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+  @include shadow;
   .top {
     display:block;
     height: 16px;
     min-height: 16px;
     width:100%;
-    background-color: rgba(255,255,255,0.35)
+    @include transWhite(0.35)
   }
   
   .center {
@@ -140,11 +165,11 @@ $logo: "Josh-Software-Logo.svg";
 
 
 .team-bios {
-  @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
+  @include shadow;
   padding: 30px;
   padding-top: 20px;
   background: url("70-trans-with-corner.png") no-repeat right bottom;
-  width: 420px;
+  width: 469px;
   position: absolute;
   .bio-text {
     margin-top: 20px;
@@ -186,8 +211,14 @@ $portfolio_menu_width: 195px;
     min-height: 240px;
     .screenshot {
       margin-right: 25px;
+      min-height: 265px;
+      margin-bottom: 0;
+      width: 340px;
+      background: url('portfolio-background.png') no-repeat;
+      padding: 13px 0 0 12px;
     }
     .site-info {
+      margin-left: 350px;
       .site-title {
         color:#a20f13;
         font-size: 1.15em;
