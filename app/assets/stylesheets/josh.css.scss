@@ -11,6 +11,10 @@
 @import "compass/support";
 
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: #0a1017 url("tunnel.jpg") no-repeat center top;
   font-family: 'Jura', Helvetica, sans-serif;
@@ -58,16 +62,22 @@ $logo: "Josh-Software-Logo.svg";
   }
 }
 .container {
-  padding-bottom: 30px;
+  min-height: 100%;
+  margin-bottom: -60px;
 }
 
 .footer{
-  display: block;
   @include transWhite(0.5);
   @include shadow;
   margin-top : 20px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 10px 0 0 10px;
+  width: 100%;
+  height: 30px;
+  position:relative;
+}
+.clear-footer {
+  height: 40px;
+  clear: both;
 }
 
 .splash {
@@ -94,6 +104,10 @@ $logo: "Josh-Software-Logo.svg";
   background: url('section-separator.png');
   margin:0 0 10px 0;
   @include shadow;
+}
+
+.product-callouts {
+  margin-bottom: 20px;
 }
 
 .well {
