@@ -167,6 +167,9 @@ $logo: "Josh-Software-Logo.svg";
     text-align: justify;
     line-height: 1.4em;
   }
+  p.align-left {
+    text-align: left !important;
+  }
   .graphic {
     padding:0 0 10px 15px;
   }
