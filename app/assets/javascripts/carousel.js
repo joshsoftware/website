@@ -1,6 +1,6 @@
 function image_slide() {
   $.ajax({
-    url: 'https://picasaweb.google.com/data/feed/api/user/josh.software.private.limited/albumid/5790176608367809425?alt=json&fields=entry(gphoto:id,title,media:group(media:content))&imgmax=220',
+    url: 'https://picasaweb.google.com/data/feed/api/user/josh.software.private.limited/albumid/5790176608367809425?alt=json&fields=entry(gphoto:id,title,media:group(media:content))&imgmax=288',
     dataType: 'jsonp',
     success: function(data){
       var inner_content="<div id='myCarousel' class='carousel slide' >\n<div class='carousel-inner'>";
