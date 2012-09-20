@@ -36,17 +36,22 @@
       .clear-footer
     .footer
       .center
-        Copyright © 2012 Josh Software Pvt. Ltd.
-        //twitter
-        %a{:href => "https://twitter.com/joshsoftware", :class => "twitter-follow-button", 'data-show-count' => "false", 'data-size' => "medium"}Follow @joshsoftware
-        //facebook
-        .fb-like{'data-href' => "http://www.facebook.com/joshsoftware", 'data-send' => "false", 'data-width' => "450", 'data-show-faces' => "false"}
-        //blog subscripe
-        %img{:src => 'http://www.feedburner.com/fb/images/pub/feed-icon16x16.png'}
-        %a{:href => 'http://feeds.feedburner.com/JoshSoftware'}Subscribe to blog
-        //twitter javascript
-        %script
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        .row-fluid
+          .span
+            Copyright © 2012 Josh Software Pvt. Ltd.
+          .span
+            //twitter
+            %a{:href => "https://twitter.com/joshsoftware", :class => "twitter-follow-button", 'data-show-count' => "false", 'data-size' => "medium"}Follow @joshsoftware
+          .span
+            //facebook
+            .fb-like{'data-href' => "http://www.facebook.com/joshsoftware", 'data-send' => "false", 'data-width' => "335", 'data-show-faces' => "false"}
+            //blog subscripe
+          .span
+            %img{:src => 'http://www.feedburner.com/fb/images/pub/feed-icon16x16.png'}
+            %a{:href => 'http://feeds.feedburner.com/JoshSoftware'}Subscribe to blog
+            //twitter javascript
+            %script
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 //Google analytics
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

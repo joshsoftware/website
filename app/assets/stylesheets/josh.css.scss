@@ -28,6 +28,12 @@ $logo: "Josh-Software-Logo.svg";
   @include box-shadow(0 30px 30px -15px rgba(0, 0, 0, 0.6));
 }
 
+.row-fluid {
+  .span {
+    width: auto;
+  }
+}
+
 #header {
   background: url("header_bkg.png") no-repeat center;
   width:100%;
@@ -63,19 +69,28 @@ $logo: "Josh-Software-Logo.svg";
 }
 .container {
   min-height: 100%;
-  margin-bottom: -60px;
+  margin-bottom: -70px;
 }
 
 .footer{
-  @include transWhite(0.5);
+  @include transWhite(0.8);
   @include shadow;
   margin-top : 20px;
   padding: 10px 0 0 10px;
-  height: 30px;
-  position:relative;
-}
-.clear-footer {
   height: 40px;
+  position:relative;
+  line-height: 30px;
+  .twitter-follow-button {
+    margin-top: 5px;
+  }
+  .fb-like {
+    margin-top:3px;
+
+  }
+}
+
+.clear-footer {
+  height: 50px;
   clear: both;
 }
 
