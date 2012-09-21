@@ -10,6 +10,13 @@ class StaticController < ApplicationController
   end
 
   def home
+    testimonies = TESTIMONIES.select{|e| e[:display]}
+    size = testimonies.size
+    index = rand(size)
+    @testimony = testimonies[index]
+  end
+
+  def testimonials
     @testimonies = TESTIMONIES.select{|e| e[:display]}
   end
 
