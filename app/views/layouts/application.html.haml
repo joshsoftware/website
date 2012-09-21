@@ -2,7 +2,11 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
-    %title Ruby on Rails Development India  | JOSH SOFTWARE PVT. LTD.
+    - if content_for? :title
+      %title 
+        = yield(:title)
+    - else
+      %title Ruby on Rails development expert | Josh Software Private Limited 
     = stylesheet_link_tag 'application'
     = javascript_include_tag "application"
     /[if lt IE 9]
@@ -26,11 +30,11 @@
         .main-menu
           %ul.nav.nav-pills
             %li
-              %a{:href => "portfolio.html"} portfolio
+              %a{:href => "portfolio"} portfolio
             %li
-              %a{:href => "team.html"} team
+              %a{:href => "team"} team
             %li
-              %a{:href => "#"} open source
+              %a{:href => "open_source"} open source
     .container
       = yield
       .clear-footer
