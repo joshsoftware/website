@@ -26,10 +26,9 @@
       .top
       .center
         %h3
-          E-Josh
-        .graphic.pull-right
-          %img{:src => "images/e-josh_logo.png"}
-        %p Developing a website and maintaining it has never been easy for any company, especially one which is not in the IT sector. Welcome to automated website management !
+          Fun @ JOSH
+        #fun
+          %img{:src => 'assets/loading.gif'}
   .span
     .well.well-home-callout
       .top
@@ -42,15 +41,17 @@
           %strong Postal Address
           %br
           6, Thube Park, Shivajinagar, Pune - 411005, Maharastra, India
-        %p 
-          %strong Phone
-          %br
-          +91-20-25539995
         %p
-          %strong Follow us
-          %br
-          %a{:href => 'http://twitter.com/joshsoftware', :target => '_blank'} @joshsoftware
+          %li{:class => "icon-signal"} 
+          &nbsp;+91-20-25539995
         %p
-          %a{:href => 'mailto:info@joshsoftware.com'}Email us
+          %i{:class => "icon-envelope"}
+          %a{:href => 'mailto:info@joshsoftware.com'} Email us
           or
-          %a{:href => '/contact_us'}Talk to us
+          %i{:class => "icon-pencil"}
+          %a{:href => '/contact_us'} Send us a note
+
+:javascript
+  $(document).ready(function(){
+    image_slide();
+  })
