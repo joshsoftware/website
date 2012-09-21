@@ -80,12 +80,17 @@ $logo: "Josh-Software-Logo.svg";
   height: 40px;
   position:relative;
   line-height: 30px;
-  .twitter-follow-button {
-    margin-top: 5px;
-  }
-  .fb-like {
-    margin-top:3px;
-
+  // .twitter-follow-button {
+  //   margin-top: 5px;
+  // }
+  // .fb-like {
+  //   margin-top:3px;
+  // }
+  .footer-social-links {
+    margin-right: 15px;
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
