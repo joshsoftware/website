@@ -16,17 +16,20 @@
       .top
       .center
         %h3
-          Ruby on Rails
-        .graphic.pull-right
-          %img{:src => "images/rails_logo.png"}
-        %p Working with Rails has been a passion and a pleasure. We have been working in different areas related to Rails - Edge Rails, Rails3, Facebook Applications. We have even undertaken some 'Rescue Missions' where we go in and save the day! Our latest efforts have been towards RhoMobile and Clojure. 
+          %a{:href => 'testimonials', :title => 'Click to view all testimonials'} Testimonials
+        %p{:class => 'align-left'} 
+          #{truncate(@testimony[:endorsement],:length=>325)}
+        %p.pull-right{:class => 'align-left'} 
+          #{@testimony[:endorser]}
+          %br #{@testimony[:title]}, #{@testimony[:company]}
+
       
   .span
     .well.well-home-callout
       .top
       .center
         %h3
-          Fun @ JOSH
+          Fun at JOSH
         #fun
           %img{:src => 'assets/loading.gif'}
   .span
@@ -40,7 +43,10 @@
         %p{:class => 'align-left'} 
           %strong Postal Address
           %br
-          6, Thube Park, Shivajinagar, Pune - 411005, Maharastra, India
+            6, Thube Park, 
+            Shivajinagar, 
+            Pune - 411005, 
+            Maharastra, India.
         %p
           %li{:class => "icon-signal"} 
           &nbsp;+91-20-25539995
@@ -50,8 +56,20 @@
           or
           %i{:class => "icon-pencil"}
           %a{:href => '/contact_us'} Send us a note
+        //twitter
+        %a{:href => "https://twitter.com/joshsoftware", :target => "_blank", :title => 'Follow us @joshsoftware'}
+          %img{:src => 'assets/glyphicons_392_twitter.png'}
+        //facebook
+        %a{:href => "https://facebook.com/joshsoftware", :target => "_blank", :title => 'Visit our Facebook Page'}
+          %img{:src => 'assets/glyphicons_390_facebook.png'}
+        //blog subscripe
+        %a{:href => "http://blog.joshsoftware.com", :target => "_blank", :title => 'Subscribe to our blog'}
+          %img{:src => 'assets/glyphicons_397_rss.png'}
+        //linkedin
+        %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", :target => "_blank", :title => 'Visit our LinkedIn Page'}
+          %img{:src => 'assets/glyphicons_377_linked_in.png'}
 
 :javascript
   $(document).ready(function(){
-    image_slide();
+    image_slide(false);
   })
