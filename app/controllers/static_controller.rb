@@ -9,4 +9,8 @@ class StaticController < ApplicationController
     @team_members = TEAM_MEMBERS.select { |t| t[:display] }
   end
 
+  def home
+    @testimonies = TESTIMONIES.select{|e| e[:display]}
+  end
+
 end

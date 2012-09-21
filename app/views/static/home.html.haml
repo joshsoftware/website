@@ -16,17 +16,34 @@
       .top
       .center
         %h3
-          Ruby on Rails
-        .graphic.pull-right
-          %img{:src => "images/rails_logo.png"}
-        %p Working with Rails has been a passion and a pleasure. We have been working in different areas related to Rails - Edge Rails, Rails3, Facebook Applications. We have even undertaken some 'Rescue Missions' where we go in and save the day! Our latest efforts have been towards RhoMobile and Clojure. 
+          Testimonials
+        #testimonyCarousel.carousel.slide
+          .carousel-inner
+            - isFirst = true
+            - @testimonies.each do |testimony|
+              - if isFirst
+                - isFirst = false
+                .item.active
+                  %p{:class => 'align-left'} 
+                    #{truncate(testimony[:endorsement],:length=>325)}
+                  %p.pull-right
+                    #{testimony[:endorser]}
+                    %br #{testimony[:title]}, #{testimony[:company]}
+              - else
+                .item
+                  %p{:class => 'align-left'} 
+                    #{truncate(testimony[:endorsement],:length=>325)}
+                  %p.pull-right
+                    #{testimony[:endorser]}
+                    %br #{testimony[:title]}, #{testimony[:company]}
+
       
   .span
     .well.well-home-callout
       .top
       .center
         %h3
-          Fun @ JOSH
+          Fun at JOSH
         #fun
           %img{:src => 'assets/loading.gif'}
   .span
@@ -40,7 +57,10 @@
         %p{:class => 'align-left'} 
           %strong Postal Address
           %br
-          6, Thube Park, Shivajinagar, Pune - 411005, Maharastra, India
+            6, Thube Park, 
+            Shivajinagar, 
+            Pune - 411005, 
+            Maharastra, India.
         %p
           %li{:class => "icon-signal"} 
           &nbsp;+91-20-25539995
@@ -53,5 +73,5 @@
 
 :javascript
   $(document).ready(function(){
-    image_slide();
+    image_slide(false);
   })
