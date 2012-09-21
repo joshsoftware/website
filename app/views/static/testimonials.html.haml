@@ -1,0 +1,22 @@
+- content_for :title do
+  Testimonials | Josh Software Private Limited
+.row
+  .span9
+    - @testimonies.each do |testimony|
+      .well-trans.portfolio-site{:id => testimony[:id]}
+        .top
+        .center
+          .left
+            %p.site-description
+              "
+              = testimony[:endorsement]
+              "
+            %ul.unstyled.geek-specs.pull-right
+              %li
+                %strong
+                  = testimony[:endorser]
+              %li
+                = testimony[:title]
+              %li
+                = testimony[:company]
+        .bottom
