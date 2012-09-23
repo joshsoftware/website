@@ -23,16 +23,16 @@
           .site-info
             %a.site-title{:href => "#{project[:url]}", :target => "_blank"} #{project[:title]}
             %p.site-description
-              = project[:description]
+              = raw project[:description]
             %ul.unstyled.geek-specs
               %li
                 %b Stack:
-                = project[:technical][:stack]
+                = raw project[:technical][:stack]
               %li
                 %b Deployment:
-                = project[:technical][:deployment]
-              - if project[:technical][:comments]
+                = raw project[:technical][:deployment]
+              - unless project[:technical][:comments].empty?
                 %li
                   %b Comments:
-                  = project[:technical][:comments]
+                  = raw project[:technical][:comments]
         .bottom
