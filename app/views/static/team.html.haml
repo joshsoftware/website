@@ -3,14 +3,18 @@
 .row
   .span5.team-thumbnails
     %ul.thumbnails
+      - isFirst = true
       - @team_members.each do |member|
         %li
-          - classes = member[:id] == "gautam-rege" ? "first" : "" 
+          - classes = isFirst ? "first" : "" 
+          - isFirst = false
           %a.thumbnail{:data => {:member => "#{member[:id]}" }, :class => "#{classes}"}
             %img{:src => "#{member[:image]}", :title => "Click to view #{member[:name]}'s detail", :alt => "#{member[:name]}"}
   .span6
+    - isFirst = true
     - @team_members.each do |member|
-      - classes = member[:id] == "gautam-rege" ? "bio-#{member[:id]} first" : "bio-#{member[:id]} hide" 
+      - classes = isFirst  ? "bio-#{member[:id]} first" : "bio-#{member[:id]} hide" 
+      - isFirst = false
       .bio.team-bios{:class => "#{classes}"}
         %h3.name
           #{member[:name]}
