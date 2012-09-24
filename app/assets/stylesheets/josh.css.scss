@@ -94,6 +94,12 @@ $logo: "Josh-Software-Logo.svg";
   }
 }
 
+.social-links {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 .clear-footer {
   height: 50px;
   clear: both;
