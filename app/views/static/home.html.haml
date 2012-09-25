@@ -16,6 +16,7 @@
       .top
       .center
         %h3
+          %img{:src => 'assets/glyphicons_332_certificate.png', :title => 'Testimonials'}
           %a{:href => 'testimonials', :title => 'Click to view all testimonials'} Testimonials
         %p{:class => 'align-left'} 
           #{truncate(@testimony[:endorsement],:length=>325)}
@@ -29,6 +30,7 @@
       .top
       .center
         %h3
+          %img{:src => 'assets/glyphicons_273_drink.png', :title => 'Fun at Josh'}
           Fun at JOSH
         #fun
           %img{:src => 'assets/loading.gif'}
@@ -37,16 +39,19 @@
       .top
       .center
         %h3
+          %img{:src => 'assets/glyphicons_088_adress_book.png', :title => 'Contact Details'}
           Contact Details
-        .graphic.pull-right
-          %img{:src => "images/splat_logo.png"}
-        %p{:class => 'align-left'} 
+        %p{:class => 'align-left'}
           %strong Postal Address
           %br
             6, Thube Park, 
             Shivajinagar, 
             Pune - 411005, 
             Maharastra, India.
+        %p
+          %a{:target => "_blank", :href => "https://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=Josh+Software+Private+Limited,+Thube+park,+Shivaji+Nagar,+Pune,+Maharashtra&aq=t&sll=18.815427,76.775144&sspn=10.655534,19.753418&vpsrc=0&ie=UTF8&hq=Josh+Software+Private+Limited,&hnear=Thube+Park,+Pune+Vidyapith+Rd,+Shivaji+Nagar,+Pune,+Maharashtra&ll=18.532921,73.851814&spn=0.010437,0.01929&t=m&z=16&iwloc=A&cid=7465183415235984484"}
+            %i{:class => "icon-map-marker"}
+            view map
         %p
           %li{:class => "icon-signal"} 
           &nbsp;+91-20-25539995
