@@ -9,7 +9,7 @@
           - classes = isFirst ? "first" : "" 
           - isFirst = false
           %a.thumbnail{:data => {:member => "#{member[:id]}" }, :class => "#{classes}"}
-            %img{:src => "#{member[:image]}", :title => "Click to view #{member[:name]}'s detail", :alt => "#{member[:name]}"}
+            %img.thumbsmall{:src => "#{member[:image]}", :title => "Click to view #{member[:name]}'s detail", :alt => "#{member[:name]}"}
   .span6
     - isFirst = true
     - @team_members.each do |member|

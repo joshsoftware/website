@@ -223,6 +223,10 @@ $logo: "Josh-Software-Logo.svg";
 }
 
 
+.thumbsmall {
+  height: 100px;
+  width: 100px;
+}
 
 .team-bios {
   @include shadow;
