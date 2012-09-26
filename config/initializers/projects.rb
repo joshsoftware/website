@@ -10,7 +10,7 @@ PROJECTS= [
     technical: {
         stack: "Rails 3.0.8, PostgreSQL",
         deployment: "Heroku Bamboo stack",
-        comments: "It uses <a href='http://github.com/jiren/filter.js'>filter.js </a>"
+        comments: "Uses <a href='http://github.com/jiren/filter.js'>filter.js </a>"
     },
     display: true
   },
@@ -40,7 +40,7 @@ PROJECTS= [
     image: "assets/portfolio/joshsoftware_clear-trip.png",
     description: "TourConnect makes managing rates and contracting quick and easy! TourConnect communicates what the Supplier product is and how much it's going to cost each Contractor",
     technical: {
-        stack: "Rails 3.1, MongoDB",
+        stack: "Rails 3.1.3, MongoDB, Authorize.Net, ActiveAdmin",
         deployment: "Heroku Cedar Stack",
         comments: ""
     },
@@ -72,7 +72,7 @@ PROJECTS= [
     image: "assets/portfolio/joshsoftware_clear-trip.png",
     description: "GroupGyaan is a next generation marketplace for classroom sessions. You can book tickets for sessions on things that may be of interest to you, from a variety of different areas such as photography, cooking, parenting or negotiation skills.",
     technical: {
-        stack: "Rails 3.1, PostgreSQL",
+        stack: "Rails 3.0.6, PostgreSQL, GharPay, PayU, IndexTank",
         deployment: "Heroku Cedar Stack",
         comments: ""
     },
@@ -88,9 +88,9 @@ PROJECTS= [
     image: "assets/portfolio/joshsoftware_clear-trip.png",
     description: "This site helps in moving house in UK. You can get instant quotes from vendors for insurance, man and van etc. The Free House Moving Checklist is an ideal planner for managing your home move.<br> This is a while-lable solution for various portals.",
     technical: {
-        stack: "Rails ???, MySQL",
+        stack: "Rails 3.0.1, MySQL, Rabl",
         deployment: "Private Hosting",
-        comments: ""
+        comments: "white-lable solution"
     },
     display: true
   },
@@ -104,7 +104,7 @@ PROJECTS= [
     image: "assets/portfolio/joshsoftware_clear-trip.png",
     description: "'Integrated Print & Logistics Management' (iPALM) is a proprietary Technology platform. It moves traditional print, warehousing, and fulfilment capabilities online, providing customers with access to storefronts, backlist catalogues, fulfillment, tracking, reporting and print on demand.",
     technical: {
-        stack: "Rails ???, MySQL, Redis",
+        stack: "Rails 2.3.14, MySQL, Redis/Resque, liquid",
         deployment: "Private Hosting",
         comments: ""
     },
@@ -120,11 +120,15 @@ PROJECTS= [
     image: "assets/portfolio/joshsoftware_clear-trip.png",
     description: "BrandPotion brings brands to the creative community via competitions. It takes networking beyond the social realm - we call this Brand networking! Features like ratings, surveys, photo-gallery, video-gallery and forums can be enabled or disabled per brand. So each brand has its own unique identity",
     technical: {
-        stack: "Rails 2.2.2, MySQL",
+        stack: "Rails 2.2.2, MySQL, thinking-sphinx",
         deployment: "Engineyard xCloud",
         comments: ""
     },
     display: true
+  },
+
+  {
+    id: "acemoney",
   },
 
   {
