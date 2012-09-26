@@ -1,11 +1,11 @@
 - content_for :title do
   Testimonials | Josh Software Private Limited
 .row
-  .span9
+  .span12
     - @testimonies.each do |testimony|
-      .well-trans.portfolio-site{:id => testimony[:id]}
+      .well-trans.portfolio-site.testimonial{:id => testimony[:id]}
         .top
-        .center
+        .center.min-height
           .left
             %p.site-description
               "
