@@ -118,10 +118,18 @@ $logo: "Josh-Software-Logo.svg";
       line-height: 1.3em;
       margin-bottom: 16px;
     }
+    .expertize {
+      font-size: 24px;
+      color: #621003;
+    }
   }
   .splash-gem {
+    text-align: center;
     margin: 0;
     padding-top: 15px;
+    img {
+      width: 200px;
+    }
   }
 }
 
