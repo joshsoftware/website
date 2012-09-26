@@ -22,7 +22,9 @@
             %img{:src => project[:image]}
           .site-info
             %a.site-title{:href => "#{project[:url]}", :target => "_blank"} #{project[:title]}
-            = " - #{project[:country]}, #{project[:year]}"
+            = " - " 
+            %img{:src => "#{project[:flag]}", :class => 'align-up' }
+            = "#{project[:country]}, #{project[:year]}"
             %p.site-description
               = raw project[:description]
             %ul.unstyled.geek-specs

@@ -33,7 +33,15 @@ $logo: "Josh-Software-Logo.svg";
     width: auto;
   }
 }
-
+.testimonial{
+  width: 100% !important;
+}
+.min-height{
+  min-height: 150px !important;
+}
+.align-up{
+  margin-bottom: 6px;
+}
 #header {
   background: url("header_bkg.png") no-repeat center;
   width:100%;
@@ -263,11 +271,11 @@ $portfolio_menu_width: 195px;
     min-height: 240px;
     .screenshot {
       margin-right: 25px;
-      // min-height: 265px;
-      // margin-bottom: 0;
-      // width: 340px;
-      // background: url('portfolio-background.png') no-repeat;
-      // padding: 13px 0 0 12px;
+       min-height: 265px;
+       margin-bottom: 0;
+       width: 340px;
+       background: url('portfolio-background.png') no-repeat;
+       padding: 13px 0 0 12px;
     }
     .site-info {
       margin-left: 350px;
