@@ -189,7 +189,7 @@ TEAM_MEMBERS= [
     image: "assets/team/ninad.jpg",
     description: "He is graduated (BE.Comp) from PVG's college of Engg. & Technology in 2007. He has been the part of JOSH family for about 5 years. Lead the JOSH cricket team.",
     technical: {
-        linkedin: "http://www.linkedin.com/in/ninad23p",
+        linkedin: "http://in.linkedin.com/in/ninad23p",
         facebook: "http://www.facebook.com/ninad23p"
     },
     display: true
