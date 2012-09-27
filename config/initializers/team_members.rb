@@ -181,6 +181,8 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@kiranchaudhari",
         linkedin: "http://www.linkedin.com/in/kirandc",
+    },
+    display: true
   },
   {
     id: "ninad-pol",
@@ -190,7 +192,20 @@ TEAM_MEMBERS= [
     description: "He is graduated (BE.Comp) from PVG's college of Engg. & Technology in 2007. He has been the part of JOSH family for about 5 years. Lead the JOSH cricket team.",
     technical: {
         linkedin: "http://in.linkedin.com/in/ninad23p",
-        facebook: "http://www.facebook.com/ninad23p"
+        facebook: "http://www.facebook.com/ninad23p",
+    },
+    display: true
+  },
+  {
+    id: "siva-gollapalli",
+    name: "Siva Gollapalli",
+    title: "QA & Developer",
+    image: "assets/team/siva.jpg",
+    description: "He is graduted in B.Tech Computers from SVEC in 2009. He has been working in Josh since 2010. Watching movies, playing cricket and coding are hobbies.",
+    technical: {
+      twitter: "@sivagollapalli",
+      facebook: "http://facebook.com/svsivars",
+      blog: "http://blog.joshsoftware.com/author/siva543/"
     },
     display: true
   }
