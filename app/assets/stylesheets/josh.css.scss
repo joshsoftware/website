@@ -36,6 +36,7 @@ $logo: "Josh-Software-Logo.svg";
 .testimonial{
   width: 100% !important;
 }
+
 .min-height{
   min-height: 150px !important;
 }
@@ -243,9 +244,11 @@ $logo: "Josh-Software-Logo.svg";
 #opensource {
   .title {
     font-size: 20px;
+    font-weight: bold;
   }
-  .center.min-height {
-    min-height: 100px !important;
+  .center {
+    height: auto !important;
+    min-height: 0px;
   }
   .left {
     margin-top: 5px;

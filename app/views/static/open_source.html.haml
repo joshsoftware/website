@@ -5,13 +5,18 @@
     - @open_sources.each do |open_source|
       .well-trans.portfolio-site.testimonial{:id => open_source[:id]}
         .top
-        .center.min-height
-          %strong.title
+        .center
+          .title
             - if open_source[:url]
-              %a{:href => open_source[:url]}= open_source[:title]
+              %a{:href => open_source[:url]}= raw open_source[:title]
             - else
               = open_source[:title]
           .left
             %p.site-description
               = raw open_source[:details]
+          - if open_source[:github]
+            %ul.unstyled.geek-specs.pull-left
+              %li
+                %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
+                %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
         .bottom
