@@ -66,4 +66,19 @@ TEAM_MEMBERS= [
     },
     display: true
   },
+
+  {
+    id: "sanjiv-jha",
+    name: "Sanjiv Kumar Jha",
+    title: "Software Engineer",
+    image: "assets/team/sanjiv.jpg",
+    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd",
+    technical: {
+      twitter: "@narutosanjiv",
+      linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
+      blog: "http://narutosanjiv.wordpress.com/"
+    },
+    display: true
+  }
+
 ]
