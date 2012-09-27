@@ -117,5 +117,17 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/akanilrocks"
     },
     display: true
+  },
+    {
+    id: "kiran-chaudhari",
+    name: "Kiran Chaudhari",
+    title: "Senior Software Engineer",
+    image: "assets/team/kiran.jpg",
+    description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
+    technical: {
+        twitter: "@kiranchaudhari",
+        linkedin: "http://www.linkedin.com/in/kirandc",
+  },
+    display: true
   }
 ]
