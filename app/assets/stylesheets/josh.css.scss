@@ -240,7 +240,17 @@ $logo: "Josh-Software-Logo.svg";
   }
 }
 
-
+#opensource {
+  .title {
+    font-size: 20px;
+  }
+  .center.min-height {
+    min-height: 100px !important;
+  }
+  .left {
+    margin-top: 5px;
+  }
+}
 
 $portfolio_menu_width: 195px;
 .portfolio-menu{

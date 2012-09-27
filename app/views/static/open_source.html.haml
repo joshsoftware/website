@@ -1,2 +1,17 @@
 - content_for :title do
   Open source contribution and involvment | Josh Software Private Limited
+.row#opensource
+  .span12
+    - @open_sources.each do |open_source|
+      .well-trans.portfolio-site.testimonial{:id => open_source[:id]}
+        .top
+        .center.min-height
+          %strong.title
+            - if open_source[:url]
+              %a{:href => open_source[:url]}= open_source[:title]
+            - else
+              = open_source[:title]
+          .left
+            %p.site-description
+              = raw open_source[:details]
+        .bottom
