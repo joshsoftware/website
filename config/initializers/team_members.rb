@@ -42,4 +42,42 @@ TEAM_MEMBERS= [
     },
     display: true
   },
+  { 
+    id: "sameer-tilak",
+    name: "Sameer Tilak",
+    title: "Director",
+    image: "assets/team/sameer.jpg",
+    description: "With 20+ years of experience in software Industry, he has seen the changes and worked on platforms from DOS to Windows, Unix/Linux. He has experience of working with various technologies like Vb, PHP, Java, Perl to name few an the latest is Ruby. Lot of experience in database based projects and optimisation. He has handled web farm of 200+ servers and data volume of few million hits per day. He has Masters degree in Computer Science from Pune University.",
+    technical: {
+        linkedin: "http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw",
+        blog: "http://blog.joshsoftware.com/author/sameertilak/",
+        facebook: "http://www.facebook.com/sameer.tilak"
+    },
+    display: true
+  },
+  
+  { 
+    id: "anujaware",
+    name: "Anuja Ware",
+    title: "Software Developer",
+    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011.",
+    technical: {        
+    },
+    display: true
+  },
+
+  {
+    id: "sanjiv-jha",
+    name: "Sanjiv Kumar Jha",
+    title: "Software Engineer",
+    image: "assets/team/sanjiv.jpg",
+    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd",
+    technical: {
+      twitter: "@narutosanjiv",
+      linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
+      blog: "http://narutosanjiv.wordpress.com/"
+    },
+    display: true
+  }
+
 ]
