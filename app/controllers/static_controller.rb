@@ -21,7 +21,6 @@ class StaticController < ApplicationController
   end
 
   def open_source
-    load 'config/initializers/open_source.rb'
     @open_sources = OPEN_SOURCE.select{|e| e[:display]}
   end
 
