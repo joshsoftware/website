@@ -20,4 +20,8 @@ class StaticController < ApplicationController
     @testimonies = TESTIMONIES.select{|e| e[:display]}
   end
 
+  def open_source
+    @open_sources = OPEN_SOURCE.select{|e| e[:display]}
+  end
+
 end
