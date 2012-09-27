@@ -42,4 +42,19 @@ TEAM_MEMBERS= [
     },
     display: true
   },
+
+  { 
+    id: "Kapil-Tekwani",
+    name: "Kapil Tekwani",
+    title: "Software Engineer",
+    image: "assets/team/kapil.jpg",
+    description: "He has graduated from Pune Institute of Computer Technology(PICT) with Bachelor's Degree in Computer Engineering.",
+    technical: {
+        twitter: "@kapiltekwani",
+        linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
+        facebook: "https://www.facebook.com/kapiltekwani"
+    },
+    display: true
+  },
+    
 ]
