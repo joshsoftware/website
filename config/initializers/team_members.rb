@@ -180,14 +180,16 @@ TEAM_MEMBERS= [
     description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
     technical: {
         twitter: "@kiranchaudhari",
-        linkedin: "http://www.linkedin.com/in/kirandc",
+        linkedin: "http://www.linkedin.com/in/kirandc"
+     },
+    display: true   
   },
   {
     id: "ninad-pol",
     name: "Ninad Ashok Pol",
     title: "Senior QA Engineer",
     image: "assets/team/ninad.jpg",
-    description: "He is graduated (BE.Comp) from PVG's college of Engg. & Technology in 2007. He has been the part of JOSH family for about 5 years. Lead the JOSH cricket team.",
+    description: "With 5+ years of experience in IT industry , he has 4+ years of relevant experience as a Senior QA Engineer. He has been the part of Josh family for about 5 years, since december 2007. He completed his graduation (BE.Comp) in 2007 from PVG's college of Engineering & Technology , Pune. Lead the Josh cricket team for 2 years.",
     technical: {
         linkedin: "http://in.linkedin.com/in/ninad23p",
         facebook: "http://www.facebook.com/ninad23p"
