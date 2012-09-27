@@ -9,7 +9,8 @@ TEAM_MEMBERS= [
         twitter: "@gautamrege",
         linkedin: "http://www.linkedin.com/in/gautamrege",
         blog: "http://blog.joshsoftware.com/author/gautamrege/",
-        facebook: "http://www.facebook.com/gautam.rege"
+        facebook: "http://www.facebook.com/gautam.rege",
+        github: "gautamrege"
     },
     display: true
   },
@@ -24,7 +25,8 @@ TEAM_MEMBERS= [
         twitter: "@sethupathia",
         linkedin: "http://www.linkedin.com/in/sethupathia",
         blog: "http://blog.joshsoftware.com/author/sethupathi/",
-        facebook: "http://www.facebook.com/sethupathi.asokan"
+        facebook: "http://www.facebook.com/sethupathi.asokan",
+        github: "sethu"
     },
     display: true
   },
@@ -181,6 +183,8 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@kiranchaudhari",
         linkedin: "http://www.linkedin.com/in/kirandc",
+    },
+    display: true
   },
   {
     id: "ninad-pol",
