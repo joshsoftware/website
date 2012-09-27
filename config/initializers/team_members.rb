@@ -41,5 +41,18 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/satishtalim"
     },
     display: true
+
+  { 
+    id: "sameer-tilak",
+    name: "Sameer Tilak",
+    title: "Director",
+    image: "assets/team/sameer.jpg",
+    description: "With 20+ years of experience in software Industry, he has seen the changes and worked on platforms from DOS to Windows, Unix/Linux. He has experience of working with various technologies like Vb, PHP, Java, Perl to name few an the latest is Ruby. Lot of experience in database based projects and optimisation. He has handled web farm of 200+ servers and data volume of few million hits per day. He has Masters degree in Computer Science from Pune University.",
+    technical: {
+        linkedin: "http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw",
+        blog: "http://blog.joshsoftware.com/author/sameertilak/",
+        facebook: "http://www.facebook.com/sameer.tilak"
+    },
+    display: true
   },
 ]
