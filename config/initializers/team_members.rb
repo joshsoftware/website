@@ -92,4 +92,16 @@ TEAM_MEMBERS= [
     },
     display: true
   },
+  {
+    id: "anil-maurya",
+    name: "Anil Kumar Maurya",
+    title: "Software Engineer",
+    image: "assets/team/anil.jpg",
+    description: "Anil is passionate programmer. He Completed his Bachelor Degree in Computer Engineering in 2012 from Army Institute of Technology, India. ",
+    technical: {
+        linkedin: "http://www.linkedin.com/in/anilmaurya8",
+        facebook: "http://www.facebook.com/akanilrocks"
+    },
+    display: true
+  }
 ]
