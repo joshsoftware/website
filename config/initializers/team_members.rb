@@ -55,4 +55,15 @@ TEAM_MEMBERS= [
     },
     display: true
   },
+  
+  { 
+    id: "anujaware",
+    name: "Anuja Ware",
+    title: "Software Developer",
+    image: "",
+    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011.",
+    technical: {        
+    },
+    display: true
+  },
 ]
