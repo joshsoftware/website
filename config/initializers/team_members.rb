@@ -56,6 +56,20 @@ TEAM_MEMBERS= [
     display: true
   },
   
+    { 
+    id: "sandipransing",
+    name: "Sandip Ransing",
+    title: "Senior Software Engineer",
+    image: "assets/team/sandip.jpg",
+    description: "Sandip has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He loves riding bike, playing carrom. He has Bachelors Degree in Computer Engineering from Modern College Of Engineering, Pune, in 2007.",
+    technical: {        
+        twitter: "@sandipransing",
+        linkedin: "http://www.linkedin.com/in/sandipransing",
+        blog: "http://funonrails.com/"
+    },
+    display: true
+  },
+  
   { 
     id: "anujaware",
     name: "Anuja Ware",
