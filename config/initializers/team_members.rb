@@ -41,7 +41,7 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/satishtalim"
     },
     display: true
-
+  },
   { 
     id: "sameer-tilak",
     name: "Sameer Tilak",
@@ -60,7 +60,6 @@ TEAM_MEMBERS= [
     id: "anujaware",
     name: "Anuja Ware",
     title: "Software Developer",
-    image: "",
     description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011.",
     technical: {        
     },
