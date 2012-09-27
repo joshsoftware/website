@@ -57,6 +57,60 @@ TEAM_MEMBERS= [
   },
   
   { 
+    id: "sandipransing",
+    name: "Sandip Ransing",
+    title: "Senior Software Engineer",
+    image: "assets/team/sandip.jpg",
+    description: "Sandip has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He loves riding bike, playing carrom. He has Bachelors Degree in Computer Engineering from Modern College Of Engineering, Pune, in 2007.",
+    technical: {        
+        twitter: "@sandipransing",
+        linkedin: "http://www.linkedin.com/in/sandipransing",
+        blog: "http://funonrails.com/"
+    },
+    display: true
+  },
+  
+  { 
+    id: "swapnil-chincholkar",
+    name: "Swapnil Chincholkar",
+    title: "Software Engineer",
+    image: "assets/team/swapnil.jpg",
+    description: "Swapnil started his career in software industry with Josh as a Ruby On Rails developer. He has done his Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
+    technical: {
+        twitter: "@SwapVch",
+        linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
+        facebook: "http://www.facebook.com/Swapnil.Chincholkar"
+    },
+    display: true
+  },
+  
+  { 
+    id: "trupti-jangam",
+    name: "Trupti Jangam",
+    title: "Software Engineer",
+    image: "assets/team/trupti.jpg",
+    description: "Trupti started her career in software industry with Persistent Systems & Solutions Pvt Ltd. She has expriance of 8 months in Salesforce. She is working as a Ruby On Rails developer in Josh from March 2012. She has done her Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
+    technical: {
+        twitter: "@TruptiVilasJang",
+        facebook: "http://www.facebook.com/trupti.jangam.1"
+    },
+    display: true
+  },
+  
+  { 
+    id: "chintan-shah",
+    name: "Chintan Shah",
+    title: "Business Development Manager",
+    image: "assets/team/chintan.jpg",
+    description: "Chintan is serving as a Business Development Manager in Josh since 2011. He is indulged with Client Relationship Management and has a successful track record in generating new business to the company.",
+    technical: {
+        twitter: "@chintan_josh",
+        linkedin: "http://www.linkedin.com/in/chintanshah1985",
+        facebook: "http://www.facebook.com/chintan.shah.376258"
+    },
+    display: true
+  },
+  { 
     id: "anujaware",
     name: "Anuja Ware",
     title: "Software Developer",
@@ -102,6 +156,32 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/anilmaurya8",
         facebook: "http://www.facebook.com/akanilrocks"
     },
+    display: true
+  },
+  { 
+    id: "Kapil-Tekwani",
+    name: "Kapil Tekwani",
+    title: "Software Engineer",
+    image: "assets/team/kapil.jpg",
+    description: "He has graduated from Pune Institute of Computer Technology(PICT) with Bachelor's Degree in Computer Engineering.",
+    technical: {
+        twitter: "@kapiltekwani",
+        linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
+        facebook: "https://www.facebook.com/kapiltekwani"
+    },
+    display: true
+  },
+    
+  {
+    id: "kiran-chaudhari",
+    name: "Kiran Chaudhari",
+    title: "Senior Software Engineer",
+    image: "assets/team/kiran.jpg",
+    description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
+    technical: {
+        twitter: "@kiranchaudhari",
+        linkedin: "http://www.linkedin.com/in/kirandc",
+  },
     display: true
   }
 ]
