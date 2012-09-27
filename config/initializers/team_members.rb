@@ -51,7 +51,7 @@ TEAM_MEMBERS= [
     description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd",
     technical: {
       twitter: "@narutosanjiv",
-      linkedin: "",
+      linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
       blog: "http://narutosanjiv.wordpress.com/"
     },
     display: true
