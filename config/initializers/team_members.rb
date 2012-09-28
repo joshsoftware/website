@@ -144,7 +144,7 @@ TEAM_MEMBERS= [
     technical: {        
     },
     display: true,
-    index: 14
+    index: 23
   },
 
   { 
@@ -156,7 +156,7 @@ TEAM_MEMBERS= [
     technical: {        
     },
     display: true,
-    index: 15
+    index: 24
   },
 
   {
