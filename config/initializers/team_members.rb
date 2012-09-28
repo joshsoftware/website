@@ -105,7 +105,7 @@ TEAM_MEMBERS= [
         github: "jangamtrupti"
     },
     display: true,
-    index: 18
+    index: 19
   },
   
   { 
@@ -144,7 +144,7 @@ TEAM_MEMBERS= [
     technical: {        
     },
     display: true,
-    index: 23
+    index: 20
   },
 
   { 
@@ -156,7 +156,7 @@ TEAM_MEMBERS= [
     technical: {        
     },
     display: true,
-    index: 24
+    index: 22
   },
 
   {
@@ -187,7 +187,7 @@ TEAM_MEMBERS= [
         github: "b0rn2c0d3"
     },
     display: true,
-    index: 19
+    index: 21
   },
   {
     id: "anil-maurya",
@@ -200,7 +200,7 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/akanilrocks"
     },
     display: true,
-    index: 22
+    index: 24
   },
   { 
     id: "Kapil-Tekwani",
@@ -215,7 +215,7 @@ TEAM_MEMBERS= [
         github: "kapiltekwani"
     },
     display: true,
-    index: 21
+    index: 23
   },
     
   {
@@ -342,7 +342,7 @@ TEAM_MEMBERS= [
       github: "rrkanade"
     },
     display: true,
-    index: 20
+    index: 18
   },
   {
     id: "sanjeev-kumar",
@@ -355,7 +355,7 @@ TEAM_MEMBERS= [
       facebook: "https://www.facebook.com/sjv.ait26"
     },
     display: true,
-    index: 22
+    index: 25
   }
 
 ]
