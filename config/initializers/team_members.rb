@@ -226,5 +226,18 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 9
+  },
+  {
+    id: "shailesh-patil",
+    name: "Shailesh Patil",
+    title: "Senior Software Engineer",
+    image: "assets/team/shailesh.jpg",
+    description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
+    technical: {        
+        twitter: "@patilshailesh",
+        linkedin: "http://www.linkedin.com/in/shaileshspatil"
+    },
+    display: true,
+    index: 4
   }
 ]
