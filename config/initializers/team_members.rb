@@ -356,6 +356,22 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 25
+  },
+
+  {
+    id: "elvin-efendi",
+    name: "Elvin Efendi",
+    title: "Software Engineer",
+    image: "assets/team/elvinefendi.jpg",
+    description: "Elvin has over 2+ years of experience in design & creation of various software using Ruby, C#, PHP. He uses RoR framework since December, 2011 when he first joined JoshSoftware. He has Bachelors Degree in Applied Mathematics/Informatics from the Baku State University, Baku, Azerbaijan. He is also passionate about Machine Learning",
+    technical: {        
+      twitter: "@ElvinEfendi",
+      facebook: "http://www.facebook.com/elvin.efendiyev",
+      linkedin: "http://www.linkedin.com/profile/view?id=104118088",
+      github: "ElvinEfendi"
+    },
+      display: true,
+      index: 26
   }
 
 ]
