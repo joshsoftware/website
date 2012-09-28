@@ -21,4 +21,8 @@ class StaticController < ApplicationController
     @open_sources = OPEN_SOURCE.select{|e| e[:display]}
   end
 
+  def ping
+    render :text => 'Hello'
+  end
+
 end
