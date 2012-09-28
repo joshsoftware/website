@@ -126,11 +126,37 @@ TEAM_MEMBERS= [
     id: "anujaware",
     name: "Anuja Ware",
     title: "Software Developer",
+    image: "assets/team/anujaware.jpg",
     description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011.",
     technical: {        
+        github: "anujaware"
     },
     display: true,
     index: 13
+  },
+
+  { 
+    id: "anjanikatti",
+    name: "Anjani Katti",
+    title: "HR Generalist",
+    image: "assets/team/anjanikatti.jpg",
+    description: "Human Resources Generalist with 4+ years of experience, who manages the day-to-day operations in HR department like policies, procedures , organization development, Human Resource Information Systems (HRIS), employee relations,  benefits, compensation and employment. Has done Master in Commerece and Post graduation in Human resource form Pune University",
+    technical: {        
+    },
+    display: true,
+    index: 14
+  },
+
+  { 
+    id: "meghabrid",
+    name: "Megha Brid",
+    title: "Senior Accountant",
+    image: "assets/team/meghabrid.jpg",
+    description: " She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
+    technical: {        
+    },
+    display: true,
+    index: 15
   },
 
   {
