@@ -9,9 +9,10 @@
           - classes = isFirst ? "first" : "" 
           - isFirst = false
           - image = member[:image].blank? ? "assets/team/placeholder.gif" : member[:image]
-          %a.thumbnail{:data => {:member => "#{member[:id]}" }, :class => "#{classes}"}
-            %img.thumbsmall{:src => "#{image}", :title => "Click to view #{member[:name]}'s detail", :alt => "#{member[:name]}"}
-  .span6
+          %a{:data => {:member => "#{member[:id]}" }, :class => "#{classes}"}
+            %span.circle{:style => "background-image:url(#{image})", :title => member[:name], :data => {:member => "#{member[:id]}" }}
+
+  .span6#bio-box
     - isFirst = true
     - @team_members.each do |member|
       - classes = isFirst  ? "bio-#{member[:id]} first" : "bio-#{member[:id]} hide" 
