@@ -15,7 +15,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 0
   },
-
   { 
     id: "sethupathi-asokan",
     name: "Sethupathi Asokan",
@@ -87,7 +86,8 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@SwapVch",
         linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
-        facebook: "http://www.facebook.com/Swapnil.Chincholkar"
+        facebook: "http://www.facebook.com/Swapnil.Chincholkar",
+        github: "swapnilchincholkar"
     },
     display: true,
     index: 12
@@ -101,10 +101,11 @@ TEAM_MEMBERS= [
     description: "Trupti started her career in software industry with Persistent Systems & Solutions Pvt Ltd. She has expriance of 8 months in Salesforce. She is working as a Ruby On Rails developer in Josh from March 2012. She has done her Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
     technical: {
         twitter: "@TruptiVilasJang",
-        facebook: "http://www.facebook.com/trupti.jangam.1"
+        facebook: "http://www.facebook.com/trupti.jangam.1",
+        github: "jangamtrupti"
     },
     display: true,
-    index: 17
+    index: 18
   },
   
   { 
@@ -146,7 +147,7 @@ TEAM_MEMBERS= [
 
     },
     display: true,
-    index: 15
+    index: 16
   },
   { 
     id: "manoj-mishra",
@@ -160,7 +161,7 @@ TEAM_MEMBERS= [
         github: "b0rn2c0d3"
     },
     display: true,
-    index: 18
+    index: 19
   },
   {
     id: "anil-maurya",
@@ -173,7 +174,7 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/akanilrocks"
     },
     display: true,
-    index: 20
+    index: 22
   },
   { 
     id: "Kapil-Tekwani",
@@ -270,7 +271,64 @@ TEAM_MEMBERS= [
       github: "rishijain"
     },
     display:  true,
+    index: 15
+  },
+  { 
+    id: "prasad-surase",
+    name: "Prasad Surase",
+    title: "Software Engineer",
+    image: "assets/team/prasad.jpg",
+    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Science from Fergusson College, Pune.",
+    technical: {
+      facebook: "http://www.facebook.com/surase.prasad",
+      stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
+      github: "prasadsurase"
+    },
+    display: true,
     index: 14
+  },
+
+  {
+    id: "pratik-shah",
+    name: "Pratik Shah",
+    title: "Software Engineer",
+    image: "assets/team/pratik.jpg",
+    description: "Pratik has over 2+ yrs of exp. in design & creation of various web applications built over RoR framework. He has been part of Josh since July 2010. He has Bachelors Degree in E&TC from Pune Institute of Computer Technology (PICT), India.",
+    technical: {        
+      twitter: "@pratik141988",
+      facebook: "http://www.facebook.com/pratik14sanghvi",
+      linkedin: "http://www.linkedin.com/pub/pratik-shah/22/a68/805",
+      github: "pratik14"
+    },
+      display: true,
+      index: 10
+  },
+
+  {
+    id: "rohan-kanade",
+    name: "Rohan Kanade",
+    title: "Software Engineer",
+    image: "assets/team/rohan.jpg",
+    description: "Rohan has completed his MCA (Science) from Fergusson College, Pune. He entered into Software Indusrty in 2011. He started his work with JOSH in Feb 2012. Currently he is working as a Software Test Engineer.",
+    technical: {
+      facebook: "http://www.facebook.com/rohan.kanade.71",
+      github: "rrkanade"
+    },
+    display: true,
+    index: 20
+  },
+  {
+    id: "sanjeev-kumar",
+    name: "Sanjeev Kumar",
+    title: "Software Engineer",
+    image: "assets/team/sanjeev.jpg",
+    description: "Sanjeev is passionate programmer. He graduated from Army Institute Of Technology in 2012. He started his career from JOSH software on 2nd july 2012.",
+    technical: {
+      linkedin: "http://www.linkedin.com/in/sjvait26",
+      facebook: "https://www.facebook.com/sjv.ait26"
+    },
+    display: true,
+    index: 22
   }
 
 ]
