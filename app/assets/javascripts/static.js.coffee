@@ -33,4 +33,4 @@ jQuery ($) ->
     
   ).addClass("current")
   # Workaround for the first team content opacity is getting set to 0
-  $(".bio.first").attr("style","opacity:.5")
+  $(".bio.first").attr("style","opacity:1")
