@@ -193,5 +193,18 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/ninad23p"
     },
     display: true
+  },
+  
+  {
+    id: "sanjeev-kumar",
+    name: "Sanjeev Kumar",
+    title: "Software Engineer",
+    image: "assets/team/sanjeev.jpg",
+    description: "Sanjeev is passionate programmer. He graduated from Army Institute Of Technology in 2012. He started his career from JOSH software on 2nd july 2012.",
+    technical: {
+        linkedin: "http://www.linkedin.com/in/sjvait26",
+        facebook: "https://www.facebook.com/sjv.ait26"
+    },
+    display: true
   }
 ]
