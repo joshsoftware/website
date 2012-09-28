@@ -29,7 +29,7 @@
             %p
               - unless member[:technical][:github].blank?
                 %a{:target => "_blank", :href => "http://github.com/#{member[:technical][:github]}"}
-                  %img{:src => 'assets/glyphicons_381_github_small.png', :title => "Follow #{member[:technical][:github]}"}
+                  %img{:src => 'assets/glyphicons_381_github_small.png', :title => "#{member[:name]}'s github profile"}
               - unless member[:technical][:twitter].blank?
                 %a{:target => "_blank", :href => "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}"}
                   %img{:src => 'assets/glyphicons_392_twitter_small.png', :title => "Follow #{member[:technical][:twitter]}"}
