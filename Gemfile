@@ -5,7 +5,6 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'haml'
 
 # Gems used only for assets and not required
@@ -22,6 +21,10 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :production do
+  gem 'dalli'
 end
 
 gem 'jquery-rails'
