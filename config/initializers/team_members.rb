@@ -239,5 +239,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 4
+  },
+  {
+    id: "jiren-patel",
+    name: "Jiren Patel",
+    title: "Senior Software Engineer",
+    image: "http://www.gravatar.com/avatar/dde56ce7a6860df43fc2eee1336552dc",
+    description: "",
+    technical: {
+      github: 'https://github.com/jiren',
+      linkedin: "http://in.linkedin.com/in/jirenpatel",
+      twitter: '@jirens'
+    },
+    display: false,
+    index: 6
   }
+
 ]
