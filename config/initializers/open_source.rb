@@ -10,7 +10,7 @@ OPEN_SOURCE= [
   {
     id: "filterjs",
     title: "Filter.js",
-    url: "https://jiren.github.com/filter.js",
+    url: "https://github.com/jiren/filter.js",
     github: {
       user: 'jiren',
       repo: 'filter.js'
