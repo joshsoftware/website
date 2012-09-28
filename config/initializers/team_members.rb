@@ -86,7 +86,8 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@SwapVch",
         linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
-        facebook: "http://www.facebook.com/Swapnil.Chincholkar"
+        facebook: "http://www.facebook.com/Swapnil.Chincholkar",
+        github: "swapnilchincholkar"
     },
     display: true,
     index: 12
@@ -100,7 +101,8 @@ TEAM_MEMBERS= [
     description: "Trupti started her career in software industry with Persistent Systems & Solutions Pvt Ltd. She has expriance of 8 months in Salesforce. She is working as a Ruby On Rails developer in Josh from March 2012. She has done her Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
     technical: {
         twitter: "@TruptiVilasJang",
-        facebook: "http://www.facebook.com/trupti.jangam.1"
+        facebook: "http://www.facebook.com/trupti.jangam.1",
+        github: "jangamtrupti"
     },
     display: true,
     index: 17
@@ -227,6 +229,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 9
   },
+
   {
     id: "shailesh-patil",
     name: "Shailesh Patil",
@@ -239,5 +242,36 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 4
+  },
+
+  { 
+    id: "prasad-surase",
+    name: "Prasad Surase",
+    title: "Software Engineer",
+    image: "assets/team/prasad.jpg",
+    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Science from Fergusson College, Pune.",
+    technical: {
+        facebook: "http://www.facebook.com/surase.prasad",
+        stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
+        github: "prasadsurase"
+    },
+    display: true,
+    index: 10
+  },
+  
+  {
+    id: "pratik-shah",
+    name: "Pratik Shah",
+    title: "Software Engineer",
+    image: "assets/team/pratik.jpg",
+    description: "Pratik has over 2+ yrs of exp. in design & creation of various web applications built over RoR framework. He has been part of Josh since July 2010. He has Bachelors Degree in E&TC from Pune Institute of Computer Technology (PICT), India.",
+    technical: {        
+        twitter: "@pratik141988",
+        facebook: "http://www.facebook.com/pratik14sanghvi",
+        linkedin: "http://www.linkedin.com/pub/pratik-shah/22/a68/805",
+        github: "pratik14"
+    },
+    display: true,
+    index: 11
   }
 ]
