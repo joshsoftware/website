@@ -8,7 +8,7 @@
         .center
           .title
             - if open_source[:url]
-              %a{:href => open_source[:url]}= raw open_source[:title]
+              %a{:href => open_source[:url], :target = "_blank"}= raw open_source[:title]
             - else
               = open_source[:title]
           .left
