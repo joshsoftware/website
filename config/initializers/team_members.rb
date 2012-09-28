@@ -154,7 +154,7 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@manojdbest",
         linkedin: "http://www.linkedin.com/in/b0rn2c0d3",
-        facebook: "http://www.facebook.com/riddle32"
+        github: "b0rn2c0d3"
     },
     display: true,
     index: 18
