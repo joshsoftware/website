@@ -6,7 +6,7 @@ class StaticController < ApplicationController
   end
 
   def team
-    @team_members = TEAM_MEMBERS.select { |t| t[:display] }
+    @team_members = TEAM_MEMBERS.sort{|x,y| x[:index] <=> y[:index]}.select { |t| t[:display] } 
   end
 
   def home
