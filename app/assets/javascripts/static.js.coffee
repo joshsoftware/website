@@ -36,3 +36,5 @@ jQuery ($) ->
   $(".bio.first").fadeIn().addClass("current").attr("style","opacity:1")
 
   $('#bio-box').sticky({topSpacing:50});
+
+  $('.credits').popover({html: true, content: $('.credits-content').html()})
