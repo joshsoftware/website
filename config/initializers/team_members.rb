@@ -127,7 +127,7 @@ TEAM_MEMBERS= [
     name: "Anuja Ware",
     title: "Software Developer",
     image: "assets/team/anujaware.jpg",
-    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011.",
+    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
     technical: {        
         github: "anujaware"
     },
@@ -140,7 +140,7 @@ TEAM_MEMBERS= [
     name: "Anjani Katti",
     title: "HR Generalist",
     image: "assets/team/anjanikatti.jpg",
-    description: "Human Resources Generalist with 4+ years of experience, who manages the day-to-day operations in HR department like policies, procedures , organization development, Human Resource Information Systems (HRIS), employee relations,  benefits, compensation and employment. Has done Master in Commerece and Post graduation in Human resource form Pune University",
+    description: "Human Resources Generalist with 4+ years of experience, who manages the day-to-day operations in HR department like policies, procedures , organization development, Human Resource Information Systems (HRIS), employee relations,  benefits, compensation and employment. She has done Master in Commerece and Post graduation in Human resource from Pune University",
     technical: {        
     },
     display: true,
