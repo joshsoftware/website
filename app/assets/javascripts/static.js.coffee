@@ -17,8 +17,9 @@ jQuery ($) ->
     $(".bio.current").fadeOut(->
       if bio isnt undefined
         console.log(bio)
-        bio.addClass("current")
+        bio.fadeIn().addClass("current")
     ).removeClass("current")
+    $('.thumbnails .current').removeClass('current')
     clicked.parent().addClass('current')
     
 
@@ -31,10 +32,7 @@ jQuery ($) ->
   $('.first').addClass('current')
 
   $(".team-bios").hide()
-  $(".bio.first").fadeIn(->
-    
-  ).addClass("current")
   # Workaround for the first team content opacity is getting set to 0
-  $(".bio.first").attr("style","opacity:1")
+  $(".bio.first").fadeIn().addClass("current").attr("style","opacity:1")
 
   $('#bio-box').sticky({topSpacing:50});
