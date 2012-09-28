@@ -29,11 +29,12 @@
         %h3
           %img{:src => 'assets/glyphicons_332_certificate.png', :title => 'Testimonials'}
           %a{:href => 'testimonials', :title => 'Click to view all testimonials'} Testimonials
+        - testimony = @testimonials.sample
         %p{:class => 'align-left'} 
-          #{truncate(@testimony[:endorsement],:length=>325)}
+          #{truncate(testimony[:endorsement],:length=>325)}
         %p.pull-right{:class => 'align-left'} 
-          #{@testimony[:endorser]}
-          %br #{@testimony[:title]}, #{@testimony[:company]}
+          #{testimony[:endorser]}
+          %br #{testimony[:title]}, #{testimony[:company]}
 
       
   .span
