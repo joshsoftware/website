@@ -239,5 +239,19 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 4
+  },
+
+  {
+    id: "rohan-kanade",
+    name: "Rohan Kanade",
+    title: "Software Engineer",
+    image: "assets/team/rohan.jpg",
+    description: "Rohan has completed his MCA (Science) from Fergusson College, Pune. He entered into Software Indusrty in 2011. He started his work with JOSH in Feb 2012. Currently he is working as a Software Test Engineer.",
+    technical: {
+        facebook: "http://www.facebook.com/rohan.kanade.71",
+        github: "rrkanade"
+    },
+    display: true,
+    index: 16
   }
 ]
