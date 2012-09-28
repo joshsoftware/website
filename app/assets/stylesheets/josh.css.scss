@@ -335,6 +335,9 @@ $portfolio_menu_width: 195px;
       border-color: #FFF;
     }
   }
+  .bio.current {
+    opacity: 1;
+  }
   .thumbnails {
     li {
       margin: 0 0 0 15px;

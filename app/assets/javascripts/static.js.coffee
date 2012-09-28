@@ -14,10 +14,10 @@ jQuery ($) ->
 
   # Team Members
   fadeBio = (clicked, bio) ->
-    $(".current").fadeOut(->
+    $(".bio.current").fadeOut(->
       if bio isnt undefined
         console.log(bio)
-        bio.fadeIn().addClass("current")
+        bio.addClass("current")
     ).removeClass("current")
     clicked.parent().addClass('current')
     
