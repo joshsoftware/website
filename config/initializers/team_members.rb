@@ -56,7 +56,8 @@ TEAM_MEMBERS= [
     technical: {
         linkedin: "http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw",
         blog: "http://blog.joshsoftware.com/author/sameertilak/",
-        facebook: "http://www.facebook.com/sameer.tilak"
+        facebook: "http://www.facebook.com/sameer.tilak",
+        github: "sameer-tilak"
     },
     display: true,
     index: 3
@@ -136,11 +137,13 @@ TEAM_MEMBERS= [
     name: "Sanjiv Kumar Jha",
     title: "Software Engineer",
     image: "assets/team/sanjiv.jpg",
-    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd",
+    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd. He has knowledge of various programming language like c, c++, objective-c, python, ruby, c# and popular framework like .Net, spring, cherry, Rails. He love coding in ruby. He is one of fan of manga and anime.",
     technical: {
       twitter: "@narutosanjiv",
       linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
-      blog: "http://narutosanjiv.wordpress.com/"
+      blog: "http://narutosanjiv.wordpress.com/",
+      github: "narutosanjiv"
+
     },
     display: true,
     index: 15
@@ -181,7 +184,8 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@kapiltekwani",
         linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
-        facebook: "https://www.facebook.com/kapiltekwani"
+        facebook: "https://www.facebook.com/kapiltekwani",
+        github: "kapiltekwani"
     },
     display: true,
     index: 21
@@ -239,5 +243,21 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 4
+  },
+
+  {
+    id: "rishi-jain",
+    name: "Rishi Jain",
+    image:  "assets/team/rishi.jpg",
+    description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011. He likes to write about political issues, various sports and everything that interests him, and madly follows football(EPL to be specific).",
+    technical: {
+      linkedin: "http://www.linkedin.com/pub/rishi-jain/12/698/495",
+      blog: "http://blog.joshsoftware.com/author/jainrishi37/",
+      facebook: "http://www.facebook.com/jainrishi37",
+      github: "rishijain"
+    },
+    display:  true,
+    index: 14
   }
+
 ]
