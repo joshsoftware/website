@@ -12,7 +12,8 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/gautam.rege",
         github: "gautamrege"
     },
-    display: true
+    display: true,
+    index: 0
   },
 
   { 
@@ -28,7 +29,8 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/sethupathi.asokan",
         github: "sethu"
     },
-    display: true
+    display: true,
+    index: 1
   },
 
   { 
@@ -42,7 +44,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/satishtalim",
         facebook: "http://www.facebook.com/satishtalim"
     },
-    display: true
+    display: true,
+    index: 2
   },
   { 
     id: "sameer-tilak",
@@ -55,7 +58,8 @@ TEAM_MEMBERS= [
         blog: "http://blog.joshsoftware.com/author/sameertilak/",
         facebook: "http://www.facebook.com/sameer.tilak"
     },
-    display: true
+    display: true,
+    index: 3
   },
   
   { 
@@ -69,7 +73,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/sandipransing",
         blog: "http://funonrails.com/"
     },
-    display: true
+    display: true,
+    index: 7
   },
   
   { 
@@ -83,7 +88,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
         facebook: "http://www.facebook.com/Swapnil.Chincholkar"
     },
-    display: true
+    display: true,
+    index: 12
   },
   
   { 
@@ -96,7 +102,8 @@ TEAM_MEMBERS= [
         twitter: "@TruptiVilasJang",
         facebook: "http://www.facebook.com/trupti.jangam.1"
     },
-    display: true
+    display: true,
+    index: 17
   },
   
   { 
@@ -110,7 +117,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/chintanshah1985",
         facebook: "http://www.facebook.com/chintan.shah.376258"
     },
-    display: true
+    display: true,
+    index: 11
   },
   { 
     id: "anujaware",
@@ -119,7 +127,8 @@ TEAM_MEMBERS= [
     description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011.",
     technical: {        
     },
-    display: true
+    display: true,
+    index: 13
   },
 
   {
@@ -133,7 +142,8 @@ TEAM_MEMBERS= [
       linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
       blog: "http://narutosanjiv.wordpress.com/"
     },
-    display: true
+    display: true,
+    index: 15
   },
   { 
     id: "manoj-mishra",
@@ -144,9 +154,10 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@manojdbest",
         linkedin: "http://www.linkedin.com/in/b0rn2c0d3",
-        facebook: "http://www.facebook.com/riddle32"
+        github: "b0rn2c0d3"
     },
-    display: true
+    display: true,
+    index: 18
   },
   {
     id: "anil-maurya",
@@ -158,7 +169,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/anilmaurya8",
         facebook: "http://www.facebook.com/akanilrocks"
     },
-    display: true
+    display: true,
+    index: 20
   },
   { 
     id: "Kapil-Tekwani",
@@ -171,7 +183,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
         facebook: "https://www.facebook.com/kapiltekwani"
     },
-    display: true
+    display: true,
+    index: 21
   },
     
   {
@@ -184,31 +197,47 @@ TEAM_MEMBERS= [
         twitter: "@kiranchaudhari",
         linkedin: "http://www.linkedin.com/in/kirandc",
     },
-    display: true
+    display: true,
+    index: 8
   },
   {
     id: "ninad-pol",
     name: "Ninad Ashok Pol",
     title: "Senior QA Engineer",
     image: "assets/team/ninad.jpg",
-    description: "He is graduated (BE.Comp) from PVG's college of Engg. & Technology in 2007. He has been the part of JOSH family for about 5 years. Lead the JOSH cricket team.",
+    description: "With 5+ years of experience in IT industry , he has 4+ years of relevant experience as a Senior QA Engineer. He has been the part of Josh family for about 5 years, since december 2007. He completed his graduation (BE.Comp) in 2007 from PVG's college of Engineering & Technology , Pune. Lead the Josh cricket team for 2 years.",
     technical: {
         linkedin: "http://in.linkedin.com/in/ninad23p",
         facebook: "http://www.facebook.com/ninad23p"
     },
-    display: true
+    display: true,
+    index: 5
   },
   {
-    id: "jiren-patel",
-    name: "Jiren Patel",
-    title: "Senior Software Engineer",
-    image: "http://www.gravatar.com/avatar/dde56ce7a6860df43fc2eee1336552dc",
-    description: "",
+    id: "siva-gollapalli",
+    name: "Siva Gollapalli",
+    title: "QA & Developer",
+    image: "assets/team/siva.jpg",
+    description: "He is graduted in B.Tech Computers from SVEC in 2009. He has been working in Josh since 2010. Watching movies, playing cricket and coding are hobbies.",
     technical: {
-        github: 'https://github.com/jiren',
-        linkedin: "http://in.linkedin.com/in/jirenpatel",
-        twitter: '@jirens'
+      twitter: "@sivagollapalli",
+      facebook: "http://facebook.com/svsivars",
+      blog: "http://blog.joshsoftware.com/author/siva543/"
     },
-    display: true
+    display: true,
+    index: 9
+  },
+  {
+    id: "shailesh-patil",
+    name: "Shailesh Patil",
+    title: "Senior Software Engineer",
+    image: "assets/team/shailesh.jpg",
+    description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
+    technical: {        
+        twitter: "@patilshailesh",
+        linkedin: "http://www.linkedin.com/in/shaileshspatil"
+    },
+    display: true,
+    index: 4
   }
 ]

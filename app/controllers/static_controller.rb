@@ -1,19 +1,16 @@
 class StaticController < ApplicationController
-  #caches_page :portfolio
+  caches_page :portfolio, :team, :testimonials, :open_source
 
   def portfolio
     @projects = PROJECTS.select { |p| p[:display] }
   end
 
   def team
-    @team_members = TEAM_MEMBERS.select { |t| t[:display] }
+    @team_members = TEAM_MEMBERS.sort{|x,y| x[:index] <=> y[:index]}.select { |t| t[:display] } 
   end
 
   def home
-    testimonies = TESTIMONIES.select{|e| e[:display]}
-    size = testimonies.size
-    index = rand(size)
-    @testimony = testimonies[index]
+    @testimonials = TESTIMONIES.select{|e| e[:display]}
   end
 
   def testimonials
