@@ -45,6 +45,7 @@ GEM
       sass (~> 3.1)
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
+    dalli (2.2.1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -117,6 +118,7 @@ DEPENDENCIES
   bootstrap-sass (~> 2.0.1)
   coffee-rails (~> 3.2.1)
   compass-rails
+  dalli
   haml
   jquery-rails
   jquery-scrollto-rails
