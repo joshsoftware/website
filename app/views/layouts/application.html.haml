@@ -7,6 +7,8 @@
         = yield(:title)
     - else
       %title Ruby on Rails experts in India | Josh Software Private Limited 
+    %meta{:name => "keywords", :content => "#{@keywords || 'Ruby on Rails, RoR, India, Rails development, open source, Web application development'}"}
+    %meta{:name => "description", :content => "#{@description || 'Ruby on Rails experts in India and we believe that programming is an Art'}"}
     = stylesheet_link_tag 'application'
     = javascript_include_tag "application"
     /[if lt IE 9]
