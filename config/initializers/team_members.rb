@@ -20,7 +20,7 @@ TEAM_MEMBERS= [
     name: "Sethupathi Asokan",
     title: "Co-Founder & Director",
     image: "assets/team/sethu.jpg",
-    description: "In his 15+ years, he has worked all along with Veritas Software (now Symantec Inc). He was instrumental in designing and managing Veritas Command Central Storage and was the senior most member of the team of 160 engineers. He has done Masters Degree in Computer Science in 1998.",
+    description: "In his 15+ years, he has worked all along with Veritas Software (now Symantec Inc). He was instrumental in designing and managing Veritas Command Central Storage and was the senior most member of the team of 160 engineers. He has done Masters Degree in Computer Science in 1998. <a class='twitter-timeline' href='https://twitter.com/sethupathia' data-widget-id='252732024681545729'>Tweets by @sethupathia</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>",
     technical: {
         twitter: "@sethupathia",
         linkedin: "http://www.linkedin.com/in/sethupathia",
