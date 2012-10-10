@@ -372,7 +372,7 @@ TEAM_MEMBERS= [
     },
       display: true,
       index: 26
-  }
+  },
   
   {
     id: "mohammad-baniasad",
