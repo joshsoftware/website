@@ -373,5 +373,20 @@ TEAM_MEMBERS= [
       display: true,
       index: 26
   }
-
+  
+  {
+    id: "mohammad-baniasad",
+    name: "Mohammad Baniasad",
+    title: "Software Engineer",
+    image: "assets/team/mohammad.jpg",
+    description: "Mohammad has over 3+ years of experience in design & creation of various software using  C#, asp.net. He uses RoR framework since march, 2012 by joining JoshSoftware. He has Bachelors Degree in software engineering from IAU of Mashhad, Iran.",
+    technical: {        
+      twitter: "@MBaniasad",
+      facebook: "http://www.facebook.com/baniasad",
+      linkedin: "http://lnkd.in/UthJ98",
+      github: "mbaniasad"
+    },
+      display: true,
+      index: 26
+  }
 ]
