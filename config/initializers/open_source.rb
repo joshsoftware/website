@@ -10,12 +10,12 @@ OPEN_SOURCE= [
   {
     id: "filterjs",
     title: "Filter.js",
-    url: "https://jiren.github.com/filter.js",
+    url: "https://github.com/jiren/filter.js",
     github: {
       user: 'jiren',
       repo: 'filter.js'
     },
-    details: "Filter.js is the javascript library for client-side searches. It has multiple filter criteria that can be specified and used in conjunction with each other. It has easy integration with jQuery templates and mustache. See the demo <a href='http://jiren.github.com/filter.js/filterjs.html'>here</a> <br> Its been covered by <a href='http://webscripts.softpedia.com/script/Forms-and-Controls-C-C/Filter-js-71265.html'>Softpedia</a> and <a href='http://twitter.com/smashingmag/status/122082466726019072'>Smashing Magazine</a>", 
+    details: "Filter.js is the javascript library for client-side searches. It has multiple filter criteria that can be specified and used in conjunction with each other. It has easy integration with jQuery templates and mustache. See the demo <a href='http://jiren.github.com/filter.js/filterjs.html' target='_blank'>here</a> <br> Its been covered by <a href='http://webscripts.softpedia.com/script/Forms-and-Controls-C-C/Filter-js-71265.html' target='_blank'>Softpedia</a> and <a href='http://twitter.com/smashingmag/status/122082466726019072' target='_blank'>Smashing Magazine</a>", 
     display: true
   },
 

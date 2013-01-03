@@ -7,6 +7,27 @@
         = yield(:title)
     - else
       %title Ruby on Rails experts in India | Josh Software Private Limited 
+    %meta{:name => "keywords", :content => "#{@keywords || 'Ruby on Rails, RoR, India, Rails development, open source, Web application development'}"}
+    %meta{:name => "description", :content => "#{@description || 'Ruby on Rails experts in India and we believe that programming is an Art'}"}
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <!-- Size should be 144 x 144 pixels -->
+    =# favicon_link_tag 'assets/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <!-- Size should be 114 x 114 pixels -->
+    =# favicon_link_tag 'assets/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
+    <!-- For first- and second-generation iPad: -->
+    <!-- Size should be 72 x 72 pixels -->
+    =# favicon_link_tag 'assets/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <!-- Size should be 57 x 57 pixels -->
+    =# favicon_link_tag 'assets/apple-touch-icon-57x57-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+
+    <!-- For all other devices -->
+    <!-- Size should be 32 x 32 pixels -->
+    =# favicon_link_tag '/favicon.ico', :rel => 'shortcut icon'
+
     = stylesheet_link_tag 'application'
     = javascript_include_tag "application"
     /[if lt IE 9]
@@ -44,7 +65,26 @@
         %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", :target => "_blank", :title => 'Visit our LinkedIn Page'}
           %img{:src => 'assets/glyphicons_377_linked_in.png'}
       .center
-        Copyright © 2012 Josh Software Pvt. Ltd.
+        Copyright &copy; 2012 Josh Software Pvt. Ltd.
+        %a.pull-right.credits{:rel => "popover", :data => {:placement => "top", :title => 'Credits'} } Credits
+      .credits-content
+        %ul
+          %li
+            Designed by
+            %a{:href => 'http://niestudio.com', :target => '_blank'} NieSTUDIO 
+          %li
+            Built with
+            %a{:href => "http://twitter.github.com/bootstrap", :target =>"_blank"} Bootstrap
+          %li
+            Icons by
+            %a{:href => 'http://glyphicons.com/', :target => '_blank'} GLYPHICONS.com
+          %li
+            Hosted on
+            %a{:href => 'http://heroku.com', :target => '_blank'} Heroku
+          %li
+            Opensourced on
+            %a{:href => 'https://github.com/joshsoftware/website', :target => '_blank'} Github
+
 //Google analytics
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

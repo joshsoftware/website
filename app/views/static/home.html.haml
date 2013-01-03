@@ -16,7 +16,7 @@
           If you believe it too, we should talk!
       .span3.splash-gem
         %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
-          %img{:src => "assets/ruby_and_mongodb_book.jpg", :alt => "Ruby and MongoDB Web Development"}
+          %img{:src => "assets/ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"}
         %p
           %strong Books By Us
   .bottom
@@ -29,11 +29,12 @@
         %h3
           %img{:src => 'assets/glyphicons_332_certificate.png', :title => 'Testimonials'}
           %a{:href => 'testimonials', :title => 'Click to view all testimonials'} Testimonials
+        - testimony = @testimonials.sample
         %p{:class => 'align-left'} 
-          #{truncate(@testimony[:endorsement],:length=>325)}
+          #{truncate(testimony[:endorsement],:length=>325)}
         %p.pull-right{:class => 'align-left'} 
-          #{@testimony[:endorser]}
-          %br #{@testimony[:title]}, #{@testimony[:company]}
+          #{testimony[:endorser]}
+          %br #{testimony[:title]}, #{testimony[:company]}
 
       
   .span
@@ -58,7 +59,7 @@
             6, Thube Park, 
             Shivajinagar, 
             Pune - 411005, 
-            Maharastra, India.
+            Maharashtra, India.
         %p
           %a{:target => "_blank", :href => "https://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=Josh+Software+Private+Limited,+Thube+park,+Shivaji+Nagar,+Pune,+Maharashtra&aq=t&sll=18.815427,76.775144&sspn=10.655534,19.753418&vpsrc=0&ie=UTF8&hq=Josh+Software+Private+Limited,&hnear=Thube+Park,+Pune+Vidyapith+Rd,+Shivaji+Nagar,+Pune,+Maharashtra&ll=18.532921,73.851814&spn=0.010437,0.01929&t=m&z=16&iwloc=A&cid=7465183415235984484"}
             %i{:class => "icon-map-marker"}
