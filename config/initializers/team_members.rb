@@ -104,7 +104,7 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/trupti.jangam.1",
         github: "jangamtrupti"
     },
-    display: true,
+    display: false,
     index: 19
   },
   
@@ -341,7 +341,7 @@ TEAM_MEMBERS= [
       facebook: "http://www.facebook.com/rohan.kanade.71",
       github: "rrkanade"
     },
-    display: true,
+    display: false,
     index: 18
   },
   {
