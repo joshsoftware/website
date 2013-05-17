@@ -61,7 +61,22 @@ TEAM_MEMBERS= [
     display: true,
     index: 3
   },
-  
+  {
+    id: "sachin-shintre",
+    name: "Sachin Shintre",
+    title: "Director Engineering",
+    image: "assets/team/sachin.jpg",
+    description: "With 14+ years in Software industry, he has worked on Mobile platforms, hard-core Windows systems development, various other technologies and products like MS Exchange and RIM Enterprise server. He was instrumental in conceptualizing and releasing a network security product. Prior to Josh he was working as a principal consultant at a company he founded 5 years ago.<BR>
+<BR>He holds a Masters degree (with Gold Medal) from the University of Indore.",
+    technical: {
+        linkedin: "http://in.linkedin.com/pub/sachin-shintre/15/b8b/787",
+        blog: "",
+        facebook: "https://www.facebook.com/sachin.shintre.90", 
+        github: "shintre"
+    },
+    display: true,
+    index: 4 
+  },  
   { 
     id: "sandipransing",
     name: "Sandip Ransing",
@@ -74,7 +89,7 @@ TEAM_MEMBERS= [
         blog: "http://funonrails.com/"
     },
     display: true,
-    index: 7
+    index: 8
   },
   
   { 
@@ -90,7 +105,7 @@ TEAM_MEMBERS= [
         github: "swapnilchincholkar"
     },
     display: true,
-    index: 12
+    index: 13
   },
   
   { 
@@ -119,8 +134,8 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/chintanshah1985",
         facebook: "http://www.facebook.com/chintan.shah.376258"
     },
-    display: true,
-    index: 11
+    display: false,
+    index: 12
   },
   { 
     id: "anujaware",
@@ -132,7 +147,7 @@ TEAM_MEMBERS= [
         github: "anujaware"
     },
     display: true,
-    index: 13
+    index: 14
   },
 
   { 
@@ -143,7 +158,7 @@ TEAM_MEMBERS= [
     description: "Human Resources Generalist with 4+ years of experience, who manages the day-to-day operations in HR department like policies, procedures , organization development, Human Resource Information Systems (HRIS), employee relations,  benefits, compensation and employment. She has done Master in Commerece and Post graduation in Human resource from Pune University",
     technical: {        
     },
-    display: true,
+    display: false,
     index: 20
   },
 
@@ -173,7 +188,7 @@ TEAM_MEMBERS= [
 
     },
     display: true,
-    index: 16
+    index: 17
   },
   { 
     id: "manoj-mishra",
@@ -229,7 +244,7 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/kirandc",
     },
     display: true,
-    index: 8
+    index: 9
   },
   {
     id: "ninad-pol",
@@ -242,7 +257,7 @@ TEAM_MEMBERS= [
         facebook: "http://www.facebook.com/ninad23p"
     },
     display: true,
-    index: 5
+    index: 6
   },
   {
     id: "siva-gollapalli",
@@ -256,7 +271,7 @@ TEAM_MEMBERS= [
       blog: "http://blog.joshsoftware.com/author/siva543/"
     },
     display: true,
-    index: 9
+    index: 10
   },
   {
     id: "shailesh-patil",
@@ -269,7 +284,7 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/shaileshspatil"
     },
     display: true,
-    index: 4
+    index: 5
   },
   {
     id: "jiren-patel",
@@ -284,7 +299,7 @@ TEAM_MEMBERS= [
       twitter: '@jirens'
     },
     display: true,
-    index: 6
+    index: 7
   },
   {
     id: "rishi-jain",
@@ -298,7 +313,7 @@ TEAM_MEMBERS= [
       github: "rishijain"
     },
     display:  true,
-    index: 15
+    index: 16
   },
   { 
     id: "prasad-surase",
@@ -312,7 +327,7 @@ TEAM_MEMBERS= [
       github: "prasadsurase"
     },
     display: true,
-    index: 14
+    index: 15
   },
 
   {
@@ -328,7 +343,7 @@ TEAM_MEMBERS= [
       github: "pratik14"
     },
       display: true,
-      index: 10
+      index: 11
   },
 
   {
@@ -354,7 +369,7 @@ TEAM_MEMBERS= [
       linkedin: "http://www.linkedin.com/in/sjvait26",
       facebook: "https://www.facebook.com/sjv.ait26"
     },
-    display: true,
+    display: false,
     index: 25
   },
 
@@ -387,6 +402,6 @@ TEAM_MEMBERS= [
       github: "mbaniasad"
     },
       display: true,
-      index: 26
+      index: 27
   }
 ]
