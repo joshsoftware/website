@@ -355,6 +355,6 @@ TEAM_MEMBERS= [
         github: "gerson-scanapieco"
     },
     display: true,
-    index: 0
+    index: 24
   }
 ]
