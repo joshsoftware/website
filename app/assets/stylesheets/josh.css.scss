@@ -1,9 +1,9 @@
-@font-face {
-  font-family: 'Jura';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Jura Medium'), local('Jura-Medium'), url(/google-content.woff) format('woff');
-}
+//@font-face {
+  //font-family: 'Jura';
+  //font-style: normal;
+  //font-weight: 500;
+  //src: local('Jura Medium'), local('Jura-Medium'), url(/google-content.woff) format('woff');
+//}
 
 // @import "dev_helpers";
 @import "compass/css3";
@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  background: #0a1017 url("tunnel.jpg") no-repeat center top;
+  background: #0a1017 url("tunnel.png") repeat-y center top;
   font-family: 'Jura', Helvetica, sans-serif;
 }
 
