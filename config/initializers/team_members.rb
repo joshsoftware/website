@@ -305,7 +305,7 @@ TEAM_MEMBERS= [
     id: "rishi-jain",
     name: "Rishi Jain",
     image:  "assets/team/rishi.jpg",
-    description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011. He likes to write about political issues, various sports and everything that interests him, and madly follows football(EPL to be specific).",
+    description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011.",
     technical: {
       linkedin: "http://www.linkedin.com/pub/rishi-jain/12/698/495",
       blog: "http://blog.joshsoftware.com/author/jainrishi37/",
@@ -403,5 +403,20 @@ TEAM_MEMBERS= [
     },
       display: true,
       index: 27
+  },
+  {
+    id: "pramod-shinde",
+    name: "Pramod Shinde",
+    title: "Software Engineer",
+    image: "assets/team/pramod.jpg",
+    description: "Pramod has earned his M.Tech degree in Industrial Mathematics With Computer Application from Fergusson College, Pune. He works on various ROR applications at Josh. In spare time he enjoys outdoor activities like playing football, trekking etc.",
+    technical: {        
+      twitter: "@pramod_shinde",
+      facebook: "http://www.facebook.com/pramod.shinde.7393",
+      linkedin: "http://www.linkedin.com/pub/pramod-shinde/62/72/478",
+      github: "pramodshinde"
+    },
+      display: true,
+      index: 28
   }
 ]
