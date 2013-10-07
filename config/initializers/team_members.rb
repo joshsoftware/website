@@ -341,5 +341,20 @@ TEAM_MEMBERS= [
     },
       display: true,
       index: 23
+  },
+  { 
+    id: "gerson-scanapieco",
+    name: "Gerson Scanapieco",
+    title: "Software Engineer",
+    image: "assets/team/gerson.jpg",
+    description: "Gerson is a Bachelor in Computer Science, graduated in 2013 from Federal University of Uberlandia(UFU), Brazil. Joined Josh team in August 2013. ",
+    technical: {
+        twitter: "@GScanapieco",
+        linkedin: "http://www.linkedin.com/pub/gerson-scanapieco/48/22/7b2",
+        facebook: "http://www.facebook.com/gerson.scanapieco",
+        github: "gerson-scanapieco"
+    },
+    display: true,
+    index: 24
   }
 ]
