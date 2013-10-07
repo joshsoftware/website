@@ -356,5 +356,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 24
+  },
+  {
+    id: "rajan-barmukh",
+    name: "Rajan Barmukh",
+    title: "Software Engineer",
+    image: "assets/team/rajan.jpg",
+    description: "Rajan has been part of team Josh since January 2013. He has done Master of Computer Application from Fergusson college, Pune.",
+    technical: {
+      twitter: "@rajanb07",
+      facebook: "https://www.facebook.com/rajanbarmukh",
+      linkedin: "http://www.linkedin.com/pub/rajan-barmukh/5a/bb2/165",
+      github: "rajanbarmukh"
+    },
+    display: true,
+    index: 25
   }
 ]
