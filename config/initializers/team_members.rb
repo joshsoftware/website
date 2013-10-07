@@ -77,174 +77,18 @@ TEAM_MEMBERS= [
     display: true,
     index: 4 
   },  
-  { 
-    id: "sandipransing",
-    name: "Sandip Ransing",
+  {
+    id: "shailesh-patil",
+    name: "Shailesh Patil",
     title: "Senior Software Engineer",
-    image: "assets/team/sandip.jpg",
-    description: "Sandip has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He loves riding bike, playing carrom. He has Bachelors Degree in Computer Engineering from Modern College Of Engineering, Pune, in 2007.",
+    image: "assets/team/shailesh.jpg",
+    description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
     technical: {        
-        twitter: "@sandipransing",
-        linkedin: "http://www.linkedin.com/in/sandipransing",
-        blog: "http://funonrails.com/"
+        twitter: "@patilshailesh",
+        linkedin: "http://www.linkedin.com/in/shaileshspatil"
     },
     display: true,
-    index: 8
-  },
-  
-  { 
-    id: "swapnil-chincholkar",
-    name: "Swapnil Chincholkar",
-    title: "Software Engineer",
-    image: "assets/team/swapnil.jpg",
-    description: "Swapnil started his career in software industry with Josh as a Ruby On Rails developer. He has done his Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
-    technical: {
-        twitter: "@SwapVch",
-        linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
-        facebook: "http://www.facebook.com/Swapnil.Chincholkar",
-        github: "swapnilchincholkar"
-    },
-    display: true,
-    index: 13
-  },
-  
-  { 
-    id: "trupti-jangam",
-    name: "Trupti Jangam",
-    title: "Software Engineer",
-    image: "assets/team/trupti.jpg",
-    description: "Trupti started her career in software industry with Persistent Systems & Solutions Pvt Ltd. She has expriance of 8 months in Salesforce. She is working as a Ruby On Rails developer in Josh from March 2012. She has done her Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
-    technical: {
-        twitter: "@TruptiVilasJang",
-        facebook: "http://www.facebook.com/trupti.jangam.1",
-        github: "jangamtrupti"
-    },
-    display: false,
-    index: 19
-  },
-  
-  { 
-    id: "chintan-shah",
-    name: "Chintan Shah",
-    title: "Business Development Manager",
-    image: "assets/team/chintan.jpg",
-    description: "Chintan is serving as a Business Development Manager in Josh since 2011. He is indulged with Client Relationship Management and has a successful track record in generating new business to the company.",
-    technical: {
-        twitter: "@chintan_josh",
-        linkedin: "http://www.linkedin.com/in/chintanshah1985",
-        facebook: "http://www.facebook.com/chintan.shah.376258"
-    },
-    display: false,
-    index: 12
-  },
-  { 
-    id: "anujaware",
-    name: "Anuja Ware",
-    title: "Software Developer",
-    image: "assets/team/anujaware.jpg",
-    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
-    technical: {        
-        github: "anujaware"
-    },
-    display: true,
-    index: 14
-  },
-
-  { 
-    id: "anjanikatti",
-    name: "Anjani Katti",
-    title: "HR Generalist",
-    image: "assets/team/anjanikatti.jpg",
-    description: "Human Resources Generalist with 4+ years of experience, who manages the day-to-day operations in HR department like policies, procedures , organization development, Human Resource Information Systems (HRIS), employee relations,  benefits, compensation and employment. She has done Master in Commerece and Post graduation in Human resource from Pune University",
-    technical: {        
-    },
-    display: false,
-    index: 20
-  },
-
-  { 
-    id: "meghabrid",
-    name: "Megha Brid",
-    title: "Senior Accountant",
-    image: "assets/team/meghabrid.jpg",
-    description: " She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
-    technical: {        
-    },
-    display: true,
-    index: 22
-  },
-
-  {
-    id: "sanjiv-jha",
-    name: "Sanjiv Kumar Jha",
-    title: "Software Engineer",
-    image: "assets/team/sanjiv.jpg",
-    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd. He has knowledge of various programming language like c, c++, objective-c, python, ruby, c# and popular framework like .Net, spring, cherry, Rails. He love coding in ruby. He is one of fan of manga and anime.",
-    technical: {
-      twitter: "@narutosanjiv",
-      linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
-      blog: "http://narutosanjiv.wordpress.com/",
-      github: "narutosanjiv"
-
-    },
-    display: true,
-    index: 17
-  },
-  { 
-    id: "manoj-mishra",
-    name: "Manoj Mishra",
-    title: "Software Developer",
-    image: "assets/team/manoj.jpg",
-    description: "He joined Josh Software in April 2012, he graduated from Army Institute of Technology in 2011. He has work experience with various Web technologies such as ASP.net, JSP and Rails. He loves programming and creativity. His hobbies are playing badminton and computer gaming.",
-    technical: {
-        twitter: "@manojdbest",
-        linkedin: "http://www.linkedin.com/in/b0rn2c0d3",
-        github: "b0rn2c0d3"
-    },
-    display: true,
-    index: 21
-  },
-  {
-    id: "anil-maurya",
-    name: "Anil Kumar Maurya",
-    title: "Software Engineer",
-    image: "assets/team/anil.jpg",
-    description: "Anil is passionate programmer. He Completed his Bachelor Degree in Computer Engineering in 2012 from Army Institute of Technology, India. ",
-    technical: {
-        linkedin: "http://www.linkedin.com/in/anilmaurya8",
-        facebook: "http://www.facebook.com/akanilrocks"
-    },
-    display: true,
-    index: 24
-  },
-  { 
-    id: "Kapil-Tekwani",
-    name: "Kapil Tekwani",
-    title: "Software Engineer",
-    image: "assets/team/kapil.jpg",
-    description: "He has graduated from Pune Institute of Computer Technology(PICT) with Bachelor's Degree in Computer Engineering.",
-    technical: {
-        twitter: "@kapiltekwani",
-        linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
-        facebook: "https://www.facebook.com/kapiltekwani",
-        github: "kapiltekwani"
-    },
-    display: true,
-    index: 23
-  },
-    
-  {
-    id: "kiran-chaudhari",
-    name: "Kiran Chaudhari",
-    title: "Senior Software Engineer",
-    image: "assets/team/kiran.jpg",
-    description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
-    technical: {
-        twitter: "@kiranchaudhari",
-        linkedin: "http://www.linkedin.com/in/kirandc",
-    },
-    display: true,
-    index: 9
+    index: 5
   },
   {
     id: "ninad-pol",
@@ -258,33 +102,6 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 6
-  },
-  {
-    id: "siva-gollapalli",
-    name: "Siva Gollapalli",
-    title: "QA & Developer",
-    image: "assets/team/siva.jpg",
-    description: "He is graduted in B.Tech Computers from SVEC in 2009. He has been working in Josh since 2010. Watching movies, playing cricket and coding are hobbies.",
-    technical: {
-      twitter: "@sivagollapalli",
-      facebook: "http://facebook.com/svsivars",
-      blog: "http://blog.joshsoftware.com/author/siva543/"
-    },
-    display: true,
-    index: 10
-  },
-  {
-    id: "shailesh-patil",
-    name: "Shailesh Patil",
-    title: "Senior Software Engineer",
-    image: "assets/team/shailesh.jpg",
-    description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
-    technical: {        
-        twitter: "@patilshailesh",
-        linkedin: "http://www.linkedin.com/in/shaileshspatil"
-    },
-    display: true,
-    index: 5
   },
   {
     id: "jiren-patel",
@@ -301,35 +118,47 @@ TEAM_MEMBERS= [
     display: true,
     index: 7
   },
-  {
-    id: "rishi-jain",
-    name: "Rishi Jain",
-    image:  "assets/team/rishi.jpg",
-    description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011.",
-    technical: {
-      linkedin: "http://www.linkedin.com/pub/rishi-jain/12/698/495",
-      blog: "http://blog.joshsoftware.com/author/jainrishi37/",
-      facebook: "http://www.facebook.com/jainrishi37",
-      github: "rishijain"
-    },
-    display:  true,
-    index: 16
-  },
   { 
-    id: "prasad-surase",
-    name: "Prasad Surase",
-    title: "Software Engineer",
-    image: "assets/team/prasad.jpg",
-    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Science from Fergusson College, Pune.",
-    technical: {
-      facebook: "http://www.facebook.com/surase.prasad",
-      stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
-      github: "prasadsurase"
+    id: "sandipransing",
+    name: "Sandip Ransing",
+    title: "Senior Software Engineer",
+    image: "assets/team/sandip.jpg",
+    description: "Sandip has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He loves riding bike, playing carrom. He has Bachelors Degree in Computer Engineering from Modern College Of Engineering, Pune, in 2007.",
+    technical: {        
+        twitter: "@sandipransing",
+        linkedin: "http://www.linkedin.com/in/sandipransing",
+        blog: "http://funonrails.com/"
     },
     display: true,
-    index: 15
+    index: 8
   },
-
+  {
+    id: "kiran-chaudhari",
+    name: "Kiran Chaudhari",
+    title: "Senior Software Engineer",
+    image: "assets/team/kiran.jpg",
+    description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
+    technical: {
+        twitter: "@kiranchaudhari",
+        linkedin: "http://www.linkedin.com/in/kirandc",
+    },
+    display: true,
+    index: 9
+  },
+  {
+    id: "siva-gollapalli",
+    name: "Siva Gollapalli",
+    title: "QA & Developer",
+    image: "assets/team/siva.jpg",
+    description: "He is graduted in B.Tech Computers from SVEC in 2009. He has been working in Josh since 2010. Watching movies, playing cricket and coding are hobbies.",
+    technical: {
+      twitter: "@sivagollapalli",
+      facebook: "http://facebook.com/svsivars",
+      blog: "http://blog.joshsoftware.com/author/siva543/"
+    },
+    display: true,
+    index: 10
+  },
   {
     id: "pratik-shah",
     name: "Pratik Shah",
@@ -345,34 +174,129 @@ TEAM_MEMBERS= [
       display: true,
       index: 11
   },
-
-  {
-    id: "rohan-kanade",
-    name: "Rohan Kanade",
+  { 
+    id: "swapnil-chincholkar",
+    name: "Swapnil Chincholkar",
     title: "Software Engineer",
-    image: "assets/team/rohan.jpg",
-    description: "Rohan has completed his MCA (Science) from Fergusson College, Pune. He entered into Software Indusrty in 2011. He started his work with JOSH in Feb 2012. Currently he is working as a Software Test Engineer.",
+    image: "assets/team/swapnil.jpg",
+    description: "Swapnil started his career in software industry with Josh as a Ruby On Rails developer. He has done his Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
     technical: {
-      facebook: "http://www.facebook.com/rohan.kanade.71",
-      github: "rrkanade"
+        twitter: "@SwapVch",
+        linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
+        facebook: "http://www.facebook.com/Swapnil.Chincholkar",
+        github: "swapnilchincholkar"
     },
-    display: false,
+    display: true,
+    index: 12
+  },
+  { 
+    id: "anujaware",
+    name: "Anuja Ware",
+    title: "Software Developer",
+    image: "assets/team/anujaware.jpg",
+    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
+    technical: {        
+        github: "anujaware"
+    },
+    display: true,
+    index: 13
+  },
+  { 
+    id: "prasad-surase",
+    name: "Prasad Surase",
+    title: "Software Engineer",
+    image: "assets/team/prasad.jpg",
+    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Science from Fergusson College, Pune.",
+    technical: {
+      facebook: "http://www.facebook.com/surase.prasad",
+      stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
+      github: "prasadsurase"
+    },
+    display: true,
+    index: 14
+  },
+  {
+    id: "rishi-jain",
+    name: "Rishi Jain",
+    image:  "assets/team/rishi.jpg",
+    description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011.",
+    technical: {
+      linkedin: "http://www.linkedin.com/pub/rishi-jain/12/698/495",
+      blog: "http://blog.joshsoftware.com/author/jainrishi37/",
+      facebook: "http://www.facebook.com/jainrishi37",
+      github: "rishijain"
+    },
+    display:  true,
+    index: 15
+  },
+  {
+    id: "sanjiv-jha",
+    name: "Sanjiv Kumar Jha",
+    title: "Software Engineer",
+    image: "assets/team/sanjiv.jpg",
+    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd. He has knowledge of various programming language like c, c++, objective-c, python, ruby, c# and popular framework like .Net, spring, cherry, Rails. He love coding in ruby. He is one of fan of manga and anime.",
+    technical: {
+      twitter: "@narutosanjiv",
+      linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
+      blog: "http://narutosanjiv.wordpress.com/",
+      github: "narutosanjiv"
+    },
+    display: true,
+    index: 16
+  },
+  { 
+    id: "manoj-mishra",
+    name: "Manoj Mishra",
+    title: "Software Developer",
+    image: "assets/team/manoj.jpg",
+    description: "He joined Josh Software in April 2012, he graduated from Army Institute of Technology in 2011. He has work experience with various Web technologies such as ASP.net, JSP and Rails. He loves programming and creativity. His hobbies are playing badminton and computer gaming.",
+    technical: {
+        twitter: "@manojdbest",
+        linkedin: "http://www.linkedin.com/in/b0rn2c0d3",
+        github: "b0rn2c0d3"
+    },
+    display: true,
+    index: 17
+  },
+  { 
+    id: "meghabrid",
+    name: "Megha Brid",
+    title: "Senior Accountant",
+    image: "assets/team/meghabrid.jpg",
+    description: " She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
+    technical: {        
+    },
+    display: true,
     index: 18
   },
-  {
-    id: "sanjeev-kumar",
-    name: "Sanjeev Kumar",
+  { 
+    id: "Kapil-Tekwani",
+    name: "Kapil Tekwani",
     title: "Software Engineer",
-    image: "assets/team/sanjeev.jpg",
-    description: "Sanjeev is passionate programmer. He graduated from Army Institute Of Technology in 2012. He started his career from JOSH software on 2nd july 2012.",
+    image: "assets/team/kapil.jpg",
+    description: "He has graduated from Pune Institute of Computer Technology(PICT) with Bachelor's Degree in Computer Engineering.",
     technical: {
-      linkedin: "http://www.linkedin.com/in/sjvait26",
-      facebook: "https://www.facebook.com/sjv.ait26"
+        twitter: "@kapiltekwani",
+        linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
+        facebook: "https://www.facebook.com/kapiltekwani",
+        github: "kapiltekwani"
     },
-    display: false,
-    index: 25
+    display: true,
+    index: 19
   },
-
+  {
+    id: "anil-maurya",
+    name: "Anil Kumar Maurya",
+    title: "Software Engineer",
+    image: "assets/team/anil.jpg",
+    description: "Anil is passionate programmer. He Completed his Bachelor Degree in Computer Engineering in 2012 from Army Institute of Technology, India. ",
+    technical: {
+        linkedin: "http://www.linkedin.com/in/anilmaurya8",
+        facebook: "http://www.facebook.com/akanilrocks"
+    },
+    display: true,
+    index: 20
+  },
   {
     id: "elvin-efendi",
     name: "Elvin Efendi",
@@ -386,9 +310,8 @@ TEAM_MEMBERS= [
       github: "ElvinEfendi"
     },
       display: true,
-      index: 26
+      index: 21
   },
-  
   {
     id: "mohammad-baniasad",
     name: "Mohammad Baniasad",
@@ -402,7 +325,7 @@ TEAM_MEMBERS= [
       github: "mbaniasad"
     },
       display: true,
-      index: 27
+      index: 22
   },
   {
     id: "pramod-shinde",
@@ -417,6 +340,6 @@ TEAM_MEMBERS= [
       github: "pramodshinde"
     },
       display: true,
-      index: 28
+      index: 23
   }
 ]
