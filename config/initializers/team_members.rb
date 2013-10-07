@@ -357,7 +357,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 24
   },
-<<<<<<< HEAD
   {
     id: "rajan-barmukh",
     name: "Rajan Barmukh",
@@ -372,7 +371,7 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 25
-  }
+  },
   { 
     id: "aditya-shedge",
     name: "Aditya Shedge",
