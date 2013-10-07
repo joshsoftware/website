@@ -357,6 +357,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 24
   },
+<<<<<<< HEAD
   {
     id: "rajan-barmukh",
     name: "Rajan Barmukh",
@@ -371,5 +372,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 25
+  }
+  { 
+    id: "aditya-shedge",
+    name: "Aditya Shedge",
+    title: "Software Engineer",
+    image: "assets/team/aditya.jpg",
+    description: "Aditya has completed his bachelors in Computer Engineering from D.Y. Patil College of Engineering, Akurdi. He has been an employee of JOSH since June, 2013. His hobbies include reading and football.",
+    technical: {
+        twitter: "@shedgeaditya",
+        linkedin: "https://linkedin.com/pub/aditya-shedge/82/735/381/",
+        facebook: "https://www.facebook.com/shedge.aditya",
+        github: "adityashedge"
+    },
+    display: true,
+    index: 26
   }
 ]
