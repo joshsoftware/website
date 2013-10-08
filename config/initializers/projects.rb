@@ -1,4 +1,36 @@
 PROJECTS= [
+  {
+    id: "educade",
+    title: "Educade",
+    country: "USA",
+    flag: "assets/portfolio/us.gif",
+    year: "2013",
+    url: "http://educade.org",
+    image: "assets/portfolio/joshsoftware_educade.jpg",
+    description: "Educade.org brings together educational content creators, educators, and students, Educade.org is a free website for teachers that features lesson plans integrated with 21st century teaching tools by grade level, subject area, or technology type. This platform aims at the future of education through creating a platform to share interactive educational content amongst educators and students.", 
+    technical: {
+        stack: "Rails 3.2.12, MongoDB, ElasticSearch",
+        deployment: "OpenStack",
+        comments: "Uses <a href='http://github.com/jiren/filter.js'>filter.js </a>"
+    },
+    display: true
+  },
+  {
+    id: "shopgodt",
+    title: "Shopgodt",
+    country: "USA",
+    flag: "assets/portfolio/us.gif",
+    year: "2013",
+    url: "http://shopgodt.com",
+    image: "assets/portfolio/joshsoftware_shopgodt.jpg",
+    description: "Shopgodt is the answer to what has been a lonely and research-intense experience to shopping. Get your friend's opinions and comments real time, find the best prices for that product, read reviews of the product, see celebrities who wore the product, read expert opinions from your favorite bloggers, all in ONE place and in REAL TIME!",
+    technical: {
+        stack: "Rails 3.2.11, MongoDB, AWS S3",
+        deployment: "EngineYard",
+        comments: "Uses Omniauth, FB and Twitter login"
+    },
+    display: true
+  },
   { 
     id: "the-deal-pages",
     title: "The Deal Pages",
@@ -118,22 +150,6 @@ PROJECTS= [
     display: true
   },
 
-  {
-    id: "brandpotion",
-    title: "BrandPotion",
-    country: "Italy",
-    flag: "assets/portfolio/it.gif",
-    year: "2010",
-    url: "http://www.brandpotion.com",
-    image: "assets/portfolio/joshsoftware_brand_potion.jpg",
-    description: "BrandPotion brings brands to the creative community via competitions. It takes networking beyond the social realm - we call this Brand networking! Features like ratings, surveys, photo-gallery, video-gallery and forums can be enabled or disabled per brand. So each brand has its own unique identity",
-    technical: {
-        stack: "Rails 2.2.2, MySQL, thinking-sphinx",
-        deployment: "Engineyard xCloud",
-        comments: ""
-    },
-    display: true
-  },
 
   {
     id: "acemoney",
