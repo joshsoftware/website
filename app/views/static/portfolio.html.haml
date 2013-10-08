@@ -21,7 +21,8 @@
         .top
         .center
           .screenshot.pull-left
-            %img{:src => project[:image]}
+            %a.site-title{:href => "#{project[:url]}", :target => "_blank"}
+              %img{:src => project[:image]}
           .site-info
             %a.site-title{:href => "#{project[:url]}", :target => "_blank"} #{project[:title]}
             = " - " 
