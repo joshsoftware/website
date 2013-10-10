@@ -7,7 +7,7 @@ PROJECTS= [
     year: "2013",
     url: "http://educade.org",
     image: "assets/portfolio/joshsoftware_educade.jpg",
-    description: "Educade.org brings together educational content creators, educators, and students, Educade.org is a free website for teachers that features lesson plans integrated with 21st century teaching tools by grade level, subject area, or technology type. This platform aims at the future of education through creating a platform to share interactive educational content amongst educators and students.", 
+    description: "Educade.org is a revolutionary online portal that answers the needs teachers have today and prepares students for success by providing free, ready to use lesson plans paired with engaging learning technologies. Tools include hundreds of apps, games, and hands-on activities with lessons aligned to Next Generation and Common Core standards, making it fast and easy to use. Educade is a platform for change with the mission to build a community around sharing engaging and interactive educational content.",
     technical: {
         stack: "Rails 3.2.12, MongoDB, ElasticSearch",
         deployment: "OpenStack",
