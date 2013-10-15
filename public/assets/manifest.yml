@@ -8,11 +8,14 @@ apple-touch-icon-72x72-precomposed.png: apple-touch-icon-72x72-precomposed-e625f
 client_logos/1factory_logo.png: client_logos/1factory_logo-df56580e435c05ca0b30b5ac812a2340.png
 client_logos/6YLogo.gif: client_logos/6YLogo-740ada162b06c8378e820f29890e6a0f.gif
 client_logos/adipa_logo.png: client_logos/adipa_logo-a67a20b9daa98660b3dd8027d151d5dd.png
+client_logos/deal_page.png: client_logos/deal_page-cc59dad07552c89d8090541e871d42b4.png
 client_logos/easy_pep.png: client_logos/easy_pep-0fd924d21c1fc6c387928227c60025b2.png
+client_logos/educade-logo.png: client_logos/educade-logo-e62028c462f11495128a456fd3786509.png
 client_logos/gullakmaster_logo.png: client_logos/gullakmaster_logo-40bef3094499aa6285e07d27e876bfc4.png
 client_logos/ipalm_online_logo.png: client_logos/ipalm_online_logo-fb2037a86ae6c422677a7c1c314a6cab.png
 client_logos/qwikc_logo.png: client_logos/qwikc_logo-4ccd45071e41dedcf5d0c6ae6eca76de.png
 client_logos/realcloud_logo.jpg: client_logos/realcloud_logo-e10bb00c4c539dde43cbb828f1927968.jpg
+client_logos/shopgodt_logo.svg: client_logos/shopgodt_logo-be3c335abf893f76212faa943ad60dad.svg
 client_logos/skies_logo.jpg: client_logos/skies_logo-965a97e39232ba8d6026f754c4bd9c4d.jpg
 client_logos/tourConnectLogo.png: client_logos/tourConnectLogo-6acb583960284eb6926166e8172ea39e.png
 dot.png: dot-4119538ff506bba97e505fd3da95fadf.png
@@ -82,7 +85,7 @@ team/swapnil.jpg: team/swapnil-8ccf202d2df918be493661f848628829.jpg
 train.jpg: train-4902a3520a1372a571705b7bc3142837.jpg
 tunnel.jpg: tunnel-339b2007e05d7292b96d7edbbc3fd89a.jpg
 tunnel.png: tunnel-f93dabf38ec0c641f12a21eedd4ec74e.png
-application.js: application-7bca741f411596ed5f39f0e8e5360147.js
+application.js: application-1c18bccb9e54fbbebb13921333322044.js
 application.css: application-e98523867226e5077959f97c660a2098.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
 glyphicons-halflings.png: glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png
