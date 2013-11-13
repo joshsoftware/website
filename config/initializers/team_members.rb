@@ -149,7 +149,7 @@ TEAM_MEMBERS= [
     id: "siva-gollapalli",
     name: "Siva Gollapalli",
     title: "QA & Developer",
-    image: "assets/team/siva.jpg",
+    image: "assets/team/siva_gollapalli.jpg",
     description: "He is graduted in B.Tech Computers from SVEC in 2009. He has been working in Josh since 2010. Watching movies, playing cricket and coding are hobbies.",
     technical: {
       twitter: "@sivagollapalli",
