@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '4.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,16 +11,16 @@ gem 'haml'
 # in production environments by default.
 group :assets do
   gem 'sass'
-	gem 'compass-rails'
-	gem 'bootstrap-sass', '~>2.0.1'
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',    '~> 4.0.0'
+  gem 'compass-rails', '~> 2.0.alpha.0'
+  gem 'bootstrap-sass'
+  gem 'coffee-rails'
   gem "jquery-scrollto-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 group :production do
@@ -28,6 +28,7 @@ group :production do
 end
 
 gem 'jquery-rails'
+gem 'actionpack-page_caching' #use caches_pages in rails 4
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
