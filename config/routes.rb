@@ -1,5 +1,5 @@
 Website::Application.routes.draw do
-  match ':action' => 'static#:action'
+  get ':action' => 'static#:action'
 
   root to: 'static#home'
 
