@@ -1,5 +1,5 @@
 $(document).ready ->
-  $('#contact_submit').live 'click',  ->
+  $('#contact_submit').on 'click',  ->
     if $('#email').val() == '' 
       alert('Please enter your email')
       $('#email').focus()
