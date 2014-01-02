@@ -1,61 +1,95 @@
-- content_for :title do
-  Contact us | Josh Software Private Limited
-%form{:action => 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', :method => 'POST', :id => 'contact_form', :class => 'form-horizontal well'}
-  %input{:type => 'hidden', :name => 'oid', :value => '00D90000000I0gJ'}
-  %input{:type => 'hidden', :name => 'retURL', :value => 'http://www.joshsoftware.com/ThankYou'}
-  %input{ :type => 'hidden', :name => 'lead_source', :id => 'ld_ource', :value => 'Web'}
-  %input{:type => 'hidden', :name => 'sfga', :value => '00D90000000I0gJ'}
-  .control-group
-    %label{:for => 'first_name', :class => 'control-label'}First Name
-    .controls
-      %input{:id => 'first_name', :name => 'first_name', :type => 'text'}
-  .control-group
-    %label{:for => 'last_name', :class => 'control-label'}Last Name
-    .controls
-      %input{:id => 'last_name', :name => 'last_name', :type => 'text'}
-  .control-group
-    %label{:for => 'email', :class => 'control-label'}Email
-    .controls
-      %input{:id => 'email', :name => 'email', :type => 'text'}
-  .control-group
-    %label{:for => 'title', :class => 'control-label'}Title
-    .controls
-      %input{:id => 'title', :name => 'title', :type => 'text'}
-  .control-group
-    %label{:for => 'skype_id__c', :class => 'control-label'}Skype Handle
-    .controls
-      %input{:id => 'skype_id__c', :name => 'skype_id__c', :type => 'text'}
-  .control-group
-    %label{:for => 'phone', :class => 'control-label'}Phone
-    .controls
-      %input{:id => 'phone', :name => 'phone', :type => 'text'}
-  .control-group
-    %label{:for => 'address', :class => 'control-label'}Address
-    .controls
-      %textarea{:id => 'address', :name => 'address', :rows => "5", :cols => "20"}
-  .control-group
-    %label{:for => 'company', :class => 'control-label'}Company
-    .controls
-      %input{:id => 'city', :name => 'city', :type => 'text'}
-  .control-group
-    %label{:for => 'city', :class => 'control-label'}City
-    .controls
-      %input{:id => 'city', :name => 'city', :type => 'text'}
-  .control-group
-    %label{:for => 'state', :class => 'control-label'}State/Province
-    .controls
-      %input{:id => 'stt', :name => 'state', :type => 'text'}
-  .control-group
-    %label{:for => 'country', :class => 'control-label'}Country
-    .controls
-      %input{:id => 'country', :name => 'country', :type => 'text'}
-  .control-group
-    %label{:for => 'description', :class => 'control-label'}Description
-    .controls
-      %textarea{:id => 'description', :name => 'description', :rows => "5", :cols => "45" }
-  .control-group
-    .controls
-      %button{:type => 'submit', :class => 'btn', :id => 'contact_submit'} Submit
+= render partial: 'shared/breadcrumbs', locals: {data: 'Contact Us'}
+.contact-map
+  #map-canvas{:style => "width: 100%; height: 400px"}
+.container
+  .row
+    .col-lg-5.col-sm-5.address
+      %h4 Pune
+      %p
+        Josh Software.
+        %br/
+        Street Address: 6, Thube Park, Shivajinagar, Pune.
+        %br/
+        Pune - 411005.
+      %br/
+      %br/
+      %br/
+      %p
+        Phone
+        %br/
+        %span.muted +91-20-25539995
+        %br/
+        Fax
+        %br/
+        %span.muted 111-222-333.
+        %br/
+        Email
+        %br/
+        %span.muted info@joshsoftware.com
+    .col-lg-7.col-sm-7.address
+      %h4 Send a Message
+      .contact-form
+        %form{:action => 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', :method => 'POST', :id => 'contact_form', role: 'form'}
+          %input{:type => 'hidden', :name => 'oid', :value => '00D90000000I0gJ'}
+          %input{:type => 'hidden', :name => 'retURL', :value => 'http://www.joshsoftware.com/ThankYou'}
+          %input{:type => 'hidden', :name => 'lead_source', :id => 'ld_ource', :value => 'Web'}
+          %input{:type => 'hidden', :name => 'sfga', :value => '00D90000000I0gJ'}
+          .form-group
+            %label{:for => 'first_name'}First Name
+            %input#first_name.form-control{:id => 'first_name', :name => 'first_name', :type => 'text'}
+          .form-group
+            %label{:for => 'last_name'}Last Name
+            %input#last_name.form-control{:name => 'last_name', :type => 'text'}
+          .form-group
+            %label{:for => 'email'}Email
+            %input#email.form-control{:name => 'email', :type => 'text'}
+          .form-group
+            %label{:for => 'title'}Title
+            %input#title.form-control{:name => 'title', :type => 'text'}
+          .form-group
+            %label{:for => 'skype_id__c'}Skype Handle
+            %input#skype_id__c.form-control{:name => 'skype_id__c', :type => 'text'}
+          .form-group
+            %label{:for => 'phone'}Phone
+            %input#phone.form-control{:name => 'phone', :type => 'text'}
+          .form-group
+            %label{:for => 'address'}Address
+            %textarea#address.form-control{:name => 'address', :rows => "5", :cols => "20"}
+          .form-group
+            %label{:for => 'company'}Company
+            %input#company.form-control{:id => 'city', :name => 'city', :type => 'text'}
+          .form-group
+            %label{:for => 'city'}City
+            %input#city.form-control{:name => 'city', :type => 'text'}
+          .form-group
+            %label{:for => 'state'}State/Province
+            %input#stt.form-control{:name => 'state', :type => 'text'}
+          .form-group
+            %label{:for => 'country'}Country
+            %input#country.form-control{:name => 'country', :type => 'text'}
+          .form-group
+            %label{:for => 'description'}Description
+            %textarea#description.form-control{:name => 'description', :rows => "5", :cols => "45" }
+          %button.btn.btn-danger{:type => "submit"} Submit
 = javascript_include_tag 'https://lct.salesforce.com/sfga.js'
+%script{:src => "https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"}
+= javascript_include_tag 'others/common-scripts.js'
 %script
   __sfga()
+:javascript
+  //google map
+  function initialize() {
+      var myLatlng = new google.maps.LatLng(-37.815207, 144.963937);
+      var mapOptions = {
+          zoom: 15,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Hello World!'
+      });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);

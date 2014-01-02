@@ -1,22 +1,30 @@
-- content_for :title do
-  Open source contribution and involvment | Josh Software Private Limited
-.row#opensource
-  .span12
-    - @open_sources.each do |open_source|
-      .well-trans.portfolio-site.testimonial{:id => open_source[:id]}
-        .top
-        .center
-          .title
-            - if open_source[:url]
-              %a{:href => open_source[:url], :target => "_blank"}= raw open_source[:title]
-            - else
-              = open_source[:title]
-          .left
-            %p.site-description
-              = raw open_source[:details]
-          - if open_source[:github]
-            %ul.unstyled.geek-specs.pull-left
+= render partial: 'shared/breadcrumbs', locals: {data: 'Open Source'}
+.container
+  .row
+    .col-lg-2
+      .blog-side-item
+        .category
+          %h3 Latest Projects
+          %ul.list-unstyled
+            - @open_sources.each do |open_source|
               %li
-                %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-                %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-        .bottom
+                = link_to "#{raw open_source[:id]}", "##{open_source[:id]}"
+    .col-lg-10
+      - @open_sources.each do |open_source|
+        .blog-item{:id => open_source[:id]}
+          .row
+            .col-lg-2.col-sm-2.text-right
+              .shate-view
+                - if open_source[:github]
+                  %ul.list-unstyled
+                    %li
+                      %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
+                      %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
+            .col-lg-10.col-sm-10
+              %h1
+                - if open_source[:url]
+                  %a{:href => open_source[:url], :target => "_blank"}= raw open_source[:title]
+                - else
+                  = open_source[:title]
+              %p 
+                = raw open_source[:details]

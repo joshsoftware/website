@@ -1,46 +1,39 @@
-- content_for :title do
-  The JOSH People | Josh Software Private Limited
-.row
-  .span5.team-thumbnails
-    %ul.thumbnails
-      - isFirst = true
-      - @team_members.each do |member|
-        %li
-          - classes = isFirst ? "first" : "" 
-          - isFirst = false
-          - image = member[:image].blank? ? "assets/team/placeholder.gif" : member[:image]
-          %a{:data => {:member => "#{member[:id]}" }, :class => "#{classes}"}
-            %span.circle{:style => "background-image:url(#{image})", :title => member[:name], :data => {:member => "#{member[:id]}" }}
-
-  .span6#bio-box
-    - isFirst = true
+= render partial: 'shared/breadcrumbs', locals: {data: 'Team'}
+.container
+  .row
+    .text-center.feature-head
+      %h1 Meet Our Team
+      %p We work with forward thinking clients to create beautiful, honest and amazing things that bring positive results.
     - @team_members.each do |member|
-      - classes = isFirst  ? "bio-#{member[:id]} first" : "bio-#{member[:id]} hide" 
-      - isFirst = false
-      .bio.team-bios{:class => "#{classes}"}
-        %h3.name
-          #{member[:name]}
-        %h4.title
-          #{member[:title]}
-        .separator
-        .bio-text
-          %p #{raw member[:description]}
-        .separator.pull-right.social-links
-          - unless member[:technical].blank?
-            %p
-              - unless member[:technical][:github].blank?
+      - image = member[:image].blank? ? "assets/team/placeholder.gif" : member[:image]
+      .col-lg-4
+        .person.text-center
+          %img{:alt => "", :src => image}
+        .person-info.text-center
+          %h4
+            %a{:href => "javascript:;"} #{member[:name]}
+          %p.text-muted #{member[:title]}
+          - if member[:technical].present?
+            .team-social-link
+              - if member[:technical][:github].present?
                 %a{:target => "_blank", :href => "http://github.com/#{member[:technical][:github]}"}
-                  %img{:src => 'assets/glyphicons_381_github_small.png', :title => "#{member[:name]}'s github profile"}
-              - unless member[:technical][:twitter].blank?
-                %a{:target => "_blank", :href => "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}"}
-                  %img{:src => 'assets/glyphicons_392_twitter_small.png', :title => "Follow #{member[:technical][:twitter]}"}
-              - unless member[:technical][:blog].blank? 
-                %a{:target => "_blank", :href => "#{member[:technical][:blog]}"}
-                  %img{:src => 'assets/glyphicons_397_rss_small.png', :title => "#{member[:name]}'s blog"}
-              - unless member[:technical][:linkedin].blank?
-                %a{:target => "_blank", :href => "#{member[:technical][:linkedin]}"}
-                  %img{:src => 'assets/glyphicons_377_linked_in_small.png', :title => "#{member[:name]}'s LinkedIn page" }
-              - unless member[:technical][:facebook].blank?
+                  %i.icon-github
+              - if member[:technical][:facebook].present?
                 %a{:target => "_blank", :href => "#{member[:technical][:facebook]}"}
-                  %img{:src => 'assets/glyphicons_390_facebook_small.png', :title => "#{member[:name]}'s Facebook page" }
-
+                  %i.icon-facebook
+              - if member[:technical][:twitter].present?
+                %a{:target => "_blank", :href => "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}"}
+                  %i.icon-twitter
+              - if member[:technical][:pinterest].present?
+                %a{:href => "#"}
+                  %i.icon-pinterest
+              - if member[:technical][:linkedin].present?
+                %a{:target => "_blank", :href => "#{member[:technical][:linkedin]}"}
+                  %i.icon-linkedin
+              - if member[:technical][:blog].present?
+                %a{:target => "_blank", :href => "#{member[:technical][:blog]}"}
+                  %i.icon-rss
+              - if member[:technical][:google_plus].present?
+                %a{:href => "#"}
+                  %i.icon-google-plus
+            %p #{raw member[:description]} 

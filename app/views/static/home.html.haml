@@ -1,15 +1,34 @@
-.well.well-trans.splash
-  .top
-  .center
-    .row
-      .span8.splash-text
+= render partial: 'shared/breadcrumbs', locals: {data: nil}
+.container
+  .row
+    .col-lg-3
+      .span5.about-carousel
+        #myCarousel.carousel.slide
+          .carousel-inner
+            .item.active
+              %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
+                %img{:src => "assets/ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"}
+                .carousel-caption
+                  %p Books by us
+            .item
+              %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
+                %img{:src => "assets/ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"}
+                .carousel-caption
+                  %p Books by us
+          %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
+            %i.icon-angle-left
+          %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
+            %i.icon-angle-right
+    .col-lg-9.about
+      %h3 Welcome to Josh Software
+      %blockquote
         %p 
           Driven by enthusiasm and passion, Josh is India’s leading company in building innovative web applications working exclusively in 
-          %b.expertize Ruby On Rails
+          %span.text-danger Ruby On Rails
           since 2007.
         %p 
           We partner with our clients from concept, design, implementation and maintenance. We believe that
-          %b.expertize Programming is An Art
+          %span.text-danger Programming is An Art
           and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
         %p
           We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
@@ -21,80 +40,3 @@
           and
           %a{href: "http://trello.com", target: '_blank'} Trello
           are some of the tools we use to ensure our clients are always happy!
-      .span3.splash-gem
-        %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
-          %img{:src => "assets/ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"}
-          %strong Books By Us
-  .bottom
-.row.sepatator
-.row.product-callouts
-  .span
-    .well.well-home-callout.first
-      .top
-      .center
-        %h3
-          %img{:src => 'assets/glyphicons_332_certificate.png', :title => 'Testimonials'}
-          %a{:href => 'testimonials', :title => 'Click to view all testimonials'} Testimonials
-        - testimony = @testimonials.sample
-        %p{:class => 'align-left'} 
-          #{truncate(testimony[:endorsement],:length=>325)}
-        %p.pull-right{:class => 'align-left'} 
-          #{testimony[:endorser]}
-          %br #{testimony[:title]}, #{testimony[:company]}
-
-      
-  .span
-    .well.well-home-callout
-      .top
-      .center
-        %h3
-          %img{:src => 'assets/glyphicons_273_drink.png', :title => 'Fun at Josh'}
-          Fun at JOSH
-        #fun.align-center
-          %img{:src => 'assets/loading.gif'}
-  .span
-    .well.well-home-callout
-      .top
-      .center
-        %h3
-          %img{:src => 'assets/glyphicons_088_adress_book.png', :title => 'Contact Details'}
-          Contact Details
-        %p{:class => 'align-left'}
-          %strong Postal Address
-          %br
-            6, Thube Park, 
-            Shivajinagar, 
-            Pune - 411005, 
-            Maharashtra, India.
-        %p
-          %a{:target => "_blank", :href => "https://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=Josh+Software+Private+Limited,+Thube+park,+Shivaji+Nagar,+Pune,+Maharashtra&aq=t&sll=18.815427,76.775144&sspn=10.655534,19.753418&vpsrc=0&ie=UTF8&hq=Josh+Software+Private+Limited,&hnear=Thube+Park,+Pune+Vidyapith+Rd,+Shivaji+Nagar,+Pune,+Maharashtra&ll=18.532921,73.851814&spn=0.010437,0.01929&t=m&z=16&iwloc=A&cid=7465183415235984484"}
-            %i{:class => "icon-map-marker"}
-            view map
-        %p
-          %i{:class => "icon-signal"} 
-          &nbsp;+91-20-25539995
-        %p
-          %i{:class => "icon-envelope"}
-          %a{:href => 'mailto:info@joshsoftware.com'} Email us
-          or
-          %i{:class => "icon-pencil"}
-          %a{:href => '/contact_us'} Send us a note
-        .social-links.pull-right
-          //twitter
-          %a{:href => "https://twitter.com/joshsoftware", :target => "_blank", :title => 'Follow us @joshsoftware'}
-            %img{:src => 'assets/glyphicons_392_twitter_small.png'}
-
-          //facebook
-          %a{:href => "https://facebook.com/joshsoftware", :target => "_blank", :title => 'Visit our Facebook Page'}
-            %img{:src => 'assets/glyphicons_390_facebook_small.png'}
-          //blog subscripe
-          %a{:href => "http://blog.joshsoftware.com", :target => "_blank", :title => 'Subscribe to our blog'}
-            %img{:src => 'assets/glyphicons_397_rss_small.png'}
-          //linkedin
-          %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", :target => "_blank", :title => 'Visit our LinkedIn Page'}
-            %img{:src => 'assets/glyphicons_377_linked_in_small.png'}
-
-:javascript
-  $(document).ready(function(){
-    image_slide(false);
-  })

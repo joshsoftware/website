@@ -1,22 +1,20 @@
-- content_for :title do
-  Testimonials | Josh Software Private Limited
-.row
-  .span12
-    - @testimonies.each do |testimony|
-      .well-trans.portfolio-site.testimonial{:id => testimony[:id]}
-        .top
-        .center.min-height
-          .left
-            %p.site-description
-              "
-              = testimony[:endorsement]
-              "
-            %ul.unstyled.geek-specs.pull-right
-              %li
-                %strong
-                  = testimony[:endorser]
-              %li
-                = testimony[:title]
-              %li
-                = testimony[:company]
-        .bottom
+= render partial: 'shared/breadcrumbs', locals: {data: 'Testimonials'}
+.container
+  .row
+    .col-lg-10
+      - @testimonies.each do |testimony|
+        .blog-item
+          .row
+            .col-lg-2.col-sm-2.text-right
+              .author
+                %a{:href => "#"} #{testimony[:endorser]}
+              %ul.list-unstyled
+                %li
+                  %a{:href => "javascript:;"}
+                    %em #{testimony[:title]}
+                %li
+                  %a{:href => "javascript:;"}
+                    %em #{testimony[:company]}
+            .col-lg-10.col-sm-10
+              %blockquote
+                %p #{raw testimony[:endorsement]} 

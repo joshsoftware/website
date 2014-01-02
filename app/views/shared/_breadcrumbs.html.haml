@@ -1,0 +1,13 @@
+.breadcrumbs
+  .container
+    .row
+      .col-lg-4.col-sm-4
+        %h1 #{data}
+      .col-lg-8.col-sm-8
+        - if data
+          %ol.breadcrumb.pull-right
+            %li
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#"} Pages
+            %li.active #{data}

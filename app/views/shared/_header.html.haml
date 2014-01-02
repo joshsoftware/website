@@ -11,28 +11,20 @@
           %span Software
       .navbar-collapse.collapse
         %ul.nav.navbar-nav
-          %li.active
+          %li{class: "#{check_if_active('home')}"}
             = link_to 'Home', root_path
+          %li{class: "#{check_if_active('portfolio')}"}
+            %a{:href => "portfolio"} Portfolio
+          %li{class: "#{check_if_active('team')}"}
+            %a{:href => "team"} Team
+          %li{class: "#{check_if_active('testimonials')}"}
+            %a{:href => "testimonials"} Testimonials
+          %li{class: "#{check_if_active('open_source')}"}
+            %a{:href => "open_source"} Open Source
           %li
-            %a{:href => "#"} About
-          %li
-            %a{:href => "#"} Service
-          %li.dropdown
-            %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdown", :href => "#"}
-              Feature
-              %b.icon-angle-down
-            %ul.dropdown-menu
-              %li
-                %a{:href => "typography.html"} Typography
-              %li
-                %a{:href => "button.html"} Buttons
-          %li
-            %a{:href => "portfolio.html"} Portfolio
-          %li
-            %a{:href => "price.html"} Price
-          %li
-            %a{:href => "blog.html"} Blog
-          %li
-            %a{:href => "contact.html"} Contact
-          %li
-            %input.form-control.search{:placeholder => " Search", :type => "text"}/
+            %a{:href => "http://blog.joshsoftware.com/", target: '_blank'} Blog
+          %li{class: "#{check_if_active('contact_us')}"}
+            %a{:href => "contact_us"} Contact Us
+          /
+            %li
+              %input.form-control.search{:placeholder => " Search", :type => "text"}/

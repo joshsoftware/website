@@ -33,5 +33,4 @@ class StaticController < ApplicationController
   def ping
     render :text => 'Hello'
   end
-
 end

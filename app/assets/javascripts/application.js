@@ -22,3 +22,4 @@
 //= require fancybox/jquery.fancybox.pack.js
 //= require revolution_slider/jquery.themepunch.plugins.min.js
 //= require revolution_slider/jquery.themepunch.revolution.min.js
+//= require others/common-scripts.js

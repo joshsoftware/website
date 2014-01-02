@@ -1,44 +1,46 @@
-- content_for :title do
-  Portfolio | Josh Software Private Limited
-.row
-  .span3.portfolio-menu
-    #sticker
-      .well-trans
-        .top
-          %strong
-            Lastest Projects
-        .center
-          %ul
+= render partial: 'shared/breadcrumbs', locals: {data: 'Portfolio'}
+.container
+  .row
+    .col-lg-2
+      .blog-side-item
+        .category
+          %h3 Latest Projects
+          %ul.list-unstyled
             - @projects.each do |project|
               %li
-                %a{:href => "##{project[:id]}"} #{project[:title]}
-          .top-link
-            %a{:href => "#header"} Top
-        .bottom
-  .span9
-    - @projects.each do |project|
-      .well-trans.portfolio-site{:id => project[:id]}
-        .top
-        .center
-          .screenshot.pull-left
-            %a.site-title{:href => "#{project[:url]}", :target => "_blank"}
-              %img{:src => project[:image]}
-          .site-info
-            %a.site-title{:href => "#{project[:url]}", :target => "_blank"} #{project[:title]}
-            = " - " 
-            %img{:src => "#{project[:flag]}", :class => 'align-up' }
-            = "#{project[:country]}, #{project[:year]}"
-            %p.site-description
-              = raw project[:description]
-            %ul.unstyled.geek-specs
-              %li
-                %b Stack:
-                = raw project[:technical][:stack]
-              %li
-                %b Deployment:
-                = raw project[:technical][:deployment]
-              - unless project[:technical][:comments].empty?
-                %li
-                  %b Comments:
-                  = raw project[:technical][:comments]
-        .bottom
+                = link_to project[:title], "##{project[:title]}"
+
+    .col-lg-10
+      - @projects.each do |project|
+        .blog-item{id: project[:title]}
+          .row
+            .col-lg-7
+              .blog-img
+                %img{:src => "#{project[:image]}"}
+            .col-lg-5
+              .col-lg-5
+                .date-wrap
+                  %span.date #{project[:country]}
+                  %span.month #{project[:year]}
+              .blog-side-item
+                .tags
+                  %ul.list-unstyled.tag
+                    - project[:technical][:tags].each do |stack|
+                      %li
+                        %a{:href => "#"} #{raw stack}
+          .row
+            .col-lg-10.col-sm-10
+              %h1
+                = link_to project[:title], project[:url], target: '_blank'
+              %p= raw project[:description]
+      /
+        .text-center
+          %ul.pagination
+            %li
+              %a{:href => "#"} «
+            %li.active
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a{:href => "#"} »
