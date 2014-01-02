@@ -206,7 +206,7 @@ TEAM_MEMBERS= [
     name: "Prasad Surase",
     title: "Software Engineer",
     image: "assets/team/prasad.jpg",
-    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Science from Fergusson College, Pune.",
+    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Application from Fergusson College, Pune.",
     technical: {
       facebook: "http://www.facebook.com/surase.prasad",
       stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
