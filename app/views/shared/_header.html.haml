@@ -1,0 +1,38 @@
+%header.header-frontend
+  .navbar.navbar-default.navbar-static-top
+    .container
+      .navbar-header
+        %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{:href => root_path}
+          Josh
+          %span Software
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav
+          %li.active
+            = link_to 'Home', root_path
+          %li
+            %a{:href => "#"} About
+          %li
+            %a{:href => "#"} Service
+          %li.dropdown
+            %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdown", :href => "#"}
+              Feature
+              %b.icon-angle-down
+            %ul.dropdown-menu
+              %li
+                %a{:href => "typography.html"} Typography
+              %li
+                %a{:href => "button.html"} Buttons
+          %li
+            %a{:href => "portfolio.html"} Portfolio
+          %li
+            %a{:href => "price.html"} Price
+          %li
+            %a{:href => "blog.html"} Blog
+          %li
+            %a{:href => "contact.html"} Contact
+          %li
+            %input.form-control.search{:placeholder => " Search", :type => "text"}/

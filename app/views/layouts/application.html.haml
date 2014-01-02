@@ -8,4 +8,6 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    = render 'shared/header'
     = yield
+    = render 'shared/footer'
