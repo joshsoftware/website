@@ -1,99 +1,11 @@
-!!!
-%html{:lang => "en"}
+<!DOCTYPE html>
+%html
   %head
-    %meta{:charset => "utf-8"}
-    - if content_for? :title
-      %title 
-        = yield(:title)
-    - else
-      %title Ruby on Rails experts in India | Josh Software Private Limited 
-    %meta{:name => "keywords", :content => "#{@keywords || 'Ruby on Rails, RoR, India, Rails development, open source, Web application development'}"}
-    %meta{:name => "description", :content => "#{@description || 'Ruby on Rails experts in India and we believe that programming is an Art'}"}
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-    =# favicon_link_tag 'assets/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
-
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
-    =# favicon_link_tag 'assets/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
-    =# favicon_link_tag 'assets/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
-
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
-    =# favicon_link_tag 'assets/apple-touch-icon-57x57-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
-
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
-    =# favicon_link_tag '/favicon.ico', :rel => 'shortcut icon'
-
-    = stylesheet_link_tag 'application'
+    %title Josh Software
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
-    /[if lt IE 9]
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    = csrf_meta_tags
   %body
-    #header
-      .wrap
-        .logo
-          %a{:href => "/"} Josh Software Pvt. Ltd.
-        .main-menu
-          %ul.nav.nav-pills
-            %li
-              %a{:href => "portfolio"} portfolio
-            %li
-              %a{:href => "team"} team
-            %li
-              %a{:href => "open_source"} open source
-            %li
-              %a{:href => "http://blog.joshsoftware.com", :target => "_blank"} blog
-    .container
-      = yield
-      .clear-footer
-    .footer
-      .pull-right.footer-social-links
-        //twitter
-        %a{:href => "https://twitter.com/joshsoftware", :target => "_blank", :title => 'Follow us @joshsoftware'}
-          %img{:src => 'assets/glyphicons_392_twitter.png'}
-        //facebook
-        %a{:href => "https://facebook.com/joshsoftware", :target => "_blank", :title => 'Visit our Facebook Page'}
-          %img{:src => 'assets/glyphicons_390_facebook.png'}
-        //blog subscripe
-        %a{:href => "http://blog.joshsoftware.com", :target => "_blank", :title => 'Subscribe to our blog'}
-          %img{:src => 'assets/glyphicons_397_rss.png'}
-        //linkedin
-        %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", :target => "_blank", :title => 'Visit our LinkedIn Page'}
-          %img{:src => 'assets/glyphicons_377_linked_in.png'}
-      .center
-        Copyright &copy; 2007 - 2013 Josh Software Pvt. Ltd.
-        %a.pull-right.credits{:rel => "popover", :data => {:placement => "top", :title => 'Credits'} } Credits
-      .credits-content
-        %ul
-          %li
-            Designed by
-            %a{:href => 'http://niestudio.com', :target => '_blank'} NieSTUDIO 
-          %li
-            Built with
-            %a{:href => "http://twitter.github.com/bootstrap", :target =>"_blank"} Bootstrap
-          %li
-            Icons by
-            %a{:href => 'http://glyphicons.com/', :target => '_blank'} GLYPHICONS.com
-          %li
-            Hosted on
-            %a{:href => 'http://heroku.com', :target => '_blank'} Heroku
-          %li
-            Opensourced on
-            %a{:href => 'https://github.com/joshsoftware/website', :target => '_blank'} Github
-
-//Google analytics
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script>
-try {
-var pageTracker = _gat._getTracker("UA-293708-3");
-pageTracker._trackPageview();
-} 
-catch(err) {}
-</script>
+    = yield

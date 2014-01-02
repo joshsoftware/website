@@ -1,46 +1,51 @@
 source 'https://rubygems.org'
-
+ruby '2.1.0'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'haml'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass'
-  gem 'sass-rails',    '~> 4.0.0'
-  gem 'compass-rails', '~> 2.0.alpha.0'
-  gem 'bootstrap-sass'
-  gem 'coffee-rails'
-  gem "jquery-scrollto-rails"
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '2.3.1'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
 
-  gem 'uglifier'
-end
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '3.0.4'
+
+gem 'haml', '4.0.4'
+gem 'actionpack-page_caching', '1.0.2' #use caches_pages in rails 4
+
 
 group :production do
-  gem 'dalli'
+  gem 'dalli', '2.6.4'
 end
 
-gem 'jquery-rails'
-gem 'actionpack-page_caching' #use caches_pages in rails 4
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+#gem 'turbolinks'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+# Use debugger
+# gem 'debugger', group: [:development, :test]
