@@ -14,14 +14,18 @@
       - @projects.each do |project|
         .blog-item{id: project[:title]}
           .row
+            .col-lg-10.col-sm-10
+              %h1
+                = link_to project[:title], project[:url], target: '_blank'
             .col-lg-7
               .blog-img
                 %img{:src => "#{project[:image]}"}
             .col-lg-5
-              .col-lg-5
-                .date-wrap
-                  %span.date #{project[:country]}
-                  %span.month #{project[:year]}
+              /
+                .col-lg-5
+                  .date-wrap
+                    %span.date #{project[:country]}
+                    %span.month #{project[:year]}
               .blog-side-item
                 .tags
                   %ul.list-unstyled.tag
@@ -30,8 +34,10 @@
                         %a{:href => "#"} #{raw stack}
           .row
             .col-lg-10.col-sm-10
-              %h1
-                = link_to project[:title], project[:url], target: '_blank'
+              %br
+              /
+                %h1
+                  = link_to project[:title], project[:url], target: '_blank'
               %p= raw project[:description]
       /
         .text-center
