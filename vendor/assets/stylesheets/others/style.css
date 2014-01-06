@@ -9,6 +9,11 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 
+/*colors as in josh logo*/
+@dark-red = '#F53D3B';
+@darker-red = '#B61C1D';
+@darkest-red = '#7D1308';
+
 body {
     color: #797979;
     font-family: 'Open Sans', sans-serif;
@@ -49,7 +54,7 @@ p {line-height: 22px}
 /*header*/
 
 .header-frontend .navbar {
-    margin-bottom: 0;
+    margin-bottom: 25px;
 }
 
 .navbar-default {
@@ -61,12 +66,16 @@ p {line-height: 22px}
     font-size: 30px;
     font-weight: 100;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0 0 0 15px;
 }
 
 .navbar-brand span{
     color: #f25f5b;
+}
+
+.navbar-brand img{
+    width: 250px; /*josh logo image width in header.*/
 }
 
 .header-frontend .navbar-collapse  ul.navbar-nav {
@@ -93,8 +102,8 @@ p {line-height: 22px}
 .header-frontend .nav li a.dropdown-toggle:focus,
 .header-frontend .nav li.active ul.dropdown-menu li a:hover,
 .header-frontend .nav li.active ul.dropdown-menu li.active a{
-    color: #fff ;
-    background-color: #f77b6f;
+    color: white ;
+    background-color: #F53D3B; /*navbar links pill color*/
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -969,17 +978,17 @@ ul.about-flex-slides {
 
 .carousel-control {
     background: #000000 !important;
-    bottom: 40%;
     color: #FFFFFF;
     font-size: 20px;
     left: 0;
-    line-height: 48px;
+    line-height: 33px;
     opacity: 0.5;
     position: absolute;
     text-align: center;
     text-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-    top: 40%;
-    width: 10%;
+    top: 45%;
+    bottom: 45%;
+    width: 5%;
 }
 
 .carousel-control:hover {
@@ -1198,7 +1207,7 @@ ul.about-flex-slides {
 .blog-item {
     margin-bottom: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 1px dashed #B61C1D; /*line below each testimonial or opensource */
 }
 
 .date-wrap, .comnt-wrap {
@@ -1250,7 +1259,7 @@ ul.about-flex-slides {
 
 .blog-item h1, .blog-item h1 a {
     font-size:25px;
-    color: #F77B6F;
+    color: #F53D3B;
     font-weight: 300;
     font-family: 'Fjalla One', sans-serif;
 }
@@ -1290,7 +1299,7 @@ ul.about-flex-slides {
 
 .blog-side-item ul li {
     margin-bottom: 5px;
-    border-bottom:1px solid #efefef;
+    border-bottom:1px solid #F53D3B; /* side list*/
     line-height: 35px;
 }
 
@@ -1333,8 +1342,8 @@ ul.tag li a {
 .footer {
     background: #475268;
     color: #fff;
-    padding: 50px 0;
-    margin-top: 50px;
+    padding: 25px 0 0 0;
+    margin-top: 25px;
     display: inline-block;
     width: 100%;
     font-weight: 300;

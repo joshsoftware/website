@@ -263,7 +263,7 @@ TEAM_MEMBERS= [
     name: "Megha Brid",
     title: "Senior Accountant",
     image: "assets/team/meghabrid.jpg",
-    description: " She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
+    description: "She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
     technical: {        
     },
     display: true,
@@ -296,36 +296,6 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 20
-  },
-  {
-    id: "elvin-efendi",
-    name: "Elvin Efendi",
-    title: "Software Engineer",
-    image: "assets/team/elvinefendi.jpg",
-    description: "Elvin has over 2+ years of experience in design & creation of various software using Ruby, C#, PHP. He uses RoR framework since December, 2011 when he first joined JoshSoftware. He has Bachelors Degree in Applied Mathematics/Informatics from the Baku State University, Baku, Azerbaijan. He is also passionate about Machine Learning",
-    technical: {        
-      twitter: "@ElvinEfendi",
-      facebook: "http://www.facebook.com/elvin.efendiyev",
-      linkedin: "http://www.linkedin.com/profile/view?id=104118088",
-      github: "ElvinEfendi"
-    },
-      display: true,
-      index: 21
-  },
-  {
-    id: "mohammad-baniasad",
-    name: "Mohammad Baniasad",
-    title: "Software Engineer",
-    image: "assets/team/mohammad.jpg",
-    description: "Mohammad has over 3+ years of experience in design & creation of various software using  C#, asp.net. He uses RoR framework since march, 2012 by joining JoshSoftware. He has Bachelors Degree in software engineering from IAU of Mashhad, Iran.",
-    technical: {        
-      twitter: "@MBaniasad",
-      facebook: "http://www.facebook.com/baniasad",
-      linkedin: "http://lnkd.in/UthJ98",
-      github: "mbaniasad"
-    },
-      display: true,
-      index: 22
   },
   {
     id: "pramod-shinde",

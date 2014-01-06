@@ -27,6 +27,10 @@ group :production do
   gem 'dalli', '2.6.4'
 end
 
+group :test do
+  gem 'watir-rails'
+end
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 #gem 'turbolinks'
 

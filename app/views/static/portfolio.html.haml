@@ -1,4 +1,3 @@
-= render partial: 'shared/breadcrumbs', locals: {data: 'Portfolio'}
 .container
   .row
     .col-lg-2
@@ -31,14 +30,18 @@
                   %ul.list-unstyled.tag
                     - project[:technical][:tags].each do |stack|
                       %li
-                        %a{:href => "#"} #{raw stack}
+                        - if stack == 'filter.js'
+                          = link_to 'filter.js', 'http://github.com/jiren/filter.js'
+                        - else
+                          = link_to stack, '#'
           .row
             .col-lg-10.col-sm-10
               %br
               /
                 %h1
                   = link_to project[:title], project[:url], target: '_blank'
-              %p= raw project[:description]
+              %blockquote
+                %p= raw project[:description]
       /
         .text-center
           %ul.pagination

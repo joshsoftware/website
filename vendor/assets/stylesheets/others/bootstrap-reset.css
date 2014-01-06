@@ -49,7 +49,8 @@
 /*text color*/
 
 .text-danger {
-    color: #FF6C60;
+    /*color: #FF6C60;*/
+    color: #FF0018;
 }
 
 .text-muted {

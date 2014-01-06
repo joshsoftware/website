@@ -1,8 +1,7 @@
-= render partial: 'shared/breadcrumbs', locals: {data: nil}
 .container
   .row
     .col-lg-3
-      .span5.about-carousel
+      .about-carousel
         #myCarousel.carousel.slide
           .carousel-inner
             .item.active
@@ -20,7 +19,6 @@
           %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
             %i.icon-angle-right
     .col-lg-9.about
-      %h3 Welcome to Josh Software
       %blockquote
         %p 
           Driven by enthusiasm and passion, Josh is India’s leading company in building innovative web applications working exclusively in 
