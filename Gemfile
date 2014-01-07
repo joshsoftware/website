@@ -23,7 +23,7 @@ gem 'haml', '4.0.4'
 gem 'actionpack-page_caching', '1.0.2' #use caches_pages in rails 4
 
 group :production do
-  #gem 'dalli', '2.6.4'
+  gem 'dalli', '2.6.4'
 end
 
 group :test do

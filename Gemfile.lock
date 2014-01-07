@@ -40,6 +40,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     commonwatir (4.0.0)
+    dalli (2.6.4)
     erubis (2.7.0)
     execjs (2.0.2)
     ffi (1.9.3)
@@ -137,6 +138,7 @@ PLATFORMS
 DEPENDENCIES
   actionpack-page_caching (= 1.0.2)
   coffee-rails (~> 4.0.0)
+  dalli (= 2.6.4)
   haml (= 4.0.4)
   jbuilder (~> 1.2)
   jquery-rails (= 3.0.4)
