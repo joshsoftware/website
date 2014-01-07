@@ -30,7 +30,7 @@ module Website
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.assets.paths += ["#{config.root}/app/assets/font", "#{config.root}/vendor/assets/images"]
+    config.assets.paths += ["#{config.root}/app/assets/font", "#{config.root}/app/assets/images/**/*", "#{config.root}/vendor/assets/images"]
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.eot *.svg *.ttf *.otf *.woff vendor/assets/stylesheets/**/*)
 
     ["#{config.root}/vendor/assets/javascripts", "#{config.root}/vendor/assets/stylesheets"].each do |d|

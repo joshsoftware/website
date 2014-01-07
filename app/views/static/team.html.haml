@@ -4,10 +4,10 @@
       %h1 Meet Our Team
       %p We work with forward thinking clients to create beautiful, honest and amazing things that bring positive results.
     - @team_members.each do |member|
-      - image = member[:image].blank? ? "assets/team/placeholder.gif" : member[:image]
+      - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
       .col-lg-4
         .person.text-center
-          %img{:alt => "", :src => image}
+          = image_tag image
         .person-info.text-center
           %h4
             %a{:href => "javascript:;"} #{member[:name]}
