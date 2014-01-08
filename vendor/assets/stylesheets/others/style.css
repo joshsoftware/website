@@ -10,9 +10,9 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 
 /*colors as in josh logo
-@dark-red = '#F53D3B';
-@darker-red = '#B61C1D';
-@darkest-red = '#7D1308';
+dark-red #D3403C
+darker-red #9D2322
+darkest-red #6B1809
  */
 
 body {
@@ -104,7 +104,7 @@ p {line-height: 22px}
 .header-frontend .nav li.active ul.dropdown-menu li a:hover,
 .header-frontend .nav li.active ul.dropdown-menu li.active a{
   color: white ;
-  background-color: #F53D3B; /*navbar links pill color*/
+  background-color: #D3403C; /*navbar links pill color*/
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -973,11 +973,11 @@ ul.about-flex-slides {
 /*about us*/
 
 .about a{
-  color: #F53D3B;
+  color: #D3403C;
 }
 
 .about a:hover{
-  color: #F53D3B;
+  color: #D3403C;
 }
 
 
@@ -1163,11 +1163,11 @@ ul.about-flex-slides {
 }
 
 .team-social-link a:hover {
-  color: #F53D3B;
+  color: #D3403C;
 }
 
 .person-info h4, .person-info h4 a {
-  color: #F53D3B;
+  color: #D3403C;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -1228,9 +1228,9 @@ ul.about-flex-slides {
 /*blog*/
 
 .blog-item {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px dashed #B61C1D; /*line below each testimonial or opensource */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #9D2322; /*line below each testimonial or opensource */
 }
 
 .date-wrap, .comnt-wrap {
@@ -1282,7 +1282,7 @@ ul.about-flex-slides {
 
 .blog-item h1, .blog-item h1 a {
   font-size:25px;
-  color: #F53D3B;
+  color: #D3403C;
   font-weight: 300;
   font-family: 'Fjalla One', sans-serif;
 }
@@ -1292,19 +1292,24 @@ ul.about-flex-slides {
   line-height: 35px;
 }
 
+.blog-item iframe {
+  margin: 20px 0;
+  line-height: 35px;
+}
+
 .blog-item h1 a:hover {
   text-decoration: underline;
 }
 
 .blog-item ul li a:hover {
-  color: #F53D3B;
+  color: #D3403C;
 }
 
 
 .author {
   margin:25px 0 30px 0;
   font-size: 16px;
-  color: #F53D3B;
+  color: #D3403C;
 }
 
 .author a, .shate-view a {
@@ -1328,7 +1333,7 @@ ul.about-flex-slides {
 
 .blog-side-item ul li {
   margin-bottom: 5px;
-  border-bottom:1px solid #F53D3B; /* side list*/
+  border-bottom:1px solid #D3403C; /* side list*/
   line-height: 35px;
 }
 
@@ -1338,7 +1343,7 @@ ul.about-flex-slides {
 }
 
 .blog-side-item ul li a:hover{
-  color: #F53D3B;
+  color: #D3403C;
 }
 
 .media p {
@@ -1356,6 +1361,23 @@ ul.tag li {
   border-bottom: none;
 }
 ul.tag li a {
+  border: 1px solid #e8e8e8;
+  padding: 0 10px;
+  border-radius:4px ;
+  -webkit-border-radius:4px ;
+}
+
+ul.tagg {
+  display: inline-block;
+  width: 100%;
+}
+
+ul.tagg li {
+  float: left;
+  margin: 10px 10px 0 0;
+  border-bottom: none;
+}
+ul.tagg li {
   border: 1px solid #e8e8e8;
   padding: 0 10px;
   border-radius:4px ;
@@ -1394,6 +1416,10 @@ ul.tag li a {
 
 .footer address a {
   color: #f37c6b;
+}
+
+.footer address p {
+  margin: 0 0 3px;
 }
 
 .tweet-box {
@@ -1457,7 +1483,7 @@ ul.tag li a {
 }
 
 .social-link-footer li a:hover {
-  background: #F53D3B;
+  background: #D3403C;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1839,5 +1865,3 @@ ul#filters > .active > span {
 .modified-span3{
   width: 20%;
 }
-
-

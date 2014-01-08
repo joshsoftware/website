@@ -28,13 +28,13 @@
                     %span.month #{project[:year]}
               .blog-side-item
                 .tags
-                  %ul.list-unstyled.tag
+                  %ul.list-unstyled.tagg
                     - project[:technical][:tags].each do |stack|
                       %li
                         - if stack == 'filter.js'
                           = link_to 'filter.js', 'http://github.com/jiren/filter.js'
                         - else
-                          = link_to stack, '#'
+                          = stack
           .row
             .col-lg-10.col-sm-10
               %br

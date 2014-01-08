@@ -13,19 +13,18 @@
       - @open_sources.each do |open_source|
         .blog-item{:id => open_source[:id]}
           .row
-            .col-lg-2.col-sm-2.text-right
-              .shate-view
-                - if open_source[:github]
-                  %ul.list-unstyled
-                    %li
-                      %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-                      %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-            .col-lg-10.col-sm-10
-              %h1
-                - if open_source[:url]
-                  %a{:href => open_source[:url], :target => "_blank"}= raw open_source[:title]
-                - else
-                  = open_source[:title]
+            .col-md-12
+              .row
+                .col-md-8
+                  %h1
+                    - if open_source[:url]
+                      %a{:href => open_source[:url], :target => "_blank"}= raw open_source[:title]
+                    - else
+                      = open_source[:title]
+                .col-md-4.text-right
+                  - if open_source[:github]
+                    %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
+                    %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
               %blockquote
                 %p 
                   = raw open_source[:details]
