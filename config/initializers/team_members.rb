@@ -103,21 +103,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 6
   },
-  {
-    id: "jiren-patel",
-    name: "Jiren Patel",
-    title: "Senior Software Engineer",
-    image: "http://www.gravatar.com/avatar/dde56ce7a6860df43fc2eee1336552dc",
-    description: "Jiren is a passionate and enthusiastic about programming languages. He is avid coder, <a href='http://www.flickr.com/photos/50103686@N03/8032359262/in/set-72157631641674776/' target='_blank'>biker</a>, gamer and loves to discover new things. He is the author of many opensouce projects i.e Filter.js, Splat, FeatherCMS. He has Bachelors Degree in Computer Engineering from Dharmsinh Desai University.",
-    technical: {
-      github: 'jiren',
-      blog: 'http://blog.joshsoftware.com/author/jiren',
-      linkedin: "http://in.linkedin.com/in/jirenpatel",
-      twitter: '@jirens'
-    },
-    display: true,
-    index: 7
-  },
   { 
     id: "sandipransing",
     name: "Sandip Ransing",
