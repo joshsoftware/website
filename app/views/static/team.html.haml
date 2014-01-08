@@ -6,7 +6,7 @@
       %p We work with forward thinking clients to create beautiful, honest and amazing things that bring positive results.
     - @team_members.each do |member|
       - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
-      .col-md-4
+      .col-md-3
         .person.text-center
           = image_tag image
         .person-info.text-center

@@ -972,6 +972,15 @@ ul.about-flex-slides {
 
 /*about us*/
 
+.about a{
+  color: #F53D3B;
+}
+
+.about a:hover{
+  color: #F53D3B;
+}
+
+
 .about-us img {
   width: 100%;
 }
@@ -1154,11 +1163,11 @@ ul.about-flex-slides {
 }
 
 .team-social-link a:hover {
-  color: #f37c6b;
+  color: #F53D3B;
 }
 
 .person-info h4, .person-info h4 a {
-  color: #f37c6b;
+  color: #F53D3B;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -1287,9 +1296,15 @@ ul.about-flex-slides {
   text-decoration: underline;
 }
 
+.blog-item ul li a:hover {
+  color: #F53D3B;
+}
+
+
 .author {
   margin:25px 0 30px 0;
   font-size: 16px;
+  color: #F53D3B;
 }
 
 .author a, .shate-view a {
@@ -1320,6 +1335,10 @@ ul.about-flex-slides {
 .blog-side-item ul li a{
   display: inline-block;
   width: 100%;
+}
+
+.blog-side-item ul li a:hover{
+  color: #F53D3B;
 }
 
 .media p {
@@ -1357,7 +1376,7 @@ ul.tag li a {
   background: #475268;
   color: #fff;
   padding: 25px 0 0 0;
-  margin-top: 25px;
+  /*margin-top: 25px;*/
   display: inline-block;
   width: 100%;
   font-weight: 300;
@@ -1793,10 +1812,10 @@ ul#filters > .active > span {
 /*parallax*/
 
 .parallax1 {
-  background: url("/assets/flat_parallax.jpg") no-repeat fixed 0 0 #f77b6f;
+  /*background: url("/assets/flat_parallax.jpg") no-repeat fixed 0 0 #f77b6f;*/
+  background: url("/assets/JOSHSoftware_LogoStack_Color.png") no-repeat fixed 0 0 #f77b6f;
   background-size:cover;
   width: 100%;
-  min-height: 400px;
   font-style: italic;
 }
 
