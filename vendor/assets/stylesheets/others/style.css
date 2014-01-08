@@ -1813,7 +1813,7 @@ ul#filters > .active > span {
 
 .parallax1 {
   /*background: url("/assets/flat_parallax.jpg") no-repeat fixed 0 0 #f77b6f;*/
-  background: url("/assets/JOSHSoftware_LogoStack_Color.png") no-repeat fixed 0 0 #f77b6f;
+  background: url("") no-repeat fixed 0 0 white;
   background-size:cover;
   width: 100%;
   font-style: italic;
