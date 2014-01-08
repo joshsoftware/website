@@ -927,7 +927,7 @@ ul.about-flex-slides {
 .breadcrumbs {
   background: #475268;
   color: #fff;
-  padding: 5px 0;
+  padding: 3px 0;
   margin-bottom: 25px;
 }
 
@@ -1815,3 +1815,6 @@ ul#filters > .active > span {
 .mbot50 {
   margin-bottom: 50px;
 }
+
+/*styles overridden by josh*/
+
