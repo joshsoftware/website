@@ -1,3 +1,4 @@
+= render 'shared/breadcrumbs', data: nil
 .container
   .row
     .text-center.feature-head
@@ -35,4 +36,5 @@
               - if member[:technical][:google_plus].present?
                 %a{:href => "#"}
                   %i.icon-google-plus
-          %p #{raw member[:description]} 
+          /
+            %p #{raw member[:description]} 

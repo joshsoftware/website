@@ -203,6 +203,7 @@ TEAM_MEMBERS= [
   {
     id: "rishi-jain",
     name: "Rishi Jain",
+    title: "Software Engineer",
     image:  "rishi.jpg",
     description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011.",
     technical: {
@@ -250,6 +251,7 @@ TEAM_MEMBERS= [
     image: "meghabrid.jpg",
     description: "She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
     technical: {        
+        facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
     index: 18

@@ -1,3 +1,4 @@
+= render 'shared/breadcrumbs', data: nil
 .container
   .row
     .col-lg-3
@@ -6,14 +7,16 @@
           .carousel-inner
             .item.active
               %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
-                =image_tag "ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"
-                .carousel-caption
-                  %p Books by us
+                = image_tag "ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"
+                /
+                  .carousel-caption
+                    %p Books by us
             .item
               %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
-                =image_tag "ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"
-                .carousel-caption
-                  %p Books by us
+                = image_tag "ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"
+                /
+                  .carousel-caption
+                    %p Books by us
           %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
             %i.icon-angle-left
           %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
@@ -31,10 +34,10 @@
         %p
           We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
         %p 
-          %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
-          %a{href: "http://circleci.com", target: '_blank'} CircleCi,
-          %a{href: "http://github.com", target: '_blank'} Github,
-          %a{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
+          %a.text-danger{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
+          %a.text-danger{href: "http://circleci.com", target: '_blank'} CircleCi,
+          %a.text-danger{href: "http://github.com", target: '_blank'} Github,
+          %a.text-danger{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
           and
-          %a{href: "http://trello.com", target: '_blank'} Trello
+          %a.text-danger{href: "http://trello.com", target: '_blank'} Trello
           are some of the tools we use to ensure our clients are always happy!
