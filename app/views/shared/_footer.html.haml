@@ -11,12 +11,13 @@
             Email:
             %a.text-danger{encode: "hex", href: "mailto:info@joshsoftware.com?subject="} info@joshsoftware.com
       .col-lg-6.col-sm-6
-        %h1 latest tweet
-        .tweet-box
-          .container.text-left
-            #{@tweet[0]}
-          .container.text-right
-            #{@tweet[1]}
+        - if @tweet.any?
+          %h1 latest tweet
+          .tweet-box
+            .container.text-left
+              #{@tweet[0]}
+            .container.text-right
+              #{@tweet[1]}
           /
             %em
               Please follow
