@@ -5,7 +5,7 @@
       %h1 Meet Our Team
     - @team_members.each do |member|
       - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
-      .col-md-3.modified-span3
+      .col-lg-3.col-md-3.col-sm-4.col-xs-6
         .person.text-center
           = image_tag image
         .person-info.text-center
