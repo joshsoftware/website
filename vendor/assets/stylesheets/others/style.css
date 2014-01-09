@@ -20,7 +20,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
-  font-size:13px;
+  font-size:15px;
 }
 
 
@@ -67,7 +67,7 @@ p {line-height: 22px}
   font-size: 30px;
   font-weight: 100;
   line-height: 30px;
-  margin-top: 20px;
+  margin: 10px 0;
   padding: 0 0 0 15px;
 }
 
@@ -127,12 +127,12 @@ p {line-height: 22px}
 
 
 .header-frontend .navbar {
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .header-frontend .navbar-nav > li  {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .header-frontend  .navbar-nav > li > a {
@@ -927,7 +927,7 @@ ul.about-flex-slides {
 .breadcrumbs {
   background: #8791A5;
   color: #fff;
-  padding: 3px 0;
+  padding: 1px 0; /*changes here will affect the contact us page*/
   margin-bottom: 25px;
 }
 
@@ -955,7 +955,7 @@ ul.about-flex-slides {
 /*contact*/
 
 .contact-map {
-  margin-top: -40px;
+  margin-top: -25px; /*changes here will affect the breadcrumb*/
   margin-bottom: 40px;
 }
 
@@ -1483,7 +1483,7 @@ ul.tagg li {
 }
 
 .social-link-footer li a:hover {
-  background: #D3403C;
+  background: #D3403C; /*footer social links*/
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1662,12 +1662,13 @@ a.btn-purchase:hover, a.btn-purchase:focus{
 /*clients*/
 
 .clients {
-  margin-top: 50px;
+  margin-top: 13px;
+  margin-bottom: -10px;
 }
 
 .clients ul li {
   display: inline-block;
-  margin: 0 30px;
+  margin: 10px;
 }
 
 
@@ -1839,9 +1840,11 @@ ul#filters > .active > span {
 
 .parallax1 {
   /*background: url("/assets/flat_parallax.jpg") no-repeat fixed 0 0 #f77b6f;*/
-  background: url("") no-repeat fixed 0 0 white;
+  /*background: url("") no-repeat fixed 0 0 #EBEEF3;*/
   background-size:cover;
+  background: #EBEEF3;
   width: 100%;
+  min-height: 80px;
   font-style: italic;
 }
 
@@ -1864,4 +1867,8 @@ ul#filters > .active > span {
 /*styles overridden by josh*/
 .modified-span3{
   width: 20%;
+}
+
+.logo_width {
+  width: 155px;
 }

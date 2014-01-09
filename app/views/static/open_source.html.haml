@@ -25,6 +25,5 @@
                   - if open_source[:github]
                     %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
                     %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-              %blockquote
-                %p 
-                  = raw open_source[:details]
+              %p 
+                = raw open_source[:details]

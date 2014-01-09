@@ -16,6 +16,7 @@ class StaticController < ApplicationController
 
   def home
     @testimonials = TESTIMONIES.select{|e| e[:display]}
+    @tweet = Tweet.latest_tweet('joshsoftware')
   end
 
   def testimonials

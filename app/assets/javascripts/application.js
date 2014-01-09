@@ -22,4 +22,10 @@
 //= require fancybox/jquery.fancybox.pack.js
 //= require revolution_slider/jquery.themepunch.plugins.min.js
 //= require revolution_slider/jquery.themepunch.revolution.min.js
+//= require superfish/superfish.js
+//= require others/jquery.isotope.js
+//= require others/jquery.easing.min.js
+//= require others/link-hover.js
+//= require others/jquery.fancybox.pack.js
 //= require others/common-scripts.js
+//= require others/revulation-slide.js

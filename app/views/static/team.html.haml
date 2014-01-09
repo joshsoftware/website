@@ -3,7 +3,6 @@
   .row
     .text-center.feature-head
       %h1 Meet Our Team
-      %p We work with forward thinking clients to create beautiful, honest and amazing things that bring positive results.
     - @team_members.each do |member|
       - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
       .col-md-3.modified-span3
@@ -11,7 +10,7 @@
           = image_tag image
         .person-info.text-center
           %h4
-            %a{:href => "javascript:;"} #{member[:name]}
+            %a{:href => "#"} #{member[:name]}
           %p.text-muted #{member[:title]}
           - if member[:technical].present?
             .team-social-link

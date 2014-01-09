@@ -22,44 +22,81 @@
           %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
             %i.icon-angle-right
     .col-lg-9.about
-      %blockquote
-        %p 
-          Driven by enthusiasm and passion, Josh is India’s leading company in building innovative web applications working exclusively in 
-          %span.text-danger Ruby On Rails
-          since 2007.
-        %p 
-          We partner with our clients from concept, design, implementation and maintenance. We believe that
-          %span.text-danger Programming is An Art
-          and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
-        %p
-          We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
-        %p 
-          %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
-          %a{href: "http://circleci.com", target: '_blank'} CircleCi,
-          %a{href: "http://github.com", target: '_blank'} Github,
-          %a{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
-          and
-          %a{href: "http://trello.com", target: '_blank'} Trello
-          are some of the tools we use to ensure our clients are always happy!
+      %p 
+        Driven by enthusiasm and passion, Josh is India’s leading company in building innovative web applications working exclusively in 
+        %span.text-danger Ruby On Rails
+        since 2007.
+      %p 
+        We partner with our clients from concept, design, implementation and maintenance. We believe that
+        %span.text-danger Programming is An Art
+        and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
+      %p
+        We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
+      %p 
+        %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
+        %a{href: "http://circleci.com", target: '_blank'} CircleCi,
+        %a{href: "http://github.com", target: '_blank'} Github,
+        %a{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
+        and
+        %a{href: "http://trello.com", target: '_blank'} Trello
+        are some of the tools we use to ensure our clients are always happy!
+.container
+  .row
+    .col-md-12
+      .about-testimonial.boxed-style.about-flexslider
+        %section.slider
+          .flexslider
+            %ul.slides.about-flex-slides
+              - @testimonials.each do |testimonial|
+                %li
+                  .about-testimonial-image
+                    =# image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
+                  %a.about-testimonial-author{:href => "#"} #{testimonial[:endorser]}
+                  %span.about-testimonial-company #{testimonial[:company]}
+                  .about-testimonial-content
+                    %p.about-testimonial-quote
+                      #{testimonial[:endorsement]}
 .parallax1
-  .container
-    .clients
-      .container
-        .row
-          .col-lg-12.text-center
-            %ul.list-unstyled
-              %li
-                %a{:href => "#"}
-                  = image_tag 'logo3.png'
-              %li
-                %a{:href => "#"}
-                  = image_tag 'logo3.png'
-              %li
-                %a{:href => "#"}
-                  = image_tag 'logo3.png'
-              %li
-                %a{:href => "#"}
-                  = image_tag 'logo3.png'
-              %li
-                %a{:href => "#"}
-                  = image_tag 'logo3.png'
+  .clients
+    .row
+      .col-lg-12.text-center
+        %ul.list-unstyled
+          %li
+            = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/educade-logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
+:javascript
+  RevSlide.initRevolutionSlider();
+
+  $(window).load(function() {
+      $('[data-zlname = reverse-effect]').mateHover({
+          position: 'y-reverse',
+          overlayStyle: 'rolling',
+          overlayBg: '#fff',
+          overlayOpacity: 0.7,
+          overlayEasing: 'easeOutCirc',
+          rollingPosition: 'top',
+          popupEasing: 'easeOutBack',
+          popup2Easing: 'easeOutBack'
+      });
+  });
+
+  $(window).load(function() {
+      $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider) {
+              $('body').removeClass('loading');
+          }
+      });
+  });
+
+  //    fancybox
+  jQuery(".fancybox").fancybox();
