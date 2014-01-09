@@ -414,10 +414,10 @@ p {line-height: 22px}
 }
 
 .about-testimonial {
-  margin:20px 0 10px 0;
+  margin:20px 0 0 0;
   position: relative;
-  border: 1px solid #B22222;
-  border-radius: 5px;
+  /*border: 1px solid #B22222;
+  border-radius: 5px;*/
 }
 
 ul.about-flex-slides {
@@ -1874,5 +1874,5 @@ ul#filters > .active > span {
 }
 
 .logo_width {
-  width: 155px;
+  width: 150px;
 }

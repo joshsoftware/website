@@ -42,7 +42,7 @@
         are some of the tools we use to ensure our clients are always happy!
 .container
   .row
-    .col-md-12
+    .col-lg-6
       .about-testimonial.boxed-style.about-flexslider
         %section.slider
           .flexslider
@@ -50,30 +50,42 @@
               - @testimonials.each do |testimonial|
                 %li
                   .about-testimonial-image
-                    =# image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
+                    /%img{:alt => "", :src => "img/testimonial-img-1.jpg"}/
                   .about-testimonial-author #{testimonial[:endorser]}
                   %span.about-testimonial-company #{testimonial[:company]}
                   .about-testimonial-content
                     %p.about-testimonial-quote
                       #{testimonial[:endorsement]}
-/
-  .parallax1
-    .clients
-      .row
-        .col-lg-12.text-center
-          %ul.list-unstyled
-            %li
-              = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
-            %li
-              = image_tag "client_logos/educade-logo.png", class: 'logo_width'
-            %li
-              = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
-            %li
-              = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
-            %li
-              = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
-            %li
-              = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
+    .col-lg-6
+      .about-testimonial.boxed-style.about-flexslider
+        %section.slider
+          .flexslider
+            %ul.slides.about-flex-slides
+              %li
+                .about-testimonial-image
+                  /%img{:alt => "", :src => "img/testimonial-img-1.jpg"}/
+                .about-testimonial-author{:href => "#"} Ericson Reagan
+                %span.about-testimonial-company ABC Realestate LLC
+                .about-testimonial-content
+                  %p.about-testimonial-quote
+                    Pellentesque et pulvinar enim. Quisque at tempor ligula. Maecenas augue ante, euismod vitae egestas sit amet, accumsan eu nulla. Nullam tempor lectus a ligula lobortis pretium. Donec ut purus sed tortor malesuada venenatis eget eget lorem.
+.parallax1
+  .clients
+    .container
+      .col-lg-12.text-center
+        %ul.list-unstyled
+          %li
+            = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/educade-logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
+          %li
+            = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
 :javascript
   RevSlide.initRevolutionSlider();
 
