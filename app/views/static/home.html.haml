@@ -51,28 +51,29 @@
                 %li
                   .about-testimonial-image
                     =# image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
-                  %a.about-testimonial-author{:href => "#"} #{testimonial[:endorser]}
+                  .about-testimonial-author #{testimonial[:endorser]}
                   %span.about-testimonial-company #{testimonial[:company]}
                   .about-testimonial-content
                     %p.about-testimonial-quote
                       #{testimonial[:endorsement]}
-.parallax1
-  .clients
-    .row
-      .col-lg-12.text-center
-        %ul.list-unstyled
-          %li
-            = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
-          %li
-            = image_tag "client_logos/educade-logo.png", class: 'logo_width'
-          %li
-            = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
-          %li
-            = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
-          %li
-            = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
-          %li
-            = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
+/
+  .parallax1
+    .clients
+      .row
+        .col-lg-12.text-center
+          %ul.list-unstyled
+            %li
+              = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
+            %li
+              = image_tag "client_logos/educade-logo.png", class: 'logo_width'
+            %li
+              = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
+            %li
+              = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
+            %li
+              = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
+            %li
+              = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
 :javascript
   RevSlide.initRevolutionSlider();
 
