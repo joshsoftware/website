@@ -1,5 +1,6 @@
 class StaticController < ApplicationController
   caches_page :portfolio, :team, :testimonials, :open_source
+  before_action :load_tweet
 
   def portfolio
     @projects = PROJECTS.select { |p| p[:display] }
@@ -16,7 +17,6 @@ class StaticController < ApplicationController
 
   def home
     @testimonials = TESTIMONIES.select{|e| e[:display]}
-    @tweet = Tweet.latest_tweet('joshsoftware')
   end
 
   def testimonials
@@ -33,5 +33,11 @@ class StaticController < ApplicationController
 
   def ping
     render :text => 'Hello'
+  end
+
+  private
+
+  def load_tweet
+    @tweet = Tweet.latest_tweet('joshsoftware')
   end
 end
