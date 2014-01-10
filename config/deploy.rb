@@ -16,7 +16,7 @@ set :repository, 'git@github.com:joshsoftware/website.git'
 set :branch, 'newtemplate'
 set :app_env, 'production'
 
-set :identity_file, "/home/#{ENV['user']}/.ssh/id_joshsite_rsa"
+set :identity_file, "#{ENV['HOME']}/.ssh/id_joshsite_rsa"
 set :user, 'deploy'    # Username in the server to SSH to.
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
