@@ -68,5 +68,7 @@ Website::Application.configure do
 end
 
 data = YAML.load_file("#{Rails.root}/config/credentials.yml")
-ENV['TWITTER_CONSUMER_KEY'] = data['TWITTER_CONSUMER_KEY']
-ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
+if data
+  ENV['TWITTER_CONSUMER_KEY'] = data['TWITTER_CONSUMER_KEY']
+  ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
+end
