@@ -14,7 +14,6 @@ set :domain, 'intranet.joshsoftware.com'
 set :deploy_to, '/home/deploy/projects/website'
 set :repository, 'git@github.com:joshsoftware/website.git'
 set :branch, 'newtemplate'
-set :app_env, 'production'
 
 set :identity_file, "#{ENV['HOME']}/.ssh/id_joshsite_rsa"
 set :user, 'deploy'    # Username in the server to SSH to.
@@ -22,7 +21,7 @@ set :user, 'deploy'    # Username in the server to SSH to.
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
 set :shared_paths, ['config/database.yml', 'config/credentials.yml', 'log', 'tmp']
-set :app_path, lambda { "#{deploy_to}/#{current_path}" }
+#set :app_path, lambda { "#{deploy_to}/#{current_path}" }
 
 # Optional settings:
 #   set :port, '30000'     # SSH port number.
@@ -44,6 +43,9 @@ end
 task :setup => :environment do
   queue! %[mkdir -p "#{deploy_to}/shared/log"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/shared/log"]
+
+  queue! %[mkdir -p "#{deploy_to}/shared/tmp"]
+  queue! %[chmod g+rx,u+rwx "#{deploy_to}/shared/tmp"]
 
   queue! %[mkdir -p "#{deploy_to}/shared/config"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/shared/config"]
