@@ -27,6 +27,7 @@ gem 'mina'
 
 group :production do
   gem 'dalli', '2.6.4'
+  gem 'therubyracer'
 end
 
 group :test do

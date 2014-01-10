@@ -16,12 +16,14 @@ set :repository, 'git@github.com:joshsoftware/website.git'
 set :branch, 'newtemplate'
 set :app_env, 'production'
 
+set :identity_file, "/home/#{ENV['user']}/.ssh/id_joshsite_rsa"
+set :user, 'deploy'    # Username in the server to SSH to.
+
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'log', 'tmp']
+set :shared_paths, ['config/database.yml', 'config/credentials.yml', 'log', 'tmp']
 
 # Optional settings:
-set :user, 'deploy'    # Username in the server to SSH to.
 #   set :port, '30000'     # SSH port number.
 
 # This task is the environment that is loaded for most commands, such as
