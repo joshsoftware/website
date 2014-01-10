@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
-  caches_page :portfolio, :team, :testimonials, :open_source
   before_action :load_tweet
+  caches_page :portfolio, :team, :testimonials, :open_source
 
   def portfolio
     @projects = PROJECTS.select { |p| p[:display] }

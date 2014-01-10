@@ -30,3 +30,7 @@ Website::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+data = YAML.load_file("#{Rails.root}/config/credentials.yml")
+ENV['TWITTER_CONSUMER_KEY'] = data['TWITTER_CONSUMER_KEY']
+ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
