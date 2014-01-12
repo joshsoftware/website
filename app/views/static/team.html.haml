@@ -11,10 +11,11 @@
   .modal.fade{"aria-hidden" => "true", "aria-labelledby" => "#{member[:name]}", role: "dialog", tabindex: "-1", id: "#{member[:id]}-modal"}
     .modal-dialog
       .modal-content
-        .modal-body
+        .modal-body.well
           %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
           .container.text-center
             = render 'member_data', member: member
           .container
             %p
-              #{member[:description]}
+              = raw member[:description]
+
