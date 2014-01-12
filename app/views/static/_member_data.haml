@@ -1,0 +1,30 @@
+.person.text-center
+  - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
+  = image_tag image
+.person-info.text-center
+  %h4
+    = link_to member[:name], '#', 'data-toggle'=>"modal", 'data-target'=>"#{member[:id]}-modal"
+  %p.text-muted #{member[:title]}
+  - if member[:technical].present?
+    .team-social-link
+      - if member[:technical][:github].present?
+        %a{:target => "_blank", :href => "http://github.com/#{member[:technical][:github]}"}
+          %i.icon-github
+      - if member[:technical][:facebook].present?
+        %a{:target => "_blank", :href => "#{member[:technical][:facebook]}"}
+          %i.icon-facebook
+      - if member[:technical][:twitter].present?
+        %a{:target => "_blank", :href => "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}"}
+          %i.icon-twitter
+      - if member[:technical][:pinterest].present?
+        %a{:href => "#"}
+          %i.icon-pinterest
+      - if member[:technical][:linkedin].present?
+        %a{:target => "_blank", :href => "#{member[:technical][:linkedin]}"}
+          %i.icon-linkedin
+      - if member[:technical][:blog].present?
+        %a{:target => "_blank", :href => "#{member[:technical][:blog]}"}
+          %i.icon-rss
+      - if member[:technical][:google_plus].present?
+        %a{:href => "#"}
+          %i.icon-google-plus

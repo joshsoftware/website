@@ -27,3 +27,4 @@
 //= require others/link-hover.js
 //= require others/common-scripts.js
 //= require others/revulation-slide.js
+//= require others/carousel.js
