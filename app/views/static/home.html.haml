@@ -42,7 +42,7 @@
         are some of the tools we use to ensure our clients are always happy!
 .container
   .row
-    .col-lg-6
+    .col-lg-8
       .about-testimonial.boxed-style.about-flexslider
         %section.slider
           .flexslider
@@ -56,19 +56,12 @@
                   .about-testimonial-content
                     %p.about-testimonial-quote
                       #{testimonial[:endorsement]}
-    .col-lg-6
-      .about-testimonial.boxed-style.about-flexslider
-        %section.slider
-          .flexslider
-            %ul.slides.about-flex-slides
-              %li
-                .about-testimonial-image
-                  /%img{:alt => "", :src => "img/testimonial-img-1.jpg"}/
-                .about-testimonial-author{:href => "#"} Fun at JOSH
-                %span.about-testimonial-company Fun at JOSH
-                .about-testimonial-content
-                  %p.about-testimonial-quote
-                    Pictures here
+    .col-lg-3
+      %h4
+        %img{:src => 'assets/glyphicons_273_drink.png', :title => 'Fun at Josh'}
+          Fun at JOSH
+      #fun.align-center
+        %img{:src => 'assets/loading.gif'}
 .parallax1
   .clients
     .container
@@ -110,6 +103,11 @@
           }
       });
   });
+
+  $(window).load(function() {
+    image_slide();
+  });
+
 
   //    fancybox
   //jQuery(".fancybox").fancybox();
