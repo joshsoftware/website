@@ -8,15 +8,9 @@
             .item.active
               %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
                 = image_tag "ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"
-                /
-                  .carousel-caption
-                    %p Books by us
             .item
               %a{:href => "http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book", :target => "_blank"}
                 = image_tag "ruby_and_mongo_db_book.png", :alt => "Ruby and MongoDB Web Development"
-                /
-                  .carousel-caption
-                    %p Books by us
           %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"}
             %i.icon-angle-left
           %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"}
@@ -42,21 +36,19 @@
         are some of the tools we use to ensure our clients are always happy!
 .container
   .row
-    .col-lg-9
+    .col-lg-9.col-md-9.col-sm-9.col-xs-12
       .about-testimonial.boxed-style.about-flexslider
         %section.slider
           .flexslider
             %ul.slides.about-flex-slides
               - @testimonials.each do |testimonial|
                 %li
-                  .about-testimonial-image
-                    /%img{:alt => "", :src => "img/testimonial-img-1.jpg"}/
                   .about-testimonial-author #{testimonial[:endorser]}
                   %span.about-testimonial-company #{testimonial[:company]}
                   .about-testimonial-content
                     %p.about-testimonial-quote
                       #{testimonial[:endorsement]}
-    .col-lg-3
+    .col-lg-3.col-md-3.col-sm-3.col-xs-9
       .about-testimonial
         = image_tag 'glyphicons_273_drink.png', title: 'Fun at Josh'
         .about-testimonial-author Fun at JOSH
