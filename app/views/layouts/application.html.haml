@@ -8,7 +8,7 @@
     %meta{:name => "description", :content => "#{@description || 'Ruby on Rails experts in India and we believe that programming is an Art'}"}
 
     = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
+    = javascript_include_tag "application", params[:controller]
     = csrf_meta_tags
   %body
     = render 'shared/header'

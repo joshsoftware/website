@@ -97,7 +97,9 @@
 
   $(window).load(function() {
       $('.flexslider').flexslider({
-          animation: "slide",
+          animation: "slide", //slide or swing
+          slideshow: false, //automatic slideshow
+          reverse: false,
           start: function(slider) {
               $('body').removeClass('loading');
           }

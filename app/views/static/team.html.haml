@@ -4,36 +4,18 @@
     .text-center.feature-head
       %h1 Meet Our Team
     - @team_members.each do |member|
-      - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
       .col-lg-3.col-md-3.col-sm-4.col-xs-12
-        .person.text-center
-          = image_tag image
-        .person-info.text-center
-          %h4
-            %a{:href => "#"} #{member[:name]}
-          %p.text-muted #{member[:title]}
-          - if member[:technical].present?
-            .team-social-link
-              - if member[:technical][:github].present?
-                %a{:target => "_blank", :href => "http://github.com/#{member[:technical][:github]}"}
-                  %i.icon-github
-              - if member[:technical][:facebook].present?
-                %a{:target => "_blank", :href => "#{member[:technical][:facebook]}"}
-                  %i.icon-facebook
-              - if member[:technical][:twitter].present?
-                %a{:target => "_blank", :href => "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}"}
-                  %i.icon-twitter
-              - if member[:technical][:pinterest].present?
-                %a{:href => "#"}
-                  %i.icon-pinterest
-              - if member[:technical][:linkedin].present?
-                %a{:target => "_blank", :href => "#{member[:technical][:linkedin]}"}
-                  %i.icon-linkedin
-              - if member[:technical][:blog].present?
-                %a{:target => "_blank", :href => "#{member[:technical][:blog]}"}
-                  %i.icon-rss
-              - if member[:technical][:google_plus].present?
-                %a{:href => "#"}
-                  %i.icon-google-plus
-          /
-            %p #{raw member[:description]} 
+        = render 'member_data', member: member
+
+- @team_members.each do |member|
+  .modal.fade{"aria-hidden" => "true", "aria-labelledby" => "#{member[:name]}", role: "dialog", tabindex: "-1", id: "#{member[:id]}-modal"}
+    .modal-dialog
+      .modal-content
+        .modal-body.well
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+          .container.text-center
+            = render 'member_data', member: member
+          .container
+            %p
+              = raw member[:description]
+
