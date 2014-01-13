@@ -1,6 +1,6 @@
 .person.text-center
   - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
-  = image_tag image
+  = image_tag image, alt: member[:name], title: member[:name]
 .person-info.text-center
   %h4
     = link_to member[:name], '#', 'data-toggle'=>"modal", 'data-target'=>"#{member[:id]}-modal"
