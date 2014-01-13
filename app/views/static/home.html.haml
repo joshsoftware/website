@@ -42,7 +42,7 @@
         are some of the tools we use to ensure our clients are always happy!
 .container
   .row
-    .col-lg-8
+    .col-lg-9
       .about-testimonial.boxed-style.about-flexslider
         %section.slider
           .flexslider
@@ -57,28 +57,34 @@
                     %p.about-testimonial-quote
                       #{testimonial[:endorsement]}
     .col-lg-3
-      %h4
-        %img{:src => 'assets/glyphicons_273_drink.png', :title => 'Fun at Josh'}
-          Fun at JOSH
+      .about-testimonial
+        = image_tag 'glyphicons_273_drink.png', title: 'Fun at Josh'
+        .about-testimonial-author Fun at JOSH
       #fun.align-center
-        %img{:src => 'assets/loading.gif'}
+        = image_tag 'loading.gif'
 .parallax1
   .clients
     .container
       .col-lg-12.text-center
         %ul.list-unstyled
           %li
-            = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
+            %a{href: 'portfolio/#Altizon'}
+              = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
           %li
-            = image_tag "client_logos/educade-logo.png", class: 'logo_width'
+            %a{href: 'portfolio/#Educade'}
+              = image_tag "client_logos/educade-logo.png", class: 'logo_width'
           %li
-            = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
+            %a{href: 'portfolio/#Phalcomm'}
+              = image_tag "client_logos/phalcomm_logo.png", class: 'logo_width'
           %li
-            = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
+            %a{href: 'portfolio/#'}
+              = image_tag "client_logos/qwikc_logo.png", class: 'logo_width'
           %li
-            = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
+            %a{href: 'portfolio/#TourConnect'}
+              = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
           %li
-            = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
+            %a{href: 'portfolio/#Shopgodt'}
+              = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'
 :javascript
   RevSlide.initRevolutionSlider();
 
