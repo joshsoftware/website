@@ -90,6 +90,6 @@ namespace :application do
   desc 'Restart the application'
   task :restart => :environment do
     invoke 'passenger:restart_passenger'
-    invoke 'nginx:restart'
+    #invoke 'nginx:restart'
   end
 end
