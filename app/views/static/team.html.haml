@@ -5,7 +5,15 @@
       %h1 Meet Our Team
     - @team_members.each do |member|
       .col-lg-3.col-md-3.col-sm-4.col-xs-12
-        = render 'member_data', member: member
+        .person.text-center
+          - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
+          %a{href: '#'}
+            = image_tag image, alt: member[:name], title: member[:name], 'data-toggle'=>"modal", 'data-target'=>"#{member[:id]}-modal"
+        .person-info.text-center
+          %h4
+            = link_to member[:name], '#', 'data-toggle'=>"modal", 'data-target'=>"#{member[:id]}-modal"
+          %p.text-muted #{member[:title]}
+          = render 'member_data', member: member
 
 - @team_members.each do |member|
   .modal.fade{"aria-hidden" => "true", "aria-labelledby" => "#{member[:name]}", role: "dialog", tabindex: "-1", id: "#{member[:id]}-modal"}
@@ -14,7 +22,14 @@
         .modal-body.well
           %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
           .container.text-center
-            = render 'member_data', member: member
+            .person.text-center
+              - image = member[:image].blank? ? "team/placeholder.gif" : "team/#{member[:image]}"
+              = image_tag image, alt: member[:name], title: member[:name]
+            .person-info.text-center
+              %h4
+                = member[:name]
+              %p.text-muted #{member[:title]}
+              = render 'member_data', member: member
           .container
             %p
               = raw member[:description]
