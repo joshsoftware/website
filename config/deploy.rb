@@ -67,15 +67,29 @@ task :deploy => :environment do
     invoke :'rails:assets_precompile'
 
     to :launch do
-      queue "touch #{deploy_to}/tmp/restart.txt"
+      invoke 'application:restart'
     end
   end
 end
 
-# For help in making your deploy script, see the Mina documentation:
-#
-#  - http://nadarei.co/mina
-#  - http://nadarei.co/mina/tasks
-#  - http://nadarei.co/mina/settings
-#  - http://nadarei.co/mina/helpers
+namespace :passenger do
+  desc 'restart passenger'
+  task :restart_passenger do
+    queue "touch #{deploy_to}/tmp/restart.txt"
+  end
+end
 
+namespace :nginx do
+  desc 'restart nginx server'
+  task :restart do
+    queue "sudo service restart nginx"
+  end
+end
+
+namespace :application do
+  desc 'Restart the application'
+  task :restart => :environment do
+    invoke 'passenger:restart_passenger'
+    invoke 'nginx:restart'
+  end
+end
