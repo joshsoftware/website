@@ -18,16 +18,32 @@ OPEN_SOURCE= [
     details: "Filter.js is the javascript library for client-side searches. It has multiple filter criteria that can be specified and used in conjunction with each other. It has easy integration with jQuery templates and mustache. See the demo <a href='http://jiren.github.com/filter.js/filterjs.html' target='_blank'>here</a> <br> Its been covered by <a href='http://webscripts.softpedia.com/script/Forms-and-Controls-C-C/Filter-js-71265.html' target='_blank'>Softpedia</a> and <a href='http://twitter.com/smashingmag/status/122082466726019072' target='_blank'>Smashing Magazine</a>", 
     display: true
   },
-
+  
   {
-    id: "feather_cms",
-    title: "Feather CMS",
-    url: "https://github.com/joshsoftware/feather_cms",
+    id: "sso-devise-omniauth",
+    title: "Single Sign On using Devise and Omniauth",
+    url: "http://blog.joshsoftware.com/2010/12/16/multiple-applications-with-devise-omniauth-and-single-sign-on/",
     github: {
       user: 'joshsoftware',
-      repo: 'feather_cms'
+      repo: 'sso-devise-omniauth-provider'
     },
-    details: "We have felt the pain of integrating static pages into a Rails application. There are plenty of gems available for this (Radiant, Locomotiv, etc.) but they are very heavy for what we need.<br> So, we built FeatherCMS. As the name suggests, its a Do-It-Yourself, lightweight CMS - just pages, caching and nothing more!",
+    details: "We wanted to solve these problems:<br><ul>
+      <li>A single User Manager application (which will authenticate ALL users with different roles)</li>
+      <li>Different internal applications which talk to User Manager for authentication</li>
+      <li>User should be able to login/sign-up via Social Networks like Twitter and Facebook.</li>
+      <li>Single Sign On between all applications.</li>",
+    display: true
+  },
+  
+  {
+    id: "streamtablejs",
+    title: "StreamTable.js",
+    url: "https://github.com/jiren/StreamTable.js",
+    github: {
+      user: 'jiren',
+      repo: 'StreamTable.js'
+    },
+    details: "StreamTable.js streams data for tables in the background, updates and renders them using templating frameworks like Mustache.js, HandleBars.js",
     display: true
   },
 
@@ -44,38 +60,26 @@ OPEN_SOURCE= [
   },
 
   {
-    id: "supportbee",
-    title: "SupportBee",
-    url: "http://supportbee.com",
+    id: "eJosh",
+    title: "eJosh - custom CMS/ERP for SME",
+    url: "https://github.com/joshsoftware/eJosh",
     github: {
-      user: 'punerb',
-      repo: 'supportbee'
+      user: 'joshsoftware',
+      repo: 'eJosh'
     },
-    details: "We are helping to build the supportbee client gem. This is a command line tool that can fetch tickets, see owners, assign labels, generate reports all from command line.",
+    details: "eJOSH is a custom CMS. eJOSH is Rails application that comes with a list of pre-defined layouts and color themes and it is ready to use to build your website or to use for your intranet with it's available plugins (employee management, Leave management, Timesheet management, etc..) and it has built in user management (with 3 different roles).<br> It has built in dynamic sitemap generation for SEO compliance. Capistrano default configuration is included that can be modified to fit your needs.",
     display: true
   },
 
   {
-    id: "blitzio",
-    title: "Blitz.io",
-    url: "http://blitz.io",
+    id: "feather_cms",
+    title: "Feather CMS",
+    url: "https://github.com/joshsoftware/feather_cms",
     github: {
-      user: 'punerb',
-      repo: 'blitz-ruby'
+      user: 'joshsoftware',
+      repo: 'feather_cms'
     },
-    details: "We have been helping blitz.io update their gem with peripheral functionality. This is as part of Open Source Friday meetups.",
-    display: true
-  },
-
-  {
-    id: "ispunity",
-    title: "ISPunity",
-    url: "http://rubygems.org/gems/ispunity",
-    github: {
-      user: 'aruntomar',
-      repo: 'isp_unity'
-    },
-    details: "ISPunity is an open source application that integrates multiple Internet connections for load balancing and failover. It 'magically' balances the Internet load over these different connections. This also means that the more connections we use, the faster and better connectivity we get! It also automatically handles failover to another connection in case any of the lines go down ",
+    details: "We have felt the pain of integrating static pages into a Rails application. There are plenty of gems available for this (Radiant, Locomotiv, etc.) but they are very heavy for what we need.<br> So, we built FeatherCMS. As the name suggests, its a Do-It-Yourself, lightweight CMS - just pages, caching and nothing more!",
     display: true
   },
 
@@ -92,30 +96,26 @@ OPEN_SOURCE= [
   },
 
   {
-    id: "sso-devise-omniauth",
-    title: "Single Sign On using Devise and Omniauth",
-    url: "http://blog.joshsoftware.com/2010/12/16/multiple-applications-with-devise-omniauth-and-single-sign-on/",
+    id: "supportbee",
+    title: "SupportBee",
+    url: "http://supportbee.com",
     github: {
-      user: 'joshsoftware',
-      repo: 'sso-devise-omniauth-provider'
+      user: 'punerb',
+      repo: 'supportbee'
     },
-    details: "We wanted to solve these problems:<br><ul>
-      <li>A single User Manager application (which will authenticate ALL users with different roles)</li>
-      <li>Different internal applications which talk to User Manager for authentication</li>
-      <li>User should be able to login/sign-up via Social Networks like Twitter and Facebook.</li>
-      <li>Single Sign On between all applications.</li>",
+    details: "We are helping to build the supportbee client gem. This is a command line tool that can fetch tickets, see owners, assign labels, generate reports all from command line.",
     display: true
   },
 
   {
-    id: "eJosh",
-    title: "eJosh - custom CMS/ERP for SME",
-    url: "https://github.com/joshsoftware/eJosh",
+    id: "ispunity",
+    title: "ISPunity",
+    url: "http://rubygems.org/gems/ispunity",
     github: {
-      user: 'joshsoftware',
-      repo: 'eJosh'
+      user: 'aruntomar',
+      repo: 'isp_unity'
     },
-    details: "eJOSH is a custom CMS. eJOSH is Rails application that comes with a list of pre-defined layouts and color themes and it is ready to use to build your website or to use for your intranet with it's available plugins (employee management, Leave management, Timesheet management, etc..) and it has built in user management (with 3 different roles).<br> It has built in dynamic sitemap generation for SEO compliance. Capistrano default configuration is included that can be modified to fit your needs.",
+    details: "ISPunity is an open source application that integrates multiple Internet connections for load balancing and failover. It 'magically' balances the Internet load over these different connections. This also means that the more connections we use, the faster and better connectivity we get! It also automatically handles failover to another connection in case any of the lines go down ",
     display: true
   },
 
@@ -130,4 +130,16 @@ OPEN_SOURCE= [
     details: "We are all about Ruby! Even <a href='http://www.joshsoftware.com'>this website</a> itself is open-source! It's an example of our work - Twitter Bootstrap, coffeescript, scss and Rails asset pipeline in action! ",
     display: true
   },
+
+  {
+    id: "blitzio",
+    title: "Blitz.io",
+    url: "http://blitz.io",
+    github: {
+      user: 'punerb',
+      repo: 'blitz-ruby'
+    },
+    details: "We have been helping blitz.io update their gem with peripheral functionality. This is as part of Open Source Friday meetups.",
+    display: true
+  }
 ]

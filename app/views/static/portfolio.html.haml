@@ -19,7 +19,7 @@
                 = link_to project[:title], project[:url], target: '_blank'
             .col-lg-7
               .blog-img.well
-                = image_tag "portfolio/#{project[:image]}"
+                = image_tag "portfolio/#{project[:image]}", alt: "Screenshot of #{project[:title]}"
             .col-lg-5
               /
                 .col-lg-5
@@ -27,29 +27,20 @@
                     %span.date #{project[:country]}
                     %span.month #{project[:year]}
               .blog-side-item
-                .tags
+                %strong.tags
                   %ul.list-unstyled.tagg
                     - project[:technical][:tags].each do |stack|
                       %li
                         - if stack == 'filter.js'
                           = link_to 'filter.js', 'http://github.com/jiren/filter.js'
+                        - elsif stack == 'StreamTable.js'
+                          = link_to 'StreamTable.js', 'https://github.com/jiren/StreamTable.js'
                         - else
                           = stack
           .row
             .col-md-12
               %br
-              /
-                %h1
-                  = link_to project[:title], project[:url], target: '_blank'
               %p= raw project[:description]
-      /
-        .text-center
-          %ul.pagination
-            %li
-              %a{:href => "#"} «
-            %li.active
-              %a{:href => "#"} 1
-            %li
-              %a{:href => "#"} 2
-            %li
-              %a{:href => "#"} »
+              %a.pull-right{:href => "#"}
+                %i.icon-arrow-up
+

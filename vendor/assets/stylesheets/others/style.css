@@ -1401,7 +1401,7 @@ ul.tagg li {
 .footer {
   background: #475268;
   color: #fff;
-  padding: 25px 0 0 0;
+  padding: 25px 0 25px 0;
   /*margin-top: 25px;*/
   display: inline-block;
   width: 100%;
@@ -1846,7 +1846,8 @@ ul#filters > .active > span {
   /*background: url("/assets/flat_parallax.jpg") no-repeat fixed 0 0 #f77b6f;*/
   /*background: url("") no-repeat fixed 0 0 #EBEEF3;*/
   background-size:cover;
-  background: #EBEEF3;
+  /*background: #EBEEF3;*/
+  background: #f5f5f5;
   width: 100%;
   min-height: 80px;
   font-style: italic;
@@ -1873,3 +1874,14 @@ ul#filters > .active > span {
 .logo_width {
   width: 150px;
 }
+
+.footer_data {
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 12px;
+  padding-top: 25px;
+}
+
+

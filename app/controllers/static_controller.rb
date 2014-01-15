@@ -43,10 +43,15 @@ class StaticController < ApplicationController
   def contact_us
     @title = 'Contact Us | Josh Software Private Limited'
   end
+  
+  def about_us
+    @title = 'About Us | Josh Software Private Limited'
+  end
 
   private
 
   def load_tweet
-    @tweet = Tweet.latest_tweet('joshsoftware')
+    #@tweet = Tweet.latest_tweet('joshsoftware')
+    @tweet = ['dsadjasdagsdghasgdjahsd', Date.today]
   end
 end

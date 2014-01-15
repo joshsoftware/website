@@ -2,14 +2,18 @@
   .container
     .row
       .col-lg-3.col-sm-3
-        %h1 contact info
-        %address
-          %p Address: 6, Thube Park, Shivajinagar, 
-          %p Pune - 411005, Maharashtra, India,
-          %p Phone: +91 - 20 - 25539995
-          %p
-            Email:
-            %a.text-danger{encode: "hex", href: "mailto:info@joshsoftware.com?subject="} info@joshsoftware.com
+        %h1 Josh Software
+        .footer_data
+          Josh stands for enthusiasm and passion. We Believe Programming is an Art and build Innovative Web Based Applications on an Open Source framework for our world-wide clientele.
+        /
+          %h1 contact info
+          %address
+            %p Address: 6, Thube Park, Shivajinagar, 
+            %p Pune - 411005, Maharashtra, India,
+            %p Phone: +91 - 20 - 25539995
+            %p
+              Email:
+              %a.text-danger{encode: "hex", href: "mailto:info@joshsoftware.com?subject="} info@joshsoftware.com
       .col-lg-6.col-sm-6
         - if @tweet.any?
           %h1 latest tweet
@@ -27,31 +31,23 @@
               %a{:href => "javascript:;"} twitter.com/joshsoftware
         /
           = raw "<a class='twitter-timeline' href='https://twitter.com/joshsoftware' data-widget-id='252732024681545729'>Tweets by @joshsoftware</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>"
-      .col-lg-3.col-sm-3 
-        %h1 stay connected
-        %ul.social-link-footer.list-unstyled
-          %li
-            %a{:href => "https://facebook.com/joshsoftware", :target => "_blank"}
-              %i.icon-facebook
-          %li
-            %a{:href => "https://twitter.com/joshsoftware", :target => "_blank"}
-              %i.icon-twitter
-          %li
-            %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", :target => "_blank"}
-              %i.icon-linkedin
-          %li
-            %a{:href => "https://github.com/joshsoftware", :target => "_blank"}
-              %i.icon-github
-          /
-            %li
-              %a{:href => "#"}
-                %i.icon-google-plus
-            %li
-              %a{:href => "#"}
-                %i.icon-dribbble
-            %li
-              %a{:href => "#"}
-                %i.icon-skype
-            %li
-              %a{:href => "#"}
-                %i.icon-youtube
+      .col-lg-3.col-sm-3
+        .container
+          .row
+            %h1 stay connected
+            %ul.social-link-footer.list-unstyled
+              %li
+                %a{:href => "https://facebook.com/joshsoftware", target: "_blank", alt: 'Facebook'}
+                  %i.icon-facebook
+              %li
+                %a{:href => "https://twitter.com/joshsoftware", target: "_blank", alt: 'Twitter'}
+                  %i.icon-twitter
+              %li
+                %a{:href => "http://www.linkedin.com/company/josh-software-private-limited", target: "_blank", alt: 'Linked In'}
+                  %i.icon-linkedin
+              %li
+                %a{:href => "https://github.com/joshsoftware", target: "_blank", alt: 'Github'}
+                  %i.icon-github
+    .row
+      .copyright.text-center
+        Copyright © 2007 - 2014 Josh Software Pvt. Ltd.

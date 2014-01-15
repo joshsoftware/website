@@ -1,22 +1,22 @@
 - if member[:technical].present?
   .team-social-link
     - if member[:technical][:github].present?
-      %a{:target => "_blank", :href => "http://github.com/#{member[:technical][:github]}"}
+      %a{target: "_blank", href: "http://github.com/#{member[:technical][:github]}", alt: "Github handle #{member[:technical][:github]}"}
         %i.icon-github
     - if member[:technical][:facebook].present?
-      %a{:target => "_blank", :href => "#{member[:technical][:facebook]}"}
+      %a{target: "_blank", href: "#{member[:technical][:facebook]}", alt: "Facebook" }
         %i.icon-facebook
     - if member[:technical][:twitter].present?
-      %a{:target => "_blank", :href => "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}"}
+      %a{target: "_blank", href: "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}", alt: "Twitter handle #{member[:technical][:twitter]}"}
         %i.icon-twitter
     - if member[:technical][:pinterest].present?
       %a{:href => "#"}
         %i.icon-pinterest
     - if member[:technical][:linkedin].present?
-      %a{:target => "_blank", :href => "#{member[:technical][:linkedin]}"}
+      %a{target: "_blank", href: "#{member[:technical][:linkedin]}", alt: "Linked In handle"}
         %i.icon-linkedin
     - if member[:technical][:blog].present?
-      %a{:target => "_blank", :href => "#{member[:technical][:blog]}"}
+      %a{target: "_blank", href: "#{member[:technical][:blog]}", alt: "Blog"}
         %i.icon-rss
     - if member[:technical][:google_plus].present?
       %a{:href => "#"}
