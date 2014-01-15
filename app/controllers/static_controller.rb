@@ -51,7 +51,6 @@ class StaticController < ApplicationController
   private
 
   def load_tweet
-    #@tweet = Tweet.latest_tweet('joshsoftware')
-    @tweet = ['dsadjasdagsdghasgdjahsd', Date.today]
+    @tweet = Tweet.latest_tweet('joshsoftware')
   end
 end
