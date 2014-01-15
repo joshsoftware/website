@@ -3,7 +3,7 @@ TESTIMONIES= [
     id: "show-me",
     title: "CWO",
     url: "",
-    company: "ShowMes",
+    company: "ShowMe",
     endorser: "Gabriele Antoniazzi",
     endorsement: "I got Josh on board for the development of the website for a startup in partnership with one of the biggests Italian VC, off-shore a project is never that easy especially for a project like that because it required complex backend and frontend development but what impressed me, apart from their RoR skills adn knowledge, is that they have always been committed to meet the project requirements, both in terms of timeline, budget and quality, so at the end it has revealed the best choice to work with them.", 
     display: true

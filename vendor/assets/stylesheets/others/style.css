@@ -89,7 +89,7 @@ p {line-height: 22px}
 }
 
 .header-frontend .nav li a, .header-frontend .nav li.active ul.dropdown-menu li a {
-  color: #999;
+  color: #323249;
   font-size: 14px;
   font-weight: 300;
   background: none;
@@ -995,7 +995,7 @@ ul.about-flex-slides {
 
 .carousel-control {
   /*background: #000000 !important;*/
-  background: white !important;
+  /*background: white !important;*/
   color: #FFFFFF;
   font-size: 20px;
   left: 0;
@@ -1010,7 +1010,7 @@ ul.about-flex-slides {
 }
 
 .carousel-control:hover {
-  background: rgba(212,108,94,.8) !important;
+  /*background: rgba(212,108,94,.8) !important;*/
   color: #FFFFFF;
   /*opacity: 0.6;*/
   text-decoration: none;
@@ -1311,8 +1311,8 @@ ul.about-flex-slides {
 
 
 .author {
-  margin:25px 0 30px 0;
-  font-size: 16px;
+  margin:1px 0 5px 0;
+  font-size: 17px;
   color: #D3403C;
 }
 
@@ -1884,4 +1884,7 @@ ul#filters > .active > span {
   padding-top: 25px;
 }
 
-
+#myCarousel .item img {
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
