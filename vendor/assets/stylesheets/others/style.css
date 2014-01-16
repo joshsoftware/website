@@ -1888,3 +1888,11 @@ ul#filters > .active > span {
   width: 80%;
   margin: 0 10% 0 10%;
 }
+
+.moto {
+  font-size: 12px;
+  margin-top: -25px;
+  margin-bottom: 5px;
+  color: #DFA2A1;
+  font-style: italic;
+}
