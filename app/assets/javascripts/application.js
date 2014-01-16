@@ -28,3 +28,4 @@
 //= require others/common-scripts.js
 //= require others/revulation-slide.js
 //= require carousel.js
+//= require static.js
