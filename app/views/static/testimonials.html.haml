@@ -2,7 +2,7 @@
 .container
   .row
     .col-lg-12
-      - @testimonies.each do |testimony|
+      - @testimonies.each_with_index do |testimony, indx|
         .blog-item
           .row
             .col-lg-2.col-sm-2.text-right
@@ -15,3 +15,7 @@
                   #{testimony[:company]}
             .col-lg-10.col-sm-10
               %p #{raw testimony[:endorsement]} 
+              - if indx > 3
+                %a.pull-right{href: '#'}
+                  %i.icon-arrow-up{"data-toggle"=>"tooltip", "data-placement"=>"top", "data-original-title"=>"To top"}
+
