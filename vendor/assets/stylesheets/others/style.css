@@ -1237,6 +1237,10 @@ ul.about-flex-slides {
   border-bottom: 1px dashed #9D2322; /*line below each testimonial or opensource */
 }
 
+.blog-item a {
+  color: #D3403C;
+}
+
 .date-wrap, .comnt-wrap {
   margin-bottom: 20px;
 }
