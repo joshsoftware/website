@@ -75,7 +75,7 @@ end
 namespace :passenger do
   desc 'restart passenger'
   task :restart_passenger do
-    queue "touch #{deploy_to}/tmp/restart.txt"
+    queue "touch #{deploy_to}/current/tmp/restart.txt"
   end
 end
 
