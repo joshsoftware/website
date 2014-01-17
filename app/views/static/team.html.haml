@@ -13,8 +13,8 @@
           %h4
             = link_to member[:name], '#', 'data-toggle'=>"modal", 'data-target'=>"#{member[:id]}-modal"
           %p.text-muted #{member[:title]}
+        .text-center
           = render 'member_data', member: member
-
 - @team_members.each do |member|
   .modal.fade{"aria-hidden" => "true", "aria-labelledby" => "#{member[:name]}", role: "dialog", tabindex: "-1", id: "#{member[:id]}-modal"}
     .modal-dialog
@@ -29,7 +29,7 @@
               %h4
                 = member[:name]
               %p.text-muted #{member[:title]}
-              = render 'member_data', member: member
+            = render 'member_data', member: member
           .container
             %p
               = raw member[:description]
