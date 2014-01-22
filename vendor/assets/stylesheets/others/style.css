@@ -1915,3 +1915,7 @@ ul#filters > .active > span {
   padding: 65px;
 }
 
+.decrease_dropdown {
+  margin-top: -20px;
+}
+
