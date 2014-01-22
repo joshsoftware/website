@@ -5,7 +5,7 @@
         %h1 Josh Software
         .moto Programming is an art.
         .footer_data
-          Josh stands for enthusiasm and passion. We Believe Programming is an Art and build Innovative Web Based Applications on an Open Source framework for our world-wide clientele.
+          Josh stands for enthusiasm and passion. We believe Programming is an Art and build Innovative Web Based Applications on an Open Source framework for our world-wide clientele.
         /
           %h1 contact info
           %address
@@ -49,6 +49,11 @@
               %li
                 %a{:href => "https://github.com/joshsoftware", target: "_blank", alt: 'Github'}
                   %i.icon-github
+          .row.footer_links
+            .col-lg-6
+              = link_to 'About Us', 'about-us', class: 'text-left'
+            .col-lg-6
+              = link_to 'Contact Us', new_contact_path, class: 'text-right'
     .row
       .copyright.text-center
         Copyright © 2007 - 2014 Josh Software Pvt. Ltd.

@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
-
+gem 'rails', '4.0.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -20,10 +19,13 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails', '3.0.4'
 
 gem 'haml', '4.0.4'
+gem 'devise', '3.2.2'
+gem "active_attr", '0.8.2' #for activemodel::model
 gem 'actionpack-page_caching', '1.0.2' #use caches_pages in rails 4
-gem 'twitter'
-gem 'unicorn'
-gem 'mina'
+gem 'twitter', '5.5.1'
+#gem 'unicorn'
+gem 'mina', '0.3.0'
+gem 'retina_rails', '1.0.1'
 
 group :production do
   gem 'dalli', '2.6.4'

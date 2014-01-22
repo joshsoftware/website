@@ -23,7 +23,6 @@ body {
   font-size:15px;
 }
 
-
 a, a:hover, a:focus {
   text-decoration: none;
   outline: none;
@@ -89,7 +88,7 @@ p {line-height: 22px}
 }
 
 .header-frontend .nav li a, .header-frontend .nav li.active ul.dropdown-menu li a {
-  color: #323249;
+  color: #D3403C;
   font-size: 14px;
   font-weight: 300;
   background: none;
@@ -117,7 +116,7 @@ p {line-height: 22px}
 .header-frontend .navbar-default .navbar-nav > .open > a:hover,
 .header-frontend .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #f77b6f;
+  background-color: #D3403C;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1470,19 +1469,20 @@ ul.tagg li {
 
 .social-link-footer li {
   float: left;
-  margin: 0 10px 10px 0px;
-
+  /*margin: 0 10px 10px 0px;*/
 }
 
 .social-link-footer li a {
+  /*margin: 1px 6px 6px 0px;*/
+  margin: 2px 3px 15px 2px;
   color: #fff;
   background:#505b71;
   padding: 10px;
-  width: 50px;
-  height: 50px;
+  width: 59px;
+  height: 55px;
   float: left;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -1499,7 +1499,13 @@ ul.tagg li {
   transition: all .3s ease;
 }
 
-
+.footer_links a{
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Fjalla One', sans-serif;
+}
 
 
 /*slider css*/
@@ -1900,3 +1906,12 @@ ul#filters > .active > span {
   color: #DFA2A1;
   font-style: italic;
 }
+
+.errors {
+  border: 1px solid red;
+}
+
+.thankyou {
+  padding: 65px;
+}
+

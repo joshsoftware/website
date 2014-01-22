@@ -1,0 +1,76 @@
+= render 'shared/breadcrumbs', data: nil
+.container
+  .row.well
+    .col-lg-9.col-md-9.col-sm-9.col-xs-12.about
+      %h4 About Us
+      %p
+        Driven by enthusiasm and passion, Josh Software is India’s leading company in building innovative web applications working exclusively on 
+        %span.text-danger Ruby On Rails
+        Framework.
+      %p 
+        We partner with our clients from concept and design to implementation and maintenance. We firmly believe that 
+        %span.text-danger Programming is An Art
+        and have a unique organizational process focused on building solutions to facilitate high performance, scalability, and high-standard code quality.
+      %p
+        We are fanatic about Test Coverage, Continuous Integration and code smell. Timelines are important but code quality is far more important. Working code is fine but we also stress test our apps for concurrency and load. 
+        %a{href: "http://codeclimate.com", target: '_blank'} CodeClimate,
+        %a{href: "http://circleci.com", target: '_blank'} CircleCi,
+        %a{href: "http://github.com", target: '_blank'} Github,
+        %a{href: "http://pivotaltracker.com", target: '_blank'} Pivotal Tracker,
+        and
+        %a{href: "http://trello.com", target: '_blank'} Trello
+        are some of the tools we use to ensure our clients are always happy!
+    .col-lg-3.col-md-3.col-sm-3.col-xs-9
+      %h4 Fun at Josh
+      .about-testimonial
+        /.about-testimonial-author Fun at JOSH
+      #fun.align-center
+        = image_tag 'loading.gif'
+  .row.well
+    .col-lg-10.col-md-10.col-sm-10.col-xs-10.about
+      %h4 Ruby Community
+      %p
+        Apart from building and curating its own team, we undertake various initiatives in contributing back to the Ruby open source community. We have been actively promoting the Ruby on Rails framework in India through an annual national conference - Rubyconf India, regional conferences, our RoR blog, and organizing local meet-up groups. Our Founder-Director Gautam Rege, has also penned and published a book on Ruby and Mongo DB Web Development.
+    .col-lg-2.col-md-2.col-sm-2.col-xs-2
+      .row
+        %h4= link_to 'Project Portfolio', 'portfolio'
+      .row
+        %h4= link_to 'Josh Blog', "http://blog.joshsoftware.com/", target: '_blank'
+      .row
+        %h4= link_to 'Our Team', 'team'
+
+
+:javascript
+  RevSlide.initRevolutionSlider();
+
+  $(window).load(function() {
+      $('[data-zlname = reverse-effect]').mateHover({
+          position: 'y-reverse',
+          overlayStyle: 'rolling',
+          overlayBg: '#fff',
+          overlayOpacity: 0.7,
+          overlayEasing: 'easeOutCirc',
+          rollingPosition: 'top',
+          popupEasing: 'easeOutBack',
+          popup2Easing: 'easeOutBack'
+      });
+  });
+
+  $(window).load(function() {
+      $('.flexslider').flexslider({
+          animation: "slide", //slide or swing
+          slideshow: false, //automatic slideshow
+          reverse: false,
+          start: function(slider) {
+              $('body').removeClass('loading');
+          }
+      });
+  });
+
+  $(window).load(function() {
+    image_slide();
+  });
+
+
+  //    fancybox
+  //jQuery(".fancybox").fancybox();

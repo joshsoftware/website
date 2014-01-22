@@ -29,25 +29,20 @@
       .contact-form
         /
           %form{action: 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', method: 'POST', id: 'contact_form', role: 'form'}
-        = form_for @contact, contacts_path, method: :post do |f|
+        = form_for @contact, url: contact_us_path, method: :post do |f|
           .form-group
             %label{:for => "name"} Name
-            /%input#name.form-control{:placeholder => "", :type => "text"}
-            = f.text_field :name, class: 'form-control', id: 'name'
+            = f.text_field :name, class: "form-control #{any_errors(@contact, 'name')}", id: 'name', placeholder: 'Enter your name'
           .form-group
             %label{:for => "email"} Email
-            /%input#email.form-control{:placeholder => "", :type => "text"}/
-            = f.text_field :email, class: 'form-control', id: 'email'
+            = f.text_field :email, class: "form-control #{any_errors(@contact, 'email')}", id: 'email', placeholder: 'Enter your email address'
           .form-group
             %label{:for => "phone"} Phone
-            /%input#phone.form-control{:type => "text"}/
-            = f.text_field :phone, class: 'form-control', id: 'phone'
+            = f.text_field :phone, class: "form-control #{any_errors(@contact, 'phone')}", id: 'phone', placeholder: 'Enter your phone number'
           .form-group
             %label{:for => "phone"} Message
-            /%textarea.form-control{:placeholder => "", :rows => "5"}
-            = f.text_area :message, class: 'form-control', rows: '5'
+            = f.text_area :message, class: "form-control #{any_errors(@contact, 'message')}", rows: '5', placeholder: 'Enter message'
           = f.submit 'Submit', class: 'btn btn-danger btn-lg'
-          /%button.btn.btn-danger.btn-lg{:type => "submit"} Submit
 = raw '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>'
 =# javascript_include_tag 'https://lct.salesforce.com/sfga.js'
 /

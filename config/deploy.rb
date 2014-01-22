@@ -79,17 +79,9 @@ namespace :passenger do
   end
 end
 
-namespace :nginx do
-  desc 'restart nginx server'
-  task :restart do
-    queue "sudo service restart nginx"
-  end
-end
-
 namespace :application do
   desc 'Restart the application'
   task :restart => :environment do
     invoke 'passenger:restart_passenger'
-    #invoke 'nginx:restart'
   end
 end

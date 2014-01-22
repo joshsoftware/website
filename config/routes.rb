@@ -1,5 +1,17 @@
 Website::Application.routes.draw do
-  get ':action' => 'static#:action'
+
+  #get ':action' => 'static#:action'
+  get '/about-us' => 'static#about_us'
+  get '/portfolio' => 'static#portfolio'
+  get '/team' => 'static#team'
+  get '/testimonials' => 'static#testimonials'
+  get '/open-source' => 'static#open_source'
+  get '/thankyou' => 'static#thankyou', as: 'thankyou'
+  get '/contact-us' => 'contacts#new', as: 'new_contact'
+  post '/contact-us' => 'contacts#create', as: 'contact_us'
+
+  get '/contact_us', to: redirect('/contact-us')
+  get '/open_source', to: redirect('/open-source')
 
   root to: 'static#home'
 
