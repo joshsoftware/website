@@ -15,6 +15,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 0
   },
+
   { 
     id: "sethupathi-asokan",
     name: "Sethupathi Asokan",
@@ -46,6 +47,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 2
   },
+
   { 
     id: "sameer-tilak",
     name: "Sameer Tilak",
@@ -61,6 +63,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 3
   },
+
   {
     id: "sachin-shintre",
     name: "Sachin Shintre",
@@ -76,7 +79,8 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 4 
-  },  
+  },
+
   {
     id: "shailesh-patil",
     name: "Shailesh Patil",
@@ -90,6 +94,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 5
   },
+
   {
     id: "ninad-pol",
     name: "Ninad Ashok Pol",
@@ -103,6 +108,23 @@ TEAM_MEMBERS= [
     display: true,
     index: 6
   },
+
+  {
+    id: "jiren-patel",
+    name: "Jiren Patel",
+    title: "Senior Software Engineer",
+    image: "http://www.gravatar.com/avatar/dde56ce7a6860df43fc2eee1336552dc",
+    description: "Jiren is a passionate and enthusiastic about programming languages. He is avid coder, <a href='http://www.flickr.com/photos/50103686@N03/8032359262/in/set-72157631641674776/' target='_blank'>biker</a>, gamer and loves to discover new things. He is the author of many opensouce projects i.e Filter.js, Splat, FeatherCMS. He has Bachelors Degree in Computer Engineering from Dharmsinh Desai University.",
+    technical: {
+      github: 'jiren',
+      blog: 'http://blog.joshsoftware.com/author/jiren',
+      linkedin: "http://in.linkedin.com/in/jirenpatel",
+      twitter: '@jirens'
+    },
+    display: true,
+    index: 7
+  },
+
   { 
     id: "sandipransing",
     name: "Sandip Ransing",
@@ -117,6 +139,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 8
   },
+
   {
     id: "kiran-chaudhari",
     name: "Kiran Chaudhari",
@@ -130,6 +153,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 9
   },
+
   {
     id: "siva-gollapalli",
     name: "Siva Gollapalli",
@@ -144,6 +168,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 10
   },
+
   {
     id: "pratik-shah",
     name: "Pratik Shah",
@@ -159,6 +184,7 @@ TEAM_MEMBERS= [
       display: true,
       index: 11
   },
+
   { 
     id: "swapnil-chincholkar",
     name: "Swapnil Chincholkar",
@@ -174,6 +200,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 12
   },
+
   { 
     id: "anujaware",
     name: "Anuja Ware",
@@ -186,6 +213,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 13
   },
+
   { 
     id: "prasad-surase",
     name: "Prasad Surase",
@@ -193,9 +221,11 @@ TEAM_MEMBERS= [
     image: "prasad.jpg",
     description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Application from Fergusson College, Pune.",
     technical: {
+      linkedin: 'http://in.linkedin.com/pub/prasad-surase/3a/653/b1',
       twitter: "@prasadsurase",
       facebook: "http://www.facebook.com/surase.prasad",
       stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
+      blog: "http://blog.joshsoftware.com/author/prasadsurase/",
       github: "prasadsurase"
     },
     display: true,
