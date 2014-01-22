@@ -1,3 +1,12 @@
+
+data = YAML.load_file("#{Rails.root}/config/credentials.yml")
+if data
+  ENV['TWITTER_CONSUMER_KEY'] = data['TWITTER_CONSUMER_KEY']
+  ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
+  ENV['USERNAME'] = data['USERNAME']
+  ENV['PASSWORD'] = data['PASSWORD']
+end
+
 Website::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -73,17 +82,12 @@ Website::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.sendgrid.net",
-    port: 25,
-    domain: ENV["DOMAIN_NAME"],
-    authentication: "plain",
-    user_name: ENV["SENDGRID_USERNAME"],
-    password: ENV["SENDGRID_PASSWORD"]
+    :user_name => ENV['USERNAME'],
+    :password => ENV['PASSWORD'],
+    :domain => "joshsoftware.com",
+    :address => "smtp.sendgrid.net",
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
-end
-
-data = YAML.load_file("#{Rails.root}/config/credentials.yml")
-if data
-  ENV['TWITTER_CONSUMER_KEY'] = data['TWITTER_CONSUMER_KEY']
-  ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
 end

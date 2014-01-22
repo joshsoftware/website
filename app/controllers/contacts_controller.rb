@@ -9,6 +9,7 @@ class ContactsController < ApplicationController
   def create
     @title = 'Contact Us | Josh Software Private Limited'
     @contact = Contact.new params[:contact]
+    @contact.message = @contact.message[0..290]
     if @contact.valid?
       @contact.notify
       redirect_to thankyou_path and return

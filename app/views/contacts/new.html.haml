@@ -41,7 +41,7 @@
             = f.text_field :phone, class: "form-control #{any_errors(@contact, 'phone')}", id: 'phone', placeholder: 'Enter your phone number'
           .form-group
             %label{:for => "phone"} Message
-            = f.text_area :message, class: "form-control #{any_errors(@contact, 'message')}", rows: '5', placeholder: 'Enter message'
+            = f.text_area :message, class: "form-control #{any_errors(@contact, 'message')}", rows: '5', placeholder: 'Enter message (max 300 characters)'
           = f.submit 'Submit', class: 'btn btn-danger btn-lg'
 = raw '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>'
 =# javascript_include_tag 'https://lct.salesforce.com/sfga.js'
