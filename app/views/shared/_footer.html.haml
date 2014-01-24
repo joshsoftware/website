@@ -49,11 +49,11 @@
               %li
                 %a{:href => "https://github.com/joshsoftware", target: "_blank", alt: 'Github'}
                   %i.icon-github
-          .row.footer_links
+          .row.footer_links.company
+            .col-lg-6.co
+              = link_to 'About Us', 'about-us', class: 'pull-left'
             .col-lg-6
-              = link_to 'About Us', 'about-us', class: 'text-left'
-            .col-lg-6
-              = link_to 'Contact Us', new_contact_path, class: 'text-right'
+              = link_to 'Contact Us', new_contact_path, class: 'pull-right'
     .row
       .copyright.text-center
         Copyright © 2007 - 2014 Josh Software Pvt. Ltd.

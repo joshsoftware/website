@@ -1507,6 +1507,9 @@ ul.tagg li {
   font-family: 'Fjalla One', sans-serif;
 }
 
+.footer_links.company a {
+  font-size: 15px;
+}
 
 /*slider css*/
 

@@ -1,6 +1,6 @@
 = render 'shared/breadcrumbs', data: nil
-.container
-  .row.well
+.container.well
+  .row
     .col-lg-9.col-md-9.col-sm-9.col-xs-12.about
       %h4 About Us
       %p
@@ -26,18 +26,19 @@
         /.about-testimonial-author Fun at JOSH
       #fun.align-center
         = image_tag 'loading.gif'
-  .row.well
-    .col-lg-10.col-md-10.col-sm-10.col-xs-10.about
+  .row
+    .col-lg-12.about
       %h4 Ruby Community
       %p
         Apart from building and curating its own team, we undertake various initiatives in contributing back to the Ruby open source community. We have been actively promoting the Ruby on Rails framework in India through an annual national conference - Rubyconf India, regional conferences, our RoR blog, and organizing local meet-up groups. Our Founder-Director Gautam Rege, has also penned and published a book on Ruby and Mongo DB Web Development.
-    .col-lg-2.col-md-2.col-sm-2.col-xs-2
-      .row
-        %h4= link_to 'Project Portfolio', 'portfolio'
-      .row
-        %h4= link_to 'Josh Blog', "http://blog.joshsoftware.com/", target: '_blank'
-      .row
-        %h4= link_to 'Our Team', 'team'
+    /
+      .col-lg-2.col-md-2.col-sm-2.col-xs-2
+        .row
+          %h4= link_to 'Project Portfolio', 'portfolio'
+        .row
+          %h4= link_to 'Josh Blog', "http://blog.joshsoftware.com/", target: '_blank'
+        .row
+          %h4= link_to 'Our Team', 'team'
 
 
 :javascript
