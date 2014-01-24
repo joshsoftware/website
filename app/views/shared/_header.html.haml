@@ -12,15 +12,16 @@
         %ul.nav.navbar-nav
           %li{class: "#{check_if_active('home')}"}
             = link_to 'Home', root_path
-          %li.dropdown
-            %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdow    n", :href => "#"}
-              About Us
-              %b.icon-angle-down
-            %ul.dropdown-menu.decrease_dropdown
-              %li
-                %a{:href => "team"} Team
-              %li
-                %a{:href => "#"} Josh in News
+          /
+            %li.dropdown
+              %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdow    n", :href => "#"}
+                About Us
+                %b.icon-angle-down
+              %ul.dropdown-menu.decrease_dropdown
+                %li
+                  %a{:href => "team"} Team
+                %li
+                  %a{:href => "#"} Josh in News
           %li{class: "#{check_if_active('portfolio')}"}
             %a{:href => "portfolio"} Portfolio
           %li{class: "#{check_if_active('team')}"}
