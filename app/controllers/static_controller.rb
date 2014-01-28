@@ -19,6 +19,7 @@ class StaticController < ApplicationController
 
   def home
     @testimonials = TESTIMONIES.select{|e| e[:display]}
+    @projects = PROJECTS.select { |p| p[:display] }
     @title = 'Ruby on Rails experts in India | Josh Software Private Limited'
   end
 
@@ -50,6 +51,10 @@ class StaticController < ApplicationController
 
   def thankyou
     @title = 'Thank you | Josh Software Private Limited'
+  end
+
+  def news
+    @title = 'Josh in News | Josh Software Private Limited'
   end
 
 end

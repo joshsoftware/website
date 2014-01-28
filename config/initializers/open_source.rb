@@ -120,7 +120,7 @@ OPEN_SOURCE= [
   },
 
   {
-    id: "website",
+    id: "our website",
     title: "This very website!",
     url: "https://www.joshsoftware.com",
     github: {

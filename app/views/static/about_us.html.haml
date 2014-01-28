@@ -1,7 +1,13 @@
 = render 'shared/breadcrumbs', data: nil
-.container.well
+.container
   .row
-    .col-lg-9.col-md-9.col-sm-9.col-xs-12.about
+    .col-lg-5
+      %h4 Fun at Josh
+      .about-testimonial
+        /.about-testimonial-author Fun at JOSH
+      #fun.align-center
+        = image_tag 'loading.gif'
+    .col-lg-7.about
       %h4 About Us
       %p
         Driven by enthusiasm and passion, Josh Software is India’s leading company in building innovative web applications working exclusively on 
@@ -20,25 +26,28 @@
         and
         %a{href: "http://trello.com", target: '_blank'} Trello
         are some of the tools we use to ensure our clients are always happy!
-    .col-lg-3.col-md-3.col-sm-3.col-xs-9
-      %h4 Fun at Josh
-      .about-testimonial
-        /.about-testimonial-author Fun at JOSH
-      #fun.align-center
-        = image_tag 'loading.gif'
+  .row
+    .hiring
+      .col-lg-6.col-sm-6
+        .icon-wrap.ico-bg.round
+          %i.icon-desktop
+        .content
+          %h3
+            = link_to "View our Client Portfolio", 'portfolio', class: 'title'
+          %p XXXXXXXXXXXX XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX 
+      .col-lg-6.col-sm-6
+        .icon-wrap.ico-bg.round
+          %i.icon-group
+        .content
+          %h3
+            = link_to 'Meet our team', 'team', class: 'title'
+          %p XXXXXXXXXXXX XXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXX 
+.container.well
   .row
     .col-lg-12.about
       %h4 Ruby Community
       %p
         Apart from building and curating its own team, we undertake various initiatives in contributing back to the Ruby open source community. We have been actively promoting the Ruby on Rails framework in India through an annual national conference - Rubyconf India, regional conferences, our RoR blog, and organizing local meet-up groups. Our Founder-Director Gautam Rege, has also penned and published a book on Ruby and Mongo DB Web Development.
-    /
-      .col-lg-2.col-md-2.col-sm-2.col-xs-2
-        .row
-          %h4= link_to 'Project Portfolio', 'portfolio'
-        .row
-          %h4= link_to 'Josh Blog', "http://blog.joshsoftware.com/", target: '_blank'
-        .row
-          %h4= link_to 'Our Team', 'team'
 
 
 :javascript

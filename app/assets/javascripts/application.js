@@ -19,6 +19,7 @@
 //= require others/jquery.parallax-1.1.3
 //= require others/jquery.easing.min
 //= require others/link-hover
+//= require fancybox/jquery.fancybox.pack
 //= require revolution_slider/jquery.themepunch.plugins.min
 //= require revolution_slider/jquery.themepunch.revolution.min
 //= require superfish/superfish
@@ -29,4 +30,3 @@
 //= require others/revulation-slide
 //= require carousel
 //= require static
-//= require retina

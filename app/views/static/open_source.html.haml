@@ -7,7 +7,7 @@
           %ul.list-unstyled
             - @open_sources.each do |open_source|
               %li
-                = link_to "#{raw open_source[:id]}", "##{open_source[:id]}"
+                = link_to "#{raw open_source[:id].titleize}", "##{open_source[:id]}"
     .col-lg-10
       - @open_sources.each_with_index do |open_source, indx|
         .blog-item{:id => open_source[:id]}

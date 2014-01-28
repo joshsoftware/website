@@ -1,0 +1,30 @@
+= render 'shared/breadcrumbs', data: nil
+.container
+  .row
+    .col-lg-2
+      .blog-side-item
+        .category
+          %ul.list-unstyled
+            %li
+              = link_to 'Press Releases', "#"
+            %li
+              = link_to 'Interviews', "#"
+            %li
+              = link_to 'Contributory Articles', "#"
+
+    .col-lg-10
+      .blog-item
+        .row
+          .col-lg-10.col-sm-10
+            %h1
+              = link_to 'Educade', '#'
+        .row
+          .col-lg-6
+            .blog-img.well
+              = image_tag "news/Seattlepost_Educade.jpg", alt: "Screenshot of Educade in Seattle Post"
+          .col-lg-5
+            = link_to 'Download Pdf', '#'
+        .row
+          .col-md-12
+            %br
+            %p=# raw project[:description]
