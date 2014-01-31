@@ -1294,6 +1294,7 @@ ul.about-flex-slides {
   font-family: 'Fjalla One', sans-serif;
 }
 
+.news_header h1 {font-size: 25px; color: #D3403C; font-weight: 300; font-family: 'Fjalla One', sans-serif;}
 .blog-item h1 {
   margin-bottom: 20px;
   line-height: 35px;

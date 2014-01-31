@@ -55,6 +55,9 @@ class StaticController < ApplicationController
 
   def news
     @title = 'Josh in News | Josh Software Private Limited'
+    @news = NEWS.select{|n| n[:display]}
+    @interviews = INTERVIEWS.select{|i| i[:display]}
+    @articles = ARTICLES.select{|a| a[:display]}
   end
 
 end

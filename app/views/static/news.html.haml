@@ -2,29 +2,62 @@
 .container
   .row
     .col-lg-2
-      .blog-side-item
+      .blog-side-item.list-unstyled
         .category
-          %ul.list-unstyled
+          %h3 Josh In News
+          %ul
             %li
-              = link_to 'Press Releases', "#"
+              = link_to 'Press Releases', "#press_releases"
             %li
-              = link_to 'Interviews', "#"
+              = link_to 'Interviews', "#interviews"
             %li
-              = link_to 'Contributory Articles', "#"
+              = link_to 'Contributory Articles', "#contributory_articles"
 
     .col-lg-10
-      .blog-item
-        .row
-          .col-lg-10.col-sm-10
-            %h1
-              = link_to 'Educade', '#'
-        .row
-          .col-lg-6
-            .blog-img.well
-              = image_tag "news/Seattlepost_Educade.jpg", alt: "Screenshot of Educade in Seattle Post"
-          .col-lg-5
-            = link_to 'Download Pdf', '#'
-        .row
-          .col-md-12
-            %br
-            %p=# raw project[:description]
+      #press_releases
+        .news_header
+          %h1 Press Releases
+        %article.services
+          - @news.each do |n|
+            .blog-item
+              %ul
+                .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} 
+                  #{n[:title]}
+                -n[:content].each do |content|
+                  .news-header{style: "font-size: 15px; padding: 0px 0px 0px 15px"}
+                    #{content[:header]}
+                  %div.news-box{style: "padding-left: 15px"}
+                    %br
+                      .read-more{style: " font-size:14px; font-weight:normal;"}
+                        Read More : 
+                        - content[:covered_by].each do |c|
+                          = link_to c[:site_name], c[:link], target: '_blank'
+                          - if c != content[:covered_by].last
+                            ,
+        #interviews
+          .news_header
+            %h1 Interviews
+          %article.services
+            - @interviews.each do |i|
+              .blog-item
+                .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} #{i[:interviewer]}
+                - i[:interviews].each do |c|
+                  %div.news-box{style: "padding: 5px 15px"}
+                    .news-header{style: "font-size: 15px;"}
+                      #{c[:header]}
+                      %br
+                      .news-link{style: "font-size: 14px; font-weight:normal"}
+                        =link_to "Read More", c[:read_more], target: '_blank'
+        #contributory_articles
+          .news_header
+            %h1 Contributory Articles
+          %article.services
+            - @articles.each do |a|
+              .blog-item
+                .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} #{a[:at]}
+                %div.news-box{style: "padding-left: 15px"}
+                  .news-header{style: "font-size: 15px;"}
+                    #{a[:title]}
+                    %br
+                    .news-link{style: "font-size: 14px;"} 
+                      = link_to "Read More", a[:link], target: '_blank'
