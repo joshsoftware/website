@@ -37,6 +37,10 @@
                           = link_to 'StreamTable.js', 'https://github.com/jiren/StreamTable.js'
                         - else
                           = stack
+                  - if project[:case_study]
+                    %ul.list-unstyled.tagg
+                      %li= link_to "Case study", project[:case_study], target: "_blank"
+
           .row
             .col-md-12
               %br

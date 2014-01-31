@@ -32,6 +32,7 @@ PROJECTS= [
         comments: "filter.js",
         tags: ["Rails 3.2.12", "MongoDB", "ElasticSearch", "OpenStack", "filter.js"]
     },
+    case_study: "portfolio_pdf/educade_case_study.pdf",
     display: true
   },
 
