@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   private
 
   def load_tweet
-    @tweet = ["sample tweet", "24 Jan 21:23 pm"] #Tweet.latest_tweet('joshsoftware')
+    @tweet = Tweet.latest_tweet('joshsoftware')
   end
 end
