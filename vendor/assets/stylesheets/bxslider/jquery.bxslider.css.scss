@@ -1,0 +1,286 @@
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/** THEME
+===================================*/
+
+.bxslider {
+  left: 1px;
+  margin-left: -1px;
+  position: relative;
+}
+
+.bx-wrapper {
+  .bx-viewport {
+    padding: 0;
+    background: none;
+  }
+  .bx-pager, .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: none;
+  }
+  .bx-loading {
+    min-height: 50px;
+    background: image-url("bx_loader.gif") center center no-repeat white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+  }
+  .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    .bx-pager-item {
+      display: inline-block;
+      *zoom: 1;
+      *display: inline;
+    }
+  }
+  .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+  }
+  .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    &:hover, &.active {
+      background: #000;
+    }
+  }
+  .bx-prev {
+    left: 46%;
+    background: image-url("left.png") no-repeat;
+  }
+  .bx-next {
+    left: 50%;
+    background: image-url("right.png") no-repeat;
+  }
+  .bx-prev:hover {
+    background: image-url("left-hover.png") no-repeat;
+  }
+  .bx-next:hover {
+    background: image-url("right-hover.png") no-repeat;
+  }
+  .bx-controls-direction a {
+    position: absolute;
+    top: 230px;
+    outline: 0;
+    width: 24px;
+    height: 24px;
+    z-index: 9;
+    text-indent: -9999px;
+    border-radius: 50px;
+    &.disabled {
+      display: none;
+    }
+  }
+  .bx-controls-auto {
+    text-align: center;
+    .bx-start {
+      display: block;
+      text-indent: -9999px;
+      width: 10px;
+      height: 11px;
+      outline: 0;
+      background: image-url("controls.png") -86px -11px no-repeat;
+      margin: 0 3px;
+      &:hover, &.active {
+        background-position: -86px 0;
+      }
+    }
+    .bx-stop {
+      display: block;
+      text-indent: -9999px;
+      width: 9px;
+      height: 11px;
+      outline: 0;
+      background: image-url("controls.png") -86px -44px no-repeat;
+      margin: 0 3px;
+      &:hover, &.active {
+        background-position: -86px -33px;
+      }
+    }
+  }
+  .bx-controls.bx-has-controls-auto.bx-has-pager {
+    .bx-pager {
+      text-align: left;
+      width: 80%;
+    }
+    .bx-controls-auto {
+      right: 0;
+      width: 35px;
+    }
+  }
+  .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+    span {
+      color: #fff;
+      font-family: Arial;
+      display: block;
+      font-size: .85em;
+      padding: 10px;
+    }
+  }
+}
+
+/* LOADER */
+
+/* PAGER */
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+/*
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(images/controls.png) no-repeat -43px -32px;
+}
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+*/
+
+/* AUTO CONTROLS (START / STOP) */
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+/* IMAGE CAPTIONS */
+
+/*Recent Works*/
+
+.recent-work ul.bxslider li {
+  b {
+    color: #656565;
+    font-size: 13px;
+    font-weight: 200;
+    font-style: normal;
+  }
+  em {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  strong {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &:hover {
+    b, strong {
+      color: #fff;
+    }
+  }
+  a.bxslider-block {
+    padding: 10px;
+    display: block;
+    background: #fcfcfc;
+  }
+  &:hover a.bxslider-block {
+    background: #0da3e2;
+    transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -webkit-transition: all 0.9s ease;
+  }
+  i {
+    &.icon-hover-1, &.icon-hover-2 {
+      top: 50%;
+      color: #fff;
+      padding: 16px;
+      font-size: 16px;
+      position: absolute;
+      margin-top: -1.5em;
+      border-radius: 50%;
+      background: image-url("black-opacity.png") repeat !important;
+    }
+    &.icon-hover-1:hover, &.icon-hover-2:hover {
+      color: #0da3e2;
+    }
+    &.icon-hover-1 {
+      left: -100px;
+    }
+    &.icon-hover-2 {
+      right: -100px;
+    }
+  }
+  &:hover i {
+    &.icon-hover-1 {
+      left: 30%;
+    }
+    &.icon-hover-2 {
+      right: 30%;
+    }
+    &.icon-hover-1, &.icon-hover-2 {
+      transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -webkit-transition: all 0.6s ease;
+    }
+  }
+}
+
+/*Hover Effects*/
