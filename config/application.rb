@@ -31,11 +31,6 @@ module Website
     config.assets.version = '1.0'
 
     config.assets.paths += ["#{config.root}/vendor/assets/fonts", "#{config.root}/app/assets/images/**", "#{config.root}/vendor/assets/images/**", "#{config.root}/vendor/assets/javascripts/**", "#{config.root}/vendor/assets/stylesheets/**"]
-    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.eot *.svg *.ttf *.otf *.woff vendor/assets/stylesheets/**/*)
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.eot *.svg *.ttf *.otf *.woff)
-
-    #["#{config.root}/vendor/assets/javascripts", "#{config.root}/vendor/assets/stylesheets"].each do |d|
-    #  config.assets.precompile += Dir.glob("#{d}/*").map{|f| "#{f.gsub(d + '/', '')}/**/*" if File.directory?(f)}.compact
-    #end
   end
 end
