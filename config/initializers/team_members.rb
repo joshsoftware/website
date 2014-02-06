@@ -288,21 +288,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 18
   },
-  { 
-    id: "kapil-tekwani",
-    name: "Kapil Tekwani",
-    title: "Software Engineer",
-    image: "kapil.jpg",
-    description: "He has graduated from Pune Institute of Computer Technology(PICT) with Bachelor's Degree in Computer Engineering.",
-    technical: {
-        twitter: "@kapiltekwani",
-        linkedin: "http://www.linkedin.com/pub/kapil-tekwani/17/288/69a",
-        facebook: "https://www.facebook.com/kapiltekwani",
-        github: "kapiltekwani"
-    },
-    display: true,
-    index: 19
-  },
   {
     id: "anil-maurya",
     name: "Anil Kumar Maurya",
