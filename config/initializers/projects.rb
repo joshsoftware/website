@@ -14,6 +14,7 @@ PROJECTS= [
         comments: "",
         tags: ["Rails 4.0.0", "MongoDB", "ElasticSearch", "AWS-EC2"]
     },
+    case_study: "portfolio_pdf/altizon_datonis_case_study.pdf",
     display: true
   },
 
