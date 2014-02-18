@@ -1,5 +1,5 @@
 = render 'shared/breadcrumbs', data: nil
-.contact-map
+-#.contact-map
   #map-canvas{:style => "width: 100%; height: 398px"}
 .container
   .row
@@ -32,6 +32,9 @@
           .form-group
             %label{:for => "email"} Email
             = f.text_field :email, class: "form-control #{any_errors(@contact, 'email')}", id: 'email', placeholder: 'Enter your email address'
+          .form-group
+            %label{:for => "skype_id"} Skype ID
+            = f.text_field :skype_id, class: "form-control #{any_errors(@contact, 'skype_id')}", id: 'skype_id', placeholder: 'Enter your Skype ID'
           .form-group
             %label{:for => "phone"} Phone
             = f.text_field :phone, class: "form-control #{any_errors(@contact, 'phone')}", id: 'phone', placeholder: 'Enter your phone number'
