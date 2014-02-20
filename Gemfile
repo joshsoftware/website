@@ -25,7 +25,6 @@ gem 'actionpack-page_caching', '1.0.2' #use caches_pages in rails 4
 gem 'twitter', '5.5.1'
 #gem 'unicorn'
 gem 'mina', '0.3.0'
-gem 'geokit-rails'
 gem 'google_drive'
 
 group :production do

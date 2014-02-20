@@ -68,8 +68,7 @@
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 
-  $.get('http://api.ipinfodb.com/v3/ip-city/?key=#{GEO_API_KEY}&ip=#{request.remote_ip}&format=json', function(response) {
+  $.get('http://api.ipinfodb.com/v3/ip-city/?key=#{ENV['GEO_API_KEY']}&ip=#{request.remote_ip}&format=json', function(response) {
     $('#contact_ip').val(response.ipAddress)
     $('#contact_location').val([response.cityName, response.regionName, response.countryName, response.zipCode].join(', '))
   }, "jsonp");
-  var form_tag

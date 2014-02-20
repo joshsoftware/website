@@ -5,6 +5,7 @@ if data
   ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
   ENV['USERNAME'] = data['USERNAME']
   ENV['PASSWORD'] = data['PASSWORD']
+  ENV['GEO_API_KEY'] = data['GEO_API_KEY']
 end
 
 Website::Application.configure do
