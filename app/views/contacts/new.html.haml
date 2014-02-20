@@ -26,6 +26,8 @@
         /
           %form{action: 'https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', method: 'POST', id: 'contact_form', role: 'form'}
         = form_for @contact, url: contact_us_path, method: :post do |f|
+          = f.hidden_field :ip
+          = f.hidden_field :location
           .form-group
             %label{:for => "name"} Name
             = f.text_field :name, class: "form-control #{any_errors(@contact, 'name')}", id: 'name', placeholder: 'Enter your name'
@@ -48,6 +50,7 @@
   %script
     __sfga()
 :javascript
+
   function initialize() {
       // use http://www.findlatitudeandlongitude.com/ to find lat long
       var myLatlng = new google.maps.LatLng(18.53041, 73.851592);
@@ -64,3 +67,9 @@
       });
   }
   google.maps.event.addDomListener(window, 'load', initialize);
+
+  $.get('http://api.ipinfodb.com/v3/ip-city/?key=#{GEO_API_KEY}&ip=#{request.remote_ip}&format=json', function(response) {
+    $('#contact_ip').val(response.ipAddress)
+    $('#contact_location').val([response.cityName, response.regionName, response.countryName, response.zipCode].join(', '))
+  }, "jsonp");
+  var form_tag
