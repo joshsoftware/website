@@ -6,6 +6,9 @@ if data
   ENV['USERNAME'] = data['USERNAME']
   ENV['PASSWORD'] = data['PASSWORD']
   ENV['GEO_API_KEY'] = data['GEO_API_KEY']
+  ENV['JOSH_INFO_EMAIL'] = data['JOSH_INFO_EMAIL']
+  ENV['JOSH_INFO_PASSWORD'] = data['JOSH_INFO_PASSWORD']
+  ENV['GOOGLE_DRIVE_SHEET'] = data['GOOGLE_DRIVE_SHEET']
 end
 
 Website::Application.configure do

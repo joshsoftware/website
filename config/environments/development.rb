@@ -4,6 +4,10 @@ ENV['TWITTER_CONSUMER_SECRET'] = data['TWITTER_CONSUMER_SECRET']
 
 ENV['USERNAME'] = data['USERNAME']
 ENV['PASSWORD'] = data['PASSWORD']
+ENV['GEO_API_KEY'] = data['GEO_API_KEY']
+ENV['JOSH_INFO_EMAIL'] = data['JOSH_INFO_EMAIL']
+ENV['JOSH_INFO_PASSWORD'] = data['JOSH_INFO_PASSWORD']
+ENV['GOOGLE_DRIVE_SHEET'] = data['GOOGLE_DRIVE_SHEET']
 
 Website::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb

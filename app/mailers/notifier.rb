@@ -8,8 +8,8 @@ class Notifier < ActionMailer::Base
   end
 
   def add_to_google_spreadsheet
-    session = GoogleDrive.login(JOSH_INFO_EMAIL, JOSH_INFO_PASSWORD)
-    spreadsheet = session.file_by_title(GOOGLE_DRIVE_SHEET)
+    session = GoogleDrive.login(ENV['JOSH_INFO_EMAIL'], ENV['JOSH_INFO_PASSWORD'])
+    spreadsheet = session.file_by_title(ENV['GOOGLE_DRIVE_SHEET'])
     worksheet = spreadsheet.worksheets[0]
     row = [@contact.name, @contact.email, @contact.skype_id, @contact.phone, @contact.ip, @contact.location, @contact.message, Time.now]
     worksheet.update_cells(worksheet.num_rows + 1, 1, [row])
