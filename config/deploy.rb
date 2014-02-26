@@ -83,5 +83,6 @@ namespace :application do
   desc 'Restart the application'
   task :restart => :environment do
     invoke 'passenger:restart_passenger'
+    queue 'bundle exec whenever -w'
   end
 end

@@ -62,10 +62,10 @@ class StaticController < ApplicationController
 
   def update_tweet
     # On local 
-    #@@latest_tweet = tweet if request.remote_ip == request.env['REMOTE_ADDR'] 
+    #@@latest_tweet = Tweet.latest_tweet if request.remote_ip == request.env['REMOTE_ADDR'] 
     #
     #On production server
-    @@latest_tweet = tweet if request.remote_ip == ENV['SERVER_ADDR']
+    @@latest_tweet = Tweet.latest_tweet if request.remote_ip == ENV['SERVER_ADDR']
     render :nothing => true
   end
 end
