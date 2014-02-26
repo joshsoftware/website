@@ -3,6 +3,9 @@
 # It's helpful, but not entirely necessary to understand cron before proceeding.
 # http://en.wikipedia.org/wiki/Cron
 
+
+set :output, "log/cron_log.log"
+
 every '*/15 * * * *' do
   #command "curl http://127.0.0.1:3000/update_tweet"
   command "curl www.joshsoftware.com/update_tweet"
