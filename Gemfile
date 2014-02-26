@@ -26,6 +26,7 @@ gem 'twitter', '5.5.1'
 #gem 'unicorn'
 gem 'mina', '0.3.0'
 gem 'google_drive'
+gem 'whenever'
 
 group :production do
   gem 'dalli', '2.6.4'

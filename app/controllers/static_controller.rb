@@ -60,4 +60,12 @@ class StaticController < ApplicationController
     @articles = ARTICLES.select{|a| a[:display]}
   end
 
+  def update_tweet
+    # On local 
+    #@@latest_tweet = tweet if request.remote_ip == request.env['REMOTE_ADDR'] 
+    #
+    #On production server
+    @@latest_tweet = tweet if request.remote_ip == ENV['SERVER_ADDR']
+    render :nothing => true
+  end
 end
