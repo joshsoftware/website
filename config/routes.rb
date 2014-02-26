@@ -7,6 +7,7 @@ Website::Application.routes.draw do
   get '/testimonials' => 'static#testimonials'
   get '/open-source' => 'static#open_source'
   get '/news' => 'static#news'
+  get '/update_tweet' => 'static#update_tweet'
   get '/thankyou' => 'static#thankyou', as: 'thankyou'
   get '/contact-us' => 'contacts#new', as: 'new_contact'
   post '/contact-us' => 'contacts#create', as: 'contact_us'
