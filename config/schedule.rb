@@ -4,7 +4,7 @@
 # http://en.wikipedia.org/wiki/Cron
 
 
-set :output, "log/cron_log.log"
+set :output, "#{path}/log/cron_log.log"
 
 every '*/15 * * * *' do
   #command "curl http://127.0.0.1:3000/update_tweet"
