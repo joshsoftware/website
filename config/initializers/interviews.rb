@@ -38,7 +38,7 @@ INTERVIEWS=[
     display: true
   },
   {
-    interviewer: 'Open Source For YOU Magazine',
+    interviewer: 'Open Source For You Magazine',
     interviews: [
       {
         header: 'For Josh Software, Open Source is the Foundation of its Business',
