@@ -36,5 +36,15 @@ INTERVIEWS=[
       }
     ],
     display: true
+  },
+  {
+    interviewer: 'Open Source For YOU Magazine',
+    interviews: [
+      {
+        header: 'For Josh Software, Open Source is the Foundation of its Business',
+        read_more: 'portfolio_pdf/Josh_in_Open_Source_For_U.jpg'
+      }
+    ],
+    display: true
   }
 ]
