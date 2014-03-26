@@ -82,5 +82,33 @@ NEWS = [
         }
       ],
     display: true
+  },
+
+  { 
+    title: "Ruby on Rails to the Rescue to Revolutionize the Australian Apparel Industry",
+    content:[
+      {
+        header: "Brandscope, Josh Software Build Ruby-Based B2B Cloud Platform for Australia's Apparel Industry",
+        covered_by:[
+          {
+            site_name: 'IT News Online',
+            link: "http://www.itnewsonline.com/news/Brandscope,-Josh-Software-Build-Ruby-Based-B2B-Cloud-Platform-for-Australias-Apparel-Industry/32506/6/6"
+          },
+          {
+            site_name: 'BizWire Express',
+            link: 'http://www.bizwireexpress.com/showstoryITNOL.php?storyid=265783'
+          },
+          {
+            site_name: 'moneylife',
+            link: 'http://www.moneylife.in/business-wire-news/ruby-on-rails-to-the-rescue-to-revolutionize-the-australian-apparel-industry/38740.html'
+          },
+          {
+            site_name: 'AndhraNews',
+            link: 'http://www.andhranews.net/Intl/2014/Ruby-Rails-Rescue-Revolutionize-Australian-Apparel-906.htm'
+          }
+        ]
+      }
+    ],
+    display: true
   }
 ]
