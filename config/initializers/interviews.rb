@@ -41,8 +41,9 @@ INTERVIEWS=[
     interviewer: 'Open Source For You Magazine',
     interviews: [
       {
-        header: 'For Josh Software, Open Source is the Foundation of its Business',
-        read_more: 'portfolio_pdf/Josh_in_Open_Source_For_U.jpg'
+        header: 'Gautam Rege, Founder Director, Josh Software in conversation with Open Source For You magazine discussing Josh Software’s adoption of Ruby on Rails development as its primary business model and finding the right talent and other challenges related to open source development.',
+        #read_more: 'portfolio_pdf/Josh_in_Open_Source_For_U.jpg'
+        read_more: 'interview_pdf/Josh_OSFY.pdf'
       }
     ],
     display: true
