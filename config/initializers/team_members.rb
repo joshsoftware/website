@@ -345,5 +345,18 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 26
+  },
+  { 
+    id: "abhishek-bose",
+    name: "Abhishek Bose",
+    title: "Software Engineer",
+    image: "assets/team/abhishek.jpg",
+    description: "Abhishek has completed BTech in Computer Science from KIIT University, Bhubaneswar. He has been working in JOSH since Jan, 2014. Apart from programming, he is passionate about football and loves to travel.",
+    technical: {
+        twitter: "@abhishekbose87",
+        github: "abhishekbose87"
+    },
+    display: true,
+    index: 27
   }
 ]
