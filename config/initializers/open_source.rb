@@ -141,5 +141,17 @@ OPEN_SOURCE= [
     },
     details: "We have been helping blitz.io update their gem with peripheral functionality. This is as part of Open Source Friday meetups.",
     display: true
+  },
+    
+  {
+    id: "Bidder",
+    title: "Bidder",
+    url: "http://playbidder.in",
+    github: {
+    user: 'anilmaurya',
+    repo: 'bidder'
+    },
+    details: "We at Josh, have been participating in Rails Rumble since 2012 and Bidder is an outcome of Rails Rumble 2013. Bidder is 2 player game built in Rails. It uses Slanger for sending and receiving asynchronous requests. People enjoyed this game at Josh so we continued working on Bidder. We hosted Bidder knockouts games in RubyConf India 2014, and the winner recieved a Bidder T-shirt. The response was overwhelming. We still work on Bidder in our Open Source Friday meetups.",
+    display: true
   }
 ]
