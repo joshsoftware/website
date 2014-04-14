@@ -23,7 +23,7 @@ PROJECTS= [
     country: "Australia",
     flag: "au.gif",
     year: "2013",
-    url: "http://brandscope.com",
+    url: "http://brandscope.com.au",
     image: "brandscope.png",
     description: "Brandscope Pty. Ltd. is focused on providing a streamline solution and maximizes the selling process for suppliers, retailers and agents in Australian fashion and Action Sports industry. Through this platform a supplier gets immediate access to quality retailers using unique and dynamic online tools to launch their brand with speed and efficiency giving them the competitive edge as well as a retailer gets the desired brands where they can view and buy product for their stores. An agent can reach to a large number of retailers and suppliers across geographies in no time with negligible efforts.The delivered solution features high resolution photography and video, concise product descriptions, buy plans, PDF catalogue automation, live social networking and ratings systems to mimic the traditional “touch n feel” sales process and create a 24/7 on-line showing experience for the Retailer.",
     technical: {
