@@ -19,7 +19,8 @@
                 = link_to project[:title], project[:url], target: '_blank'
             .col-lg-7
               .blog-img.well
-                = image_tag "portfolio/#{project[:image]}", alt: "Screenshot of #{project[:title]}"
+                %a{href: project[:url]}
+                  = image_tag "portfolio/#{project[:image]}", alt: "Screenshot of #{project[:title]}"
             .col-lg-5
               /
                 .col-lg-5
