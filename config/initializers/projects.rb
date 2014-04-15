@@ -56,7 +56,7 @@ PROJECTS= [
     country: "Australia",
     flag: "au.gif",
     year: "2013",
-    url: "https://zenithhub.com",
+    url: "http://www.kwikkopy.com.au/zenith-online-print",
     image: "zenith.png",
     description: "Zenith is printing solutions for kwik kopy clients. Clients can order, preview, update and print Business cards, Posters, Flyers, Files etc.",
     technical: {
