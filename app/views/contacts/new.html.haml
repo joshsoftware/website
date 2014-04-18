@@ -1,5 +1,5 @@
 = render 'shared/breadcrumbs', data: nil
--#.contact-map
+.contact-map
   #map-canvas{:style => "width: 100%; height: 398px"}
 .container
   .row
@@ -72,8 +72,8 @@
 :javascript
 
   function initialize() {
-      // use http://www.findlatitudeandlongitude.com/ to find lat long
-      var myLatlng = new google.maps.LatLng(18.561045, 73.785795);
+      // use http://www.findlatitudeandlongitude.com/ to find lat long and use map co-ordinates
+      var myLatlng = new google.maps.LatLng(18.561257, 73.785942);
       var mapOptions = {
           zoom: 15,
           center: myLatlng,
