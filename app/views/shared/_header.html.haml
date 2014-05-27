@@ -6,8 +6,10 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.navbar-brand{:href => root_path}
-          = image_tag 'JOSHSoftware_LogoStack_Color_org.png', alt: 'Josh Software'
+        .row
+          %a.navbar-brand.pull-left{:href => root_path}
+            = image_tag 'JOSHSoftware_LogoStack_Color_org.png', alt: 'Josh Software'
+          %div.pull-left.we_hiring= mail_to "hr@joshsoftware.com", image_tag("hiring1.png", height: '35', width: '110'), subject: 'Applying for a job.'
       .navbar-collapse.collapse
         %ul.nav.navbar-nav
           %li{class: "#{check_if_active('home')}"}
