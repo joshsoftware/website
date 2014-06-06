@@ -293,10 +293,13 @@ TEAM_MEMBERS= [
     name: "Anil Kumar Maurya",
     title: "Software Engineer",
     image: "anil.jpg",
-    description: "Anil is passionate programmer. He Completed his Bachelor Degree in Computer Engineering in 2012 from Army Institute of Technology, India. ",
+    description: "Anil is enthusiastic about Open Source, Ruby, Rails and Computer Games. He contributed to various open source project including rails. His open source project include <a href='https://github.com/anilmaurya/bidder' target='_blank'>Bidder</a>, <a href='https://github.com/anilmaurya/burst-balloons' target='_blank'>Burst-balloons</a>. He Completed his Bachelor Degree in Computer Engineering from Army Institute of Technology, India. Apart from programming he enjoys playing soccer.",
     technical: {
+        twitter: "@maurya_anill",
         linkedin: "http://www.linkedin.com/in/anilmaurya8",
-        facebook: "http://www.facebook.com/akanilrocks"
+        facebook: "http://www.facebook.com/akanilrocks",
+        blog: "http://programmingright.blogspot.in",
+        github: "anilmaurya"
     },
     display: true,
     index: 20
