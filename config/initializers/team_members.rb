@@ -345,5 +345,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 26
+  },
+  { 
+    id: "sahil-bhatia",
+    name: "Sahil Bhatia",
+    title: "Software Engineer",
+    image: "sahil.jpg",
+    description: "Sahil has completed his MCA from Bharati Vidyapeeth University, Pune. He has been an employee of JOSH since Jan, 2014. His hobbies include watching movies, reading about technology updates, spending time with family.",
+    technical: {
+        twitter: "@bhatiasahil2009",
+        linkedin: "http://in.linkedin.com/in/sahilb86/",
+        facebook: "https://www.facebook.com/bhatiasahil2005",
+        github: "sahilbhatia"
+    },
+    display: true,
+    index: 27
   }
 ]
