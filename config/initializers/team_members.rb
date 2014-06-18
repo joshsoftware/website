@@ -125,22 +125,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 7
   },
-
-  { 
-    id: "sandipransing",
-    name: "Sandip Ransing",
-    title: "Senior Software Engineer",
-    image: "sandip.jpg",
-    description: "Sandip has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He loves riding bike, playing carrom. He has Bachelors Degree in Computer Engineering from Modern College Of Engineering, Pune, in 2007.",
-    technical: {        
-        twitter: "@sandipransing",
-        linkedin: "http://www.linkedin.com/in/sandipransing",
-        blog: "http://funonrails.com/"
-    },
-    display: true,
-    index: 8
-  },
-
   {
     id: "kiran-chaudhari",
     name: "Kiran Chaudhari",
@@ -152,7 +136,7 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/kirandc",
     },
     display: true,
-    index: 9
+    index: 8
   },
 
   {
@@ -167,7 +151,7 @@ TEAM_MEMBERS= [
       blog: "http://blog.joshsoftware.com/author/siva543/"
     },
     display: true,
-    index: 10
+    index: 9
   },
 
   {
@@ -183,7 +167,7 @@ TEAM_MEMBERS= [
       github: "pratik14"
     },
       display: true,
-      index: 11
+      index: 10
   },
 
   { 
@@ -199,7 +183,7 @@ TEAM_MEMBERS= [
         github: "swapnilchincholkar"
     },
     display: true,
-    index: 12
+    index: 11
   },
 
   { 
@@ -212,25 +196,7 @@ TEAM_MEMBERS= [
         github: "anujaware"
     },
     display: true,
-    index: 13
-  },
-
-  { 
-    id: "prasad-surase",
-    name: "Prasad Surase",
-    title: "Software Engineer",
-    image: "prasad.jpg",
-    description: "Prasad has been a part of Josh family since January 2011. He enjoys being a RoR developer. He has Masters Degree in Computer Application from Fergusson College, Pune.",
-    technical: {
-      linkedin: 'http://in.linkedin.com/pub/prasad-surase/3a/653/b1',
-      twitter: "@prasadsurase",
-      facebook: "http://www.facebook.com/surase.prasad",
-      stackoverflow: "http://stackoverflow.com/users/808533/surase-prasad",
-      blog: "http://blog.joshsoftware.com/author/prasadsurase/",
-      github: "prasadsurase"
-    },
-    display: true,
-    index: 14
+    index: 12
   },
   {
     id: "rishi-jain",
@@ -245,7 +211,7 @@ TEAM_MEMBERS= [
       github: "rishijain"
     },
     display:  true,
-    index: 15
+    index: 13
   },
   {
     id: "sanjiv-jha",
@@ -260,7 +226,7 @@ TEAM_MEMBERS= [
       github: "narutosanjiv"
     },
     display: true,
-    index: 16
+    index: 14
   },
   { 
     id: "manoj-mishra",
@@ -274,7 +240,7 @@ TEAM_MEMBERS= [
         github: "b0rn2c0d3"
     },
     display: true,
-    index: 17
+    index: 15
   },
   { 
     id: "meghabrid",
@@ -286,7 +252,7 @@ TEAM_MEMBERS= [
         facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
-    index: 18
+    index: 16
   },
   {
     id: "anil-maurya",
@@ -302,7 +268,7 @@ TEAM_MEMBERS= [
         github: "anilmaurya"
     },
     display: true,
-    index: 20
+    index: 17
   },
   {
     id: "pramod-shinde",
@@ -317,7 +283,7 @@ TEAM_MEMBERS= [
       github: "pramodshinde"
     },
       display: true,
-      index: 23
+      index: 18
   },
   { 
     id: "gerson-scanapieco",
@@ -332,7 +298,7 @@ TEAM_MEMBERS= [
         github: "gerson-scanapieco"
     },
     display: true,
-    index: 24
+    index: 19
   },
   { 
     id: "aditya-shedge",
@@ -347,7 +313,7 @@ TEAM_MEMBERS= [
         github: "adityashedge"
     },
     display: true,
-    index: 26
+    index: 20
   },
   { 
     id: "abhishek-bose",
@@ -358,6 +324,11 @@ TEAM_MEMBERS= [
     technical: {
         twitter: "@abhishekbose87",
         github: "abhishekbose87"
+    },
+    display: true,
+    index: 21
+  },
+  {      
     id: "sahil-bhatia",
     name: "Sahil Bhatia",
     title: "Software Engineer",
@@ -370,6 +341,6 @@ TEAM_MEMBERS= [
         github: "sahilbhatia"
     },
     display: true,
-    index: 27
+    index: 22
   }
 ]
