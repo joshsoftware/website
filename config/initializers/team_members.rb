@@ -343,7 +343,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 22
   },
-
   {      
     id: "ashish-singh",
     name: "Ashish Singh",
@@ -358,5 +357,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 23
+  },
+  {      
+    id: "pankaj-rawat",
+    name: "Pankaj Rawat",
+    title: "Software Engineer",
+    image: "pankaj.jpg",
+    description: "Pankaj is passionate about open-source web-technologies. He is a gamer, passionate soccer player. He completed his Bachelor Degree in Information technology from Army Institute of Technology.",
+    technical: {
+        twitter: "@pkrawat1",
+        linkedin: "http://in.linkedin.com/in/pkrawat1/",
+        facebook: "https://www.facebook.com/pkrawat1",
+        github: "pkrawat1"
+    },
+    display: true,
+    index: 24
   }
 ]
