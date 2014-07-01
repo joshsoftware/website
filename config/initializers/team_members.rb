@@ -15,7 +15,6 @@ TEAM_MEMBERS= [
     display: true,
     index: 0
   },
-
   { 
     id: "sethupathi-asokan",
     name: "Sethupathi Asokan",
@@ -342,5 +341,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 22
+  },
+  {      
+    id: "ashish-singh",
+    name: "Ashish Singh",
+    title: "Software Engineer",
+    image: "ashish.jpg",
+    description: "Ashish has completed his B.E. from Army Institute of Technology Pune. He is passionate about programming and likes learning new technologies and languages. He likes to read and play computer games in his free time.",
+    technical: {
+        twitter: "@ashishait",
+        linkedin: "http://in.linkedin.com/in/ashish173/",
+        facebook: "https://www.facebook.com/ashish173",
+        github: "ashish173"
+    },
+    display: true,
+    index: 23
   }
 ]
