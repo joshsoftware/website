@@ -15,6 +15,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 0
   },
+
   { 
     id: "sethupathi-asokan",
     name: "Sethupathi Asokan",
@@ -342,6 +343,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 22
   },
+
   {      
     id: "ashish-singh",
     name: "Ashish Singh",
