@@ -373,4 +373,19 @@ TEAM_MEMBERS= [
     display: true,
     index: 24
   }
+  {      
+    id: "deepak-singh",
+    name: "Deepak Singh",
+    title: "Software Engineer",
+    image: "deepak.jpg",
+    description: "Deepak completed his Bachelor Of Engineering in Computers from Army Institute of Technology, Pune. He is passionate about programming and learnig new skills. He also likes reading fictions, tech-articles and DIY stuff. He enjoys computers games, movies and books in his free time.",
+    technical: {
+        twitter: "@spider_gears",
+        linkedin: "http://in.linkedin.com/in/spidergears/",
+        facebook: "https://www.facebook.com/spidergears",
+        github: "spidergears"
+    },
+    display: true,
+    index: 24
+  }
 ]
