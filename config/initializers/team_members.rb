@@ -372,5 +372,19 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 24
+  },
+  {      
+    id: "shifa-khan",
+    name: "Shifa Khan",
+    title: "Software Engineer",
+    image: "shifa.jpg",
+    description: "Shifa has completed her Bachelor Degree in Electronics and Telecommunication from Army Institute of Technology, Pune. She has been a member of Josh Team since July 2014. In her spare time, she likes to read, travel and binge-watch TV shows.",
+    technical: {
+        twitter: "@ALazyFish",
+        linkedin: "http://in.linkedin.com/in/shifakhan/",
+        github: "shifakhan"
+    },
+    display: true,
+    index: 27
   }
 ]
