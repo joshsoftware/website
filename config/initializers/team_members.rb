@@ -373,6 +373,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 24
   },
+<<<<<<< HEAD
   {      
     id: "deepak-singh",
     name: "Deepak Singh",
@@ -384,22 +385,38 @@ TEAM_MEMBERS= [
         linkedin: "http://in.linkedin.com/in/spidergears/",
         facebook: "https://www.facebook.com/spidergears",
         github: "spidergears"
+      },
+      display: true,
+      index: 25
     },
-    display: true,
-    index: 25
-  },
-  {
-    id: "shifa-khan",
-    name: "Shifa Khan",
-    title: "Software Engineer",
-    image: "shifa.jpg",
-    description: "Shifa has completed her Bachelor Degree in Electronics and Telecommunication from Army Institute of Technology, Pune. She has been a member of Josh Team since July 2014. In her spare time, she likes to read, travel and binge-watch TV shows.",
-    technical: {
+    {
+      id: "seema-jha",
+      name: "Seema Jha",
+      title: "Software Engineer",
+      image: "seema.jpg",
+      description: "Seema has completed her Bachelor Degree in Electronics and Telecommunications from Army Institute of Technology.She loves travelling and is passionate about dancing.",
+      technical: {
+        twitter: "@seemajha10",
+        linkedin: "http://in.linkedin.com/pub/seema-jha/78/649/695",
+        facebook: "https://www.facebook.com/seema.jha.184",
+        github: "seemajha"
+      },
+      display: true,
+      index: 26
+    },
+    {
+      id: "shifa-khan",
+      name: "Shifa Khan",
+      title: "Software Engineer",
+      image: "shifa.jpg",
+      description: "Shifa has completed her Bachelor Degree in Electronics and Telecommunication from Army Institute of Technology, Pune. She has been a member of Josh Team since July 2014. In her spare time, she likes to read, travel and binge-watch TV shows.",
+      technical: {
         twitter: "@ALazyFish",
         linkedin: "http://in.linkedin.com/in/shifakhan/",
         github: "shifakhan"
-    },
-    display: true,
-    index: 27
-  }
-]
+      },
+      display: true,
+      index: 27
+    }
+
+  ]
