@@ -372,7 +372,7 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 24
-  }
+  },
   {      
     id: "deepak-singh",
     name: "Deepak Singh",
