@@ -344,16 +344,89 @@ TEAM_MEMBERS= [
     index: 22
   },
   {      
+    id: "ashish-singh",
+    name: "Ashish Singh",
+    title: "Software Engineer",
+    image: "ashish.jpg",
+    description: "Ashish has completed his B.E. from Army Institute of Technology Pune. He is passionate about programming and likes learning new technologies and languages. He likes to read and play computer games in his free time.",
+    technical: {
+        twitter: "@ashishait",
+        linkedin: "http://in.linkedin.com/in/ashish173/",
+        facebook: "https://www.facebook.com/ashish173",
+        github: "ashish173"
+    },
+    display: true,
+    index: 23
+  },
+  {      
+    id: "pankaj-rawat",
+    name: "Pankaj Rawat",
+    title: "Software Engineer",
+    image: "pankaj.jpg",
+    description: "Pankaj is passionate about open-source web-technologies. He is a gamer, passionate soccer player. He completed his Bachelor Degree in Information technology from Army Institute of Technology.",
+    technical: {
+        twitter: "@pkrawat1",
+        linkedin: "http://in.linkedin.com/in/pkrawat1/",
+        facebook: "https://www.facebook.com/pkrawat1",
+        github: "pkrawat1"
+    },
+    display: true,
+    index: 24
+  },
+  {      
+    id: "deepak-singh",
+    name: "Deepak Singh",
+    title: "Software Engineer",
+    image: "deepak.jpg",
+    description: "Deepak completed his Bachelor Of Engineering in Computers from Army Institute of Technology, Pune. He is passionate about programming and learnig new skills. He also likes reading fictions, tech-articles and DIY stuff. He enjoys computers games, movies and books in his free time.",
+    technical: {
+      twitter: "@spider_gears",
+      linkedin: "http://in.linkedin.com/in/spidergears/",
+      facebook: "https://www.facebook.com/spidergears",
+      github: "spidergears"
+    },
+    display: true,
+    index: 25
+  },
+  {
+    id: "seema-jha",
+    name: "Seema Jha",
+    title: "Software Engineer",
+    image: "seema.jpg",
+    description: "Seema has completed her Bachelor Degree in Electronics and Telecommunications from Army Institute of Technology.She loves travelling and is passionate about dancing.",
+    technical: {
+      twitter: "@seemajha10",
+      linkedin: "http://in.linkedin.com/pub/seema-jha/78/649/695",
+      facebook: "https://www.facebook.com/seema.jha.184",
+      github: "seemajha"
+    },
+    display: true,
+    index: 26
+  },
+  {
+    id: "shifa-khan",
+    name: "Shifa Khan",
+    title: "Software Engineer",
+    image: "shifa.jpg",
+    description: "Shifa has completed her Bachelor Degree in Electronics and Telecommunication from Army Institute of Technology, Pune. She has been a member of Josh Team since July 2014. In her spare time, she likes to read, travel and binge-watch TV shows.",
+    technical: {
+      twitter: "@ALazyFish",
+      linkedin: "http://in.linkedin.com/in/shifakhan/",
+      github: "shifakhan"
+    },
+    display: true,
+    index: 27
+  },
+  {
     id: "anurag-pratap",
     name: "Anurag Pratap",
     title: "Software Engineer",
     image: "anurag.jpg",
-    description: "Anurag Pratap completed his Bachelors in Computer Engineering from Army Institute of Technology,Pune. His hobbies include playing Basketball,listening songs and trekking.",
+    description: "Anurag Pratap completed his Bachelors in Computer Engineering from Army Institute of Technology,Pune. His hobbies include     playing Basketball,listening songs and trekking.",
     technical: {
-        
-        linkedin: "http://in.linkedin.com/in/apsc92/",
-        facebook: "https://www.facebook.com/apsc92",
-        github: "apsc92"
+      linkedin: "http://in.linkedin.com/in/apsc92/",
+      facebook: "https://www.facebook.com/apsc92",
+      github: "apsc92"
     },
     display: true,
     index: 28
