@@ -386,6 +386,6 @@ TEAM_MEMBERS= [
         github: "spidergears"
     },
     display: true,
-    index: 24
+    index: 25
   }
 ]
