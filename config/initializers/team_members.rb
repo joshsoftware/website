@@ -416,6 +416,19 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 27
+  },
+  {
+    id: "anurag-pratap",
+    name: "Anurag Pratap",
+    title: "Software Engineer",
+    image: "anurag.jpg",
+    description: "Anurag Pratap completed his Bachelors in Computer Engineering from Army Institute of Technology,Pune. His hobbies include     playing Basketball,listening songs and trekking.",
+    technical: {
+      linkedin: "http://in.linkedin.com/in/apsc92/",
+      facebook: "https://www.facebook.com/apsc92",
+      github: "apsc92"
+    },
+    display: true,
+    index: 28
   }
-
 ]
