@@ -286,21 +286,6 @@ TEAM_MEMBERS= [
       index: 18
   },
   { 
-    id: "gerson-scanapieco",
-    name: "Gerson Scanapieco",
-    title: "Software Engineer",
-    image: "gerson.jpg",
-    description: "Gerson is a Bachelor in Computer Science, graduated in 2013 from Federal University of Uberlandia(UFU), Brazil. Joined Josh team in August 2013. ",
-    technical: {
-        twitter: "@GScanapieco",
-        linkedin: "http://www.linkedin.com/pub/gerson-scanapieco/48/22/7b2",
-        facebook: "http://www.facebook.com/gerson.scanapieco",
-        github: "gerson-scanapieco"
-    },
-    display: true,
-    index: 19
-  },
-  { 
     id: "aditya-shedge",
     name: "Aditya Shedge",
     title: "Software Engineer",
@@ -313,7 +298,7 @@ TEAM_MEMBERS= [
         github: "adityashedge"
     },
     display: true,
-    index: 20
+    index: 19
   },
   { 
     id: "abhishek-bose",
@@ -326,7 +311,7 @@ TEAM_MEMBERS= [
         github: "abhishekbose87"
     },
     display: true,
-    index: 21
+    index: 20
   },
   {      
     id: "sahil-bhatia",
@@ -341,7 +326,7 @@ TEAM_MEMBERS= [
         github: "sahilbhatia"
     },
     display: true,
-    index: 22
+    index: 21
   },
   {      
     id: "ashish-singh",
@@ -356,7 +341,7 @@ TEAM_MEMBERS= [
         github: "ashish173"
     },
     display: true,
-    index: 23
+    index: 22
   },
   {      
     id: "pankaj-rawat",
@@ -371,7 +356,7 @@ TEAM_MEMBERS= [
         github: "pkrawat1"
     },
     display: true,
-    index: 24
+    index: 23
   },
   {      
     id: "deepak-singh",
@@ -386,7 +371,7 @@ TEAM_MEMBERS= [
       github: "spidergears"
     },
     display: true,
-    index: 25
+    index: 24
   },
   {
     id: "seema-jha",
@@ -401,7 +386,7 @@ TEAM_MEMBERS= [
       github: "seemajha"
     },
     display: true,
-    index: 26
+    index: 25
   },
   {
     id: "shifa-khan",
@@ -415,7 +400,7 @@ TEAM_MEMBERS= [
       github: "shifakhan"
     },
     display: true,
-    index: 27
+    index: 26
   },
   {
     id: "anurag-pratap",
@@ -429,6 +414,6 @@ TEAM_MEMBERS= [
       github: "apsc92"
     },
     display: true,
-    index: 28
+    index: 27
   }
 ]
