@@ -416,4 +416,18 @@ TEAM_MEMBERS= [
     display: true,
     index: 27
   }
+  {
+    id: "yogesh-khater",
+    name: "Yogesh Khater",
+    title: "Software Engineer",
+    image: "yogesh.jpg",
+    description: "He has completed Masters degree of Computer Science from Fergusson College and has been part of Josh since July, 2014 as a Software Engineer. He loves programming and in his spare time, loves to watch movies and play cricket.",
+    technical: {
+      github: 'yogeshjain999',
+      skype: 'live:yogeshjain999',
+      linkedin: 'http://www.linkedin.com/in/yogeshjain999'
+    },
+    display: true,
+    index: 28
+  }
 ]
