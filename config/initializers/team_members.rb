@@ -415,7 +415,7 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 27
-  }
+  },
   {
     id: "yogesh-khater",
     name: "Yogesh Khater",
