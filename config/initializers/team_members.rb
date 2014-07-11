@@ -84,7 +84,7 @@ TEAM_MEMBERS= [
   {
     id: "shailesh-patil",
     name: "Shailesh Patil",
-    title: "Senior Software Engineer",
+    title: "Software Architect",
     image: "shailesh.jpg",
     description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
     technical: {        
@@ -112,7 +112,7 @@ TEAM_MEMBERS= [
   {
     id: "jiren-patel",
     name: "Jiren Patel",
-    title: "Senior Software Engineer",
+    title: "Software Architect",
     #image: "http://www.gravatar.com/avatar/dde56ce7a6860df43fc2eee1336552dc",
     image: "jiren.png",
     description: "Jiren is a passionate and enthusiastic about programming languages. He is avid coder, <a href='http://www.flickr.com/photos/50103686@N03/8032359262/in/set-72157631641674776/' target='_blank'>biker</a>, gamer and loves to discover new things. He is the author of many opensouce projects i.e Filter.js, Splat, FeatherCMS. He has Bachelors Degree in Computer Engineering from Dharmsinh Desai University.",
@@ -128,7 +128,7 @@ TEAM_MEMBERS= [
   {
     id: "kiran-chaudhari",
     name: "Kiran Chaudhari",
-    title: "Senior Software Engineer",
+    title: "Team Lead",
     image: "kiran.jpg",
     description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
     technical: {
@@ -142,7 +142,7 @@ TEAM_MEMBERS= [
   {
     id: "siva-gollapalli",
     name: "Siva Gollapalli",
-    title: "QA & Developer",
+    title: "Senior QA & Developer",
     image: "siva_gollapalli.jpg",
     description: "He is graduted in B.Tech Computers from SVEC in 2009. He has been working in Josh since 2010. Watching movies, playing cricket and coding are hobbies.",
     technical: {
@@ -157,7 +157,7 @@ TEAM_MEMBERS= [
   {
     id: "pratik-shah",
     name: "Pratik Shah",
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     image: "pratik.jpg",
     description: "Pratik has over 2+ yrs of exp. in design & creation of various web applications built over RoR framework. He has been part of Josh since July 2010. He has Bachelors Degree in E&TC from Pune Institute of Computer Technology (PICT), India.",
     technical: {        
@@ -173,7 +173,7 @@ TEAM_MEMBERS= [
   { 
     id: "swapnil-chincholkar",
     name: "Swapnil Chincholkar",
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     image: "swapnil.jpg",
     description: "Swapnil started his career in software industry with Josh as a Ruby On Rails developer. He has done his Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
     technical: {
@@ -189,7 +189,7 @@ TEAM_MEMBERS= [
   { 
     id: "anujaware",
     name: "Anuja Ware",
-    title: "Software Developer",
+    title: "Senior Software Developer",
     image: "anujaware.jpg",
     description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
     technical: {        
@@ -201,7 +201,7 @@ TEAM_MEMBERS= [
   {
     id: "rishi-jain",
     name: "Rishi Jain",
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     image:  "rishi.jpg",
     description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011.",
     technical: {
@@ -231,7 +231,7 @@ TEAM_MEMBERS= [
   { 
     id: "manoj-mishra",
     name: "Manoj Mishra",
-    title: "Software Developer",
+    title: "Senior Software Developer",
     image: "manoj.jpg",
     description: "He joined Josh Software in April 2012, he graduated from Army Institute of Technology in 2011. He has work experience with various Web technologies such as ASP.net, JSP and Rails. He loves programming and creativity. His hobbies are playing badminton and computer gaming.",
     technical: {
@@ -303,7 +303,7 @@ TEAM_MEMBERS= [
   { 
     id: "abhishek-bose",
     name: "Abhishek Bose",
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     image: "abhishek.jpg",
     description: "Abhishek has completed BTech in Computer Science from KIIT University, Bhubaneswar. He has been working in JOSH since Jan, 2014. Apart from programming, he is passionate about football and loves to travel.",
     technical: {
