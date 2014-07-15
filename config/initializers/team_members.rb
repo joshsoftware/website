@@ -216,7 +216,7 @@ TEAM_MEMBERS= [
   {
     id: "sanjiv-jha",
     name: "Sanjiv Kumar Jha",
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     image: "sanjiv.jpg",
     description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd. He has knowledge of various programming language like c, c++, objective-c, python, ruby, c# and popular framework like .Net, spring, cherry, Rails. He love coding in ruby. He is one of fan of manga and anime.",
     technical: {
