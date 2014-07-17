@@ -110,5 +110,53 @@ NEWS = [
       }
     ],
     display: true
+  },
+
+  { 
+    title: "Successful Journey Of Josh!!!",
+    content:[
+      {
+        header: "Josh Software Develops Next Big Web Based Solutions",
+        covered_by:[
+          {
+            site_name: 'siliconindia News', 
+            link: "http://www.siliconindia.com/news/startups/Josh-Software-Develops-Next-Big-Web-Based-Solutions-nid-168131-cid-100.html"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "2014 union buget expectation",
+    content:[
+      {
+        header: "IT and ITES looking for impetus to growth, start-ups",
+        covered_by:[
+          {
+            site_name: 'The Indian Express',
+            link: "interview_pdf/Josh Indian Express - Pune Newsline_10th July 2014.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "2014 union buget quotes",
+    content:[
+      {
+        header: "Corporates hail IT push",
+        covered_by:[
+          {
+            site_name: 'The Indian Express',
+            link: "interview_pdf/Josh Indian Express Pune Newsline 11 July 2014.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
   }
 ]
