@@ -96,20 +96,6 @@ TEAM_MEMBERS= [
   },
 
   {
-    id: "ninad-pol",
-    name: "Ninad Ashok Pol",
-    title: "Senior QA Engineer",
-    image: "ninad.jpg",
-    description: "With 5+ years of experience in IT industry , he has 4+ years of relevant experience as a Senior QA Engineer. He has been the part of Josh family for about 5 years, since december 2007. He completed his graduation (BE.Comp) in 2007 from PVG's college of Engineering & Technology , Pune. Lead the Josh cricket team for 2 years.",
-    technical: {
-        linkedin: "http://in.linkedin.com/in/ninad23p",
-        facebook: "http://www.facebook.com/ninad23p"
-    },
-    display: true,
-    index: 6
-  },
-
-  {
     id: "jiren-patel",
     name: "Jiren Patel",
     title: "Software Architect",
@@ -123,8 +109,9 @@ TEAM_MEMBERS= [
       twitter: '@jirens'
     },
     display: true,
-    index: 7
+    index: 6
   },
+
   {
     id: "kiran-chaudhari",
     name: "Kiran Chaudhari",
@@ -136,7 +123,7 @@ TEAM_MEMBERS= [
         linkedin: "http://www.linkedin.com/in/kirandc",
     },
     display: true,
-    index: 8
+    index: 7
   },
 
   {
@@ -151,7 +138,7 @@ TEAM_MEMBERS= [
       blog: "http://blog.joshsoftware.com/author/siva543/"
     },
     display: true,
-    index: 9
+    index: 8
   },
 
   {
@@ -167,7 +154,7 @@ TEAM_MEMBERS= [
       github: "pratik14"
     },
       display: true,
-      index: 10
+      index: 9
   },
 
   { 
@@ -183,7 +170,7 @@ TEAM_MEMBERS= [
         github: "swapnilchincholkar"
     },
     display: true,
-    index: 11
+    index: 10
   },
 
   { 
@@ -196,8 +183,9 @@ TEAM_MEMBERS= [
         github: "anujaware"
     },
     display: true,
-    index: 12
+    index: 11
   },
+
   {
     id: "rishi-jain",
     name: "Rishi Jain",
@@ -211,8 +199,9 @@ TEAM_MEMBERS= [
       github: "rishijain"
     },
     display:  true,
-    index: 13
+    index: 12
   },
+
   {
     id: "sanjiv-jha",
     name: "Sanjiv Kumar Jha",
@@ -226,8 +215,9 @@ TEAM_MEMBERS= [
       github: "narutosanjiv"
     },
     display: true,
-    index: 14
+    index: 13
   },
+
   { 
     id: "manoj-mishra",
     name: "Manoj Mishra",
@@ -240,8 +230,9 @@ TEAM_MEMBERS= [
         github: "b0rn2c0d3"
     },
     display: true,
-    index: 15
+    index: 14
   },
+
   { 
     id: "meghabrid",
     name: "Megha Brid",
@@ -252,8 +243,9 @@ TEAM_MEMBERS= [
         facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
-    index: 16
+    index: 15
   },
+
   {
     id: "anil-maurya",
     name: "Anil Kumar Maurya",
@@ -268,8 +260,9 @@ TEAM_MEMBERS= [
         github: "anilmaurya"
     },
     display: true,
-    index: 17
+    index: 16
   },
+
   {
     id: "pramod-shinde",
     name: "Pramod Shinde",
@@ -283,8 +276,9 @@ TEAM_MEMBERS= [
       github: "pramodshinde"
     },
       display: true,
-      index: 18
+      index: 17
   },
+
   { 
     id: "aditya-shedge",
     name: "Aditya Shedge",
@@ -298,8 +292,9 @@ TEAM_MEMBERS= [
         github: "adityashedge"
     },
     display: true,
-    index: 19
+    index: 18
   },
+
   { 
     id: "abhishek-bose",
     name: "Abhishek Bose",
@@ -311,8 +306,9 @@ TEAM_MEMBERS= [
         github: "abhishekbose87"
     },
     display: true,
-    index: 20
+    index: 19
   },
+
   {      
     id: "sahil-bhatia",
     name: "Sahil Bhatia",
@@ -326,7 +322,7 @@ TEAM_MEMBERS= [
         github: "sahilbhatia"
     },
     display: true,
-    index: 21
+    index: 20
   },
   {      
     id: "ashish-singh",
@@ -341,7 +337,7 @@ TEAM_MEMBERS= [
         github: "ashish173"
     },
     display: true,
-    index: 22
+    index: 21
   },
   {      
     id: "pankaj-rawat",
@@ -356,7 +352,7 @@ TEAM_MEMBERS= [
         github: "pkrawat1"
     },
     display: true,
-    index: 23
+    index: 22
   },
   {      
     id: "deepak-singh",
@@ -371,7 +367,7 @@ TEAM_MEMBERS= [
       github: "spidergears"
     },
     display: true,
-    index: 24
+    index: 23
   },
   {
     id: "seema-jha",
@@ -386,7 +382,7 @@ TEAM_MEMBERS= [
       github: "seemajha"
     },
     display: true,
-    index: 25
+    index: 24
   },
   {
     id: "shifa-khan",
@@ -400,7 +396,7 @@ TEAM_MEMBERS= [
       github: "shifakhan"
     },
     display: true,
-    index: 26
+    index: 25
   },
   {
     id: "anurag-pratap",
@@ -414,7 +410,7 @@ TEAM_MEMBERS= [
       github: "apsc92"
     },
     display: true,
-    index: 27
+    index: 26
   },
   {
     id: "yogesh-khater",
@@ -428,6 +424,6 @@ TEAM_MEMBERS= [
       linkedin: 'http://www.linkedin.com/in/yogeshjain999'
     },
     display: true,
-    index: 28
+    index: 27
   }
 ]
