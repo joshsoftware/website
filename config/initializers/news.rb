@@ -158,5 +158,37 @@ NEWS = [
       }
     ],
     display: true
+  },
+
+  { 
+    title: "Open Source din aane waale hain?",
+    content:[
+      {
+        header: "The UK Government recently made a landmark decision to switch to open software software",
+        covered_by:[
+          {
+            site_name: 'CIOL',
+            link: "http://www.ciol.com/ciol/columnists/217782/open-source-din-aane-waale-hain"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "Open Source For Students",
+    content:[
+      {
+        header: "Colleges now invite start-ups for placement",
+        covered_by:[
+          {
+            site_name: 'The Indian Express',
+            link: "interview_pdf/Josh Software_The Indian Express_20th July 2014.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
   }
 ]
