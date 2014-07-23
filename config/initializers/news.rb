@@ -1,22 +1,131 @@
 NEWS = [ 
-  {
-    title: "Delivering the Best End User Experience Through a High Performance Web Solution for Educade",
+  { 
+    title: "Open Source For Students",
     content:[
       {
-        header: "GameDesk partnered with India based Josh Software to build high performance web solution for Educade.org",
+        header: "Colleges now invite start-ups for placement",
         covered_by:[
-            {
-              site_name: "Animation Galaxy",
-              link: "http://animationgalaxy.in/Newsindetail.aspx?Dept=Games&PID=114#.UuYT3tK6Y1g"
-            }, 
-            {
-              site_name: "One News Page",
-              link: "http://www.onenewspage.com/n/Press+Releases/74w2r5vl2/GameDesk-Partnered-With-India-Based-Josh-Software-to.htm"
-            },
-            {
-              site_name: "Silo Breaker",
-              link: "http://news.silobreaker.com/gamedesk-partnered-with-indiabased-josh-software-to-build-high-performance-web-solution-for-educadeorg-5_2267200067465117757"
-            }
+          {
+            site_name: 'The Indian Express',
+            link: "interview_pdf/Josh Software_The Indian Express_20th July 2014.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "Open Source din aane waale hain?",
+    content:[
+      {
+        header: "The UK Government recently made a landmark decision to switch to open software software",
+        covered_by:[
+          {
+            site_name: 'CIOL',
+            link: "http://www.ciol.com/ciol/columnists/217782/open-source-din-aane-waale-hain"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "2014 union buget quotes",
+    content:[
+      {
+        header: "Corporates hail IT push",
+        covered_by:[
+          {
+            site_name: 'The Indian Express',
+            link: "interview_pdf/Josh Indian Express Pune Newsline 11 July 2014.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "2014 union buget expectation",
+    content:[
+      {
+        header: "IT and ITES looking for impetus to growth, start-ups",
+        covered_by:[
+          {
+            site_name: 'The Indian Express',
+            link: "interview_pdf/Josh Indian Express - Pune Newsline_10th July 2014.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "Successful Journey Of Josh!!!",
+    content:[
+      {
+        header: "Josh Software Develops Next Big Web Based Solutions",
+        covered_by:[
+          {
+            site_name: 'siliconindia News', 
+            link: "http://www.siliconindia.com/news/startups/Josh-Software-Develops-Next-Big-Web-Based-Solutions-nid-168131-cid-100.html"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
+    title: "Ruby on Rails to the Rescue to Revolutionize the Australian Apparel Industry",
+    content:[
+      {
+        header: "Brandscope, Josh Software Build Ruby-Based B2B Cloud Platform for Australia's Apparel Industry",
+        covered_by:[
+          {
+            site_name: 'IT News Online',
+            link: "http://www.itnewsonline.com/news/Brandscope,-Josh-Software-Build-Ruby-Based-B2B-Cloud-Platform-for-Australias-Apparel-Industry/32506/6/6"
+          },
+          {
+            site_name: 'BizWire Express',
+            link: 'http://www.bizwireexpress.com/showstoryITNOL.php?storyid=265783'
+          },
+          {
+            site_name: 'moneylife',
+            link: 'http://www.moneylife.in/business-wire-news/ruby-on-rails-to-the-rescue-to-revolutionize-the-australian-apparel-industry/38740.html'
+          },
+          {
+            site_name: 'AndhraNews',
+            link: 'http://www.andhranews.net/Intl/2014/Ruby-Rails-Rescue-Revolutionize-Australian-Apparel-906.htm'
+          }
+        ]
+      }
+    ],
+    display: true
+  },
+
+  {
+    title: "Garden City Ruby Conference",
+    content:[
+        {
+          header: "Ruby on Rails developer community converges at Ruby conference",
+          covered_by: [
+                  {
+                    site_name: "CIOL",
+                    link: "http://www.ciol.com/ciol/news/205917/ruby-rails-developer-community-converges-garden-city-ruby-conference-2014"
+                  }
+            ]
+        }, 
+        {
+          header: "Ruby on Rails Developer Community converges at Garden City Ruby Conference 2014",
+          covered_by:[
+                  {
+                    site_name: "India PR Wire",
+                    link: "http://www.indiaprwire.com/pressrelease/computer-software/20140107281079.htm"
+                  }
           ]
         }
       ],
@@ -60,135 +169,27 @@ NEWS = [
   },
 
   {
-    title: "Garden City Ruby Conference",
+    title: "Delivering the Best End User Experience Through a High Performance Web Solution for Educade",
     content:[
-        {
-          header: "Ruby on Rails developer community converges at Ruby conference",
-          covered_by: [
-                  {
-                    site_name: "CIOL",
-                    link: "http://www.ciol.com/ciol/news/205917/ruby-rails-developer-community-converges-garden-city-ruby-conference-2014"
-                  }
-            ]
-        }, 
-        {
-          header: "Ruby on Rails Developer Community converges at Garden City Ruby Conference 2014",
-          covered_by:[
-                  {
-                    site_name: "India PR Wire",
-                    link: "http://www.indiaprwire.com/pressrelease/computer-software/20140107281079.htm"
-                  }
+      {
+        header: "GameDesk partnered with India based Josh Software to build high performance web solution for Educade.org",
+        covered_by:[
+            {
+              site_name: "Animation Galaxy",
+              link: "http://animationgalaxy.in/Newsindetail.aspx?Dept=Games&PID=114#.UuYT3tK6Y1g"
+            }, 
+            {
+              site_name: "One News Page",
+              link: "http://www.onenewspage.com/n/Press+Releases/74w2r5vl2/GameDesk-Partnered-With-India-Based-Josh-Software-to.htm"
+            },
+            {
+              site_name: "Silo Breaker",
+              link: "http://news.silobreaker.com/gamedesk-partnered-with-indiabased-josh-software-to-build-high-performance-web-solution-for-educadeorg-5_2267200067465117757"
+            }
           ]
         }
       ],
     display: true
-  },
-
-  { 
-    title: "Ruby on Rails to the Rescue to Revolutionize the Australian Apparel Industry",
-    content:[
-      {
-        header: "Brandscope, Josh Software Build Ruby-Based B2B Cloud Platform for Australia's Apparel Industry",
-        covered_by:[
-          {
-            site_name: 'IT News Online',
-            link: "http://www.itnewsonline.com/news/Brandscope,-Josh-Software-Build-Ruby-Based-B2B-Cloud-Platform-for-Australias-Apparel-Industry/32506/6/6"
-          },
-          {
-            site_name: 'BizWire Express',
-            link: 'http://www.bizwireexpress.com/showstoryITNOL.php?storyid=265783'
-          },
-          {
-            site_name: 'moneylife',
-            link: 'http://www.moneylife.in/business-wire-news/ruby-on-rails-to-the-rescue-to-revolutionize-the-australian-apparel-industry/38740.html'
-          },
-          {
-            site_name: 'AndhraNews',
-            link: 'http://www.andhranews.net/Intl/2014/Ruby-Rails-Rescue-Revolutionize-Australian-Apparel-906.htm'
-          }
-        ]
-      }
-    ],
-    display: true
-  },
-
-  { 
-    title: "Successful Journey Of Josh!!!",
-    content:[
-      {
-        header: "Josh Software Develops Next Big Web Based Solutions",
-        covered_by:[
-          {
-            site_name: 'siliconindia News', 
-            link: "http://www.siliconindia.com/news/startups/Josh-Software-Develops-Next-Big-Web-Based-Solutions-nid-168131-cid-100.html"
-          },
-        ]
-      }
-    ],
-    display: true
-  },
-
-  { 
-    title: "2014 union buget expectation",
-    content:[
-      {
-        header: "IT and ITES looking for impetus to growth, start-ups",
-        covered_by:[
-          {
-            site_name: 'The Indian Express',
-            link: "interview_pdf/Josh Indian Express - Pune Newsline_10th July 2014.jpg"
-          },
-        ]
-      }
-    ],
-    display: true
-  },
-
-  { 
-    title: "2014 union buget quotes",
-    content:[
-      {
-        header: "Corporates hail IT push",
-        covered_by:[
-          {
-            site_name: 'The Indian Express',
-            link: "interview_pdf/Josh Indian Express Pune Newsline 11 July 2014.jpg"
-          },
-        ]
-      }
-    ],
-    display: true
-  },
-
-  { 
-    title: "Open Source din aane waale hain?",
-    content:[
-      {
-        header: "The UK Government recently made a landmark decision to switch to open software software",
-        covered_by:[
-          {
-            site_name: 'CIOL',
-            link: "http://www.ciol.com/ciol/columnists/217782/open-source-din-aane-waale-hain"
-          },
-        ]
-      }
-    ],
-    display: true
-  },
-
-  { 
-    title: "Open Source For Students",
-    content:[
-      {
-        header: "Colleges now invite start-ups for placement",
-        covered_by:[
-          {
-            site_name: 'The Indian Express',
-            link: "interview_pdf/Josh Software_The Indian Express_20th July 2014.jpg"
-          },
-        ]
-      }
-    ],
-    display: true
   }
+
 ]
