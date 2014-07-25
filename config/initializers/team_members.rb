@@ -425,5 +425,18 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 27
+  },
+  {
+    id: "shweta-kale",
+    name: "Shweta Kale"
+    title: "Software Engineer",
+    image: "shweta.jpg"
+    description: "Shweta has completed Masters degree of Computer Science from Fergusson College, Pune. She has been part of Josh team since July 2014. ",
+     technical: {
+      github: 'Shwetakale13'
+      linkedin: 'http://www.linkedin.com/in/shwetakale13'
+    },
+    display: true,
+    index: 28
   }
 ]
