@@ -3,7 +3,7 @@ require "google_drive"
 class Notifier < ActionMailer::Base
   def notify_contact(contact)
     @contact = contact
-    mail(to: 'info@joshsoftware.com', from: contact.email, subject: 'Request for information', message: contact.message)
+    mail(to: 'info@joshsoftware.com', from: 'marketing@joshsoftware.com', reply_to: contact.email, subject: 'Request for information', message: contact.message)
     add_to_google_spreadsheet
   end
 
