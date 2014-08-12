@@ -1,5 +1,21 @@
 NEWS = [ 
   { 
+    title: "How businesses are using Ruby on Rails framework",
+    content:[
+      {
+        header: "Josh Software has focused in on the Ruby on Rails framework to develop web solutions for their diverse clientele",
+        covered_by:[
+          {
+            site_name: 'CIOL',
+            link: "http://www.ciol.com/ciol/features/218584/infographics-how-businesses-ruby-rails-framework"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
     title: "Open Source For Students",
     content:[
       {

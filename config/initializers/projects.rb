@@ -30,6 +30,7 @@ PROJECTS= [
         comments: "",
         tags: ["Ruby 2.0", "Rails 3.2.13", "MongoDB", "nginx + passenger", "AWS-EC2", "FTP server"]
     },
+    case_study: "portfolio_pdf/brandscope_case_study.pdf",
     display: true
   },
 
