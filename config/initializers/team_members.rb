@@ -178,7 +178,7 @@ TEAM_MEMBERS= [
     name: "Anuja Ware",
     title: "Senior Software Developer",
     image: "anujaware.jpg",
-    description: "Software developer(ROR) with 1+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
+    description: "Software developer(ROR) with 3+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
     technical: {        
         github: "anujaware"
     },
@@ -433,7 +433,7 @@ TEAM_MEMBERS= [
     image: "shweta.jpg",
     description: "Shweta has completed Masters degree of Computer Science from Fergusson College, Pune. She has been part of Josh team since July 2014. ",
      technical: {
-      github: 'Shwetakale13',
+      github: 'Shwetakale',
       linkedin: 'http://www.linkedin.com/in/shwetakale13'
     },
     display: true,
