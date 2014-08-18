@@ -438,5 +438,32 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 28
+  },
+  {
+    id: "lakshmi-sharma",
+    name: "Lakshmi Sharma",
+    title: "Software Engineer",
+    image: "lakshmi.jpg",
+    description: "Lakshmi joined Josh Software in July 2014. She has completed her Bachelors Degree in Information Technology from Pune Institute of Computer Technology (PICT), Pune in 2014. She is passionate about food. She spends her spare time reading and creating Mixed media art.",
+     technical: {
+      github: 'Lakshmi-Sharma',
+      linkedin: 'http://www.linkedin.com/pub/lakshmi-sharma/2a/43a/284/'
+    },
+    display: true,
+    index: 29
+  },
+  {
+    id: "anuja-joshi",
+    name: "Anuja Joshi",
+    title: "Software Engineer",
+    image: "anujajoshi.jpg",
+    description: "Anuja has completed her B.E. from Pune Institute of Technology, Pune. She has been a member of Josh Team since July, 2014. She is sand animation artist and loves painting and scenic designing.",
+     technical: {
+      github: 'anuja-joshi',
+      linkedin: 'http://www.linkedin.com/pub/anuja-joshi/58/445/720/',
+      twitter: "@Anujajoshi7"
+    },
+    display: true,
+    index: 30
   }
 ]
