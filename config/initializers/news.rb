@@ -1,5 +1,21 @@
 NEWS = [ 
   { 
+    title: "Ruby On Rails Awareness",
+    content:[
+      {
+        header: "Open Source “Ruby on Rails” Solutions - Josh Software",
+        covered_by:[
+          {
+            site_name: 'SME WORLD',
+            link: "http://smeworld.asia/All.aspx?Category=141/Josh+Software"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  { 
     title: "How businesses are using Ruby on Rails framework",
     content:[
       {
