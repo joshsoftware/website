@@ -10,12 +10,12 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :domain, 'intranet.joshsoftware.com'
+set :domain, 'joshsoftware.com'
 set :deploy_to, '/home/deploy/projects/website'
 set :repository, 'git@github.com:joshsoftware/website.git'
 set :branch, 'newtemplate'
 
-set :identity_file, "#{ENV['HOME']}/.ssh/id_joshsite_rsa"
+set :identity_file, "/home/anuja/.ssh/id_joshsite_rsa"
 set :user, 'deploy'    # Username in the server to SSH to.
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
