@@ -49,8 +49,6 @@
         = form_for @contact, url: contact_us_path, method: :post do |f|
           = f.hidden_field :ip
           = f.hidden_field :location
-          = puts "#{@contact.errors.inspect}"
-          = puts "#{flash.inspect}"
           .form-group
             %label{:for => "name"} Name
             = f.text_field :name, class: "form-control #{any_errors(@contact, 'name')}", id: 'name', placeholder: 'Enter your name'
