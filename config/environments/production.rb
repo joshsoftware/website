@@ -9,6 +9,7 @@ if data
   ENV['JOSH_INFO_EMAIL'] = data['JOSH_INFO_EMAIL']
   ENV['JOSH_INFO_PASSWORD'] = data['JOSH_INFO_PASSWORD']
   ENV['GOOGLE_DRIVE_SHEET'] = data['GOOGLE_DRIVE_SHEET']
+  ENV['RECAPTCHA_API_KEY'] = data['RECAPTCHA_API_KEY']
 end
 
 Website::Application.configure do

@@ -64,6 +64,11 @@
           .form-group
             %label{:for => "phone"} Message
             = f.text_area :message, class: "form-control #{any_errors(@contact, 'message')}", rows: '7'
+          .form-group
+            = recaptcha_tags :display => {:theme => 'white'}
+            - if @contact.errors[:recaptcha]
+              %span.has-error
+                %label.control-label= @contact.errors[:recaptcha].join(' ')
           = f.submit 'Submit', class: 'btn btn-danger btn-lg'
 = raw '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>'
 =# javascript_include_tag 'https://lct.salesforce.com/sfga.js'
