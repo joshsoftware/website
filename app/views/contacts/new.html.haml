@@ -49,6 +49,8 @@
         = form_for @contact, url: contact_us_path, method: :post do |f|
           = f.hidden_field :ip
           = f.hidden_field :location
+          = puts "#{@contact.errors.inspect}"
+          = puts "#{flash.inspect}"
           .form-group
             %label{:for => "name"} Name
             = f.text_field :name, class: "form-control #{any_errors(@contact, 'name')}", id: 'name', placeholder: 'Enter your name'
@@ -64,6 +66,11 @@
           .form-group
             %label{:for => "phone"} Message
             = f.text_area :message, class: "form-control #{any_errors(@contact, 'message')}", rows: '7'
+          .form-group
+            = recaptcha_tags :display => {:theme => 'white'}
+            - if @contact.errors[:recaptcha]
+              %span.has-error
+                %label.control-label= @contact.errors[:recaptcha].join(' ')
           = f.submit 'Submit', class: 'btn btn-danger btn-lg'
 = raw '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>'
 =# javascript_include_tag 'https://lct.salesforce.com/sfga.js'

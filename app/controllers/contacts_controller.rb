@@ -10,7 +10,8 @@ class ContactsController < ApplicationController
     @title = 'Contact Us | Josh Software Private Limited'
     @contact = Contact.new params[:contact]
     #@contact.message = @contact.message[0..290]
-    if @contact.valid?
+    contact_valid = @contact.valid? ? true : false
+    if verify_recaptcha(:model => @contact, :message => "Oh! It's error with reCAPTCHA!", attribute: 'recaptcha') and contact_valid
       @contact.notify
       redirect_to thankyou_path and return
       #send_mail and display thankyou page
@@ -18,4 +19,5 @@ class ContactsController < ApplicationController
       render 'new'
     end
   end
+
 end

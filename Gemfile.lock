@@ -132,6 +132,7 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    recaptcha (0.3.6)
     ref (1.0.5)
     rubyzip (1.1.0)
     sass (3.2.13)
@@ -215,6 +216,7 @@ DEPENDENCIES
   mina (= 0.3.0)
   rails (= 4.0.2)
   rails_12factor
+  recaptcha
   sass-rails (~> 4.0.0)
   sdoc
   therubyracer
