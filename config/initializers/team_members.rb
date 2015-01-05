@@ -1,5 +1,5 @@
 TEAM_MEMBERS= [
-  { 
+  {
     id: "gautam-rege",
     name: "Gautam Rege",
     title: "Co-Founder & Director",
@@ -16,7 +16,7 @@ TEAM_MEMBERS= [
     index: 0
   },
 
-  { 
+  {
     id: "sethupathi-asokan",
     name: "Sethupathi Asokan",
     title: "Co-Founder & Director",
@@ -33,7 +33,7 @@ TEAM_MEMBERS= [
     index: 1
   },
 
-  { 
+  {
     id: "satish-talim",
     name: "Satish Talim",
     title: "Director",
@@ -48,7 +48,7 @@ TEAM_MEMBERS= [
     index: 2
   },
 
-  { 
+  {
     id: "sameer-tilak",
     name: "Sameer Tilak",
     title: "Director",
@@ -74,11 +74,11 @@ TEAM_MEMBERS= [
     technical: {
         linkedin: "http://in.linkedin.com/pub/sachin-shintre/15/b8b/787",
         blog: "",
-        facebook: "https://www.facebook.com/sachin.shintre.90", 
+        facebook: "https://www.facebook.com/sachin.shintre.90",
         github: "shintre"
     },
     display: true,
-    index: 4 
+    index: 4
   },
 
   {
@@ -87,7 +87,7 @@ TEAM_MEMBERS= [
     title: "Software Architect",
     image: "shailesh.jpg",
     description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
-    technical: {        
+    technical: {
         twitter: "@patilshailesh",
         linkedin: "http://www.linkedin.com/in/shaileshspatil"
     },
@@ -147,7 +147,7 @@ TEAM_MEMBERS= [
     title: "Senior Software Engineer",
     image: "pratik.jpg",
     description: "Pratik has over 2+ yrs of exp. in design & creation of various web applications built over RoR framework. He has been part of Josh since July 2010. He has Bachelors Degree in E&TC from Pune Institute of Computer Technology (PICT), India.",
-    technical: {        
+    technical: {
       twitter: "@pratik141988",
       facebook: "http://www.facebook.com/pratik14sanghvi",
       linkedin: "http://www.linkedin.com/pub/pratik-shah/22/a68/805",
@@ -157,7 +157,7 @@ TEAM_MEMBERS= [
       index: 9
   },
 
-  { 
+  {
     id: "swapnil-chincholkar",
     name: "Swapnil Chincholkar",
     title: "Senior Software Engineer",
@@ -173,13 +173,13 @@ TEAM_MEMBERS= [
     index: 10
   },
 
-  { 
+  {
     id: "anujaware",
     name: "Anuja Ware",
     title: "Senior Software Developer",
     image: "anujaware.jpg",
     description: "Software developer(ROR) with 3+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
-    technical: {        
+    technical: {
         github: "anujaware"
     },
     display: true,
@@ -218,28 +218,29 @@ TEAM_MEMBERS= [
     index: 13
   },
 
-  { 
+  {
     id: "manoj-mishra",
     name: "Manoj Mishra",
     title: "Senior Software Developer",
     image: "manoj.jpg",
-    description: "He joined Josh Software in April 2012, he graduated from Army Institute of Technology in 2011. He has work experience with various Web technologies such as ASP.net, JSP and Rails. He loves programming and creativity. His hobbies are playing badminton and computer gaming.",
+    description: "Since his childhood he's always been prone to learning computer systems and everything related to softwares. He wrote his first computer program in C when he was in high school, then steadily started to learn other languages like c++, python, java, c#, visual basic, while being equally interested in database management systems(oracle/db2). After he completed his BTech from AIT pune in 2011, he started his career as a Java developer but quickly turned to ruby for its simplicity & intuitiveness. He takes great pleasure in writing ruby programs and contributing to open source projects of any kind. He's also a die hard gamer and a fan of Mass Effect series i.e. when he's not changing the world through his computer programs, he's saving the galaxy from an imminent reaper invasion.",
     technical: {
-        twitter: "@manojdbest",
-        linkedin: "http://www.linkedin.com/in/b0rn2c0d3",
-        github: "b0rn2c0d3"
+        twitter: "@deXterbed",
+        linkedin: "http://www.linkedin.com/in/deXterbed",
+        github: "deXterbed",
+        blog: "http://thinkingruby.wordpress.com/"
     },
     display: true,
     index: 14
   },
 
-  { 
+  {
     id: "meghabrid",
     name: "Megha Brid",
     title: "Senior Accountant",
     image: "meghabrid.jpg",
     description: "She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
-    technical: {        
+    technical: {
         facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
@@ -269,7 +270,7 @@ TEAM_MEMBERS= [
     title: "Software Engineer",
     image: "pramod.jpg",
     description: "Pramod has earned his M.Tech degree in Industrial Mathematics With Computer Application from Fergusson College, Pune. He works on various ROR applications at Josh. In spare time he enjoys outdoor activities like playing football, trekking etc.",
-    technical: {        
+    technical: {
       twitter: "@pramod_shinde",
       facebook: "http://www.facebook.com/pramod.shinde.7393",
       linkedin: "http://www.linkedin.com/pub/pramod-shinde/62/72/478",
@@ -279,7 +280,7 @@ TEAM_MEMBERS= [
       index: 17
   },
 
-  { 
+  {
     id: "aditya-shedge",
     name: "Aditya Shedge",
     title: "Software Engineer",
@@ -295,7 +296,7 @@ TEAM_MEMBERS= [
     index: 18
   },
 
-  { 
+  {
     id: "abhishek-bose",
     name: "Abhishek Bose",
     title: "Senior Software Engineer",
@@ -309,7 +310,7 @@ TEAM_MEMBERS= [
     index: 19
   },
 
-  {      
+  {
     id: "sahil-bhatia",
     name: "Sahil Bhatia",
     title: "Software Engineer",
@@ -324,7 +325,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 20
   },
-  {      
+  {
     id: "ashish-singh",
     name: "Ashish Singh",
     title: "Software Engineer",
@@ -339,7 +340,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 21
   },
-  {      
+  {
     id: "pankaj-rawat",
     name: "Pankaj Rawat",
     title: "Software Engineer",
@@ -354,7 +355,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 22
   },
-  {      
+  {
     id: "deepak-singh",
     name: "Deepak Singh",
     title: "Software Engineer",
