@@ -1,4 +1,19 @@
-NEWS = [ 
+NEWS = [
+  {
+    title: "Open Source Technologies",
+    content:[
+      {
+        header: "Gautam Rege, Co-founder & Managing Director, Josh Software, talks about open source technologies",
+        covered_by:[
+          {
+            site_name: 'IT VOIR',
+            link: "http://itvoir.com/portal/Interviews/Top-Interviews/Gautam-Rege-Co-founder-Managing-Director-Josh-Software-talks-about-open-source-technologies.asp"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
   { 
     title: "Ruby On Rails Awareness",
     content:[
@@ -23,7 +38,7 @@ NEWS = [
         covered_by:[
           {
             site_name: 'CIOL',
-            link: "http://www.ciol.com/ciol/features/218584/infographics-how-businesses-ruby-rails-framework"
+            link: "http://www.ciol.com/infographics-how-businesses-ruby-rails-framework"
           },
         ]
       }
@@ -55,7 +70,7 @@ NEWS = [
         covered_by:[
           {
             site_name: 'CIOL',
-            link: "http://www.ciol.com/ciol/columnists/217782/open-source-din-aane-waale-hain"
+            link: "http://www.ciol.com/open-source-din-aane-waale-hain"
           },
         ]
       }
@@ -147,7 +162,7 @@ NEWS = [
           covered_by: [
                   {
                     site_name: "CIOL",
-                    link: "http://www.ciol.com/ciol/news/205917/ruby-rails-developer-community-converges-garden-city-ruby-conference-2014"
+                    link: "http://www.ciol.com/ruby-rails-developer-community-converges-garden-city-ruby-conference-2014"
                   }
             ]
         }, 

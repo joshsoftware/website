@@ -37,15 +37,15 @@ INTERVIEWS=[
     interviews: [
       {
         header: "Ruby will be the preferred language in the future",
-        read_more: "http://www.ciol.com/ciol/interviews/199414/ruby-preferred-language-future"
+        read_more: "http://www.ciol.com/ruby-preferred-language-future"
       },
       {
         header: "Future for ruby on rails developer really bright",
-        read_more: "http://www.ciol.com/ciol/interviews/199415/future-ruby-rails-developer-extremely-bright"
+        read_more: "http://www.ciol.com/future-ruby-rails-developer-extremely-bright"
       },
       {
         header: "Tips and Tricks for budding ruby developers",
-        read_more: "http://www.ciol.com/ciol/features/199416/tips-tricks-budding-ruby-developers"
+        read_more: "http://www.ciol.com/tips-tricks-budding-ruby-developers"
       }
     ],
     display: true
