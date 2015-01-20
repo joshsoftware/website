@@ -1,5 +1,21 @@
 PROJECTS= [
   {
+    id: "kimaya",
+    title: "Kimaya NICU",
+    country: "India",
+    flag: "india.gif",
+    year: "2014",
+    url: "http://www.kimayanicu.com/",
+    image: "kimaya.png",
+    description: "In a joint effort with KEM Hospital and Kimaya NICU, a domain specific neonatal healthcare technology provider, neonatal ICUs now have a fully automated online platform to formulate nutritional supplements for premature infants with 100% accuracy and in a fraction of time. Launched on the occasion of World Prematurity Day, this platform has already shown impressive results in its pilot test stage.This cloud-based application allows the records of infants to be accessed easily in the future and from multiple locations. The application archives infant progress on a day-to-day basis, thus allowing doctors to plan the nutrition for each infant. The impact the application can have is huge and a further refined version of the software, based on inputs by medical experts, is ready to give NICUs across the country a cutting edge tool aimed at saving infant lives.",
+    technical: {
+      comments: "",
+      tags: ["Rails 4.1.0", "Ruby 2.1", "MongoDB", "JsonQuery", "Highcharts"]
+    },
+    display: true
+  },
+
+  {
     id: "altizon",
     title: "Altizon Datonis",
     country: "India",
