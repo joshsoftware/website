@@ -1,5 +1,20 @@
 NEWS = [
   {
+    title: "Coding for jobs",
+    content:[
+      {
+        header: "“If you just want a job, there are dozens of other languages you can learn,” says Gautam Rege, Ruby prophet, entrepreneur, and founder of Josh Software, one the few places in India which offers training in Ruby.",
+        covered_by:[
+          {
+            site_name: 'The Telegraph',
+            link: "http://www.telegraphindia.com/1150122/jsp/you/story_9499.jsp"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
     title: "Open Source Technologies",
     content:[
       {
