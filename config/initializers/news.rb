@@ -3,11 +3,11 @@ NEWS = [
     title: "Kimaya NICU Web Application decreases infant mortality rate",
     content:[
       {
-        header: “In a joint venture with KEM hospital, Kimaya NICU a domain specific neonatal healthcare technology provider, neonatal ICUs now have a fully automated online platform to formulate nutritional supplements",
+        header: "In a joint venture with KEM hospital, Kimaya NICU a domain specific neonatal healthcare technology provider, neonatal ICUs now have a fully automated online platform to formulate nutritional supplements",
         covered_by:[
           {
-            site_name: 'Medgate Today',
-            link: "news_pdf/Medgate_Today.pdf
+            site_name: 'Medgate Today Asicon',
+            link: "news_images/Medgate_Today.png"
           },
         ]
       }
