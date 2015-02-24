@@ -1,4 +1,19 @@
 NEWS = [
+   {
+    title: "Kimaya NICU Web Application decreases infant mortality rate",
+    content:[
+      {
+        header: "“In a joint venture with KEM hospital, Kimaya NICU a neonatal ICU provider",
+        covered_by:[
+          {
+            site_name: 'Medgate Today',
+            link: "news_pdf/Medgate_Today.pdf
+          },
+        ]
+      }
+    ],
+    display: true
+  },
   {
     title: "Coding for jobs",
     content:[
