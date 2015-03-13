@@ -146,7 +146,7 @@ OPEN_SOURCE= [
   {
     id: "Bidder",
     title: "Bidder",
-    url: "http://playbidder.in",
+    url: "http://bidder.herokuapp.com",
     github: {
     user: 'anilmaurya',
     repo: 'bidder'
