@@ -1,4 +1,20 @@
 NEWS = [
+     {
+    title: "Ruby on Rails based Fundamentor.com Helps Teenagers Grasp Concepts Faster",
+    content:[ 
+      {
+        header: "Technical expertise and domain knowledge are imperative for students to have successful careers.
+        However, complementary skills like communication, leadership, critical decision making, innovation and creativity are  important. Keeping this in mind Fundamentor, an innovative web based applications company, partnered with Josh Software",
+        covered_by:[
+          {
+            site_name: 'APN News'
+            link: "http://www.apnnews.com/2015/03/04/ruby-on-rails-based-fundamentor-com-helps-teenagers-grasp-concepts-faster/ "
+          },
+        ]
+      }
+    ],
+    display: true
+  },
    {
     title: "Kimaya NICU Web Application decreases infant mortality rate",
     content:[
