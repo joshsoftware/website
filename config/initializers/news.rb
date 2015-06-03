@@ -1,20 +1,5 @@
-NEWS = [
 
-  {
-    title: "Find out: Importance of Ruby programming language",
-    content:[ 
-      {
-        header: "The adoption rate for Ruby on Rails has grown up to 15 per cent among start-ups, since 2012.  Gautam Rege, Co-founder and Managing Director of Josh Software has been organising Annual Ruby Conference in different parts of India. He has authored a book on Ruby and MongoDB web development. A series of workshops for Ruby Programming Language will begin from August 2015.",
-        covered_by:[
-          {
-            site_name: 'DECCAN Chronile',
-            link: "http://www.deccanchronicle.com/150522/technology-latest/article/find-out-importance-ruby-programming-language"
-          },
-        ]
-      }
-    ],
-    display: true
-  },
+NEWS = [
   {
     title: "Ruby on Rails based Fundamentor.com Helps Teenagers Grasp Concepts Faster",
     content:[ 

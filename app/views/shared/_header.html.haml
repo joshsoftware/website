@@ -13,24 +13,16 @@
         %ul.nav.navbar-nav
           %li{class: "#{check_if_active('home')}"}
             = link_to 'Home', root_path
-          %li.dropdown
-            %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdown", :href => "#"}
-              About Us
-              %b.icon-angle-down
-            %ul.dropdown-menu.decrease_dropdown
-              /
-                %li
-                %a{:href => "about-us"} Company
-              %li
-                %a{:href => "team"} Team
-              %li
-                %a{:href => "news"} Josh in News
+          %li{class: "#{check_if_active('Josh in News')}"}
+            %a{:href => "news"} Josh in News
           %li{class: "#{check_if_active('portfolio')}"}
             %a{:href => "portfolio"} Portfolio
           %li{class: "#{check_if_active('testimonials')}"}
             %a{:href => "testimonials"} Testimonials
           %li{class: "#{check_if_active('open_source')}"}
             %a{:href => "open-source"} Open Source
+          %li{class: "#{check_if_active('team')}"}
+            %a{:href => "team"} Team
           %li
             %a{:href => "http://blog.joshsoftware.com/", target: '_blank'} Blog
           %li{class: "#{check_if_active('contact_us')}"}
@@ -38,5 +30,6 @@
           /
             %li
               %input.form-control.search{:placeholder => " Search", :type => "text"}/
+
           -#%li
             %div.pull-right.we_hiring= mail_to "hr@joshsoftware.com", image_tag("hiring1.png", height: '40', width: '130'), subject: 'Application for ROR developer post.'

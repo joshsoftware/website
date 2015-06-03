@@ -1,5 +1,15 @@
 INTERVIEWS=[
   {
+    interviewer: 'Deccan Chronicle',
+    interviews: [
+      {
+        header: 'The adoption rate for Ruby on Rails has grown up to 15 per cent among start-ups, since 2012.',
+        read_more: 'http://www.deccanchronicle.com/150522/technology-latest/article/find-out-importance-ruby-programming-language'
+      }
+    ],
+    display: true
+  },
+  {
     interviewer: 'Devworx',
     interviews: [
       {

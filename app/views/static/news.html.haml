@@ -7,13 +7,39 @@
           %h3 Josh In News
           %ul
             %li
-              = link_to 'Press Releases', "#press_releases"
-            %li
               = link_to 'Interviews', "#interviews"
             %li
               = link_to 'Contributory Articles', "#contributory_articles"
-
+            %li
+              = link_to 'Press Releases', "#press_releases"
     .col-lg-10
+      #interviews
+        .news_header
+          %h1 Interviews
+        %article.services
+          - @interviews.each do |i|
+            .blog-item
+              .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} #{i[:interviewer]}
+              - i[:interviews].each do |c|
+                %div.news-box{style: "padding: 5px 15px"}
+                  .news-header{style: "font-size: 15px;"}
+                    #{c[:header]}
+                    %br
+                      .news-link{style: "font-size: 14px; font-weight:normal"}
+                      =link_to "Read More", c[:read_more], target: '_blank'
+        #contributory_articles
+          .news_header
+            %h1 Contributory Articles
+          %article.services
+            - @articles.each do |a|
+              .blog-item
+                .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} #{a[:at]}
+                %div.news-box{style: "padding-left: 15px"}
+                  .news-header{style: "font-size: 15px;"}
+                    #{a[:title]}
+                    %br
+                    .news-link{style: "font-size: 14px;"} 
+                      = link_to "Read More", a[:link], target: '_blank'
       #press_releases
         .news_header
           %h1 Press Releases
@@ -34,30 +60,3 @@
                           = link_to c[:site_name], c[:link], target: '_blank'
                           - if c != content[:covered_by].last
                             ,
-        #interviews
-          .news_header
-            %h1 Interviews
-          %article.services
-            - @interviews.each do |i|
-              .blog-item
-                .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} #{i[:interviewer]}
-                - i[:interviews].each do |c|
-                  %div.news-box{style: "padding: 5px 15px"}
-                    .news-header{style: "font-size: 15px;"}
-                      #{c[:header]}
-                      %br
-                      .news-link{style: "font-size: 14px; font-weight:normal"}
-                        =link_to "Read More", c[:read_more], target: '_blank'
-        #contributory_articles
-          .news_header
-            %h1 Contributory Articles
-          %article.services
-            - @articles.each do |a|
-              .blog-item
-                .p-head.list-unstyled{style: "font-size: 20px; padding: 10px"} #{a[:at]}
-                %div.news-box{style: "padding-left: 15px"}
-                  .news-header{style: "font-size: 15px;"}
-                    #{a[:title]}
-                    %br
-                    .news-link{style: "font-size: 14px;"} 
-                      = link_to "Read More", a[:link], target: '_blank'
