@@ -1,5 +1,21 @@
 NEWS = [
-     {
+
+  {
+    title: "Find out: Importance of Ruby programming language",
+    content:[ 
+      {
+        header: "The adoption rate for Ruby on Rails has grown up to 15 per cent among start-ups, since 2012.  Gautam Rege, Co-founder and Managing Director of Josh Software has been organising Annual Ruby Conference in different parts of India. He has authored a book on Ruby and MongoDB web development. A series of workshops for Ruby Programming Language will begin from August 2015.",
+        covered_by:[
+          {
+            site_name: 'DECCAN Chronile',
+            link: "http://www.deccanchronicle.com/150522/technology-latest/article/find-out-importance-ruby-programming-language"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
     title: "Ruby on Rails based Fundamentor.com Helps Teenagers Grasp Concepts Faster",
     content:[ 
       {
@@ -15,7 +31,7 @@ NEWS = [
     ],
     display: true
   },
-   {
+  {
     title: "Kimaya NICU Web Application decreases infant mortality rate",
     content:[
       {
@@ -203,61 +219,61 @@ NEWS = [
   {
     title: "Garden City Ruby Conference",
     content:[
-        {
-          header: "Ruby on Rails developer community converges at Ruby conference",
-          covered_by: [
-                  {
-                    site_name: "CIOL",
-                    link: "http://www.ciol.com/ruby-rails-developer-community-converges-garden-city-ruby-conference-2014"
-                  }
-            ]
-        }, 
-        {
-          header: "Ruby on Rails Developer Community converges at Garden City Ruby Conference 2014",
-          covered_by:[
-                  {
-                    site_name: "India PR Wire",
-                    link: "http://www.indiaprwire.com/pressrelease/computer-software/20140107281079.htm"
-                  }
-          ]
-        }
-      ],
+      {
+        header: "Ruby on Rails developer community converges at Ruby conference",
+        covered_by: [
+          {
+            site_name: "CIOL",
+            link: "http://www.ciol.com/ruby-rails-developer-community-converges-garden-city-ruby-conference-2014"
+          }
+        ]
+      }, 
+      {
+        header: "Ruby on Rails Developer Community converges at Garden City Ruby Conference 2014",
+        covered_by:[
+          {
+            site_name: "India PR Wire",
+            link: "http://www.indiaprwire.com/pressrelease/computer-software/20140107281079.htm"
+          }
+        ]
+      }
+    ],
     display: true
   },
 
   {
     title: "Building a Real-Time & Scalable Solution for the Altizon Datonis Product",
     content:[
-        {
-          header: "Ruby Enables High Performance and Scalable Remote Monitoring of Manufacturing Units",
-          covered_by: [
-                  {
-                    site_name: "Seattle Post",
-                    link: "http://www.seattlepi.com/default/article/Ruby-Enables-High-Performance-and-Scalable-Remote-5020679.php"
-                  }, 
-                  {
-                    site_name: "San Francisco Gate",
-                    link: "http://www.sfgate.com/business/press-releases/article/Ruby-Enables-High-Performance-and-Scalable-Remote-5020679.php"
-                  },
-                  {
-                    site_name: "EFYTimes",
-                    link: "http://www.efytimes.com/e1/fullnews.asp?edid=122487"
-                  },
-                  {
-                    site_name: "EIN Inbox Robot",
-                    link: "http://www.inboxrobot.com/article/178601244"
-                  },
-                  {
-                    site_name: "World News",
-                    link: "http://article.wn.com/view/2013/11/29/Ruby_Enables_High_Performance_and_Scalable_Remote_Monitoring/#/related_news"
-                  },
-                  {
-                    site_name: "Virtual Strategy Magazine",
-                    link: "http://www.virtual-strategy.com/2013/11/29/ruby-enables-high-performance-and-scalable-remote-monitoring-manufacturing-units#REF3Y6ZlrLtms8Zh.99"
-                  }
-                ]
+      {
+        header: "Ruby Enables High Performance and Scalable Remote Monitoring of Manufacturing Units",
+        covered_by: [
+          {
+            site_name: "Seattle Post",
+            link: "http://www.seattlepi.com/default/article/Ruby-Enables-High-Performance-and-Scalable-Remote-5020679.php"
+          }, 
+          {
+            site_name: "San Francisco Gate",
+            link: "http://www.sfgate.com/business/press-releases/article/Ruby-Enables-High-Performance-and-Scalable-Remote-5020679.php"
+          },
+          {
+            site_name: "EFYTimes",
+            link: "http://www.efytimes.com/e1/fullnews.asp?edid=122487"
+          },
+          {
+            site_name: "EIN Inbox Robot",
+            link: "http://www.inboxrobot.com/article/178601244"
+          },
+          {
+            site_name: "World News",
+            link: "http://article.wn.com/view/2013/11/29/Ruby_Enables_High_Performance_and_Scalable_Remote_Monitoring/#/related_news"
+          },
+          {
+            site_name: "Virtual Strategy Magazine",
+            link: "http://www.virtual-strategy.com/2013/11/29/ruby-enables-high-performance-and-scalable-remote-monitoring-manufacturing-units#REF3Y6ZlrLtms8Zh.99"
           }
-      ],
+        ]
+      }
+    ],
     display: true
   },
 
@@ -267,21 +283,21 @@ NEWS = [
       {
         header: "GameDesk partnered with India based Josh Software to build high performance web solution for Educade.org",
         covered_by:[
-            {
-              site_name: "Animation Galaxy",
-              link: "http://animationgalaxy.in/Newsindetail.aspx?Dept=Games&PID=114#.UuYT3tK6Y1g"
-            }, 
-            {
-              site_name: "One News Page",
-              link: "http://www.onenewspage.com/n/Press+Releases/74w2r5vl2/GameDesk-Partnered-With-India-Based-Josh-Software-to.htm"
-            },
-            {
-              site_name: "Silo Breaker",
-              link: "http://news.silobreaker.com/gamedesk-partnered-with-indiabased-josh-software-to-build-high-performance-web-solution-for-educadeorg-5_2267200067465117757"
-            }
-          ]
-        }
-      ],
+          {
+            site_name: "Animation Galaxy",
+            link: "http://animationgalaxy.in/Newsindetail.aspx?Dept=Games&PID=114#.UuYT3tK6Y1g"
+          }, 
+          {
+            site_name: "One News Page",
+            link: "http://www.onenewspage.com/n/Press+Releases/74w2r5vl2/GameDesk-Partnered-With-India-Based-Josh-Software-to.htm"
+          },
+          {
+            site_name: "Silo Breaker",
+            link: "http://news.silobreaker.com/gamedesk-partnered-with-indiabased-josh-software-to-build-high-performance-web-solution-for-educadeorg-5_2267200067465117757"
+          }
+        ]
+      }
+    ],
     display: true
   }
 

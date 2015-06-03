@@ -1,10 +1,19 @@
 INTERVIEWS=[
   {
+    interviewer: 'Devworx',
+    interviews: [
+      {
+        header: 'Devworx talks to Gautam Rege about Gophercon India',
+        read_more: 'http://www.digit.in/general/devworx-talks-to-gautam-rege-about-gophercon-india-26143.html'
+      }
+    ],
+    display: true
+  },
+  {
     interviewer: 'Open Source For You Magazine',
     interviews: [
       {
         header: 'Gautam Rege, Founder Director, Josh Software in conversation with Open Source For You magazine discussing Josh Software’s adoption of Ruby on Rails development as its primary business model and finding the right talent and other challenges related to open source development.',
-        #read_more: 'portfolio_pdf/Josh_in_Open_Source_For_U.jpg'
         read_more: 'interview_pdf/Josh_OSFY.pdf'
       }
     ],
