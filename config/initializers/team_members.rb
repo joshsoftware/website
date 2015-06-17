@@ -472,7 +472,7 @@ TEAM_MEMBERS= [
     name: "Atul Bhosale",
     title: "Software Engineer",
     image: "atulbhosale.jpg",
-    description: "Atul has completed his Masters degree in Computer Applications from Pune University. He has been a member of Josh Team since July, 2015. His hobbies are watching sci-fi movies with friends and reading computer magazines.",
+    description: "Atul has completed his Masters degree in Computer Applications(M.C.A) from Pune University. He has been a member of Josh Team since July, 2015. His hobbies are watching sci-fi movies with friends and reading computer magazines.",
      technical: {
       github: 'Atul9',
       linkedin: 'https://in.linkedin.com/pub/atul-bhosale/30/510/784',
