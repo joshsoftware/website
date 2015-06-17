@@ -1,7 +1,14 @@
 OPEN_SOURCE= [
   {
+    id: "donation-management",
+    title: "Donation Management software for Seva Sahayog",
+    url: "https://github.com/joshsoftware/donation_management",
+    details: "Seva Sahayog Foundation aims at engaging socially conscious corporates, groups and individuals, with NGOs of matching interests. Currently they use receipt books and hard copies for managing donation receipts. Our team developed a responsive APP for managing recipt generation and donation management. This system will be able to reduce the usage of paper by a significant percentage, and will be an important step towards making the Seva Sahayog Foundation office a paperless office.",
+    display: true
+  },
+  {
     id: "open-source-fridays",
-    title: "<img src='http://img2.meetupstatic.com/906521611995523788/img/header/logo.png' width='40px' height='30px'/>  Hosting Open Source Fridays ",
+    title: "Hosting Open Source Fridays ",
     url: "http://www.meetup.com/PuneRailsMeetup/",
     details: "A few months ago we started a movement - <b>doing things differently</b>. Every Friday evening, we do different things - working on an open-source gem, doing open-source projects, learning new things and having fun. <br> Its actually making a difference - its now open to the community. ",
     display: true
