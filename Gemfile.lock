@@ -224,3 +224,6 @@ DEPENDENCIES
   uglifier (= 2.3.1)
   watir-rails
   whenever
+
+BUNDLED WITH
+   1.10.4
