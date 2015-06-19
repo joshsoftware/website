@@ -373,13 +373,12 @@ TEAM_MEMBERS= [
   {
     id: "seema-jha",
     name: "Seema Jha",
-    title: "Software Engineer",
+    title: "HR Executive",
     image: "seema.jpg",
-    description: "Seema has completed her Bachelor Degree in Electronics and Telecommunications from Army Institute of Technology.She loves travelling and is passionate about dancing.",
+    description: "Seema has completed her Bachelor Degree in Electronics and Telecommunications from Army Institute of Technology.She has been a part of Josh since July 2015.She loves travelling and is passionate about dancing.",
     technical: {
       twitter: "@seemajha10",
       linkedin: "http://in.linkedin.com/pub/seema-jha/78/649/695",
-      facebook: "https://www.facebook.com/seema.jha.184",
       github: "seemajha"
     },
     display: true,
