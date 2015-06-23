@@ -480,5 +480,20 @@ TEAM_MEMBERS= [
     },
     display: true,
     index: 31
+  },
+    {
+    id: "amoludage",
+    name: "Amol Udage",
+    title: "Software Engineer",
+    image: "amol.jpg",
+    description: "Amol has completed his Master degree of Computer Science from Garware college, Pune. He has been a member of Josh Team since July, 2015.",
+    technical: {
+      github: 'amoludage',
+      facebook: "https://www.facebook.com/amol.udage",
+      linkedin: 'http://www.linkedin.com/pub/amol-udage/a3/bb5/8b4/',
+      twitter: "@amol_udage"
+    },
+    display: true,
+    index: 32
   }
 ]
