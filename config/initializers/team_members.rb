@@ -6,11 +6,11 @@ TEAM_MEMBERS= [
     image: "gautam.jpg",
     description: "In his 13+ years in the Software Industry, he has worked with product Companies like Veritas Software Inc. (now Symantec Inc) and services companies like Zensar Technologies and Cybage Software. He is the author of <a target='_blank' href='http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book'> 'Ruby and MongoDB Web Development'</a>. He has graduated in 2000 with a Bachelors Degree in Computer Engineering from Pune Institute of Computer Technology (PICT), India.",
     technical: {
-        twitter: "@gautamrege",
-        linkedin: "http://www.linkedin.com/in/gautamrege",
-        blog: "http://blog.joshsoftware.com/author/gautamrege/",
-        facebook: "http://www.facebook.com/gautam.rege",
-        github: "gautamrege"
+      twitter: "@gautamrege",
+      linkedin: "http://www.linkedin.com/in/gautamrege",
+      blog: "http://blog.joshsoftware.com/author/gautamrege/",
+      facebook: "http://www.facebook.com/gautam.rege",
+      github: "gautamrege"
     },
     display: true,
     index: 0
@@ -23,11 +23,11 @@ TEAM_MEMBERS= [
     image: "sethu.jpg",
     description: "In his 15+ years, he has worked all along with Veritas Software (now Symantec Inc). He was instrumental in designing and managing Veritas Command Central Storage and was the senior most member of the team of 160 engineers. He has done Masters Degree in Computer Science in 1998.",
     technical: {
-        twitter: "@sethupathia",
-        linkedin: "http://www.linkedin.com/in/sethupathia",
-        blog: "http://blog.joshsoftware.com/author/sethupathi/",
-        facebook: "http://www.facebook.com/sethupathi.asokan",
-        github: "sethu"
+      twitter: "@sethupathia",
+      linkedin: "http://www.linkedin.com/in/sethupathia",
+      blog: "http://blog.joshsoftware.com/author/sethupathi/",
+      facebook: "http://www.facebook.com/sethupathi.asokan",
+      github: "sethu"
     },
     display: true,
     index: 1
@@ -40,9 +40,9 @@ TEAM_MEMBERS= [
     image: "satish.jpg",
     description: "Satish is a Ruby Evangelist, programmer, author, trainer and speaker. A recognized expert in the field of software development with over 32+ years of I.T. experience, Satish has consulted and trained teams at various companies in India and the US. He is the owner of Rubylearning.com and Rubylearning.org and is one of the most popular personalities in the Ruby world.",
     technical: {
-        twitter: "@IndianGuru",
-        linkedin: "http://www.linkedin.com/in/satishtalim",
-        facebook: "http://www.facebook.com/satishtalim"
+      twitter: "@IndianGuru",
+      linkedin: "http://www.linkedin.com/in/satishtalim",
+      facebook: "http://www.facebook.com/satishtalim"
     },
     display: true,
     index: 2
@@ -55,10 +55,10 @@ TEAM_MEMBERS= [
     image: "sameer.jpg",
     description: "With 20+ years of experience in software Industry, he has seen the changes and worked on platforms from DOS to Windows, Unix/Linux. He has experience of working with various technologies like Vb, PHP, Java, Perl to name few an the latest is Ruby. Lot of experience in database based projects and optimisation. He has handled web farm of 200+ servers and data volume of few million hits per day. He has Masters degree in Computer Science from Pune University.",
     technical: {
-        linkedin: "http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw",
-        blog: "http://blog.joshsoftware.com/author/sameertilak/",
-        facebook: "http://www.facebook.com/sameer.tilak",
-        github: "sameer-tilak"
+      linkedin: "http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw",
+      blog: "http://blog.joshsoftware.com/author/sameertilak/",
+      facebook: "http://www.facebook.com/sameer.tilak",
+      github: "sameer-tilak"
     },
     display: true,
     index: 3
@@ -71,14 +71,14 @@ TEAM_MEMBERS= [
     image: "sachin.jpg",
     description: "With 14+ years in Software industry, he has worked on Mobile platforms, hard-core Windows systems development, various other technologies and products like MS Exchange and RIM Enterprise server. He was instrumental in conceptualizing and releasing a network security product. Prior to Josh he was working as a principal consultant at a company he founded 5 years ago.<BR>
 <BR>He holds a Masters degree (with Gold Medal) from the University of Indore.",
-    technical: {
-        linkedin: "http://in.linkedin.com/pub/sachin-shintre/15/b8b/787",
-        blog: "",
-        facebook: "https://www.facebook.com/sachin.shintre.90",
-        github: "shintre"
-    },
-    display: true,
-    index: 4
+technical: {
+  linkedin: "http://in.linkedin.com/pub/sachin-shintre/15/b8b/787",
+  blog: "",
+  facebook: "https://www.facebook.com/sachin.shintre.90",
+  github: "shintre"
+},
+display: true,
+index: 4
   },
 
   {
@@ -88,8 +88,8 @@ TEAM_MEMBERS= [
     image: "shailesh.jpg",
     description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
     technical: {
-        twitter: "@patilshailesh",
-        linkedin: "http://www.linkedin.com/in/shaileshspatil"
+      twitter: "@patilshailesh",
+      linkedin: "http://www.linkedin.com/in/shaileshspatil"
     },
     display: true,
     index: 5
@@ -119,8 +119,8 @@ TEAM_MEMBERS= [
     image: "kiran.jpg",
     description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
     technical: {
-        twitter: "@kiranchaudhari",
-        linkedin: "http://www.linkedin.com/in/kirandc",
+      twitter: "@kiranchaudhari",
+      linkedin: "http://www.linkedin.com/in/kirandc",
     },
     display: true,
     index: 7
@@ -153,8 +153,8 @@ TEAM_MEMBERS= [
       linkedin: "http://www.linkedin.com/pub/pratik-shah/22/a68/805",
       github: "pratik14"
     },
-      display: true,
-      index: 9
+    display: true,
+    index: 9
   },
 
   {
@@ -164,10 +164,10 @@ TEAM_MEMBERS= [
     image: "swapnil.jpg",
     description: "Swapnil started his career in software industry with Josh as a Ruby On Rails developer. He has done his Masters Degree in Computer Science in 2011 from D.E.S's Fergusson College, Pune, India.",
     technical: {
-        twitter: "@SwapVch",
-        linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
-        facebook: "http://www.facebook.com/Swapnil.Chincholkar",
-        github: "swapnilchincholkar"
+      twitter: "@SwapVch",
+      linkedin: "http://www.linkedin.com/in/swapnilchincholkar",
+      facebook: "http://www.facebook.com/Swapnil.Chincholkar",
+      github: "swapnilchincholkar"
     },
     display: true,
     index: 10
@@ -180,7 +180,7 @@ TEAM_MEMBERS= [
     image: "anujaware.jpg",
     description: "Software developer(ROR) with 3+ years of experience. She has done M.Tech (Industrial Mathematics With Computer Application) in Fergusson College, Pune, in 2011. She has played 3 consecutive All India University and 2 National Ball-Badminton Tournaments as captain in one and Awarded by 'Up Coming Player'.",
     technical: {
-        github: "anujaware"
+      github: "anujaware"
     },
     display: true,
     index: 11
@@ -225,10 +225,10 @@ TEAM_MEMBERS= [
     image: "manoj.jpg",
     description: "Since his childhood he's always been prone to learning computer systems and everything related to softwares. He wrote his first computer program in C when he was in high school, then steadily started to learn other languages like c++, python, java, c#, visual basic, while being equally interested in database management systems(oracle/db2). After he completed his BTech from AIT pune in 2011, he started his career as a Java developer but quickly turned to ruby for its simplicity & intuitiveness. He takes great pleasure in writing ruby programs and contributing to open source projects of any kind. He's also a die hard gamer and a fan of Mass Effect series i.e. when he's not changing the world through his computer programs, he's saving the galaxy from an imminent reaper invasion.",
     technical: {
-        twitter: "@deXterbed",
-        linkedin: "http://www.linkedin.com/in/deXterbed",
-        github: "deXterbed",
-        blog: "http://thinkingruby.wordpress.com/"
+      twitter: "@deXterbed",
+      linkedin: "http://www.linkedin.com/in/deXterbed",
+      github: "deXterbed",
+      blog: "http://thinkingruby.wordpress.com/"
     },
     display: true,
     index: 14
@@ -241,7 +241,7 @@ TEAM_MEMBERS= [
     image: "meghabrid.jpg",
     description: "She has total 7+ yrs of experience as  Accountant with the responsibilities as a senior accountant can be comprised of multiple functions in finance. The primary responsibilities are to prepare financial statements, complete monthly closing procedures, analyze revenues to see whether they are correctly reported, prepare monthly account reconciliations, assist with tax audits, prepare tax returns and write commission reports and also  responsible for general ledger, journal entries and observe short-term investments.  she has also passed out (ICWAI- Inter) Institute of Costs and Works Accountant of India and now appearing for CPA (Certified Public Accountant)",
     technical: {
-        facebook: "https://www.facebook.com/megha.parab.161",
+      facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
     index: 15
@@ -254,11 +254,11 @@ TEAM_MEMBERS= [
     image: "anil.jpg",
     description: "Anil is enthusiastic about Open Source, Ruby, Rails and Computer Games. He contributed to various open source project including rails. His open source project include <a href='https://github.com/anilmaurya/bidder' target='_blank'>Bidder</a>, <a href='https://github.com/anilmaurya/burst-balloons' target='_blank'>Burst-balloons</a>. He Completed his Bachelor Degree in Computer Engineering from Army Institute of Technology, India. Apart from programming he enjoys playing soccer.",
     technical: {
-        twitter: "@maurya_anill",
-        linkedin: "http://www.linkedin.com/in/anilmaurya8",
-        facebook: "http://www.facebook.com/akanilrocks",
-        blog: "http://programmingright.blogspot.in",
-        github: "anilmaurya"
+      twitter: "@maurya_anill",
+      linkedin: "http://www.linkedin.com/in/anilmaurya8",
+      facebook: "http://www.facebook.com/akanilrocks",
+      blog: "http://programmingright.blogspot.in",
+      github: "anilmaurya"
     },
     display: true,
     index: 16
@@ -276,8 +276,8 @@ TEAM_MEMBERS= [
       linkedin: "http://www.linkedin.com/pub/pramod-shinde/62/72/478",
       github: "pramodshinde"
     },
-      display: true,
-      index: 17
+    display: true,
+    index: 17
   },
 
   {
@@ -287,10 +287,10 @@ TEAM_MEMBERS= [
     image: "aditya.jpg",
     description: "Aditya has completed his bachelors in Computer Engineering from D.Y. Patil College of Engineering, Akurdi. He has been an employee of JOSH since June, 2013. His hobbies include reading and football.",
     technical: {
-        twitter: "@shedgeaditya",
-        linkedin: "https://linkedin.com/pub/aditya-shedge/82/735/381/",
-        facebook: "https://www.facebook.com/shedge.aditya",
-        github: "adityashedge"
+      twitter: "@shedgeaditya",
+      linkedin: "https://linkedin.com/pub/aditya-shedge/82/735/381/",
+      facebook: "https://www.facebook.com/shedge.aditya",
+      github: "adityashedge"
     },
     display: true,
     index: 18
@@ -303,8 +303,8 @@ TEAM_MEMBERS= [
     image: "abhishek.jpg",
     description: "Abhishek has completed BTech in Computer Science from KIIT University, Bhubaneswar. He has been working in JOSH since Jan, 2014. Apart from programming, he is passionate about football and loves to travel.",
     technical: {
-        twitter: "@abhishekbose87",
-        github: "abhishekbose87"
+      twitter: "@abhishekbose87",
+      github: "abhishekbose87"
     },
     display: true,
     index: 19
@@ -317,10 +317,10 @@ TEAM_MEMBERS= [
     image: "sahil.jpg",
     description: "Sahil has completed his MCA from Bharati Vidyapeeth University, Pune. He has been an employee of JOSH since Jan, 2014. His hobbies include watching movies, reading about technology updates, spending time with family.",
     technical: {
-        twitter: "@bhatiasahil2009",
-        linkedin: "http://in.linkedin.com/in/sahilb86/",
-        facebook: "https://www.facebook.com/bhatiasahil2005",
-        github: "sahilbhatia"
+      twitter: "@bhatiasahil2009",
+      linkedin: "http://in.linkedin.com/in/sahilb86/",
+      facebook: "https://www.facebook.com/bhatiasahil2005",
+      github: "sahilbhatia"
     },
     display: true,
     index: 20
@@ -332,10 +332,10 @@ TEAM_MEMBERS= [
     image: "ashish.jpg",
     description: "Ashish has completed his B.E. from Army Institute of Technology Pune. He is passionate about programming and likes learning new technologies and languages. He likes to read and play computer games in his free time.",
     technical: {
-        twitter: "@ashishait",
-        linkedin: "http://in.linkedin.com/in/ashish173/",
-        facebook: "https://www.facebook.com/ashish173",
-        github: "ashish173"
+      twitter: "@ashishait",
+      linkedin: "http://in.linkedin.com/in/ashish173/",
+      facebook: "https://www.facebook.com/ashish173",
+      github: "ashish173"
     },
     display: true,
     index: 21
@@ -347,10 +347,10 @@ TEAM_MEMBERS= [
     image: "pankaj.jpg",
     description: "Pankaj is passionate about open-source web-technologies. He is a gamer, passionate soccer player. He completed his Bachelor Degree in Information technology from Army Institute of Technology.",
     technical: {
-        twitter: "@pkrawat1",
-        linkedin: "http://in.linkedin.com/in/pkrawat1/",
-        facebook: "https://www.facebook.com/pkrawat1",
-        github: "pkrawat1"
+      twitter: "@pkrawat1",
+      linkedin: "http://in.linkedin.com/in/pkrawat1/",
+      facebook: "https://www.facebook.com/pkrawat1",
+      github: "pkrawat1"
     },
     display: true,
     index: 22
@@ -375,7 +375,7 @@ TEAM_MEMBERS= [
     name: "Seema Jha",
     title: "HR Executive",
     image: "seema.jpg",
-    description: "Seema has completed her Bachelor Degree in Electronics and Telecommunications from Army Institute of Technology.She has been a part of Josh since July 2015.She loves travelling and is passionate about dancing.",
+    description: "Seema has completed her Bachelor Degree in Electronics and Telecommunications from Army Institute of Technology.She has been a part of Josh since July 2014. She loves travelling and is passionate about dancing.",
     technical: {
       twitter: "@seemajha10",
       linkedin: "http://in.linkedin.com/pub/seema-jha/78/649/695",
@@ -432,7 +432,7 @@ TEAM_MEMBERS= [
     title: "Software Engineer",
     image: "shweta.jpg",
     description: "Shweta has completed Masters degree of Computer Science from Fergusson College, Pune. She has been part of Josh team since July 2014. ",
-     technical: {
+    technical: {
       github: 'Shwetakale',
       linkedin: 'http://www.linkedin.com/in/shwetakale13'
     },
@@ -445,7 +445,7 @@ TEAM_MEMBERS= [
     title: "Software Engineer",
     image: "lakshmi.jpg",
     description: "Lakshmi joined Josh Software in July 2014. She has completed her Bachelors Degree in Information Technology from Pune Institute of Computer Technology (PICT), Pune in 2014. She is passionate about food. She spends her spare time reading and creating Mixed media art.",
-     technical: {
+    technical: {
       github: 'Lakshmi-Sharma',
       linkedin: 'http://www.linkedin.com/pub/lakshmi-sharma/2a/43a/284/'
     },
@@ -458,7 +458,7 @@ TEAM_MEMBERS= [
     title: "Software Engineer",
     image: "anujajoshi.jpg",
     description: "Anuja has completed her B.E. from Pune Institute of Technology, Pune. She has been a member of Josh Team since July, 2014. She is sand animation artist and loves painting and scenic designing.",
-     technical: {
+    technical: {
       github: 'anuja-joshi',
       linkedin: 'http://www.linkedin.com/pub/anuja-joshi/58/445/720/',
       twitter: "@Anujajoshi7"
@@ -472,7 +472,7 @@ TEAM_MEMBERS= [
     title: "Software Engineer",
     image: "atulbhosale.jpg",
     description: "Atul has completed his Masters degree in Computer Applications(M.C.A) from Pune University. He has been a member of Josh Team since July, 2015. His hobbies are watching sci-fi movies with friends and reading computer magazines.",
-     technical: {
+    technical: {
       github: 'Atul9',
       linkedin: 'https://in.linkedin.com/pub/atul-bhosale/30/510/784',
       twitter: "@atul1b",
@@ -481,7 +481,7 @@ TEAM_MEMBERS= [
     display: true,
     index: 31
   },
-    {
+  {
     id: "amoludage",
     name: "Amol Udage",
     title: "Software Engineer",
