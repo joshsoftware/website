@@ -326,21 +326,6 @@ index: 4
     index: 20
   },
   {
-    id: "ashish-singh",
-    name: "Ashish Singh",
-    title: "Software Engineer",
-    image: "ashish.jpg",
-    description: "Ashish has completed his B.E. from Army Institute of Technology Pune. He is passionate about programming and likes learning new technologies and languages. He likes to read and play computer games in his free time.",
-    technical: {
-      twitter: "@ashishait",
-      linkedin: "http://in.linkedin.com/in/ashish173/",
-      facebook: "https://www.facebook.com/ashish173",
-      github: "ashish173"
-    },
-    display: true,
-    index: 21
-  },
-  {
     id: "pankaj-rawat",
     name: "Pankaj Rawat",
     title: "Software Engineer",
@@ -353,7 +338,7 @@ index: 4
       github: "pkrawat1"
     },
     display: true,
-    index: 22
+    index: 21
   },
   {
     id: "deepak-singh",
@@ -368,7 +353,7 @@ index: 4
       github: "spidergears"
     },
     display: true,
-    index: 23
+    index: 22
   },
   {
     id: "seema-jha",
@@ -382,7 +367,7 @@ index: 4
       github: "seemajha"
     },
     display: true,
-    index: 24
+    index: 23
   },
   {
     id: "shifa-khan",
@@ -396,7 +381,7 @@ index: 4
       github: "shifakhan"
     },
     display: true,
-    index: 25
+    index: 24
   },
   {
     id: "anurag-pratap",
@@ -410,7 +395,7 @@ index: 4
       github: "apsc92"
     },
     display: true,
-    index: 26
+    index: 25
   },
   {
     id: "yogesh-khater",
@@ -424,7 +409,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/yogeshjain999'
     },
     display: true,
-    index: 27
+    index: 26
   },
   {
     id: "shweta-kale",
@@ -437,7 +422,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/shwetakale13'
     },
     display: true,
-    index: 28
+    index: 27
   },
   {
     id: "lakshmi-sharma",
@@ -450,7 +435,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/pub/lakshmi-sharma/2a/43a/284/'
     },
     display: true,
-    index: 29
+    index: 28
   },
   {
     id: "anuja-joshi",
@@ -464,7 +449,7 @@ index: 4
       twitter: "@Anujajoshi7"
     },
     display: true,
-    index: 30
+    index: 29
   },
   {
     id: "atul-bhosale",
@@ -479,7 +464,7 @@ index: 4
       facebook: 'https://www.facebook.com/Atul1Bhosale'
     },
     display: true,
-    index: 31
+    index: 30
   },
   {
     id: "amoludage",
@@ -494,6 +479,6 @@ index: 4
       twitter: "@amol_udage"
     },
     display: true,
-    index: 32
+    index: 31
   }
 ]
