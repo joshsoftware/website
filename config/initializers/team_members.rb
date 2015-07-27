@@ -480,5 +480,19 @@ index: 4
     },
     display: true,
     index: 31
+  },
+  {
+    id: "paritosh-botre",
+    name: "Paritosh Botre",
+    title: "Software Engineer",
+    image: "paritosh.jpg",
+    description: "Paritosh has completed his Master degree in Computer Applications(M.C.A) from Pune University. He has been a member of Josh Team since July, 2015.",
+    technical: {
+      github: 'paritoshbotre',
+      linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7',
+    },  
+    display: true,
+    index: 32
   }
+
 ]
