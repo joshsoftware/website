@@ -494,7 +494,7 @@ index: 4
     display: true,
     index: 32
   },
- {
+  {
     id: "sakshi-parakh",
     name: "Sakshi Parakh",
     title: "Software Engineer",
@@ -502,9 +502,22 @@ index: 4
     description: "Sakshi has completed her Bachelor degree in Computer Science(BTech) from College of Engineering Pune. She has been a member of Josh Team since July, 2015.",
     technical: {
       github: 'SakshiParakh'
-    },  
+    },
     display: true,
     index: 33
+  },
+  {
+    id: "ashvini-vibhute",
+    name: "Ashvini Vibhute",
+    title: "Software Engineer",
+    image: "Ashvini.jpg",
+    description: "Ashvini has completed her B.Tech degree in Information Technology from College of Engineering,Pune . She has been a member of Josh Team since July, 2015.",
+    technical: {
+      github: 'Ashviniv',
+      linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
+    },  
+    display: true,
+    index: 34
   }
 
 ]
