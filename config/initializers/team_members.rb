@@ -493,6 +493,19 @@ index: 4
     },  
     display: true,
     index: 32
+  },
+{
+    id: "ashvini-vibhute",
+    name: "Ashvini Vibhute",
+    title: "Software Engineer",
+    image: "Ashvini.jpg",
+    description: "Ashvini has completed her B.Tech in Information Technology from College Of Engineering, Pune . She has been a member of Josh Team since July, 2015.",
+    technical: {
+      github: 'Ashviniv',
+      linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480',
+    },  
+    display: true,
+    index: 32
   }
 
 ]
