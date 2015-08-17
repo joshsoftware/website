@@ -489,10 +489,22 @@ index: 4
     description: "Paritosh has completed his Master degree in Computer Applications(M.C.A) from Pune University. He has been a member of Josh Team since July, 2015.",
     technical: {
       github: 'paritoshbotre',
-      linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7',
+      linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
     },  
     display: true,
     index: 32
+  },
+ {
+    id: "sakshi-parakh",
+    name: "Sakshi Parakh",
+    title: "Software Engineer",
+    image: "sakshi.jpg",
+    description: "Sakshi has completed her Bachelor degree in Computer Science(BTech) from College of Engineering Pune. She has been a member of Josh Team since July, 2015.",
+    technical: {
+      github: 'SakshiParakh'
+    },  
+    display: true,
+    index: 33
   }
 
 ]
