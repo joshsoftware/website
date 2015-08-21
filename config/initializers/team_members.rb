@@ -494,5 +494,18 @@ index: 4
     display: true,
     index: 32
   }
+  {
+    id: "mohit-pawar",
+    name: "Mohit Pawar",
+    title: "Software Engineer",
+    image: "mohit.jpg",
+    description: "Mohit has completed his Master degree in Computer Science from Fergusson college. He has been a member of Josh Team since June, 2015",
+    technical: {
+      github: 'Mohit-Pawar',
+      linkedin: 'https://www.linkedin.com/pub/mohit-pawar/70/421/260',
+    },
+    display: true,
+    index: 35
+  }
 
 ]
