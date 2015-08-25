@@ -490,7 +490,7 @@ index: 4
     technical: {
       github: 'paritoshbotre',
       linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
-    },  
+    },
     display: true,
     index: 32
   },
@@ -515,7 +515,7 @@ index: 4
     technical: {
       github: 'Ashviniv',
       linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
-    },  
+    },
     display: true,
     index: 34
   },
@@ -531,6 +531,18 @@ index: 4
     },
     display: true,
     index: 35
+  },
+  {
+    id: "atul-jha",
+    name: "Atul Jha",
+    title: "Software Engineer",
+    image: "atuljha.png",
+    description: "Atul Jha completed his Post Graduate Diploma in Computer Science from Auckland University of Technology.He has been a member of Josh Team since April, 2015. His hobbies include playing bass guitar and watcing movies.",
+    technical: {
+      github: 'atulonruby',
+      linkedin: 'https://ca.linkedin.com/in/atuljha86'
+    },
+    display: true,
+    index: 36
   }
-
 ]
