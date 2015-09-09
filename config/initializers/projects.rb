@@ -212,7 +212,23 @@ PROJECTS= [
     },
     display: true
   },
-
+  
+  {
+    id: "mesitis",
+    title: "Mesitis",
+    country: "Singapore",
+    flag: "Sing.gif",
+    year: "2014",
+    url: "http://canopy.mesitis.com",
+    image: "mesitis.png",
+    description: "Mesitis is a financial technology company focused on serving the private wealth industry. They provide product by name as Canopy.<br>Canopy is a personal financial data aggregation and visualization platform for high networth individuals.<br>Canopy aggregates and reports your financial data across all of your bank and other financial accounts. It helps you make sense of your whole wealth and aids you to manage your money better.<br>Canopy is the world’s first, and currently the only, automated account aggregation platform that works without data feed from banks. Canopy can aggregate from your PDF statements – what that means is that you have no limit on which bank to include in the aggregation, and you can get started immediately.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.1.1", "Ruby 2.1.1","PostgreSQL", "AmCharts", "AWS RDS", "Sidekiq", "Redis"]
+    },
+    display: true
+  
+  },
 
   {
     id: "acemoney",

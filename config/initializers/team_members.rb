@@ -544,5 +544,20 @@ index: 4
     },
     display: true,
     index: 36
+  },
+  {
+    id: "chandrashekhar-sahu",
+    name: "Chandrashekhar Sahu",
+    title: "Android Developer",
+    image: "chandrashekhar.jpg",
+    description: "With two years of experience in mobile application developement, Chandrashekhar has been a part of Josh team since August 2015. He has done his Masters Of Computer Application from Chhattisgarh Swami Vivekanand Technical University Bhilai.",
+    technical: {
+      github: 'shekhar12020',
+      linkedin: 'https://in.linkedin.com/in/shekharsahu88',
+      twitter: "shekhar_sahu25",
+      facebook: "http://www.facebook.com/shekharsahu88"
+    },
+    display: true,
+    index: 37
   }
 ]

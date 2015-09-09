@@ -107,5 +107,13 @@ TESTIMONIES= [
     endorsement: "As a startup, TourConnect hired Josh to take out concept and wireframes and turn it into a product. They have done a fantastic job! They did an excellent job of asking good questions and then running with the requirements with minimal supervision. They know their technology, they are excellent communicator and produced a great product with very few issues. Highly Recommended.",
     display: true
   },
-
+  {
+    id: "clubbuzz",
+    title: "Managing Director",
+    url: "http://clubbuzz.com",
+    company: "Clubbuzz",
+    endorser: "Sarah Sedgwick",
+    endorsement: "Josh has been responsible for both the support of our products and there on-going development for the last two years.Their performance in both areas has been excellent.  In support I would go further and describe it as exceptional.  When there is a problem, Josh are onto it; serious issues are dealt with at whatever time of day or night.Communication between us is key and Josh have worked hard, not only to understand our product, but also our philosophy.  We would be hard-pressed indeed to find another partner of this quality.",
+    display: true
+  },
 ]
