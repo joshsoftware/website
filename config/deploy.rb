@@ -15,12 +15,12 @@ set :deploy_to, '/home/deploy/projects/website'
 set :repository, 'git@github.com:joshsoftware/website.git'
 set :branch, 'newtemplate'
 
-set :identity_file, "/home/anuja/.ssh/id_joshsite_rsa"
+set :identity_file, "/home/shweta/.ssh/id_joshsite_rsa"
 set :user, 'deploy'    # Username in the server to SSH to.
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'config/credentials.yml', 'log', 'tmp']
+set :shared_paths, ['config/database.yml', 'config/credentials.yml', 'log', 'tmp', 'config/rnotifier.yaml']
 
 # Optional settings:
 #   set :port, '30000'     # SSH port number.
