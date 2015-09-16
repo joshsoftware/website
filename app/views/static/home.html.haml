@@ -47,7 +47,7 @@
                   %span.about-testimonial-company #{testimonial[:company]}
                   .about-testimonial-content
                     %p.about-testimonial-quote
-                      #{raw testimonial[:endorsement].split("</br></br>")[0]}
+                      #{raw testimonial[:endorsement].split("<wbr>")[0]}
     .col-lg-3.col-md-3.col-sm-3.col-xs-9
       .about-testimonial
         .about-testimonial-author Fun at JOSH
