@@ -1,5 +1,20 @@
 TESTIMONIES= [
   {
+    id: "dealsignal",
+    title: "Founder & CEO",
+    url: "http://dealsignal.com/",
+    company: "DealSignal, Inc.",
+    endorser: "Rob Weedn",
+    endorsement: "Josh has provided DealSignal with highly experienced engineering management, disciplined development processes, talented developers, and have always excellent project management and client communications. </br>
+    
+    The Josh team consistently delivers nearly flawless, well documented code.  They can quickly understand product requirements, and breakdown development tasks to ensure rapid execution.  The team sets good expectations on delivery timeframes and always meets expectations.  In many urgent situations, Josh managers and developers have gone many extra miles to make a deliverable happen by a key deadline.</br></br>  
+    
+    With regard to technology, the Josh team's knowledge of Ruby, Postgres, Rest APIs, AWS, Regex, web crawling, data management, and systems integration far exceed all other non-US resources and frankly have proven to be much better than many Silicon Valley developers that we have worked with in the past. Along with modern software development stack, Josh team also uses modern development tools including Pivotaltracker, Github and provide detailed status updates to manage the project and keep our executives informed. </br>
+
+    The Josh team takes great pride in their work, takes great care to ensure their clients' success, and we have grown to feel strongly that our Josh team is part of the family in our venture.  We would recommend Josh team for any server side development project and have already referred other entrepreneurs we know to engage them. ",
+    display: true
+  },
+  {
     id: "clubbuzz",
     title: "Managing Director",
     url: "http://clubbuzz.com",
