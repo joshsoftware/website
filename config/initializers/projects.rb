@@ -46,7 +46,7 @@ PROJECTS= [
         comments: "",
         tags: ["Rails 4.0.0", "MongoDB", "ElasticSearch", "AWS-EC2"]
     },
-    case_study: "portfolio_pdf/altizon_datonis_case_study.pdf",
+    case_study: "/portfolio_pdf/altizon_datonis_case_study.pdf",
     display: true
   },
   
@@ -64,7 +64,7 @@ PROJECTS= [
         comments: "",
         tags: ["Ruby 2.0", "Rails 3.2.13", "MongoDB", "nginx + passenger", "AWS-EC2", "FTP server"]
     },
-    case_study: "portfolio_pdf/brandscope_case_study.pdf",
+    case_study: "/portfolio_pdf/brandscope_case_study.pdf",
     display: true
   },
 
@@ -81,7 +81,7 @@ PROJECTS= [
         comments: "filter.js",
         tags: ["Rails 3.2.12", "MongoDB", "ElasticSearch", "OpenStack", "filter.js"]
     },
-    case_study: "portfolio_pdf/educade_case_study.pdf",
+    case_study: "/portfolio_pdf/educade_case_study.pdf",
     display: true
   },
 

@@ -8,8 +8,9 @@ ENV['GEO_API_KEY'] = data['GEO_API_KEY']
 ENV['JOSH_INFO_EMAIL'] = data['JOSH_INFO_EMAIL']
 ENV['JOSH_INFO_PASSWORD'] = data['JOSH_INFO_PASSWORD']
 ENV['GOOGLE_DRIVE_SHEET'] = data['GOOGLE_DRIVE_SHEET']
-
 ENV['RECAPTCHA_API_KEY'] = data['RECAPTCHA_API_KEY']
+ENV['SERVICE_ACCOUNT_EMAIL'] = data['SERVICE_ACCOUNT_EMAIL']
+ENV['SERVICE_ACCOUNT_SECRET'] = data['SERVICE_ACCOUNT_SECRET']
 
 Website::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
@@ -52,8 +53,8 @@ Website::Application.configure do
     address: "smtp.gmail.com",
     port: 587,
     authentication: "plain",
-    user_name: ENV['USERNAME'],
-    password: ENV['PASSWORD'],
+    user_name: 'joshsoftwaretest1@gmail.com',
+    password: 'josh1234#',
     enable_starttls_auto: true
   }
 end
