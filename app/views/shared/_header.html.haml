@@ -14,15 +14,20 @@
           %li{class: "#{check_if_active('home')}"}
             = link_to 'Home', root_path
           %li{class: "#{check_if_active('Josh in News')}"}
-            %a{:href => "news"} Josh in News
+            = link_to 'Josh in News', news_path
+            /%a{:href => "news"} Josh in News
           %li{class: "#{check_if_active('portfolio')}"}
-            %a{:href => "portfolio"} Portfolio
+            = link_to 'Portfolio', portfolio_path
+            /%a{:href => "portfolio"} Portfolio
           %li{class: "#{check_if_active('testimonials')}"}
-            %a{:href => "testimonials"} Testimonials
+            = link_to 'Testimonials', testimonials_path
+            /%a{:href => "testimonials"} Testimonials
           %li{class: "#{check_if_active('open_source')}"}
-            %a{:href => "open-source"} Open Source
+            = link_to 'Open Source', open_source_path
+            /%a{:href => "open-source"} Open Source
           %li{class: "#{check_if_active('team')}"}
-            %a{:href => "team"} Team
+            = link_to 'Team', team_path
+            /%a{:href => "team"} Team
           %li
             %a{:href => "http://blog.joshsoftware.com/", target: '_blank'} Blog
           %li{class: "#{check_if_active('contact_us')}"}
