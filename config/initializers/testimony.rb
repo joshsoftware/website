@@ -20,7 +20,9 @@ TESTIMONIES= [
     url: "http://clubbuzz.com",
     company: "Clubbuzz",
     endorser: "Sarah Sedgwick",
-    endorsement: "Josh has been responsible for both the support of our products and there on-going development for the last two years.Their performance in both areas has been excellent.  In support I would go further and describe it as exceptional.  When there is a problem, Josh are onto it; serious issues are dealt with at whatever time of day or night.Communication between us is key and Josh have worked hard, not only to understand our product, but also our philosophy.  We would be hard-pressed indeed to find another partner of this quality.",
+    endorsement: "<p>Josh has been responsible for both the support of our products and there on-going development for the last two years. </p>
+    <p>Their performance in both areas has been excellent.  In support I would go further and describe it as exceptional.  When there is a problem, Josh are onto it; serious issues are dealt with at whatever time of day or night.</p><wbr>
+    <p>Communication between us is key and Josh have worked hard, not only to understand our product, but also our philosophy.  We would be hard-pressed indeed to find another partner of this quality.</p>",
     display: true
   },
   { 

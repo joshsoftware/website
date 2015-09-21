@@ -2,7 +2,7 @@ PROJECTS= [
 
   {
     id: "mesitis",
-    title: "Mesitis",
+    title: "Mesitis Canopy",
     country: "Singapore",
     flag: "Sing.gif",
     year: "2014",
