@@ -4,7 +4,7 @@ TEAM_MEMBERS= [
     name: "Gautam Rege",
     title: "Co-Founder & Director",
     image: "gautam.jpg",
-    description: "In his 13+ years in the Software Industry, he has worked with product Companies like Veritas Software Inc. (now Symantec Inc) and services companies like Zensar Technologies and Cybage Software. He is the author of <a target='_blank' href='http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book'> 'Ruby and MongoDB Web Development'</a>. He has graduated in 2000 with a Bachelors Degree in Computer Engineering from Pune Institute of Computer Technology (PICT), India.",
+    description: "In his 15+ years in the Software Industry, he has worked with product Companies like Veritas Software Inc. (now Symantec Inc) and services companies like Zensar Technologies and Cybage Software. He is the author of <a target='_blank' href='http://www.packtpub.com/ruby-and-mongodb-web-development-beginners-guide/book'> 'Ruby and MongoDB Web Development'</a>. He has graduated in 2000 with a Bachelors Degree in Computer Engineering from Pune Institute of Computer Technology (PICT), India.",
     technical: {
       twitter: "@gautamrege",
       linkedin: "http://www.linkedin.com/in/gautamrege",
@@ -21,7 +21,7 @@ TEAM_MEMBERS= [
     name: "Sethupathi Asokan",
     title: "Co-Founder & Director",
     image: "sethu.jpg",
-    description: "In his 15+ years, he has worked all along with Veritas Software (now Symantec Inc). He was instrumental in designing and managing Veritas Command Central Storage and was the senior most member of the team of 160 engineers. He has done Masters Degree in Computer Science in 1998.",
+    description: "In his 17+ years, he has worked all along with Veritas Software (now Symantec Inc). He was instrumental in designing and managing Veritas Command Central Storage and was the senior most member of the team of 160 engineers. He has done Masters Degree in Computer Science in 1998.",
     technical: {
       twitter: "@sethupathia",
       linkedin: "http://www.linkedin.com/in/sethupathia",
@@ -86,7 +86,7 @@ index: 4
     name: "Shailesh Patil",
     title: "Software Architect",
     image: "shailesh.jpg",
-    description: "Shailesh has over 5+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
+    description: "Shailesh has over 8+ yrs of exp. in design, development & support of various web apps built over RoR framework across various domains. He has been part of josh family since sepetember 2007. He has Bachelors Degree in Computer Engineering from PVG college of Engineering & Technology Pune, in 2007.",
     technical: {
       twitter: "@patilshailesh",
       linkedin: "http://www.linkedin.com/in/shaileshspatil"
@@ -117,13 +117,27 @@ index: 4
     name: "Kiran Chaudhari",
     title: "Team Lead",
     image: "kiran.jpg",
-    description: "Senior Software Engineer with 5+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
+    description: "Senior Software Engineer with 8+ years of experience. He graduated from Pune University with a Bachelor Degree in Computer Engineer in 2007. He is working with josh since Jun 2008. Kiran is passionate about cricket.",
     technical: {
       twitter: "@kiranchaudhari",
       linkedin: "http://www.linkedin.com/in/kirandc",
     },
     display: true,
     index: 7
+  },
+  {
+    id: "avadhoot-bhatye",
+    name: "Avadhoot Bhatye",
+    title: "Operations Head",
+    image: "Avadhoot.jpg",
+    description: "Avadhoot has spent 13+ years in Business Consulting in the area of Telecommunication, Manufacturing & Utilities managing large scale transformation Programs. Prior to Josh he has worked as a Business consultant with Welsh Water, UK Power Networks & Tech Mahindra.
+    He holds a Master’s degree in Human Resource from Pune University.",
+    technical: {
+      twitter: "@AvadhootBhatye",
+      facebook: "avadhoot1"
+    },
+    display: true,
+    index: 8
   },
 
   {
@@ -138,7 +152,7 @@ index: 4
       blog: "http://blog.joshsoftware.com/author/siva543/"
     },
     display: true,
-    index: 8
+    index: 9
   },
 
   {
@@ -146,7 +160,7 @@ index: 4
     name: "Pratik Shah",
     title: "Senior Software Engineer",
     image: "pratik.jpg",
-    description: "Pratik has over 2+ yrs of exp. in design & creation of various web applications built over RoR framework. He has been part of Josh since July 2010. He has Bachelors Degree in E&TC from Pune Institute of Computer Technology (PICT), India.",
+    description: "Pratik has over 5+ yrs of exp. in design & creation of various web applications built over RoR framework. He has been part of Josh since July 2010. He has Bachelors Degree in E&TC from Pune Institute of Computer Technology (PICT), India.",
     technical: {
       twitter: "@pratik141988",
       facebook: "http://www.facebook.com/pratik14sanghvi",
@@ -154,7 +168,7 @@ index: 4
       github: "pratik14"
     },
     display: true,
-    index: 9
+    index: 10
   },
 
   {
@@ -170,7 +184,7 @@ index: 4
       github: "swapnilchincholkar"
     },
     display: true,
-    index: 10
+    index: 11
   },
 
   {
@@ -183,7 +197,7 @@ index: 4
       github: "anujaware"
     },
     display: true,
-    index: 11
+    index: 12
   },
 
   {
@@ -199,7 +213,7 @@ index: 4
       github: "rishijain"
     },
     display:  true,
-    index: 12
+    index: 13
   },
 
   {
@@ -215,7 +229,7 @@ index: 4
       github: "narutosanjiv"
     },
     display: true,
-    index: 13
+    index: 14
   },
 
   {
@@ -231,7 +245,7 @@ index: 4
       blog: "http://thinkingruby.wordpress.com/"
     },
     display: true,
-    index: 14
+    index: 15
   },
 
   {
@@ -244,7 +258,7 @@ index: 4
       facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
-    index: 15
+    index: 16
   },
 
   {
@@ -261,7 +275,7 @@ index: 4
       github: "anilmaurya"
     },
     display: true,
-    index: 16
+    index: 17
   },
 
   {
@@ -277,7 +291,7 @@ index: 4
       github: "pramodshinde"
     },
     display: true,
-    index: 17
+    index: 18
   },
 
   {
@@ -293,7 +307,7 @@ index: 4
       github: "adityashedge"
     },
     display: true,
-    index: 18
+    index: 19
   },
 
   {
@@ -307,7 +321,7 @@ index: 4
       github: "abhishekbose87"
     },
     display: true,
-    index: 19
+    index: 20
   },
 
   {
@@ -321,21 +335,6 @@ index: 4
       linkedin: "http://in.linkedin.com/in/sahilb86/",
       facebook: "https://www.facebook.com/bhatiasahil2005",
       github: "sahilbhatia"
-    },
-    display: true,
-    index: 20
-  },
-  {
-    id: "pankaj-rawat",
-    name: "Pankaj Rawat",
-    title: "Software Engineer",
-    image: "pankaj.jpg",
-    description: "Pankaj is passionate about open-source web-technologies. He is a gamer, passionate soccer player. He completed his Bachelor Degree in Information technology from Army Institute of Technology.",
-    technical: {
-      twitter: "@pkrawat1",
-      linkedin: "http://in.linkedin.com/in/pkrawat1/",
-      facebook: "https://www.facebook.com/pkrawat1",
-      github: "pkrawat1"
     },
     display: true,
     index: 21
@@ -452,21 +451,6 @@ index: 4
     index: 29
   },
   {
-    id: "atul-bhosale",
-    name: "Atul Bhosale",
-    title: "Software Engineer",
-    image: "atulbhosale.jpg",
-    description: "Atul has completed his Masters degree in Computer Applications(M.C.A) from Pune University. He has been a member of Josh Team since July, 2015. His hobbies are watching sci-fi movies with friends and reading computer magazines.",
-    technical: {
-      github: 'Atul9',
-      linkedin: 'https://in.linkedin.com/pub/atul-bhosale/30/510/784',
-      twitter: "@atul1b",
-      facebook: 'https://www.facebook.com/Atul1Bhosale'
-    },
-    display: true,
-    index: 30
-  },
-  {
     id: "amoludage",
     name: "Amol Udage",
     title: "Software Engineer",
@@ -479,7 +463,7 @@ index: 4
       twitter: "@amol_udage"
     },
     display: true,
-    index: 31
+    index: 30
   },
   {
     id: "paritosh-botre",
@@ -492,7 +476,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
     },
     display: true,
-    index: 32
+    index: 31
   },
   {
     id: "sakshi-parakh",
@@ -504,7 +488,7 @@ index: 4
       github: 'SakshiParakh'
     },
     display: true,
-    index: 33
+    index: 32
   },
   {
     id: "ashvini-vibhute",
@@ -517,7 +501,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
     },
     display: true,
-    index: 34
+    index: 33
   },
   {
     id: "mohit-pawar",
@@ -530,20 +514,20 @@ index: 4
       linkedin: 'https://www.linkedin.com/pub/mohit-pawar/70/421/260'
     },
     display: true,
-    index: 35
+    index: 34
   },
   {
     id: "atul-jha",
     name: "Atul Jha",
     title: "Software Engineer",
     image: "atuljha.png",
-    description: "Atul Jha completed his Post Graduate Diploma in Computer Science from Auckland University of Technology.He has been a member of Josh Team since April, 2015. His hobbies include playing bass guitar and watcing movies.",
+    description: "Atul Jha completed his Post Graduate Diploma in Computer Science from Auckland University of Technology.He has been a member of Josh Team since April, 2015. His hobbies include playing bass guitar and watching movies.",
     technical: {
       github: 'atulonruby',
       linkedin: 'https://ca.linkedin.com/in/atuljha86'
     },
     display: true,
-    index: 36
+    index: 35
   },
   {
     id: "chandrashekhar-sahu",
@@ -558,6 +542,6 @@ index: 4
       facebook: "http://www.facebook.com/shekharsahu88"
     },
     display: true,
-    index: 37
+    index: 36
   }
 ]
