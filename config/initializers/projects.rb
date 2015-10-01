@@ -1,6 +1,21 @@
 PROJECTS= [
 
   {
+    id: "fundamentor",
+    title: "Fundamentor",
+    country: "India",
+    flag: "in.gif",
+    year: "2014",
+    url: "http://fundamentor.com/",
+    image: "fundamentor.png",
+    description: "Fundamentor is an innovative web application that enhances life skills and cognitive aptitude among school students using technology, analytics and gamification.<br>Sustainable career success requires Leadership,Collaboration, Problem Solving, Effective Decision Making, Creativity, and Communication . Leadership and collaboration skills grow with experience. Other skills are based on a person’s Quantitative, Verbal, Inference and Creative thinking aptitude. Fundamentor uses a unique proprietary QVIC score model to assess and develop students' aptitude.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.1.6", "Ruby 2.1.3","MongoDB", "PayUmoney", "Razorpay", "D3.js", "AWS S3", "JW Player"]
+    },
+    display: true
+  },
+  {
     id: "mesitis",
     title: "Mesitis Canopy",
     country: "Singapore",
@@ -62,7 +77,7 @@ PROJECTS= [
     description: "Brandscope Pty. Ltd. is focused on providing a streamline solution and maximizes the selling process for suppliers, retailers and agents in Australian fashion and Action Sports industry. Through this platform a supplier gets immediate access to quality retailers using unique and dynamic online tools to launch their brand with speed and efficiency giving them the competitive edge as well as a retailer gets the desired brands where they can view and buy product for their stores. An agent can reach to a large number of retailers and suppliers across geographies in no time with negligible efforts.The delivered solution features high resolution photography and video, concise product descriptions, buy plans, PDF catalogue automation, live social networking and ratings systems to mimic the traditional “touch n feel” sales process and create a 24/7 on-line showing experience for the Retailer.",
     technical: {
         comments: "",
-        tags: ["Ruby 2.0", "Rails 3.2.13", "MongoDB", "nginx + passenger", "AWS-EC2", "FTP server"]
+        tags: ["Ruby 2.1.0", "Rails 4.1.10", "Mongoid 4.0.0","sidekiq 3.3.0", "nginx + passenger", "AWS-EC2", "FTP server"]
     },
     case_study: "/portfolio_pdf/brandscope_case_study.pdf",
     display: true
@@ -117,7 +132,7 @@ PROJECTS= [
     },
     display: true
   },
-  
+=begin
   {
     id: "shopgodt",
     title: "Shopgodt",
@@ -149,7 +164,7 @@ PROJECTS= [
     },
     display: true
   },
-
+=end
   {
     id: "tourconnect",
     title: "TourConnect",
@@ -161,7 +176,7 @@ PROJECTS= [
     description: "TourConnect makes managing rates and contracting quick and easy! TourConnect communicates what the Supplier product is and how much it's going to cost each Contractor",
     technical: {
         comments: "",
-        tags: ["Rails 3.1.3", "MongoDB", "Authorize.Net", "ActiveAdmin", "Heroku Cedar Stack"]
+        tags: ["Rails 3.2.21", "Mongoid 3.1.6", "Authorize.Net", "ActiveAdmin", "React", "Flux", "Backbone", "Node JS"]
 
     },
     display: true
@@ -182,7 +197,7 @@ PROJECTS= [
     },
     display: true
   },
-
+=begin
   {
     id: "groupgyaan",
     title: "GroupGyaan",
@@ -231,7 +246,7 @@ PROJECTS= [
     display: true
   },
   
-
+=end
   {
     id: "acemoney",
   },
