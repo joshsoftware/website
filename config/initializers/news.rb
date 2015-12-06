@@ -17,6 +17,21 @@ NEWS = [
     display: true
   },
   {
+    title: "Clubbuzz Partners with Josh Software to build its new platform Groupbuzz",
+    content:[
+      {
+        header: "ClubBuzz, a UK-Based sports club management portal, partnered with Josh Software, a leading Indian expert in building web based application using Ruby on Rails framework, to create a new solution catering to activity-specific groups on the platform. With the success of ClubBuzz, the company realized that this was an opportunity not only limited to sports, but for groups from all walks of life.",
+        covered_by:[
+          {
+            site_name:'Virtual-Strategy Magazine',
+            link: "http://www.virtual-strategy.com/2015/11/26/clubbuzz-partners-india-based-josh-software-develop-its-new-platform-groupbuzz#axzz3sxEKPwxQ"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
     title: "Kimaya NICU Web Application decreases infant mortality rate",
     content:[
       {
