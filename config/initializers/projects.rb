@@ -5,7 +5,7 @@ PROJECTS= [
     title: "Groupbuzz",
     url: "http://groupbuzz.co.uk",
     image: "group_buzz.png",
-    description: "Clubbuzz is a professional website that can be updated directly by a selection of people within the sports club, but far more than that, a powerful management tool that really does meet the needs of sports clubs looking expecting their club to function smoothly on the web and to take the pressure off the committee and ensure the club runs smoothly and efficiently. Clubbuzz provides sports clubs with high quality solutions that allows sports clubs to spend less time managing their club and helps them in organize and indulge in more sports related activities by getting in touch with each and every member in a click of a button.",
+    description: "GroupBuzz is dedicated to creating an optimum end user experience for group owners and members. To achieve this, the owners wanted to build a portal that meets the demands of groups of all shapes and sizes wanting a professional website to manage their members and member payments.  They also worked towards making GroupBuzz a platform open for different groups where they can plan various meet ups, activities, exchange ideas and manage payments and accounts hassle free, efficiently and fast.",
     technical: {
         comments: "",
         tags: ["Rails 4.2.0", "Ruby 2.1.1", "MySQL", "DelayedJob", "AWS S3", "GoCardless", "PayPal"]
