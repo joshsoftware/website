@@ -1,6 +1,19 @@
 PROJECTS= [
 
   {
+    id: "groupbuzz",
+    title: "Groupbuzz",
+    url: "http://groupbuzz.co.uk",
+    image: "group_buzz.png",
+    description: "Clubbuzz is a professional website that can be updated directly by a selection of people within the sports club, but far more than that, a powerful management tool that really does meet the needs of sports clubs looking expecting their club to function smoothly on the web and to take the pressure off the committee and ensure the club runs smoothly and efficiently. Clubbuzz provides sports clubs with high quality solutions that allows sports clubs to spend less time managing their club and helps them in organize and indulge in more sports related activities by getting in touch with each and every member in a click of a button.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.2.0", "Ruby 2.1.1", "MySQL", "DelayedJob", "AWS S3", "GoCardless", "PayPal"]
+    },
+    case_study: "/portfolio_pdf/group_buzz.pdf",
+    display: true
+  },
+  {
     id: "fundamentor",
     title: "Fundamentor",
     country: "India",
