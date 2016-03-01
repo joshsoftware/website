@@ -4,7 +4,7 @@ PROJECTS= [
     id: "groupbuzz",
     title: "Groupbuzz",
     url: "http://groupbuzz.co.uk",
-    image: "group_buzz.png",
+    image: "group_buzz.jpg",
     description: "GroupBuzz is dedicated to creating an optimum end user experience for group owners and members. To achieve this, the owners wanted to build a portal that meets the demands of groups of all shapes and sizes wanting a professional website to manage their members and member payments.  They also worked towards making GroupBuzz a platform open for different groups where they can plan various meet ups, activities, exchange ideas and manage payments and accounts hassle free, efficiently and fast.",
     technical: {
         comments: "",
