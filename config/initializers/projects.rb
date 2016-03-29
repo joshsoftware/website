@@ -1,6 +1,20 @@
 PROJECTS= [
 
   {
+    id: "we3_health",
+    title: "We3Health",
+    image: "we3_health.png",
+    description: "The journey of We3 health started with the birth of Will to Scott Bolick and Brittany Lothe. Will was born premature in the 24 th week of Brittany’s pregnancy at only 770 grams, and he spent his first five months of life in the ICN (Intensive Care Nursery) also called the NICU (Neonatal Intensive Care Unit). They experienced first-hand the complexities and challenges parents face when they have to see their child fighting for his/her life. Such parents invest all their life into their babies - wishing only to provide good health for
+them.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.2.0", "Ruby 2.2.2", "MongoDB", "Angular 1.5", "Backbone 1.2.1", "Google Chart"]
+    },
+    case_study: "/portfolio_pdf/We3health_case_study.pdf",
+    display: true
+  },
+
+  {
     id: "groupbuzz",
     title: "Groupbuzz",
     url: "http://groupbuzz.co.uk",
@@ -13,6 +27,7 @@ PROJECTS= [
     case_study: "/portfolio_pdf/group_buzz.pdf",
     display: true
   },
+
   {
     id: "fundamentor",
     title: "Fundamentor",
