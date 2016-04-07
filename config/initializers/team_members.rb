@@ -490,19 +490,6 @@ index: 4
     index: 32
   },
   {
-    id: "atul-jha",
-    name: "Atul Jha",
-    title: "Software Engineer",
-    image: "atuljha.png",
-    description: "Atul Jha completed his Post Graduate Diploma in Computer Science from Auckland University of Technology.He has been a member of Josh Team since April, 2015. His hobbies include playing bass guitar and watching movies.",
-    technical: {
-      github: 'atulonruby',
-      linkedin: 'https://ca.linkedin.com/in/atuljha86'
-    },
-    display: true,
-    index: 33
-  },
-  {
     id: "chandrashekhar-sahu",
     name: "Chandrashekhar Sahu",
     title: "Android Developer",
@@ -515,7 +502,7 @@ index: 4
       facebook: "http://www.facebook.com/shekharsahu88"
     },
     display: true,
-    index: 34
+    index: 33
   },
   {
     id: "neelam-sharma",
@@ -528,6 +515,6 @@ index: 4
       linkedin: 'https://in.linkedin.com/in/neelam-sharma-b43b2756',
     },
     display: true,
-    index: 35
+    index: 34
   }
 ]

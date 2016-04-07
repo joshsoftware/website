@@ -1,6 +1,22 @@
 
 NEWS = [
   {
+    title: "Josh Software sets up two firms in Internet of Things and app development space",
+    content:[
+      {
+        header: " Josh Software, a Pune-based company that builds innovative web applications, has set up two firms in the Internet of Things and app development space.
+        Josh is among the few companies in India that work exclusively in Ruby on Rails, an open source software which is the basis for apps such as Basecamp, GitHub, Shopify, Airbnb and Twitch.",
+        covered_by:[
+          {
+            site_name: 'The Economic Times',
+            link: "http://economictimes.indiatimes.com/tech/software/josh-software-sets-up-two-firms-in-internet-of-things-and-app-development-space/articleshow/51322636.cms "
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
     title: "Ruby on Rails based Fundamentor.com Helps Teenagers Grasp Concepts Faster",
     content:[ 
       {
