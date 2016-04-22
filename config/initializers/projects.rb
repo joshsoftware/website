@@ -1,6 +1,23 @@
 PROJECTS= [
 
   {
+    id: "zenith",
+    title: "Zenith",
+    country: "Australia",
+    flag: "au.gif",
+    year: "2013",
+    url: "http://www.kwikkopy.com.au/zenith-online-print",
+    image: "zenith-scaled.png",
+    description: "Zenith is printing solutions for kwik kopy clients. Clients can order, preview, update and print Business cards, Posters, Flyers, Files etc.",
+    technical: {
+        comments: "",
+        tags: ["Ruby 2.1.1", "Rails 4.1.0", "PostgreSQL", "ElasticSearch", "nginx + passenger", "AWS-EC2", "Infixserver", "PDFTron"]
+    },
+    case_study: "/portfolio_pdf/zenith.pdf",
+    display: true
+  },
+  
+  {
     id: "we3_health",
     title: "We3Health",
     image: "we3_health.png",
@@ -128,21 +145,6 @@ them.",
     display: true
   },
 
-  {
-    id: "zenith",
-    title: "Zenith",
-    country: "Australia",
-    flag: "au.gif",
-    year: "2013",
-    url: "http://www.kwikkopy.com.au/zenith-online-print",
-    image: "zenith-scaled.png",
-    description: "Zenith is printing solutions for kwik kopy clients. Clients can order, preview, update and print Business cards, Posters, Flyers, Files etc.",
-    technical: {
-        comments: "",
-        tags: ["Ruby 2.0", "Rails 3.2.13", "PostgreSQL", "ElasticSearch", "nginx + passenger", "AWS-EC2", "Infixserver", "Pdftron"]
-    },
-    display: true
-  },
 
   {
     id: "phalcomm",

@@ -1,6 +1,22 @@
 
 NEWS = [
   {
+    title: "Parents Keep Track of Their Neonates’ Health on Real Time Basis",
+    content:[
+      {
+        header: "We3Health’s journey started when Scott Bolick and Brittany Lothe’s son Will was born premature in the 24th week and kept in the ICN – Intensive Care Nursery (also known as NICU or Neonatal Intensive Care Unit). They realized the hardships and challenges parents face when they saw their infant fighting for his life, and decided to start We3Health.",
+        covered_by:[
+          {
+            site_name: 'Electronicsforu',
+            link: "http://electronicsforu.com/technology-trends/we3health-helping-parents-keep-track-neonates-health-real-time-basis"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  {
     title: "Josh Software sets up two firms in Internet of Things and app development space",
     content:[
       {
