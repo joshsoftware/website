@@ -233,22 +233,6 @@ index: 4
   },
 
   {
-    id: "manoj-mishra",
-    name: "Manoj Mishra",
-    title: "Senior Software Developer",
-    image: "manoj.jpg",
-    description: "Since his childhood he's always been prone to learning computer systems and everything related to softwares. He wrote his first computer program in C when he was in high school, then steadily started to learn other languages like c++, python, java, c#, visual basic, while being equally interested in database management systems(oracle/db2). After he completed his BTech from AIT pune in 2011, he started his career as a Java developer but quickly turned to ruby for its simplicity & intuitiveness. He takes great pleasure in writing ruby programs and contributing to open source projects of any kind. He's also a die hard gamer and a fan of Mass Effect series i.e. when he's not changing the world through his computer programs, he's saving the galaxy from an imminent reaper invasion.",
-    technical: {
-      twitter: "@deXterbed",
-      linkedin: "http://www.linkedin.com/in/deXterbed",
-      github: "deXterbed",
-      blog: "http://thinkingruby.wordpress.com/"
-    },
-    display: true,
-    index: 15
-  },
-
-  {
     id: "meghabrid",
     name: "Megha Brid",
     title: "Senior Accountant",
@@ -258,7 +242,7 @@ index: 4
       facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
-    index: 16
+    index: 15
   },
 
   {
@@ -275,7 +259,7 @@ index: 4
       github: "anilmaurya"
     },
     display: true,
-    index: 17
+    index: 16
   },
 
   {
@@ -291,7 +275,7 @@ index: 4
       github: "pramodshinde"
     },
     display: true,
-    index: 18
+    index: 17
   },
 
   {
@@ -307,7 +291,7 @@ index: 4
       github: "adityashedge"
     },
     display: true,
-    index: 19
+    index: 18
   },
 
   {
@@ -323,7 +307,7 @@ index: 4
       github: "sahilbhatia"
     },
     display: true,
-    index: 20
+    index: 19
   },
   {
     id: "deepak-singh",
@@ -338,7 +322,7 @@ index: 4
       github: "spidergears"
     },
     display: true,
-    index: 21
+    index: 20
   },
   {
     id: "seema-jha",
@@ -352,7 +336,7 @@ index: 4
       github: "seemajha"
     },
     display: true,
-    index: 22
+    index: 21
   },
   {
     id: "anurag-pratap",
@@ -366,7 +350,7 @@ index: 4
       github: "apsc92"
     },
     display: true,
-    index: 23
+    index: 22
   },
   {
     id: "yogesh-khater",
@@ -380,7 +364,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/yogeshjain999'
     },
     display: true,
-    index: 24
+    index: 23
   },
   {
     id: "shweta-kale",
@@ -393,7 +377,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/shwetakale13'
     },
     display: true,
-    index: 25
+    index: 24
   },
   {
     id: "lakshmi-sharma",
@@ -406,7 +390,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/pub/lakshmi-sharma/2a/43a/284/'
     },
     display: true,
-    index: 26
+    index: 25
   },
 
   {
@@ -421,7 +405,7 @@ index: 4
       twitter: "@Anujajoshi7"
     },
     display: true,
-    index: 27
+    index: 26
   },
   {
     id: "amoludage",
@@ -436,7 +420,7 @@ index: 4
       twitter: "@amol_udage"
     },
     display: true,
-    index: 28
+    index: 27
   },
   {
     id: "paritosh-botre",
@@ -449,7 +433,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
     },
     display: true,
-    index: 29
+    index: 28
   },
   {
     id: "sakshi-parakh",
@@ -461,7 +445,7 @@ index: 4
       github: 'SakshiParakh'
     },
     display: true,
-    index: 30
+    index: 29
   },
   {
     id: "ashvini-vibhute",
@@ -474,7 +458,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
     },
     display: true,
-    index: 31
+    index: 30
   },
   {
     id: "mohit-pawar",
@@ -487,7 +471,7 @@ index: 4
       linkedin: 'https://www.linkedin.com/pub/mohit-pawar/70/421/260'
     },
     display: true,
-    index: 32
+    index: 31
   },
   {
     id: "chandrashekhar-sahu",
@@ -502,7 +486,7 @@ index: 4
       facebook: "http://www.facebook.com/shekharsahu88"
     },
     display: true,
-    index: 33
+    index: 32
   },
   {
     id: "neelam-sharma",
@@ -515,6 +499,6 @@ index: 4
       linkedin: 'https://in.linkedin.com/in/neelam-sharma-b43b2756',
     },
     display: true,
-    index: 34
+    index: 33
   }
 ]
