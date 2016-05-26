@@ -122,7 +122,7 @@ TESTIMONIES= [
     company: "Ace Money",
     endorser: "Anand Shrikhande",
     endorsement: "We are in a large data base driven customer acquisition and service driven business.Addition of Database is a common feacher.We have just crossed a year of successful operation of the software system developed for us by Josh Software Pvt Ltd. New scope of development including complexicities like accepting payments thru various payment gateways ,instaalerts to customers and relationship managers etc are being tested out to add to the software already working fine at our end.",
-    display: true
+    display: false
   },
   {
     id: "tour-connect",
