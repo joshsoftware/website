@@ -209,6 +209,7 @@ them.",
         tags: ["Rails 3.2.21", "Mongoid 3.1.6", "Authorize.Net", "ActiveAdmin", "React", "Flux", "Backbone", "Node JS"]
 
     },
+    case_study: "/portfolio_pdf/TourConnectCaseStudy.pdf",
     display: true
   },
 
