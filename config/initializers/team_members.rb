@@ -297,7 +297,7 @@ index: 4
   {
     id: "sahil-bhatia",
     name: "Sahil Bhatia",
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
     image: "sahil.jpg",
     description: "Sahil has completed his MCA from Bharati Vidyapeeth University, Pune. He has been an employee of JOSH since Jan, 2014. His hobbies include watching movies, reading about technology updates, spending time with family.",
     technical: {
