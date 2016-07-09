@@ -36,14 +36,13 @@
         are some of the tools we use to ensure our clients are always happy!
 .container
   .row.well
-    .col-lg-4.col-md-4.col-sm-3.col-xs-9
+    .col-md-4
       .about-testimonial
         .about-testimonial-author Newsletter
       %br
       %br
-      //%iframe{src: "https://codecuriosity.org/widgets/group/576425c6d1a1cc5504000012", height: "380", width: "340", frameborder: "0"}
-      %iframe{src: "http://joshsoftware.com/subscribe", height: "410", width: "340", frameborder: "0"}
-    .col-lg-4.col-md-4.col-sm-3.col-xs-12
+      %iframe{src: "http://localhost:3000/subscribe", height: "410", width: "340", frameborder: "0"}
+    .col-md-4
       .about-testimonial.boxed-style.about-flexslider
         %section.slider
           .flexslider
@@ -55,7 +54,7 @@
                   .about-testimonial-content
                     %p.about-testimonial-quote
                       #{raw testimonial[:endorsement].split("<wbr>")[0]}
-    .col-lg-4.col-md-4.col-sm-3.col-xs-9
+    .col-md-4
       .about-testimonial
         .about-testimonial-author Open Source
       %br
