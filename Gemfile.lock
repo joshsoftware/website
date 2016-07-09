@@ -61,6 +61,8 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    domain_name (0.5.24)
+      unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     erubis (2.7.0)
     execjs (2.6.0)
@@ -95,6 +97,8 @@ GEM
     hike (1.2.3)
     http (0.5.1)
       http_parser.rb
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     jbuilder (1.5.3)
@@ -127,6 +131,7 @@ GEM
     multi_json (1.11.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     oauth (0.4.7)
@@ -165,6 +170,10 @@ GEM
       json (~> 1.4)
     recaptcha (0.4.0)
     ref (2.0.0)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     retriable (1.4.1)
     rnotifier (0.1.5)
       faraday (>= 0.8.7)
@@ -224,6 +233,9 @@ GEM
     uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1)
     warden (1.2.3)
       rack (>= 1.0)
     watir (5.0.0)
@@ -257,6 +269,7 @@ DEPENDENCIES
   rails (= 4.0.2)
   rails_12factor
   recaptcha
+  rest-client
   rnotifier
   sass-rails (~> 4.0.0)
   sdoc

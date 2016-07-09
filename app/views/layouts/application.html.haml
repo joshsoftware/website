@@ -11,9 +11,9 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    = render 'shared/header'
+    = render 'shared/header' unless params[:controller].eql?('newsletters')
     = yield
-    = render 'shared/footer'
+    = render 'shared/footer' unless params[:controller].eql?('newsletters')
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

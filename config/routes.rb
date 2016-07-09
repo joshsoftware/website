@@ -9,9 +9,13 @@ Website::Application.routes.draw do
   get '/news' => 'static#news'
   get '/update_tweet' => 'static#update_tweet'
   get '/thankyou' => 'static#thankyou', as: 'thankyou'
+  get '/newsletter_thankyou' => 'newsletters#thankyou', as: 'newsletter_thankyou'
   get '/contact-us' => 'contacts#new', as: 'new_contact'
   post '/contact-us' => 'contacts#create', as: 'contact_us'
 
+  get '/subscribe' => 'newsletters#new', as: 'new_subscribe'
+  post '/subscribe' => 'newsletters#create', as: 'subscribe'
+  
   get '/contact_us', to: redirect('/contact-us')
   get '/open_source', to: redirect('/open-source')
 

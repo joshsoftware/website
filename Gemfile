@@ -68,3 +68,5 @@ gem "recaptcha", :require => "recaptcha/rails"
 gem 'rnotifier'
 gem 'google_drive'
 gem 'googleauth'
+gem 'rest-client'
+
