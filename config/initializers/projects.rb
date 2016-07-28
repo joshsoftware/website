@@ -1,6 +1,22 @@
 PROJECTS= [
 
   {
+    id: "pediatric_network",
+    title: "The Pediatric Network",
+    country: "India",
+    year: "2016",
+    url: "http://www.thepediatricnetwork.com",
+    image: "pediatric_network.png",
+    description: "This portal helps the doctors to shorten the consultation time as well as automate the process right from registering the patient till the prescription of drugs and referring the patient to other doctors if need be.",
+    technical: {
+        comments: "",
+        tags: ["Ruby 2.3.3", "Rails 5.0.0", "PostgreSQL 9.5.3", "Sidekiq", "Elasticsearch 2.3.3", "AngularJS 1.4.9", "Gulp", "NodeJS with NPM", "Bower", "Ionic 1.7.16", "Cordova 6.3.0"]
+    },
+    case_study: "/portfolio_pdf/ThePediatricNetworkCaseStudy.pdf",
+    display: true
+  },
+
+  {
     id: "zenith",
     title: "Zenith",
     country: "Australia",
