@@ -1,3 +1,4 @@
+%script{:async => "", :defer => "defer", :src => "https://buttons.github.io/buttons.js"}
 = render 'shared/breadcrumbs', data: nil
 .container
   .row
@@ -14,17 +15,31 @@
           .row
             .col-md-12
               .row
-                .col-md-8
+                .col-md-7
                   %h1
                     - if open_source[:url]
                       %a{:href => open_source[:url], :target => "_blank"}= raw open_source[:title]
                     - else
                       = open_source[:title]
-                .col-md-4.text-right
+                .col-md-5.text-right
                   - if open_source[:github]
-                    %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=fork&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-                    %iframe{:src=> "http://ghbtns.com/github-btn.html?user=#{open_source[:github][:user]}&repo=#{open_source[:github][:repo]}&type=watch&count=true", :allowtransparency => "true", :frameborder => "0", :scrolling => "0", :width => "95px", :height => "20px"}
-              %p 
+                    - repo_name = open_source[:github][:user] + '/' + open_source[:github][:repo]
+                    %a.github-button{:href => "https://github.com/#{repo_name}",
+                      'data-icon' => "octicon-mark-github",
+                      'aria-label' => "view #{repo_name} on GitHub"} Github
+                    %a.github-button{"aria-label" => "Fork #{repo_name} on GitHub",
+                      "data-count-api" => "/repos/#{repo_name}#forks_count",
+                      "data-count-aria-label" => "# forks on GitHub",
+                      "data-count-href" => "/#{repo_name}/network",
+                      "data-icon" => "octicon-repo-forked",
+                      :href => "https://github.com/#{repo_name}/fork"} Fork
+                    %a.github-button{"aria-label" => "Star #{repo_name} on GitHub",
+                      "data-count-api" => "/repos/#{repo_name}#stargazers_count",
+                      "data-count-aria-label" => "# stargazers on GitHub",
+                      "data-count-href" => "/#{repo_name}/stargazers",
+                      "data-icon" => "octicon-star",
+                      :href => "https://github.com/#{repo_name}"} Star
+              %p
                 = raw open_source[:details]
               - if indx > 2
                 %a.pull-right{href: '#'}
