@@ -8,7 +8,7 @@ NEWS = [
         covered_by:[
           {
             site_name: 'Golden Sparrow',
-            link: "interview_pdf/Josh Software_Golden Sparrow_30th July, 2016.pdf"
+            link: "news_images/JoshSoftware_Golden Sparrow_30th July2016.jpg"
           },
         ]
       }
@@ -38,7 +38,7 @@ NEWS = [
         covered_by:[
           {
             site_name: 'Sakaal Times',
-            link: "interview_pdf/Sakal Times_CodeCuriosity_28th July 2016.pdf"
+            link: "news_images/Sakal Times_CodeCuriosity_28th July 2016.jpg"
           },
         ]
       }
