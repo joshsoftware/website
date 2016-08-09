@@ -475,4 +475,17 @@ index: 4
     display: true,
     index: 31
   },
+  {
+    id: "geetanjali-kokate",
+    name: "Geetanjali Kokate",
+    title: "Software Engineer",
+    image: "geeta.jpg",
+    description: "Geetanjali has completed her Msc(Computer Science) from Fergusson College Pune. She has been employee of josh software Pvt. Ltd. since July, 2016",
+    technical: {
+      github: 'Geetakokate',
+      linkedin: 'https://www.linkedin.com/in/geetanjali-kokate-b18a1111b',
+    },
+    display: true,
+    index: 32
+  },  
 ]
