@@ -482,7 +482,7 @@ index: 4
     image: "swati.jpg",
     description: "Swati has completed her Bachelor degree in Computer Science & Engineering(BTech) from Walchand College of Engineering, Sangli. She has been a member of Josh Team since July, 2016.",
     technical: {
-      github: 'SwatiJadhav46'
+      github: 'SwatiJadhav46',
       linkedin: 'https://in.linkedin.com/in/swati-jadhav-63600390'
     },
     display: true,
