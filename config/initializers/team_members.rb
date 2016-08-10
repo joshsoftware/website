@@ -379,19 +379,6 @@ index: 4
     display: true,
     index: 24
   },
-  {
-    id: "lakshmi-sharma",
-    name: "Lakshmi Sharma",
-    title: "Software Engineer",
-    image: "lakshmi.jpg",
-    description: "Lakshmi joined Josh Software in July 2014. She has completed her Bachelors Degree in Information Technology from Pune Institute of Computer Technology (PICT), Pune in 2014. She is passionate about food. She spends her spare time reading and creating Mixed media art.",
-    technical: {
-      github: 'Lakshmi-Sharma',
-      linkedin: 'http://www.linkedin.com/pub/lakshmi-sharma/2a/43a/284/'
-    },
-    display: true,
-    index: 25
-  },
 
   {
     id: "anuja-joshi",
@@ -405,7 +392,7 @@ index: 4
       twitter: "@Anujajoshi7"
     },
     display: true,
-    index: 26
+    index: 25
   },
   {
     id: "amoludage",
@@ -420,7 +407,7 @@ index: 4
       twitter: "@amol_udage"
     },
     display: true,
-    index: 27
+    index: 26
   },
   {
     id: "paritosh-botre",
@@ -433,7 +420,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
     },
     display: true,
-    index: 28
+    index: 27
   },
   {
     id: "sakshi-parakh",
@@ -445,7 +432,7 @@ index: 4
       github: 'SakshiParakh'
     },
     display: true,
-    index: 29
+    index: 28
   },
   {
     id: "ashvini-vibhute",
@@ -458,7 +445,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
     },
     display: true,
-    index: 30
+    index: 29
   },
   {
     id: "mohit-pawar",
@@ -471,7 +458,7 @@ index: 4
       linkedin: 'https://www.linkedin.com/pub/mohit-pawar/70/421/260'
     },
     display: true,
-    index: 31
+    index: 30
   },
   {
     id: "chandrashekhar-sahu",
@@ -486,19 +473,6 @@ index: 4
       facebook: "http://www.facebook.com/shekharsahu88"
     },
     display: true,
-    index: 32
+    index: 31
   },
-  {
-    id: "neelam-sharma",
-    name: "Neelam Sharma",
-    title: "iOS Developer",
-    image: "neelam.jpg",
-    description: "With two years of experience in iOS developement, Neelam has been a part of Josh team since November 2015. She has completed her B.E in Computer Science from Army Institute of Technology, Pune. She loves to read books and play sports like volley ball, basket ball and table tennis.",
-    technical: {
-      github: 'neelamsharma12',
-      linkedin: 'https://in.linkedin.com/in/neelam-sharma-b43b2756',
-    },
-    display: true,
-    index: 33
-  }
 ]

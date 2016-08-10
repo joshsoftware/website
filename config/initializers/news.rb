@@ -1,6 +1,51 @@
 
 NEWS = [
   {
+    title: "Josh Software: Putting web solutions 'on the Rails'",
+    content:[
+      {
+        header: "Pune based Josh Software is a global leader in developing web solutions for clients that are rooted on the open source programming framework, known as Ruby on Rails - or just Rails.Singular focus on technology has helped Josh roll out solutions that are more often faster, more scalable and robust than similar solutions on other platforms.",
+        covered_by:[
+          {
+            site_name: 'Golden Sparrow',
+            link: "interview_pdf/Josh Software_Golden Sparrow_30th July, 2016.pdf"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
+    title: "Goodwill is the source code at this open coder collective",
+    content:[
+      {
+        header: "About a year ago, Gautam Rege decided that he wanted to do something to give back to the open source community.Rege, along with Sethupathi Asokan, is the cofounder of Josh Software, is among the top companies working on the Ruby on Rails framework in India.'With an experience of many years in the open source world, we realised that there is a need to build a platform for measuring the open source contributions, which coders make every day across the world' Rege told ET",
+        covered_by:[
+          {
+            site_name: 'The Economic Times',
+            link: "http://economictimes.indiatimes.com/tech/software/goodwill-is-the-source-code-at-this-open-coder-collective/articleshow/53070730.cms"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
+    title: "CodeCuriosity: Platform to aid Open Source",
+    content:[
+      {
+        header: "To give a boost to non contributing members of society to donate back to 'open-source' in a way that is motivating and rewarding too, city based Josh Software has come up with a new concept of an online proficient platform to measure and track open-source contributionsby the community accross the globe.The idea was named CodeCuriosity",
+        covered_by:[
+          {
+            site_name: 'Sakaal Times',
+            link: "interview_pdf/Sakal Times_CodeCuriosity_28th July 2016.pdf"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
     title: "Parents Keep Track of Their Neonates’ Health on Real Time Basis",
     content:[
       {
