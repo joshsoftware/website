@@ -475,4 +475,20 @@ index: 4
     display: true,
     index: 31
   },
+  {
+    id: "anusha-bhat",
+    name: "Anusha Bhat",
+    title: "Software Engineer",
+    image: "anusha.jpg",
+    description: "Anusha has completed her B.Tech in Computer Science from Walchand College of Engineering,Sangli. She likes reading fictional novels. ",
+    technical: {
+      github: 'A9u',
+      linkedin: "https://www.linkedin.com/in/anusha-bhat-813b4988",
+      twitter: "AnushaBhat111",
+      facebook: "https://www.facebook.com/anusha.bhat.1610",
+    },
+    display: true,
+    index: 32
+  },
+
 ]
