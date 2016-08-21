@@ -515,5 +515,19 @@ index: 4
     },
     display: true,
     index: 34
-  } 
+  },
+  {
+    id: "bandana-pandey",
+    name: "Bandana Pandey",
+    title: "Software Engineer",
+    image: "bandana.jpg",
+    description: "Bandana has completed her BE from Army Institute of Technology. She has been a member of Josh Team since July, 2016.",
+    technical: {
+      github: 'BandanaPandey',
+      linkedin: 'https://www.linkedin.com/in/bandana-pandey-97b05aa7',
+      facebook: "https://www.facebook.com/vandana.pandey.357622"
+    },
+    display: true,
+    index: 35
+  }
 ]
