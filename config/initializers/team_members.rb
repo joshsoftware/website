@@ -487,5 +487,20 @@ index: 4
     },
     display: true,
     index: 32
+  },
+  {
+    id: "pooja-mane",
+    name: "Pooja Mane",
+    title: "Software Engineer",
+    image: "pooja.jpg",
+    description: "Pooja has completed her M.Tech degree in Industrial Mathematics With Computer Application from Fergusson College, Pune. She has been a member of Josh Team since July, 2016.",
+    technical: {
+      github: 'pooja-mane',
+      linkedin: "https://in.linkedin.com/in/pooja-mane-233a6960",
+      twitter: "@poojamane_pm",
+      facebook: "https://www.facebook.com/pooja.mane.7792"
+    },
+    display: true,
+    index: 33
   }
 ]
