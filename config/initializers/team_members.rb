@@ -476,6 +476,61 @@ index: 4
     index: 31
   },
   {
+    id: "swati-jadhav",
+    name: "Swati Jadhav",
+    title: "Software Engineer",
+    image: "swati.jpg",
+    description: "Swati has completed her Bachelor degree in Computer Science & Engineering(BTech) from Walchand College of Engineering, Sangli. She has been a member of Josh Team since July, 2016.",
+    technical: {
+      github: 'SwatiJadhav46',
+      linkedin: 'https://in.linkedin.com/in/swati-jadhav-63600390'
+    },
+    display: true,
+    index: 32
+  },
+  {
+    id: "pooja-mane",
+    name: "Pooja Mane",
+    title: "Software Engineer",
+    image: "pooja.jpg",
+    description: "Pooja has completed her M.Tech degree in Industrial Mathematics With Computer Application from Fergusson College, Pune. She has been a member of Josh Team since July, 2016.",
+    technical: {
+      github: 'pooja-mane',
+      linkedin: "https://in.linkedin.com/in/pooja-mane-233a6960",
+      twitter: "@poojamane_pm",
+      facebook: "https://www.facebook.com/pooja.mane.7792"
+    },
+    display: true,
+    index: 33
+  },
+  {
+    id: "geetanjali-kokate",
+    name: "Geetanjali Kokate",
+    title: "Software Engineer",
+    image: "geeta.jpg",
+    description: "Geetanjali has completed her Msc(Computer Science) from Fergusson College Pune. She has been employee of Josh Software Pvt. Ltd. since July, 2016",
+    technical: {
+      github: 'Geetakokate',
+      linkedin: 'https://www.linkedin.com/in/geetanjali-kokate-b18a1111b',
+    },
+    display: true,
+    index: 34
+  },
+  {
+    id: "bandana-pandey",
+    name: "Bandana Pandey",
+    title: "Software Engineer",
+    image: "bandana.jpg",
+    description: "Bandana has completed her BE from Army Institute of Technology. She has been a member of Josh Team since July, 2016.",
+    technical: {
+      github: 'BandanaPandey',
+      linkedin: 'https://www.linkedin.com/in/bandana-pandey-97b05aa7',
+      facebook: "https://www.facebook.com/vandana.pandey.357622"
+    },
+    display: true,
+    index: 35
+  },
+  {
     id: "anusha-bhat",
     name: "Anusha Bhat",
     title: "Software Engineer",
@@ -488,7 +543,7 @@ index: 4
       facebook: "https://www.facebook.com/anusha.bhat.1610",
     },
     display: true,
-    index: 32
+    index: 36
   },
-
+  
 ]
