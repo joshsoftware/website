@@ -545,5 +545,19 @@ index: 4
     display: true,
     index: 36
   },
-  
+  {
+    id: "shailendra-pundhir",
+    name: "Shailendra Pundhir",
+    title: "Android Developer",
+    image: "shailendra.jpg",
+    description: "Shailendra has completed his B.E. in Electronics and Telecommunication from Army Institute of Technology. He has been a member of Josh team since July 2016.",
+    technical:{
+      github:'shailendrapundhir',
+      linkedin:"https://in.linkedin.com/in/shailendra-pundhir-46191b7a",
+      facebook:"https://www.facebook.com/shailendra.pratapsinghpundhir"   
+    },
+    display: true,
+    index: 37
+  }
 ]
+
