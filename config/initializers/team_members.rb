@@ -545,5 +545,17 @@ index: 4
     display: true,
     index: 36
   },
-  
+  {
+    id: "anuj-verma",
+    name: "Anuj Kumar Verma",
+    title: "Software Engineer",
+    image: "anuj.jpg",
+    description: "Anuj has completed his B.E in Information Technology from Army Institute of Technology, Pune. He has been a member of Josh Team since Jul, 2016.",
+    technical: {
+      linkedin: "http://www.linkedin.com/in/anuj-verma",
+      github: "anuj-verma"
+    },
+    display: true,
+    index: 37
+  },
 ]
