@@ -573,5 +573,19 @@ index: 4
     },
     display: true,
     index: 38
+  },
+  {
+    id: "vikramjadon",
+    name: "Vikram Singh Jadon",
+    title: "Software Engineer",
+    image: "vikramjadon.jpg",
+    description: "Vikram is a graduate from Army Institute Of Technology, Pune. He likes playing football and fifa.",
+    technical: {
+      github: 'vikramjadon921995',
+      linkedin: "https://in.linkedin.com/in/vikram-singh-jadon-965215a8",
+      facebook: "https://www.facebook.com/vikramjadon95",
+    },
+    display: true,
+    index: 39
   }
 ]
