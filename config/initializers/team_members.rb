@@ -545,5 +545,19 @@ index: 4
     display: true,
     index: 36
   },
-  
+  {
+    id: "ganesh-sagare",
+    name: "Ganesh Sagare",
+    title: "Software Engineer",
+    image: "ganesh.png",
+    description: "Ganesh is a passionate and enthusiastic about Programming and Open Source. He loves learnig new skills. He has completed Masters degree of Computer Science from Fergusson College, Pune. He joined Josh as Software Engineer in June 2016. He enjoys outdoor games and movies in his free time.",
+    technical: {
+      github: "SagareGanesh",
+      twitter: "@ganeshsagare3",
+      facebook: "https://www.facebook.com/sagare.ganesh",
+      linkedin: "https://www.linkedin.com/in/ganesh-sagare-89413b120"
+    },
+    display: true,
+    index: 37
+  }
 ]
