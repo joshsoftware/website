@@ -1,7 +1,7 @@
 class NewslettersController < ApplicationController
-  before_action :load_tweet
 
   def new
+    response.headers.except!('X-Frame-Options')
     @user = NewsletterUser.new
   end
 
