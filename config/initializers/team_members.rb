@@ -569,7 +569,7 @@ index: 4
     technical:{
       github:'shailendrapundhir',
       linkedin:"https://in.linkedin.com/in/shailendra-pundhir-46191b7a",
-      facebook:"https://www.facebook.com/shailendra.pratapsinghpundhir"   
+      facebook:"https://www.facebook.com/shailendra.pratapsinghpundhir"
     },
     display: true,
     index: 38
@@ -600,5 +600,20 @@ index: 4
     },
     display: true,
     index: 40
+  },
+  {
+    id: 'prasad-surase',
+    name: 'Prasad Surase',
+    title: 'Senior Software Engineer',
+    image: 'prasad.jpeg',
+    description: 'Prasad was introduced to IT by Josh in 2011. He has a Masters degree from Fergusson College, Pune. He is a foodie who likes reading fiction.',
+    technical: {
+      github: 'prasadsurase',
+      linkedin: 'https://in.linkedin.com/in/prasad-surase-0b16533a',
+      twitter: '@prasadsurase',
+      blog: 'http://prasadsurase.github.io/'
+    },
+    display: true,
+    index: 41
   }
 ]
