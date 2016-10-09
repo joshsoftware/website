@@ -217,22 +217,6 @@ index: 4
   },
 
   {
-    id: "sanjiv-jha",
-    name: "Sanjiv Kumar Jha",
-    title: "Senior Software Engineer",
-    image: "sanjiv.jpg",
-    description: "He has graduated from Army Institute of Technology, Pune in 2011. Currently he is working as software engineer at Josh Software Pvt. Ltd. He has knowledge of various programming language like c, c++, objective-c, python, ruby, c# and popular framework like .Net, spring, cherry, Rails. He love coding in ruby. He is one of fan of manga and anime.",
-    technical: {
-      twitter: "@narutosanjiv",
-      linkedin: "http://in.linkedin.com/pub/sanjiv-kumar-jha/46/464/739",
-      blog: "http://narutosanjiv.wordpress.com/",
-      github: "narutosanjiv"
-    },
-    display: true,
-    index: 14
-  },
-
-  {
     id: "meghabrid",
     name: "Megha Brid",
     title: "Senior Accountant",
@@ -242,7 +226,7 @@ index: 4
       facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
-    index: 15
+    index: 14
   },
 
   {
@@ -259,7 +243,7 @@ index: 4
       github: "anilmaurya"
     },
     display: true,
-    index: 16
+    index: 15
   },
 
   {
@@ -275,7 +259,7 @@ index: 4
       github: "pramodshinde"
     },
     display: true,
-    index: 17
+    index: 16
   },
 
   {
@@ -291,7 +275,7 @@ index: 4
       github: "adityashedge"
     },
     display: true,
-    index: 18
+    index: 17
   },
 
   {
@@ -307,7 +291,7 @@ index: 4
       github: "sahilbhatia"
     },
     display: true,
-    index: 19
+    index: 18
   },
   {
     id: "deepak-singh",
@@ -322,7 +306,7 @@ index: 4
       github: "spidergears"
     },
     display: true,
-    index: 20
+    index: 19
   },
   {
     id: "seema-jha",
@@ -336,7 +320,7 @@ index: 4
       github: "seemajha"
     },
     display: true,
-    index: 21
+    index: 20
   },
   {
     id: "anurag-pratap",
@@ -350,7 +334,7 @@ index: 4
       github: "apsc92"
     },
     display: true,
-    index: 22
+    index: 21
   },
   {
     id: "yogesh-khater",
@@ -364,7 +348,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/yogeshjain999'
     },
     display: true,
-    index: 23
+    index: 22
   },
   {
     id: "shweta-kale",
@@ -377,7 +361,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/shwetakale13'
     },
     display: true,
-    index: 24
+    index: 23
   },
 
   {
@@ -392,7 +376,7 @@ index: 4
       twitter: "@Anujajoshi7"
     },
     display: true,
-    index: 25
+    index: 24
   },
   {
     id: "amoludage",
@@ -407,7 +391,7 @@ index: 4
       twitter: "@amol_udage"
     },
     display: true,
-    index: 26
+    index: 25
   },
   {
     id: "paritosh-botre",
@@ -420,8 +404,9 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
     },
     display: true,
-    index: 27
+    index: 26
   },
+
   {
     id: "sakshi-parakh",
     name: "Sakshi Parakh",
@@ -432,7 +417,7 @@ index: 4
       github: 'SakshiParakh'
     },
     display: true,
-    index: 28
+    index: 27
   },
   {
     id: "ashvini-vibhute",
@@ -445,7 +430,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
     },
     display: true,
-    index: 29
+    index: 28
   },
   {
     id: "mohit-pawar",
@@ -458,7 +443,7 @@ index: 4
       linkedin: 'https://www.linkedin.com/pub/mohit-pawar/70/421/260'
     },
     display: true,
-    index: 30
+    index: 29
   },
   {
     id: "chandrashekhar-sahu",
@@ -473,7 +458,7 @@ index: 4
       facebook: "http://www.facebook.com/shekharsahu88"
     },
     display: true,
-    index: 31
+    index: 30
   },
   {
     id: "swati-jadhav",
@@ -486,7 +471,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/in/swati-jadhav-63600390'
     },
     display: true,
-    index: 32
+    index: 31
   },
   {
     id: "pooja-mane",
@@ -501,7 +486,7 @@ index: 4
       facebook: "https://www.facebook.com/pooja.mane.7792"
     },
     display: true,
-    index: 33
+    index: 32
   },
   {
     id: "geetanjali-kokate",
@@ -514,7 +499,7 @@ index: 4
       linkedin: 'https://www.linkedin.com/in/geetanjali-kokate-b18a1111b',
     },
     display: true,
-    index: 34
+    index: 33
   },
   {
     id: "bandana-pandey",
@@ -528,7 +513,7 @@ index: 4
       facebook: "https://www.facebook.com/vandana.pandey.357622"
     },
     display: true,
-    index: 35
+    index: 34
   },
   {
     id: "anusha-bhat",
@@ -543,7 +528,7 @@ index: 4
       facebook: "https://www.facebook.com/anusha.bhat.1610",
     },
     display: true,
-    index: 36
+    index: 35
   },
   {
     id: "ganesh-sagare",
@@ -558,7 +543,7 @@ index: 4
       linkedin: "https://www.linkedin.com/in/ganesh-sagare-89413b120"
     },
     display: true,
-    index: 37
+    index: 36
   },
   {
     id: "shailendra-pundhir",
@@ -572,7 +557,7 @@ index: 4
       facebook:"https://www.facebook.com/shailendra.pratapsinghpundhir"
     },
     display: true,
-    index: 38
+    index: 37
   },
   {
     id: "vikramjadon",
@@ -586,7 +571,7 @@ index: 4
       facebook: "https://www.facebook.com/vikramjadon95",
     },
     display: true,
-    index: 39
+    index: 38
   },
   {
     id: "anuj-verma",
@@ -599,7 +584,7 @@ index: 4
       github: "anuj-verma"
     },
     display: true,
-    index: 40
+    index: 39
   },
   {
     id: 'prasad-surase',
@@ -614,6 +599,6 @@ index: 4
       blog: 'http://prasadsurase.github.io/'
     },
     display: true,
-    index: 41
+    index: 40
   }
 ]
