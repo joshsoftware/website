@@ -4,9 +4,8 @@ class StaticController < ApplicationController
 
   def portfolio
     @projects = PROJECTS.select { |p| p[:display] }
-    @keywords = "Josh Software portfolio, works we have accompolished, #{@projects.collect{|p| p[:title]}.join(", ")}"
-    @description = "We work in various industry verticals like Insurance, Manufacturing, Media, eCommerce, Social Sector and Information Technology as long as the work is in Ruby."
-    @title = 'Portfolio | Josh Software Private Limited'
+    @keywords = "Josh Software portfolio, works we have accompolished, #{@projects.collect{|p| p[:technical][:tags]}.uniq.join(", ")}"
+    @description = "We work in various industry verticals like Insurance, Manufacturing, Media, eCommerce, Social Sector and Information Technology as long as the work is in Ruby. We all work in different stacks like AngularJs, Ionic, EleasticSearch, MongoDB, Postgres, MySQL, Google Chart, HightChart, Paypal, OpenStack, Sidekiq, Redis, AWS, JWPlayer, Nginx"
   end
 
   def team
@@ -44,7 +43,7 @@ class StaticController < ApplicationController
   def contact_us
     @title = 'Contact Us | Josh Software Private Limited'
   end
-  
+
   def about_us
     @title = 'About Us | Josh Software Private Limited'
   end
