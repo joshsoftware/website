@@ -1,29 +1,14 @@
 
 NEWS = [
-  {
-    title: "Josh Software: Putting web solutions 'on the Rails'",
+ {
+    title: "City based techie develops app to track premature baby's health",
     content:[
       {
-        header: "Pune based Josh Software is a global leader in developing web solutions for clients that are rooted on the open source programming framework, known as Ruby on Rails - or just Rails.Singular focus on technology has helped Josh roll out solutions that are more often faster, more scalable and robust than similar solutions on other platforms.",
+        header: "The Will’s Way Foundation looked to partner with an open source solution provider who could help them develop a platform to track, monitor and connect a parent, a baby and a nurse in an ICN. The founders approached the team at Josh Software with an aim of we3healthdeveloping a mobile-based solution, to keep the parents and child connected on a real time basis. Josh Software is accredited with building a similar NICU product in India, known as Kimaya NICU.",
         covered_by:[
           {
-            site_name: 'Golden Sparrow',
-            link: "news_images/JoshSoftware_Golden Sparrow_30th July2016.jpg"
-          },
-        ]
-      }
-    ],
-    display: true
-  },
-  {
-    title: "Goodwill is the source code at this open coder collective",
-    content:[
-      {
-        header: "About a year ago, Gautam Rege decided that he wanted to do something to give back to the open source community.Rege, along with Sethupathi Asokan, is the cofounder of Josh Software, is among the top companies working on the Ruby on Rails framework in India.'With an experience of many years in the open source world, we realised that there is a need to build a platform for measuring the open source contributions, which coders make every day across the world' Rege told ET",
-        covered_by:[
-          {
-            site_name: 'The Economic Times',
-            link: "http://economictimes.indiatimes.com/tech/software/goodwill-is-the-source-code-at-this-open-coder-collective/articleshow/53070730.cms"
+            site_name: 'The Golden Sparrow',
+            link: "http://healthtechnology.in/2016/09/28/we3health-helping-you-keep-a-track-of-your-neonates-health-on-a-real-time-basis/"
           },
         ]
       }
