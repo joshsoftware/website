@@ -74,6 +74,7 @@ them.",
         comments: "",
         tags: ["Rails 4.1.6", "Ruby 2.1.3","MongoDB", "PayUmoney", "Razorpay", "D3.js", "AWS S3", "JW Player"]
     },
+    case_study: "/portfolio_pdf/CaseStudyFundamentor.pdf",
     display: true
   },
   {
@@ -176,6 +177,7 @@ them.",
         comments: "",
         tags: ["Ruby 2.0", "Rails 3.2.11", "MongoDB", "Sidekiq", "Redis", "WebSockets", "Control-S"]
     },
+    case_study: "/portfolio_pdf/PhalcommCaseStudy.pdf",
     display: true
   },
 =begin
