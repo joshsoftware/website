@@ -201,22 +201,6 @@ index: 4
   },
 
   {
-    id: "rishi-jain",
-    name: "Rishi Jain",
-    title: "Senior Software Engineer",
-    image:  "rishi.jpg",
-    description: "He has done his graduation from Pune Institue of Computer Technology (PICT), India. He joined Josh as Software Developer in the summer of 2011.",
-    technical: {
-      linkedin: "http://www.linkedin.com/pub/rishi-jain/12/698/495",
-      blog: "http://blog.joshsoftware.com/author/jainrishi37/",
-      facebook: "http://www.facebook.com/jainrishi37",
-      github: "rishijain"
-    },
-    display:  true,
-    index: 13
-  },
-
-  {
     id: "meghabrid",
     name: "Megha Brid",
     title: "Senior Accountant",
@@ -226,7 +210,7 @@ index: 4
       facebook: "https://www.facebook.com/megha.parab.161",
     },
     display: true,
-    index: 14
+    index: 13
   },
 
   {
@@ -243,7 +227,7 @@ index: 4
       github: "anilmaurya"
     },
     display: true,
-    index: 15
+    index: 14
   },
 
   {
@@ -259,7 +243,7 @@ index: 4
       github: "pramodshinde"
     },
     display: true,
-    index: 16
+    index: 15
   },
 
   {
@@ -275,7 +259,7 @@ index: 4
       github: "adityashedge"
     },
     display: true,
-    index: 17
+    index: 16
   },
 
   {
@@ -291,22 +275,7 @@ index: 4
       github: "sahilbhatia"
     },
     display: true,
-    index: 18
-  },
-  {
-    id: "deepak-singh",
-    name: "Deepak Singh",
-    title: "Software Engineer",
-    image: "deepak.jpg",
-    description: "Deepak completed his Bachelor Of Engineering in Computers from Army Institute of Technology, Pune. He is passionate about programming and learnig new skills. He also likes reading fictions, tech-articles and DIY stuff. He enjoys computers games, movies and books in his free time.",
-    technical: {
-      twitter: "@spider_gears",
-      linkedin: "http://in.linkedin.com/in/spidergears/",
-      facebook: "https://www.facebook.com/spidergears",
-      github: "spidergears"
-    },
-    display: true,
-    index: 19
+    index: 17
   },
   {
     id: "seema-jha",
@@ -320,7 +289,7 @@ index: 4
       github: "seemajha"
     },
     display: true,
-    index: 20
+    index: 18
   },
   {
     id: "anurag-pratap",
@@ -334,7 +303,7 @@ index: 4
       github: "apsc92"
     },
     display: true,
-    index: 21
+    index: 19
   },
   {
     id: "yogesh-khater",
@@ -348,7 +317,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/yogeshjain999'
     },
     display: true,
-    index: 22
+    index: 20
   },
   {
     id: "shweta-kale",
@@ -361,7 +330,7 @@ index: 4
       linkedin: 'http://www.linkedin.com/in/shwetakale13'
     },
     display: true,
-    index: 23
+    index: 21
   },
 
   {
@@ -376,7 +345,7 @@ index: 4
       twitter: "@Anujajoshi7"
     },
     display: true,
-    index: 24
+    index: 22
   },
   {
     id: "amoludage",
@@ -391,7 +360,7 @@ index: 4
       twitter: "@amol_udage"
     },
     display: true,
-    index: 25
+    index: 23
   },
   {
     id: "paritosh-botre",
@@ -404,7 +373,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/paritosh-botre/64/860/7a7'
     },
     display: true,
-    index: 26
+    index: 24
   },
 
   {
@@ -417,7 +386,7 @@ index: 4
       github: 'SakshiParakh'
     },
     display: true,
-    index: 27
+    index: 25
   },
   {
     id: "ashvini-vibhute",
@@ -430,7 +399,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/pub/ashvini-vibhute/a1/725/480'
     },
     display: true,
-    index: 28
+    index: 26
   },
   {
     id: "mohit-pawar",
@@ -443,7 +412,7 @@ index: 4
       linkedin: 'https://www.linkedin.com/pub/mohit-pawar/70/421/260'
     },
     display: true,
-    index: 29
+    index: 27
   },
   {
     id: "chandrashekhar-sahu",
@@ -458,7 +427,7 @@ index: 4
       facebook: "http://www.facebook.com/shekharsahu88"
     },
     display: true,
-    index: 30
+    index: 28
   },
   {
     id: "swati-jadhav",
@@ -471,7 +440,7 @@ index: 4
       linkedin: 'https://in.linkedin.com/in/swati-jadhav-63600390'
     },
     display: true,
-    index: 31
+    index: 29
   },
   {
     id: "pooja-mane",
@@ -486,7 +455,7 @@ index: 4
       facebook: "https://www.facebook.com/pooja.mane.7792"
     },
     display: true,
-    index: 32
+    index: 30
   },
   {
     id: "geetanjali-kokate",
@@ -499,7 +468,7 @@ index: 4
       linkedin: 'https://www.linkedin.com/in/geetanjali-kokate-b18a1111b',
     },
     display: true,
-    index: 33
+    index: 31
   },
   {
     id: "bandana-pandey",
@@ -513,7 +482,7 @@ index: 4
       facebook: "https://www.facebook.com/vandana.pandey.357622"
     },
     display: true,
-    index: 34
+    index: 32
   },
   {
     id: "anusha-bhat",
@@ -528,7 +497,7 @@ index: 4
       facebook: "https://www.facebook.com/anusha.bhat.1610",
     },
     display: true,
-    index: 35
+    index: 33
   },
   {
     id: "ganesh-sagare",
@@ -543,7 +512,7 @@ index: 4
       linkedin: "https://www.linkedin.com/in/ganesh-sagare-89413b120"
     },
     display: true,
-    index: 36
+    index: 34
   },
   {
     id: "shailendra-pundhir",
@@ -557,7 +526,7 @@ index: 4
       facebook:"https://www.facebook.com/shailendra.pratapsinghpundhir"
     },
     display: true,
-    index: 37
+    index: 35
   },
   {
     id: "vikramjadon",
@@ -571,7 +540,7 @@ index: 4
       facebook: "https://www.facebook.com/vikramjadon95",
     },
     display: true,
-    index: 38
+    index: 36
   },
   {
     id: "anuj-verma",
@@ -584,7 +553,7 @@ index: 4
       github: "anuj-verma"
     },
     display: true,
-    index: 39
+    index: 37
   },
   {
     id: 'prasad-surase',
@@ -599,6 +568,6 @@ index: 4
       blog: 'http://prasadsurase.github.io/'
     },
     display: true,
-    index: 40
+    index: 38
   }
 ]
