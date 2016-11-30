@@ -5,12 +5,12 @@ PROJECTS= [
     title: "Get-a-Limo",
     country: "Singapoor",
     year: "2016",
-    url: "http://52.77.234.8/",
+    url: "http://www.get-a-limo.com.sg",
     image: "get_a_limo.jpg",
     description: "This is a customized voice messaging application to enable communication among limousine and private hire vehicle drivers in Singapore. This application was to be a direct replacement for the conventional walkie talkie, whose built-in limitations are impacting the limo drivers business.",
     technical: {
         comments: "",
-        tags: ["Ruby 2.3.0", "Rails 4.2.4", "PostgreSQL", "Sidekiq", "Datatable", "GCM", "Bootstrap for web app", "Material design for android app", "GCM", "Retrofit", "Picasso android", "AWS-s3", "Native media recorder"]
+        tags: ["Ruby 2.3.0", "Rails 4.2.4", "PostgreSQL", "Sidekiq", "Datatable", "GCM", "Bootstrap for web app", "Material design for android app", "Retrofit", "Picasso android", "AWS-s3", "Native media recorder"]
     },
     case_study: "/portfolio_pdf/GetALimoCaseStudy.pdf",
     display: true
