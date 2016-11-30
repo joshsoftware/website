@@ -1,5 +1,23 @@
 TESTIMONIES= [
   {
+    id: "fundamentor",
+    title: "Founder & Director",
+    url: "http://fundamentor.com",
+    company: "Fundamentor",
+    endorser: "Amol Patkar",
+    endorsement: "<p>Before getting Josh on board for our startup , we had done a lot of homework on IT vendors as well as tackled the question of whether to inhouse or outsource tech . The points which were in Josh's favour were</p>
+    <p>
+    A. Very competent & experienced team<br>
+    B. Use of efficient, robust & thorough processes/tools like pivotal tracker , github etc<br>
+    C. They had worked with a lot of startups across the world with good customer feedback on quality as well as timelines.<br>
+    </p>
+    <wbr>
+    <p>We had a heard a lot of horror stories faced by startups about outsourced tech work so we kept our fingers crossed after they started work , but to our absolute delight Josh has functioned as an extended IT dept of our startup. They are very good at  execution as well as providing suggestions/advice. They have  delivered as per their estimates and forecasts of time and effort .</p>
+    I will strongly recommend them for any startup who wants to be lean and efficient.",
+
+    display: true
+  },
+  {
     id: "dealsignal",
     title: "Founder & CEO",
     url: "http://dealsignal.com/",
