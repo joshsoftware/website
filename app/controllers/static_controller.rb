@@ -1,4 +1,5 @@
 class StaticController < ApplicationController
+  
   before_action :load_tweet
   caches_page :portfolio, :team, :testimonials, :open_source
 
@@ -9,11 +10,6 @@ class StaticController < ApplicationController
   end
 
   def team
-    @team_members = TEAM_MEMBERS.sort{|x,y| x[:index] <=> y[:index]}.select { |t| t[:display] }
-    team =  @team_members.collect{|t| t[:name]}.join(", ")
-    @keywords = "The JOSH People, the team, #{team}"
-    @description = "The JOSH People, the team behind our success. #{team}"
-    @title = 'The JOSH People | Josh Software Private Limited'
   end
 
   def home
