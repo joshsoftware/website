@@ -571,3 +571,4 @@ index: 4
     index: 38
   }
 ]
+INTRANET_URL = "http://intranet.joshsoftware.com"
