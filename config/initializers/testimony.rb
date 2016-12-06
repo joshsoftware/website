@@ -1,5 +1,15 @@
 TESTIMONIES= [
   {
+    id: "synergy",
+    title: "Manager (Projects and Quality)",
+    url: "http://www.synergydesignsolutions.com/",
+    company: "Synergy Design Solutions Pte.Ltd",
+    endorser: "Wee Tien Guan",
+    endorsement: "We engaged Josh Software two years ago to provide both web development utilizing Ruby on Rails and Mobile development on Android. Since then we have released two highly customized ERP solutions and a subscription based Android app with a subscription management backend. The people at Josh are not just experienced and excellent professionals, but working with them has been an enjoyable experience. They have been able to meet our targets despite strict requirements and tight timelines on all three projects. Due to the highly customized nature of the ERP solutions and the Android app, requirements were often increased in scope or new requirements added as the projects progressed. <wbr>Despite all these, Josh Software delivered and we are more than happy to work with them on upcoming projects.",
+    display: true
+  },
+
+  {
     id: "fundamentor",
     title: "Founder & Director",
     url: "http://fundamentor.com",
