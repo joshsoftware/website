@@ -1,5 +1,15 @@
 TESTIMONIES= [
   {
+    id: "blueshift",
+    title: "Co-Founder",
+    url: "https://getblueshift.com/",
+    company: "Blueshift Labs",
+    endorser: "Mehul Shah",
+    endorsement: "The Josh team are great partners and technically adept at what they do. They are professional, responsive and fun to work with. The team has been effective at helping us build 3rd party integrations and connectors, and <a href = 'http://english.stackexchange.com/questions/95890/usage-of-recommend' target = '_blank'>I can't recommend this team enough.</a>",
+    display: true
+  },
+
+  {
     id: "synergy",
     title: "Manager (Projects and Quality)",
     url: "http://www.synergydesignsolutions.com/",
@@ -34,13 +44,13 @@ TESTIMONIES= [
     company: "DealSignal, Inc.",
     endorser: "Rob Weedn",
     endorsement: "<p>Josh has provided DealSignal with highly experienced engineering management, disciplined development processes, talented developers, and have always excellent project management and client communications. </p>
-    
+
 <p>    The Josh team consistently delivers nearly flawless, well documented code.  They can quickly understand product requirements, and breakdown development tasks to ensure rapid execution.  The team sets good expectations on delivery timeframes and always meets expectations.  In many urgent situations, Josh managers and developers have gone many extra miles to make a deliverable happen by a key deadline.</p><wbr>
-    
+
 <p>    With regard to technology, the Josh team's knowledge of Ruby, Postgres, Rest APIs, AWS, Regex, web crawling, data management, and systems integration far exceed all other non-US resources and frankly have proven to be much better than many Silicon Valley developers that we have worked with in the past. Along with modern software development stack, Josh team also uses modern development tools including Pivotaltracker, Github and provide detailed status updates to manage the project and keep our executives informed. </p>
 
 <p>    The Josh team takes great pride in their work, takes great care to ensure their clients' success, and we have grown to feel strongly that our Josh team is part of the family in our venture.  We would recommend Josh team for any server side development project and have already referred other entrepreneurs we know to engage them.</p> ",
-    display: true
+display: true
   },
   {
     id: "clubbuzz",
