@@ -29,4 +29,5 @@
 //= require others/common-scripts
 //= require others/revulation-slide
 //= require carousel
+//= require mustache
 //= require static

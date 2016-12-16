@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+  protect_from_forgery except: :team 
   @@latest_tweet = []
 
   private
@@ -8,4 +8,5 @@ class ApplicationController < ActionController::Base
     @@latest_tweet = Tweet.latest_tweet if @@latest_tweet.empty?
     @tweet = @@latest_tweet
   end
+  
 end

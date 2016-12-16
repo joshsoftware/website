@@ -1,0 +1,39 @@
+%script#members{type: "x-tmpl-mustache"}
+  {{#team_members}}
+  .col-lg-3.col-md-3.col-sm-4.col-xs-12
+    .person.text-center
+      %a{href: '#'}
+        {{#public_profile.image_url}}
+        %img{src: "#{INTRANET_URL}/{{public_profile.image_url}}", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" =>"#"+"{{public_profile.modal_name}}-modal"}
+        {{/public_profile.image_url}}
+        {{^public_profile.image_url}}
+        %img{src: "placeholder.gif", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" =>  "#"+"{{public_profile.modal_name}}-modal"}
+        {{/public_profile.image_url}}
+    .person-info.text-center
+      %h4 {{employee_detail.designation}}
+      %p.text-muted {{public_profile.name}}
+    .text-center
+      = render "member_data", public_profile: "{{public_profile}}"
+  {{/team_members}}
+  {{#team_members}} 
+  .modal.fade{"aria-hidden" => "true", "aria-labelledby" => "{{public_profile.name}}", role: "dialog", tabindex: "-1", id: "{{public_profile.modal_name}}-modal"}
+    .modal-dialog
+      .modal-content
+        .modal-body.well
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+          .container.text-center
+            .person.text-center
+              {{#public_profile.image_url}}
+              %img{src: "#{INTRANET_URL}/{{public_profile.image_url}}", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" => "{{public_profile.modal_name}}-modal"}
+              {{/public_profile.image_url}}
+              {{^public_profile.image_url}}
+              %img{src: "placeholder.gif", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal"}
+              {{/public_profile.image_url}}
+            .person-info.text-center
+              %h4 {{public_profile.name}}
+              %p.text-muted {{employee_detail.designation}}
+            .text-center
+              = render "member_data", public_profile: "{{public_profile}}"
+          .container
+            %p {{{employee_detail.description}}}
+  {{/team_members}}
