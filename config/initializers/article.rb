@@ -1,5 +1,12 @@
 ARTICLES=[
   {
+    at: "Thebusinessedition",
+    title: "Ruby on Rails: The Key To Generating Optimum Manufacturing Efficiency",
+    link: "http://www.thebusinessedition.com/ruby-on-rails-the-key-to-generating-optimum-manufacturing-efficiency-4019/",
+    display: true
+  },
+
+  {
     at: "DNA India",
     title: "How To: What you need to consider before you start learning a programming language.",
     link: "http://www.dnaindia.com/scitech/report-how-to-what-you-need-to-consider-before-you-start-learning-a-programming-language-2090642",

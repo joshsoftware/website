@@ -1,23 +1,21 @@
-- if member[:technical].present?
-  .team-social-link
-    - if member[:technical][:github].present?
-      %a{target: "_blank", href: "http://github.com/#{member[:technical][:github]}", alt: "Github handle #{member[:technical][:github]}"}
-        %i.icon-github
-    - if member[:technical][:facebook].present?
-      %a{target: "_blank", href: "#{member[:technical][:facebook]}", alt: "Facebook" }
-        %i.icon-facebook
-    - if member[:technical][:twitter].present?
-      %a{target: "_blank", href: "http://twitter.com/#{member[:technical][:twitter].gsub("@","")}", alt: "Twitter handle #{member[:technical][:twitter]}"}
-        %i.icon-twitter
-    - if member[:technical][:pinterest].present?
-      %a{:href => "#"}
-        %i.icon-pinterest
-    - if member[:technical][:linkedin].present?
-      %a{target: "_blank", href: "#{member[:technical][:linkedin]}", alt: "Linked In handle"}
-        %i.icon-linkedin
-    - if member[:technical][:blog].present?
-      %a{target: "_blank", href: "#{member[:technical][:blog]}", alt: "Blog"}
-        %i.icon-rss
-    - if member[:technical][:google_plus].present?
-      %a{:href => "#"}
-        %i.icon-google-plus
+.team-social-link
+  {{#public_profile.twitter_handle}}
+  %a{target: "_blank", href: "http://twitter.com/{{public_profile.twitter_handle}}", alt: "Twitter handle {{public_profile.twitter_handle}}"}
+    %i.icon-twitter
+  {{/public_profile.twitter_handle}}
+  {{#public_profile.github_handle}}
+  %a{target: "_blank", href: "http://github.com/{{public_profile.github_handle}}", alt: "Github handle {{public_profile.github_handle}}"}
+    %i.icon-github
+  {{/public_profile.github_handle}}
+  {{#public_profile.facebook_url}}
+  %a{target: "_blank", href: "{{public_profile.facebook_url}}", alt: "Facebook"}
+    %i.icon-facebook
+  {{/public_profile.facebook_url}}
+  {{#public_profile.linkedin_url}}
+  %a{target: "_blank", href: "{{public_profile.linkedin_url}}", alt: "LinkedIn handle"}
+    %i.icon-linkedin
+  {{/public_profile.linkedin_url}}
+  {{#public_profile.blog_url}}
+  %a{target: "_blank", href: "{{public_profile.blog_url}}", alt: "Blog"}
+    %i.icon-rss
+  {{/public_profile.blog_url}}

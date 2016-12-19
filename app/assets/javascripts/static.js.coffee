@@ -26,4 +26,7 @@ $(window).load ->
       $("body").removeClass "loading"
       return
 
+  $('#fun').carousel interval: 3000
+
   image_slide()
+

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -19,13 +19,13 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails', '3.0.4'
 
 gem 'haml', '4.0.4'
-gem 'devise', '3.2.2'
-gem "active_attr", '0.8.2' #for activemodel::model
+gem 'devise'
+gem "active_attr", '0.9.0'  #for activemodel::model
 gem 'actionpack-page_caching', '1.0.2' #use caches_pages in rails 4
 gem 'twitter', '5.5.1'
 #gem 'unicorn'
 gem 'mina', '0.3.0'
-gem 'google_drive'
+
 gem 'whenever'
 
 group :production do
@@ -65,3 +65,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem "recaptcha", :require => "recaptcha/rails"
+gem 'rnotifier'
+gem 'google_drive', '1.0.1'
+gem 'googleauth', '0.4.2'
+gem 'rest-client'
+

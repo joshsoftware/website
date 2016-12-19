@@ -31,3 +31,4 @@ tmp
 .yardoc
 _yardoc
 doc/
+config/rnotifier.yaml

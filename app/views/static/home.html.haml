@@ -36,7 +36,13 @@
         are some of the tools we use to ensure our clients are always happy!
 .container
   .row.well
-    .col-lg-9.col-md-9.col-sm-9.col-xs-12
+    .col-md-4
+      .about-testimonial
+        .about-testimonial-author Newsletter
+      %br
+      %br
+      %iframe{src: "http://www.joshsoftware.com/subscribe", height: "410", width: "340", frameborder: "0"}
+    .col-md-4
       .about-testimonial.boxed-style.about-flexslider
         %section.slider
           .flexslider
@@ -47,17 +53,35 @@
                   %span.about-testimonial-company #{testimonial[:company]}
                   .about-testimonial-content
                     %p.about-testimonial-quote
-                      #{testimonial[:endorsement]}
-    .col-lg-3.col-md-3.col-sm-3.col-xs-9
+                      #{raw testimonial[:endorsement].split("<wbr>")[0]}
+    .col-md-4
       .about-testimonial
-        .about-testimonial-author Fun at JOSH
-      #fun.align-center
+        .about-testimonial-author Open Source
+      %br
+      %br
+      %iframe{src: "https://codecuriosity.org/widgets/group/576425c6d1a1cc5504000012", height: "410", width: "340", frameborder: "0"}
+        //.about-testimonial-author Fun at JOSH
+      //#fun.align-center
+      //= image_tag 'loading.gif'
+  .row.well
+    .col-md-6
+    .col-md-12
+      #fun
         = image_tag 'loading.gif'
+        //.left.carousel-control{href: '#myFunCarousel', "data" => {slide: "prev"}}
+        //%i.glyphicon.glyphicon-chevron-left
+
+        //.right.carousel-control{href: '#myFunCarousel', "data" => {slide: "next"}}
+        //%i.glyphicon.glyphicon-chevron-right
+
 .parallax1
   .clients
     .container
       .col-lg-12.text-center
         %ul.list-unstyled
+          %li
+            %a{href: 'portfolio/#Fundamentor'}
+              = image_tag "client_logos/fundamentor_logo.jpg"
           %li
             %a{href: 'portfolio/#Altizon Datonis'}
               = image_tag "client_logos/altizon_logo.png", class: 'logo_width'
@@ -70,6 +94,3 @@
           %li
             %a{href: 'portfolio/#TourConnect'}
               = image_tag "client_logos/tourConnectLogo.png", class: 'logo_width'
-          %li
-            %a{href: 'portfolio/#Shopgodt'}
-              = image_tag "client_logos/shopgodt_logo.svg", class: 'logo_width'

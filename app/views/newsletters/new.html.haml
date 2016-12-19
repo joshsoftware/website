@@ -1,0 +1,17 @@
+.panel.newsletter-header
+  %h2.newsletter-text
+    %center Interested in our monthly newsletter?
+.container
+  .contact-form
+    %br
+    = form_for @user, url: subscribe_path, method: :post do |f|
+      .form-group
+        = f.text_field :email, class: "form-control #{any_errors(@user, 'email')}", id: 'email', placeholder: 'Enter your email address'
+
+      %br
+      .form-group
+        = recaptcha_tags :display => {:theme => 'white'}
+        - if @user.errors[:recaptcha] 
+          %span.has-error
+            %label.control-label= @user.errors[:recaptcha].join(' ')
+      %center= f.submit 'Subscribe', class: 'btn btn-danger btn-lg'

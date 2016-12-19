@@ -1,4 +1,24 @@
 INTERVIEWS=[
+{
+    interviewer: 'The Economic Times',
+    interviews: [
+      {
+        header: 'About a year ago, Gautam Rege decided that he wanted to do something to give back to the open source community.Rege, along with Sethupathi Asokan, is the cofounder of Josh Software, is among the top companies working on the Ruby on Rails framework in India."With an experience of many years in the open source world, we realised that there is a need to build a platform for measuring the open source contributions, which coders make every day across the world" Rege told ET',
+        read_more: 'http://economictimes.indiatimes.com/tech/software/goodwill-is-the-source-code-at-this-open-coder-collective/articleshow/53070730.cms'
+      }
+    ],
+    display: true
+  },
+{
+    interviewer: 'The Golden Sparrow',
+    interviews: [
+      {
+        header: 'Pune based Josh Software is a global leader in developing web solutions for clients that are rooted on the open source programming framework, known as Ruby on Rails - or just Rails.Singular focus on technology has helped Josh roll out solutions that are more often faster, more scalable and robust than similar solutions on other platforms',
+        read_more: 'news_images/JoshSoftware_Golden Sparrow_30th July2016.jpg'
+      }
+    ],
+    display: true
+  },
   {
     interviewer: 'Deccan Chronicle',
     interviews: [

@@ -1,5 +1,67 @@
 
 NEWS = [
+ {
+    title: "City based techie develops app to track premature baby's health",
+    content:[
+      {
+        header: "The Will’s Way Foundation looked to partner with an open source solution provider who could help them develop a platform to track, monitor and connect a parent, a baby and a nurse in an ICN. The founders approached the team at Josh Software with an aim of we3healthdeveloping a mobile-based solution, to keep the parents and child connected on a real time basis. Josh Software is accredited with building a similar NICU product in India, known as Kimaya NICU.",
+        covered_by:[
+          {
+            site_name: 'The Golden Sparrow',
+            link: "http://healthtechnology.in/2016/09/28/we3health-helping-you-keep-a-track-of-your-neonates-health-on-a-real-time-basis/"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
+    title: "CodeCuriosity: Platform to aid Open Source",
+    content:[
+      {
+        header: "To give a boost to non contributing members of society to donate back to 'open-source' in a way that is motivating and rewarding too, city based Josh Software has come up with a new concept of an online proficient platform to measure and track open-source contributionsby the community accross the globe.The idea was named CodeCuriosity",
+        covered_by:[
+          {
+            site_name: 'Sakaal Times',
+            link: "news_images/Sakal Times_CodeCuriosity_28th July 2016.jpg"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
+    title: "Parents Keep Track of Their Neonates’ Health on Real Time Basis",
+    content:[
+      {
+        header: "We3Health’s journey started when Scott Bolick and Brittany Lothe’s son Will was born premature in the 24th week and kept in the ICN – Intensive Care Nursery (also known as NICU or Neonatal Intensive Care Unit). They realized the hardships and challenges parents face when they saw their infant fighting for his life, and decided to start We3Health.",
+        covered_by:[
+          {
+            site_name: 'Electronicsforu',
+            link: "http://electronicsforu.com/technology-trends/we3health-helping-parents-keep-track-neonates-health-real-time-basis"
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+
+  {
+    title: "Josh Software sets up two firms in Internet of Things and app development space",
+    content:[
+      {
+        header: " Josh Software, a Pune-based company that builds innovative web applications, has set up two firms in the Internet of Things and app development space.
+        Josh is among the few companies in India that work exclusively in Ruby on Rails, an open source software which is the basis for apps such as Basecamp, GitHub, Shopify, Airbnb and Twitch.",
+        covered_by:[
+          {
+            site_name: 'The Economic Times',
+            link: "http://economictimes.indiatimes.com/tech/software/josh-software-sets-up-two-firms-in-internet-of-things-and-app-development-space/articleshow/51322636.cms "
+          },
+        ]
+      }
+    ],
+    display: true
+  },
   {
     title: "Ruby on Rails based Fundamentor.com Helps Teenagers Grasp Concepts Faster",
     content:[ 
@@ -10,6 +72,21 @@ NEWS = [
           {
             site_name: 'APN News',
             link: "http://www.apnnews.com/2015/03/04/ruby-on-rails-based-fundamentor-com-helps-teenagers-grasp-concepts-faster/ "
+          },
+        ]
+      }
+    ],
+    display: true
+  },
+  {
+    title: "Clubbuzz Partners with Josh Software to build its new platform Groupbuzz",
+    content:[
+      {
+        header: "ClubBuzz, a UK-Based sports club management portal, partnered with Josh Software, a leading Indian expert in building web based application using Ruby on Rails framework, to create a new solution catering to activity-specific groups on the platform. With the success of ClubBuzz, the company realized that this was an opportunity not only limited to sports, but for groups from all walks of life.",
+        covered_by:[
+          {
+            site_name:'Virtual-Strategy Magazine',
+            link: "http://www.virtual-strategy.com/2015/11/26/clubbuzz-partners-india-based-josh-software-develop-its-new-platform-groupbuzz#axzz3sxEKPwxQ"
           },
         ]
       }

@@ -1,4 +1,30 @@
 TESTIMONIES= [
+  {
+    id: "dealsignal",
+    title: "Founder & CEO",
+    url: "http://dealsignal.com/",
+    company: "DealSignal, Inc.",
+    endorser: "Rob Weedn",
+    endorsement: "<p>Josh has provided DealSignal with highly experienced engineering management, disciplined development processes, talented developers, and have always excellent project management and client communications. </p>
+    
+<p>    The Josh team consistently delivers nearly flawless, well documented code.  They can quickly understand product requirements, and breakdown development tasks to ensure rapid execution.  The team sets good expectations on delivery timeframes and always meets expectations.  In many urgent situations, Josh managers and developers have gone many extra miles to make a deliverable happen by a key deadline.</p><wbr>
+    
+<p>    With regard to technology, the Josh team's knowledge of Ruby, Postgres, Rest APIs, AWS, Regex, web crawling, data management, and systems integration far exceed all other non-US resources and frankly have proven to be much better than many Silicon Valley developers that we have worked with in the past. Along with modern software development stack, Josh team also uses modern development tools including Pivotaltracker, Github and provide detailed status updates to manage the project and keep our executives informed. </p>
+
+<p>    The Josh team takes great pride in their work, takes great care to ensure their clients' success, and we have grown to feel strongly that our Josh team is part of the family in our venture.  We would recommend Josh team for any server side development project and have already referred other entrepreneurs we know to engage them.</p> ",
+    display: true
+  },
+  {
+    id: "clubbuzz",
+    title: "Managing Director",
+    url: "http://clubbuzz.com",
+    company: "Clubbuzz",
+    endorser: "Sarah Sedgwick",
+    endorsement: "<p>Josh has been responsible for both the support of our products and there on-going development for the last two years. </p>
+    <p>Their performance in both areas has been excellent.  In support I would go further and describe it as exceptional.  When there is a problem, Josh are onto it; serious issues are dealt with at whatever time of day or night.</p><wbr>
+    <p>Communication between us is key and Josh have worked hard, not only to understand our product, but also our philosophy.  We would be hard-pressed indeed to find another partner of this quality.</p>",
+    display: true
+  },
   { 
     id: "show-me",
     title: "CWO",
@@ -96,7 +122,7 @@ TESTIMONIES= [
     company: "Ace Money",
     endorser: "Anand Shrikhande",
     endorsement: "We are in a large data base driven customer acquisition and service driven business.Addition of Database is a common feacher.We have just crossed a year of successful operation of the software system developed for us by Josh Software Pvt Ltd. New scope of development including complexicities like accepting payments thru various payment gateways ,instaalerts to customers and relationship managers etc are being tested out to add to the software already working fine at our end.",
-    display: true
+    display: false
   },
   {
     id: "tour-connect",
@@ -106,6 +132,5 @@ TESTIMONIES= [
     endorser: "Robert Patterson",
     endorsement: "As a startup, TourConnect hired Josh to take out concept and wireframes and turn it into a product. They have done a fantastic job! They did an excellent job of asking good questions and then running with the requirements with minimal supervision. They know their technology, they are excellent communicator and produced a great product with very few issues. Highly Recommended.",
     display: true
-  },
-
+  }
 ]

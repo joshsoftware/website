@@ -1,4 +1,99 @@
 PROJECTS= [
+
+  {
+    id: "pediatric_network",
+    title: "The Pediatric Network",
+    country: "India",
+    year: "2016",
+    url: "http://www.thepediatricnetwork.com",
+    image: "pediatric_network.png",
+    description: "This portal helps the doctors to shorten the consultation time as well as automate the process right from registering the patient till the prescription of drugs and referring the patient to other doctors if need be.",
+    technical: {
+        comments: "",
+        tags: ["Ruby 2.3.3", "Rails 5.0.0", "PostgreSQL 9.5.3", "Sidekiq", "Elasticsearch 2.3.3", "AngularJS 1.4.9", "Gulp", "NodeJS with NPM", "Bower", "Ionic 1.7.16", "Cordova 6.3.0"]
+    },
+    case_study: "/portfolio_pdf/ThePediatricNetworkCaseStudy.pdf",
+    display: true
+  },
+
+  {
+    id: "zenith",
+    title: "Zenith",
+    country: "Australia",
+    flag: "au.gif",
+    year: "2013",
+    url: "http://www.kwikkopy.com.au/zenith-online-print",
+    image: "zenith-scaled.png",
+    description: "Zenith is printing solutions for kwik kopy clients. Clients can order, preview, update and print Business cards, Posters, Flyers, Files etc.",
+    technical: {
+        comments: "",
+        tags: ["Ruby 2.1.1", "Rails 4.1.0", "PostgreSQL", "ElasticSearch", "nginx + passenger", "AWS-EC2", "Infixserver", "PDFTron"]
+    },
+    case_study: "/portfolio_pdf/zenith.pdf",
+    display: true
+  },
+  
+  {
+    id: "we3_health",
+    title: "We3Health",
+    image: "we3_health.png",
+    description: "The journey of We3 health started with the birth of Will to Scott Bolick and Brittany Lothe. Will was born premature in the 24 th week of Brittany’s pregnancy at only 770 grams, and he spent his first five months of life in the ICN (Intensive Care Nursery) also called the NICU (Neonatal Intensive Care Unit). They experienced first-hand the complexities and challenges parents face when they have to see their child fighting for his/her life. Such parents invest all their life into their babies - wishing only to provide good health for
+them.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.2.0", "Ruby 2.2.2", "MongoDB", "Angular 1.5", "Backbone 1.2.1", "Google Chart"]
+    },
+    case_study: "/portfolio_pdf/We3health_case_study.pdf",
+    display: true
+  },
+
+  {
+    id: "groupbuzz",
+    title: "Groupbuzz",
+    url: "http://groupbuzz.co.uk",
+    image: "group_buzz.jpg",
+    description: "GroupBuzz is dedicated to creating an optimum end user experience for group owners and members. To achieve this, the owners wanted to build a portal that meets the demands of groups of all shapes and sizes wanting a professional website to manage their members and member payments.  They also worked towards making GroupBuzz a platform open for different groups where they can plan various meet ups, activities, exchange ideas and manage payments and accounts hassle free, efficiently and fast.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.2.0", "Ruby 2.1.1", "MySQL", "DelayedJob", "AWS S3", "GoCardless", "PayPal"]
+    },
+    case_study: "/portfolio_pdf/group_buzz.pdf",
+    display: true
+  },
+
+  {
+    id: "fundamentor",
+    title: "Fundamentor",
+    country: "India",
+    flag: "in.gif",
+    year: "2014",
+    url: "http://fundamentor.com/",
+    image: "fundamentor.png",
+    description: "Fundamentor is an innovative web application that enhances life skills and cognitive aptitude among school students using technology, analytics and gamification.<br>Sustainable career success requires Leadership,Collaboration, Problem Solving, Effective Decision Making, Creativity, and Communication . Leadership and collaboration skills grow with experience. Other skills are based on a person’s Quantitative, Verbal, Inference and Creative thinking aptitude. Fundamentor uses a unique proprietary QVIC score model to assess and develop students' aptitude.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.1.6", "Ruby 2.1.3","MongoDB", "PayUmoney", "Razorpay", "D3.js", "AWS S3", "JW Player"]
+    },
+    case_study: "/portfolio_pdf/CaseStudyFundamentor.pdf",
+    display: true
+  },
+  {
+    id: "mesitis",
+    title: "Mesitis Canopy",
+    country: "Singapore",
+    flag: "Sing.gif",
+    year: "2014",
+    url: "http://mesitis.com",
+    image: "mesitis.png",
+    description: "Mesitis is a financial technology company focused on serving the private wealth industry. They provide product by name as Canopy.<br>Canopy is a personal financial data aggregation and visualization platform for high networth individuals.<br>Canopy aggregates and reports your financial data across all of your bank and other financial accounts. It helps you make sense of your whole wealth and aids you to manage your money better.<br>Canopy is the world’s first, and currently the only, automated account aggregation platform that works without data feed from banks. Canopy can aggregate from your PDF statements – what that means is that you have no limit on which bank to include in the aggregation, and you can get started immediately.",
+    technical: {
+        comments: "",
+        tags: ["Rails 4.1.1", "Ruby 2.1.1","PostgreSQL", "AmCharts", "AWS RDS", "Sidekiq", "Redis"]
+    },
+    display: true
+  
+  },
+  
   {
     id: "kimaya",
     title: "Kimaya NICU",
@@ -28,7 +123,7 @@ PROJECTS= [
         comments: "",
         tags: ["Rails 4.0.0", "MongoDB", "ElasticSearch", "AWS-EC2"]
     },
-    case_study: "portfolio_pdf/altizon_datonis_case_study.pdf",
+    case_study: "/portfolio_pdf/altizon_datonis_case_study.pdf",
     display: true
   },
   
@@ -44,9 +139,9 @@ PROJECTS= [
     description: "Brandscope Pty. Ltd. is focused on providing a streamline solution and maximizes the selling process for suppliers, retailers and agents in Australian fashion and Action Sports industry. Through this platform a supplier gets immediate access to quality retailers using unique and dynamic online tools to launch their brand with speed and efficiency giving them the competitive edge as well as a retailer gets the desired brands where they can view and buy product for their stores. An agent can reach to a large number of retailers and suppliers across geographies in no time with negligible efforts.The delivered solution features high resolution photography and video, concise product descriptions, buy plans, PDF catalogue automation, live social networking and ratings systems to mimic the traditional “touch n feel” sales process and create a 24/7 on-line showing experience for the Retailer.",
     technical: {
         comments: "",
-        tags: ["Ruby 2.0", "Rails 3.2.13", "MongoDB", "nginx + passenger", "AWS-EC2", "FTP server"]
+        tags: ["Ruby 2.1.0", "Rails 4.1.10", "Mongoid 4.0.0","sidekiq 3.3.0", "nginx + passenger", "AWS-EC2", "FTP server"]
     },
-    case_study: "portfolio_pdf/brandscope_case_study.pdf",
+    case_study: "/portfolio_pdf/brandscope_case_study.pdf",
     display: true
   },
 
@@ -63,25 +158,10 @@ PROJECTS= [
         comments: "filter.js",
         tags: ["Rails 3.2.12", "MongoDB", "ElasticSearch", "OpenStack", "filter.js"]
     },
-    case_study: "portfolio_pdf/educade_case_study.pdf",
+    case_study: "/portfolio_pdf/educade_case_study.pdf",
     display: true
   },
 
-  {
-    id: "zenith",
-    title: "Zenith",
-    country: "Australia",
-    flag: "au.gif",
-    year: "2013",
-    url: "http://www.kwikkopy.com.au/zenith-online-print",
-    image: "zenith-scaled.png",
-    description: "Zenith is printing solutions for kwik kopy clients. Clients can order, preview, update and print Business cards, Posters, Flyers, Files etc.",
-    technical: {
-        comments: "",
-        tags: ["Ruby 2.0", "Rails 3.2.13", "PostgreSQL", "ElasticSearch", "nginx + passenger", "AWS-EC2", "Infixserver", "Pdftron"]
-    },
-    display: true
-  },
 
   {
     id: "phalcomm",
@@ -97,9 +177,10 @@ PROJECTS= [
         comments: "",
         tags: ["Ruby 2.0", "Rails 3.2.11", "MongoDB", "Sidekiq", "Redis", "WebSockets", "Control-S"]
     },
+    case_study: "/portfolio_pdf/PhalcommCaseStudy.pdf",
     display: true
   },
-  
+=begin
   {
     id: "shopgodt",
     title: "Shopgodt",
@@ -131,7 +212,7 @@ PROJECTS= [
     },
     display: true
   },
-
+=end
   {
     id: "tourconnect",
     title: "TourConnect",
@@ -143,9 +224,10 @@ PROJECTS= [
     description: "TourConnect makes managing rates and contracting quick and easy! TourConnect communicates what the Supplier product is and how much it's going to cost each Contractor",
     technical: {
         comments: "",
-        tags: ["Rails 3.1.3", "MongoDB", "Authorize.Net", "ActiveAdmin", "Heroku Cedar Stack"]
+        tags: ["Rails 3.2.21", "Mongoid 3.1.6", "Authorize.Net", "ActiveAdmin", "React", "Flux", "Backbone", "Node JS"]
 
     },
+    case_study: "/portfolio_pdf/TourConnectCaseStudy.pdf",
     display: true
   },
 
@@ -164,7 +246,7 @@ PROJECTS= [
     },
     display: true
   },
-
+=begin
   {
     id: "groupgyaan",
     title: "GroupGyaan",
@@ -212,8 +294,8 @@ PROJECTS= [
     },
     display: true
   },
-
-
+  
+=end
   {
     id: "acemoney",
   },
