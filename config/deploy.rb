@@ -15,9 +15,9 @@ set :deploy_to, '/home/deploy/projects/website'
 set :repository, 'git@github.com:joshsoftware/website.git'
 set :branch, 'newtemplate'
 
-set :identity_file, "/home/shweta/.ssh/id_joshsite_rsa"
+set :identity_file, "#{ENV['HOME']}/.ssh/id_joshsite_rsa"
 set :user, 'deploy'    # Username in the server to SSH to.
-
+set :forward_agent, true
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
 set :shared_paths, ['config/database.yml', 'config/credentials.yml', 'log', 'tmp', 'config/rnotifier.yaml', 'config/josh_service_account.p12']
@@ -33,7 +33,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  invoke :'rvm:use[ruby-2.1.0@default]'
+  invoke :'rvm:use[ruby-2.3.0@default]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
