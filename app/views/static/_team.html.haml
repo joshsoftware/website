@@ -3,12 +3,12 @@
   .col-lg-3.col-md-3.col-sm-4.col-xs-12
     .person.text-center
       %a{href: '#'}
-        {{#public_profile.image_url}}
-        %img{src: "#{INTRANET_URL}/{{public_profile.image_url}}", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" =>"#"+"{{public_profile.modal_name}}-modal"}
-        {{/public_profile.image_url}}
-        {{^public_profile.image_url}}
+        {{#public_profile.image_medium_url}}
+        %img{src: "#{INTRANET_URL}/{{public_profile.image_medium_url}}", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" =>"#"+"{{public_profile.modal_name}}-modal"}
+        {{/public_profile.image_medium_url}}
+        {{^public_profile.image_medium_url}}
         %img{src: "placeholder.gif", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" =>  "#"+"{{public_profile.modal_name}}-modal"}
-        {{/public_profile.image_url}}
+        {{/public_profile.image_medium_url}}
     .person-info.text-center
       %h4 {{employee_detail.designation}}
       %p.text-muted {{public_profile.name}}
@@ -23,12 +23,12 @@
           %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
           .container.text-center
             .person.text-center
-              {{#public_profile.image_url}}
-              %img{src: "#{INTRANET_URL}/{{public_profile.image_url}}", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" => "{{public_profile.modal_name}}-modal"}
-              {{/public_profile.image_url}}
-              {{^public_profile.image_url}}
+              {{#public_profile.image_medium_url}}
+              %img{src: "#{INTRANET_URL}/{{public_profile.image_medium_url}}", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" => "{{public_profile.modal_name}}-modal"}
+              {{/public_profile.image_medium_url}}
+              {{^public_profile.image_medium_url}}
               %img{src: "placeholder.gif", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal"}
-              {{/public_profile.image_url}}
+              {{/public_profile.image_medium_url}}
             .person-info.text-center
               %h4 {{public_profile.name}}
               %p.text-muted {{employee_detail.designation}}
