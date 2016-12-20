@@ -47,6 +47,10 @@ GEM
       addressable (>= 2.3.1)
       extlib (>= 0.9.15)
       multi_json (>= 1.0.0)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bcrypt (3.1.11)
     buftok (0.2.0)
     builder (3.2.2)
@@ -60,6 +64,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
+    connection_pool (2.2.1)
     dalli (2.6.4)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
@@ -191,6 +196,13 @@ GEM
     rake (11.3.0)
     rdoc (4.2.2)
       json (~> 1.4)
+    react-rails (1.10.0)
+      babel-transpiler (>= 0.7.0)
+      coffee-script-source (~> 1.8)
+      connection_pool
+      execjs
+      railties (>= 3.2)
+      tilt
     recaptcha (3.3.0)
       json
     ref (2.0.0)
@@ -287,6 +299,7 @@ DEPENDENCIES
   mina (= 0.3.0)
   rails (= 4.2.0)
   rails_12factor
+  react-rails
   recaptcha
   rest-client
   rnotifier
@@ -302,4 +315,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.13.2
+   1.13.6

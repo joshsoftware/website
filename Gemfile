@@ -70,3 +70,4 @@ gem 'google_drive', '1.0.1'
 gem 'googleauth', '0.4.2'
 gem 'rest-client'
 
+gem 'react-rails'
