@@ -31,3 +31,6 @@
 //= require carousel
 //= require mustache
 //= require static
+//= require react
+//= require react_ujs
+//= require components
