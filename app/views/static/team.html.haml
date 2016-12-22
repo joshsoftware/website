@@ -6,7 +6,7 @@
       %h1 Meet Our Team
     #members_data
       %center= image_tag "icon_loading.gif", id: "loading_team";
-    = render "team"
+      = react_component "EmployeesContainer", employeesPath: "#{INTRANET_URL}/api/v1/team"
 
 :javascript
   var intranet_url = '#{INTRANET_URL}'
