@@ -1,5 +1,15 @@
 INTERVIEWS=[
-{
+  {
+    interviewer: 'Digit Magazine',
+    interviews: [
+      {
+        header: "Open Source is being used every where today, if you're using an Android Phone then you're probably using some open source component.Even if you look at applications made on iPhone, they are probably using some open source library at core - Gautam told Devworx",
+        read_more: 'news_images/Media coverage_CodeCuriosity_Digit Magazine_pg.no 80_January 2017.jpg'
+      }
+    ],
+    display: true
+  },
+  {
     interviewer: 'The Economic Times',
     interviews: [
       {
@@ -9,7 +19,7 @@ INTERVIEWS=[
     ],
     display: true
   },
-{
+  {
     interviewer: 'The Golden Sparrow',
     interviews: [
       {
