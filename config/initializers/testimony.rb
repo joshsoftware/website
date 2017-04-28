@@ -1,5 +1,15 @@
 TESTIMONIES= [
   {
+    id: "the-pediatric-network",
+    title: "Pediatrician and Mentor",
+    url: "https://thepediatricnetwork.com",
+    company: "The Pediatric Network",
+    endorser: "Dr. Atish Laddad",
+    endorsement: "If a house has strong foundation and pillars, the house stands the test of time. My experience with Josh has been akin to that. If you want to build a technology house with strong foundations, it has to be with Josh. Every brick is put in with a lot of thought process and deliberation. Every feature is cemented well. Unexpected cracks don't emerge and even if they do, the team is quick to respond.My good wishes are with them and expect them to take the game higher in coming times by experimenting, innovating and leading in newer technologies!",
+    display: true
+  },
+
+  {
     id: "blueshift",
     title: "Co-Founder",
     url: "https://getblueshift.com/",

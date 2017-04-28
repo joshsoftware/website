@@ -1,6 +1,22 @@
 PROJECTS= [
 
   {
+    id: "quickinsure",
+    title: "Quickinsure",
+    country: "India",
+    year: "2016",
+    url: "https://quickinsure.co.in/",
+    image: "quickinsure.png",
+    description: "QuickInsure is a specially developed platform for convenience in buying motor vehicle insurance and third party insurance. Buying an insurance for vehicles can sometimes be a time-consuming task for both vehicle owners and the professional who provides insurance policy options available in the market.QuickInsure is a B2C platform which provides that ease and convenience. There are two ways in which vehicle owners can buy insurance i.e. via smartphone application or from the online platform.",
+    technical: {
+        comments: "",
+        tags: ["Ruby 2.2.1", "Rails 4.2.5", "MongoDB", "Bootstrap", "Action Cable", "Elastic Search 5.3"]
+    },
+    case_study: "/portfolio_pdf/QuickInsure.pdf",
+    display: true
+  },
+  
+  {
     id: "get-a-limo",
     title: "Get-a-Limo",
     country: "Singapoor",
@@ -15,6 +31,7 @@ PROJECTS= [
     case_study: "/portfolio_pdf/GetALimoCaseStudy.pdf",
     display: true
   },
+  
   
   {
     id: "pediatric_network",
