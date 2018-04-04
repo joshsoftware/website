@@ -10,8 +10,8 @@
         %img{src: "placeholder.gif", alt: "{{ public_profile.name}}", title: "{{ public_profile.name }}", 'data-toggle'=>"modal", "data-target" =>  "#"+"{{public_profile.modal_name}}-modal"}
         {{/public_profile.image_medium_url}}
     .person-info.text-center
-      %h4 {{employee_detail.designation}}
-      %p.text-muted {{public_profile.name}}
+      %h4 {{public_profile.name}}
+      %p.text-muted {{employee_detail.designation}}
     .text-center
       = render "member_data", public_profile: "{{public_profile}}"
   {{/team_members}}
