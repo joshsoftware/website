@@ -1,13 +1,16 @@
-header.header-js
+header.josh-header.fixed-top
   .container
-    nav.navbar.navbar-expand-lg
-      a.navbar-brand(href='#') Navbar
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarNavAltMarkup.collapse.navbar-collapse
+    nav.navbar.navbar-expand-lg.josh-navbar
+      a.navbar-brand(href='#')
+        img(src='./images/josh-logo.svg', alt='')
+      button.navbar-toggler.p-0.border-0(type='button', data-toggle='offcanvas')
+        i.icon-bars
+      #joshOffcanvasNavbar.navbar-collapse.offcanvas-collapse
         .navbar-nav.ml-auto
-          a.nav-item.nav-link.active(href='#') Innovation
+          a.nav-item.nav-link(href='#') Innovation
           a.nav-item.nav-link(href='#') Services
           a.nav-item.nav-link(href='#') Technologies
           a.nav-item.nav-link(href='#') Industries
           a.nav-item.nav-link(href='#') Company
+          a.nav-item.nav-link.nav-offcanvas-link(href='#') Contact Us
+          a.nav-item.nav-link.nav-offcanvas-link(href='#') Blog

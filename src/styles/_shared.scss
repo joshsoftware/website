@@ -1,3 +1,31 @@
 /* shared */
+html {
+  @include rem-baseline;
+}
+
+body {
+  padding-top: rem(76px);
+
+  @include media-breakpoint-down(md) {
+    padding-top: rem(54px);
+  }
+}
+
+// button
+button:focus {
+  outline: none;
+}
+
+// utility classes
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-md-scroll {
+
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+  }
+}
 
 /* shared end */

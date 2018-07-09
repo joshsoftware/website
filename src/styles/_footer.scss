@@ -1,0 +1,23 @@
+.josh-footer {
+  min-height: rem(400px);
+  background-color: $gray-20;
+  padding: rem(54px 0 22px);
+}
+
+.text-policy, .text-copyright{
+  font-size: rem(12px);
+  line-height: rem(16px);
+  font-weight: 300;
+  color: $white;
+  text-align: center;
+  margin-bottom: rem(16px);
+
+  a{
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.text-copyright{
+letter-spacing: rem(1.4px);
+}

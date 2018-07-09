@@ -1,4 +1,82 @@
-.header-js{
+.josh-header {
+  height: rem(76px);
   background-color: $white;
-  //box-shadow: 0 4px 4px 0 rgba(0,0,0,0.6);
+  @include flexbox();
+  @include align-items(center);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+
+  @include media-breakpoint-down(md) {
+    height: rem(54px);
+  }
+
+  .navbar-brand {
+
+    > img {
+      width: rem(216px);
+      height: auto;
+
+      @include media-breakpoint-down(md) {
+        width: rem(120px);
+      }
+    }
+  }
+}
+
+.josh-navbar {
+  @include align-items(flex-end);
+  padding: 0;
+
+  @include media-breakpoint-down(md) {
+    @include align-items(center);
+    padding: 0 5px;
+  }
+
+  .navbar-nav {
+
+    > .nav-link {
+      color: $gray-40;
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: rem(5px 15px);
+
+      @include media-breakpoint-down(md) {
+        color: $gray-20;
+        padding: rem(10px 15px);
+      }
+
+      &:first-child {
+        padding-left: 0;
+
+        @include media-breakpoint-down(md) {
+          padding-left: rem(15px);
+        }
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        @include media-breakpoint-down(md) {
+          padding-right: rem(15px);
+        }
+      }
+
+      &.active {
+        color: $gray-20;
+        font-weight: 400;
+      }
+
+      &:hover, &:focus {
+        color: $gray-20;
+      }
+    }
+
+    .nav-offcanvas-link {
+      display: none;
+
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+    }
+  }
 }

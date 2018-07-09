@@ -1,4 +1,9 @@
 /* mixins */
+/* rem unit mixin */
+@import '../../node_modules/sass-rem/_rem.scss';
+/* flex Sass mixin */
+@import "../../node_modules/sass-flex-mixin/_flex.scss";
+
 @mixin boxShadow($shadow...) {
   @if $enable-shadows {
     box-shadow: $shadow;

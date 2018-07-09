@@ -17,6 +17,10 @@
 //$gray-800: #343a40 !default;
 //$gray-900: #212529 !default;
 //$black:    #000 !default;
+$gray-20: #333333; // black 80%
+$gray-40: #666666; // black 60%
+$gray-95: #F2F2F2; // black 5%
+$gray-96: #F4F4F4; // black 4%
 
 //$grays: () !default;
 //$grays: map-merge((
@@ -103,7 +107,6 @@
 //$enable-grid-classes:       true !default;
 //$enable-print-styles:       true !default;
 
-
 // Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these
@@ -137,7 +140,7 @@
 // Settings for the `<body>` element.
 
 //$body-bg:                   $white !default;
-//$body-color:                $gray-900 !default;
+$body-color: $gray-20;
 
 // Links
 // Style anchor elements.
@@ -151,7 +154,6 @@
 // Style p element.
 
 //$paragraph-margin-bottom:   1rem !default;
-
 
 // Grid breakpoints
 // Define the minimum dimensions at which your layout will change,
@@ -168,7 +170,6 @@
 //@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 //@include _assert-starts-at-zero($grid-breakpoints);
 
-
 // Grid containers
 // Define the maximum width of `.container` for different screen sizes.
 
@@ -180,7 +181,6 @@
 //) !default;
 
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
-
 
 // Grid columns
 // Set the number of columns and specify the width of the gutters.
@@ -214,15 +214,14 @@
 //$transition-fade:             opacity .15s linear !default;
 //$transition-collapse:         height .35s ease !default;
 
-
 // Fonts
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-lato:      'Lato', sans-serif;
+$font-family-lato: 'Lato', sans-serif;
 //$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 //$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-lato;
+$font-family-base: $font-family-lato;
 // stylelint-enable value-keyword-case
 
 //$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
@@ -286,7 +285,6 @@ $font-family-base:            $font-family-lato;
 
 //$hr-margin-y:                 $spacer !default;
 
-
 // Tables
 // Customizes the `.table` component with basic values, each used across all table variations.
 
@@ -336,7 +334,6 @@ $font-family-base:            $font-family-lato;
 
 //$input-btn-border-width:      $border-width !default;
 
-
 // Buttons
 // For each of Bootstrap's buttons, define text, background, and border color.
 
@@ -371,7 +368,6 @@ $font-family-base:            $font-family-lato;
 //$btn-border-radius-sm:        $border-radius-sm !default;
 
 //$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
-
 
 // Forms
 
@@ -532,13 +528,11 @@ $font-family-base:            $font-family-lato;
 //  en: "Browse"
 //) !default;
 
-
 // Form validation
 //$form-feedback-margin-top:          $form-text-margin-top !default;
 //$form-feedback-font-size:           $small-font-size !default;
 //$form-feedback-valid-color:         theme-color("success") !default;
 //$form-feedback-invalid-color:       theme-color("danger") !default;
-
 
 // Dropdowns
 //
@@ -567,7 +561,6 @@ $font-family-base:            $font-family-lato;
 //$dropdown-item-padding-x:           1.5rem !default;
 
 //$dropdown-header-color:             $gray-600 !default;
-
 
 // Z-index master list
 //
@@ -665,12 +658,10 @@ $font-family-base:            $font-family-lato;
 //$pagination-disabled-bg:            $white !default;
 //$pagination-disabled-border-color:  $gray-300 !default;
 
-
 // Jumbotron
 
 //$jumbotron-padding:                 2rem !default;
 //$jumbotron-bg:                      $gray-200 !default;
-
 
 // Cards
 
@@ -692,7 +683,6 @@ $font-family-base:            $font-family-lato;
 //$card-columns-gap:                  1.25rem !default;
 //$card-columns-margin:               $card-spacer-y !default;
 
-
 // Tooltips
 
 //$tooltip-font-size:                 $font-size-sm !default;
@@ -708,7 +698,6 @@ $font-family-base:            $font-family-lato;
 //$tooltip-arrow-width:               .8rem !default;
 //$tooltip-arrow-height:              .4rem !default;
 //$tooltip-arrow-color:               $tooltip-bg !default;
-
 
 // Popovers
 
@@ -735,7 +724,6 @@ $font-family-base:            $font-family-lato;
 
 //$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
 
-
 // Badges
 
 //$badge-font-size:                   75% !default;
@@ -748,7 +736,6 @@ $font-family-base:            $font-family-lato;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
 //$badge-pill-border-radius:          10rem !default;
-
 
 // Modals
 
@@ -781,7 +768,6 @@ $font-family-base:            $font-family-lato;
 
 //$modal-transition:                  transform .3s ease-out !default;
 
-
 // Alerts
 //
 // Define alert colors, border radius, and padding.
@@ -796,7 +782,6 @@ $font-family-base:            $font-family-lato;
 //$alert-bg-level:                    -10 !default;
 //$alert-border-level:                -9 !default;
 //$alert-color-level:                 6 !default;
-
 
 // Progress bars
 
@@ -834,7 +819,6 @@ $font-family-base:            $font-family-lato;
 //$list-group-action-active-color:    $body-color !default;
 //$list-group-action-active-bg:       $gray-200 !default;
 
-
 // Image thumbnails
 
 //$thumbnail-padding:                 .25rem !default;
@@ -844,12 +828,10 @@ $font-family-base:            $font-family-lato;
 //$thumbnail-border-radius:           $border-radius !default;
 //$thumbnail-box-shadow:              0 1px 2px rgba($black, .075) !default;
 
-
 // Figures
 
 //$figure-caption-font-size:          90% !default;
 //$figure-caption-color:              $gray-600 !default;
-
 
 // Breadcrumbs
 
@@ -865,7 +847,6 @@ $font-family-base:            $font-family-lato;
 //$breadcrumb-divider:                quote("/") !default;
 
 //$breadcrumb-border-radius:          $border-radius !default;
-
 
 // Carousel
 
@@ -888,7 +869,6 @@ $font-family-base:            $font-family-lato;
 
 //$carousel-transition:               transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 
-
 // Close
 
 //$close-font-size:                   $font-size-base * 1.5 !default;
@@ -909,7 +889,6 @@ $font-family-base:            $font-family-lato;
 
 //$pre-color:                         $gray-900 !default;
 //$pre-scrollable-max-height:         340px !default;
-
 
 // Printing
 //$print-page-size:                   a3 !default;

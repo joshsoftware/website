@@ -1,0 +1,31 @@
+html {
+  /* Prevent scroll on narrow devices */
+  overflow-x: hidden;
+}
+
+body {
+  /* Prevent scroll on narrow devices */
+  overflow-x: hidden;
+}
+
+@include media-breakpoint-down(md) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: rem(54px); /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding: rem(20px 15px);
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: rgba($white, 0.56);
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+
+    &.open {
+      left: 0;
+      visibility: visible;
+    }
+  }
+}

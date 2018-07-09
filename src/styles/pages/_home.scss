@@ -1,0 +1,41 @@
+.section-home {
+  min-height: rem(900px);
+  padding: rem(150px 0 75px);
+  background-color: $gray-96;
+
+  .section-heading {
+    font-size: rem(46px);
+    line-height: rem(55px);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+  }
+}
+
+.section-banner {
+  background-color: #283047;
+}
+
+.section-expertise {
+  background-color: #CAAE0D;
+}
+
+.section-work {
+  background-color: #62AAAC;
+}
+
+.section-clients {
+
+  .section-heading {
+    color: $gray-20;
+  }
+}
+
+.section-about {
+  background-color: #D1645D;
+}
+
+.section-contact {
+  min-height: rem(425px);
+}

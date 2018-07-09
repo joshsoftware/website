@@ -36,6 +36,8 @@
     "express": "^4.13.3",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
+    "sass-flex-mixin": "^1.0.3",
+    "sass-rem": "^2.0.1",
     "swiper": "^4.3.3"
   },
   "eslintConfig": {
