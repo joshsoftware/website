@@ -1,0 +1,82 @@
+{
+  "name": "twbs-seed",
+  "version": "1.0.0",
+  "title": "Twitter Bootstrap Seed",
+  "description": "Boilerplate and custom bootstrap configuration to build faster",
+  "keywords": [
+    "html5",
+    "css3",
+    "bootstrap",
+    "twbs",
+    "compass",
+    "gulp",
+    "bower",
+    "boilerplate",
+    "semantic",
+    "accessibility"
+  ],
+  "author": "João Paulo Barbosa Neto <jpaulobneto@gmail.com>, Hugo Fabrício <me@hugofabricio.com>",
+  "homepage": "https://github.com/jpaulobneto/twbs-seed",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jpaulobneto/twbs-seed.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/jpaulobneto/twbs-seed/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "^4.13.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "swiper": "^4.3.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.3.13",
+    "browser-sync": "^2.10.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-cache": "^0.4.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-css-globbing": "^0.1.8",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "run-sequence": "^1.1.5"
+  }
+}
