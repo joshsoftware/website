@@ -77,6 +77,31 @@
   }
 }
 
+.email-wrap{
+  display: none;
+  margin: rem(0 0 48px);
+  text-align: center;
+
+  p{
+    line-height: rem(19px);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: rem(1.35px);
+  }
+
+  a{
+    color: $white;
+    line-height: rem(19px);
+    font-weight: 300;
+    letter-spacing: rem(1.54px);
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+}
+
 .footer-nav-wrap {
   @include flexbox();
   @include flex-direction(column);
