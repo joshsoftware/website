@@ -3,6 +3,10 @@
   padding: rem(150px 0 75px);
   background-color: $gray-96;
 
+  @include media-breakpoint-down(md) {
+    padding: rem(100px 0 50px);
+  }
+
   .section-heading {
     font-size: rem(46px);
     line-height: rem(55px);
@@ -10,6 +14,51 @@
     text-transform: uppercase;
     color: $white;
     text-align: center;
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(38px);
+      line-height: rem(45px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(32px);
+      line-height: rem(39px);
+    }
+  }
+
+  .link-box{
+    text-align: right;
+
+    a{
+      font-size: rem(18px);
+      line-height: rem(22px);
+      font-weight: 400;
+      color: $gray-20;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: rem(0.5px);
+
+      @include media-breakpoint-down(md) {
+        font-size: rem(16px);
+        line-height: rem(19px);
+        font-weight: 700;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: rem(14px);
+        line-height: rem(17px);
+      }
+    }
+
+    i{
+      font-size: rem(28px);
+      margin-right: rem(12px);
+
+      @include media-breakpoint-down(md) {
+        font-size: rem(26px);
+      }
+
+    }
   }
 }
 
@@ -25,12 +74,61 @@
   background-color: #62AAAC;
 }
 
+/* Section Client */
 .section-clients {
 
   .section-heading {
     color: $gray-20;
+    margin: 0 0 rem(72px);
   }
 }
+
+.list-client{
+  width: 86%;
+  margin: 0 auto rem(91px);
+  //margin: rem(0 -12px 91px);
+  @extend .d-flex;
+  @extend .flex-wrap;
+
+  @include media-breakpoint-down(md) {
+    width: 98%;
+    margin: 0 auto rem(76px);
+  }
+
+  li{
+    width: 20%;
+    padding: rem(0 12px);
+    margin: rem(0 0 24px);
+
+    @include media-breakpoint-down(md) {
+      width: 33.33%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 50%;
+      padding: rem(0 5px);
+      margin: rem(0 0 10px);
+    }
+
+    a{
+      //width: rem(192px);
+      height: rem(124px);
+      @extend .d-flex;
+      @extend .justify-content-center;
+      @extend .align-items-center;
+      background-color: $white;
+      text-align: center;
+      padding: rem(8px 16px);
+      box-shadow: 0 0 16px 0 rgba(0,0,0,0.08);
+    }
+
+    img{
+      width: rem(134px);
+    }
+  }
+}
+
+/* End */
 
 .section-about {
   background-color: #D1645D;
