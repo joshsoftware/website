@@ -2,17 +2,35 @@ extends ./layouts/bootstrap.jade
 
 block content
   section.section-home.section-banner
+    .container
 
   section.section-home.section-expertise
-    h1.section-heading Domain Expertise
+    .container
+      h1.section-heading Domain Expertise
 
   section.section-home.section-work
-    h1.section-heading What We Do?
+    .container
+      h1.section-heading What We Do?
 
   section.section-home.section-clients
-    h1.section-heading Our Top Clients
+    .container
+      h1.section-heading Our Top Clients
 
   section.section-home.section-about
-    h1.section-heading About Us
+    .container
+      h1.section-heading About Us
 
   section.section-home.section-contact
+    .container
+      .row
+        .col-lg-6.col-md-12
+          .contact-wrap
+            p Looking for an <br>expert technical partner?
+            a.btn.btn-secondary(href="javascript:void(0);") Contact Us
+    .contact-banner
+    .contact-number
+      .container
+        h6 Call Us
+        p
+          i.align-middle.icon-phone
+          | +91 9836372938

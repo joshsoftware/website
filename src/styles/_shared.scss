@@ -12,6 +12,15 @@ body {
 }
 
 // button
+.btn{
+  line-height: rem(19px);
+  font-weight: 300;
+  letter-spacing: rem(0.638px);
+  text-transform: uppercase;
+  padding: rem(14px 39px 13px);
+  min-width: rem(200px);
+}
+
 button:focus {
   outline: none;
 }
@@ -22,6 +31,13 @@ button:focus {
 }
 
 .no-md-scroll {
+
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+  }
+}
+
+.d-md-none{
 
   @include media-breakpoint-down(md) {
     overflow: hidden;

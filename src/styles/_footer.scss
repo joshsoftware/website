@@ -5,7 +5,7 @@
   color: $white;
 }
 
-.about-wrap {
+.info-wrap {
   width: 58%;
   margin: rem(0 0 30px);
 
@@ -55,6 +55,7 @@
       padding: 0 4px;
       color: $white;
       text-decoration: none;
+      line-height: rem(13px);
 
       &:hover{
 
