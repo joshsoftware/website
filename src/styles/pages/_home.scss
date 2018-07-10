@@ -132,6 +132,49 @@
 
 .section-about {
   background-color: #D1645D;
+
+  .section-heading {
+    margin: 0 0 rem(30px);
+  }
+
+  .about-wrap{
+    @extend .d-flex;
+  }
+
+  .stats-box{
+    @extend .d-flex;
+    @extend .flex-column;
+    @include justify-content(space-between);
+    @include flex(0 0 30%);
+    padding: rem(0 8px);
+  }
+
+  .stats{
+    color: $white;
+    text-align: center;
+
+    h4{
+      font-size: rem(46px);
+      line-height: rem(55px);
+      font-weight: 300;
+      margin: 0 0 rem(8px);
+    }
+
+    p{
+      font-size: rem(18px);
+      line-height: rem(22px);
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  .about-banner{
+    @include flex(0 0 40%);
+    height: rem(524px);
+    background: transparent url("../images/about.png") no-repeat center center;
+    //background-size: 100% auto;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.08);
+  }
 }
 
 .section-contact {
