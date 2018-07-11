@@ -1,5 +1,4 @@
 .section-home {
-  min-height: rem(900px);
   padding: rem(150px 0 75px);
   background-color: $gray-96;
 
@@ -57,7 +56,6 @@
       @include media-breakpoint-down(md) {
         font-size: rem(26px);
       }
-
     }
   }
 
@@ -67,7 +65,23 @@
 }
 
 .section-expertise {
-  background-color: #CAAE0D;
+  background: #CAAE0D url("../images/bg-texture.png") repeat top center;
+
+  .section-heading{
+    margin: 0 0 rem(65px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(32px);
+    }
+  }
+
+  .img-expertise{
+    max-width: rem(512px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(56px);
+    }
+  }
 }
 
 .section-work {
@@ -90,7 +104,7 @@
     display: none;
 
     @include media-breakpoint-down(md) {
-      width: rem(412px);
+      width: rem(420px);
       margin: 0 auto;
       display: block;
     }

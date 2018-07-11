@@ -7,6 +7,12 @@ block content
   section.section-home.section-expertise
     .container
       h1.section-heading Domain Expertise
+      .text-center
+        img.img-fluid.img-expertise(src="./images/expertise.svg", alt="")
+      .link-box.mb-4
+        a.text-white(href="javascript:void(0);")
+          i.align-middle.icon-arrow-right
+          | View All Domains
 
   section.section-home.section-work
     .container
@@ -109,7 +115,8 @@ block content
         .col-lg-6.col-md-12
           .contact-wrap
             p Looking for an <br>expert technical partner?
-            a.btn.btn-gray(href="javascript:void(0);") Contact Us
+            .d-none.d-lg-block
+              a.btn.btn-gray(href="javascript:void(0);") Contact Us
     .contact-banner
     .contact-number
       .container
