@@ -1,5 +1,4 @@
 .section-home {
-  min-height: rem(900px);
   padding: rem(150px 0 75px);
   background-color: $gray-96;
 
@@ -57,21 +56,65 @@
       @include media-breakpoint-down(md) {
         font-size: rem(26px);
       }
+    }
+  }
 
+  &.section-banner {
+    background-color: #283047;
+  }
+}
+
+.section-expertise {
+  background: #CAAE0D url("../images/bg-texture.png") repeat top center;
+
+  .section-heading{
+    margin: 0 0 rem(65px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(32px);
+    }
+  }
+
+  .img-expertise{
+    max-width: rem(512px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(56px);
     }
   }
 }
 
-.section-banner {
-  background-color: #283047;
-}
-
-.section-expertise {
-  background-color: #CAAE0D;
-}
-
 .section-work {
+  min-height: unset;
   background-color: #62AAAC;
+
+  .section-heading{
+    margin: 0 0 rem(46px);
+  }
+
+  .img-horizontal{
+    display: block;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .img-vertical{
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      width: rem(420px);
+      margin: 0 auto;
+      display: block;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: rem(320px);
+      margin: 0 auto;
+      display: block;
+    }
+  }
 }
 
 /* Section Client */
@@ -135,10 +178,18 @@
 
   .section-heading {
     margin: 0 0 rem(30px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(50px);
+    }
   }
 
   .about-wrap{
     @extend .d-flex;
+
+    @include media-breakpoint-down(md) {
+      @include flex-direction(column);
+    }
   }
 
   .stats-box{
@@ -146,12 +197,22 @@
     @extend .flex-column;
     @include justify-content(space-between);
     @include flex(0 0 30%);
-    padding: rem(0 8px);
+    padding: rem(20px 8px);
+
+    @include media-breakpoint-down(md) {
+      @include order(2);
+      padding: rem(0 8px);
+    }
   }
 
   .stats{
     color: $white;
     text-align: center;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(32px);
+      opacity: 0.60;
+    }
 
     h4{
       font-size: rem(46px);
@@ -170,10 +231,12 @@
 
   .about-banner{
     @include flex(0 0 40%);
-    height: rem(524px);
-    background: transparent url("../images/about.png") no-repeat center center;
-    //background-size: 100% auto;
-    box-shadow: 0 0 16px 0 rgba(0,0,0,0.08);
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      @include order(1);
+      margin: 0 0 rem(36px);
+    }
   }
 }
 
