@@ -5,21 +5,6 @@
     min-height: rem(822px);
   }
 }
-.section-content{
-  padding:rem(100px 0 80px); 
-  @include media-breakpoint-down(sm) {
-    padding: rem(0 0 80px);
-   }
-}
-.card-wrap{
-  padding: rem(40px 0);
-  @include media-breakpoint-down(sm) {
-    margin:rem(0 -15px);
-   }
-}
-.bg-card{
-  background-color: $gray-95;
-}
   
 .card-expertise{
   width:75%;
