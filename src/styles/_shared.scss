@@ -13,12 +13,12 @@ body {
 
 // button
 .btn{
+  width: rem(200px);
   line-height: rem(19px);
   font-weight: 300;
   letter-spacing: rem(0.638px);
   text-transform: uppercase;
-  padding: rem(14px 39px 13px);
-  min-width: rem(200px);
+  padding: rem(14px 35px 13px);
 }
 
 button:focus {
@@ -43,21 +43,120 @@ button:focus {
     overflow: hidden;
   }
 }
-/* section content */
-.section-content{
-  padding:rem(100px 0 80px); 
-  @include media-breakpoint-down(sm) {
-    padding: rem(0 0 80px);
-   }
-}
-.card-wrap{
-  padding: rem(40px 0);
-  @include media-breakpoint-down(sm) {
-    margin:rem(0 -15px);
-   }
-}
-.bg-concrete{
-  background-color: $gray-95;
+/* Page Section */
+.section-banner {
+  min-height: rem(825px);
 }
 
+.section-content{
+  padding:rem(100px 0 80px);
+
+  @include media-breakpoint-down(sm){
+    padding: 0;
+  }
+
+  .btn-wrap{
+    @include flexbox();
+    @include justify-content(center);
+
+    @include media-breakpoint-down(sm){
+      @include flex-direction(column);
+      @include align-items(center);
+      margin: 0 0 rem(90px);
+    }
+
+    .btn-gray{
+      margin-right: rem(20px);
+    
+      @include media-breakpoint-down(sm){
+        margin: 0 0 rem(20px);
+      }
+    }
+  }
+}
+/* Page Section end */
+
+.card-wrap{
+  margin: 0 0 rem(24px);
+
+  @include media-breakpoint-down(sm){
+    margin: 0 rem(-15px 24px);
+  }
+
+  .card-expertise:nth-of-type(even) {
+    background-color: $gray-95;
+  }
+}
+
+.card-expertise{
+  border:0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: rem(40px 0);
+
+  .card-body{
+    position: relative;
+    @include flex(0 0 75%);
+    max-width:75%;
+    margin:0 auto;
+    padding: 0;
+
+    @include media-breakpoint-down(sm){
+      @include flex(1 1 auto);
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  .card-title{
+    font-size:rem(36px);
+    font-weight:300;
+    line-height: rem(44px);
+    margin-bottom:rem(16px);
+
+    @include media-breakpoint-down(sm) {
+      font-size:rem(32px);
+      line-height: rem(39px);
+      margin: 0 0 rem(32px);
+    }
+  }
+
+  .card-img{
+    width:auto;
+    height:rem(178px);
+  }
+
+  .card-text{
+    font-size: rem(16px);
+    font-weight: 300;
+    line-height: rem(24px);
+    padding-top:rem(16px);
+
+    @include media-breakpoint-down(sm) {
+     padding:rem(32px 16px 0);
+     font-size:rem(14px);
+     line-height: rem(21px);
+     text-align: left;
+    }
+  }
+
+  .top{
+    text-transform:uppercase;
+    font-size: rem(14px);
+    font-weight:300;
+    line-height: rem(20px);
+    position: absolute;
+    top:rem(20px);
+    right:0;
+    color:$gray-20;
+    text-decoration: none;
+
+    @include media-breakpoint-down(sm) {
+      bottom:rem(-36px);
+      top:unset;
+      right: rem(16px);
+      font-size: rem(10px);
+    }
+  }
+}
 /* shared end */
