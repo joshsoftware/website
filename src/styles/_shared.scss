@@ -124,13 +124,13 @@ button:focus {
   .card-img{
     width:auto;
     height:rem(178px);
+    margin-bottom:rem(16px);
   }
 
   .card-text{
     font-size: rem(16px);
     font-weight: 300;
     line-height: rem(24px);
-    padding-top:rem(16px);
 
     @include media-breakpoint-down(sm) {
      padding:rem(32px 16px 0);
