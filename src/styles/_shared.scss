@@ -139,22 +139,30 @@ button:focus {
      text-align: left;
     }
   }
+}
 
-  .top{
-    text-transform:uppercase;
+.scroll-top {
+  position: absolute;
+  top: rem(20px);
+  right: 0;
+
+  @include media-breakpoint-down(sm) {
+    position: relative;
+    top: unset;
+    right: unset;
+    text-align: right;
+  }
+
+  .btn-scroll {
     font-size: rem(14px);
     font-weight:300;
     line-height: rem(20px);
-    position: absolute;
-    top:rem(20px);
-    right:0;
     color:$gray-20;
+    padding: rem(4px 8px);
     text-decoration: none;
+    text-transform: uppercase;
 
     @include media-breakpoint-down(sm) {
-      bottom:rem(-36px);
-      top:unset;
-      right: rem(16px);
       font-size: rem(10px);
     }
   }
