@@ -1,5 +1,4 @@
 .josh-footer {
-  min-height: rem(400px);
   background-color: $gray-20;
   padding: rem(54px 0 22px);
   color: $white;
@@ -31,9 +30,40 @@
   }
 }
 
+.social-media-links {
+  @extend .d-flex;
+  @extend .justify-content-end;
+  margin: rem(0 -4px);
+
+  a {
+    display: block;
+    padding: 0 4px;
+    color: $white;
+    text-decoration: none;
+    line-height: rem(13px);
+
+    &:hover{
+
+      svg .path{
+        fill: $white;
+      }
+    }
+  }
+
+  svg{
+    width: rem(42px);
+
+    .path{
+      fill: $gray-20;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      transition: fill .2s linear;
+    }
+  }
+}
+
 .connect-wrap {
   text-align: right;
-  margin: rem(0 0 30px);
 
   @include media-breakpoint-down(md) {
     text-align: center;
@@ -45,36 +75,6 @@
     text-transform: uppercase;
     letter-spacing: rem(1.63px);
     margin: 0 0 rem(24px);
-  }
-
-  .social-media-links {
-    margin: rem(0 -4px);
-
-    a {
-      display: inline-block;
-      padding: 0 4px;
-      color: $white;
-      text-decoration: none;
-      line-height: rem(13px);
-
-      &:hover{
-
-        svg .path{
-          fill: $white;
-        }
-      }
-    }
-
-    svg{
-      width: rem(42px);
-
-      .path{
-        fill: $gray-20;
-        stroke: #fff;
-        stroke-miterlimit: 10;
-        transition: fill .2s linear;
-      }
-    }
   }
 }
 
@@ -162,13 +162,48 @@
   }
 }
 
+.social-links-wrap{
+  @extend .d-flex;
+  @extend .justify-content-between;
+  @extend .align-items-end;
+  @include flex(0 0 75%);
+  max-width: 75%;
+  margin: 0 auto rem(18px);
+
+  @include media-breakpoint-down(md) {
+    @include flex-direction(column);
+    @include align-items(center !important);
+    @include flex(1 1 auto);
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .policy-wrap{
+
+    @include media-breakpoint-down(md) {
+      @include order(2);
+    }
+  }
+  
+  .connect-wrap{
+
+    @include media-breakpoint-down(md) {
+      @include order(1);
+      margin: 0 0 rem(48px);
+    }
+  }
+
+  .text-policy{
+    margin: 0 0 rem(6px);
+  }
+}
+
 .text-policy, .text-copyright {
   font-size: rem(12px);
   line-height: rem(16px);
   font-weight: 300;
   color: $white;
-  text-align: center;
-  margin-bottom: rem(16px);
+  margin: 0;
 
   @include media-breakpoint-down(md) {
     font-size: rem(11px);
