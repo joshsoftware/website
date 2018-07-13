@@ -34,8 +34,8 @@
   .navbar-nav {
 
     > .nav-link {
-      color: $gray-40;
-      font-size: 18px;
+      color: $gray-60;
+      font-size: 14px;
       font-weight: 300;
       text-transform: uppercase;
       padding: rem(5px 15px);
@@ -45,25 +45,9 @@
         padding: rem(10px 15px);
       }
 
-      &:first-child {
-        padding-left: 0;
-
-        @include media-breakpoint-down(md) {
-          padding-left: rem(15px);
-        }
-      }
-
-      &:last-child {
-        padding-right: 0;
-
-        @include media-breakpoint-down(md) {
-          padding-right: rem(15px);
-        }
-      }
-
       &.active {
         color: $gray-20;
-        font-weight: 400;
+        font-weight: 700;
       }
 
       &:hover, &:focus {
