@@ -1,75 +1,132 @@
-.section-service{
+.section-services{
 
   &.section-banner{
     background-color: #62AAAC;
   }
+
+  &.section-content {
+    
+    .section-heading {
+      font-size: rem(32px);
+      line-height: rem(39px);
+      font-weight: 100;
+      color: $gray-20;
+      text-transform: uppercase;
+      letter-spacing: rem(1px);
+      text-align: center;
+      margin: 0 0 rem(8px);
+    }
+  }
 }
 
-.work-title{
-  font-weight:300;
-  line-height:rem(39px);
-  color:$gray-20;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom:rem(80px);
+.card-work {
 
-}
+  .card-body {
+    @include flex(0 0 90%);
+    max-width: 90%;
 
-.link-box{
-  display: flex;
-  flex-direction: column;
-  a{
-    font-size: rem(18px);
-    line-height: rem(22px);
-    font-weight: 400;
-    color: $gray-20;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: rem(0.5px);
+    @include media-breakpoint-down(sm) {
+      @include flex(1 1 auto);
+      max-width: 100%;
+    }
+  }
+
+  .card-title{
 
     @include media-breakpoint-down(md) {
-      font-size: rem(16px);
-      line-height: rem(19px);
-      font-weight: 700;
+      font-size: rem(30px);
+      text-align: center;
     }
 
     @include media-breakpoint-down(sm) {
-      font-size: rem(14px);
-      line-height: rem(17px);
+      font-size: rem(24px);
     }
   }
 
-  i{
-    font-size: rem(28px);
-    margin-right: rem(12px);
+  .scroll-top {
+    position: static;
+    top: unset;
+    right: unset;
+    text-align: right;
+  }
+}
+
+.portfolio-wrap {
+  @include flexbox();
+  margin: 0 rem(-15px);
+
+  @include media-breakpoint-down(md) {
+    @include flex-direction(column);
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0;
+  }
+
+  .portfolio-img {
+    @include flex(0 0 60%);
+    padding: 0 rem(15px);
 
     @include media-breakpoint-down(md) {
-      font-size: rem(26px);
+      text-align: center;
+      margin: 0 0 rem(40px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+
+    .img-desktop{
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    .img-mobile {
+      display: none;
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
-}
 
-.service-top{
-  color: $gray-20;
-  font-size:rem(14px);
-  font-weight:300;
-  line-height: rem(20px);;
-  &:hover{
-    text-decoration: none;
+  .portfolio-info {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include flex(0 0 40%);
+    padding: 0 rem(15px);
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
   }
-  
-}
-.portfolio{
-  display: flex;
-  .img-portfolio{
-    flex:0 0 60%;
-    padding: 0 15px;
+
+  .link-box{
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(flex-start);
+    margin: 0 rem(-4px);
+
+    a {
+      font-size: rem(14px);
+      line-height: rem(17px);
+      font-weight: 100;
+      color: $gray-20;
+      text-transform: uppercase;
+      padding: rem(4px);
+      text-decoration: none;
+
+      i{
+        margin-right: rem(8px);
+      }
+    }
   }
-  .info-portfolio{
-    flex:0 0 40%;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } 
 }
