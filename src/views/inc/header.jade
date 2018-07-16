@@ -8,9 +8,22 @@ header.josh-header.fixed-top
       #joshOffcanvasNavbar.navbar-collapse.offcanvas-collapse
         .navbar-nav.ml-auto
           a.nav-item.nav-link(href='javascript:void(0);') Innovation
-          a.nav-item.nav-link(href='service.html') Services
+          .dropdown
+            a.nav-item.nav-link.dropdown-toggle(href='javascript:void(0);', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Services
+            .dropdown-menu(aria-labelledby='dropdownMenuLink')
+              a.dropdown-item(href='services.html') Services
+              a.dropdown-item(href='services.html#ourWork') Our Work
           a.nav-item.nav-link(href='technologies.html') Technologies
           a.nav-item.nav-link(href='industries.html') Industries
-          a.nav-item.nav-link(href='javascript:void(0);') Company
+          .dropdown
+            a.nav-item.nav-link.dropdown-toggle(href='javascript:void(0);', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Company
+            .dropdown-menu(aria-labelledby='dropdownMenuLink')
+              a.dropdown-item(href='javascript:void(0);') About Us
+              a.dropdown-item(href='javascript:void(0);') Open Source
+              a.dropdown-item(href='javascript:void(0);') News
+              a.dropdown-item(href='javascript:void(0);') Our Team
+              a.dropdown-item(href='javascript:void(0);') Career
+              a.dropdown-item(href='javascript:void(0);') Contact Us
+              a.dropdown-item(href='javascript:void(0);') Blog
           a.nav-item.nav-link.nav-offcanvas-link(href='javascript:void(0);') Contact Us
           a.nav-item.nav-link.nav-offcanvas-link(href='javascript:void(0);') Blog

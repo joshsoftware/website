@@ -9,7 +9,7 @@
   .section-heading {
     font-size: rem(46px);
     line-height: rem(55px);
-    font-weight: 300;
+    font-weight: 100;
     text-transform: uppercase;
     color: $white;
     text-align: center;
@@ -31,7 +31,7 @@
     a{
       font-size: rem(18px);
       line-height: rem(22px);
-      font-weight: 400;
+      font-weight: 100;
       color: $gray-20;
       text-transform: uppercase;
       text-decoration: none;
@@ -40,7 +40,6 @@
       @include media-breakpoint-down(md) {
         font-size: rem(16px);
         line-height: rem(19px);
-        font-weight: 700;
       }
 
       @include media-breakpoint-down(sm) {
@@ -60,20 +59,20 @@
   }
 
   &.section-banner {
-    background: #283047 url("../images/home-banner.png") no-repeat top right;
+    background: $bunting url("../images/home-banner.png") no-repeat top right;
     background-size: auto 100%;
     min-height: rem(822px);
   }
 }
 
 .section-expertise {
-  background: #CAAE0D url("../images/bg-texture.png") repeat top center;
+  background: $galliano url("../images/bg-texture.png") repeat top center;
 
   .section-heading{
     margin: 0 0 rem(65px);
 
     @include media-breakpoint-down(md) {
-      margin: 0 0 rem(32px);
+      margin: 0 0 rem(50px);
     }
   }
 
@@ -81,14 +80,14 @@
     max-width: rem(512px);
 
     @include media-breakpoint-down(md) {
-      margin: 0 0 rem(56px);
+      margin: 0 0 rem(40px);
     }
   }
 }
 
 .section-work {
   min-height: unset;
-  background-color: #62AAAC;
+  background-color: $fountain-blue;
 
   .section-heading{
     margin: 0 0 rem(46px);
@@ -176,7 +175,7 @@
 /* End */
 
 .section-about {
-  background-color: #D1645D;
+  background-color: $roman;
 
   .section-heading {
     margin: 0 0 rem(30px);
@@ -213,21 +212,34 @@
 
     @include media-breakpoint-down(md) {
       margin: 0 0 rem(32px);
-      opacity: 0.60;
     }
 
     h4{
-      font-size: rem(46px);
-      line-height: rem(55px);
-      font-weight: 300;
-      margin: 0 0 rem(8px);
+      font-size: rem(40px);
+      line-height: rem(48px);
+      font-weight: 100;
+      margin: 0 0 rem(4px);
+      opacity: 0.80;
     }
 
     p{
-      font-size: rem(18px);
-      line-height: rem(22px);
-      font-weight: 300;
+      font-size: rem(13px);
+      line-height: rem(18px);
+      font-weight: 100;
       margin: 0;
+      letter-spacing: 1px;
+      opacity: 0.80;
+    }
+  }
+
+  .stats-button{
+
+    .btn{
+
+      &:hover{
+        color: $roman;
+        font-weight: 300;
+      }
     }
   }
 
@@ -258,9 +270,9 @@
 
     p{
       color: $gray-40;
-      font-size: rem(32px);
+      font-size: rem(28px);
       line-height: rem(39px);
-      font-weight: 300;
+      font-weight: 100;
       text-transform: uppercase;
       letter-spacing: rem(0.92233px);
       margin: rem(0 0 48px);
