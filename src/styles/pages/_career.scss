@@ -26,6 +26,7 @@
     -webkit-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.5);
+    margin-bottom: rem(90px);
   }
 }
 
@@ -47,5 +48,13 @@
     line-height: rem(19px);
     font-weight: 100;
     margin-bottom: rem(50px);
+  }
+}
+.textimonials{
+  color: $gray-20;
+  h2{
+    font-weight:100;
+    line-height: rem(39px);
+    text-align:center;
   }
 }
