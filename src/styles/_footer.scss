@@ -44,20 +44,41 @@
 
     &:hover{
 
-      svg .path{
+      svg .svg-fill{
         fill: $white;
+
+        &.-white {
+          fill: $gray-20;
+          stroke: $gray-20;
+        }
+  
+        &.-gray {
+          fill: $gray-40;
+          stroke: $gray-40;
+        }
       }
     }
+    
   }
 
   svg{
     width: rem(42px);
 
-    .path{
+    .svg-fill{
       fill: $gray-20;
-      stroke: #fff;
+      stroke: $white;
       stroke-miterlimit: 10;
-      transition: fill .2s linear;
+      transition: fill .1s linear;
+
+      &.-white {
+        fill: $white;
+        stroke: $white;
+      }
+
+      &.-gray {
+        fill: $gray-20;
+        stroke: $gray-20;
+      }
     }
   }
 }
