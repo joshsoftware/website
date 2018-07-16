@@ -1,22 +1,18 @@
-/* section team */
-
+/* Team Page */
 .section-team{
 
   &.section-banner{
     background-color: transparent;
   }
-
-  .section-content {
-    padding: rem(100px 0 80px);
-  
-    @include media-breakpoint-down(sm){
-      padding-bottom: rem(50px);
-    }
-  }
 }
 
 .section-leadership {
   background-color: #7AA6B2;
+  padding: rem(100px 0 40px);
+
+  @include media-breakpoint-down(sm){
+    padding: rem(40px) 0 0;
+  }
 }
 
 .card-team{
@@ -24,10 +20,6 @@
   border-radius: 0;
   background-color: transparent;
   margin-bottom:rem(40px);
-
-  @include media-breakpoint-down(sm){
-    margin-bottom:rem(37px);
-  }
 
   img{
     width:100%;
@@ -72,19 +64,18 @@
     }
   }
 }
-/* section team end */
 
-/* section nerds */
 .section-nerds{
 
   @include media-breakpoint-down(sm){
-    padding:rem(75px 0);
+    padding: rem(40px) 0 0;
   }
 
   h3{
-   // font-size:28px;
-    font-weight:100;
+    font-weight: 100;
+    text-align: center;
     letter-spacing: 1px;
+    margin: 0 0 rem(40px);
   }
 
   img{
@@ -95,10 +86,12 @@
   .social-media-links{
     margin:rem(0 8px 0 0);
   }
+
   .-nerds{
     display: flex;
     align-items: center;
   }
+
   h5{
     margin:0;
     color: $gray-20;
@@ -110,9 +103,12 @@
       font-size:rem(18px);
     }
   }
-  .btn-wrap{
+
+  .btn-wrap {
+    padding: rem(40px) 0 0;
+
     @include media-breakpoint-down(sm){
-      margin-bottom: 0;
+      padding: 0;
     }
   }
 }

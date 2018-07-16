@@ -5,6 +5,10 @@
   }
 
   &.section-content {
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(40px) 0 0;
+    }
     
     .section-heading {
       font-size: rem(32px);
