@@ -5,7 +5,7 @@
 }
 
 .info-wrap {
-  width: 58%;
+  width: 65%;
   margin: rem(0 0 30px);
 
   @include media-breakpoint-down(md) {
@@ -27,6 +27,7 @@
     line-height: rem(18px);
     font-weight: 100;
     margin: 0;
+    letter-spacing: rem(1px);
   }
 }
 
