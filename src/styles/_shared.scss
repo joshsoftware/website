@@ -45,6 +45,11 @@ button:focus {
     overflow: hidden;
   }
 }
+
+.font-weight-thin{
+  font-weight: 100 !important;
+}
+
 /* Page Section */
 .section-content{
   padding:rem(100px 0 80px);
@@ -81,8 +86,11 @@ button:focus {
     margin: 0 rem(-15px 40px);
   }
 
-  .card-expertise:nth-of-type(even) {
-    background-color: $gray-95;
+  &.-striped {
+
+    .card:nth-of-type(even) {
+      background-color: $gray-95;
+    }
   }
 }
 
@@ -123,6 +131,7 @@ button:focus {
     width:auto;
     height:rem(178px);
     margin-bottom:rem(16px);
+    @include border-radius(0);
   }
 
   .card-text{
