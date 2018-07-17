@@ -1,0 +1,52 @@
+.section-open_source {
+
+  &.section-banner {
+    background-color: $olivine;
+    min-height: rem(486px);
+  }
+
+  &.section-content {
+    
+    .section-heading {
+      font-size: rem(32px);
+      line-height: rem(39px);
+      font-weight: 300;
+      color: $gray-20;
+      text-transform: uppercase;
+      letter-spacing: rem(1px);
+      text-align: center;
+      margin: 0 0 rem(80px);
+    }
+  }
+
+  .txt-info{
+    width: 70%;
+    font-size: rem(18px);
+    line-height: rem(27px);
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 auto rem(40px);
+  }
+}
+
+.card-note {
+  @include border-radius(0);
+  border: 0 none;
+  background-color: $olivine;
+
+  .card-title {
+    font-size: rem(18px);
+    line-height: rem(27px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 0 rem(24px);
+  }
+
+  .card-text {
+    font-size: rem(14px);
+    line-height: rem(21px);
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
