@@ -1,7 +1,185 @@
 .section-career{
 
   &.section-banner{
-    background-color: $gray-20;
+    background-color: $gray-68;
     min-height: rem(825px);
+
+    @include media-breakpoint-down(sm) {
+      min-height: rem(360px);
+    }
+  }
+
+  &.section-content {
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(64px) 0 0;
+    }
+  }
+}
+
+.jobs-wrap {
+  position: relative;
+  background-color: $gray-20;
+  padding: rem(64px 32px);
+  -webkit-box-shadow: 0 3px 16px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 3px 16px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 3px 16px 0 rgba(0,0,0,0.5);
+  margin: 0 0 rem(80px);
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 rem(40px);
+  }
+
+  .wrap-title {
+    position: absolute;
+    top: rem(-35px);
+    left: 50%;
+    @include translate(-50%, 0);
+    text-transform: uppercase;
+    font-size: rem(36px);
+    line-height: rem(44px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    -webkit-text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(28px);
+      line-height: rem(34px);
+      top: rem(-28px);
+    }
+  }
+}
+
+.jobs {
+  text-align: center;
+  color: $white;
+  margin: 0 0 rem(80px);
+
+  &:last-child {
+    margin: 0;
+  }
+
+  .title{
+    font-size: rem(32px);
+    line-height: rem(39px);
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 0 rem(16px);
+  }
+
+  p{
+    line-height: rem(19px);
+    letter-spacing: 1px;
+    margin: 0 0 rem(6px);
+  }
+
+  .btn-wrap {
+    padding: rem(48px) 0 0;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+  }
+}
+
+.testimonials-wrap {
+  margin: 0 0 rem(80px);
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 rem(40px);
+  }
+
+  .wrap-title {
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 rem(40px);
+  }
+
+  .card-wrap {
+    width: 80%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
+
+.card-testimonial {
+  padding: rem(20px);
+  border: 0;
+  @include border-radius(0);
+
+  .card-body {
+    position: relative;
+    @include flexbox();
+    margin: 0 rem(-20px);
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+      @include flex-direction(column);
+    }
+  }
+
+  .pic {
+    padding: rem(0 16px);
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin: 0 0 rem(16px);
+    }
+  }
+
+  .card-img {
+    width: rem(192px);
+    @include border-radius(0);
+  }
+
+  .testimonial {
+    padding: rem(0 16px);
+  }
+
+  .employee-info {
+    padding: 0;
+    color: $gray-20;
+    letter-spacing: 1px;
+    margin: 0 0 rem(32px);
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin: 0 0 rem(16px);
+    }
+
+    h4{
+      line-height: rem(29px);
+      font-weight: 300;
+      margin: 0;
+    }
+
+    p{
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  .card-text {
+    font-weight: 300;
+    line-height: rem(20px);
+    letter-spacing: 0.5px;
+  }
+
+  .scroll-top {
+    top: 0;
+    right: rem(20px);
+
+    @include media-breakpoint-down(sm) {
+      top: unset;
+      right: unset;
+    }
   }
 }
