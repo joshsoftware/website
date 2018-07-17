@@ -3,6 +3,11 @@
 
   &.section-banner{
     background-color: transparent;
+    min-height: rem(825px);
+
+    @include media-breakpoint-down(sm){
+      min-height: rem(360px);
+    }
   }
 }
 
@@ -12,6 +17,44 @@
 
   @include media-breakpoint-down(sm){
     padding: rem(40px) 0 0;
+  }
+
+  .section-header{
+    display: none;
+
+    @include media-breakpoint-down(sm){
+      display: block;
+      text-align: center;
+      color: $white;
+      margin: 0 0 rem(40px);
+    }
+
+    p{
+      font-size: rem(14px);
+      line-height: rem(20px);
+      font-weight: 300;
+      margin: 0;
+      padding: 0 rem(24px);
+      letter-spacing: 1px;
+    }
+  }
+
+  .section-heading{
+    line-height: rem(39px);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 rem(24px);
+  }
+
+  .social-media-links{
+
+    svg{
+      width: rem(38px);
+
+      @include media-breakpoint-down(sm){
+        width: rem(32px);
+      }
+    }
   }
 }
 
@@ -29,18 +72,15 @@
   .card-body{
     @include flexbox();
     @include justify-content(space-between);
-    padding: 0;
+    padding: 0 rem(8px);
     margin: 0;
-  }
-
-  .social-media-links{
-    margin: rem(0 12px 0);
   }
 }
 
 .person-info{
   color: $white;
   letter-spacing: rem(1px);
+  padding: 0 rem(16px) 0 0;
 
   h5{
     font-size: rem(20px);
@@ -89,7 +129,19 @@
   }
 
   .social-media-links{
-    margin:rem(0 8px 0 0);
+    margin: 0;
+
+    a{
+      padding: 0;
+    }
+    
+    svg{
+      width: rem(34px);
+
+      @include media-breakpoint-down(sm){
+        width: rem(30px);
+      }
+    }
   }
 
   h5{
