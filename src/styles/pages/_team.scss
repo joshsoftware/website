@@ -16,25 +16,25 @@
 }
 
 .card-team{
-  border:0;
-  border-radius: 0;
   background-color: transparent;
-  margin-bottom:rem(40px);
+  border: 0;
+  border-radius: 0;
+  margin-bottom: rem(40px);
 
   img{
-    width:100%;
+    width: 100%;
     margin-bottom: rem(15px);
   }
 
   .card-body{
-    margin:0;
-    display: flex;
-    justify-content: space-between;
+    @include flexbox();
+    @include justify-content(space-between);
     padding: 0;
+    margin: 0;
   }
 
   .social-media-links{
-    margin:rem(0 12px 0);
+    margin: rem(0 12px 0);
   }
 }
 
@@ -43,7 +43,7 @@
   letter-spacing: rem(1px);
 
   h5{
-    font-size:rem(20px);
+    font-size: rem(20px);
     margin-bottom: rem(4px);
 
     @include media-breakpoint-down(sm){
@@ -53,15 +53,20 @@
   }
 
   .designation{
-    margin:0;
-    font-weight: 100;
-    line-height: rem(25px);
     font-size: rem(18px);
+    line-height: rem(25px);
+    font-weight: 100;
+    margin:0;
 
     @include media-breakpoint-down(sm){
       font-size:rem(16px);
       line-height: rem(19px);
     }
+  }
+
+  &.-nerds{
+    @include flexbox();
+    @include align-items(center);
   }
 }
 
@@ -87,11 +92,6 @@
     margin:rem(0 8px 0 0);
   }
 
-  .-nerds{
-    display: flex;
-    align-items: center;
-  }
-
   h5{
     margin:0;
     color: $gray-20;
@@ -99,6 +99,7 @@
     font-weight:100;
     line-height:rem(22px);
     letter-spacing: 1px;
+    
     @include media-breakpoint-down(sm){
       font-size:rem(18px);
     }
