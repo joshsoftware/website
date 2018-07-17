@@ -1,0 +1,65 @@
+extends ./layouts/bootstrap.jade
+
+block content
+  section.section-description
+    .container.bg-white
+      .description
+        p.font-weight-light.mb-2 You are applying for the post of
+        h2.font-weight-light.mb-5 Software Engineer
+        form.form-apply
+          .form-row
+            .form-group.col-md-6
+              label(for="input-fname") First Name
+              span.text-danger *
+              input#input-fname.form-control(type="text")
+            .form-group.col-md-6
+              label(for="imput-lname") Last Name
+              span.text-danger *
+              input#imput-lname.form-control(type="text")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputEmail") Email
+              span.text-danger *
+              input#inputEmail.form-control(type="email")
+            .form-group.col-md-6
+              label(for="inputnumber") Contact Number
+              span.text-danger *
+              input#inputnumber.form-control(type="text")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputcompany") Current Company
+              input#inputcompany.form-control(type="text")
+            .form-group.col-md-6
+              label(for="inputctc") Current CTC
+              span.text-danger *
+              input#inputctc.form-control(type="text")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputcompany") Linkedin Profile
+              span.text-danger *
+              input#inputcompany.form-control(type="text")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputcompany") Github Profile
+              input#inputcompany.form-control(type="text")
+            .form-group.col-md-6
+              label Upload Resume
+              span.text-danger *
+              .custom-file
+                input#customFile.custom-file-input(type="file")
+                label.custom-file-label(for="customFile")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputcompany") Portfolio Link
+              input#inputcompany.form-control(type="text")
+            .form-group.col-md-6
+              label Upload Cover
+              span.text-danger *
+              .custom-file
+                input#customFile.custom-file-input(type="file")
+                label.custom-file-label(for="customFile")
+          .form-row
+            .form-group.col-md-6
+              .captca.text-center Captca 
+        .btn-wrap.text-center
+            a.btn.btn-gray(href="job-apply.html") Submit
