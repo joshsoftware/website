@@ -6,6 +6,10 @@
   }
 
   &.section-content {
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(40px 0 0);
+    }
     
     .section-heading {
       font-size: rem(32px);
@@ -16,6 +20,10 @@
       letter-spacing: rem(1px);
       text-align: center;
       margin: 0 0 rem(80px);
+
+      @include media-breakpoint-down(sm) {
+        margin: 0 0 rem(40px);
+      }
     }
   }
 
@@ -24,15 +32,41 @@
     font-size: rem(18px);
     line-height: rem(27px);
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin: 0 auto rem(40px);
+
+    @include media-breakpoint-down(md) {
+      width: 90%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      font-size: rem(16px);
+    line-height: rem(24px);
+    }
+  }
+
+  .media-wrap {
+    padding: rem(70px) 0 0;
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(25px 0 0);
+    }
   }
 }
 
 .card-note {
+  @include flex(1 1 auto);
   @include border-radius(0);
   border: 0 none;
-  background-color: $olivine;
+  background-color: $tea-green;
+  min-height: rem(268px);
+  margin: 0 0 rem(30px);
+
+  @include media-breakpoint-down(sm) {
+    min-height: unset;
+    margin: 0 0 rem(15px);
+  }
 
   .card-title {
     font-size: rem(18px);
