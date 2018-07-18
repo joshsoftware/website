@@ -1,5 +1,162 @@
 .section-contactus{
-  .section-banner{
+
+  &.section-banner{
     min-height: rem(450px);
+    background-color: #C6B8AF;
+  }
+}
+
+.contact-form{
+  background-color: $gray-96;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: rem(65px);
+  }
+
+  h1{
+    font-size: rem(46px);
+    font-weight: 300;
+    line-height: rem(55px);
+    margin-bottom: rem(80px);
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(32px);
+      line-height: rem(39px);
+      margin-bottom: rem(65px);
+    }
+  }
+
+  p{
+    font-size: rem(24px);
+    font-weight: 300;
+    line-height: rem(29px);
+    margin-bottom: rem(48px);
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(16px);
+      line-height: rem(19px);
+      margin-bottom: rem(50px);
+    }
+  }
+}
+
+.form-contact{
+  padding-bottom: rem(80px);
+  text-align: left;
+  width: 80%;
+  margin:0 auto;
+
+  @include media-breakpoint-down(sm) {
+    width:100%;
+  }
+
+  label{
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(17px);
+  }
+  .captcha{
+    height: rem(92px);
+    border: 1px solid #D1CBCB;
+    border-radius: rem(4px);
+    padding: rem(30px);
+    background-color: #fff;
+    margin:rem(34px 0 29px);
+  }
+}
+.form-newsletter{
+  width: 80%;
+  margin:0 auto;
+  text-align: left;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  label{
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: rem(19px);
+  }
+}
+
+.contactus-footer{
+  background-color: $roman;
+  padding:rem(87px 0 76px);
+  color: $white;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: rem(77px);
+   }
+  i{
+    font-size: rem(45px);
+    margin-bottom: rem(30px);
+    @include media-breakpoint-down(sm) {
+      margin-bottom: rem(11px);
+     }
+  }
+  p{
+    font-size: rem(16px);
+    font-weight: 300;
+    line-height: rem(24px);
+
+    @include media-breakpoint-down(sm) {
+     text-align: center;
+     }
+  }
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: rem(80px);
+   }
+  i{
+    font-size: rem(32px);
+    margin-bottom: rem(38px);
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: rem(11px);
+     }
+  }
+}
+.email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  i{
+    font-size: rem(25px);
+    margin-bottom: rem(38px);
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: rem(11px);
+     }
+  }
+  a{
+    color: $white;
+  }
+}
+.josh-email-links{
+  display: flex;
+  flex-direction: column;
+
+  .social-media-links{
+
+    @include media-breakpoint-down(md) {
+      display: block !important;
+    }
+    @include media-breakpoint-down(sm) {
+     display: none !important;
+    }
+    
   }
 }
