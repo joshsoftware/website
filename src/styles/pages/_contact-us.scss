@@ -1,8 +1,21 @@
 .section-contactus{
 
   &.section-banner{
-    min-height: rem(450px);
-    background-color: #C6B8AF;
+    min-height: rem(527px);
+    background-color: #E4DCD9;
+
+    @include media-breakpoint-down(sm) {
+      min-height: rem(360px);
+    }
+  }
+
+  .txt-display {
+    font-size: rem(46px);
+    line-height: rem(55px);
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: rem(100px 0);
+    text-align: center;
   }
 }
 
@@ -11,7 +24,8 @@
   text-align: center;
 
   @include media-breakpoint-down(sm) {
-    padding-top: rem(65px);
+    padding: rem(65px 15px 0);
+    margin: 0 rem(-15px);
   }
 
   h1{
@@ -45,10 +59,11 @@
   padding-bottom: rem(80px);
   text-align: left;
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
 
   @include media-breakpoint-down(sm) {
     width:100%;
+    // margin: 0 rem(-15px);
   }
 
   label{
@@ -85,6 +100,10 @@
   background-color: $roman;
   padding:rem(87px 0 76px);
   color: $white;
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 rem(-15px);
+  }
 }
 
 .address{

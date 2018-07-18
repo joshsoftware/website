@@ -32,8 +32,8 @@
 }
 
 .social-media-links {
-  @extend .d-flex;
-  @extend .justify-content-end;
+  @include flexbox();
+  @include justify-content(flex-end);
   margin: rem(0 -4px);
 
   @include media-breakpoint-down(md) {
