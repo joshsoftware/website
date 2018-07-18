@@ -1,79 +1,107 @@
 .section-aboutus{
-  background-color: $roman;
 
   &.section-banner{
-    background-color:#0F0F0F;
+    background-color: $gray-68;
     min-height:rem(825px);
-  }
-}
-.about-description{
-  display: flex;
-  @include media-breakpoint-down(sm){
-    flex-direction: column;
-  }
-  img{
-    padding: rem(0 15px);
-    @include media-breakpoint-down(sm){
-      padding: rem(0 0 40px);
+
+    @include media-breakpoint-down(sm) {
+      min-height: rem(360px);
     }
   }
 }
-.about-content{
-  text-align: center;
-  color: $white;
-  font-weight:300;
-  padding:rem(42px 15px 0);
 
-  & h2{
-    font-size:rem(36px);
-    font-weight:300;
-    line-height: rem(48px);
+.section-about_info {
+  background-color: $roman;
+  padding: rem(48px 0 32px);
+
+  @include media-breakpoint-down(sm) {
+    padding: rem(40px 0 30px);
+  }
+}
+
+.about-wrap {
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex(1);
+  @include justify-content(center);
+
+  @include media-breakpoint-down(md) {
+    margin: 0 0 rem(40px);
+  }
+
+  .wrap-title {
+    font-size: rem(32px);
+    line-height: rem(40px);
+    font-weight: 100;
     text-transform: uppercase;
-    margin-bottom: rem(36px);
-    @include media-breakpoint-down(sm){
-      font-size: rem(32px);
-    }
-    
-  }
-  & .title{
-    font-size:rem(32px);
-    font-weight:300;
-    line-height: rem(44px);
-    margin-bottom:rem(47px);
-    @include media-breakpoint-down(sm){
-      font-size: rem(28px);
-      line-height: rem(38px);
-    }
-  }
-  & .info{
-    font-size: rem(20px);
-    font-weight:300;
-    line-height: rem(36px);
-    margin-bottom: rem(40px);
-    text-align: left;
-    @include media-breakpoint-down(sm){
-      font-size: rem(16px);
-      line-height: rem(24px);
-    }
-  }
-}
-
-.section-news{
-  @include media-breakpoint-down(sm){
-    margin: rem(40px 0);
-  }
-  h2{
-    font-size: rem(36px);
-    font-weight: 300;
-    line-height: rem(44px);
+    letter-spacing: 2px;
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: rem(57px);
-    @include media-breakpoint-down(sm){
-      font-size: rem(32px);
-      line-height: rem(39px);
-      margin-bottom: rem(48px);
-    }
+    color: $white;
+    margin: 0 0 rem(32px);
 
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(24px);
+    }
+  }
+
+  .wrap-subtitle {
+    font-size: rem(28px);
+    line-height: rem(34px);
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white;
+    margin: 0 0 rem(64px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(40px);
+    }
+  }
+
+  .para {
+    font-size: rem(18px);
+    line-height: rem(28px);
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: $white;
+    margin: 0 0 rem(80px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(40px);
+    }
+  }
+
+  .btn-wrap {
+    text-align: center;
+
+    .btn{
+      margin: 0 rem(20px) 0 0;
+    
+      @include media-breakpoint-down(sm){
+        margin: 0 0 rem(20px);
+      }
+
+      &:hover {
+        color: $roman;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .btn-white {
+    color: $roman;
+  }
+}
+
+.section-news {
+
+  .media-wrap {
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(40px 0 0);
+    }
   }
 }

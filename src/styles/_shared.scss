@@ -240,14 +240,19 @@ button:focus {
     @include border-radius(0);
   }
 
-  .btn-link {
+  .btn-wrap {
     position: absolute;
-    bottom: rem(4px);
-    left: 50%;
-    @include translate(-50%, 0);
+    bottom: rem(8px);
+    left: rem(8px);
+    right: rem(8px);
+    text-align: left;
+  }
+
+  .btn-link {
+    display: inline-block;
     font-size: rem(14px);
     font-weight: 300;
-    line-height: rem(20px);
+    line-height: rem(17px);
     color: #00B1FF;
   }
 }

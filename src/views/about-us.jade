@@ -3,18 +3,21 @@ extends ./layouts/bootstrap.jade
 block content
   section.section-aboutus.section-banner
     .container
-  section.section-aboutus.section-content
+  section.section-about_info
     .container
-      .about-description
-        .about-content
-          h2 About Us
-          p.title Our name stands for passion. And, passion for technology is who we are.
-          p.info The success of Josh Software is a direct reflection of the magnificent team behind it! Their passion and enthusiasm have been the                 greatest driving factors and are responsible for every milestone of the brand. Here’s to every individual who has been part of this              wonderful journey!
-          .btn-wrap
-            a.btn.btn-white(href="services.html") Meet Our Team
-            a.btn.btn-outline-white(href="technologies.html") Job Openings
-        img(src="https://dummyimage.com/616x798/ffffff/000000&text=placeholder" alt="About Logo")
-  section#news.section-content
+      .row
+        .col-lg-6.col-md-12.d-flex
+          .about-wrap
+            h2.wrap-title About Us
+            p.wrap-subtitle Our name stands for passion. <br>And, passion for technology <br>is who we are.
+            p.para The success of Josh Software is a direct reflection of the magnificent team behind it! Their passion and enthusiasm have been the greatest driving factors and are responsible for every milestone of the brand. Here’s to every individual who has been part of this wonderful journey!
+            .btn-wrap
+              a.btn.btn-white(href="team.html") Meet Our Team
+              a.btn.btn-outline-white(href="career.html") Job Openings
+        .col-lg-6.col-md-12
+          .img-wrap
+            img.img-fluid(src="./images/frame.png" alt="")
+  section#news.section-content.section-news
     .container
       .media-wrap
           h2.media-heading Josh in News
@@ -22,18 +25,22 @@ block content
             li.list-media-item
               .card.card-media
                 img.card-img(src='https://dummyimage.com/625x350/626262/626262&text=Placeholder', alt='')
-                a.btn-link(href="https://youtu.be/OtfyLtsrmCA", target="_blank") https://youtu.be/OtfyLtsrmCA
+                .btn-wrap
+                  a.btn-link(href="https://www.youtube.com/watch?v=6FbmpdJrZxc", target="_blank") https://www.youtube.com/watch?v=6FbmpdJrZxc
             li.list-media-item
               .card.card-media
                 img.card-img(src='https://dummyimage.com/625x350/626262/626262&text=Placeholder', alt='')
-                a.btn-link(href="https://youtu.be/8nU08YDOb58", target="_blank") https://youtu.be/8nU08YDOb58
+                .btn-wrap
+                  a.btn-link(href="https://economictimes.indiatimes.com/tech/software/josh-software-sets-up-two-firms-in-internet-of-things-and-app-development-space/articleshow/51322636.cms", target="_blank") https://economictimes.indiatimes.com/tech/software/josh-software-sets-up-two-firms-in-internet-of-things-and-app-development-space/articleshow/51322636.cms
             li.list-media-item
               .card.card-media
                 img.card-img(src='https://dummyimage.com/625x350/626262/626262&text=Placeholder', alt='')
-                a.btn-link(href="https://youtu.be/N98cnuW0bm0", target="_blank") https://youtu.be/N98cnuW0bm0
+                .btn-wrap
+                  a.btn-link(href="https://timesofindia.indiatimes.com/city/pune/tackling-food-wastage-the-it-way/articleshow/58841541.cms", target="_blank") https://timesofindia.indiatimes.com/city/pune/tackling-food-wastage-the-it-way/articleshow/58841541.cms
             li.list-media-item
               .card.card-media
                 img.card-img(src='https://dummyimage.com/625x350/626262/626262&text=Placeholder', alt='')
-                a.btn-link(href="https://youtu.be/e_7qhUMJJ8k", target="_blank") https://youtu.be/e_7qhUMJJ8k
+                .btn-wrap
+                  a.btn-link(href="https://www.firstpost.com/tech/news-analysis/startups-stand-to-benefit-most-from-open-source-technologies-by-understanding-it-before-embracing-it-4239439.html", target="_blank") https://www.firstpost.com/tech/news-analysis/startups-stand-to-benefit-most-from-open-source-technologies-by-understanding-it-before-embracing-it-4239439.html
       .btn-wrap
         a.btn.btn-outline-gray(href="contact-us.html") Contact Us
