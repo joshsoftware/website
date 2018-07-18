@@ -1,0 +1,79 @@
+.section-aboutus{
+  background-color: $roman;
+
+  &.section-banner{
+    background-color:#0F0F0F;
+    min-height:rem(825px);
+  }
+}
+.about-description{
+  display: flex;
+  @include media-breakpoint-down(sm){
+    flex-direction: column;
+  }
+  img{
+    padding: rem(0 15px);
+    @include media-breakpoint-down(sm){
+      padding: rem(0 0 40px);
+    }
+  }
+}
+.about-content{
+  text-align: center;
+  color: $white;
+  font-weight:300;
+  padding:rem(42px 15px 0);
+
+  & h2{
+    font-size:rem(36px);
+    font-weight:300;
+    line-height: rem(48px);
+    text-transform: uppercase;
+    margin-bottom: rem(36px);
+    @include media-breakpoint-down(sm){
+      font-size: rem(32px);
+    }
+    
+  }
+  & .title{
+    font-size:rem(32px);
+    font-weight:300;
+    line-height: rem(44px);
+    margin-bottom:rem(47px);
+    @include media-breakpoint-down(sm){
+      font-size: rem(28px);
+      line-height: rem(38px);
+    }
+  }
+  & .info{
+    font-size: rem(20px);
+    font-weight:300;
+    line-height: rem(36px);
+    margin-bottom: rem(40px);
+    text-align: left;
+    @include media-breakpoint-down(sm){
+      font-size: rem(16px);
+      line-height: rem(24px);
+    }
+  }
+}
+
+.section-news{
+  @include media-breakpoint-down(sm){
+    margin: rem(40px 0);
+  }
+  h2{
+    font-size: rem(36px);
+    font-weight: 300;
+    line-height: rem(44px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: rem(57px);
+    @include media-breakpoint-down(sm){
+      font-size: rem(32px);
+      line-height: rem(39px);
+      margin-bottom: rem(48px);
+    }
+
+  }
+}
