@@ -68,11 +68,15 @@ button:focus {
       margin: 0 0 rem(40px)
     }
 
-    .btn-gray{
-      margin-right: rem(20px);
+    .btn{
+      margin: 0 rem(20px) 0 0;
     
       @include media-breakpoint-down(sm){
         margin: 0 0 rem(20px);
+      }
+
+      &:last-child {
+        margin: 0;
       }
     }
   }
@@ -172,6 +176,79 @@ button:focus {
     @include media-breakpoint-down(sm) {
       font-size: rem(10px);
     }
+  }
+}
+
+.media-wrap {
+  margin: 0 0 rem(80px);
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 rem(40px);
+  }
+
+  .media-heading {
+    font-size: rem(32px);
+    line-height: rem(39px);
+    font-weight: 300;
+    color: $gray-20;
+    text-transform: uppercase;
+    letter-spacing: rem(1px);
+    text-align: center;
+    margin: 0 0 rem(48px);
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 rem(40px);
+    }
+  }
+
+  .list-media {
+    width: 50%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(md) {
+      width: 75%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  .list-media-item {
+
+    &:last-child {
+
+      .card-media {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.card-media {
+  position: relative;
+  border: 0 none;
+  @include border-radius(0);
+  @include boxShadow(0 2px 6px 0 rgba(0,0,0,0.4));
+  margin: 0 0 rem(40px);
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 rem(20px);
+  }
+
+  .card-img {
+    @include border-radius(0);
+  }
+
+  .btn-link {
+    position: absolute;
+    bottom: rem(4px);
+    left: 50%;
+    @include translate(-50%, 0);
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(20px);
+    color: #00B1FF;
   }
 }
 /* shared end */
