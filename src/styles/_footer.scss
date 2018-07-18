@@ -2,32 +2,32 @@
   background-color: $gray-20;
   padding: rem(54px 0 22px);
   color: $white;
-}
 
-.info-wrap {
-  width: 65%;
-  margin: rem(0 0 30px);
-
-  @include media-breakpoint-down(md) {
-    width: 100%;
-    text-align: center;
-    margin: rem(0 0 42px);
-  }
-
-  h4 {
-    line-height: rem(29px);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: rem(2.2px);
-    margin: 0 0 rem(15px);
-  }
-
-  p {
-    font-size: rem(14px);
-    line-height: rem(18px);
-    font-weight: 100;
-    margin: 0;
-    letter-spacing: rem(1px);
+  .info-wrap {
+    width: 65%;
+    margin: rem(0 0 30px);
+  
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      text-align: center;
+      margin: rem(0 0 42px);
+    }
+  
+    h4 {
+      line-height: rem(29px);
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: rem(2.2px);
+      margin: 0 0 rem(15px);
+    }
+  
+    p {
+      font-size: rem(14px);
+      line-height: rem(18px);
+      font-weight: 100;
+      margin: 0;
+      letter-spacing: rem(1px);
+    }
   }
 }
 
