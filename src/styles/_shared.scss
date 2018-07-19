@@ -52,7 +52,7 @@ button:focus {
 
 /* Page Section */
 .section-content{
-  padding:rem(100px 0 80px);
+  padding:rem(80px 0);
 
   @include media-breakpoint-down(sm){
     padding: 0;
@@ -102,7 +102,11 @@ button:focus {
   border:0;
   border-radius: 0;
   background-color: transparent;
-  padding: rem(40px 16px);
+  padding: rem(80px 16px);
+  
+  @include media-breakpoint-down(sm){
+    padding: rem(50px 16px);
+  }
 
   .card-body{
     position: relative;
@@ -122,7 +126,7 @@ button:focus {
     font-size:rem(36px);
     font-weight: 300;
     line-height: rem(44px);
-    margin-bottom:rem(16px);
+    margin-bottom:rem(32px);
 
     @include media-breakpoint-down(sm) {
       font-size:rem(32px);
