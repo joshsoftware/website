@@ -1,7 +1,47 @@
 .section-industries{
 
   &.section-banner{
+    position: relative;
     background-color: #C7AB0D;
     min-height: rem(825px);
+  }
+}
+
+.list-industries {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  margin: 0 0 rem(70px);
+
+  li {
+    @include flexbox();
+    @include flex(0 0 16.6667%);
+    max-width: 16.6667%;
+    @include justify-content(center);
+    @include align-items(center);
+    min-height: rem(192px);
+    border: 1px solid rgba($white, 0.35);
+  }
+
+  a{
+    @include flexbox();
+    @include flex(1);
+    height: 100%;
+    @include justify-content(center);
+    @include align-items(center);
+
+    &:hover  {
+
+      i {
+        display: none;
+      }
+
+      span {
+        display: inline-block;
+      }
+    }
+   
+    span {
+      display: none;
+    }
   }
 }
