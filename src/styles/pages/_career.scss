@@ -6,13 +6,12 @@
     background-size: cover;
     min-height: rem(825px);
     @include media-breakpoint-down(md){
-      min-height: rem(649px);
+      min-height: rem(590px);
     }
 
     @include media-breakpoint-down(sm){
       background: transparent url('../images/career-banner-mobile@2x.jpg') no-repeat center center;
       background-size: cover;
-      min-height: rem(592px);
     }
   }
 
