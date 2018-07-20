@@ -6,6 +6,10 @@
     $('html').toggleClass('no-md-scroll');
   });
 
+  $('html, body').animate({
+    scrollTop: $('#openSource').offset().top
+  }, 'slow');
+
   window.mod = {};
 
   // $(function() {

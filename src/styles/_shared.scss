@@ -193,7 +193,7 @@ button:focus {
   text-decoration: none;
 
   @include media-breakpoint-down(md){
-    bottom: rem(4px);
+    bottom: rem(8px);
   }
 
   @include media-breakpoint-down(sm) {
