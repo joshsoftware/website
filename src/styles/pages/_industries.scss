@@ -3,7 +3,25 @@
   &.section-banner{
     position: relative;
     background-color: #C7AB0D;
-    min-height: rem(825px);
+    // min-height: rem(825px);
+    padding: 0 0 rem(75px);
+
+    .section-heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      letter-spacing: 1px;
+      margin: 0 0 rem(56px);
+
+      
+    }
+
+    .para{
+      font-weight: 300;
+      color: $white;
+      letter-spacing: 1px;
+      margin: 0 0 rem(30px);
+    }
   }
 }
 
@@ -18,8 +36,81 @@
     max-width: 16.6667%;
     @include justify-content(center);
     @include align-items(center);
+    background-color: rgba($color: #C7AB0D, $alpha: 1.0);
     min-height: rem(192px);
     border: 1px solid rgba($white, 0.35);
+
+    &:nth-child(2){
+      background-color: #C0A218;
+    }
+
+    &:nth-child(3){
+      background-color: #BA980F;
+    }
+
+    &:nth-child(4){
+      background-color: #B7990C;
+    }
+
+    &:nth-child(5){
+      background-color: #BDA427;
+    }
+
+    &:nth-child(8){
+      background-color: #C0A218;
+    }
+
+    &:nth-child(9){
+      background-color: #BA980F;
+    }
+
+    &:nth-child(10){
+      background-color: #B7990C;
+    }
+
+    &:nth-child(11){
+      background-color: #BDA427;
+    }
+
+    @include media-breakpoint-down(md) {
+      @include flex(0 0 25%);
+      max-width: 25%;
+      min-height: rem(170px);
+
+      &:nth-child(-n+4){
+        background-color: #BB980F;
+      }
+
+      &:nth-child(n+5){
+        background-color: #BEA427;
+      }
+
+      &:nth-child(n+9){
+        background-color: #C7AB0D;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include flex(0 0 33.33%);
+      max-width: 33.33%;
+      min-height: rem(110px);
+
+      &:nth-child(-n+3){
+        background-color: #BB980F;
+      }
+
+      &:nth-child(n+4){
+        background-color: #B89A0C;
+      }
+
+      &:nth-child(n+7){
+        background-color: #BEA427;
+      }
+
+      &:nth-child(n+10){
+        background-color: #C7AB0D;
+      }
+    }
   }
 
   a{
@@ -30,18 +121,36 @@
     @include align-items(center);
 
     &:hover  {
+      text-decoration: none;
 
-      i {
+      img {
         display: none;
       }
 
       span {
         display: inline-block;
+        font-weight: 400;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
     }
    
     span {
       display: none;
+    }
+
+    img {
+      height: 80px;
+      @include opacity(0.8);
+
+      @include media-breakpoint-down(md) {
+        height: rem(65px);
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: rem(50px);
+      }
     }
   }
 }
