@@ -282,20 +282,26 @@ button:focus {
     @include border-radius(0);
   }
 
-  .btn-wrap {
-    position: absolute;
-    bottom: rem(8px);
-    left: rem(8px);
-    right: rem(8px);
-    text-align: left;
-  }
-
   .btn-link {
     display: inline-block;
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(17px);
     color: #00B1FF;
+  }
+  
+  iframe{
+    width: auto;
+    height: rem(310px);
+
+    @include media-breakpoint-down(md) {
+      height: rem(290px);
+     }
+     
+    @include media-breakpoint-down(sm) {
+     height: rem(194px);
+    }
+    
   }
 }
 /* shared end */
