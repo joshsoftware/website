@@ -5,6 +5,10 @@
     background-color: #C7AB0D;
     // min-height: rem(825px);
     padding: 0 0 rem(75px);
+    
+    @include media-breakpoint-down(sm){
+      padding: 0 0 rem(40px);
+    }
 
     .section-heading {
       text-align: center;
@@ -13,7 +17,10 @@
       letter-spacing: 1px;
       margin: 0 0 rem(56px);
 
-      
+      @include media-breakpoint-down(sm){
+        font-size: rem(32px);
+        margin: 0 0 rem(40px);
+      }
     }
 
     .para{
@@ -21,6 +28,12 @@
       color: $white;
       letter-spacing: 1px;
       margin: 0 0 rem(30px);
+
+      @include media-breakpoint-down(sm){
+        font-size: rem(14px);
+        line-height: rem(19px);
+        margin: 0;
+      }
     }
   }
 }
@@ -29,6 +42,10 @@
   @include flexbox();
   @include flex-wrap(wrap);
   margin: 0 0 rem(70px);
+
+  @include media-breakpoint-down(sm){
+    margin: 0 0 rem(40px);
+  }
 
   li {
     @include flexbox();
