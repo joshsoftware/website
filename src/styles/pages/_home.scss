@@ -59,14 +59,18 @@
   }
 
   &.section-banner {
-    background: $bunting url("../images/home-banner.png") no-repeat top right;
-    background-size: auto 100%;
+    background: #14151A url("../images/home-banner.jpg") no-repeat top right;
+    background-size: cover;
     min-height: rem(825px);
+
+    @include media-breakpoint-down(md) {
+      min-height: rem(390px);
+    }
   }
 }
 
 .section-expertise {
-  background: $galliano url("../images/bg-texture.png") repeat top center;
+  background: $galliano url("../images/home-industries.jpg") repeat top center;
 
   .section-heading{
     margin: 0 0 rem(65px);
