@@ -85,21 +85,8 @@
 
     .img-desktop{
 
-      @include media-breakpoint-down(md) {
-        width: 100%;
-      }
-
       @include media-breakpoint-down(sm) {
-        display: none;
-      }
-    }
-
-    .img-mobile {
-      display: none;
-
-      @include media-breakpoint-down(sm) {
-        display: block;
-        margin: 0 auto;
+        // display: none;
       }
     }
   }

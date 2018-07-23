@@ -40,25 +40,10 @@
     .title {
       font-size: rem(18px);
       line-height: rem(24px);
-      font-weight: 700;
+      font-weight: 300;
       margin: 0 0 rem(6px);
       letter-spacing: 1px;
+      text-align: center;
     }
-  }
-
-  .txt-note {
-    font-size: rem(14px);
-    line-height: rem(21px);
-    font-weight: 300;
-    margin: 0 0 rem(40px);
-    letter-spacing: 1px;
-  }
-
-  .lead {
-    font-size: rem(24px);
-    line-height: rem(36px);
-    font-weight: 300;
-    letter-spacing: 1.4px;
-    margin: 0;
   }
 }
