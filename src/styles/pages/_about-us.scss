@@ -1,12 +1,30 @@
 .section-aboutus{
 
   &.section-banner{
-    background-color: $gray-68;
-    min-height:rem(825px);
-
+    background: transparent url('../images/aboutus-banner.jpg') no-repeat center center;
+    background-size: cover;
+    min-height:rem(824px);
+    position: relative;
+    @include media-breakpoint-down(md) {
+      min-height: rem(600px);
+    }
     @include media-breakpoint-down(sm) {
       min-height: rem(360px);
     }
+  }
+}
+.img-banner{
+  position: absolute;
+  bottom:rem(100px);
+  right: rem(168px);
+  @include media-breakpoint-down(md) {
+    right:0;
+    bottom: rem(30px);
+  }
+  @include media-breakpoint-down(sm) {
+    right:0;
+    bottom: rem(30px);
+    width:80%;
   }
 }
 
@@ -75,6 +93,7 @@
     
       @include media-breakpoint-down(sm){
         margin: 0 0 rem(20px);
+        
       }
 
       &:hover {
@@ -90,6 +109,15 @@
       color: $roman;
     }
   }
+
+  .img-mobile{
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+      margin-bottom: rem(40px);
+     }
+  }
 }
 
 .section-news {
@@ -99,5 +127,15 @@
     @include media-breakpoint-down(sm) {
       padding: rem(40px 0 0);
     }
+  }
+}
+.img-wrap{
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.btn-wrap{
+  @include media-breakpoint-down(sm) {
+   text-align: center;
   }
 }
