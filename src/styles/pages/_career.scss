@@ -2,15 +2,16 @@
 
   &.section-banner{
     // position: relative;
-    background: transparent url('../images/career_banner@2x.jpg') no-repeat center center;
+    background: transparent url('../images/career-banner.jpg') no-repeat center center;
     background-size: cover;
     min-height: rem(825px);
+    position: relative;
     @include media-breakpoint-down(md){
       min-height: rem(590px);
     }
 
     @include media-breakpoint-down(sm){
-      background: transparent url('../images/career-banner-mobile@2x.jpg') no-repeat center center;
+      background: transparent url('../images/career-banner-mobile.jpg') no-repeat center center;
       background-size: cover;
     }
   }
@@ -19,6 +20,47 @@
 
     @include media-breakpoint-down(sm) {
       padding: rem(64px) 0 0;
+    }
+  }
+}
+.banner-content{
+  margin-left: 30%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 80px;
+  padding: 0;
+  width: 60%;
+  left:-10%;
+  @include media-breakpoint-down(sm) {
+    bottom: 40px;
+    width: 90%;
+    left: 0;
+    margin-left: 5%;
+  }
+  h1{
+    margin-bottom: rem(10px);
+    @include media-breakpoint-down(sm) {
+      margin-bottom:rem(10px);
+      font-size:rem(34px);
+    }
+  }
+  p{
+    margin-bottom: rem(85px);
+    @include media-breakpoint-down(sm) {
+      margin-bottom: rem(60px);
+    }
+  }
+  
+  .img-desktop{
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .img-mobile{
+    display: none;
+    @include media-breakpoint-down(sm) {
+      display: block;
     }
   }
 }
