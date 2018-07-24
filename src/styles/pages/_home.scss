@@ -231,8 +231,8 @@
 .section-clients {
 
   .section-heading {
-    color: $gray-20;
     margin: 0 0 rem(72px);
+    color: #666;
   }
 }
 
@@ -268,13 +268,7 @@
       @extend .justify-content-center;
       @extend .align-items-center;
       background-color: $white;
-      text-align: center;
-      padding: rem(8px 16px);
       box-shadow: 0 0 16px 0 rgba(0,0,0,0.08);
-    }
-
-    img{
-      width: rem(134px);
     }
   }
 }

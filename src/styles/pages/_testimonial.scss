@@ -2,7 +2,22 @@
 
   &.section-banner{
     min-height:rem(450px);
-    background-color: $roman;
+    background: transparent url('../images/test-banner.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include media-breakpoint-down(sm){
+      min-height:rem(213px);
+    }
+  }
+}
+
+h1{
+  line-height: rem(55px);
+  text-align: center;
+  @include media-breakpoint-down(sm){
+   font-size: rem(32px);
   }
 }
 .client-testimonial{
@@ -26,6 +41,7 @@
   }
   .testimonial-image{
     flex:0 0 20%;
+    padding: 0rem(20px);
     @include media-breakpoint-down(sm){
       text-align: center;
       margin-bottom: rem(16px);
@@ -35,10 +51,16 @@
 }
 .testimonial-info{
   flex:0 0 80%;
+  padding: 0rem(20px);
   & p{
     font-size:rem(14px);
-    line-height:rem(17px);
+    line-height:rem(24px);
     margin-bottom: rem(47px);
+    letter-spacing: rem(1px);
+    font-weight: 300;
+  }
+  .para-text{
+    margin-bottom: rem(10px);
   }
 }
 .clients-info{

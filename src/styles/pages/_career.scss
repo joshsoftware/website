@@ -79,6 +79,7 @@
   }
 
   .wrap-title {
+    color: #333;
     position: absolute;
     top: rem(-35px);
     left: 49%;
@@ -194,7 +195,6 @@
 
   .employee-info {
     padding: 0;
-    color: $gray-20;
     letter-spacing: 1px;
     margin: 0 0 rem(32px);
 
