@@ -27,7 +27,7 @@
   .info-wrap {
     width: 80%;
     margin: 0 auto rem(30px);
-    height:rem(100px);
+    min-height:rem(104px);
 
     @include media-breakpoint-down(md) {
       width: 90%;
@@ -36,7 +36,7 @@
     @include media-breakpoint-down(sm) {
       width: 100%;
       margin: 0 0 rem(20px);
-      height:rem(170px);
+      min-height:rem(200px);
     }
 
     .title {
@@ -55,9 +55,9 @@
 }
 #carouselInnovation{
   margin-bottom: rem(80px);
-
+  padding:0 0 rem(40px);
   @include media-breakpoint-down(sm) {
-    margin-bottom: rem(50px);
+    margin-bottom: rem(48px);
   }
   li{
     background-color:$white ;
@@ -69,11 +69,15 @@
   img{
     margin:0 auto;
     margin-bottom: rem(20px);
-    width:50%;
+    width: rem(434px);
+
+    @include media-breakpoint-down(sm) {
+      width: 80%;
+    }
   }
   ol{
-    margin-top:rem(50px) ;
-    bottom: rem(-27px);
+    margin: 0;
+    bottom: 0;
     .active{
       background-color: $roman;
     }
