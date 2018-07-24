@@ -21,8 +21,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba($white, 0.65);
+    background-color: rgba($white, 0.85);
     min-height: rem(325px);
+    text-transform: uppercase;
 
     @include media-breakpoint-down(md){
       min-height: rem(170px);

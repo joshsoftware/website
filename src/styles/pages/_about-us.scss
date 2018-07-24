@@ -12,6 +12,31 @@
       min-height: rem(360px);
     }
   }
+  .heading-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, 0.6);
+    min-height: rem(425px);
+
+    @include media-breakpoint-down(md){
+      min-height: rem(300px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: rem(185px);
+    }
+
+    .section-heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include translate(-50%, -50%);
+      margin: 0;
+      text-align: center;
+    }
+  }
 }
 .img-banner{
   position: absolute;
@@ -23,7 +48,7 @@
   }
   @include media-breakpoint-down(sm) {
     right:0;
-    bottom: rem(30px);
+    bottom: rem(40px);
     width:80%;
   }
 }
@@ -73,6 +98,9 @@
       @include media-breakpoint-down(md) {
         margin: 0 0 rem(40px);
       }
+      @include media-breakpoint-down(sm) {
+        font-size: rem(18px);
+      }
     }
 
     .para {
@@ -85,6 +113,9 @@
 
       @include media-breakpoint-down(md) {
         margin: 0 0 rem(40px);
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem(14px);
       }
     }
 
@@ -135,6 +166,9 @@
   }
 }
 .btn-wrap{
+  @include media-breakpoint-down(md) {
+    text-align: center;
+   }
   @include media-breakpoint-down(sm) {
    text-align: center;
   }
