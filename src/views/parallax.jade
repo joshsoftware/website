@@ -2,9 +2,9 @@ extends ./layouts/parallax-layout.jade
 
 block content
   #skrollr-body
-    section#bannerSlide.section-home.section-overlay.bg-props(style='background-image:url(../images/home-banner.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#banner')
+    section#bannerSlide.section-home.section-overlay.bg-props(style='background-image:url(../images/home-banner.jpg)', data-anchor-target='#bannerSlide')
       .container
-        .overlay-content.-slide1
+        .overlay-content.-slide1.animated.fadeIn
           h1.display-4 INNOVATION <br>DISRUPTION
           h3 IS THE WAY WE CHANGE <br>THE GAME
           a.btn.btn-outline-danger.text-white(href="contact-us.html") Contact us
@@ -12,9 +12,9 @@ block content
         .overlay-content.-slide2
           h1 DISRUPT YOUR INDUSTRY
           p We partner with industry clients to conceptualize web-based designs, implement long-lasting technological solutions and provide business consultation. We believe in providing the best of industry practices with unique organizational processes and simplified solutions focused on building performance and scale for your business.
-        a.scroll-down.text-white(href="javascript:void(0);")
+        a.scroll-down.text-white(href="javascript:void(0);", data-top="opacity: 0", data-bottom="opacity: 1")
           i.icon-angle-double-down
-    section#expertiseSlide.section-home.section-expertise.bg-props(style='background-image:url(../images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#slide-2')
+    section#expertiseSlide.section-home.section-expertise.bg-props(style='background-image:url(../images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#expertiseSlide')
       .container
         h1.section-heading Domain Expertise
         .text-center

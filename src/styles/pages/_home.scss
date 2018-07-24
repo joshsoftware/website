@@ -1,10 +1,14 @@
 .section-home {
-  height: calc(100vh - 66px);
+  height: 100vh;
   padding: rem(150px 0 75px);
   background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
     padding: rem(100px 0 50px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: unset;
   }
 
   .section-heading {
@@ -67,25 +71,65 @@
     @include media-breakpoint-down(md) {
       min-height: rem(390px);
     }
+
+    .overlay-content{
+      width: rem(480px);
+      display: inline-block;
+      text-align: center;
+    }
+
+    h1{
+      font-weight: 100;
+      color: $white;
+      text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
+      margin: 0;
+    }
+  
+    h3{
+      font-weight: 100;
+      color: $white;
+      text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
+      margin: 0 0 rem(48px);
+      line-height: rem(42px);
+    }
+  
+    .btn{
+      margin: 0 0 rem(16px);
+    }
+  
+    p{
+      font-size: 24px;
+      font-weight: 100;
+      color: $white;
+      text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
+      letter-spacing: 2px;
+      margin: 0;
+      line-height: normal;
+    }
   }
 }
 
 .section-overlay {
-  position: relative;
+  height: 200vh;
 
-  @include media-breakpoint-up(lg) {
-    // @include flexbox();
-    // @include align-items(center);
+  .container {
+    position: relative;
   }
 
   .overlay-content{
+    position: absolute;
     width: rem(480px);
     display: inline-block;
+    left: 0;
     text-align: center;
   }
 
+  .-slide1 {
+    top: calc(25vh - 180px);
+  }
+
   .-slide2{
-    display: none;
+    top: calc(100vh + 202px);
 
     h1{
       margin: 0 0 rem(48px);
@@ -123,6 +167,10 @@
     letter-spacing: 2px;
     margin: 0;
     line-height: normal;
+  }
+
+  .scroll-down {
+    position: fixed;
   }
 }
 
@@ -166,7 +214,7 @@
     display: none;
 
     @include media-breakpoint-down(md) {
-      width: rem(420px);
+      width: 50%;
       margin: 0 auto;
       display: block;
     }
