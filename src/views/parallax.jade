@@ -1,0 +1,76 @@
+extends ./layouts/parallax-layout.jade
+
+block content
+  section#skrollr-body.scroll-container(role='main')
+    section#slide-1.homeSlide
+      .bcg(style='background-image:url(../images/home-banner.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#slide-1')
+        .hsContainer
+          .hsContent(data-center='opacity: 1', data-top='opacity: 0', data-anchor-target='#slide-1 h2')
+            .container
+              h2
+                | Fade out elements before
+                br
+                | they leave viewport
+              p
+                | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
+    section#slide-2.homeSlide
+      .bcg(style='background-image:url(../images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#slide-2')
+        .hsContainer
+          .hsContent(data-center='opacity: 1', data-top='opacity: 0', data-anchor-target='#slide-2 h2')
+            .container
+              h2
+                | Fade out elements before
+                br
+                | they leave viewport
+              p
+                | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
+    section#slide-3.homeSlide
+      .bcg(style='background-color:#62AAAC', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#slide-3')
+        .hsContainer
+          .hsContent(data-center='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-3 h2')
+            .container
+              h2
+                | Fade out elements before
+                br
+                | they leave viewport
+              p
+                | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
+    section#slide-4.homeSlide
+      .bcg(style='background-color:#F4F4F4', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#slide-4')
+        .hsContainer
+          .hsContent(data-center='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-4 h2')
+            .container
+              h2
+                | Fade out elements before
+                br
+                | they leave viewport
+              p
+                | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
+    section#slide-5.homeSlide
+      .bcg(style='background-color:#D1645D', data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% -100px;', data-anchor-target='#slide-5')
+        .hsContainer
+          .hsContent(data-center='opacity: 1', data-106-top='opacity: 0', data-anchor-target='#slide-5 h2')
+            .container
+              h2
+                | Fade out elements before
+                br
+                | they leave viewport
+              p
+                | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
+    section#slide-6.section-home.section-contact
+      .hsContainer
+        .hsContent
+          .container
+            .row
+              .col-lg-6.col-md-12
+                .contact-wrap
+                  p Looking for an <br>expert technical partner?
+                  .d-none.d-lg-block
+                    a.btn.btn-gray(href="contact-us.html") Contact Us
+          .contact-banner
+          .contact-number
+            .container
+              h6 Call Us
+              p
+                i.align-middle.icon-phone
+                | +91 9836372938

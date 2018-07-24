@@ -259,9 +259,10 @@
 }
 
 .section-contact {
-  background: transparent url("../images/bg-contact.png") no-repeat top right;
+  background: transparent url("../images/bg-contact.png") no-repeat top center;
   background-size: cover;
-  min-height: rem(425px);
+  // min-height: rem(425px);
+  height: 70vh;
   padding: rem(142px 0 110px);
 
   @include media-breakpoint-down(md) {

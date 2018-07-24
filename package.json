@@ -38,6 +38,8 @@
     "popper.js": "^1.14.3",
     "sass-flex-mixin": "^1.0.3",
     "sass-rem": "^2.0.1",
+    "scrollmagic": "^2.0.5",
+    "skrollr": "git://github.com/Prinzhorn/skrollr.git",
     "swiper": "^4.3.3"
   },
   "eslintConfig": {
