@@ -83,3 +83,15 @@
     }
   }
 }
+.img-desktop{
+  display: block;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.img-mobile{
+  display: none;
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}
