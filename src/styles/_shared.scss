@@ -271,7 +271,8 @@ button:focus {
   position: relative;
   border: 0 none;
   @include border-radius(0);
-  @include boxShadow(0 2px 6px 0 rgba(0,0,0,0.4));
+  @include boxShadow(2px 2px 38px -6px rgba(184,184,184,1));
+
   margin: 0 0 rem(40px);
 
   @include media-breakpoint-down(sm) {

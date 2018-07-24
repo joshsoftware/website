@@ -9,7 +9,7 @@
     }
   
   .display-4{
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
     margin: 0 0 rem(24px);
     text-align: center;
@@ -26,7 +26,8 @@
 
   .info-wrap {
     width: 80%;
-    margin: 0 auto rem(80px);
+    margin: 0 auto rem(30px);
+    min-height:rem(104px);
 
     @include media-breakpoint-down(md) {
       width: 90%;
@@ -34,31 +35,51 @@
 
     @include media-breakpoint-down(sm) {
       width: 100%;
-      margin: 0 0 rem(40px);
+      margin: 0 0 rem(20px);
+      min-height:rem(200px);
     }
 
     .title {
       font-size: rem(18px);
       line-height: rem(24px);
-      font-weight: 700;
+      font-weight: 300;
       margin: 0 0 rem(6px);
       letter-spacing: 1px;
+      text-align: justify;
+
+      @include media-breakpoint-down(sm) {
+        font-size:rem(14px);
+      }
     }
   }
-
-  .txt-note {
-    font-size: rem(14px);
-    line-height: rem(21px);
-    font-weight: 300;
-    margin: 0 0 rem(40px);
-    letter-spacing: 1px;
+}
+#carouselInnovation{
+  margin-bottom: rem(80px);
+  padding:0 0 rem(40px);
+  @include media-breakpoint-down(sm) {
+    margin-bottom: rem(48px);
   }
+  li{
+    background-color:$white ;
+    border:3px solid rgba($roman,0.5);
+    width:rem(15px);
+    height: rem(15px);
+    border-radius: rem(10px);
+  }
+  img{
+    margin:0 auto;
+    margin-bottom: rem(20px);
+    width: rem(434px);
 
-  .lead {
-    font-size: rem(24px);
-    line-height: rem(36px);
-    font-weight: 300;
-    letter-spacing: 1.4px;
+    @include media-breakpoint-down(sm) {
+      width: 80%;
+    }
+  }
+  ol{
     margin: 0;
+    bottom: 0;
+    .active{
+      background-color: $roman;
+    }
   }
 }

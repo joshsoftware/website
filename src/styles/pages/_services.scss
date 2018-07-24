@@ -3,7 +3,29 @@
   &.section-banner{
     background-color: #62AAAC;
     min-height: rem(825px);
+    position: relative;
+    h1{
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      font-weight: 300;
+      padding: rem(70px);
+    }
+
+    .para{
+      font-weight: 300;
+      color: $white;
+      letter-spacing: 1px;
+      margin: 0 0 rem(30px);
+
+      @include media-breakpoint-down(sm){
+        font-size: rem(14px);
+        line-height: rem(19px);
+        margin: 0;
+      }
+    }
   }
+
 
   &.section-content {
 
@@ -85,21 +107,8 @@
 
     .img-desktop{
 
-      @include media-breakpoint-down(md) {
-        width: 100%;
-      }
-
       @include media-breakpoint-down(sm) {
-        display: none;
-      }
-    }
-
-    .img-mobile {
-      display: none;
-
-      @include media-breakpoint-down(sm) {
-        display: block;
-        margin: 0 auto;
+        // display: none;
       }
     }
   }
