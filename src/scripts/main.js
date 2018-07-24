@@ -10,17 +10,6 @@
   //   scrollTop: $('#openSource').offset().top
   // }, 'slow');
 
-  // ScrollMagic controller
-  // var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '100%'}});
-  // new ScrollMagic.Scene({triggerElement: '#parallax1'})
-  //   .setTween('#parallax1 > div', {y: '50%', ease: Linear.easeNone})
-  //   .addIndicators()
-  //   .addTo(controller);
-  // new ScrollMagic.Scene({triggerElement: "#parallax2"})
-  //   .setTween('#parallax2 > div', {y: '50%', ease: Linear.easeNone})
-  //   .addIndicators()
-  //   .addTo(controller);
-
   window.mod = {};
 
   // $(function() {
@@ -35,31 +24,6 @@
   //   });
   // });
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   function scrollerInit() {
     $('#skrollr-body').ready(function() {
       skrollr.init({
@@ -69,12 +33,12 @@
     });
   }
 
-  $(document).on("scroll", onScroll);
+  $(document).on('scroll', onScroll);
 
   //smoothscroll
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
-    $(document).off("scroll");
+    $(document).off('scroll');
 
     $('a').each(function() {
       $(this).removeClass('active');
@@ -88,7 +52,7 @@
       'scrollTop': $target.offset().top + 2
     }, 500, 'swing', function() {
       window.location.hash = target;
-      $(document).on("scroll", onScroll);
+      $(document).on('scroll', onScroll);
     });
   });
 
@@ -97,27 +61,5 @@
   $(function() {
     scrollerInit();
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
 
 })(window, document, jQuery);

@@ -1,63 +1,133 @@
 extends ./layouts/parallax-layout.jade
 
 block content
-  section#bannerSlide.homeSlide
-    .bcg(style='background-image:url(../images/home-banner.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#banner')
+  #skrollr-body
+    section#bannerSlide.section-home.section-overlay.bg-props(style='background-image:url(../images/home-banner.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-anchor-target='#banner')
       .container
-        h2
-          | Fade out elements before
-          br
-          | they leave viewport
-        p
-          | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
-  section#expertiseSlide.homeSlide
-    .bcg(style='background-image:url(../images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#slide-2')
+        .overlay-content.-slide1
+          h1.display-4 INNOVATION <br>DISRUPTION
+          h3 IS THE WAY WE CHANGE <br>THE GAME
+          a.btn.btn-outline-danger.text-white(href="contact-us.html") Contact us
+          p to change yours
+        .overlay-content.-slide2
+          h1 DISRUPT YOUR INDUSTRY
+          p We partner with industry clients to conceptualize web-based designs, implement long-lasting technological solutions and provide business consultation. We believe in providing the best of industry practices with unique organizational processes and simplified solutions focused on building performance and scale for your business.
+        a.scroll-down.text-white(href="javascript:void(0);")
+          i.icon-angle-double-down
+    section#expertiseSlide.section-home.section-expertise.bg-props(style='background-image:url(../images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#slide-2')
       .container
-        h2
-          | Fade out elements before
-          br
-          | they leave viewport
-        p
-          | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
-  section#workSlide.homeSlide
-    .bcg(style='background-color:#62AAAC', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#workSlide')
+        h1.section-heading Domain Expertise
+        .text-center
+          img.img-fluid.img-expertise(src="./images/expertise.svg", alt="")
+        .link-box.mb-4
+          a.text-white(href="industries.html")
+            i.align-middle.icon-arrow-right
+            | View All Domains
+    section#workSlide.section-home.section-work.bg-props(style='background-color:#62AAAC', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#workSlide')
       .container
-        h2
-          | Fade out elements before
-          br
-          | they leave viewport
-        p
-          | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
-  section#clientsSlide.homeSlide
-    .bcg(style='background-color:#F4F4F4', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#clientsSlide')
+        h1.section-heading What We Do?
+        img.img-fluid.img-horizontal(src="./images/our-work.svg", alt="")
+        img.img-fluid.img-vertical(src="./images/our-work-sm.svg", alt="")
+        .link-box.mb-4
+          a.text-white(href="services.html#ourWork")
+            i.align-middle.icon-arrow-right
+            | View Our Work
+    section#clientsSlide.section-home.section-clients.bg-props(style='background-color:#F4F4F4', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#clientsSlide')
       .container
-        h2
-          | Fade out elements before
-          br
-          | they leave viewport
-        p
-          | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
-  section#aboutSlide.homeSlide
-    .bcg(style='background-color:#D1645D', data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% -100px;', data-anchor-target='#aboutSlide')
+        h1.section-heading Our Top Clients
+        ul.list-unstyled.list-client
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/pediatric_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/brandscope_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/druva_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/dealsignal_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/ffd_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/ffd_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/dealsignal_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/brandscope_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/pediatric_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/druva_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/druva_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/pediatric_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/ffd_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/dealsignal_logo.png", alt="")
+          li
+            a(href="javascript:void(0);")
+              img.img-fluid(src="./images/brandscope_logo.png", alt="")
+
+        .link-box
+          a(href="testimonial.html")
+            i.align-middle.icon-arrow-right
+            | View Testimonials
+    section#aboutSlide.section-home.section-about(style='background-color:#D1645D', data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% -100px;', data-anchor-target='#aboutSlide')
       .container
-        h2
-          | Fade out elements before
-          br
-          | they leave viewport
-        p
-          | This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.
-  section#contactSlide.section-home.section-contact
-    .container
-      .row
-        .col-lg-6.col-md-12
-          .contact-wrap
-            p Looking for an <br>expert technical partner?
-            .d-none.d-lg-block
-              a.btn.btn-gray(href="contact-us.html") Contact Us
-    .contact-banner
-    .contact-number
+        h1.section-heading About Us
+        .about-wrap
+          .stats-box
+            .stats
+              h4 11+ Years
+              p Industry Experience
+            .stats
+              h4 13
+              p Countries
+            .stats
+              h4 96
+              p Clients
+            .stats.stats-button.d-none.d-lg-block
+              a.btn.btn-outline-white(href="about-us.html") Company
+          .about-banner
+            img.img-fluid(src="./images/about.png", alt="")
+          .stats-box
+            .stats
+              h4 35+
+              p Mentored and created <br>business model for start-ups
+            .stats
+              h4 7
+              p Startups taken from <br> concept to funding
+            .stats
+              h4 60%
+              p Clients that are working with us <br>for more than 5 years
+            .stats.stats-button.d-none.d-lg-block
+              a.btn.btn-outline-white(href="team.html") Our Team
+    section#contactSlide.section-home.section-contact
       .container
-        h6 Call Us
-        p
-          i.align-middle.icon-phone
-          | +91 9836372938
+        .row
+          .col-lg-6.col-md-12
+            .contact-wrap
+              p Looking for an <br>expert technical partner?
+              .d-none.d-lg-block
+                a.btn.btn-gray(href="contact-us.html") Contact Us
+      .contact-banner
+      .contact-number
+        .container
+          h6 Call Us
+          p
+            i.align-middle.icon-phone
+            | +91 9836372938

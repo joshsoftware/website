@@ -1,5 +1,4 @@
 .section-home {
-  height: calc(100vh - 66px);
   padding: rem(150px 0 75px);
   background-color: $gray-96;
 
@@ -67,62 +66,6 @@
     @include media-breakpoint-down(md) {
       min-height: rem(390px);
     }
-  }
-}
-
-.section-overlay {
-  position: relative;
-
-  @include media-breakpoint-up(lg) {
-    // @include flexbox();
-    // @include align-items(center);
-  }
-
-  .overlay-content{
-    width: rem(480px);
-    display: inline-block;
-    text-align: center;
-  }
-
-  .-slide2{
-    display: none;
-
-    h1{
-      margin: 0 0 rem(48px);
-    }
-
-    p{
-      letter-spacing: normal;
-    }
-  }
-
-  h1{
-    font-weight: 100;
-    color: $white;
-    text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-    margin: 0;
-  }
-
-  h3{
-    font-weight: 100;
-    color: $white;
-    text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-    margin: 0 0 rem(48px);
-    line-height: rem(42px);
-  }
-
-  .btn{
-    margin: 0 0 rem(16px);
-  }
-
-  p{
-    font-size: 24px;
-    font-weight: 100;
-    color: $white;
-    text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-    letter-spacing: 2px;
-    margin: 0;
-    line-height: normal;
   }
 }
 
@@ -234,7 +177,7 @@
 /* End */
 
 .section-about {
-  // background-color: $roman;
+  background-color: $roman;
 
   .section-heading {
     margin: 0 0 rem(30px);
@@ -320,8 +263,6 @@
 
   @include media-breakpoint-up(lg) {
     height: 60vh;
-    @include flexbox();
-    @include align-items(center);
   }
 
   @include media-breakpoint-down(md) {
@@ -412,7 +353,13 @@
 }
 
 // Parallax Scroll SCSS
-.bg-props {
+.homeSlide{
+  height:100vh;
+}
+
+.bcg {
+  height: 100%;
+  width: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
