@@ -1,5 +1,5 @@
 .section-career{
-
+  padding-top: 140px;
   &.section-banner{
     // position: relative;
     background: transparent url('../images/career-banner.jpg') no-repeat center center;
@@ -81,7 +81,7 @@
   .wrap-title {
     position: absolute;
     top: rem(-35px);
-    left: 50%;
+    left: 49%;
     @include translate(-50%, 0);
     text-transform: uppercase;
     font-size: rem(36px);
@@ -94,9 +94,9 @@
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 
     @include media-breakpoint-down(sm) {
-      font-size: rem(28px);
+      font-size: rem(24px);
       line-height: rem(34px);
-      top: rem(-28px);
+      top: rem(-25px);
     }
   }
 }
