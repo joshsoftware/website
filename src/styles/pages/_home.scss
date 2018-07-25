@@ -62,57 +62,15 @@
       }
     }
   }
-
-  &.section-banner {
-    background: #14151A url("../images/home-banner.jpg") no-repeat top right;
-    background-size: cover;
-    min-height: rem(825px);
-
-    @include media-breakpoint-down(md) {
-      min-height: rem(390px);
-    }
-
-    .overlay-content{
-      width: rem(480px);
-      display: inline-block;
-      text-align: center;
-    }
-
-    h1{
-      font-weight: 100;
-      color: $white;
-      text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-      margin: 0;
-    }
-  
-    h3{
-      font-weight: 100;
-      color: $white;
-      text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-      margin: 0 0 rem(48px);
-      line-height: rem(42px);
-    }
-  
-    .btn{
-      margin: 0 0 rem(16px);
-    }
-  
-    p{
-      font-size: 24px;
-      font-weight: 100;
-      color: $white;
-      text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-      letter-spacing: 2px;
-      margin: 0;
-      line-height: normal;
-    }
-  }
 }
 
 .section-overlay {
+  @include flexbox();
   height: 200vh;
+  padding: 0;
 
-  .container {
+  .overlay-container {
+    @include flex(1);
     position: relative;
   }
 
@@ -125,11 +83,11 @@
   }
 
   .-slide1 {
-    top: calc(25vh - 180px);
+    top: calc(50vh - 227px);
   }
 
   .-slide2{
-    top: calc(100vh + 202px);
+    top: calc(150vh - 107px);
 
     h1{
       margin: 0 0 rem(48px);
@@ -137,6 +95,7 @@
 
     p{
       letter-spacing: normal;
+      margin: 0 0 rem(13px);
     }
   }
 
@@ -165,7 +124,7 @@
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 0 rem(17px);
     line-height: normal;
   }
 
@@ -232,7 +191,7 @@
 
   .section-heading {
     margin: 0 0 rem(72px);
-    color: #666;
+    color: $gray-40;
   }
 }
 
