@@ -1,11 +1,13 @@
 extends ./layouts/bootstrap.jade
 
+block vars
+  -var page='Testimonials'
+
 block content
   section.section-testimonial.section-banner
     .container
       .testimonial-content
         h1.section-heading.text-white Here’s what our clients are saying
-        img.img-fluid(src="./images/stick-client.svg",alt="")
   section.section-testimonial.section-content
     .container
       .card-wrap.-striped.client-testimonial
