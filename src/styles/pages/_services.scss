@@ -11,12 +11,14 @@
     @include media-breakpoint-down(sm){
       min-height: rem(360px);
     }
+
     h1{
       text-transform: uppercase;
       text-align: center;
       color: $white;
       font-weight: 300;
-      padding: rem(70px);
+      padding: rem(70px) 0 0;
+      margin: 0 0 rem(70px);
     }
 
     .para{

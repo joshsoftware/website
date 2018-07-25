@@ -1,10 +1,11 @@
 .section-home {
   height: 100vh;
-  padding: rem(150px 0 75px);
+  padding: rem(80px 0);
   background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
-    padding: rem(100px 0 50px);
+    height: unset;
+    min-height: 100vh;
   }
 
   @include media-breakpoint-down(sm) {
@@ -178,6 +179,15 @@
 .section-expertise {
   background: $galliano url("../images/home-industries.jpg") repeat top center;
 
+  @include media-breakpoint-up(lg) {
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  @include media-breakpoint-down(md) {
+    height: unset;
+  }
+
   .section-heading{
     margin: 0 0 rem(65px);
 
@@ -188,9 +198,10 @@
 
   .img-expertise{
     max-width: rem(512px);
+    margin: 0 0 rem(80px);
 
     @include media-breakpoint-down(md) {
-      margin: 0 0 rem(40px);
+      margin: 0 0 rem(50px);
     }
   }
 }
@@ -199,12 +210,18 @@
   min-height: unset;
   background-color: $fountain-blue;
 
+  @include media-breakpoint-up(lg) {
+    @include flexbox();
+    @include align-items(center);
+  }
+
   .section-heading{
     margin: 0 0 rem(46px);
   }
 
   .img-horizontal{
     display: block;
+    margin: 0 0 rem(80px);
 
     @include media-breakpoint-down(md) {
       display: none;
@@ -216,7 +233,7 @@
 
     @include media-breakpoint-down(md) {
       width: 50%;
-      margin: 0 auto;
+      margin: 0 auto rem(50px);
       display: block;
     }
 
@@ -231,6 +248,11 @@
 /* Section Client */
 .section-clients {
 
+  @include media-breakpoint-up(lg) {
+    @include flexbox();
+    @include align-items(center);
+  }
+
   .section-heading {
     margin: 0 0 rem(72px);
     color: $gray-40;
@@ -239,13 +261,13 @@
 
 .list-client{
   width: 86%;
-  margin: 0 auto rem(91px);
+  margin: 0 auto rem(80px);
   @extend .d-flex;
   @extend .flex-wrap;
 
   @include media-breakpoint-down(md) {
     width: 98%;
-    margin: 0 auto rem(76px);
+    margin: 0 auto rem(50px);
   }
 
   li{
@@ -278,6 +300,11 @@
 
 .section-about {
   // background-color: $roman;
+
+  @include media-breakpoint-up(lg) {
+    @include flexbox();
+    @include align-items(center);
+  }
 
   .section-heading {
     margin: 0 0 rem(30px);
