@@ -36,23 +36,42 @@
     }
   }
 
-  .img-wrap {
-    position: relative;
-  }
+  .services-banner-svg {
 
-  .img-content {
-    position: absolute;
-    
-    p{
-      color: $white;
-      text-align: center;
-      margin: 0;  
+    .bg-circle {
+      // fill: $fountain-blue;
+      fill: transparent;
+      }
+
+    .gear {
+      cursor: pointer;
+
+      &:hover {
+
+        .title {
+          display: none;
+        }
+
+        .description {
+          display: block;
+        }
+      }
     }
 
-    &.-gear1{
-      top: rem(210px);
-      left: rem(90px);
+    .title {
+      fill: $white;
+      stroke: rgba(0,0,0,0);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.024em;
     }
+
+      .description {
+        display: none;
+        fill: $white;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+      }
   }
 
 
