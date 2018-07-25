@@ -3,10 +3,15 @@
   &.section-banner{
     position: relative;
     background-color: #C7AB0D;
-    // min-height: rem(825px);
+    min-height: calc(100vh - 76px);
     padding: 0 0 rem(75px);
     
+    @include media-breakpoint-down(md){
+      min-height: calc(100vh - 54px);
+    }
+
     @include media-breakpoint-down(sm){
+      min-height: unset;
       padding: 0 0 rem(40px);
     }
 
@@ -15,11 +20,11 @@
       text-transform: uppercase;
       color: $white;
       letter-spacing: 1px;
-      margin: 0 0 rem(56px);
+      margin: 0 0 rem(36px);
 
       @include media-breakpoint-down(sm){
         font-size: rem(32px);
-        margin: 0 0 rem(40px);
+        margin: 0 0 rem(24px);
       }
     }
 
@@ -41,7 +46,7 @@
 .list-industries {
   @include flexbox();
   @include flex-wrap(wrap);
-  margin: 0 0 rem(70px);
+  margin: 0 0 rem(50px);
 
   @include media-breakpoint-down(sm){
     margin: 0 0 rem(40px);

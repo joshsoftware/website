@@ -5,7 +5,6 @@
 
   @include media-breakpoint-down(md) {
     height: unset;
-    min-height: 100vh;
   }
 
   @include media-breakpoint-down(sm) {

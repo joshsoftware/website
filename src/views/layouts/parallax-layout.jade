@@ -15,7 +15,6 @@ html(lang="en")
       link(rel='stylesheet', href="styles/animate.css")
       link(href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700', rel='stylesheet')
       //[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]
-      script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js')
   body
     block header
       include ./../inc/header.jade
@@ -29,3 +28,8 @@ html(lang="en")
     block scripts
       script(src='scripts/vendors.min.js')
       script(src='scripts/scripts.js')
+      script.
+        skrollr.init({
+          smoothScrolling: true,
+          //mobileDeceleration: 0.004
+        });
