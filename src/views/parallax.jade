@@ -2,7 +2,7 @@ extends ./layouts/parallax-layout.jade
 
 block content
   #skrollr-body
-    section#bannerSlide.section-home.section-overlay.bg-props(style='background-image:url(../images/home-banner.jpg)', data-anchor-target='#bannerSlide')
+    section#bannerSlide.section-home.section-overlay.bg-props(style='background-image:url(./images/home-banner.jpg)', data-anchor-target='#bannerSlide')
       .container.overlay-container
         .overlay-content.-slide1.animated.fadeIn
           h1.display-4 INNOVATION <br>DISRUPTION
@@ -14,7 +14,7 @@ block content
           p We partner with our clients to conceptualize and create sustainable web-based solutions, enabling high performance and growth in their businesses. We deliver business consultation to simplify technological complexities for better industry practices.
         a.scroll-down.text-white(href="javascript:void(0);", data-top="opacity: 0", data-bottom="opacity: 1")
           i.icon-angle-double-down
-    section#expertiseSlide.section-home.section-expertise.bg-props(style='background-image:url(../images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#expertiseSlide')
+    section#expertiseSlide.section-home.section-expertise.bg-props(style='background-image:url(./images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#expertiseSlide')
       .container
         h1.section-heading Domain Expertise
         .text-center
@@ -38,10 +38,10 @@ block content
         ul.list-unstyled.list-client
           li
             a(href="javascript:void(0);")
-              img.img-fluid(src="../images/clogo-star.jpg", alt="")
+              img.img-fluid(src="./images/clogo-star.jpg", alt="")
           li
             a(href="javascript:void(0);")
-              img.img-fluid(src="../images/clogo-gojek.jpg", alt="")
+              img.img-fluid(src="./images/clogo-gojek.jpg", alt="")
           li
             a(href="javascript:void(0);")
               img.img-fluid(src="./images/clogo-dealsignal.jpg", alt="")
