@@ -2,6 +2,11 @@
   background-color: $gray-20;
   padding: rem(54px 0 22px);
   color: $white;
+  min-height: rem(288px);
+
+  @include media-breakpoint-up(lg) {
+    height: 40vh;
+  }
 
   .info-wrap {
     width: 65%;
