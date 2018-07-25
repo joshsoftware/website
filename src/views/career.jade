@@ -1,7 +1,10 @@
 extends ./layouts/bootstrap.jade
 
+block vars
+  -var page='Career'
+
 block content
-  section.section-career.section-banner
+  section#careerTop.section-career.section-banner
     .banner-content
       h1 WE ARE RECRUITING
       P And you will Love working here!
@@ -43,7 +46,7 @@ block content
                   p Senior Software Developer
                 p.card-text Josh has done a great job of making me feel like I’m part of the team. Everyone is approachable and willing to take time out of their busy day to help each other out. I feel very empowered by—and confident in—my teammates, which makes for a great work environment.
               .scroll-top
-                a.btn-scroll(href='javascript:void(0);') go to top
+                a.btn-scroll(href='#careerTop') go to top
           .card.card-testimonial
             .card-body
               .pic
@@ -54,7 +57,7 @@ block content
                   p Senior Developer
                 p.card-text "I enjoy coming to work! What else one will need from their job?! Here you will find so many passionate and dedicated people around you, all eager to share their knowledge. Credit goes to superbly maintained open culture. Improving my technical and soft skills is made easy and fun!"
               .scroll-top
-                a.btn-scroll(href='javascript:void(0);') go to top
+                a.btn-scroll(href='#careerTop') go to top
           .card.card-testimonial
             .card-body
               .pic
@@ -65,7 +68,7 @@ block content
                   p Senior Software Developer
                 p.card-text Flex time, Quality work, great environment, and learning opportunities are the reasons why I enjoy coming to work!. My colleagues are very organized and easy to work with. The overall experience is really great and I am very happy to be a part of this organization!
               .scroll-top
-                a.btn-scroll(href='javascript:void(0);') go to top
+                a.btn-scroll(href='#careerTop') go to top
           .card.card-testimonial
             .card-body
               .pic
@@ -76,7 +79,7 @@ block content
                   p Senior Software Developer
                 p.card-text Josh is offering me a very good work environment. I can work on various trending technologies. My colleagues are very helpful and supportive. I am happy for being part of this organization :.)
               .scroll-top
-                a.btn-scroll(href='javascript:void(0);') go to top
+                a.btn-scroll(href='#careerTop') go to top
       .btn-wrap
         a.btn.btn-gray(href="about-us.html") About Us
         a.btn.btn-outline-gray(href="contact-us.html") Contact Us

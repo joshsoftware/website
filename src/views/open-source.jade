@@ -1,5 +1,8 @@
 extends ./layouts/bootstrap.jade
 
+block vars
+  -var page='Open Source'
+
 block content
   section.section-open_source.section-banner
 
@@ -79,3 +82,9 @@ block content
       .btn-wrap
         a.btn.btn-gray(href="team.html") Our Team
         a.btn.btn-outline-gray(href="career.html") Career
+
+block append scripts
+  script.
+    $('html, body').animate({
+      scrollTop: $('#openSource').offset().top
+    }, 'slow');

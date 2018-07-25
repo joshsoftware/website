@@ -2,21 +2,24 @@
 
   &.section-banner{
     background-color: #62AAAC;
-    min-height: rem(825px);
+    min-height: calc(100vh - 76px);
     position: relative;
+    padding: rem(100px 0 75px);
+
     @include media-breakpoint-down(md){
-      min-height: rem(430px);
+      min-height: unset;
     }
 
     @include media-breakpoint-down(sm){
-      min-height: rem(360px);
+      min-height: unset;
     }
+
     h1{
       text-transform: uppercase;
       text-align: center;
       color: $white;
       font-weight: 300;
-      padding: rem(70px);
+      margin: 0 0 rem(50px);
     }
 
     .para{
@@ -30,6 +33,25 @@
         line-height: rem(19px);
         margin: 0;
       }
+    }
+  }
+
+  .img-wrap {
+    position: relative;
+  }
+
+  .img-content {
+    position: absolute;
+    
+    p{
+      color: $white;
+      text-align: center;
+      margin: 0;  
+    }
+
+    &.-gear1{
+      top: rem(210px);
+      left: rem(90px);
     }
   }
 

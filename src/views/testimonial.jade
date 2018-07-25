@@ -1,15 +1,20 @@
 extends ./layouts/bootstrap.jade
 
+block vars
+  -var page='Testimonials'
+
 block content
   section.section-testimonial.section-banner
-    h1.section-heading.text-white.section-heading Here’s what our clients are saying
+    .container
+      .testimonial-content
+        h1.section-heading.text-white Here’s what our clients are saying
   section.section-testimonial.section-content
     .container
       .card-wrap.-striped.client-testimonial
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text Josh Team has been able to turnaround our CRM and mobile App by understanding our needs, engaging in continuous dialogue during development phase to align the output and giving a product which is working with wonderful speed and ease for our doctors and patients. Deeper listening, long term view, flexibility and timely output have been some qualities that have made this a mutually beneficial experience!
               .clients-info
@@ -25,11 +30,11 @@ block content
                   p Pediatrician and Mentor
                   p.font-weight-normal The Pediatric Network
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text The Josh team are great partners and technically adept at what they do. They are professional, responsive and fun to work with. The team has been effective at helping us build 3rd party integrations and connectors, and I can't recommend this team enough.
               .clients-info
@@ -45,11 +50,11 @@ block content
                   p Manager (Projects and Quality)
                   p.font-weight-normal Synergy Design Solutions Pte.Ltd
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.para-text Before getting Josh on board for our startup , we had done a lot of homework on IT vendors as well as tackled the question of whether to inhouse or outsource tech . The points which were in Josh's favour were
               p.para-text A. Very competent & experienced team
@@ -75,11 +80,11 @@ block content
                   p Founder & CEO
                   p.font-weight-normal DealSignal, Inc.
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.para-text Josh has been responsible for both the support of our products and there on-going development for the last two years.
               p.para-text Their performance in both areas has been excellent. In support I would go further and describe it as exceptional. When there is a problem, Josh are onto it; serious issues are dealt with at whatever time of day or night.
@@ -97,11 +102,11 @@ block content
                   p CWO
                   p.font-weight-normal ShowMe
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text Gautam and his team were a pleasure to work with. They dispel all the common myths of oursourcing. > They were forthright with their work > They provided suggestions and feedback before jumping into the work > They held themselves accountable to the work they delivered, in fact, only billing for the work completed. Many firms bill for time, and you never know if that company is working on other projects during your time. Josh Software is great in that sense. > These guys know Rails (period).
               .clients-info
@@ -117,11 +122,11 @@ block content
                   p CEO
                   p.font-weight-normal Conceivian
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text Josh Software is a great company and I highly recommend them. They are very professional, responsive and easy to work with. In addition, they are very responsive and reliable.
               .clients-info
@@ -137,11 +142,11 @@ block content
                   p Co-Founder and CEO
                   p.font-weight-normal The Deal Pages
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text These guys are the most passionate team that I have ever seen dedicated to a technology, and they take immense pride in their expertise on RoR. At multiple times, the team has stood up to the challenges and delivered on aggressive timelines with good quality. The team with different skillsets helps a lot when you can get in a facebook development expert to come in and tweak your fb related code, whereas someone else would actually come in and fix in the rendering issues that are being faced on IE and go back to his regular assighments (which might not be your project). A good focus on writing test cases and automating them helps catch some bugs beforehand. All in all, an awesome, well balanced team. Strongly recommended.
               .clients-info
@@ -157,11 +162,11 @@ block content
                   p Project Lead
                   p.font-weight-normal Conceivian
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text I was looking for an offshore partner specialising in Ruby on Rails, but also with a knowledge of more mainstream web languages such as .NET. As such Josh fit the bill perfectly. They have proved to be extremely proficient in their knowledge of Ruby and how quickly they picked up our working methods and the complexities of our client's sites. We're looking forward to a long term and productive relationship.
               .clients-info
@@ -177,11 +182,11 @@ block content
                   p International Development Director 
                   p.font-weight-normal H-Farm
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
         .card.card-client-testimonial
           .card-body
             .testimonial-image
-              img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+              img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
             .testimonial-info
               p.card-text In addition to the technical expertise, the Josh team comes across as a team with thinking brains. Throughout the development lifecycle, I have seen them getting their heads around to deliver an enhanced functionality, which at times meant increased complexity and incremental developmental efforts. I am impressed with their degree of involvement and proactive approach to conceive solutions.
               .clients-info
@@ -197,7 +202,7 @@ block content
                   p Partner
                   p.font-weight-normal TourConnect
               .testimonial-image
-                img.img-fluid.img-thumbnail.rounded-circle(src="../images/client-face.svg", alt="")
+                img.img-fluid.img-thumbnail.rounded-circle(src="./images/client-face.svg", alt="")
     .btn-wrap
       a.btn.btn-gray(href="about-us.html") Indusrties
       a.btn.btn-outline-gray(href="contact-us.html") About Us

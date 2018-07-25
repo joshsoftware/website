@@ -1,14 +1,9 @@
 .section-home {
-  height: 100vh;
-  padding: rem(80px 0);
+  padding: rem(150px 0 75px);
   background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
-    height: unset;
-  }
-
-  @include media-breakpoint-down(sm) {
-    height: unset;
+    padding: rem(100px 0 50px);
   }
 
   .section-heading {
@@ -62,130 +57,20 @@
       }
     }
   }
-}
 
-.section-overlay {
-  @include flexbox();
-  height: 200vh;
-  padding: 0;
-
-  @include media-breakpoint-down(md) {
-    
-    &.bg-props {
-      background-position: top right rem(-300px);
-    }
-  }
-
-  .overlay-container {
-    @include flex(1);
-    position: relative;
-  }
-
-  .overlay-content{
-    position: absolute;
-    width: rem(480px);
-    display: inline-block;
-    left: 0;
-    text-align: center;
+  &.section-banner {
+    background: #14151A url("../images/home-banner.jpg") no-repeat top right;
+    background-size: cover;
+    min-height: rem(825px);
 
     @include media-breakpoint-down(md) {
-      left: 50%;
-      @include translate(-50%, 0);
+      min-height: rem(390px);
     }
-
-    @include media-breakpoint-down(sm) {
-      width: unset;
-      left: rem(15px);
-      right: rem(15px);
-      @include translate(0, 0);
-    }
-  }
-
-  .-slide1 {
-    top: calc(50vh - 227px);
-
-    @include media-breakpoint-down(sm) {
-      top: calc(50vh - 187px);
-    }
-  }
-
-  .-slide2{
-    top: calc(150vh - 107px);
-
-    @include media-breakpoint-down(sm) {
-      top: calc(150vh - 148px);
-    }
-
-    h1{
-      margin: 0 0 rem(48px);
-    }
-
-    p{
-      letter-spacing: normal;
-      margin: 0 0 rem(13px);
-    }
-  }
-
-  h1{
-    font-weight: 100;
-    color: $white;
-    text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-    margin: 0;
-
-    @include media-breakpoint-down(sm) {
-      font-size: rem(40px);
-      margin: 0 0 rem(16px);
-    }
-  }
-
-  h3{
-    font-weight: 100;
-    color: $white;
-    text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-    margin: 0 0 rem(48px);
-    line-height: rem(42px);
-
-    @include media-breakpoint-down(sm) {
-      font-size: rem(24px);
-      line-height: rem(32px);
-    }
-  }
-
-  .btn{
-    margin: 0 0 rem(16px);
-  }
-
-  p{
-    font-size: 24px;
-    font-weight: 100;
-    color: $white;
-    text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
-    letter-spacing: 2px;
-    margin: 0 0 rem(17px);
-    line-height: normal;
-
-    @include media-breakpoint-down(sm) {
-      font-size: rem(18px);
-      line-height: rem(23px);
-    }
-  }
-
-  .scroll-down {
-    position: fixed;
   }
 }
 
 .section-expertise {
   background: $galliano url("../images/home-industries.jpg") repeat top center;
-
-  @include media-breakpoint-up(lg) {
-    @include flexbox();
-    @include align-items(center);
-  }
-
-  @include media-breakpoint-down(md) {
-    height: unset;
-  }
 
   .section-heading{
     margin: 0 0 rem(65px);
@@ -197,10 +82,9 @@
 
   .img-expertise{
     max-width: rem(512px);
-    margin: 0 0 rem(80px);
 
     @include media-breakpoint-down(md) {
-      margin: 0 0 rem(50px);
+      margin: 0 0 rem(40px);
     }
   }
 }
@@ -209,18 +93,12 @@
   min-height: unset;
   background-color: $fountain-blue;
 
-  @include media-breakpoint-up(lg) {
-    @include flexbox();
-    @include align-items(center);
-  }
-
   .section-heading{
     margin: 0 0 rem(46px);
   }
 
   .img-horizontal{
     display: block;
-    margin: 0 0 rem(80px);
 
     @include media-breakpoint-down(md) {
       display: none;
@@ -231,8 +109,8 @@
     display: none;
 
     @include media-breakpoint-down(md) {
-      width: 50%;
-      margin: 0 auto rem(50px);
+      width: rem(420px);
+      margin: 0 auto;
       display: block;
     }
 
@@ -247,26 +125,21 @@
 /* Section Client */
 .section-clients {
 
-  @include media-breakpoint-up(lg) {
-    @include flexbox();
-    @include align-items(center);
-  }
-
   .section-heading {
+    color: $gray-20;
     margin: 0 0 rem(72px);
-    color: $gray-40;
   }
 }
 
 .list-client{
   width: 86%;
-  margin: 0 auto rem(80px);
+  margin: 0 auto rem(91px);
   @extend .d-flex;
   @extend .flex-wrap;
 
   @include media-breakpoint-down(md) {
     width: 98%;
-    margin: 0 auto rem(50px);
+    margin: 0 auto rem(76px);
   }
 
   li{
@@ -290,7 +163,13 @@
       @extend .justify-content-center;
       @extend .align-items-center;
       background-color: $white;
+      text-align: center;
+      padding: rem(8px 16px);
       box-shadow: 0 0 16px 0 rgba(0,0,0,0.08);
+    }
+
+    img{
+      width: rem(134px);
     }
   }
 }
@@ -298,12 +177,7 @@
 /* End */
 
 .section-about {
-  // background-color: $roman;
-
-  @include media-breakpoint-up(lg) {
-    @include flexbox();
-    @include align-items(center);
-  }
+  background-color: $roman;
 
   .section-heading {
     margin: 0 0 rem(30px);
@@ -389,8 +263,6 @@
 
   @include media-breakpoint-up(lg) {
     height: 60vh;
-    @include flexbox();
-    @include align-items(center);
   }
 
   @include media-breakpoint-down(md) {
@@ -481,7 +353,13 @@
 }
 
 // Parallax Scroll SCSS
-.bg-props {
+.homeSlide{
+  height:100vh;
+}
+
+.bcg {
+  height: 100%;
+  width: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

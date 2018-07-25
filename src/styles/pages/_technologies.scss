@@ -3,16 +3,21 @@
   &.section-banner{
     position: relative;
     background-color: $chambray;
-    // min-height: rem(825px);
+    min-height: calc(100vh - 76px);
     padding: rem(100px 0 75px);
 
+    @include media-breakpoint-down(md){
+      min-height: calc(100vh - 54px);
+    }
+
     @include media-breakpoint-down(sm){
+      min-height: unset;
       padding: rem(70px 0);
     }
 
     .svg-wrap {
       text-align: center;
-      margin: 0 0 rem(70px);
+      margin: 0 0 rem(50px);
     }
 
     .section-heading {
@@ -20,11 +25,11 @@
       text-transform: uppercase;
       color: $white;
       letter-spacing: 1px;
-      margin: 0 0 rem(56px);
+      margin: 0 0 rem(36px);
 
       @include media-breakpoint-down(sm){
         font-size: rem(32px);
-        margin: 0 0 rem(40px);
+        margin: 0 0 rem(24px);
       }
     }
 
@@ -65,4 +70,8 @@
   .cls-1{
     fill: $white;
   }
+
+  .cls-2 {
+    fill: $chambray;
+    }
 }
