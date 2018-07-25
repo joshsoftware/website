@@ -28,6 +28,11 @@
     margin: 0 auto rem(30px);
     min-height:rem(104px);
 
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(20px);
+      min-height:rem(150px);
+    }
+
     @include media-breakpoint-down(sm) {
       margin: 0 0 rem(20px);
       min-height:rem(230px);
