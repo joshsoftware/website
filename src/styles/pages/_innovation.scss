@@ -25,21 +25,15 @@
   }
 
   .info-wrap {
-    width: 80%;
     margin: 0 auto rem(30px);
     min-height:rem(104px);
 
-    @include media-breakpoint-down(md) {
-      width: 90%;
-    }
-
     @include media-breakpoint-down(sm) {
-      width: 100%;
       margin: 0 0 rem(20px);
       min-height:rem(230px);
     }
 
-    .title {
+    p {
       font-size: rem(18px);
       line-height: rem(24px);
       font-weight: 300;
@@ -54,11 +48,14 @@
   }
 }
 #carouselInnovation{
-  margin-bottom: rem(80px);
+  width: 80%;
+  margin: 0 auto rem(80px);
   padding:0 0 rem(40px);
+
   @include media-breakpoint-down(sm) {
     margin-bottom: rem(48px);
   }
+
   li{
     background-color:$white ;
     border:3px solid rgba($roman,0.5);
@@ -66,6 +63,7 @@
     height: rem(15px);
     border-radius: rem(10px);
   }
+
   img{
     margin:0 auto;
     margin-bottom: rem(20px);
@@ -75,23 +73,60 @@
       width: 80%;
     }
   }
+
   ol{
     margin: 0;
     bottom: 0;
+
     .active{
       background-color: $roman;
     }
   }
-}
-.img-desktop{
-  display: block;
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-}
-.img-mobile{
-  display: none;
-  @include media-breakpoint-down(sm) {
+
+  .img-desktop{
     display: block;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  
+  .img-mobile{
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: unset;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: unset;
+    height: unset;
+    display: block;
+    background: none;
+    font-family: 'josh-icons';
+    font-size: rem(24px);
+    font-weight: 700;
+    font-style: normal;
+    color: $gray-20;
+    opacity: 1;
+    text-shadow: 0px 0px 2px $gray-20;
+    margin-top: rem(-200px);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: rem(-300px);
+    }
+  }
+
+  .carousel-control-prev-icon:before {
+    content: "\e909";
+  }
+
+  .carousel-control-next-icon:before {
+    content: "\e90a";
   }
 }
