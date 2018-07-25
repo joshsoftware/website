@@ -69,6 +69,13 @@
   height: 200vh;
   padding: 0;
 
+  @include media-breakpoint-down(md) {
+    
+    &.bg-props {
+      background-position: top right rem(-300px);
+    }
+  }
+
   .overlay-container {
     @include flex(1);
     position: relative;
@@ -80,14 +87,34 @@
     display: inline-block;
     left: 0;
     text-align: center;
+
+    @include media-breakpoint-down(md) {
+      left: 50%;
+      @include translate(-50%, 0);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: unset;
+      left: rem(15px);
+      right: rem(15px);
+      @include translate(0, 0);
+    }
   }
 
   .-slide1 {
     top: calc(50vh - 227px);
+
+    @include media-breakpoint-down(sm) {
+      top: calc(50vh - 187px);
+    }
   }
 
   .-slide2{
     top: calc(150vh - 107px);
+
+    @include media-breakpoint-down(sm) {
+      top: calc(150vh - 148px);
+    }
 
     h1{
       margin: 0 0 rem(48px);
@@ -104,6 +131,11 @@
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     margin: 0;
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(40px);
+      margin: 0 0 rem(16px);
+    }
   }
 
   h3{
@@ -112,6 +144,11 @@
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     margin: 0 0 rem(48px);
     line-height: rem(42px);
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(24px);
+      line-height: rem(32px);
+    }
   }
 
   .btn{
@@ -126,6 +163,11 @@
     letter-spacing: 2px;
     margin: 0 0 rem(17px);
     line-height: normal;
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(18px);
+      line-height: rem(23px);
+    }
   }
 
   .scroll-down {
