@@ -11,15 +11,15 @@
       min-height:rem(213px);
     }
   }
-}
-
-h1{
-  line-height: rem(55px);
-  text-align: center;
-  @include media-breakpoint-down(sm){
-   font-size: rem(32px);
+  .section-heading{
+    text-align: center;
+    @include media-breakpoint-down(sm){
+     font-size: rem(32px);
+    }
   }
 }
+
+
 .client-testimonial{
   .card-wrap{
     margin-bottom: rem(28px);

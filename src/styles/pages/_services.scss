@@ -4,6 +4,13 @@
     background-color: #62AAAC;
     min-height: rem(825px);
     position: relative;
+    @include media-breakpoint-down(md){
+      min-height: rem(430px);
+    }
+
+    @include media-breakpoint-down(sm){
+      min-height: rem(360px);
+    }
     h1{
       text-transform: uppercase;
       text-align: center;
@@ -102,13 +109,6 @@
 
     @include media-breakpoint-down(sm) {
       padding: 0;
-    }
-
-    .img-desktop{
-
-      @include media-breakpoint-down(sm) {
-        // display: none;
-      }
     }
   }
 
