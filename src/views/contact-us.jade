@@ -10,24 +10,24 @@ block content
       .contact-form.section-content
         h1.section-heading We’d love to hear from you!
         p Reach us by using this form
-        form.form-contact
+        form.form-contact(data-toggle="validator",id='contact-form')
           .form-row
             .col-md-6
               .form-group
                 label(for="input-fname") Name
                 span.text-danger *
-                input#input-fname.form-control(type="text")
+                input#input-fname.form-control(type="text",required)
               .form-group
-                label(for="inputEmail") Email
+                label(for="input-email") Email
                 span.text-danger *
-                input#inputEmail.form-control(type="email")
+                input#inputEmail.form-control(type="email",required)
               .form-group
                 label(for="inputnumber") Contact Number
                 input#inputnumber.form-control(type="text")
               .form-group
                 label(for="input-organization") Organization
                 span.text-danger *
-                input#input-organization.form-control(type="text")
+                input#input-organization.form-control(type="text",required)
               .form-group
                 label(for="inputcompany") Job Title
                 input#inputcompany.form-control(type="text")
@@ -42,9 +42,9 @@ block content
               .form-group
                 label(for="exampleFormControlTextarea1") How can we help you?
                 textarea(class="form-control",id="exampleFormControlTextarea1" ,rows="7")
-              .captcha.text-center Captcha
+              .g-recaptcha(data-sitekey='6LcJHvsSAAAAANmruZ9e8eYIq1TyJeZC4Zq6YhDG',data-callback="recaptchaCallback",data-expired-callback="recaptchaExpired")
               .btn-wrap
-                button.btn.btn-gray(type='submit') Submit
+                button.btn.btn-gray(type='submit', id='contact-us-btn') Submit
         form.form-newsletter
           .form-row
             .form-group.col-md-6

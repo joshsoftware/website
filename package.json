@@ -2,6 +2,7 @@
   "name": "twbs-seed",
   "version": "1.0.0",
   "title": "Twitter Bootstrap Seed",
+  "license": "MIT",
   "description": "Boilerplate and custom bootstrap configuration to build faster",
   "keywords": [
     "html5",
