@@ -29,15 +29,27 @@ html(lang="en")
       script(src='scripts/vendors.min.js')
       script(src='scripts/scripts.js')
       script.
-        skrollr.init({
-          smoothScrolling: true,
+        function scrollerInit() {
+          $('#skrollr-body').ready(function() {
+            skrollr.init({
+              smoothScrolling: true,
+            });
+          });
+        }
+        $(function () {
+          if ($(window).width() > 991.98) {
+          skrollr.init().destroy();
+          }
+          $(window).on('resize', function () {
+            if ($(window).width() <= 991.98) {
+              skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+            }
+          });
         });
-        // initialize skrollr if the window width is large enough
-        if $(window).width() < 991.98
-          skrollr.init().destroy()
-        // disable skrollr if the window is resized below 768px wide
-        $(window).on 'resize', ->
-          if $(window).width() <= 991.98
-            skrollr.init().destroy()
-          return
-        return
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 500) {
+            $(".scroll-down").addClass("animated fadeOut");
+          }
+        });
+

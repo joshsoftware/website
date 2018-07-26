@@ -85,6 +85,8 @@ block content
 
 block append scripts
   script.
-    $('html, body').animate({
-      scrollTop: $('#openSource').offset().top
-    }, 'slow');
+    $(document).ready(function () {
+      $('html, body').animate({
+        scrollTop: $('#openSource').offset().top
+      }, 'slow');
+    });
