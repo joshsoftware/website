@@ -2,36 +2,38 @@
 
   &.section-banner{
     min-height:rem(450px);
-    background: transparent url('../images/test-banner.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: $roman url('../images/test-banner.jpg') no-repeat center center;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    
     @include media-breakpoint-down(sm){
       min-height:rem(213px);
     }
   }
   .section-heading{
     text-align: center;
+
     @include media-breakpoint-down(sm){
      font-size: rem(32px);
     }
   }
 }
 
-
 .client-testimonial{
+
   .card-wrap{
     margin-bottom: rem(28px);
   }
 }
+
 .card-client-testimonial{
   border: 0;
   border-radius: 0;
   
   .card-body{
     position: relative;
-    display: flex;
+    @include flexbox();
     padding: rem(70px 84px 28px);
 
     @include media-breakpoint-down(sm){
@@ -39,43 +41,64 @@
       flex-direction: column;
     }
   }
+
   .testimonial-image{
-    flex:0 0 20%;
+    @include flex(0 0 20%);
     padding: 0rem(20px);
+
     @include media-breakpoint-down(sm){
+      @include flex(1);
+      @include order(1);
       text-align: center;
       margin-bottom: rem(16px);
+      padding: 0;
+
+      img {
+        width: 60%;
+      }
     }
   }
-
 }
+
 .testimonial-info{
-  flex:0 0 80%;
+  @include flex(0 0 80%);
   padding: 0rem(20px);
-  & p{
+
+  @include media-breakpoint-down(sm){
+    @include flex(1);
+    @include order(2);
+    padding: 0;
+  }
+  
+  p{
     font-size:rem(14px);
     line-height:rem(24px);
     margin-bottom: rem(47px);
     letter-spacing: rem(1px);
     font-weight: 300;
   }
+
   .para-text{
     margin-bottom: rem(10px);
   }
 }
+
 .clients-info{
   text-align: right;
+
   h6{
     font-size:rem(18px);
     font-weight:700;
     line-height: rem(22px);
     margin-bottom: rem(7px);
   }
-  & p{
+
+  p{
     font-size:rem(16px);
     line-height: rem(19px);
     margin-bottom: 0;
   }
+
   &.left{
     text-align: left;
   }

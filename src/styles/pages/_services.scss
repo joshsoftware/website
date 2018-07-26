@@ -12,6 +12,7 @@
 
     @include media-breakpoint-down(sm){
       min-height: unset;
+      padding: rem(40px 0);
     }
 
     h1{
@@ -20,12 +21,16 @@
       color: $white;
       font-weight: 300;
       margin: 0 0 rem(50px);
+
+      @include media-breakpoint-down(sm){
+        margin: 0 0 rem(40px);
+      }
     }
 
     .para{
       font-weight: 300;
       color: $white;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       margin: 0 0 rem(30px);
 
       @include media-breakpoint-down(sm){
@@ -33,25 +38,6 @@
         line-height: rem(19px);
         margin: 0;
       }
-    }
-  }
-
-  .img-wrap {
-    position: relative;
-  }
-
-  .img-content {
-    position: absolute;
-    
-    p{
-      color: $white;
-      text-align: center;
-      margin: 0;  
-    }
-
-    &.-gear1{
-      top: rem(210px);
-      left: rem(90px);
     }
   }
 
@@ -70,7 +56,77 @@
       letter-spacing: rem(1px);
       text-align: center;
       margin: 0 0 rem(20px);
+
+      @include media-breakpoint-down(sm){
+        margin: 0;
+      }
     }
+  }
+}
+
+.services-banner-svg {
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  .bg-circle {
+    // fill: $fountain-blue;
+    fill: transparent;
+    }
+
+  .gear {
+    cursor: pointer;
+
+    &:hover {
+
+      .title {
+        display: none;
+      }
+
+      .description {
+        display: block;
+      }
+    }
+  }
+
+  .title {
+    fill: $white;
+    stroke: rgba(0,0,0,0);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.024em;
+  }
+
+    .description {
+      display: none;
+      fill: $white;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+    }
+}
+
+.services-banner-svg-sm {
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    margin: 0 0 rem(40px);
+  }
+
+  .title {
+    fill: $white;
+    stroke: rgba(0,0,0,0);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.024em;
+  }
+
+  .description {
+    fill: $white;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
   }
 }
 

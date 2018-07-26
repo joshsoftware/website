@@ -23,7 +23,7 @@ html(lang="en")
       h1 Identity
 
     block footer
-      include ./../inc/footer.jade
+      include ./../inc/footer-home.jade
 
     block scripts
       script(src='scripts/vendors.min.js')
@@ -31,5 +31,13 @@ html(lang="en")
       script.
         skrollr.init({
           smoothScrolling: true,
-          //mobileDeceleration: 0.004
         });
+        // initialize skrollr if the window width is large enough
+        if $(window).width() < 991.98
+          skrollr.init().destroy()
+        // disable skrollr if the window is resized below 768px wide
+        $(window).on 'resize', ->
+          if $(window).width() <= 991.98
+            skrollr.init().destroy()
+          return
+        return

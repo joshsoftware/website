@@ -105,7 +105,7 @@ button:focus {
   padding: rem(80px 16px);
   
   @include media-breakpoint-down(sm){
-    padding: rem(50px 16px);
+    padding: rem(40px 16px);
   }
 
   .card-body{

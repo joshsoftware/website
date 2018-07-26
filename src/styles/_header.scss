@@ -36,12 +36,13 @@
 
     .nav-link {
       color: $gray-60;
-      font-size: 14px;
+      font-size: rem(14px);
       font-weight: 300;
       text-transform: uppercase;
       padding: rem(5px 15px);
 
       @include media-breakpoint-down(md) {
+        font-size: rem(18px);
         color: $gray-20;
         padding: rem(10px 15px);
       }
@@ -53,6 +54,7 @@
 
       &:hover, &:focus {
         color: $gray-20;
+        outline: 0;
       }
     }
 
@@ -73,19 +75,31 @@
   }
 
   .dropdown-menu {
-    background-color: $gray-94;
+    background-color: $white;
     border-radius: 0;
     border: 0 none;
     margin: rem(9px) 0 0;
     padding: rem(5px) 0;
+
+    @include media-breakpoint-down(md) {
+      background-color: rgba(255,255,255,0.7);
+      margin: 0;
+      padding: rem(0 20px);
+    }
   }
 
   .dropdown-item {
     color: $gray-60;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     text-transform: uppercase;
     padding: rem(5px 15px);
+
+    @include media-breakpoint-down(md) {
+      color: $gray-20;
+      font-size: rem(18px);
+      padding: rem(10px 15px);
+    }
 
     &:hover {
       background-color: transparent;
