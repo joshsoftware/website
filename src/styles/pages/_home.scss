@@ -482,6 +482,11 @@
 
 .section-spacer {
   height: 100vh;
+
+  // iPad/Tablet (Portrait/Landscape) and Below(All Mobile Screens)
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    display: none !important;
+  }
 }
 
 // Parallax Scroll SCSS
