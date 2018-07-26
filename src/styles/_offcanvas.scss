@@ -18,13 +18,14 @@ body {
     padding: rem(20px 15px);
     overflow-y: auto;
     visibility: hidden;
-    background-color: rgba($white, 0.68);
+    background-color: rgba($white, 0.8);
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
 
     &.open {
-      left: 0;
+      left: 18%;
+      width: 82%;
       visibility: visible;
     }
   }
