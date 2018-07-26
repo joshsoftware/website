@@ -217,31 +217,6 @@
   .section-heading{
     margin: 0 0 rem(46px);
   }
-
-  .img-horizontal{
-    display: block;
-    margin: 0 0 rem(80px);
-
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
-  }
-
-  .img-vertical{
-    display: none;
-
-    @include media-breakpoint-down(md) {
-      width: 50%;
-      margin: 0 auto rem(50px);
-      display: block;
-    }
-
-    @include media-breakpoint-down(sm) {
-      width: rem(320px);
-      margin: 0 auto;
-      display: block;
-    }
-  }
 }
 
 /* Section Client */
