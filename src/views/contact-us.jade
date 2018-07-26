@@ -37,12 +37,13 @@ block content
                   option - Please Select -
                   option 1
                   option 2
-                small.text-center(id="form-control", class="form-text text-muted") (Potential Customer; Partner or Alliance; Job Seeker)
+                small(id="form-control", class="form-text text-muted") (Potential Customer; Partner or Alliance; Job Seeker)
             .col-md-6
-              .form-group
+              .form-group.textarea-group
                 label(for="exampleFormControlTextarea1") How can we help you?
                 textarea(class="form-control",id="exampleFormControlTextarea1" ,rows="7")
-              .g-recaptcha(data-sitekey='6LcJHvsSAAAAANmruZ9e8eYIq1TyJeZC4Zq6YhDG',data-callback="recaptchaCallback",data-expired-callback="recaptchaExpired")
+              .captcha
+                .g-recaptcha(data-sitekey='6LcJHvsSAAAAANmruZ9e8eYIq1TyJeZC4Zq6YhDG',data-callback="recaptchaCallback",data-expired-callback="recaptchaExpired")
               .btn-wrap
                 button.btn.btn-gray(type='submit', id='contact-us-btn') Submit
         form.form-newsletter
