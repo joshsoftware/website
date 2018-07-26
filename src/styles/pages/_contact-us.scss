@@ -59,7 +59,7 @@
 .form-contact{
   padding-bottom: rem(80px);
   text-align: left;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 
   @include media-breakpoint-down(sm) {
@@ -72,22 +72,27 @@
     font-weight: 300;
     line-height: rem(17px);
   }
+  .textarea-group{
+    margin-bottom: rem(32px);
+  }
   .captcha{
-    height: rem(92px);
-    border: 1px solid #D1CBCB;
-    border-radius: rem(4px);
-    padding: rem(30px);
-    background-color: #fff;
-    margin:rem(34px 0 29px);
+    margin-bottom:rem(32px);
+    display: flex;
+    justify-content: center;
   }
 }
 .form-newsletter{
-  width: 80%;
+  width: 60%;
   margin:0 auto;
   text-align: left;
 
   @include media-breakpoint-down(sm) {
     display: none;
+  }
+  .newsletter-content{
+    display: flex;
+    flex-direction: column;
+    
   }
 
   label{
