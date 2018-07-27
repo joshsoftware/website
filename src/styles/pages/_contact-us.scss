@@ -67,7 +67,7 @@
     width: 90%;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     width: 100%;
     margin: 0;
   }
