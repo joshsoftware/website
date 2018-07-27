@@ -82,6 +82,7 @@
       margin: 0 0 rem(32px);
 
       @include media-breakpoint-down(md) {
+        font-weight: 300;
         margin: 0 0 rem(24px);
       }
     }
@@ -96,6 +97,7 @@
       margin: 0 0 rem(64px);
 
       @include media-breakpoint-down(md) {
+        font-weight: 300;
         margin: 0 0 rem(40px);
       }
       @include media-breakpoint-down(sm) {
@@ -112,6 +114,7 @@
       margin: 0 0 rem(80px);
 
       @include media-breakpoint-down(md) {
+        font-weight: 300;
         margin: 0 0 rem(40px);
       }
       @include media-breakpoint-down(sm) {
@@ -121,6 +124,13 @@
 
     .btn-wrap {
       text-align: center;
+
+      @include media-breakpoint-down(sm){
+        @include flexbox();
+        @include align-items(center);
+        @include flex-direction(column); 
+      }
+      
     }
 
     .btn{
