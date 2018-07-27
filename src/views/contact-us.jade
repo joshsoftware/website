@@ -35,8 +35,9 @@ block content
                 label(for="exampleFormControlSelect1") You are:
                 select#exampleFormControlSelect1.form-control(aria-describedby="form-control")
                   option - Please Select -
-                  option 1
-                  option 2
+                  option Potential Customer
+                  option Partner or Alliance
+                  option Job Seeker
                 small(id="form-control", class="form-text text-muted") (Potential Customer; Partner or Alliance; Job Seeker)
             .col-md-6
               .form-group.textarea-group
@@ -46,14 +47,15 @@ block content
                 .g-recaptcha(data-sitekey='6LcJHvsSAAAAANmruZ9e8eYIq1TyJeZC4Zq6YhDG',data-callback="recaptchaCallback",data-expired-callback="recaptchaExpired")
               .btn-wrap
                 button.btn.btn-gray(type='submit', id='contact-us-btn') Submit
-        form.form-newsletter
-          .form-row
-            .form-group.col-md-6.mb-0
-              label(for="exampleInputEmail1") Interested in our Monthly Newsletter?
-              input(type="email",class="form-control",id="exampleInputEmail1", aria-describedby="emailHelp", placeholder="Enter your Email here")
-            .col-md-6
-              .btn-wrap
-                button.btn.btn-outline-gray(type='submit') Subscribe
+        //=
+          form.form-newsletter
+            .form-row
+              .form-group.col-md-6.mb-0
+                label(for="exampleInputEmail1") Interested in our Monthly Newsletter?
+                input(type="email",class="form-control",id="exampleInputEmail1", aria-describedby="emailHelp", placeholder="Enter your Email here")
+              .col-md-6
+                .btn-wrap
+                  button.btn.btn-outline-gray(type='submit') Subscribe
       .contactus-footer
         .address-wrap
           .row
@@ -73,7 +75,7 @@ block content
               ul.list-inline.list-contact
                 li.contact
                   i.icon-phone
-                  p.font-weight-light.mb-0 +91-20-65313161
+                  p.font-weight-light.mb-0 +91-9028014611 
                 li.josh-email-links
                   .email
                     i.icon-mail
