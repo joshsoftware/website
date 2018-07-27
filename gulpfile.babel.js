@@ -35,7 +35,7 @@ gulp.task('copy', () => {
 
 gulp.task('default', ['clean'], cb => {
   return runSequence(
-    ['templates', 'styles', 'vendors', 'scripts'],
+    ['templates', 'styles', 'vendors', 'scripts', 'pdf'],
     ['fonts', 'images', 'minifyCss'],
     'copy',
     cb
