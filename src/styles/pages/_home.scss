@@ -68,11 +68,15 @@
   @include flexbox();
   height: 200vh;
   padding: 0;
+  background: $gray-10 url("../images/home-banner.jpg");
 
   @include media-breakpoint-down(md) {
+    height: 180vh;
     
     &.bg-props {
-      background-position: top right rem(-300px);
+      background: #121212 url("../images/home-banner-mobile.jpg") no-repeat;
+      background-position: top right;
+      background-size: 100% auto;
     }
   }
 
@@ -112,8 +116,12 @@
   .-slide2{
     top: calc(150vh - 107px);
 
+    @include media-breakpoint-down(md) {
+      top: calc(125vh - 54px);
+    }
+
     @include media-breakpoint-down(sm) {
-      top: calc(150vh - 148px);
+      top: calc(125vh - 148px);
     }
 
     h1{
@@ -127,7 +135,6 @@
   }
 
   h1{
-    font-weight: 100;
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     margin: 0;
@@ -139,7 +146,6 @@
   }
 
   h3{
-    font-weight: 100;
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     margin: 0 0 rem(48px);
@@ -157,7 +163,6 @@
 
   p{
     font-size: 24px;
-    font-weight: 100;
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     letter-spacing: 2px;
@@ -171,7 +176,17 @@
   }
 
   .scroll-down {
-    position: fixed;
+    position: absolute;
+    top: calc(100vh - 142px);
+
+    @include media-breakpoint-down(md) {
+      top: calc(100vh - 102px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: calc(100vh - 92px);
+      display: inline-block !important;
+    }
   }
 }
 

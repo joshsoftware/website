@@ -24,6 +24,18 @@ body {
     transition-property: left, visibility;
 
     &.open {
+      left: rem(80px);
+      width: calc(100% - 80px);
+      visibility: visible;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  .offcanvas-collapse {
+
+    &.open {
       left: 18%;
       width: 82%;
       visibility: visible;

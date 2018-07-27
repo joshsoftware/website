@@ -119,6 +119,10 @@
       }
     }
 
+    .btn-wrap {
+      text-align: center;
+    }
+
     .btn{
       margin: 0 rem(20px) 0 0;
     
@@ -160,16 +164,9 @@
     }
   }
 }
+
 .img-wrap{
   @include media-breakpoint-down(sm) {
     display: none;
-  }
-}
-.btn-wrap{
-  @include media-breakpoint-down(md) {
-    text-align: center;
-   }
-  @include media-breakpoint-down(sm) {
-   text-align: center;
   }
 }

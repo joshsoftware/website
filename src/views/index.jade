@@ -2,20 +2,18 @@ extends ./layouts/parallax-layout.jade
 
 block content
   #skrollr-body
-    section#bannerSlide.section-home.section-overlay.bg-props(style='background-image:url(./images/home-banner.jpg)', data-anchor-target='#bannerSlide')
+    section#bannerSlide.section-home.section-overlay.bg-props(data-anchor-target='#bannerSlide')
       .container.overlay-container
         .overlay-content.-slide1.animated.fadeIn
           h1.display-4 INNOVATION <br>DISRUPTION
           h3 IS THE WAY WE CHANGE <br>THE GAME
           a.btn.btn-outline-danger.text-white(href="contact-us.html") Contact us
           p to change yours
+        a.scroll-down.text-white(href="javascript:void(0);", data-0="opacity: 1", data-490="opacity: 0")
+          i.icon-angle-double-down
         .overlay-content.-slide2
           h1 DISRUPT YOUR INDUSTRY
           p We partner with our clients to conceptualize and create sustainable web-based solutions, enabling high performance and growth in their businesses. We deliver business consultation to simplify technological complexities for better industry practices.
-        a.scroll-down.text-white(href="javascript:void(0);", data-top="opacity: 0", data-bottom="opacity: 1")
-          i.icon-angle-double-down
-
-    section.section-spacer
 
     section#expertiseSlide.section-home.section-expertise.bg-props(style='background-image:url(./images/home-industries.jpg)', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#expertiseSlide')
       .container
@@ -26,8 +24,6 @@ block content
           a.text-white(href="industries.html")
             i.align-middle.icon-arrow-right
             | View All Domains
-
-    section.section-spacer
 
     section#workSlide.section-home.section-work.bg-props(style='background-color:#62AAAC', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#workSlide')
       .container
@@ -181,8 +177,6 @@ block content
             i.align-middle.icon-arrow-right
             | View Our Work
 
-    section.section-spacer
-
     section#clientsSlide.section-home.section-clients.bg-props(style='background-color:#F4F4F4', data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#clientsSlide')
       .container
         h1.section-heading Our Top Clients
@@ -238,8 +232,6 @@ block content
             i.align-middle.icon-arrow-right
             | View Testimonials
 
-    section.section-spacer
-
     section#aboutSlide.section-home.section-about(style='background-color:#D1645D', data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% -100px;', data-anchor-target='#aboutSlide')
       .container
         h1.section-heading About Us
@@ -270,8 +262,6 @@ block content
               p Clients that are working with us <br>for more than 5 years
             .stats.stats-button.d-none.d-lg-block
               a.btn.btn-outline-white(href="team.html") Our Team
-
-    section.section-spacer
 
     section#contactSlide.section-home.section-contact
       .container
