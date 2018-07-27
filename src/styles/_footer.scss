@@ -5,7 +5,7 @@
   min-height: rem(288px);
 
   @include media-breakpoint-up(lg) {
-    height: 40vh;
+    // height: 40vh;
   }
 
   .info-wrap {
@@ -32,6 +32,10 @@
       font-weight: 100;
       margin: 0;
       letter-spacing: rem(1px);
+
+      @include media-breakpoint-down(md) {
+        font-weight: 300;
+      }
     }
   }
 }
@@ -107,6 +111,10 @@
     text-transform: uppercase;
     letter-spacing: rem(1.63px);
     margin: 0 0 rem(24px);
+
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
   }
 }
 
@@ -120,6 +128,10 @@
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: rem(1.35px);
+
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
   }
 
   a{
@@ -128,6 +140,10 @@
     font-weight: 100;
     letter-spacing: rem(1.54px);
     text-decoration: none;
+
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
   }
 
   @include media-breakpoint-down(md) {
@@ -173,6 +189,10 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: rem(7px 14px);
+
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
 
     &:first-child:before {
       border-left: 0 none;
@@ -239,6 +259,7 @@
 
   @include media-breakpoint-down(md) {
     font-size: rem(11px);
+    font-weight: 300;
   }
 
   a {

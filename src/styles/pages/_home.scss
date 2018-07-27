@@ -1,5 +1,5 @@
 .section-home {
-  height: 100vh;
+  // height: 100vh;
   padding: rem(80px 0);
   background-color: $gray-96;
 
@@ -378,7 +378,7 @@
   padding: rem(142px 0 110px);
 
   @include media-breakpoint-up(lg) {
-    height: 60vh;
+    // height: 60vh;
     @include flexbox();
     @include align-items(center);
   }
