@@ -41,15 +41,15 @@ html(lang="en")
           skrollr.init().destroy();
           }
           $(window).on('resize', function () {
-            if ($(window).width() <= 991.98) {
-              skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+            //if ($(window).width() <= 991.98) {
+            //  skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+            //}
+          });
+          $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 500) {
+              $(".scroll-down").addClass("animated fadeOut");
             }
           });
-        });
-        $(window).scroll(function() {
-          var scroll = $(window).scrollTop();
-          if (scroll >= 500) {
-            $(".scroll-down").addClass("animated fadeOut");
-          }
-        });
 
+        });
