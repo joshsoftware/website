@@ -126,13 +126,13 @@ gulp.task('serve', ['templates', 'styles', 'vendors', 'scripts'], () => {
 });
 
 gulp.task('serve:dist', ['default'], () => {
-  browserSync({
-    notify: false,
-    port: 3001,
-    server: {
-      baseDir: [dist]
-    }
-  });
+  //browserSync({
+  //  notify: false,
+  //  port: 3001,
+  //  server: {
+  //    baseDir: [dist]
+  //  }
+  //});
 });
 
 gulp.task('styles', () => {
