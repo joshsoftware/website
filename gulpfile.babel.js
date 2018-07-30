@@ -35,7 +35,6 @@ gulp.task('copy', () => {
 
 gulp.task('default', ['clean'], cb => {
   return runSequence(
-    'lint',
     ['templates', 'styles', 'vendors', 'scripts'],
     ['fonts', 'images', 'minifyCss'],
     'copy',
@@ -75,7 +74,10 @@ gulp.task('lint', () => {
 });
 
 gulp.task('minifyCss', () => {
-  return gulp.src(`${tmp}/styles/main.css`)
+  return gulp.src([
+    `${tmp}/styles/main.css`,
+    `${tmp}/styles/animate.css`
+  ])
   .pipe($.rename(function (path) {
     path.basename += ".min";
     path.extname = ".css"
@@ -124,17 +126,20 @@ gulp.task('serve', ['templates', 'styles', 'vendors', 'scripts'], () => {
 });
 
 gulp.task('serve:dist', ['default'], () => {
-  browserSync({
-    notify: false,
-    port: 3001,
-    server: {
-      baseDir: [dist]
-    }
-  });
+  //browserSync({
+  //  notify: false,
+  //  port: 3001,
+  //  server: {
+  //    baseDir: [dist]
+  //  }
+  //});
 });
 
 gulp.task('styles', () => {
-  return gulp.src(`${src}/styles/main.{scss,sass}`)
+  return gulp.src([
+    `${src}/styles/main.{scss,sass}`,
+    `${vendor}/animate.css/animate.css`,
+  ])
   .pipe($.newer(`${tmp}/styles`))
   .pipe($.sourcemaps.init())
   .pipe($.cssGlobbing({
@@ -172,6 +177,7 @@ gulp.task('vendors', () => {
     `${vendor}/pooper.js/dist/popper.js`,
     `${vendor}/bootstrap/dist/js/bootstrap.js`,
     `${vendor}/swiper/dist/js/swiper.jquery.js`,
+    `${vendor}/skrollr/dist/skrollr.min.js`,
   ])
   .pipe($.newer(`${tmp}/scripts`))
   .pipe($.sourcemaps.init())

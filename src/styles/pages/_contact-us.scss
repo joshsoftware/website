@@ -59,12 +59,17 @@
 .form-contact{
   padding-bottom: rem(80px);
   text-align: left;
-  width: 80%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 0 auto rem(80px);
+  padding: 0 rem(15px);
+
+  @include media-breakpoint-down(md) {
+    width: 90%;
+  }
 
   @include media-breakpoint-down(sm) {
-    width:100%;
-    // margin: 0 rem(-15px);
+    width: 100%;
+    margin: 0;
   }
 
   label{
@@ -72,22 +77,37 @@
     font-weight: 300;
     line-height: rem(17px);
   }
+  .textarea-group{
+    margin-bottom: rem(32px);
+  }
   .captcha{
-    height: rem(92px);
-    border: 1px solid #D1CBCB;
-    border-radius: rem(4px);
-    padding: rem(30px);
-    background-color: #fff;
-    margin:rem(34px 0 29px);
+    margin-bottom:rem(32px);
+    display: flex;
+    justify-content: center;
   }
 }
 .form-newsletter{
-  width: 80%;
+  width: 60%;
   margin:0 auto;
   text-align: left;
 
+  @include media-breakpoint-down(md) {
+    width: 90%;
+  }
+
   @include media-breakpoint-down(sm) {
     display: none;
+  }
+
+  .form-row {
+    @include align-items(flex-end);
+    padding: 0 rem(15px);
+  }
+
+  .newsletter-content{
+    display: flex;
+    flex-direction: column;
+    
   }
 
   label{
@@ -114,14 +134,17 @@
 
   @include media-breakpoint-down(sm) {
     margin-bottom: rem(77px);
-   }
+  }
+
   i{
     font-size: rem(45px);
     margin-bottom: rem(30px);
+
     @include media-breakpoint-down(sm) {
       margin-bottom: rem(11px);
-     }
+    }
   }
+
   p{
     font-size: rem(16px);
     font-weight: 300;
@@ -132,6 +155,7 @@
      }
   }
 }
+
 .contact{
   display: flex;
   flex-direction: column;
@@ -139,20 +163,22 @@
 
   @include media-breakpoint-down(sm) {
     margin-bottom: rem(80px);
-   }
+  }
+
   i{
     font-size: rem(32px);
     margin-bottom: rem(38px);
 
     @include media-breakpoint-down(sm) {
       margin-bottom: rem(11px);
-     }
+    }
   }
 }
 .email{
   display: flex;
   flex-direction: column;
   align-items: center;
+
   i{
     font-size: rem(25px);
     margin-bottom: rem(38px);
@@ -161,10 +187,12 @@
       margin-bottom: rem(11px);
      }
   }
+
   a{
     color: $white;
   }
 }
+
 .josh-email-links{
   display: flex;
   flex-direction: column;
@@ -178,5 +206,46 @@
      display: none !important;
     }
     
+  }
+}
+
+.address-wrap {
+  width: 80%;
+  padding: 0 rem(15px);
+  margin: 0 auto;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  .list-contact {
+    @include flexbox();
+    @include align-items(baseline);
+    margin: 0 0 rem(40px);
+
+    @include media-breakpoint-down(sm) {
+      @include flex-direction(column);
+      @include align-items(center);
+    }
+
+    > li{
+      @include flex(0 0 50%);
+      max-width: 50%;
+    }
+  }
+
+  .social-media-links {
+    max-width: 50%;
+    margin-left: auto;
+    @include justify-content(center);
+    padding: rem(40px 0 0);
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+
+    .svg-fill {
+      fill: $roman;
+    }
   }
 }

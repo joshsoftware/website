@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    block head
+      meta(charset="utf-8")
+      meta(content="IE=edge", http-equiv="X-UA-Compatible")
+      meta(content="width=device-width, initial-scale=1, user-scalable=0", name="viewport")
+      meta(content='Ruby on Rails, RoR, India, Rails development, open source, Web application development', name='keywords')
+      meta(content='Ruby on Rails experts in India and we believe that programming is an Art', name='description')
+      // Favicons
+      link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed.png')
+      link(rel='icon', href='favicon.ico')
+      title Technology Expert Solution Providers in India | Josh Software Private Limited
+      link(rel='stylesheet', href="styles/main.css")
+      link(rel='stylesheet', href="styles/animate.css")
+      link(href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700', rel='stylesheet')
+      //[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]
+  body
+    block header
+      include ./../inc/header.jade
+
+    block content
+      h1 Identity
+
+    block footer
+      include ./../inc/footer-home.jade
+
+    block scripts
+      script(src='scripts/vendors.min.js')
+      script(src='scripts/scripts.js')
+      script.
+        function scrollerInit() {
+          $('#skrollr-body').ready(function() {
+            skrollr.init({
+              smoothScrolling: true,
+            });
+          });
+        }
+        $(function () {
+          if ($(window).width() > 991.98) {
+          skrollr.init().destroy();
+          }
+          $(window).on('resize', function () {
+            //if ($(window).width() <= 991.98) {
+            //  skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+            //}
+          });
+          $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 500) {
+              $(".scroll-down").addClass("animated fadeOut");
+            }
+          });
+
+        });
