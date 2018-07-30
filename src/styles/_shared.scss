@@ -293,6 +293,7 @@ button:focus {
   iframe{
     width: auto;
     height: rem(310px);
+    border: none;
 
     @include media-breakpoint-down(md) {
       height: rem(290px);
@@ -303,5 +304,11 @@ button:focus {
     }
     
   }
+}
+
+img {
+  font-size: rem(12px);
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 /* shared end */

@@ -58,12 +58,13 @@
   padding:0 0 rem(40px);
 
   @include media-breakpoint-down(sm) {
+    width: 100%;
     margin-bottom: rem(48px);
   }
 
   li{
     background-color:$white ;
-    border:3px solid rgba($roman,0.5);
+    border: 3px solid rgba($roman,0.5);
     width:rem(15px);
     height: rem(15px);
     border-radius: rem(10px);
@@ -73,10 +74,6 @@
     margin:0 auto;
     margin-bottom: rem(20px);
     width: rem(455px);
-
-    @include media-breakpoint-down(sm) {
-      width: 80%;
-    }
   }
 
   ol{
@@ -106,6 +103,21 @@
 
   .carousel-control-prev, .carousel-control-next {
     width: unset;
+    opacity: 1;
+  }
+
+  .carousel-control-prev {
+
+    @include media-breakpoint-down(sm) {
+      left: rem(-11px);
+    }
+  }
+
+  .carousel-control-next {
+   
+    @include media-breakpoint-down(sm) {
+      right: rem(-12px);
+    }
   }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -114,16 +126,15 @@
     display: block;
     background: none;
     font-family: 'josh-icons';
-    font-size: rem(24px);
-    font-weight: 700;
+    font-size: rem(40px);
     font-style: normal;
     color: $gray-20;
     opacity: 1;
-    text-shadow: 0px 0px 2px $gray-20;
     margin-top: rem(-200px);
 
     @include media-breakpoint-down(sm) {
       margin-top: rem(-300px);
+      font-size: rem(32px);
     }
   }
 
