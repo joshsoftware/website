@@ -1,6 +1,6 @@
 .section-home {
   padding: rem(150px 0 75px);
-  background-color: $gray-96;
+  // background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
     padding: rem(100px 0 50px);
@@ -91,7 +91,9 @@
 
 .section-work {
   min-height: unset;
-  background-color: $fountain-blue;
+  background:url("../images/home-service-bg.jpg") no-repeat top center;
+  background-size: cover;
+  // background-color: $fountain-blue;
 
   .section-heading{
     margin: 0 0 rem(46px);
@@ -124,7 +126,8 @@
 
 /* Section Client */
 .section-clients {
-
+  background:url("../images/home-clients-bg.jpg") no-repeat top center;
+  background-size: cover;
   .section-heading {
     margin: 0 0 rem(72px);
     color: #666;
@@ -173,7 +176,9 @@
 /* End */
 
 .section-about {
-  background-color: $roman;
+  // background-color: $roman;
+  background:url("../images/home-aboutus-bg.jpg") no-repeat top center;
+  background-size: cover;
 
   .section-heading {
     margin: 0 0 rem(30px);
