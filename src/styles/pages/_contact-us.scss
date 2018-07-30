@@ -2,7 +2,7 @@
 
   &.section-banner{
     min-height: rem(527px);
-    background: transparent url("../images/contact-banner.jpg") no-repeat bottom center;
+    background: transparent url("#{$assets_url}images/contact-banner.jpg") no-repeat bottom center;
     background-size: cover;
 
     @include media-breakpoint-down(sm) {

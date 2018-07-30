@@ -2,7 +2,7 @@
 
   &.section-banner{
     min-height:rem(450px);
-    background: $roman url('../images/test-banner.jpg') no-repeat center center;
+    background: $roman url('#{$assets_url}images/test-banner.jpg') no-repeat center center;
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(center);

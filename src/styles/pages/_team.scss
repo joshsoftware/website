@@ -3,7 +3,7 @@
 
   &.section-banner{
     position: relative;
-    background: transparent url('../images/team-banner@2x.jpg') no-repeat center center;
+    background: transparent url('#{$assets_url}images/team-banner@2x.jpg') no-repeat center center;
     background-size: cover;
     min-height: rem(825px);
 

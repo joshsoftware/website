@@ -1,7 +1,7 @@
 .section-open_source {
 
   &.section-banner {
-    background: transparent url('../images/opensource-banner.jpg') no-repeat center center;
+    background: transparent url('#{$assets_url}images/opensource-banner.jpg') no-repeat center center;
     background-size: cover;
     min-height: rem(486px);
 

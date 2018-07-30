@@ -2,7 +2,7 @@
   padding-top: 140px;
   &.section-banner{
     // position: relative;
-    background: transparent url('../images/career-banner.jpg') no-repeat center center;
+    background: transparent url('#{$assets_url}images/career-banner.jpg') no-repeat center center;
     background-size: cover;
     min-height: rem(825px);
     position: relative;
@@ -11,7 +11,7 @@
     }
 
     @include media-breakpoint-down(sm){
-      background: transparent url('../images/career-banner-mobile.jpg') no-repeat center center;
+      background: transparent url('#{$assets_url}images/career-banner-mobile.jpg') no-repeat center center;
       background-size: cover;
     }
   }

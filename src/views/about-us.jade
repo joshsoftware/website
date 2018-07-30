@@ -1,13 +1,13 @@
 extends ./layouts/bootstrap.jade
 
-block vars
-  -var page='About Us'
+block append vars
+  -var page="About Us"
 
 block content
   section.section-aboutus.section-banner
     .heading-overlay
      a(href="https://codecuriosity.org/" target="_blank")
-      img.img-fluid.img-banner(src="./images/gift-group-on-banner.png" alt="Open Source")
+      img.img-fluid.img-banner(src=asset_url + "images/gift-group-on-banner.png" alt="Open Source")
   section.section-about_info
     .container
       .row
@@ -16,13 +16,13 @@ block content
             h2.wrap-title About Us
             p.wrap-subtitle Our name stands for passion. <br>And, passion for technology <br>is who we are.
             p.para The success of Josh Software is a direct reflection of the magnificent team behind it! Their passion and enthusiasm have been the greatest driving factors and are responsible for every milestone of the brand. Here’s to every individual who has been part of this wonderful journey!
-            img.img-fluid.img-mobile(src="./images/group-photos-mobile.png" alt="Josh Software Team")
+            img.img-fluid.img-mobile(src=asset_url + "images/group-photos-mobile.png" alt="Josh Software Team")
             .btn-wrap
               a.btn.btn-white(href="team.html") Meet Our Team
               a.btn.btn-outline-white(href="career.html") Job Openings
         .col-lg-6.col-md-12
           .img-wrap
-            img.img-fluid(src="./images/group-photos-desktop.png" alt="Josh Software Team")
+            img.img-fluid(src=asset_url + "images/group-photos-desktop.png" alt="Josh Software Team")
   section#news.section-content.section-news
     .container
       .media-wrap
@@ -30,20 +30,20 @@ block content
           ul.list-unstyled.list-media
             li.list-media-item
               .card.card-media
-                iframe(src='https://www.youtube.com/embed/6FbmpdJrZxc?rel=0', allow='autoplay; encrypted-media', allowfullscreen='')
+                iframe(src="https://www.youtube.com/embed/6FbmpdJrZxc?rel=0", allow="autoplay; encrypted-media", allowfullscreen="")
             li.list-media-item
               .card.card-media
                 a.btn-link(href="https://economictimes.indiatimes.com/tech/software/josh-software-sets-up-two-firms-in-internet-of-things-and-app-development-space/articleshow/51322636.cms", target="_blank") 
-                  img.card-img(src='./images/newslink_1@2x.jpg', alt='Josh Software News Articles')
+                  img.card-img(src=asset_url + "images/newslink_1@2x.jpg", alt="Josh Software News Articles")
                   
             li.list-media-item
               .card.card-media
                 a.btn-link(href="https://timesofindia.indiatimes.com/city/pune/tackling-food-wastage-the-it-way/articleshow/58841541.cms", target="_blank") 
-                  img.card-img(src='./images/newslink_2@2x.jpg', alt='Josh Software News Articles')
+                  img.card-img(src=asset_url + "images/newslink_2@2x.jpg", alt="Josh Software News Articles")
             li.list-media-item
               .card.card-media
                 a.btn-link(href="https://www.firstpost.com/tech/news-analysis/startups-stand-to-benefit-most-from-open-source-technologies-by-understanding-it-before-embracing-it-4239439.html", target="_blank") 
-                  img.card-img(src='./images/newslink_3@2x.jpg', alt='Josh Software News Articles')
+                  img.card-img(src=asset_url + "images/newslink_3@2x.jpg", alt="Josh Software News Articles")
       .btn-wrap
         a.btn.btn-gray(href="contact-us.html") Contact Us
         a.btn.btn-outline-gray(href="https://blog.joshsoftware.com/") Blog

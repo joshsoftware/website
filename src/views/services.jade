@@ -1,7 +1,7 @@
 extends ./layouts/bootstrap.jade
 
-block vars
-  -var page='Services'
+block append vars
+  -var page="Services"
 
 block content
   section#servicesTop.section-services.section-banner
@@ -14,7 +14,7 @@ block content
             fill: url(#pattern);
             }
           pattern#pattern(preserveaspectratio='none', width='100%', height='100%', viewbox='0 0 1891 830')
-            image(width='1891', height='830', xlink:href='./images/services-banner-image.png')
+            image(width='1891', height='830', xlink:href=asset_url + 'images/services-banner-image.png')
         g#Group_942(data-name='Group 942', transform='translate(-93 -274)')
           rect#services-gear.cls-1(width='1245', height='546', transform='translate(93 274)')
           g#gear6.gear
@@ -96,7 +96,7 @@ block content
 
       svg.services-banner-svg-sm(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', viewbox='0 0 471.626 1021')
         g#services-gear-mobile(transform='translate(-486 -2011)')
-          image#services-gear-sm(width='471', height='1021', transform='translate(486 2011)', xlink:href='./images/services-gear-sm.png')
+          image#services-gear-sm(width='471', height='1021', transform='translate(486 2011)', xlink:href=asset_url + 'images/services-gear-sm.png')
           g#gear-sm-6
             text#Rescue_Missions_sm.title(data-name='Rescue Missions', transform='translate(572.704 2864.404)')
               tspan(x='23.041', y='18') Rescue 
@@ -164,7 +164,7 @@ block content
               h2.card-title Quickinsure
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_quickinsure.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_quickinsure.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text QuickInsure is a specially developed platform for convenience in buying motor vehicle insurance and third party insurance. Buying an insurance for vehicles can sometimes be a time-consuming task for both vehicle owners and the professional who provides insurance policy options available in the market.QuickInsure is a B2C platform which provides that ease and convenience.
                   .link-box
@@ -181,7 +181,7 @@ block content
               h2.card-title The Pediatric Network
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_tpn.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_tpn.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text This portal helps the doctors to shorten the consultation time as well as automate the process right from registering the patient till the prescription of drugs and referring the patient to other doctors if need be.
                   .link-box
@@ -198,7 +198,7 @@ block content
               h2.card-title We3Health
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_we3health.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_we3health.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text The journey of We3 health started with the birth of Will to Scott Bolick and Brittany Lothe. Will was born premature in the 24 th week of Brittany’s pregnancy at only 770 grams, and he spent his first five months of life in the ICN (Intensive Care Nursery) also called the NICU (Neonatal Intensive Care Unit). They experienced first-hand the complexities and challenges parents face when they have to see their child fighting for his/her life.
                   .link-box
@@ -215,7 +215,7 @@ block content
               h2.card-title Groupbuzz
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_groupbuzz.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_groupbuzz.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text GroupBuzz is dedicated to creating an optimum end user experience for group owners and members. To achieve this, the owners wanted to build a portal that meets the demands of groups of all shapes and sizes wanting a professional website to manage their members and member payments. They also worked towards making GroupBuzz a platform open for different groups where they can plan various meet ups, activities, exchange ideas and manage payments and accounts hassle free, efficiently and fast.
                   .link-box
@@ -232,7 +232,7 @@ block content
               h2.card-title Fundamentor
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_fundamentor.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_fundamentor.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text Fundamentor is an innovative web application that enhances the Quantitative, Verbal, Data inference & Creative thinking aptitude in school students It uses methods which students enjoy, ensuring effective aptitude development.
                   .link-box
@@ -249,7 +249,7 @@ block content
               h2.card-title Brandscope
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_brandscope.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_brandscope.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text Brandscope Pty. Ltd. is focused on providing a streamline solution and maximizes the selling process for suppliers, retailers and agents in Australian fashion and Action Sports industry. Through this platform a supplier gets immediate access to quality retailers using unique and dynamic online tools to launch their brand with speed and efficiency giving them the competitive edge as well as a retailer gets the desired brands where they can view and buy product for their stores.
                   .link-box
@@ -266,7 +266,7 @@ block content
               h2.card-title Phalcomm
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_phalcom.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_phalcom.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text Phalcomm is an E-Commerce Platform which offers online buying of real estate, real time brokerage and generates project specific report. It is used by over 500+ distributor and agents of phalcomm. Software provides real time information of about various bookings in progress across the nation and thus avoid double booking of same property. It also tracks the workflow from booking till allotment of the unit to customer.
                   .link-box
@@ -283,7 +283,7 @@ block content
               h2.card-title SimplySmart
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/simplysmart.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/simplysmart.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text Billing and Management portal which handle hardware devices installed  across multiple sites and based on the data it generate the bill and accept the payments.
                   .link-box
@@ -300,7 +300,7 @@ block content
               h2.card-title Freedom from Diabetes
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_ffd.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_ffd.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text The Freedom from Diabetes app provides education, inspiration and support to its registered diabetic patients and an unique and easy way to stay connected with Dr. Pramod Tripathi and the team of doctors, dieticians, and mentors in the Freedom from Diabetes program. Also provides a way to manage patients data like medical history, payments etc.
                   .link-box
@@ -317,7 +317,7 @@ block content
               h2.card-title Deal Signal
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_dealsignal.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_dealsignal.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text DealSignal provides the most powerful, automated and elegant way to build pipeline on-the-go with a real-time lead feed, leads list, and suggested actions
                   .link-box
@@ -334,7 +334,7 @@ block content
               h2.card-title Swalekhan
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_swalekhan.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_swalekhan.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text This product is ahead of the world. It is 100% accessible Android application used to coach visually challenged kids to learn typying
                   .link-box
@@ -351,7 +351,7 @@ block content
               h2.card-title Yumbox
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_yumbox.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_yumbox.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text Yuhmbox is a weekly subscription service that delivers healthy, organic, ready to eat dinners to schools and offices for busy professional to take home with them
                   .link-box
@@ -368,7 +368,7 @@ block content
               h2.card-title Get a Limo
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_getalimo.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_getalimo.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text This product is build to help Limousine drivers to “page out” jobs if they are busy and give a prompt service to regular customers thus creating a win-win situation for drives themselves, customers and other fellow limo drives
                   .link-box
@@ -385,7 +385,7 @@ block content
               h2.card-title SkoutDeals
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_skoutdeals.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_skoutdeals.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text The only deal finding app you’ll ever need! Finding that great deal is a rush. Yet, finding those great deals from local merchants is not easy. Until now. It starts with having all nearby deals in a single location. No more time spent having to hunt through multiple apps, websites, emails, flyers, newspapers, or direct mail to find that great deal. Some call us the best deal-finding app, ever!
                   .link-box
@@ -402,7 +402,7 @@ block content
               h2.card-title Inmate Aid
               .portfolio-wrap
                 .portfolio-img
-                  img.img-fluid(src="./images/prj_inmateaid.png", alt="IOT-Logo")
+                  img.img-fluid(src=asset_url + "images/prj_inmateaid.png", alt="IOT-Logo")
                 .portfolio-info 
                   p.card-text Help before, during, and after prison. Save money on phone calls. Send magazines, photos, letters, photos, postcards, greeting cards, money.
                   .link-box

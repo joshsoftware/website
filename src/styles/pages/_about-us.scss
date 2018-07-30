@@ -1,7 +1,7 @@
 .section-aboutus{
 
   &.section-banner{
-    background: transparent url('../images/aboutus-banner.jpg') no-repeat center center;
+    background: transparent url('#{$assets_url}images/aboutus-banner.jpg') no-repeat center center;
     background-size: cover;
     min-height:rem(824px);
     position: relative;

@@ -1,7 +1,7 @@
 extends ./layouts/bootstrap.jade
 
-block vars
-  -var page='Industries'
+block append vars
+  -var page="Industries"
 
 block content
   section#industriesTop.section-industries.section-banner
@@ -9,51 +9,51 @@ block content
       ul.list-unstyled.list-industries
         li
          a(href="#public-sector")
-          img.img-fluid(src="./images/public-sector.svg", alt="Public Sector")
+          img.img-fluid(src=asset_url + "images/public-sector.svg", alt="Public Sector")
           span Public Sector
         li
          a(href="#tourisum")
-          img.img-fluid(src="./images/tourisum.svg", alt="Tourisum")
+          img.img-fluid(src=asset_url + "images/tourisum.svg", alt="Tourisum")
           span Tourisum
         li
          a(href="#health")
-          img.img-fluid(src="./images/health.svg", alt="Health")
+          img.img-fluid(src=asset_url + "images/health.svg", alt="Health")
           span Health
         li
          a(href="#insurance")
-          img.img-fluid(src="./images/insurance.svg", alt="Insurance")
+          img.img-fluid(src=asset_url + "images/insurance.svg", alt="Insurance")
           span Insurance
         li
          a(href="#manufacturing")
-          img.img-fluid(src="./images/manufacturing.svg", alt="Manufacturing")
+          img.img-fluid(src=asset_url + "images/manufacturing.svg", alt="Manufacturing")
           span Manufacturing
         li
          a(href="#non-profit")
-          img.img-fluid(src="./images/non-profit.svg", alt="Non-Profit")
+          img.img-fluid(src=asset_url + "images/non-profit.svg", alt="Non-Profit")
           span Non-Profit
         li
          a(href="#e-commerce")
-          img.img-fluid(src="./images/e-commerce.svg", alt="E-commerce")
+          img.img-fluid(src=asset_url + "images/e-commerce.svg", alt="E-commerce")
           span E-commerce
         li
          a(href="#sales")
-          img.img-fluid(src="./images/sales.svg", alt="Sales")
+          img.img-fluid(src=asset_url + "images/sales.svg", alt="Sales")
           span Sales
         li
          a(href="#media")
-          img.img-fluid(src="./images/media.svg", alt="Media")
+          img.img-fluid(src=asset_url + "images/media.svg", alt="Media")
           span Media
         li
          a(href="#sports")
-          img.img-fluid(src="./images/sports.svg", alt="Sports")
+          img.img-fluid(src=asset_url + "images/sports.svg", alt="Sports")
           span Sports
         li
          a(href="#education")
-          img.img-fluid(src="./images/education.svg", alt="Education")
+          img.img-fluid(src=asset_url + "images/education.svg", alt="Education")
           span Education
         li
          a(href="#finance")
-          img.img-fluid(src="./images/finance.svg", alt="Finance")
+          img.img-fluid(src=asset_url + "images/finance.svg", alt="Finance")
           span Finance
       h1.section-heading Industries
       p.para Our expertise lies in open source frameworks, scalable architecture and sustainable technology applications. It also includes new age technologies such as data science (statistical, analytical and predictive) and processes to build disruptive tech solutions
@@ -65,84 +65,84 @@ block content
         #health.card.card-expertise
           .card-body
             h2.card-title Health
-            img.card-img(src="./images/health.png",alt="Health-Logo")
+            img.card-img(src=asset_url + "images/health.png", alt="Health-Logo")
             p.card-text Being an industry expert in creating solutions in healthcare sector, we help in transforming the healthcare delivery and service system. With more than a decade’s experience in making a difference in the healthcare industry, we provide ground-breaking solutions to the clients and help them empower the industry. With an innate focus to innovate and deliver quality and agile services, we have revolutionised us as valuable partners for entities in healthcare industry. The efforts have created new standards of excellence from an industry disruption point of view.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #media.card.card-expertise
           .card-body
             h2.card-title Media
-            img.card-img(src='./images/media.png', alt='Media-Logo')
+            img.card-img(src=asset_url + 'images/media.png', alt='Media-Logo')
             p.card-text We help our clients by providing technical expertise for text, stills, and video cuts to suggest efficient marketing and advertising concepts. Since we are living in an era of data explosion, our team has an ability to process, slice and dice data to withdraw business intelligence and insights for further experience enhancement.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #insurance.card.card-expertise
           .card-body
             h2.card-title Insurance
-            img.card-img(src='./images/insurance.png', alt='Insurance-Logo')
+            img.card-img(src=asset_url + 'images/insurance.png', alt='Insurance-Logo')
             p.card-text We help our customers in developing full-fledged platforms which are today integrated with various insurance companies, to offer instant quotations to the customers. Also, we have developed a complete MIS system for live tracking the sales pertinent to vehicle insurances. Backbone is the state of the art framework for issuing policies which includes features such as gamifications to boost the agency Point of Sale (PoS).
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #sports.card.card-expertise
           .card-body
             h2.card-title Sports
-            img.card-img(src='./images/sports.png', alt='Sports-Logo')
+            img.card-img(src=asset_url + 'images/sports.png', alt='Sports-Logo')
             p.card-text With a team of experts in developing solutions for sports sector, we have gathered enough expertise in developing technologies to enable this sector to disrupt and innovate tech solutions for offering revolutionary customer experience and sector transformation. We are geared up to take the journey ahead with newer and influential technologies such as AI, machine learning with predictive analysis, cloud infrastructure, IoT and big data.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #manufacturing.card.card-expertise
           .card-body
             h2.card-title Manufacturing
-            img.card-img(src='./images/manufacturing.png', alt='Manufacturing-logo')
+            img.card-img(src=asset_url + 'images/manufacturing.png', alt='Manufacturing-logo')
             p.card-text We help manufacturing companies and industries to identify efficiencies by applying the industry 4.0 principles and the industrial Internet of Things by transforming them into a more connected factory. Through our robust IoT framework, we thoroughly apply these methodologies to all the levels for improving the efficiency in the projects, which helps the companies to stand out from their competitors.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #education.card.card-expertise
           .card-body
             h2.card-title Education
-            img.card-img(src='./images/education.png', alt='Education-Logo')
+            img.card-img(src=asset_url + 'images/education.png', alt='Education-Logo')
             p.card-text In the field of education, we develop best of services through new-age tech platforms as the demand is higher than ever. Also, we help companies which focus on education and learnings with AI-led solutions to maximize productivity, simultaneously saving time and resources in their businesses.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #tourisum.card.card-expertise
           .card-body
             h2.card-title Tourisum
-            img.card-img(src='./images/tourisum.png', alt='Tourisum-Logo')
+            img.card-img(src=asset_url + 'images/tourisum.png', alt='Tourisum-Logo')
             p.card-text At Josh Software, we are already ahead of the curve in terms of providing that technological edge to this sector. With a team of experts in developing solutions for tourism sector. AI, machine learning with predictive analysis, cloud infrastructure, IoT and big data are going to influence this sector even more than we could ever imagine. In the past one decade, we have gathered deep expertise and have already started using these technologies to enable this sector to disrupt and innovate for revolutionalizing customer experience and sector transformation.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #finance.card.card-expertise
           .card-body
             h2.card-title Finance
-            img.card-img(src='./images/finance.png', alt='Finance-Logo')
+            img.card-img(src=asset_url + 'images/finance.png', alt='Finance-Logo')
             p.card-text We help our partners in providing them with hassle-free web-based solutions for transactions and which further helps in acquisition and retention of customers. We build robust and fast performing online solution in limited time with deployment of shortest possible team.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #e-commerce.card.card-expertise
           .card-body
             h2.card-title E-commerce
-            img.card-img(src='./images/e-commerce.png', alt='E-commerce-Logo')
+            img.card-img(src=asset_url + 'images/e-commerce.png', alt='E-commerce-Logo')
             p.card-text We ensure that our team remains responsible to provide technical support for e-commerce sector and become a part of their ongoing developments. Our everyday efforts and understanding of the products has successfully delivered quality outputs for the clients in the markets.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #sales.card.card-expertise
           .card-body
             h2.card-title Lead Generation/Sales/Marketing
-            img.card-img(src='./images/sales.png', alt='Sales-Logo')
+            img.card-img(src=asset_url + 'images/sales.png', alt='Sales-Logo')
             p.card-text We help our partners with highly scalable and efficient web-based solutions to revolutionize lead generation and provide holistic account based marketing goal. 
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #public-sector.card.card-expertise
           .card-body
             h2.card-title Public Sector
-            img.card-img(src='./images/public-sector.png', alt='Public-Sector-Logo')
+            img.card-img(src=asset_url + 'images/public-sector.png', alt='Public-Sector-Logo')
             p.card-text We ensure to provide technical support for public sector and become a part of their ongoing developments in improving nation-wide growth. Our understanding of the sector and merging it with useful technical back-up has successfully delivered quality outputs for the clients in the sector.
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
         #non-profit.card.card-expertise
           .card-body
             h2.card-title Non-Profit
-            img.card-img(src='./images/non-profit.png', alt='Non-Profit-Logo')
+            img.card-img(src=asset_url + 'images/non-profit.png', alt='Non-Profit-Logo')
             p.card-text When technology can do wonders, why not do it for the sector it is required for the most? With this intent, we at Josh create web-based solutions for non-for-profit sector as a social duty. We deliver scalable and agile AI-led solutions for empowering our socities. 
             .scroll-top
               a.btn-scroll(href='#industriesTop') go to top
