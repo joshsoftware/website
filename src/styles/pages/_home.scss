@@ -192,7 +192,7 @@
 }
 
 .section-expertise {
-  background: $galliano url("../images/home-industries.jpg") repeat top center;
+  background: $galliano url("../images/home-industries-bg.jpg") repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -222,8 +222,8 @@
 }
 
 .section-work {
+  background: $fountain-blue url("../images/home-service-bg.jpg") no-repeat top center;
   min-height: unset;
-  background-color: $fountain-blue;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -237,6 +237,7 @@
 
 /* Section Client */
 .section-clients {
+  background: $gray-96 url("../images/home-clients-bg.jpg") repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -289,7 +290,7 @@
 /* End */
 
 .section-about {
-  // background-color: $roman;
+  background: $roman url("../images/home-aboutus-bg.jpg") no-repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
