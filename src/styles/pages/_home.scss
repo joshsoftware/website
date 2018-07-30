@@ -68,13 +68,13 @@
   @include flexbox();
   height: 200vh;
   padding: 0;
-  background: $gray-10 url("../images/home-banner.jpg");
+  background: $gray-10 url("#{$assets_url}images/home-banner.jpg");
 
   @include media-breakpoint-down(md) {
     height: 180vh;
     
     &.bg-props {
-      background: #121212 url("../images/home-banner-mobile.jpg") no-repeat;
+      background: #121212 url("#{$assets_url}images/home-banner-mobile.jpg") no-repeat;
       background-position: top right;
       background-size: 100% auto;
     }
@@ -192,7 +192,7 @@
 }
 
 .section-expertise {
-  background: $galliano url("../images/home-industries-bg.jpg") repeat top center;
+  background: $galliano url("#{$assets_url}images/home-industries-bg.jpg") repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -222,7 +222,7 @@
 }
 
 .section-work {
-  background: $fountain-blue url("../images/home-service-bg.jpg") no-repeat top center;
+  background: $fountain-blue url("#{$assets_url}images/home-service-bg.jpg") no-repeat top center;
   min-height: unset;
 
   @include media-breakpoint-up(lg) {
@@ -237,7 +237,7 @@
 
 /* Section Client */
 .section-clients {
-  background: $gray-96 url("../images/home-clients-bg.jpg") repeat top center;
+  background: $gray-96 url("#{$assets_url}images/home-clients-bg.jpg") repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -290,7 +290,7 @@
 /* End */
 
 .section-about {
-  background: $roman url("../images/home-aboutus-bg.jpg") no-repeat top center;
+  background: $roman url("#{$assets_url}images/home-aboutus-bg.jpg") no-repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -375,7 +375,7 @@
 }
 
 .section-contact {
-  background: transparent url("../images/bg-contact.png") no-repeat top center;
+  background: transparent url("#{$assets_url}images/bg-contact.png") no-repeat top center;
   background-size: cover;
   padding: rem(142px 0 110px);
 
@@ -425,7 +425,7 @@
     display: none;
 
     @include media-breakpoint-down(md) {
-      background: transparent url("../images/bg-contact.png") no-repeat top right;
+      background: transparent url("#{$assets_url}images/bg-contact.png") no-repeat top right;
       background-size: cover;
       display: block;
       height: rem(217px);
