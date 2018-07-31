@@ -4,8 +4,9 @@
     // position: relative;
     background: transparent url('#{$assets_url}images/career-banner.jpg') no-repeat center center;
     background-size: cover;
-    min-height: rem(825px);
+    min-height: calc(100vh - 76px);
     position: relative;
+
     @include media-breakpoint-down(md){
       min-height: rem(590px);
     }

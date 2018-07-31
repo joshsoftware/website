@@ -80,6 +80,7 @@
     border: 0 none;
     margin: rem(9px) 0 0;
     padding: rem(5px) 0;
+    @include boxShadow(0 4px 8px 0 rgba(0,0,0,.07));
 
     @include media-breakpoint-down(md) {
       background-color: rgba(255,255,255,0.7);

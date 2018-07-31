@@ -3,11 +3,11 @@ html {
   @include rem-baseline;
 }
 
-body {
-  padding-top: rem(76px);
+#bodyTop {
+  height: rem(76px);
 
   @include media-breakpoint-down(md) {
-    padding-top: rem(54px);
+    height: rem(54px);
   }
 }
 

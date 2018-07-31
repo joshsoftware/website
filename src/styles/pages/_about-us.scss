@@ -3,11 +3,13 @@
   &.section-banner{
     background: transparent url('#{$assets_url}images/aboutus-banner.jpg') no-repeat center center;
     background-size: cover;
-    min-height:rem(824px);
+    min-height: calc(100vh - 76px);
     position: relative;
+
     @include media-breakpoint-down(md) {
       min-height: rem(600px);
     }
+    
     @include media-breakpoint-down(sm) {
       min-height: rem(360px);
     }
