@@ -1,6 +1,7 @@
 .section-innovation{
-  background: transparent url("../images/innov-bg-big.jpg") no-repeat center center;
-  background-size: 100% auto;
+  background: transparent url("../images/innov-bg-big.jpg") no-repeat bottom center;
+  background-size: cover;
+  
     &.section-content {
       padding: rem(60px 0 80px);
 
