@@ -1,6 +1,7 @@
 .section-innovation{
-  background: transparent url("../images/innov-bg-big.jpg") no-repeat center center;
+  background: transparent url("../images/innov-bg-big.jpg") no-repeat bottom center;
   background-size: cover;
+
   @include media-breakpoint-down(sm) {
     background: transparent url("../images/innov-bg-mobile.png") no-repeat bottom center;
   }
