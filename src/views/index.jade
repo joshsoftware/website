@@ -1,10 +1,12 @@
 extends ./layouts/parallax-layout.jade
+block append vars
+  -var title = "Technology Expert Solution Providers in India"
 
 block content
   #skrollr-body
     section#bannerSlide.section-home.section-overlay.bg-props(data-anchor-target='#bannerSlide')
       .container.overlay-container
-        .overlay-content.-slide1.animated.fadeIn
+        .overlay-content.-slide1.animated
           h1.display-4 INNOVATION <br>DISRUPTION
           h3 IS THE WAY WE CHANGE <br>THE GAME
           a.btn.btn-outline-danger.text-white(href="contact-us.html") Contact us
