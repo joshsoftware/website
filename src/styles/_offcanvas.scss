@@ -18,7 +18,7 @@ body {
     padding: rem(20px 15px);
     overflow-y: auto;
     visibility: hidden;
-    background-color: rgba($white, 0.9);
+    background-color: $white;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;

@@ -3,7 +3,6 @@
   background-color: $white;
   @include flexbox();
   @include align-items(center);
-  // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 0px 0px 69px -23px rgba(0,0,0,0.75);
 
   @include media-breakpoint-down(md) {
@@ -75,6 +74,10 @@
 
     &::after{
       margin-left: rem(8px);
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
   }
 
@@ -87,9 +90,11 @@
     @include boxShadow(0 4px 8px 0 rgba(0,0,0,.07));
 
     @include media-breakpoint-down(md) {
-      background-color: rgba(255,255,255,0.7);
+      display: block;
+      background-color: transparent;
       margin: 0;
-      padding: rem(0 20px);
+      padding: rem(0 32px);
+      @include boxShadow(none);
     }
   }
 
@@ -115,6 +120,10 @@
       background-color: $gray-94;
       color: $gray-20;
       font-weight: 700;
+
+      @include media-breakpoint-down(md) {
+        background-color: transparent;
+      }
     }
   }
 }
