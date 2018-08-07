@@ -95,8 +95,12 @@
     span{
       padding:rem(10px) 0;
       color: $white;
-      font-weight:100;
+      font-weight: 100;
       text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
+
+      @include media-breakpoint-down(md) {
+        font-weight: 400;
+      }
     }
 
     @include media-breakpoint-down(md) {
@@ -149,6 +153,10 @@
     margin: 0;
     font-weight: 100;
 
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
+
     @include media-breakpoint-down(sm) {
       font-size: rem(40px);
       margin: 0 0 rem(16px);
@@ -161,6 +169,10 @@
     margin: 0 0 rem(48px);
     line-height: rem(42px);
     font-weight: 100;
+
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size: rem(24px);
@@ -181,6 +193,10 @@
     line-height: normal;
     text-transform: uppercase;
     font-weight: 100;
+
+    @include media-breakpoint-down(md) {
+      font-weight: 300;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size: rem(16px);

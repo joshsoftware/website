@@ -22,6 +22,7 @@ body {
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
+    @include boxShadow(0 6px 8px 0 rgba(0,0,0,.3));
 
     &.open {
       left: rem(80px);
