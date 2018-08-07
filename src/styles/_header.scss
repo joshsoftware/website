@@ -30,6 +30,10 @@
   @include media-breakpoint-down(md) {
     @include align-items(center);
     padding: 0 5px;
+
+    .navbar-toggler:not(:disabled):not(.disabled) {
+      font-size: rem(24px);
+    }
   }
 
   .navbar-nav {

@@ -70,6 +70,10 @@
           fill: $gray-40;
           stroke: $gray-40;
         }
+
+        &.-white-outline {
+          fill: transparent;
+        }
       }
     }
     
@@ -79,7 +83,7 @@
     width: rem(42px);
 
     .svg-fill{
-      fill: $gray-20;
+      fill: transparent;
       stroke: $white;
       stroke-miterlimit: 10;
       transition: fill .1s linear;
@@ -92,6 +96,10 @@
       &.-gray {
         fill: $gray-20;
         stroke: $gray-20;
+      }
+
+      &.-white-outline {
+        fill: $white;
       }
     }
   }

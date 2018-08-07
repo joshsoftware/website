@@ -61,6 +61,7 @@
     background-color: rgba($color: #C7AB0D, $alpha: 1.0);
     min-height: rem(192px);
     border: 1px solid rgba($white, 0.35);
+    position: relative;
 
     &:nth-child(2){
       background-color: #C0A218;
@@ -145,26 +146,50 @@
     &:hover  {
       text-decoration: none;
 
-      img {
-        display: none;
+      .overlay {
+        @include opacity(1);
       }
 
-      span {
-        display: inline-block;
-        font-weight: 400;
-        color: $white;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+      img {
+        @include opacity(0);
       }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      @include opacity(0);
+      transition: all .1s ease;
+      padding: rem(8px);
+    }
+
+    span {
+      display: inline-block;
+      font-weight: 400;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);;
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
     }
    
-    span {
-      display: none;
-    }
-
     img {
       height: 80px;
-      @include opacity(0.8);
+      @include opacity(1);
+      transition: all .1s ease;
 
       @include media-breakpoint-down(md) {
         height: rem(65px);
