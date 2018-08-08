@@ -44,12 +44,13 @@
 
     @include media-breakpoint-down(md) {
       width: 90%;
+      text-align: justify;
     }
 
     @include media-breakpoint-down(sm) {
       width: 100%;
       font-size: rem(16px);
-    line-height: rem(24px);
+      line-height: rem(24px);
     }
   }
 
@@ -97,6 +98,7 @@
     line-height: rem(21px);
     font-weight: 300;
     letter-spacing: 1px;
+    text-align: justify;
   }
 
 }
