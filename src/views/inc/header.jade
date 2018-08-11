@@ -9,23 +9,20 @@ header.josh-header.fixed-top
       #joshOffcanvasNavbar.navbar-collapse.offcanvas-collapse
         .navbar-nav.ml-auto
           a.nav-item.nav-link(href='innovation.html', class= (page === "Innovation") ? "active" : "") Innovation
-          .dropdown
-            a#servicesDropdownMenu.nav-item.nav-link.dropdown-toggle(href='javascript:void(0);', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', class= (page === "Services" || page === "Our Work") ? "active" : "") Services
-            .dropdown-menu(aria-labelledby='servicesDropdownMenu')
-              a.dropdown-item(href='services.html', class= (page === "Services") ? "active" : "") Services
-              a.dropdown-item(href='services.html#ourWork') Our Work
+          a.nav-item.nav-link(href='services.html', class= (page === "Services") ? "active" : "") Services
           a.nav-item.nav-link(href='technologies.html', class= (page === "Technologies") ? "active" : "") Technologies
           a.nav-item.nav-link(href='industries.html', class= (page === "Industries") ? "active" : "") Industries
           .dropdown
             a#companyDropdownMenu.nav-item.nav-link.dropdown-toggle(href='javascript:void(0);', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', class= (page === "About Us" || page === "Open Source" || page === "News" || page === "Our Team" || page === "Career" || page === "Contact Us" || page === "Testimonials") ? "active" : "") Company
             .dropdown-menu(aria-labelledby='companyDropdownMenu')
               a.dropdown-item(href='about-us.html', class= (page === "About Us") ? "active" : "") About Us
+              a.dropdown-item(href='services.html#ourWork', class= (page === "Services") ? "active" : "") Our Work
               a.dropdown-item(href='open-source.html', class= (page === "Open Source") ? "active" : "") Open Source
               a.dropdown-item(href='about-us.html#news') News
               a.dropdown-item(href='team.html', class= (page === "Our Team") ? "active" : "") Our Team
               a.dropdown-item(href='testimonial.html', class= (page === "Testimonials") ? "active" : "") Testimonials
               a.dropdown-item(href='career.html', class= (page === "Career") ? "active" : "") Career
-              a.dropdown-item.d-none.d-lg-block(href='contact-us.html', class= (page === "Contact Us") ? "active" : "") Contact Us
-              a.dropdown-item.d-none.d-lg-block(href='https://blog.joshsoftware.com/', target="_blank") Blog
-          a.nav-item.nav-link.nav-offcanvas-link(href='contact-us.html', class= (page === "Contact Us") ? "active" : "") Contact Us
-          a.nav-item.nav-link.nav-offcanvas-link(href='https://blog.joshsoftware.com/', target="_blank") Blog
+              a.dropdown-item(href='contact-us.html', class= (page === "Contact Us") ? "active" : "") Contact Us
+              a.dropdown-item(href='https://blog.joshsoftware.com/', target="_blank") Blog
+          //- a.nav-item.nav-link.nav-offcanvas-link(href='contact-us.html', class= (page === "Contact Us") ? "active" : "") Contact Us
+          //- a.nav-item.nav-link.nav-offcanvas-link(href='https://blog.joshsoftware.com/', target="_blank") Blog

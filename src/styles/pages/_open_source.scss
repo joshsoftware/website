@@ -17,7 +17,7 @@
   &.section-content {
 
     @include media-breakpoint-down(sm) {
-      padding: rem(40px 0 0);
+      padding: rem(78px 0 0);
     }
     
     .section-heading {
@@ -30,7 +30,7 @@
       margin: 0 0 rem(80px);
 
       @include media-breakpoint-down(sm) {
-        margin: 0 0 rem(40px);
+        margin: 0 0 rem(24px);
       }
     }
   }
@@ -44,12 +44,13 @@
 
     @include media-breakpoint-down(md) {
       width: 90%;
+      text-align: justify;
     }
 
     @include media-breakpoint-down(sm) {
       width: 100%;
       font-size: rem(16px);
-    line-height: rem(24px);
+      line-height: rem(24px);
     }
   }
 
@@ -97,6 +98,7 @@
     line-height: rem(21px);
     font-weight: 300;
     letter-spacing: 1px;
+    text-align: justify;
   }
 
 }

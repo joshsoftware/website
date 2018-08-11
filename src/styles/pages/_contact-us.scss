@@ -243,9 +243,5 @@
     @include media-breakpoint-down(sm) {
       max-width: 100%;
     }
-
-    .svg-fill {
-      fill: $roman;
-    }
   }
 }

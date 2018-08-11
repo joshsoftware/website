@@ -114,6 +114,7 @@
       letter-spacing: 1px;
       color: $white;
       margin: 0 0 rem(80px);
+      text-align: justify;
 
       @include media-breakpoint-down(md) {
         font-weight: 300;
