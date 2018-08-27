@@ -73,4 +73,29 @@ html(lang="en")
             });
           });
 
+          $.scrollify({
+            section : ".section-home",
+            //- sectionName : "section-name",
+            //- sectionName : false,
+            //- interstitialSection : ".section-contact, .josh-footer"
+            offset : -76,
+            setHeights: false,
+          })
+          
+          function checkWidth() {
+            var $window = $(window);
+            var windowsize = $window.width();
+            if (windowsize <= 991.98) {
+              
+              $.scrollify({
+                offset : -54,
+              });
+              $.scrollify.disable();
+            }
+          }
+          
+          checkWidth();
+          
+          $(window).resize(checkWidth);
+
         });

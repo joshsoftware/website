@@ -1,14 +1,14 @@
 .section-home {
-  // height: 100vh;
+  min-height: calc(100vh - 76px);
   padding: rem(80px 0);
   background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
-    height: unset;
+    min-height: calc(100vh - 54px);
   }
 
   @include media-breakpoint-down(sm) {
-    height: unset;
+    min-height: unset;
   }
 
   .section-heading {
@@ -252,7 +252,6 @@
 
 .section-work {
   background: $fountain-blue url("#{$assets_url}images/home-service-bg.jpg") no-repeat top center;
-  min-height: unset;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
