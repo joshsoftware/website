@@ -1,0 +1,31 @@
+extends ./layouts/bootstrap.jade
+
+block append vars
+  -var page = "Career"
+  -var title = page
+
+block content
+  section.section-description
+    .container.bg-white
+      .description
+        h2 GoLang Developer
+        p Experience : 2 to 3 years
+        p.text-left.font-weight-normal Required Skills :
+        ul.list-group
+          li Good understanding and working experience with channels and go routines.
+          li Webframeworks: either of the following: gin-gonic / beego / buffalo / mux / martini
+          li Experience with development of REST APIs.
+          li Database: Either of the following: MySQL, PostGreSQL
+        br
+        p.text-left.font-weight-normal Good to have :
+        ul.list-group
+          li Database: NO SQL: any of the following: mongo
+          li Experience with: context package, net/http package
+          li Database package: sqlx
+          li Methodologies of highly performative and scaleable application design.
+        br
+        .text-center Send mail to careers@joshsoftware.com
+        //=
+          .btn-wrap.text-center
+            a.btn.btn-outline-gray(href="job-apply.html") Apply
+
