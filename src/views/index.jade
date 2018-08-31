@@ -4,20 +4,24 @@ block append vars
 
 block content
   #skrollr-body
-    section#bannerSlide.section-home.section-overlay.bg-props(data-anchor-target='#bannerSlide')
-      .container.overlay-container
-        .overlay-content.-slide1.animated
-          h1.display-4 INNOVATION
-          span AND
-          h1.display-4.mb-4 DISRUPTION
-          h3 IS THE WAY WE CHANGE <br>THE GAME
-          a.btn.btn-outline-danger.text-white(href="contact-us.html") Contact us
-          p to change yours
-        a.scroll-down.text-white(href="#slide2", data-0="opacity: 1", data-490="opacity: 0")
-          i.icon-angle-double-down
-        #slide2.overlay-content.-slide2
-          h1 DISRUPT YOUR INDUSTRY
-          p We partner with our clients to conceptualize and create sustainable web-based solutions, enabling high performance and growth in their businesses. We deliver business consultation to simplify technological complexities for better industry practices.
+    section.section-overlay.bg-props
+      section#bannerSlide1.section-slide(data-anchor-target='#bannerSlide1')
+        .container.overlay-container
+          .overlay-content.-slide1.animated
+            h1.display-4 INNOVATION
+            span AND
+            h1.display-4.mb-4 DISRUPTION
+            h3 IS THE WAY WE CHANGE <br>THE GAME
+            a.btn.btn-outline-danger.text-white(href="contact-us.html") Contact us
+            p to change yours
+
+          a.scroll-down.text-white(href="#slide2")
+            i.icon-angle-double-down
+      section#bannerSlide2.section-slide(data-anchor-target='#bannerSlide2')
+        .container.overlay-container
+          #slide2.overlay-content.-slide2
+            h1 DISRUPT YOUR INDUSTRY
+            p We partner with our clients to conceptualize and create sustainable web-based solutions, enabling high performance and growth in their businesses. We deliver business consultation to simplify technological complexities for better industry practices.
 
     section#expertiseSlide.section-home.section-expertise.bg-props(data-center='background-position: 50% 0px;', data-top-bottom='background-position: 50% -100px;', data-bottom-top='background-position: 50% 0px;', data-anchor-target='#expertiseSlide')
       .container
@@ -236,7 +240,7 @@ block content
             i.align-middle.icon-arrow-right
             | View Testimonials
 
-    section#aboutSlide.section-home.section-about.bg-props(data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% -100px;', data-anchor-target='#aboutSlide')
+    section#aboutSlide.section-home.section-about.bg-props(data-center='background-position: 50% 0px;', data-bottom-top='background-position: 50% 100px;', data-anchor-target='#aboutSlide')
       .container
         h1.section-heading About Us
         .about-wrap
@@ -269,7 +273,7 @@ block content
             .stats.stats-button
               a.btn.btn-outline-white(href="team.html") Our Team
 
-    section#contactSlide.section-home.section-contact
+    section#contactSlide.section-contact
       .container
         .row
           .col-lg-6.col-md-12

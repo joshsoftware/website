@@ -1,14 +1,14 @@
 .section-home {
-  // height: 100vh;
+  min-height: calc(100vh - 76px);
   padding: rem(80px 0);
   background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
-    height: unset;
+    min-height: calc(100vh - 54px);
   }
 
   @include media-breakpoint-down(sm) {
-    height: unset;
+    min-height: unset;
   }
 
   .section-heading {
@@ -66,6 +66,7 @@
 
 .section-overlay {
   @include flexbox();
+  @include flex-direction(column);
   height: 200vh;
   padding: 0;
   background: $gray-10 url("#{$assets_url}images/home-banner.jpg");
@@ -77,6 +78,15 @@
       background: #121212 url("#{$assets_url}images/home-banner-mobile.jpg") no-repeat;
       background-position: top right;
       background-size: 100% auto;
+    }
+  }
+
+  .section-slide {
+    min-height: calc(100vh - 76px);
+    height:  calc(100vh - 76px);
+
+    @include media-breakpoint-down(md) {
+    height:  calc(100vh - 54px);
     }
   }
 
@@ -120,19 +130,15 @@
     top: calc(50vh - 227px);
 
     @include media-breakpoint-down(sm) {
-      top: calc(50vh - 187px);
+      top: calc(50vh - 217px);
     }
   }
 
   .-slide2{
-    top: calc(150vh - 107px);
-
-    @include media-breakpoint-down(md) {
-      top: calc(125vh - 54px);
-    }
+    top: calc(50vh - 107px);
 
     @include media-breakpoint-down(sm) {
-      top: calc(125vh - 148px);
+      top: calc(50vh - 187px);
     }
 
     h1{
@@ -252,7 +258,6 @@
 
 .section-work {
   background: $fountain-blue url("#{$assets_url}images/home-service-bg.jpg") no-repeat top center;
-  min-height: unset;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
