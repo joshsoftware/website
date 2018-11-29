@@ -115,12 +115,20 @@
 
   .carousel-control-prev {
 
+    @media (max-width: 991px) and (min-width: 768px){
+      left: rem(-24px);
+    }
+
     @include media-breakpoint-down(sm) {
-      left: rem(-11px);
+      left: rem(-12px);
     }
   }
 
   .carousel-control-next {
+
+    @media (max-width: 991px) and (min-width: 768px){
+      right: rem(-24px);
+    }
    
     @include media-breakpoint-down(sm) {
       right: rem(-12px);
