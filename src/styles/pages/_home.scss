@@ -146,11 +146,13 @@
     }
 
     p{
-      font-size: rem(18px);
+      font-size: rem(20px);
+      line-height: rem(26px);
       letter-spacing: 1px;
       font-weight: 300;
       margin: 0 0 rem(13px);
       text-transform: none;
+      text-align: left;
     }
   }
 
