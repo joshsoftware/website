@@ -79,13 +79,43 @@
     margin: 0 0 rem(24px);
   }
 
-  .social-media-links{
+  .professional-platforms{
+    @include flexbox();
+    @include align-items(center);
+    height: rem(38px);
 
-    svg{
+    > a {
       width: rem(38px);
+      height: rem(38px);
+      @include border-radius(50%);
+      margin-left: rem(8px);
 
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         width: rem(32px);
+        height: rem(32px);
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+
+        i{
+          color: $gray-20;
+          transition: color .3s linear;
+        }
+      }
+
+      i {
+        font-size: rem(38px);
+        color: $white;
+        transition: color .3s linear;
+
+        @include media-breakpoint-down(sm) {
+          font-size: rem(32px);
+        }
       }
     }
   }
@@ -114,6 +144,7 @@
   color: $white;
   letter-spacing: rem(1px);
   padding: 0 rem(8px) 0 0;
+  min-height: rem(34px);
 
   h5{
     font-size: rem(20px);
@@ -161,18 +192,43 @@
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.07);
   }
 
-  .social-media-links{
-    margin: 0;
+  .professional-platforms{
+    @include flexbox();
+    @include align-items(center);
+    height: rem(34px);
 
-    a{
-      padding: 0;
-    }
-    
-    svg{
+    > a {
       width: rem(34px);
+      height: rem(34px);
+      @include border-radius(50%);
+      margin-left: rem(8px);
 
-      @include media-breakpoint-down(sm){
-        width: rem(20px);
+      @include media-breakpoint-down(sm) {
+        width: rem(24px);
+        height: rem(24px);
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+
+        i{
+          color: $gray-40;
+          transition: color .3s linear;
+        }
+      }
+
+      i {
+        font-size: rem(34px);
+        color: $gray-20;
+        transition: color .3s linear;
+
+        @include media-breakpoint-down(sm) {
+          font-size: rem(24px);
+        }
       }
     }
   }
