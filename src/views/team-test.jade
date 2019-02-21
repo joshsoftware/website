@@ -1,0 +1,404 @@
+extends ./layouts/bootstrap.jade
+
+block append vars
+  -var page = "Our Team"
+  -var title = page
+  //- Leaders Data
+  -
+    var leaders = [
+      {
+        profilePic: "core-gautam-rege@2x.jpg",
+        name: "Gautam Rege",
+        designation: "Co-Founder & Director",
+        linkedinId: "gautamrege",
+        githubId: "gautamrege"
+      },
+      {
+        profilePic: "core-sethu@2x.jpg",
+        name: "Sethupathi Asokan",
+        designation: "Co-Founder & Director",
+        linkedinId: "sethupathia",
+        githubId: "sethu"
+      },
+      {
+        profilePic: "core-sameer@2x.jpg",
+        name: "Sameer Tilak",
+        designation: "Head of Engineering",
+        linkedinId: "sameer-tilak-425a825",
+        githubId: "Sameer-Tilak"
+      },
+      {
+        profilePic: "core_sachin@2x.jpg",
+        name: "Sachin Shintre",
+        designation: "Head of Engineering",
+        linkedinId: "shintre",
+        githubId: "shintre"
+      },
+      {
+        profilePic: "core_satish-talim@2x.jpg",
+        name: "Satish Talim",
+        designation: "Director",
+        linkedinId: "satishtalim",
+        githubId: "IndianGuru"
+      },
+      {
+        profilePic: "core-vaibhavi@2x.jpg",
+        name: "Vaibhavi",
+        designation: "Director",
+        linkedinId: "",
+        githubId: ""
+      },
+      {
+        profilePic: "core-sundari@2x.jpg",
+        name: "Sundari",
+        designation: "Director",
+        linkedinId: "",
+        githubId: ""
+      },
+      {
+        profilePic: "core_avadhoot@2x.jpg",
+        name: "Avadhoot Bhatye",
+        designation: "Head of Operations- Smart Cities",
+        linkedinId: "avadhoot-bhatye-78082312",
+        githubId: ""
+      },
+      {
+        profilePic: "core_shailesh@2x.jpg",
+        name: "Shailesh Patil",
+        designation: "Software Architect",
+        linkedinId: "shaileshspatil",
+        githubId: "spatil"
+      }
+    ];
+
+  mixin leader-card(leader)
+    .col-lg-4.col-sm-6
+      .card.card-team
+        img.img-fluid(src=asset_url + "images/" + leader.profilePic alt=leader.name)
+        .card-body
+          .person-info
+            h5= leader.name
+            p.designation= leader.designation
+          .professional-platforms
+            if leader.linkedinId
+              a(href="https://www.linkedin.com/in/" + leader.linkedinId, target="_blank")
+                i.icon-linkedin
+            if leader.githubId
+              a(href="https://github.com/" + leader.githubId, target="_blank")
+                i.icon-github
+
+  //- Members Data
+  -
+    var members = [
+      {
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      },{
+        profilePic: "",
+        name: "",
+        githubId: ""
+      }
+    ];
+
+  mixin member-card(member)
+    .col-lg-3.col-md-6.col-6
+      .card.card-team
+        img.img-fluid(src=asset_url + "images/" + member.profilePic alt=member.name)
+        .card-body
+          .person-info.-nerds
+            h5= member.name
+          .professional-platforms
+            if member.githubId
+              a(href="https://github.com/" + member.githubId, target="_blank")
+                i.icon-github
+
+block content
+  section.section-team.section-banner
+    .heading-overlay
+      h1.section-heading Josh Leadership
+    a.scroll-down(href="#ourTeam")
+      i.icon-angle-double-down
+  section#ourTeam.section-content.section-leadership
+    .container
+      .section-header
+        h2.section-heading Josh Leadership
+        p Re-engineering existing inefficient architectures with zero down-time and complete data integrity
+      .row
+        for leader in leaders
+          +leader-card(leader)
+
+  section.section-content.section-nerds
+    .container
+      h1.section-heading Meet Our Nerds
+      .row
+        for member in members
+          +member-card(member)
+
+      .btn-wrap
+        a.btn.btn-gray(href="about-us.html") About Us
+        a.btn.btn-outline-gray(href="career.html") Career
+
+block append scripts
+  script.
+    $(document).ready(function () {
+      $('html, body').animate({
+        scrollTop: $('#ourTeam').offset().top
+      }, 'slow');
+    });
