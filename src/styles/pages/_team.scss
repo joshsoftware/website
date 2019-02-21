@@ -129,7 +129,11 @@
 
   img{
     width: 100%;
-    margin-bottom: rem(15px);
+    margin-bottom: rem(16px);
+
+    @include media-breakpoint-down(sm){
+      margin-bottom: rem(8px);
+    }
   }
 
   .card-body{
@@ -145,6 +149,10 @@
   letter-spacing: rem(1px);
   padding: 0 rem(8px) 0 0;
   min-height: rem(34px);
+
+  @include media-breakpoint-down(sm){
+    min-height: rem(24px);
+  }
 
   h5{
     font-size: rem(20px);
@@ -196,6 +204,10 @@
     @include flexbox();
     @include align-items(center);
     height: rem(34px);
+
+    @include media-breakpoint-down(sm) {
+      height: rem(24px);
+    }
 
     > a {
       width: rem(34px);
