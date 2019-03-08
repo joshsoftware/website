@@ -72,7 +72,7 @@
   background: $gray-10 url("#{$assets_url}images/home-banner-clear.jpeg");
 
   @include media-breakpoint-down(md) {
-    height: 180vh;
+    height: 190vh;
     
     &.bg-props {
       background: #121212 url("#{$assets_url}images/home-banner-mobile.jpg") no-repeat;

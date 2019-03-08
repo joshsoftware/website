@@ -3,6 +3,355 @@ extends ./layouts/bootstrap.jade
 block append vars
   -var page = "Our Team"
   -var title = page
+  //- Leaders Data
+  -
+    var leaders = [
+      {
+        profilePic: "core-gautam-rege@2x.jpg",
+        name: "Gautam Rege",
+        designation: "Co-Founder & Director",
+        linkedinId: "gautamrege",
+        githubId: "gautamrege"
+      },
+      {
+        profilePic: "core-sethu@2x.jpg",
+        name: "Sethupathi Asokan",
+        designation: "Co-Founder & Director",
+        linkedinId: "sethupathia",
+        githubId: "sethu"
+      },
+      {
+        profilePic: "core-vaibhavi@2x.jpg",
+        name: "Vaibhavi",
+        designation: "Director",
+        linkedinId: "",
+        githubId: ""
+      },
+      {
+        profilePic: "core-sundari@2x.jpg",
+        name: "Sundari",
+        designation: "Director",
+        linkedinId: "",
+        githubId: ""
+      },
+      {
+        profilePic: "core_satish-talim@2x.jpg",
+        name: "Satish Talim",
+        designation: "Director",
+        linkedinId: "satishtalim",
+        githubId: "IndianGuru"
+      },
+      {
+        profilePic: "core-sameer@2x.jpg",
+        name: "Sameer Tilak",
+        designation: "Head of Engineering",
+        linkedinId: "sameer-tilak-425a825",
+        githubId: "Sameer-Tilak"
+      },
+      {
+        profilePic: "core_sachin@2x.jpg",
+        name: "Sachin Shintre",
+        designation: "Head of Engineering",
+        linkedinId: "shintre",
+        githubId: "shintre"
+      },
+      {
+        profilePic: "core_shailesh@2x.jpg",
+        name: "Shailesh Patil",
+        designation: "Software Architect",
+        linkedinId: "shaileshspatil",
+        githubId: "spatil"
+      },
+      {
+        profilePic: "core_avadhoot@2x.jpg",
+        name: "Avadhoot Bhatye",
+        designation: "Head of Operations- Smart Cities",
+        linkedinId: "avadhoot-bhatye-78082312",
+        githubId: ""
+      }
+    ];
+
+  mixin leader-card(leader)
+    .col-lg-4.col-sm-6
+      .card.card-team
+        img.img-fluid(src=asset_url + "images/" + leader.profilePic alt=leader.name)
+        .card-body
+          .person-info
+            h5= leader.name
+            p.designation= leader.designation
+          .professional-platforms
+            if leader.linkedinId
+              a(href="https://www.linkedin.com/in/" + leader.linkedinId, target="_blank")
+                i.icon-linkedin
+            if leader.githubId
+              a(href="https://github.com/" + leader.githubId, target="_blank")
+                i.icon-github
+
+  //- Members Data
+  -
+    var members = [
+      {
+        profilePic: "swapnil_chincholkar@2x.jpg",
+        name: "Swapnil Chincholkar",
+        githubId: "swapnilchincholkar"
+      },{
+        profilePic: "harish-patankar@2x.jpg",
+        name: "Harish Patankar",
+        githubId: "harishspatankar"
+      },{
+        profilePic: "suraj-jagtap@2x.jpg",
+        name: "Suraj Jagtap",
+        githubId: "SurajSJagtap"
+      },{
+        profilePic: "ajay-anarse@2x.jpg",
+        name: "Ajay Anarse",
+        githubId: "ajaysudhakaranarse"
+      },{
+        profilePic: "shirish@2x.jpg",
+        name: "Shirish Bankar",
+        githubId: "shirishbankar1"
+      },{
+        profilePic: "mohit-pawar@2x.jpg",
+        name: "Mohit Pawar",
+        githubId: "Mohit-Pawar"
+      },{
+        profilePic: "geetanjali-kokate@2x.jpg",
+        name: "Geetanjali Kokate",
+        githubId: "Geetakokate"
+      },{
+        profilePic: "akshaykumar-kakade@2x.jpg",
+        name: "AkshayKumar Kakade",
+        githubId: "kakadeaa"
+      },{
+        profilePic: "yogesh-khater@2x.jpg",
+        name: "Yogesh Khater",
+        githubId: "yogeshjain999"
+      },{
+        profilePic: "anuja-joshi@2x.jpg",
+        name: "Anuja Joshi",
+        githubId: "anuja-joshi"
+      },{
+        profilePic: "pramod-shinde@2x.jpg",
+        name: "Pramod Shinde",
+        githubId: "pramodshinde"
+      },{
+        profilePic: "nikhil-pathak@2x.jpg",
+        name: "Nikhil Pathak",
+        githubId: ""
+      },{
+        profilePic: "varsha-yadav@2x.jpg",
+        name: "Varsha Yadav",
+        githubId: "varshayadav"
+      },{
+        profilePic: "payal-bhalerao@2x.jpg",
+        name: "Payal Bhalerao",
+        githubId: "Payal13"
+      },{
+        profilePic: "anusha-bhat@2x.jpg",
+        name: "Anusha Bhat",
+        githubId: "A9u"
+      },{
+        profilePic: "sahil-bhatia@2x.jpg",
+        name: "Sahil Bhatia",
+        githubId: "sahilbhatia"
+      },{
+        profilePic: "krishnakant-kumar@2x.jpg",
+        name: "Krishnakant Kumar",
+        githubId: "Krishnakant-android"
+      },{
+        profilePic: "rahul-jadhav@2x.jpg",
+        name: "Rahul Jadhav",
+        githubId: "pain11"
+      },{
+        profilePic: "kiran-chaudhari@2x.jpg",
+        name: "Kiran Chaudhari",
+        githubId: "kirandc"
+      },{
+        profilePic: "shweta-kale@2x.jpg",
+        name: "Shweta Kale",
+        githubId: "Shwetakale"
+      },{
+        profilePic: "amol-udage@2x.jpg",
+        name: "Amol Udage",
+        githubId: "amoludage"
+      },{
+        profilePic: "chandrashekhar-sahu@2x.jpg",
+        name: "Chandrashekhar Sahu",
+        githubId: "shekhar12020"
+      },{
+        profilePic: "ganesh-sagare@2x.jpg",
+        name: "Ganesh Sagare",
+        githubId: "SagareGanesh"
+      },{
+        profilePic: "jyoti-sharma@2x.jpg",
+        name: "Jyoti Sharma",
+        githubId: "JyotiSharma1234"
+      },{
+        profilePic: "swati-jadhav@2x.jpg",
+        name: "Swati Jadhav",
+        githubId: "SwatiJadhav46"
+      },{
+        profilePic: "anil-kumar@2x.jpg",
+        name: "Anil Kumar",
+        githubId: "anilmaurya"
+      },{
+        profilePic: "pooja-mane@2x.jpg",
+        name: "Pooja Mane",
+        githubId: "pooja-mane"
+      },{
+        profilePic: "anuja-ware@2x.jpg",
+        name: "Anuja Ware",
+        githubId: "anujaware"
+      },{
+        profilePic: "amit-kumar@2x.jpg",
+        name: "Amit Kumar",
+        githubId: "amitk"
+      },{
+        profilePic: "megha-brid@2x.jpg",
+        name: "Megha Brid",
+        githubId: ""
+      },{
+        profilePic: "neha-vyas@2x.jpg",
+        name: "Neha Vyas",
+        githubId: ""
+      },{
+        profilePic: "seema-jha@2x.jpg",
+        name: "Seema Jha",
+        githubId: "seemajha"
+      },{
+        profilePic: "ashvini-vibhute@2x.jpg",
+        name: "Ashvini Vibhute",
+        githubId: "ashviniv"
+      },{
+        profilePic: "kiran-deshmukh@2x.jpg",
+        name: "Kiran Deshmukh",
+        githubId: "kirandeshmukh"
+      },{
+        profilePic: "tejasvini-gambhire@2x.jpg",
+        name: "Tejasvini Gambhire",
+        githubId: "tejaswini-gambhire"
+      },{
+        profilePic: "sai-pradhan-lohar@2x.jpg",
+        name: "Sai Pradhan",
+        githubId: ""
+      },{
+        profilePic: "umesh-kanchan@2x.jpg",
+        name: "Umesh Kanchan",
+        githubId: ""
+      },{
+        profilePic: "arvind-mahale@2x.jpg",
+        name: "Arvind Mahale",
+        githubId: ""
+      },{
+        profilePic: "akshay-birajdar@2x.jpg",
+        name: "Akshay Birajdar",
+        githubId: ""
+      },{
+        profilePic: "amit-dhadse@2x.jpg",
+        name: "Amit Dhadse",
+        githubId: "dhadseamit"
+      },{
+        profilePic: "anuj-verma.jpg",
+        name: "Anuj Verma",
+        githubId: "anuj-verma"
+      },{
+        profilePic: "nikhil-mohadikar@2x.jpg",
+        name: "Nikhil Mohadikar",
+        githubId: ""
+      },{
+        profilePic: "ninad-nehete@2x.jpg",
+        name: "Ninad Nehete",
+        githubId: ""
+      },{
+        profilePic: "paritosh-botre@2x.jpg",
+        name: "Paritosh Botre",
+        githubId: "paritoshbotre"
+      },{
+        profilePic: "pinky-rout@2x.jpg",
+        name: "Pinky Rout",
+        githubId: ""
+      },{
+        profilePic: "priyanka-yadav@2x.jpg",
+        name: "Priyanka Yadav",
+        githubId: ""
+      },{
+        profilePic: "raj-kamal-lashkari@2x.jpg",
+        name: "Raj Kamal Lashkari",
+        githubId: "rajlash"
+      },{
+        profilePic: "sambhaji-karad@2x.jpg",
+        name: "Sambhaji Karad",
+        githubId: "sambhaji213"
+      },{
+        profilePic: "tanya-saroha@2x.jpg",
+        name: "Tanya Saroha",
+        githubId: "tanya-saroha"
+      },{
+        profilePic: "anurag.jpg",
+        name: "Anurag",
+        githubId: "apsc92"
+      },{
+        profilePic: "bhagyashri.jpg",
+        name: "Bhagyashri",
+        githubId: ""
+      },{
+        profilePic: "bhuvna.jpg",
+        name: "Bhuvna",
+        githubId: ""
+      },{
+        profilePic: "kiran-mhale.jpg",
+        name: "Kiran Mhale",
+        githubId: ""
+      },{
+        profilePic: "rahul-ojha.jpg",
+        name: "Rahul Ojha",
+        githubId: ""
+      },{
+        profilePic: "rishul.jpg",
+        name: "Rishul",
+        githubId: ""
+      },{
+        profilePic: "rohit.jpg",
+        name: "Rohit",
+        githubId: ""
+      },{
+        profilePic: "rupali.jpg",
+        name: "Rupali",
+        githubId: ""
+      },{
+        profilePic: "shailendra.jpg",
+        name: "Shailendra Kanherkar",
+        githubId: ""
+      },{
+        profilePic: "shivam.jpg",
+        name: "Shivam",
+        githubId: ""
+      },{
+        profilePic: "suhas-more.jpg",
+        name: "Suhas More",
+        githubId: ""
+      },{
+        profilePic: "vaibhav-kale.jpg",
+        name: "Vaibhav Kale",
+        githubId: ""
+      },{
+        profilePic: "vikas-khichar.jpg",
+        name: "Vikas Khichar",
+        githubId: ""
+      }
+    ];
+
+  mixin member-card(member)
+    .col-lg-3.col-md-6.col-6
+      .card.card-team
+        img.img-fluid(src=asset_url + "images/" + member.profilePic alt=member.name)
+        .card-body
+          .person-info.-nerds
+            h5= member.name
+          .professional-platforms
+            if member.githubId
+              a(href="https://github.com/" + member.githubId, target="_blank")
+                i.icon-github
 
 block content
   section.section-team.section-banner
@@ -16,660 +365,16 @@ block content
         h2.section-heading Josh Leadership
         p Re-engineering existing inefficient architectures with zero down-time and complete data integrity
       .row
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core-gautam-rege@2x.jpg" alt="Gautam Rege")
-            .card-body
-              .person-info
-                h5 Gautam Rege
-                p.designation Co-Founder & Director
-              .social-media-links
-                a(href="https://www.linkedin.com/in/gautamrege/", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
+        for leader in leaders
+          +leader-card(leader)
 
-                a(href="https://github.com/gautamrege", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-white(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core-sethu@2x.jpg" alt="Sethupathi Asokan")
-            .card-body
-              .person-info
-                h5 Sethupathi Asokan
-                p.designation Co-Founder & Director
-              .social-media-links
-                a(href="https://www.linkedin.com/in/sethupathia/", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
-
-                a(href="https://github.com/sethu", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-white(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core-sameer@2x.jpg" alt="Sameer Tilak")
-            .card-body
-              .person-info
-                h5 Sameer Tilak
-                p.designation Head of Engineering
-              .social-media-links
-                a(href="https://www.linkedin.com/in/sameer-tilak-425a825/", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
-
-                a(href="https://github.com/Sameer-Tilak", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-white(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core_sachin@2x.jpg" alt="Sachin Shintre")
-            .card-body
-              .person-info
-                h5 Sachin Shintre
-                p.designation Head of Engineering
-              .social-media-links
-                a(href="https://www.linkedin.com/in/shintre/", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
-
-                a(href="https://github.com/shintre", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-white(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core_satish-talim@2x.jpg" alt="Satish Talim")
-            .card-body
-              .person-info
-                h5 Satish Talim
-                p.designation Director
-              .social-media-links
-                a(href="https://www.linkedin.com/in/satishtalim/", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
-
-                a(href="https://github.com/IndianGuru", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-white(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')              
-
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src="images/core-vaibhavi@2x.jpg" alt="Vaibhavi")
-            .card-body
-              .person-info
-                h5 Vaibhavi
-                p.designation Director
-
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src="images/core-sundari@2x.jpg" alt="Sundari")
-            .card-body
-              .person-info
-                h5 Sundari
-                p.designation Director
-
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core_avadhoot@2x.jpg" alt="Avadhoot Bhatye")
-            .card-body
-              .person-info
-                h5 Avadhoot Bhatye
-                p.designation Head of Operations- Smart Cities
-              .social-media-links
-                a(href="https://www.linkedin.com/in/avadhoot-bhatye-78082312", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
-        .col-lg-4.col-sm-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/core_shailesh@2x.jpg" alt="Shailesh Patil")
-            .card-body
-              .person-info
-                h5 Shailesh Patil
-                p.designation Software Architect
-              .social-media-links
-                a(href="https://www.linkedin.com/in/shaileshspatil/", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.91 43.795')
-                    path.svg-fill.-white(d='M100.4,240.59a21.01,21.01,0,0,1,10.17,2.677,24.812,24.812,0,0,1,3.881,2.791,19.933,19.933,0,0,1,3.454,3.909,17.549,17.549,0,0,1,2.616,5.4,27.754,27.754,0,0,1,.871,3.588,19.238,19.238,0,0,1,.207,4.353,22.422,22.422,0,0,1-2.892,9.393,21.3,21.3,0,0,1-9.645,8.775,20.705,20.705,0,0,1-5.65,1.672c-.651.081-1.294.122-1.94.15-.236,0-.468.073-.7.085h-1.22c-.2,0-.407-.09-.606-.09a17.752,17.752,0,0,1-5.288-.9,21.222,21.222,0,0,1-11.707-9.161,22.755,22.755,0,0,1-1.806-3.661,25.434,25.434,0,0,1-.98-3.38,15.2,15.2,0,0,1-.26-1.924c-.065-.553-.151-1.111-.171-1.668a23.57,23.57,0,0,1,.321-3.966,19.864,19.864,0,0,1,1.009-4,20.583,20.583,0,0,1,2.583-4.926,14.8,14.8,0,0,1,1.749-2.123,24.1,24.1,0,0,1,4.031-3.494,20.576,20.576,0,0,1,5.781-2.624,30.721,30.721,0,0,1,3.535-.712C98.573,240.635,99.395,240.647,100.4,240.59Zm2.168,32.1v-7.867a2.953,2.953,0,0,1,1.123-2.494,2.27,2.27,0,0,1,3.734,1.021,14.068,14.068,0,0,1,.329,2.079c.045,2.18,0,4.361,0,6.545,0,.224.037.452.057.667a18.2,18.2,0,0,0,4.422-.1c0-2.8-.02-5.61,0-8.417a7.257,7.257,0,0,0-.578-3.1,4.658,4.658,0,0,0-2.612-2.518,6.741,6.741,0,0,0-2.534-.342,4.194,4.194,0,0,0-2.953,1.22c-.309.289-.586.61-1.017,1.066v-1.888h-4.5c.118,1.627.045,3.189.057,4.759s0,3.108,0,4.662-.407,3.108-.094,4.682Zm-12-.13a19.974,19.974,0,0,0,4.589.041c.138-1.436.085-13.383-.065-14.018a20.226,20.226,0,0,0-4.524.1Zm2.368-16.174a2.091,2.091,0,0,0,1.53-.346,2.389,2.389,0,0,0,.561-3.535,2.7,2.7,0,0,0-3.136-.712,2.331,2.331,0,0,0-1.318,3.214,2.233,2.233,0,0,0,2.38,1.379Z', transform='translate(-78.23 -240.09)')
-
-                a(href="https://github.com/spatil", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-white(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')             
   section.section-content.section-nerds
     .container
       h1.section-heading Meet Our Nerds
       .row
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-              img.img-fluid(src=asset_url + "images/swapnil_chincholkar@2x.jpg" alt="Swapnil Chincholkar")
-              .card-body
-                .person-info.-nerds
-                  h5 Swapnil Chincholkar
-                .social-media-links
-                  a(href="https://github.com/swapnilchincholkar", target="_blank")
-                    svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                      path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-              img.img-fluid(src=asset_url + "images/harish-patankar@2x.jpg" alt="Harish Patankar")
-              .card-body
-                .person-info.-nerds
-                  h5 Harish Patankar
-                .social-media-links
-                  a(href="https://github.com/harishspatankar", target="_blank")
-                    svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                      path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/suraj-jagtap@2x.jpg" alt="Suraj Jagtap")
-            .card-body
-              .person-info.-nerds
-                h5 Suraj Jagtap
-              .social-media-links
-                a(href="https://github.com/SurajSJagtap", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-              img.img-fluid(src=asset_url + "images/ajay-anarse@2x.jpg" alt="Ajay Anarse")
-              .card-body
-                .person-info.-nerds
-                  h5 Ajay Anarse
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/shirish@2x.jpg" alt="Shirish Bankar")
-            .card-body
-              .person-info.-nerds
-                h5 Shirish Bankar
-              .social-media-links
-                a(href="https://github.com/shirishbankar1", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/mohit-pawar@2x.jpg" alt="Mohit Pawar")
-            .card-body
-              .person-info.-nerds
-                h5 Mohit Pawar
-              .social-media-links
-                a(href="https://github.com/Mohit-Pawar", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/viraj-chavan@2x.jpg" alt="Viraj Chavan")
-            .card-body
-              .person-info.-nerds
-                h5 Viraj Chavan
-              .social-media-links
-                a(href="https://github.com/virajvchavan", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/geetanjali-kokate@2x.jpg" alt="Geetanjali Kokate")
-            .card-body
-              .person-info.-nerds
-                h5 Geetanjali Kokate
-              .social-media-links
-                a(href="https://github.com/Geetakokate", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/akshaykumar-kakade@2x.jpg" alt="AkshayKumar Kakade")
-            .card-body
-              .person-info.-nerds
-                h5 AkshayKumar Kakade
-              .social-media-links
-                a(href="https://github.com/kakadeaa", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/yogesh-khater@2x.jpg" alt="Yogesh Khater")
-            .card-body
-              .person-info.-nerds
-                h5 Yogesh Khater
-              .social-media-links
-                a(href="https://github.com/yogeshjain999", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/pratik-shah@2x.jpg" alt="Pratik Shah")
-            .card-body
-              .person-info.-nerds
-                h5 Pratik Shah
-              .social-media-links
-                a(href="https://github.com/pratik14", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/anuja-joshi@2x.jpg" alt="Anuja Joshi")
-            .card-body
-              .person-info.-nerds
-                h5 Anuja Joshi
-              .social-media-links
-                a(href="https://github.com/anuja-joshi", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/pramod-shinde@2x.jpg" alt="Pramod Shinde")
-            .card-body
-              .person-info.-nerds
-                h5 Pramod Shinde
-              .social-media-links
-                a(href="https://github.com/pramodshinde", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/nikhil-pathak@2x.jpg" alt="Nikhil Pathak")
-            .card-body
-              .person-info.-nerds
-                h5 Nikhil Pathak
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/varsha-yadav@2x.jpg" alt="Varsha Yadav")
-            .card-body
-              .person-info.-nerds
-                h5 Varsha Yadav
-              .social-media-links
-                a(href="https://github.com/varshayadav", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/payal-bhalerao@2x.jpg" alt="Payal Bhalerao")
-            .card-body
-              .person-info.-nerds
-                h5 Payal Bhalerao
-              .social-media-links
-                a(href="https://github.com/Payal13", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)') 
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/anusha-bhat@2x.jpg" alt="Anusha Bhat")
-            .card-body
-              .person-info.-nerds
-                h5 Anusha Bhat
-              .social-media-links
-                a(href="https://github.com/A9u", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/sahil-bhatia@2x.jpg" alt="Sahil Bhatia")
-            .card-body
-              .person-info.-nerds
-                h5 Sahil Bhatia
-              .social-media-links
-                a(href="https://github.com/sahilbhatia", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/krishnakant-kumar@2x.jpg" alt="Krishnakant Kumar")
-            .card-body
-              .person-info.-nerds
-                h5 Krishnakant Kumar
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/rahul-jadhav@2x.jpg" alt="Rahul Jadhav")
-            .card-body
-              .person-info.-nerds
-                h5 Rahul Jadhav
-              .social-media-links
-                a(href="https://github.com/pain11", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/kiran-chaudhari@2x.jpg" alt="Kiran Chaudhari")
-            .card-body
-              .person-info.-nerds
-                h5 Kiran Chaudhari
-              .social-media-links
-                a(href="https://github.com/kirandc", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/shweta-kale@2x.jpg" alt="Shweta Kale")
-            .card-body
-              .person-info.-nerds
-                h5 Shweta Kale
-              .social-media-links
-                a(href="https://github.com/Shwetakale", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/amol-udage@2x.jpg" alt="Amol Udage")
-            .card-body
-              .person-info.-nerds
-                h5 Amol Udage
-              .social-media-links
-                a(href="https://github.com/amoludage", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/chandrashekhar-sahu@2x.jpg" alt="Chandrashekhar Sahu")
-            .card-body
-              .person-info.-nerds
-                h5 Chandrashekhar Sahu
-              .social-media-links
-                a(href="https://github.com/shekhar12020", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/ganesh-sagare@2x.jpg" alt="Ganesh Sagare")
-            .card-body
-              .person-info.-nerds
-                h5 Ganesh Sagare
-              .social-media-links
-                a(href="https://github.com/SagareGanesh", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/jyoti-sharma@2x.jpg" alt="Jyoti Sharma")
-            .card-body
-              .person-info.-nerds
-                h5 Jyoti Sharma
-              .social-media-links
-                a(href="https://github.com/JyotiSharma1234", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/swati-jadhav@2x.jpg" alt="Swati Jadhav")
-            .card-body
-              .person-info.-nerds
-                h5 Swati Jadhav
-              .social-media-links
-                a(href="https://github.com/SwatiJadhav46", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/anil-kumar@2x.jpg" alt="Anil Kumar")
-            .card-body
-              .person-info.-nerds
-                h5 Anil Kumar
-              .social-media-links
-                a(href="https://github.com/anilmaurya", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/pooja-mane@2x.jpg" alt="Pooja Mane")
-            .card-body
-              .person-info.-nerds
-                h5 Pooja Mane
-              .social-media-links
-                a(href="https://github.com/pooja-mane", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/anuja-ware@2x.jpg" alt="Anuja Ware")
-            .card-body
-              .person-info.-nerds
-                h5 Anuja Ware
-              .social-media-links
-                a(href="https://github.com/anujaware", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/amit-kumar@2x.jpg" alt="Amit Kumar")
-            .card-body
-              .person-info.-nerds
-                h5 Amit Kumar
-              .social-media-links
-                a(href="https://github.com/amitk", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/bandana-pandey@2x.jpg" alt="Bandana Pandey")
-            .card-body
-              .person-info.-nerds
-                h5 Bandana Pandey
-              .social-media-links
-                a(href="https://github.com/BandanaPandey", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/megha-brid@2x.jpg" alt="Megha Brid")
-            .card-body
-              .person-info.-nerds
-                h5 Megha Brid
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/neha-vyas@2x.jpg" alt="Neha Vyas")
-            .card-body
-              .person-info.-nerds
-                h5 Neha Vyas
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/seema-jha@2x.jpg" alt="Seema Jha")
-            .card-body
-              .person-info.-nerds
-                h5 Seema Jha
-              .social-media-links
-                a(href="https://github.com/seemajha", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/ashvini-vibhute@2x.jpg" alt="Ashvini Vibhute")
-            .card-body
-              .person-info.-nerds
-                h5 Ashvini Vibhute
-              .social-media-links
-                a(href="https://github.com/ashviniv", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/kiran-deshmukh@2x.jpg" alt="Kiran Deshmukh")
-            .card-body
-              .person-info.-nerds
-                h5 Kiran Deshmukh
-              .social-media-links
-                a(href="https://github.com/kirandeshmukh", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/tejasvini-gambhire@2x.jpg" alt="Tejasvini Gambhire")
-            .card-body
-              .person-info.-nerds
-                h5 Tejasvini Gambhire
-              .social-media-links
-                a(href="https://github.com/tejaswini-gambhire", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/meenakshi-kumari@2x.jpg" alt="Meenakshi Kumari")
-            .card-body
-              .person-info.-nerds
-                h5 Meenakshi Kumari
-              .social-media-links
-                a(href="https://github.com/meenakshikumari", target="_blank")
-                  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 43.957 42.855')
-                    path.svg-fill.-gray(d='M225.936,241.212a21.466,21.466,0,0,0-21.466,21.466h0a21.475,21.475,0,0,0,14.673,20.34c1.074.2,1.464-.468,1.464-1.041s0-2.2-.028-3.995c-5.964,1.3-7.229-2.526-7.229-2.526a5.683,5.683,0,0,0-2.38-3.136c-1.953-1.33.146-1.306.146-1.306a4.52,4.52,0,0,1,3.291,2.209c1.912,3.279,5.02,2.335,6.228,1.782A4.6,4.6,0,0,1,222,272.157c-4.759-.541-9.763-2.384-9.763-10.6a8.319,8.319,0,0,1,2.213-5.772,7.813,7.813,0,0,1,.212-5.7s1.8-.578,5.886,2.2a20.339,20.339,0,0,1,10.739,0c4.092-2.77,5.886-2.2,5.886-2.2a7.786,7.786,0,0,1,.216,5.7,8.283,8.283,0,0,1,2.2,5.756c0,8.238-5.02,10.04-9.8,10.577a5.112,5.112,0,0,1,1.456,3.97c0,2.848-.028,5.191-.028,5.882,0,.57.407,1.22,1.477,1.041a21.446,21.446,0,0,0-6.745-41.806Z', transform='translate(-203.97 -240.7)')
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/sai-pradhan-lohar@2x.jpg" alt="Sai Pradhan")
-            .card-body
-              .person-info.-nerds
-                h5 Sai Pradhan
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/umesh-kanchan@2x.jpg" alt="Umesh Kanchan")
-            .card-body
-              .person-info.-nerds
-                h5 Umesh Kanchan
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/arvind-mahale@2x.jpg" alt="Arvind Mahale")
-            .card-body
-              .person-info.-nerds
-                h5 Arvind Mahale
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/akshay-birajdar@2x.jpg" alt="Akshay Birajdar")
-            .card-body
-              .person-info.-nerds
-                h5 Akshay Birajdar   
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/amit-dhadse@2x.jpg" alt="Amit Dhadse")
-            .card-body
-              .person-info.-nerds
-                h5 Amit Dhadse
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/anuj-verma.jpg" alt="Anuj Verma")
-            .card-body
-              .person-info.-nerds
-                h5 Anuj Verma
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/nikhil-mohadikar@2x.jpg" alt="Nikhil Mohadikar")
-            .card-body
-              .person-info.-nerds
-                h5 Nikhil Mohadikar
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/ninad-nehete@2x.jpg" alt="Ninad Nehete")
-            .card-body
-              .person-info.-nerds
-                h5 Ninad Nehete    
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/paritosh-botre@2x.jpg" alt="Paritosh Botre")
-            .card-body
-              .person-info.-nerds
-                h5 Paritosh Botre
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/pinky-rout@2x.jpg" alt="Pinky Rout")
-            .card-body
-              .person-info.-nerds
-                h5 Pinky Rout
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/priyanka-yadav@2x.jpg" alt="Priyanka Yadav")
-            .card-body
-              .person-info.-nerds
-                h5 Priyanka Yadav
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/raj-kamal-lashkari@2x.jpg" alt="Raj Kamal Lashkari")
-            .card-body
-              .person-info.-nerds
-                h5 Raj Kamal Lashkari
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/sambhaji-karad@2x.jpg" alt="Sambhaji Karad")
-            .card-body
-              .person-info.-nerds
-                h5 Sambhaji Karad    
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/tanya-saroha@2x.jpg" alt="Tanya Saroha")
-            .card-body
-              .person-info.-nerds
-                h5 Tanya Saroha
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/anurag.jpg" alt="Anurag")
-            .card-body
-              .person-info.-nerds
-                h5 Anurag
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/bhagyashri.jpg" alt="Bhagyashri")
-            .card-body
-              .person-info.-nerds
-                h5 Bhagyashri
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/bhuvna.jpg" alt="Bhuvna")
-            .card-body
-              .person-info.-nerds
-                h5 Bhuvna
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/kiran-mhale.jpg" alt="Kiran Mhale")
-            .card-body
-              .person-info.-nerds
-                h5 Kiran Mhale
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/rahul-ojha.jpg" alt="Rahul Ojha")
-            .card-body
-              .person-info.-nerds
-                h5 Rahul Ojha
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/rishul.jpg" alt="Rishul")
-            .card-body
-              .person-info.-nerds
-                h5 Rishul
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/rohit.jpg" alt="Rohit")
-            .card-body
-              .person-info.-nerds
-                h5 Rohit
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/rupali.jpg" alt="Rupali")
-            .card-body
-              .person-info.-nerds
-                h5 Rupali
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/shailendra.jpg" alt="Shailendra Kanherkar")
-            .card-body
-              .person-info.-nerds
-                h5 Shailendra Kanherkar
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/shivam.jpg" alt="Shivam")
-            .card-body
-              .person-info.-nerds
-                h5 Shivam
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/suhas-more.jpg" alt="Suhas More")
-            .card-body
-              .person-info.-nerds
-                h5 Suhas More
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/vaibhav-kale.jpg" alt="Vaibhav Kale")
-            .card-body
-              .person-info.-nerds
-                h5 Vaibhav Kale
-        .col-lg-3.col-md-6.col-6
-          .card.card-team
-            img.img-fluid(src=asset_url + "images/vikas-khichar.jpg" alt="Vikas Khichar")
-            .card-body
-              .person-info.-nerds
-                h5 Vikas Khichar
+        for member in members
+          +member-card(member)
+
       .btn-wrap
         a.btn.btn-gray(href="about-us.html") About Us
         a.btn.btn-outline-gray(href="career.html") Career
