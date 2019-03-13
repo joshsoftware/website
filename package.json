@@ -1,37 +1,20 @@
 {
-  "name": "twbs-seed",
+  "name": "josh-software",
   "version": "1.0.0",
-  "title": "Twitter Bootstrap Seed",
+  "title": "Josh Software",
   "license": "MIT",
-  "description": "Boilerplate and custom bootstrap configuration to build faster",
-  "keywords": [
-    "html5",
-    "css3",
-    "bootstrap",
-    "twbs",
-    "compass",
-    "gulp",
-    "bower",
-    "boilerplate",
-    "semantic",
-    "accessibility"
-  ],
-  "author": "João Paulo Barbosa Neto <jpaulobneto@gmail.com>, Hugo Fabrício <me@hugofabricio.com>",
-  "homepage": "https://github.com/jpaulobneto/twbs-seed",
+  "description": "Official Website of Josh Software",
+  "keywords": ["josh software", "gautam rege"],
+  "author": "Josh Software",
+  "homepage": "https://github.com/joshsoftware",
   "main": "index.js",
   "engines": {
     "node": ">=0.12.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jpaulobneto/twbs-seed.git"
+    "url": "git://github.com/joshsoftware/website.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/jpaulobneto/twbs-seed/master/LICENSE"
-    }
-  ],
   "dependencies": {
     "animate.css": "^3.6.1",
     "bootstrap": "^4.1.1",
@@ -57,14 +40,15 @@
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve && gulp serve:dist"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.3.13",
     "browser-sync": "^2.24.6",
     "del": "^2.2.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.1",
     "gulp-cache": "^0.4.1",
