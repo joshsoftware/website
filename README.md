@@ -9,6 +9,11 @@ npm install
 ```
 
 Starts development:
+
+```
+npm start
+```
+Or
 ```
 gulp serve
 ```
