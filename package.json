@@ -4,7 +4,10 @@
   "title": "Josh Software",
   "license": "MIT",
   "description": "Official Website of Josh Software",
-  "keywords": ["josh software", "gautam rege"],
+  "keywords": [
+    "josh software",
+    "gautam rege"
+  ],
   "author": "Josh Software",
   "homepage": "https://github.com/joshsoftware",
   "main": "index.js",
@@ -21,6 +24,7 @@
     "express": "^4.13.3",
     "jquery": "^3.3.1",
     "jquery-scrollify": "^1.0.19",
+    "moment": "^2.24.0",
     "popper.js": "^1.14.3",
     "sass-flex-mixin": "^1.0.3",
     "sass-rem": "^2.0.1",
@@ -67,6 +71,7 @@
     "gulp-size": "^2.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
+    "jquery-rss": "^3.3.0",
     "run-sequence": "^1.1.5"
   }
 }

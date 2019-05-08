@@ -179,6 +179,8 @@ gulp.task('vendors', () => {
     `${vendor}/swiper/dist/js/swiper.jquery.js`,
     `${vendor}/skrollr/src/skrollr.js`,
     `${vendor}/jquery-scrollify/jquery.scrollify.js`,
+    `${vendor}/moment/min/moment.min.js`,
+    `${vendor}/jquery-rss/dist/jquery.rss.min.js`,
   ])
   .pipe($.newer(`${tmp}/scripts`))
   .pipe($.sourcemaps.init())
