@@ -89,15 +89,33 @@ block append scripts
   script.
     $(document).ready(function () {
       $("#media .content").rss("https://medium.com/feed/joshsoftware/tagged/media", 
-        { entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/><img src="{teaserImageUrl}" width="300"/>{shortBody}</li>'});
+        { 
+          layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+        });
       $("#health .content").rss("https://medium.com/feed/joshsoftware/tagged/healthcare", 
-        { entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/><img src="{teaserImageUrl}" width="300"/>{shortBody}</li>'});
+        { 
+          layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+        });
       $("#insurance .content").rss("https://medium.com/feed/joshsoftware/tagged/insurtech", 
-        { entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/><img src="{teaserImageUrl}" width="300"/>{shortBody}</li>'});
+        { 
+          layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+        });
       $("#sports .content").rss("https://medium.com/feed/joshsoftware/tagged/sports", 
-        { entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/><img src="{teaserImageUrl}" width="300"/>{shortBody}</li>'});
+        { 
+          layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+        });
       $("#manufacturing .content").rss("https://medium.com/feed/joshsoftware/tagged/manufacturing", 
-        { entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/><img src="{teaserImageUrl}" width="300"/>{shortBody}</li>'});
+        { 
+          layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+        });
       $("#finance .content").rss("https://medium.com/feed/joshsoftware/tagged/banking", 
-        { entryTemplate:'<li><a href="{url}">[{author}@{date}] {title}</a><br/><img src="{teaserImageUrl}" width="300"/>{shortBody}</li>'});
+        { 
+          layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+        });
     });
