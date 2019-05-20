@@ -13,7 +13,7 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 set :domain, '139.59.30.77'
 set :deploy_to, '/home/deploy/projects/website_new'
 set :repository, 'git@github.com:joshsoftware/website.git'
-set :branch, 'website-2.0'
+set :branch, 'newtemplate'
 
 #set :identity_file, "#{ENV['HOME']}/.ssh/id_joshsite_rsa"
 set :user, 'deploy'    # Username in the server to SSH to.
