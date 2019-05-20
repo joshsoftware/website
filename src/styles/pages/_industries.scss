@@ -205,3 +205,37 @@
     }
   }
 }
+
+// feed scss
+.list-feed {
+  margin: 0;
+
+  li{
+    margin-top: 2rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.feed {
+  @include flexbox();
+  @include align-items(flex-start);
+  font-weight: 300;
+
+  .img-feed {
+    width: 30%;
+  }
+}
+
+.feed-body {
+  @include flex(1);
+
+  > h5 {
+
+    > a, > a:hover, > a:focus{
+      color: $gray-40;
+    }
+  }
+}
