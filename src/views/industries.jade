@@ -91,31 +91,37 @@ block append scripts
       $("#media .content").rss("https://medium.com/feed/joshsoftware/tagged/media", 
         { 
           layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
-          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>',
+          ssl: true
         });
       $("#health .content").rss("https://medium.com/feed/joshsoftware/tagged/healthcare", 
         { 
           layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
-          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>',
+          ssl: true
         });
       $("#insurance .content").rss("https://medium.com/feed/joshsoftware/tagged/insurtech", 
         { 
           layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
-          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>',
+          ssl: true
         });
       $("#sports .content").rss("https://medium.com/feed/joshsoftware/tagged/sports", 
         { 
           layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
-          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>',
+          ssl: true
         });
       $("#manufacturing .content").rss("https://medium.com/feed/joshsoftware/tagged/manufacturing", 
         { 
           layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
-          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>',
+          ssl: true
         });
       $("#finance .content").rss("https://medium.com/feed/joshsoftware/tagged/banking", 
         { 
           layoutTemplate: '<ul class="list-unstyled list-feed">{entries}</ul>',
-          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>'
+          entryTemplate:'<li class="feed"><img src="{teaserImageUrl}" class="img-feed align-self-start mr-3" alt="Teaser"/><div class="feed-body"><h5 class="font-weight-normal mt-0 mb-1"><a href="{url}" target="_blank">{title}</a></h5><h6 class="font-weight-normal mb-3">{author}, <small class="font-weight-light">{date}</small></h6><div>{shortBody}...</div></div></li>',
+          ssl: true
         });
     });
