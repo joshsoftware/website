@@ -45,11 +45,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp serve && gulp serve:dist"
+    "start": "gulp serve:dist && gulp serve"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.26.0",
     "browser-sync": "^2.24.6",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
