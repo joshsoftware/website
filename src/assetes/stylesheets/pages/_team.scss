@@ -1,0 +1,276 @@
+/* Team Page */
+.section-team{
+
+  &.section-banner{
+    position: relative;
+    background: transparent url('#{$assets_url}images/team-banner@2x.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: calc(100vh - 76px);
+
+    @include media-breakpoint-down(md){
+      min-height: rem(430px);
+    }
+
+    @include media-breakpoint-down(md){
+      min-height: rem(360px);
+    }
+  }
+
+  .heading-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($white, 0.85);
+    min-height: rem(325px);
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(md){
+      min-height: rem(170px);
+    }
+
+    @include media-breakpoint-down(sm) {
+     display: none !important;
+    }
+
+    .section-heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include translate(-50%, -50%);
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.section-leadership {
+  background-color: #7AA6B2;
+  padding: rem(100px 0 40px);
+
+  @include media-breakpoint-down(sm){
+    padding: rem(78px) 0 0;
+  }
+
+  .section-header{
+    display: none;
+
+    @include media-breakpoint-down(sm){
+      display: block;
+      text-align: center;
+      color: $white;
+      margin: 0 0 rem(40px);
+    }
+
+    p{
+      font-size: rem(14px);
+      line-height: rem(20px);
+      font-weight: 300;
+      margin: 0;
+      padding: 0 rem(24px);
+      letter-spacing: 1px;
+    }
+  }
+
+  .section-heading{
+    line-height: rem(39px);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 rem(24px);
+  }
+
+  .professional-platforms{
+    @include flexbox();
+    @include align-items(center);
+    height: rem(38px);
+
+    > a {
+      width: rem(38px);
+      height: rem(38px);
+      @include border-radius(50%);
+      margin-left: rem(8px);
+
+      @include media-breakpoint-down(sm) {
+        width: rem(32px);
+        height: rem(32px);
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+
+        i{
+          color: $gray-20;
+          transition: color .3s linear;
+        }
+      }
+
+      i {
+        font-size: rem(38px);
+        color: $white;
+        transition: color .3s linear;
+
+        @include media-breakpoint-down(sm) {
+          font-size: rem(32px);
+        }
+      }
+    }
+  }
+}
+
+.card-team{
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: rem(40px);
+
+  img{
+    width: 100%;
+    margin-bottom: rem(16px);
+
+    @include media-breakpoint-down(sm){
+      margin-bottom: rem(8px);
+    }
+  }
+
+  .card-body{
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 0 rem(8px);
+    margin: 0;
+  }
+}
+
+.person-info{
+  color: $white;
+  letter-spacing: rem(1px);
+  padding: 0 rem(8px) 0 0;
+  min-height: rem(34px);
+  @include flex(1 1 auto);
+
+  @include media-breakpoint-down(sm){
+    min-height: rem(24px);
+  }
+
+  h5{
+    font-size: rem(20px);
+    margin-bottom: rem(4px);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+    @include media-breakpoint-down(sm){
+      font-size:rem(18px);
+      line-height: normal;
+    }
+  }
+
+  .designation{
+    font-size: rem(18px);
+    line-height: rem(25px);
+    font-weight: 300;
+    margin:0;
+
+    @include media-breakpoint-down(sm){
+      font-size:rem(16px);
+      line-height: normal;
+    }
+  }
+
+  &.-nerds{
+    @include flexbox();
+    @include align-items(center);
+  }
+}
+
+.section-nerds{
+
+  @include media-breakpoint-down(sm){
+    padding: rem(40px) 0 0;
+  }
+
+  .section-heading{
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 0 rem(40px);
+  }
+
+  img{
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.07); 
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.07);
+  }
+
+  .professional-platforms{
+    @include flexbox();
+    @include align-items(center);
+    height: rem(34px);
+
+    @include media-breakpoint-down(sm) {
+      height: rem(24px);
+    }
+
+    > a {
+      width: rem(34px);
+      height: rem(34px);
+      @include border-radius(50%);
+      margin-left: rem(8px);
+
+      @include media-breakpoint-down(sm) {
+        width: rem(24px);
+        height: rem(24px);
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+
+        i{
+          color: $gray-40;
+          transition: color .3s linear;
+        }
+      }
+
+      i {
+        font-size: rem(34px);
+        color: $gray-20;
+        transition: color .3s linear;
+
+        @include media-breakpoint-down(sm) {
+          font-size: rem(24px);
+        }
+      }
+    }
+  }
+
+  h5{
+    margin:0;
+    font-size:rem(18px);
+    font-weight: 300;
+    line-height:rem(22px);
+    letter-spacing: 1px;
+    color:#666;
+
+    @include media-breakpoint-down(sm){
+      font-size:rem(12px);
+      line-height:rem(16px);
+    }
+  }
+
+  .btn-wrap {
+    padding: rem(40px) 0 0;
+
+    @include media-breakpoint-down(sm){
+      padding: 0;
+    }
+  }
+}
+

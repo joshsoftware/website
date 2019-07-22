@@ -1,6 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
+import Layout from './layout';
+
+import './assetes/stylesheets/main.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Layout />
+      </Switch>
+    </BrowserRouter>
+  );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));

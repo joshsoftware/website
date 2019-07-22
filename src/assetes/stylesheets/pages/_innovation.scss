@@ -1,0 +1,163 @@
+.section-innovation{
+  background: transparent url("../images/innov-bg-side.png") no-repeat top left;
+  background-size: auto 75%;
+
+  @include media-breakpoint-down(sm) {
+    background: transparent url("../images/innov-bg-mobile.png") no-repeat top 30px left;
+    background-size: 100% auto;
+  }
+  
+    &.section-content {
+      padding: rem(60px 0 80px);
+
+      @include media-breakpoint-down(sm) {
+        padding: rem(30px 0 0);
+      }
+    }
+  
+  .display-4{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 rem(24px);
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      font-size: rem(40px);
+    }
+  }
+
+  .img-wrap {
+    text-align: center;
+    margin: 0 0 rem(40px);
+  }
+
+  .info-wrap {
+    margin: 0 auto rem(30px);
+    min-height:rem(104px);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 rem(20px);
+      min-height:rem(150px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 rem(20px);
+      min-height:rem(230px);
+    }
+
+    p {
+      font-size: rem(18px);
+      line-height: rem(24px);
+      font-weight: 300;
+      margin: 0 0 rem(6px);
+      letter-spacing: 1px;
+      text-align: justify;
+
+      @include media-breakpoint-down(sm) {
+        font-size:rem(14px);
+      }
+    }
+  }
+}
+#carouselInnovation{
+  width: 80%;
+  margin: 0 auto rem(80px);
+  padding:0 0 rem(40px);
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    margin-bottom: rem(48px);
+  }
+
+  li{
+    background-color:$white ;
+    border: 3px solid rgba($roman,0.5);
+    width:rem(15px);
+    height: rem(15px);
+    border-radius: rem(10px);
+  }
+
+  img{
+    margin:0 auto;
+    margin-bottom: rem(20px);
+    width: rem(632px);
+  }
+
+  ol{
+    margin: 0;
+    bottom: 0;
+
+    .active{
+      background-color: $roman;
+    }
+  }
+
+  .img-desktop{
+    display: block;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  
+  .img-mobile{
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: unset;
+    opacity: 1;
+  }
+
+  .carousel-control-prev {
+
+    @media (max-width: 991px) and (min-width: 768px){
+      left: rem(-24px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      left: rem(-12px);
+    }
+  }
+
+  .carousel-control-next {
+
+    @media (max-width: 991px) and (min-width: 768px){
+      right: rem(-24px);
+    }
+   
+    @include media-breakpoint-down(sm) {
+      right: rem(-12px);
+    }
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: unset;
+    height: unset;
+    display: block;
+    background: none;
+    font-family: 'josh-icons';
+    font-size: rem(40px);
+    font-style: normal;
+    color: $gray-20;
+    opacity: 1;
+    margin-top: rem(-200px);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: rem(-300px);
+      font-size: rem(32px);
+    }
+  }
+
+  .carousel-control-prev-icon:before {
+    content: "\e909";
+  }
+
+  .carousel-control-next-icon:before {
+    content: "\e90a";
+  }
+}

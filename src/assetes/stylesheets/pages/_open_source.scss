@@ -1,0 +1,120 @@
+.section-open_source {
+
+  &.section-banner {
+    background: transparent url('#{$assets_url}images/opensource-banner.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: rem(486px);
+
+    @include media-breakpoint-down(md) {
+      min-height: rem(300px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: rem(200px);
+    }
+  }
+
+  &.section-content {
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(78px 0 0);
+    }
+    
+    .section-heading {
+      font-size: rem(32px);
+      line-height: rem(39px);
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: rem(1px);
+      text-align: center;
+      margin: 0 0 rem(80px);
+
+      @include media-breakpoint-down(sm) {
+        margin: 0 0 rem(24px);
+      }
+    }
+  }
+
+  .txt-info{
+    font-size: rem(18px);
+    line-height: rem(27px);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 0 auto rem(40px);
+
+    @include media-breakpoint-down(md) {
+      width: 90%;
+      text-align: justify;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      font-size: rem(16px);
+      line-height: rem(24px);
+    }
+  }
+
+  .media-wrap {
+    padding: rem(70px) 0 0;
+
+    @include media-breakpoint-down(sm) {
+      padding: rem(25px 0 0);
+    }
+  }
+}
+
+.card-note {
+  @include flex(1 1 auto);
+  @include border-radius(0);
+  border: 0 none;
+  background-color: $tea-green;
+  min-height: rem(268px);
+  margin: 0 0 rem(20px);
+  text-align: justify;
+  padding: 0 rem(10px);
+
+
+  @include media-breakpoint-down(sm) {
+    min-height: unset;
+    margin: 0 0 rem(15px);
+  }
+
+  .card-body{
+    position: relative;
+    padding: rem(20px 20px 48px);
+  }
+
+  .card-title {
+    font-size: rem(18px);
+    line-height: rem(27px);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 0 rem(24px);
+  }
+
+  .card-text {
+    font-size: rem(14px);
+    line-height: rem(21px);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+}
+.link-more{
+  position: absolute;
+  right:0;
+  margin-right: 20px;
+  bottom: 20px;
+
+  i{
+    margin-right:8px;
+    font-size:rem(18px);
+  }
+  a{
+    color: $gray-20;
+    text-decoration: none;
+    font-size:rem(14px);
+  }
+}

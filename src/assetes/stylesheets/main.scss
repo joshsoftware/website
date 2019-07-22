@@ -1,0 +1,39 @@
+/* Fonts and Icons */
+@import "fonts";
+@import "icon";
+/* Core Variables and Mixins */
+@import "core";
+/* Bootstrap v4.3.1 */
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/card";
+@import "../../../node_modules/bootstrap/scss/carousel";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/print";
+/* Common Styles */
+@import "header";
+@import "shared";
+@import "footer";
+/* pages */
+@import "pages/home";
+@import "pages/technologies";
+@import "pages/industries";
+@import "pages/services";
+@import "pages/team";
+@import "pages/career";
+@import "pages/jobs";
+@import "pages/innovation";
+@import "pages/open_source";
+@import "pages/about-us";
+@import "pages/contact-us";
+@import "pages/testimonial";
+/* offcanvas */
+@import "offcanvas";
