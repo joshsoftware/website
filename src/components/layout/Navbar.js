@@ -1,34 +1,38 @@
 import React, { useState } from 'react';
+
 import logo from '../../assetes/images/josh-logo.png';
-import { Link } from "react-router-dom";
-import * as routes from '../../routeConstants';
+import NavDropdown from './NavDropdown.js';
+import NavLink from './NavLink.js';
+import * as routes from '../../routeConstants.js'
 
 const Component = props => {
-  const [isOpen, toggle] = useState(false);
+  const [isOpenSidebar, toggleSidebar] = useState(false)
+  const { menues } = props;
+
   return (
     <header className="josh-header fixed-top">
       <div className="container">
         <nav className="navbar navbar-expand-lg josh-navbar">
           <a className="navbar-brand" href="./">
-            <img src={logo} alt="Josh Software"/>
+            <img src={logo} alt="Josh Software" />
           </a>
-          <div className="navbar-collapse offcanvas-collapse" id="joshOffcanvasNavbar">
+          <button className="navbar-toggler p-0 border-0" type="button"
+            onClick={() => toggleSidebar(!isOpenSidebar)}
+            data-toggle="offcanvas">
+            <i className="icon-bars"></i>
+          </button>
+          <div
+            className={`navbar-collapse offcanvas-collapse ${isOpenSidebar ? 'open' : ''}`}
+            id="joshOffcanvasNavbar"
+          >
             <div className="navbar-nav ml-auto">
-              <div className={`dropdown ${isOpen ? 'show' : ''}`}>
-                <a
-                  href='#'
-                  className="nav-item nav-link dropdown-toggle"
-                  id="companyDropdownMenu"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  onClick={() => toggle(!isOpen)}
-                  aria-expanded={isOpen}>
-                  Company
-                </a>
-                <div className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="companyDropdownMenu">
-                  <Link to={routes.ABOUT_US_URL} className="dropdown-item"> About Us </Link>
-                </div>
-              </div>
+              {
+                menues.map(menu => {
+                  return menu.type === 'dropdown'
+                    ? <NavDropdown {...menu} key={menu.id} />
+                    : <NavLink {...menu} key={menu.id} />
+                })
+              }
             </div>
           </div>
         </nav>
@@ -37,4 +41,35 @@ const Component = props => {
   )
 }
 
+Component.defaultProps = {
+  menues: [
+    {
+      id: 1,
+      title: "INNOVATION",
+      url: "/innovation.html"
+    },
+    {
+      id: 2,
+      title: "SERVICES",
+      url: "/services.html"
+    },
+    {
+      id: 3,
+      title: "COMPANY",
+      items: [
+        {
+          id: 1,
+          title: "About Us",
+          url: routes.ABOUT_US_URL
+        },
+        {
+          id: 2,
+          title: "Our Team",
+          url: routes.OUR_TEAM
+        }
+      ],
+      type: 'dropdown'
+    }
+  ]
+}
 export default Component;

@@ -4,8 +4,8 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Layout from './layout';
 
-import './assetes/stylesheets/main.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './assetes/stylesheets/main.css';
 
 
 const App = () => {
