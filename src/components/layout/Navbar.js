@@ -65,7 +65,7 @@ Component.defaultProps = {
         {
           id: 2,
           title: "Our Team",
-          url: routes.OUR_TEAM
+          url: routes.OUR_TEAM_URL
         }
       ],
       type: 'dropdown'
