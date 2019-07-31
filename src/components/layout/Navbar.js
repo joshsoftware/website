@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import logo from '../../assetes/images/josh-logo.png';
 import NavDropdown from './NavDropdown.js';
 import NavLink from './NavLink.js';
 import * as routes from '../../routeConstants.js'
+import { useOnClickedOutside } from '../../hooks/useOnClickedOutside';
 
 const Component = props => {
   const [isOpenSidebar, toggleSidebar] = useState(false)
   const { menues } = props;
+
+  const ref = useRef();
+  useOnClickedOutside(ref, () => toggleSidebar(false));
 
   return (
     <header className="josh-header fixed-top">
@@ -24,6 +28,7 @@ const Component = props => {
           <div
             className={`navbar-collapse offcanvas-collapse ${isOpenSidebar ? 'open' : ''}`}
             id="joshOffcanvasNavbar"
+            ref={ref}
           >
             <div className="navbar-nav ml-auto">
               {
