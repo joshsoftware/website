@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import HomePage from './homePage.js';
+import { Clients } from './clients.js';
 
 const Home = () => {
   return (
-    <HomePage />
+    <Fragment>
+      <HomePage />
+      <Clients />
+    </Fragment>
   )
 }
 

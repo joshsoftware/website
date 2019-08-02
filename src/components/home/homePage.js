@@ -45,7 +45,6 @@ const ParallaxImg = styles.img`
   height: 411px;
   background-repeat: no-repeat;
 `
-
 const HomePage = () => {
   return (
     <div style={{ backgroundColor: "#333333" }}>
