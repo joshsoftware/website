@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import logo from '../../assetes/images/josh-logo.png';
+import logo from '../../assetes/images/josh-logo1.svg';
 import NavDropdown from './NavDropdown.js';
 import NavLink from './NavLink.js';
 import * as routes from '../../routeConstants.js'
@@ -15,7 +15,7 @@ const Component = props => {
 
   return (
     <header className="josh-header fixed-top">
-      <div className="container">
+      <div className="container header-new">
         <nav className="navbar navbar-expand-lg josh-navbar">
           <a className="navbar-brand" href="./">
             <img src={logo} alt="Josh Software" />

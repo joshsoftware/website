@@ -5332,7 +5332,7 @@ a.text-gray:hover, a.text-gray:focus {
 /* Common Styles */
 .josh-header {
   height: 4.75rem;
-  background-color: #fff;
+  background-color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -5348,11 +5348,12 @@ a.text-gray:hover, a.text-gray:focus {
     .josh-header {
       height: 3.375rem; } }
   .josh-header .navbar-brand > img {
-    width: 13.5rem;
     height: auto; }
-    @media (max-width: 991.98px) {
-      .josh-header .navbar-brand > img {
-        width: 7.5rem; } }
+
+.header-new {
+  padding-left: 0px;
+  margin-left: -5px;
+  margin-top: -1px; }
 
 .josh-navbar {
   -webkit-box-align: end;

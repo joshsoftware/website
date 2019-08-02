@@ -1,6 +1,6 @@
 .josh-header {
   height: rem(76px);
-  background-color: $white;
+  background-color: transparent;
   @include flexbox();
   @include align-items(center);
   box-shadow: 0px 0px 69px -23px rgba(0,0,0,0.75);
@@ -12,14 +12,20 @@
   .navbar-brand {
 
     > img {
-      width: rem(216px);
+      // width: rem(216px);
       height: auto;
 
       @include media-breakpoint-down(md) {
-        width: rem(120px);
+        // width: rem(120px);
       }
     }
   }
+}
+
+.header-new {
+  padding-left: 0px;
+  margin-left: -5px;
+  margin-top: -1px;
 }
 
 .josh-navbar {
