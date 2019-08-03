@@ -3037,7 +3037,7 @@ button.bg-gray:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .social-links-wrap, .list-client, .list-client li a, .section-about .about-wrap, .section-about .stats-box {
+.d-flex, .social-links-wrap, .list-client, .list-client li a, .list-domain, .section-about .about-wrap, .section-about .stats-box {
   display: flex !important; }
 
 .d-inline-flex {
@@ -3189,7 +3189,7 @@ button.bg-gray:focus {
 .flex-column-reverse {
   flex-direction: column-reverse !important; }
 
-.flex-wrap, .list-client {
+.flex-wrap, .list-client, .list-domain {
   flex-wrap: wrap !important; }
 
 .flex-nowrap {
@@ -6234,12 +6234,32 @@ img {
         width: 33.33%; } }
     @media (max-width: 767.98px) {
       .list-client li {
-        width: 50%;
+        width: 33.33%;
         padding: 0 0.3125rem;
         margin: 0 0 0.625rem; } }
     .list-client li a {
       background-color: #fff;
       box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08); }
+
+.list-domain {
+  width: 100%; }
+  @media (max-width: 991.98px) {
+    .list-domain {
+      width: 100%; } }
+  .list-domain li {
+    width: 100%;
+    padding: 0 0.75rem;
+    margin: 0 0 1.5rem; }
+    @media (max-width: 991.98px) {
+      .list-domain li {
+        width: 40%; } }
+    @media (max-width: 767.98px) {
+      .list-domain li {
+        width: 40%;
+        padding: 0 13px; } }
+  .list-domain .half-rect {
+    width: 10% !important;
+    padding: 0 0px; }
 
 /* End */
 .section-about {
@@ -6420,6 +6440,9 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
+
+.domain-block {
+  width: 60px; }
 
 .section-technologies.section-banner {
   position: relative;

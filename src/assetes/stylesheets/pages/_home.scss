@@ -323,6 +323,39 @@
   }
 }
 
+.list-domain{
+  width: 100%;
+  // margin: 0 auto rem(50px);
+  @extend .d-flex;
+  @extend .flex-wrap;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    // margin: 0 auto rem(50px);
+  }
+
+  li{
+    width: 100%;
+    padding: rem(0 12px);
+    margin: rem(0 0 24px);
+
+    @include media-breakpoint-down(md) {
+      width: 40%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 40%;
+      padding: 0 13px;
+      // margin: rem(0 0 10px);
+    }
+
+  }
+  .half-rect {
+    width: 10% !important;
+    padding: 0 0px;
+  }
+}
+
 /* End */
 
 .section-about {
@@ -525,3 +558,7 @@
 	background-size: cover;
 }
 // Parallax Scroll SCSS End
+
+.domain-block{
+  width: 60px;
+}
