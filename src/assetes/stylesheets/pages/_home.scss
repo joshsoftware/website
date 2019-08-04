@@ -341,6 +341,7 @@
 
     @include media-breakpoint-down(md) {
       width: 40%;
+      padding: 0 13px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -561,4 +562,18 @@
 
 .domain-block{
   width: 60px;
+}
+
+.doimain-grid-container{
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: max-content auto auto max-content;
+  padding: 10px;
+}
+
+.domain-header{
+  color: #CF4338;
+  font-family: 'Barlow';
+  font-weight: lighter;
 }

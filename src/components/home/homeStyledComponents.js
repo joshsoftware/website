@@ -11,15 +11,16 @@ export const Heading1 = styled.h1`
 `
 
 export const DomainCube = styled.rect`
+  text-align: center;
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   x: ${(props) => props.x ? props.x : props.width};
   y: ${(props) => props.y ? props.y : props.height};
   background-color: ${(props) => props.color ? props.color : null};
-  background-image: ${(props) => props.logo ? 'linear-gradient(#333333, #767676)' : null};
-  border-stye: solid;
+  background-image: ${(props) => props.logo || props.lastCube ? `linear-gradient(${props.color})` : null};
+  border-style: solid;
   border-width: 5px;
-  border-color: #656565;
+  border-color: ${(props) => props.borderColor ? props.borderColor : null};
   border-top-left-radius: ${(props) => props.top_left_radius ? props.top_left_radius : '16px'};
   border-top-right-radius: ${(props) => props.top_right_radius ? props.top_right_radius : '16px'};
   border-bottom-left-radius: ${(props) => props.bottom_left_radius ? props.bottom_left_radius : '16px'};

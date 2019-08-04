@@ -6252,7 +6252,8 @@ img {
     margin: 0 0 1.5rem; }
     @media (max-width: 991.98px) {
       .list-domain li {
-        width: 40%; } }
+        width: 40%;
+        padding: 0 13px; } }
     @media (max-width: 767.98px) {
       .list-domain li {
         width: 40%;
@@ -6443,6 +6444,18 @@ img {
 
 .domain-block {
   width: 60px; }
+
+.doimain-grid-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: max-content auto auto max-content;
+  padding: 10px; }
+
+.domain-header {
+  color: #CF4338;
+  font-family: 'Barlow';
+  font-weight: lighter; }
 
 .section-technologies.section-banner {
   position: relative;
