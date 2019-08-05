@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Card } from 'reactstrap';
 
 export const Heading1 = styled.h1`
   font-size: 20px;
@@ -12,6 +13,7 @@ export const Heading1 = styled.h1`
 `
 
 export const TestimonialBox = styled.div`
+  background-color: #F5F5F5;
   border-color: #D76964;
   border: 0.5px;
   height: 206px;
@@ -113,3 +115,68 @@ export const Circle = styled.div`
     background-color: #FF0000;
   }
 `
+export const BannerText = styled.span`
+  font-size: 30px;
+  // position: absolute;
+  // top: 400px;
+  // left: 0;
+  padding-left: 19px;
+  font-family: bold;
+  line-height: 38px;
+`
+
+export const BannerSubText = styled.div`
+  min-width: 230px; 
+  min-height: 55px;
+  padding-left: 19px;
+  padding-top: 9px;
+  text-align: left;
+  font-size: 24px;
+  color: #FFFFFF;
+`
+
+export const ContactUSBtnText = styled.span`
+  color: white;
+  position: absolute;
+  left: 27px;
+  top: 573px;
+`
+
+export const ConctactUsRightText = styled.span`
+  font-weight: bold;
+  color: #FFFFFF;
+`
+
+export const ParallaxImg = styled.div`
+  background-image: ${(props) => `url(${props.logo})`} ;
+  // background-attachment: fixed;
+  width: 100%;
+  // object-fit: cover;
+  // background-size: contain;
+  // background-position: 50% 26%;
+  height: 721px;
+  background-repeat: no-repeat;
+`
+
+export const CurvedCard = styled(Card)`
+  border-radius: 16px 16px 16px 16px;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // min-width: 0;
+  // word-wrap: break-word;
+  // background-color: #fff;
+  // background-clip: border-box;
+  // border: 1px solid rgba(0, 0, 0, 0.125);
+  // border-radius: 0.25rem;
+`
+
+export const CompanyDetailsText = styled.div`
+  float: ${(props) => props.pull};
+  width: ${(props) => props.width};
+  color: #fff;
+
+`
+
+
+

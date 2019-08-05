@@ -67,8 +67,7 @@ const Testimonials = (props) => {
   };
 
   return (
-    <section id="clientsSlide"
-      className="section-home ">
+    <div>
       <Heading1>Here’s what our clients are saying</Heading1>
       <div className="row">
         <div className="col-md-1" />
@@ -77,7 +76,7 @@ const Testimonials = (props) => {
         </div>
         <div className="col-md-1" />
       </div>
-    </section>
+    </div>
   )
 }
 
