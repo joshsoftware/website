@@ -5352,8 +5352,7 @@ a.text-gray:hover, a.text-gray:focus {
 
 .header-new {
   padding-left: 0px;
-  margin-left: -5px;
-  margin-top: -1px; }
+  margin-top: -12px; }
 
 .josh-navbar {
   -webkit-box-align: end;
@@ -6234,7 +6233,7 @@ img {
         width: 33.33%; } }
     @media (max-width: 767.98px) {
       .list-client li {
-        width: 50%;
+        width: 33.33%;
         padding: 0 0.3125rem;
         margin: 0 0 0.625rem; } }
     .list-client li a {
@@ -6420,6 +6419,11 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
+
+.slick-dots li {
+  height: 10px;
+  width: 10px;
+  background-color: red; }
 
 .section-technologies.section-banner {
   position: relative;

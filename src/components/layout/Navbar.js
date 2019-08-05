@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import logo from '../../assetes/images/josh-logo1.svg';
+import logo from '../../assetes/images/josh-logo-web.svg';
 import NavDropdown from './NavDropdown.js';
 import NavLink from './NavLink.js';
 import * as routes from '../../routeConstants.js'
@@ -17,27 +17,33 @@ const Component = props => {
     <header className="josh-header fixed-top">
       <div className="container header-new">
         <nav className="navbar navbar-expand-lg josh-navbar">
-          <a className="navbar-brand" href="./">
-            <img src={logo} alt="Josh Software" />
-          </a>
-          <button className="navbar-toggler p-0 border-0" type="button"
-            onClick={() => toggleSidebar(!isOpenSidebar)}
-            data-toggle="offcanvas">
-            <i className="icon-bars"></i>
-          </button>
-          <div
-            className={`navbar-collapse offcanvas-collapse ${isOpenSidebar ? 'open' : ''}`}
-            id="joshOffcanvasNavbar"
-            ref={ref}
-          >
-            <div className="navbar-nav ml-auto">
-              {
-                menues.map(menu => {
-                  return menu.type === 'dropdown'
-                    ? <NavDropdown {...menu} key={menu.id} />
-                    : <NavLink {...menu} key={menu.id} />
-                })
-              }
+          <div className="row">
+            <div className="col-md-4">
+              <a className="navbar-brand" href="./">
+                <img src={logo} alt="Josh Software" />
+              </a>
+            </div>
+            <div className="col-md-8">
+              <button className="navbar-toggler p-0 border-0" type="button"
+                onClick={() => toggleSidebar(!isOpenSidebar)}
+                data-toggle="offcanvas">
+                <i className="icon-bars"></i>
+              </button>
+              <div
+                className={`navbar-collapse offcanvas-collapse ${isOpenSidebar ? 'open' : ''}`}
+                id="joshOffcanvasNavbar"
+                ref={ref}
+              >
+                <div className="navbar-nav ml-auto">
+                  {
+                    menues.map(menu => {
+                      return menu.type === 'dropdown'
+                        ? <NavDropdown {...menu} key={menu.id} />
+                        : <NavLink {...menu} key={menu.id} />
+                    })
+                  }
+                </div>
+              </div>
             </div>
           </div>
         </nav>

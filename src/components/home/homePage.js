@@ -5,9 +5,9 @@ import styles from 'styled-components';
 
 const BannerText = styles.span`
   font-size: 30px;
-  position: absolute;
-  top: 400px;
-  left: 0;
+  // position: absolute;
+  // top: 400px;
+  // left: 0;
   padding-left: 19px;
   font-family: bold;
   line-height: 38px;
@@ -35,13 +35,13 @@ const ConctactUsRightText = styles.span`
   color: #FFFFFF;
 `
 
-const ParallaxImg = styles.img`
+const ParallaxImg = styles.div`
   background-image: ${(props) => `url(${props.logo})`} ;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   width: 100%;
-  object-fit: cover;
-  background-size: contain;
-  background-position: 50% 26%;
+  // object-fit: cover;
+  // background-size: contain;
+  // background-position: 50% 26%;
   height: 411px;
   background-repeat: no-repeat;
 `
@@ -49,13 +49,19 @@ const HomePage = () => {
   return (
     <div style={{ backgroundColor: "#333333" }}>
       <div style={{ height: 67 }} />
-      <ParallaxImg logo={mainImg} />
-      <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
-      <BannerSubText>Is the way <br />We change the Game</BannerSubText>
+      <div className="row">
+        <div className="col-md-6">
+          <ParallaxImg logo={mainImg} />
+        </div>
+        <div className="col-md-6">
+          <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
+          <BannerSubText>Is the way <br />We change the Game</BannerSubText>
 
-      <img src={contactUsBtn} />
-      <ContactUSBtnText>Contact Us</ContactUSBtnText>
-      <ConctactUsRightText> to change yours </ConctactUsRightText>
+          <img src={contactUsBtn} />
+          <ContactUSBtnText>Contact Us</ContactUSBtnText>
+          <ConctactUsRightText> to change yours </ConctactUsRightText>
+        </div>
+      </div>
     </div>
   )
 }

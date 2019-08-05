@@ -525,3 +525,9 @@
 	background-size: cover;
 }
 // Parallax Scroll SCSS End
+
+.slick-dots li {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+}
