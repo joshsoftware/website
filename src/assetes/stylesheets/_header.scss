@@ -45,12 +45,12 @@
   .navbar-nav {
 
     .nav-link {
-      color: $gray-60;
+      color: #FFFFFF;
       font-size: rem(14px);
       font-weight: 300;
       text-transform: uppercase;
       padding: rem(5px 15px);
-
+      font-family: Barlow, regular;
       @include media-breakpoint-down(md) {
         font-size: rem(18px);
         color: $gray-20;
@@ -62,10 +62,10 @@
         font-weight: 700;
       }
 
-      &:hover, &:focus {
-        color: $gray-20;
-        outline: 0;
-      }
+      // &:hover, &:focus {
+      //   color: $gray-20;
+      //   outline: 0;
+      // }
     }
 
     .nav-offcanvas-link {

@@ -116,20 +116,16 @@ export const Circle = styled.div`
   }
 `
 export const BannerText = styled.span`
-  font-size: 30px;
-  // position: absolute;
-  // top: 400px;
-  // left: 0;
-  padding-left: 19px;
-  font-family: bold;
-  line-height: 38px;
+  font-size: 52px;
+  // padding-left: 19px;
+  font-family: lato, black;
+  line-height: 62px;
+  color: #A8A8A8;
 `
 
 export const BannerSubText = styled.div`
   min-width: 230px; 
   min-height: 55px;
-  padding-left: 19px;
-  padding-top: 9px;
   text-align: left;
   font-size: 24px;
   color: #FFFFFF;
@@ -137,9 +133,10 @@ export const BannerSubText = styled.div`
 
 export const ContactUSBtnText = styled.span`
   color: white;
-  position: absolute;
-  left: 27px;
-  top: 573px;
+  position: relative;
+  // left: 27px;
+  // top: 573px;
+  right: 103px;
 `
 
 export const ConctactUsRightText = styled.span`
@@ -149,26 +146,13 @@ export const ConctactUsRightText = styled.span`
 
 export const ParallaxImg = styled.div`
   background-image: ${(props) => `url(${props.logo})`} ;
-  // background-attachment: fixed;
   width: 100%;
-  // object-fit: cover;
-  // background-size: contain;
-  // background-position: 50% 26%;
-  height: 721px;
+  height: ${(props) => props.height};
   background-repeat: no-repeat;
 `
 
 export const CurvedCard = styled(Card)`
   border-radius: 16px 16px 16px 16px;
-  // position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // min-width: 0;
-  // word-wrap: break-word;
-  // background-color: #fff;
-  // background-clip: border-box;
-  // border: 1px solid rgba(0, 0, 0, 0.125);
-  // border-radius: 0.25rem;
 `
 
 export const CompanyDetailsText = styled.div`
