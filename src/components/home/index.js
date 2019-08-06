@@ -5,6 +5,7 @@ import Testimonials from './testimonials.js';
 import Company from "./company.js";
 import DomainExperties from './domainExperties.js'
 import WhatWeDo from './whatWeDo.js';
+import Innovations from './innovations.js'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HomePage />
       <DomainExperties />
       <WhatWeDo />
+      <Innovations />
       <Clients />
       <Testimonials />
       <Company />

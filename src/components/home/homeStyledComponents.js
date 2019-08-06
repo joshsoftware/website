@@ -161,6 +161,11 @@ export const CompanyDetailsText = styled.div`
   color: #fff;
 
 `
+export const InnovationBox = styled.span`
+  height: 124px;
+  width: 159px;
+  border-radius: 8px 8px 8px 8px;
+`
 
 
 
