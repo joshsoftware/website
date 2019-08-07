@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
 import { useOnClickedOutside } from '../../hooks/useOnClickedOutside.js';
 
@@ -12,7 +12,7 @@ const NavDropdown = props => {
 
   return (
     <div className={`dropdown ${isOpen ? 'show' : ''}`} ref={ref}>
-      <a
+      <Link
         href='#'
         className="nav-item nav-link dropdown-toggle"
         id="companyDropdownMenu"
@@ -21,7 +21,7 @@ const NavDropdown = props => {
         onClick={() => toggle(!isOpen)}
         aria-expanded={isOpen}>
         Company
-      </a>
+      </Link>
       <div className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="companyDropdownMenu">
         {
           items.map(item => {
@@ -30,6 +30,7 @@ const NavDropdown = props => {
               : <Link to={item.url}
                 className="dropdown-item"
                 key={item.id}
+
                 onClick={() => toggle(!isOpen)}
               >{item.title}</Link>
           })

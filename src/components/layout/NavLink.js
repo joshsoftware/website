@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
 const NavLink = props => {
   const { url, title } = props;
@@ -17,5 +17,5 @@ NavLink.propTypes = {
   title: PropTypes.string
 }
 
-export default NavLink
+export default NavLink;
 
