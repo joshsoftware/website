@@ -74,12 +74,12 @@ Component.defaultProps = {
     {
       id: 2,
       title: "SERVICES",
-      url: routes.SERVICES
+      url: routes.SERVICES_URL
     },
     {
       id: 4,
-      title: "EXPERTIES",
-      url: "/domain_experties"
+      title: "Technologies",
+      url: routes.TECHNOLOGIES_URL
     },
     {
       id: 5,
@@ -108,7 +108,7 @@ Component.defaultProps = {
         {
           id: 4,
           title: "Contact Us",
-          url: routes.CONTACT_US,
+          url: routes.CONTACT_US_URL,
         },
         {
           id: 3,

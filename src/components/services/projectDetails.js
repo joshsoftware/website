@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+
+import { TECHNOLOGIES_URL } from "../../routeConstants.js";
 
 const ProjectDetails = (props) => {
   const { title, description, logo } = props;
@@ -12,8 +15,10 @@ const ProjectDetails = (props) => {
             <img src={require(`../../assetes/images/${logo}`)} alt="IOT-Logo" className="img-fluid" /></div>
           <div className="portfolio-info">
             <p className="card-text">{description}</p>
-            <div className="link-box"><a href="technologies.html" className="mb-1">
-              <i className="align-middle icon-arrow-right"></i>View Technologies</a>
+            <div className="link-box">
+              <Link to={TECHNOLOGIES_URL} className="mb-1">
+                <i className="align-middle icon-arrow-right"></i>View Technologies
+              </Link>
               <a href="industries.html"><i className="align-middle icon-arrow-right">
               </i>View Domains</a></div>
           </div>

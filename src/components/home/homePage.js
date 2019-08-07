@@ -28,11 +28,11 @@ const HomePage = () => {
           <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
           <BannerSubText>is the way We change the Game</BannerSubText>
 
-          <Link to={routeConstants.CONTACT_US}>
+          <Link to={routeConstants.CONTACT_US_URL}>
             <img src={contactUsBtn} />
           </Link>
           <ContactUSBtnText >
-            <Link to={routeConstants.CONTACT_US} className="text-decoration-none">
+            <Link to={routeConstants.CONTACT_US_URL} className="text-decoration-none">
               <span className="mr-3 text-white">Contact Us</span>
             </Link>
             <ConctactUsRightText> to change yours </ConctactUsRightText>
