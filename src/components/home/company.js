@@ -6,13 +6,16 @@ import { ParallaxImg, CompanyDetailsText } from "./homeStyledComponents.js";
 
 const Company = () => {
   return (
-    <ParallaxImg logo={companyImg} height="721" >
+    <ParallaxImg logo={companyImg} height="721px" >
       <Row className="company-details">
         <Col sm="6" >
           <CompanyDetailsText pull="right" dir="rtl" width="10px"><h5> X </h5>Countries</CompanyDetailsText>
         </Col>
         <Col sm="6">
-          <CompanyDetailsText width="150px"><h5>12+ Years </h5>Industry Experience</CompanyDetailsText>
+          <CompanyDetailsText width="150px">
+            <h5>12+ Years </h5>
+            Industry Experience
+          </CompanyDetailsText>
         </Col>
       </Row>
 

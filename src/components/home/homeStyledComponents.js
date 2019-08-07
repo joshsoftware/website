@@ -167,5 +167,12 @@ export const InnovationBox = styled.span`
   border-radius: 8px 8px 8px 8px;
 `
 
+export const Heading1Orange = styled.h1`
+  font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "51px"};
+  text-align: -webkit-right;
+  font-family: lato light;
+  color: #FF7B71;
+`
+
 
 

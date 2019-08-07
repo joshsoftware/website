@@ -6,6 +6,7 @@ import Company from "./company.js";
 import DomainExperties from './domainExperties.js'
 import WhatWeDo from './whatWeDo.js';
 import Innovations from './innovations.js'
+import SuccessStories from './successStories.js';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Innovations />
       <Clients />
       <Testimonials />
+      <SuccessStories />
       <Company />
     </Fragment>
   )
