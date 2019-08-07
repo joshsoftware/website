@@ -6440,6 +6440,9 @@ img {
 .bg-white {
   background-color: #FFFFFF; }
 
+.width-100 {
+  width: 100px !important; }
+
 .section-technologies.section-banner {
   position: relative;
   background-color: #495380;
@@ -8181,7 +8184,7 @@ body {
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 3.375rem;
+    top: 1.75rem;
     /* Height of navbar */
     bottom: 0;
     left: 100%;

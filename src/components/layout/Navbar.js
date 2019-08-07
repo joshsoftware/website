@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Media from 'react-media';
+import { Link } from 'react-router-dom';
+
 import logo from '../../assetes/images/josh-logo-web.svg';
 import logoM from '../../assetes/images/josh-logo1.svg';
 import hamburger from "../../assetes/images/hamburger.svg"
@@ -22,8 +24,8 @@ const Component = props => {
         <nav className="navbar navbar-expand-lg josh-navbar ">
           <div className="row">
             <div className="col-md-4">
-              <a className="navbar-brand" href="/">
-                <Media query="(max-width: 900px)">
+              <Link className="navbar-brand" to="/" activeClassName="text-decoration-none">
+                <Media query="(max-width: 600px)">
                   {matches =>
                     matches ? (
                       <img src={logoM} alt="Josh Software" className="ml-n2 mt-2" />
@@ -33,7 +35,7 @@ const Component = props => {
                   }
                 </Media>
 
-              </a>
+              </Link>
             </div>
             <div className="col-md-8">
             </div>

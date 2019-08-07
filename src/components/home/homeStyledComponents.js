@@ -9,7 +9,16 @@ export const Heading1 = styled.h1`
   min-width: 158px;
   max-height: 24px;
   margin: 3rem 0 3.5rem;
+`
 
+export const InnovationHeading1 = styled.h1`
+  font-size: ${props => props.fontSize};
+  text-align: center;
+  // text-transform: uppercase;
+  color: #FF7B71;
+  min-width: 158px;
+  max-height: 24px;
+  margin: 3rem 0 3.5rem;
 `
 
 export const TestimonialBox = styled.div`
@@ -149,6 +158,7 @@ export const ParallaxImg = styled.div`
   width: 100%;
   height: ${(props) => props.height};
   background-repeat: no-repeat;
+  background-size: 100%;
 `
 
 export const CurvedCard = styled(Card)`

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Media from 'react-media';
 import { Link } from 'react-router-dom';
 
@@ -24,23 +24,35 @@ const HomePage = () => {
             }
           </Media>
         </div>
-        <div className="col-md-6 m-auto">
-          <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
-          <BannerSubText>is the way We change the Game</BannerSubText>
-
-          <Link to={routeConstants.CONTACT_US_URL}>
-            <img src={contactUsBtn} />
-          </Link>
-          <ContactUSBtnText >
-            <Link to={routeConstants.CONTACT_US_URL} className="text-decoration-none">
-              <span className="mr-3 text-white">Contact Us</span>
-            </Link>
-            <ConctactUsRightText> to change yours </ConctactUsRightText>
-          </ContactUSBtnText>
-        </div>
+        <Media query="(max-width: 900px)">
+          {matches =>
+            matches ? (
+              <div className="col-md-6 pl-4">{BannerText1()}</div>
+            ) : (
+                <div className="col-md-6 m-auto">{BannerText1()}</div>
+              )
+          }
+        </Media>
       </div>
     </div>
   )
 }
+
+const BannerText1 = () => (
+  <Fragment>
+    <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
+    <BannerSubText>is the way We change the Game</BannerSubText>
+
+    <Link to={routeConstants.CONTACT_US_URL}>
+      <img src={contactUsBtn} />
+    </Link>
+    <ContactUSBtnText >
+      <Link to={routeConstants.CONTACT_US_URL} className="text-decoration-none">
+        <span className="mr-3 text-white">Contact Us</span>
+      </Link>
+      <ConctactUsRightText> to change yours </ConctactUsRightText>
+    </ContactUSBtnText>
+  </Fragment>
+)
 
 export default HomePage;
