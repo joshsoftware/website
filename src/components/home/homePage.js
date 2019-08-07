@@ -1,10 +1,12 @@
 import React from 'react'
+import Media from 'react-media';
+import { Link } from 'react-router-dom';
+
 import mainImg from '../../assetes/images/black-bulb-image.png';
 import logoM from '../../assetes/images/bulb-image-mobile.png';
 import contactUsBtn from '../../assetes/images/conctact us_button.svg';
-// import styles from 'styled-components';
 import { ParallaxImg, BannerSubText, BannerText, ConctactUsRightText, ContactUSBtnText } from "./homeStyledComponents.js"
-import Media from 'react-media'
+import * as routeConstants from "../../routeConstants.js";
 
 const HomePage = () => {
   return (
@@ -26,9 +28,13 @@ const HomePage = () => {
           <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
           <BannerSubText>is the way We change the Game</BannerSubText>
 
-          <img src={contactUsBtn} />
+          <Link to={routeConstants.CONTACT_US}>
+            <img src={contactUsBtn} />
+          </Link>
           <ContactUSBtnText >
-            <span className="mr-3">Contact Us</span>
+            <Link to={routeConstants.CONTACT_US} className="text-decoration-none">
+              <span className="mr-3 text-white">Contact Us</span>
+            </Link>
             <ConctactUsRightText> to change yours </ConctactUsRightText>
           </ContactUSBtnText>
         </div>

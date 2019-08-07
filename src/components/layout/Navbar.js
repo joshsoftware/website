@@ -74,7 +74,7 @@ Component.defaultProps = {
     {
       id: 2,
       title: "SERVICES",
-      url: "/services.html"
+      url: routes.SERVICES
     },
     {
       id: 4,

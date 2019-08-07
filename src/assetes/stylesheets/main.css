@@ -5375,8 +5375,7 @@ a.text-gray:hover, a.text-gray:focus {
     font-size: 0.875rem;
     font-weight: 300;
     text-transform: uppercase;
-    padding: 0.3125rem 0.9375rem;
-    font-family: Barlow, regular; }
+    padding: 0.3125rem 0.9375rem; }
     @media (max-width: 991.98px) {
       .josh-navbar .navbar-nav .nav-link {
         font-size: 1.125rem;

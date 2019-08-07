@@ -50,7 +50,7 @@
       font-weight: 300;
       text-transform: uppercase;
       padding: rem(5px 15px);
-      font-family: Barlow, regular;
+      // font-family: Barlow, regular;
       @include media-breakpoint-down(md) {
         font-size: rem(18px);
         color: $gray-20;
