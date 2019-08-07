@@ -104,6 +104,17 @@ Component.defaultProps = {
           id: 2,
           title: "Our Team",
           url: routes.OUR_TEAM_URL
+        },
+        {
+          id: 4,
+          title: "Contact Us",
+          url: routes.CONTACT_US,
+        },
+        {
+          id: 3,
+          title: "Career",
+          url: "http://careers.joshsoftware.com/",
+          otherDomain: true
         }
       ],
       type: 'dropdown'

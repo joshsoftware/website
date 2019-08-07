@@ -107,7 +107,6 @@ Testimonials.defaultProps = {
       text: "Josh Team has been able to turnaround our CRM and mobile App by understanding our needs, engaging in continuous dialogue during development phase to align the output and giving a product which is working with wonderful speed and ease for our doctors and patients.",
       clientName: "Dr. Pramod Tripathi",
       clientDesignation: "Founder FFD",
-      width: 100
     },
     {
       id: 2,

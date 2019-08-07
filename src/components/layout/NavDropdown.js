@@ -25,11 +25,13 @@ const NavDropdown = props => {
       <div className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="companyDropdownMenu">
         {
           items.map(item => {
-            return <Link to={item.url}
-              className="dropdown-item"
-              key={item.id}
-              onClick={() => toggle(!isOpen)}
-            >{item.title}</Link>
+            return item.otherDomain
+              ? <a href={item.url} className="dropdown-item">{item.title}</a>
+              : <Link to={item.url}
+                className="dropdown-item"
+                key={item.id}
+                onClick={() => toggle(!isOpen)}
+              >{item.title}</Link>
           })
         }
       </div>
