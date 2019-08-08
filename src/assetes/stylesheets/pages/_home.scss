@@ -559,3 +559,30 @@
 .width-100 {
   width: 100px!important;
 }
+
+.succss-stories {
+  font-size: 20px;
+
+  li {
+    text-decoration: none;
+    color: #121212;
+  }
+}
+
+.bullet li, a{
+  text-decoration: none;
+  text-decoration-color: #333333;
+  font-size: 20px;
+  
+  color: #FFFFFF;
+  &:hover{
+    color: #FFFFFF;
+  }
+  @include media-breakpoint-down(sm) {
+    color: #333333;
+    &:hover{
+      color: #333333;
+    }
+  }
+
+}

@@ -6443,6 +6443,25 @@ img {
 .width-100 {
   width: 100px !important; }
 
+.succss-stories {
+  font-size: 20px; }
+  .succss-stories li {
+    text-decoration: none;
+    color: #121212; }
+
+.bullet li, a {
+  text-decoration: none;
+  text-decoration-color: #333333;
+  font-size: 20px;
+  color: #FFFFFF; }
+  .bullet li:hover, a:hover {
+    color: #FFFFFF; }
+  @media (max-width: 767.98px) {
+    .bullet li, a {
+      color: #333333; }
+      .bullet li:hover, a:hover {
+        color: #333333; } }
+
 .section-technologies.section-banner {
   position: relative;
   background-color: #495380;

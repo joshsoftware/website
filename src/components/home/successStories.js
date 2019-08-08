@@ -14,18 +14,19 @@ const SuccessStories = () => {
         <Fragment>
           <ParallaxImg height="160px" logo={mobileSuccessStoriesBg}>
             <Row>
-              <Col md={6} xs={2} >
+              <Col xs={2} />
+              <Col md={6} xs={4} >
                 <Heading1Orange fontSize="31">Success Stories</Heading1Orange>
               </Col>
-              <Col md={6} xs={10} />
+              <Col md={6} xs={8} />
             </Row>
           </ParallaxImg>
-          <ul className="">
-            <li>Freedom from Diabetis</li>
-            <li>Freedom from Diabetis</li>
-            <li>Freedom from Diabetis</li>
-            <li>Freedom from Diabetis</li>
-            <li>Freedom from Diabetis</li>
+          <ul className="succss-stories">
+            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
           </ul>
         </Fragment>
       ) : (
@@ -36,11 +37,11 @@ const SuccessStories = () => {
               </Col>
               <Col md={6} className="d-flex justify-content-start align-items-center">
                 <ul className="w-100 text-white">
-                  <li>Freedom from Diabetis</li>
-                  <li>Freedom from Diabetis</li>
-                  <li>Freedom from Diabetis</li>
-                  <li>Freedom from Diabetis</li>
-                  <li>Freedom from Diabetis</li>
+                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
                 </ul>
               </Col>
             </Row>
@@ -48,7 +49,6 @@ const SuccessStories = () => {
         )
     }
   </Media>
-
 }
 
 export default SuccessStories;
