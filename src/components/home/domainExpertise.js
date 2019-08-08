@@ -6,7 +6,7 @@ import previousSvg from "../../assetes/images/previous.svg";
 import nextSvg from "../../assetes/images/next.svg"
 import JoshCarousel from './carousel.js';
 
-const DomainExperties = (props) => {
+const DomainExpertise = (props) => {
   const { domainsData } = props;
   const carouselItems = domainsData.map(domain => {
     return <img src={require(`../../assetes/images/technologies/${domain.logo}`)} />
@@ -89,7 +89,7 @@ const DomainExperties = (props) => {
   return (
     <Fragment>
       <section id="clientsSlide" className="section-home ">
-        <Heading1>Domain Experties</Heading1>
+        <Heading1>Domain Expertise</Heading1>
         <Row>
           <Col sm={2} md={3} />
           <Col sm={8} md={6}>
@@ -128,7 +128,7 @@ const DomainExperties = (props) => {
   )
 }
 
-DomainExperties.defaultProps = {
+DomainExpertise.defaultProps = {
   domainsData: [
     {
       id: 1,
@@ -168,4 +168,4 @@ DomainExperties.defaultProps = {
   ]
 }
 
-export default DomainExperties;
+export default DomainExpertise;
