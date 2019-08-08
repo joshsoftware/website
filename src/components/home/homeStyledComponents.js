@@ -170,6 +170,12 @@ export const CompanyDetailsText = styled.div`
   width: ${(props) => props.width};
   color: #fff;
 
+  @media(max-width: 900px) {
+    font-size: 13px;
+    & h5 {
+      font-size: 21px;
+    }
+  }
 `
 export const InnovationBox = styled.span`
   height: 124px;
