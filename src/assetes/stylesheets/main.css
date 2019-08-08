@@ -6473,6 +6473,30 @@ img {
   width: 105px;
   height: 32px; }
 
+@media (max-width: 767.98px) {
+  .banner-text-align > .banner-text {
+    font-size: 33px;
+    font-family: lato bold;
+    line-height: 40px;
+    color: #A8A8A8; } }
+
+.banner-text-align {
+  position: relative;
+  bottom: 30px;
+  margin-left: 9px; }
+
+.banner-text-md {
+  position: relative;
+  top: 60px; }
+
+.banner-subtext-padding {
+  line-height: 29px;
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+.height-100 {
+  height: 100px; }
+
 .section-technologies.section-banner {
   position: relative;
   background-color: #495380;

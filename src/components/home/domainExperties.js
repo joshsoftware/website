@@ -2,7 +2,8 @@ import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import { Heading1 } from "./homeStyledComponents.js";
 import domainBg from "../../assetes/images/domain.svg";
-import previousSvg from "../../assetes/images/previous.svg"
+import previousSvg from "../../assetes/images/previous.svg";
+import nextSvg from "../../assetes/images/next.svg"
 import JoshCarousel from './carousel.js';
 
 const DomainExperties = (props) => {
@@ -22,15 +23,28 @@ const DomainExperties = (props) => {
     );
   }
 
+  const NextArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <img
+        src={previousSvg}
+        className={className}
+        onClick={onClick}
+      />
+    );
+  }
+
   const carouselSettings = {
     dots: false,
     infinite: true,
     speed: 500,
+    arrows: true,
     slidesToShow: 6,
     slidesToScroll: 1,
-    arrows: true,
+    centerPadding: "10px",
+    adaptiveHeight: true,
     nextArrow: <PreviousArrow />,
-    prevArrow: <PreviousArrow />,
+    prevArrow: <NextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,6 +53,7 @@ const DomainExperties = (props) => {
           slidesToScroll: 6,
           infinite: true,
           dots: true,
+          variableWidth: true,
           arrows: true,
         }
       },
@@ -58,7 +73,6 @@ const DomainExperties = (props) => {
           slidesToShow: 3,
           slidesToScroll: 3,
           initialSlide: 1,
-          arrows: true,
         }
       },
       {
@@ -66,8 +80,8 @@ const DomainExperties = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          arrows: true,
-          variableWidth: true
+
+          dots: true
         }
       }
     ]
@@ -104,9 +118,9 @@ const DomainExperties = (props) => {
           <Col sm={2} md={3} />
         </Row>
       </section>
-      <Row>
+      <Row className="height-100">
         <Col md={2} />
-        <Col md={8} xs={12} sm={12} >
+        <Col md={8} xs="12" sm={12} >
           <JoshCarousel items={carouselItems} settings={carouselSettings} />
         </Col>
         <Col md={2} />
