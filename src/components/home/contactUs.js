@@ -1,40 +1,26 @@
 import React from 'react'
-import Media from 'react-media'
-import { Row, Col, Button } from 'reactstrap'
-
-import contactUsImg from '../../assetes/images/home/contact_us.png'
-import { ParallaxImg, Heading1Black } from './homeStyledComponents.js'
 
 const ContactUs = () => {
   return (
-    <Media query="(max-width: 900px)">
-      {matches =>
-          matches ? (
-            <ParallaxImg logo={contactUsImg} height="160px">
-              <Row>
-                <Col md={6} xs={2}>
-                  <Heading1Black fontSize="27"> Looking for an expert technical partner </Heading1Black>
-                </Col>
-            </Row>
-          </ParallaxImg>
-          ) : (
-            <ParallaxImg logo={contactUsImg} height="365px">
-              <Row className="h-100">
-                <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
-                  <div className="p-2">
-                    <Heading1Black fontSize="27" className="text-center text-uppercase"> Looking for an <br />expert technical partner </Heading1Black>
-                  </div>
-
-                  <div className="p-2">
-                    <Button type="button" className="btn btn-dark">Contact us</Button>
-                  </div>
-
-                </Col>
-              </Row>
-          </ParallaxImg>
-          )
-      }
-    </Media>
+    <section id="contactSlide" className="section-contact">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-md-12">
+            <div className="contact-wrap">
+              <p>Looking for an <br />expert technical partner?</p>
+              <div className="d-none d-lg-block"><a href="contact-us.html" className="btn btn-gray">Contact Us</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="contact-banner"></div>
+      <div className="contact-number">
+        <div className="container">
+          <h6>Call Us</h6>
+          <p><i className="align-middle icon-phone"></i>+91-7887889902</p>
+        </div>
+      </div>
+    </section>
   )
 }
 
