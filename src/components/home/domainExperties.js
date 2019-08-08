@@ -80,7 +80,6 @@ const DomainExperties = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-
           dots: true
         }
       }
