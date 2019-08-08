@@ -31,19 +31,23 @@ const Testimonials = (props) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    dotsClass: "slick-dots slick-thumb custom-dots",
-    // variableWidth: true,
-    customPaging: function (i) {
-      return (
-        <Circle />
-      );
-    },
+    dotsClass: "slick-dots slick-thumb",
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -71,7 +75,7 @@ const Testimonials = (props) => {
       <Heading1>Here’s what our clients are saying</Heading1>
       <div className="row">
         <div className="col-md-1" />
-        <div className="col-md-10">
+        <div className="col-md-10 height-adjust">
           <JoshCarousel items={items} settings={settings}></JoshCarousel>
         </div>
         <div className="col-md-1" />
@@ -89,7 +93,7 @@ const Testimonial = (props) => {
         <Quotes><i>&#65282;</i></Quotes>
         <TestimonialBoxText>
           {text}
-          <ReadMoreBtn className="btn btn-outline-danger"><span>Read More</span></ReadMoreBtn>
+          <ReadMoreBtn className="btn btn-outline-danger width-adjust"><span>Read More</span></ReadMoreBtn>
         </TestimonialBoxText>
       </TestimonialBox>
       <ClientNameBox>

@@ -526,11 +526,11 @@
 }
 // Parallax Scroll SCSS End
 
-.slick-dots li {
-  height: 10px;
-  width: 10px;
-  background-color: red;
-}
+// .slick-dots li {
+//   // height: 10px;
+//   // width: 10px;
+//   // background-color: red;
+// }
 
 .company-details {
   position: relative;
@@ -585,4 +585,13 @@
     }
   }
 
+}
+
+.width-adjust {
+  width: 92px !important;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.height-adjust {
+  height: 400px;
 }

@@ -14,7 +14,7 @@ export const Clients = (props) => {
             clients.map(client => {
               return <li key={client.name}>
                 <a href={client.website}>
-                  <img src={client.logo} alt={client.name} className="img-fluid" />
+                  <img src={require(`../../assetes/images/${client.logo}`)} alt={client.name} className="img-fluid" />
                 </a>
               </li>
             })
@@ -29,77 +29,77 @@ Clients.defaultProps = {
   clients: [
     {
       website: "",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-star.jpg",
+      logo: "startv.png",
       name: "Star India"
     },
     {
       website: "javascript:void(0);",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-gojek.jpg",
+      logo: "clogo-gojek.jpg",
       name: "GO JEK"
     },
     {
       website: "http://www.dealsignal.com/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-dealsignal.jpg",
+      logo: "clogo-dealsignal.jpg",
       name: "DealSignal"
     },
     {
       website: "http://brandscope.com.au/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-brandscope.jpg",
+      logo: "clogo-brandscope.jpg",
       name: "Brandscope"
     },
     {
       website: "http://www.clubbuzz.co.uk/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-clubbuzz.jpg",
+      logo: "clogo-clubbuzz.jpg",
       name: "ClubBuzz"
     },
     {
       website: "https://www.cubictree.com/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-cubictree.jpg",
+      logo: "clogo-cubictree.jpg",
       name: "Cubictree"
     },
     {
       website: "https://www.willswayfoundation.us/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-we3.jpg",
+      logo: "clogo-we3.jpg",
       name: "We3"
     },
     {
       website: "https://thepediatricnetwork.com/#/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-tpn.jpg",
+      logo: "clogo-tpn.jpg",
       name: "The Pediatric Network"
     },
     {
       website: "http://www.freedomfromdiabetes.org/Program",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-ffd.jpg",
+      logo: "clogo-ffd.jpg",
       name: "Freedom From Diabetes"
     },
     {
       website: "http://www.synergydesignsolutions.com.sg/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-synergy.jpg",
+      logo: "clogo-synergy.jpg",
       name: "Synergy Design Solutions"
     },
     {
       website: "https://next.merchdirect.com/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-mdny.jpg",
+      logo: "clogo-mdny.jpg",
       name: "Merch Direct"
     },
     {
       website: "https://fundamentor.com/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-fundamentor.jpg",
+      logo: "clogo-fundamentor.jpg",
       name: "Fundamentor"
     },
     {
       website: "http://www.skoutdeals.com/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-skoutdeals.jpg",
+      logo: "clogo-skoutdeals.jpg",
       name: "Skout Deals"
     },
     {
       website: "javascript:void(0);",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-druva.jpg",
+      logo: "clogo-druva.jpg",
       name: "Druva"
     },
     {
       website: "https://quickinsure.co.in/",
-      logo: "http://new.joshsoftware.com:8080/images/clogo-quickinsure.jpg",
+      logo: "clogo-quickinsure.jpg",
       name: "Quickinsure"
     }]
 }

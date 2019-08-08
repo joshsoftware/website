@@ -22,13 +22,12 @@ export const InnovationHeading1 = styled.h1`
 `
 
 export const TestimonialBox = styled.div`
-  background-color: #F5F5F5;
   border-color: #D76964;
   border: 0.5px;
   height: 206px;
   width: 295px;
   border-radius: 12px 12px 12px 12px;
-  background: #ffffff;
+  background: #EFEFEF;
   margin-left: 60px;
   z-index: 10;
   position: relative;
@@ -42,7 +41,7 @@ export const ClientNameBox = styled.div`
   border-radius: 22px 22px 22px 22px;
   background: #D76964;
   margin-left: 61px;
-  margin-top: -11%;
+  margin-top: -15%;
   position: relative;
   z-index: 9;  
 `
@@ -101,6 +100,8 @@ export const ReadMoreBtn = styled("Button")`
   position: relative;
   bottom: 5px;
   width: 92px;
+  width: 92px;
+    border-radius: 15px 15px 15px 15px;
   
   & span {
     font-size: 9px;
