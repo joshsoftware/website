@@ -200,5 +200,10 @@ export const Heading1Black = styled.h1`
   height: 66px;
   word-wrap: break-work;
 `
-
+export const DomainText = styled.div`
+  font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "17px"};
+  color: #FFFFFF;
+  height: 20px;
+  font-family: Barlow medium;
+`
 

@@ -1,10 +1,17 @@
 import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
-import { Heading1 } from "./homeStyledComponents.js";
+import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
 import domainBg from "../../assetes/images/domain.svg";
 import previousSvg from "../../assetes/images/previous.svg";
 import nextSvg from "../../assetes/images/next.svg"
+import redArrowSvg from "../../assetes/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
+import healthSvg from "../../assetes/images/home/health.svg"
+import insuranceSvg from "../../assetes/images/home/insurance.svg"
+import financeSvg from "../../assetes/images/home/finance.svg"
+import sportSvg from "../../assetes/images/home/sport.svg"
+import mediaSvg from "../../assetes/images/home/media.svg"
+import manufacturingSvg from "../../assetes/images/home/manufacturing.svg"
 
 const DomainExpertise = (props) => {
   const { domainsData } = props;
@@ -95,22 +102,52 @@ const DomainExpertise = (props) => {
           <Col sm={8} md={6}>
             <Row>
               <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
+                <ParallaxImg logo={domainBg} height="120px">
+                  <div className="text-center pt-3"> <img src={healthSvg} /> <br />
+                    <DomainText>HEALTH </DomainText>
+                    <img src={redArrowSvg} />
+                  </div>
+                </ParallaxImg>
               </Col>
               <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
+                <ParallaxImg logo={domainBg} height="120px">
+                  <div className="text-center pt-3"><img src={mediaSvg} /> <br/>
+                    <DomainText>MEDIA </DomainText>
+                    <img src={redArrowSvg} />
+                  </div>
+                </ParallaxImg>
               </Col>
               <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
+                <ParallaxImg logo={domainBg} height="120px">
+                  <div className="text-center pt-3"><img src={financeSvg} /> <br />
+                    <DomainText>FINANCE </DomainText>
+                    <img src={redArrowSvg} />
+                  </div>
+                </ParallaxImg>
               </Col>
               <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
+                <ParallaxImg logo={domainBg} height="120px">
+                  <div className="text-center pt-3"><img src={sportSvg} /> <br />
+                    <DomainText>SPORTS </DomainText>
+                    <img src={redArrowSvg} />
+                  </div>
+                </ParallaxImg>
               </Col>
               <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
+                <ParallaxImg logo={domainBg} height="120px">
+                  <div className="text-center pt-3"><img src={insuranceSvg} /> <br/>
+                    <DomainText>INSURANCE</DomainText>
+                    <img src={redArrowSvg} />
+                  </div>
+                </ParallaxImg>
               </Col>
               <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
+                <ParallaxImg logo={domainBg} height="120px">
+                  <div className="text-center pt-3"><img src={manufacturingSvg} /> <br/>
+                    <DomainText>MANUFACTURING</DomainText>
+                    <img src={redArrowSvg} />
+                  </div>
+                </ParallaxImg>
               </Col>
             </Row>
           </Col>
