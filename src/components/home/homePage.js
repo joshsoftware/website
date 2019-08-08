@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import Media from 'react-media';
 import { Link } from 'react-router-dom';
+import { Button } from "reactstrap";
 
 import mainImg from '../../assetes/images/black-bulb-image.png';
 import logoM from '../../assetes/images/bulb-image-mobile.png';
-import contactUsBtn from '../../assetes/images/conctact us_button.svg';
-import { ParallaxImg, BannerSubText, BannerText, ConctactUsRightText, ContactUSBtnText } from "./homeStyledComponents.js"
+import { ParallaxImg, BannerSubText, BannerText, ConctactUsRightText } from "./homeStyledComponents.js"
 import * as routeConstants from "../../routeConstants.js";
 
 const HomePage = () => {
@@ -43,15 +43,15 @@ const BannerText1 = () => (
     <BannerText> INNOVATION &amp; DISRUPTION </BannerText>
     <BannerSubText>is the way We change the Game</BannerSubText>
 
-    <Link to={routeConstants.CONTACT_US_URL}>
+    {/* <Link to={routeConstants.CONTACT_US_URL}>
       <img src={contactUsBtn} />
-    </Link>
-    <ContactUSBtnText >
+    </Link> */}
+    <div className="text-white" >
       <Link to={routeConstants.CONTACT_US_URL} className="text-decoration-none">
-        <span className="mr-3 text-white">Contact Us</span>
+        <Button color="danger" className="text-white border-radius">Contact Us</Button>
       </Link>
       <ConctactUsRightText> to change yours </ConctactUsRightText>
-    </ContactUSBtnText>
+    </div>
   </Fragment>
 )
 

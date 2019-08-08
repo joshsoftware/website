@@ -141,13 +141,14 @@ export const BannerSubText = styled.div`
   color: #FFFFFF;
 `
 
-export const ContactUSBtnText = styled.span`
-  color: white;
-  position: relative;
-  // left: 27px;
-  // top: 573px;
-  right: 103px;
-`
+// export const ContactUSBtnText = styled.span`
+//   background-image: ${(props) => `url(${props.logo})`}
+//   // color: white;
+//   // position: relative;
+//   // left: 27px;
+//   // top: 573px;
+//   // right: 103px;
+// `
 
 export const ConctactUsRightText = styled.span`
   font-weight: bold;

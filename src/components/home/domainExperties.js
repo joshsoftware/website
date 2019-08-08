@@ -12,7 +12,7 @@ const DomainExperties = (props) => {
   })
 
   const PreviousArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
       <img
         src={previousSvg}
@@ -30,7 +30,47 @@ const DomainExperties = (props) => {
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <PreviousArrow />,
-    prevArrow: <PreviousArrow />
+    prevArrow: <PreviousArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+          infinite: true,
+          dots: true,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+          infinite: true,
+          dots: true,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 1,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: true,
+          variableWidth: true
+        }
+      }
+    ]
   }
 
   return (
@@ -66,7 +106,7 @@ const DomainExperties = (props) => {
       </section>
       <Row>
         <Col md={2} />
-        <Col md={8} >
+        <Col md={8} xs={12} sm={12} >
           <JoshCarousel items={carouselItems} settings={carouselSettings} />
         </Col>
         <Col md={2} />

@@ -6464,6 +6464,15 @@ img {
 .height-adjust {
   height: 400px; }
 
+.border-radius {
+  border-radius: 22px 22px 22px 22px;
+  width: 120px; }
+
+.contact-us-btn {
+  background-image: url("../images/contact_us_btn.png");
+  width: 105px;
+  height: 32px; }
+
 .section-technologies.section-banner {
   position: relative;
   background-color: #495380;
