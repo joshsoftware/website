@@ -7,6 +7,7 @@ import DomainExperties from './domainExperties.js'
 import WhatWeDo from './whatWeDo.js';
 import Innovations from './innovations.js'
 import SuccessStories from './successStories.js';
+import ContactUs from './contactUs.js'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Testimonials />
       <SuccessStories />
       <Company />
+      <ContactUs />
     </Fragment>
   )
 }

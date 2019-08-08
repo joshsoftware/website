@@ -173,6 +173,14 @@ export const Heading1Orange = styled.h1`
   font-family: lato light;
   color: #FF7B71;
 `
-
+export const Heading1Black = styled.h1`
+  font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "27px"};
+  text-align: -webkit-right;
+  font-family: lato light;
+  color: #666666;
+  width: 446px;
+  height: 66px;
+  word-wrap: break-work;
+`
 
 
