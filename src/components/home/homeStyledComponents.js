@@ -204,6 +204,6 @@ export const DomainText = styled.div`
   font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "17px"};
   color: #FFFFFF;
   height: 20px;
-  font-family: Barlow medium;
+  font-family: lato light;
 `
 
