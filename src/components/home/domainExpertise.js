@@ -1,13 +1,20 @@
 import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
-import { Heading1 } from "./homeStyledComponents.js";
+import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
 import domainBg from "../../assetes/images/domain.svg";
 import previousSvg from "../../assetes/images/previous.svg";
 import nextSvg from "../../assetes/images/next.svg"
+import redArrowSvg from "../../assetes/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
+import healthSvg from "../../assetes/images/home/health.svg"
+import insuranceSvg from "../../assetes/images/home/insurance.svg"
+import financeSvg from "../../assetes/images/home/finance.svg"
+import sportSvg from "../../assetes/images/home/sport.svg"
+import mediaSvg from "../../assetes/images/home/media.svg"
+import manufacturingSvg from "../../assetes/images/home/manufacturing.svg"
 
-const DomainExperties = (props) => {
-  const { domainsData } = props;
+const DomainExpertise = (props) => {
+  const { domainsData, industriesData } = props;
   const carouselItems = domainsData.map(domain => {
     return <img src={require(`../../assetes/images/technologies/${domain.logo}`)} />
   })
@@ -89,29 +96,22 @@ const DomainExperties = (props) => {
   return (
     <Fragment>
       <section id="clientsSlide" className="section-home ">
-        <Heading1>Domain Experties</Heading1>
+        <Heading1>Domain Expertise</Heading1>
         <Row>
           <Col sm={2} md={3} />
           <Col sm={8} md={6}>
             <Row>
-              <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
-              </Col>
-              <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
-              </Col>
-              <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
-              </Col>
-              <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
-              </Col>
-              <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
-              </Col>
-              <Col sm={6} md={4} xs={6} className="pb-14">
-                <img src={domainBg} />
-              </Col>
+              {industriesData.map(industry => {
+                return <Col sm={6} md={4} xs={6} className="pb-14">
+                  <ParallaxImg logo={domainBg} height="120px">
+                    <div className="text-center pt-3">
+                      <img src={require(`../../assetes/images/home/${industry.logo}`)}/> <br />
+                      <DomainText>{industry.name}</DomainText>
+                      <img src={redArrowSvg} />
+                    </div>
+                  </ParallaxImg>
+                </Col>
+              })}
             </Row>
           </Col>
           <Col sm={2} md={3} />
@@ -128,7 +128,7 @@ const DomainExperties = (props) => {
   )
 }
 
-DomainExperties.defaultProps = {
+DomainExpertise.defaultProps = {
   domainsData: [
     {
       id: 1,
@@ -165,7 +165,40 @@ DomainExperties.defaultProps = {
       name: "react",
       logo: "angular.png"
     }
+  ],
+
+  industriesData: [
+    {
+      id: '1',
+      name: 'HEALTH',
+      logo: 'health.svg'
+    },
+    {
+      id: '2',
+      name: 'MEDIA',
+      logo: 'media.svg'
+    },
+    {
+      id: '3',
+      name: 'FINANCE',
+      logo: 'finance.svg'
+    },
+    {
+      id: '4',
+      name: 'SPORTS',
+      logo: 'sport.svg'
+    },
+    {
+      id: '5',
+      name: 'INSURANCE',
+      logo: 'insurance.svg'
+    },
+    {
+      id: '6',
+      name: 'MANUFACTURING',
+      logo: 'manufacturing.svg'
+    },
   ]
 }
 
-export default DomainExperties;
+export default DomainExpertise;
