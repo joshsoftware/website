@@ -1,40 +1,64 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Media from 'react-media';
 import { Link } from 'react-router-dom';
-import { Button } from "reactstrap";
+import { Button, Row, Col } from "reactstrap";
 
-import mainImg from '../../assetes/images/black-bulb-image.png';
-import logoM from '../../assetes/images/bulb-image-mobile.png';
+import mainImg from '../../assets/images/black-bulb-image.png';
+import logoM from '../../assets/images/bulb-image-mobile.png';
+
 import { ParallaxImg, BannerSubText, BannerText, ConctactUsRightText } from "./homeStyledComponents.js"
 import * as routeConstants from "../../routeConstants.js";
+import whatsNewLogo from "../../assets/images/home/whats_new.svg";
+import whatsTrendingMb from "../../assets/images/home/whats_trending_mb.svg";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const { setOpenTrending } = props;
+
   return (
-    <div style={{ backgroundColor: "#333333" }}>
-      <div style={{ height: 67 }} />
-      <div className="row">
-        <div className="col-md-6">
-          <Media query="(max-width: 900px)">
+    <>
+      <div style={{ backgroundColor: "#333333", }}>
+        <div className="row">
+
+          <div className="col-md-6 col-xs-12">
+            <Media query="(max-width: 500px)">
+              {matches =>
+                matches ? (
+                  <Row>
+                    <Col xs={10}>
+                      <ParallaxImg logo={logoM} height="411px" />
+                    </Col>
+                    <Col xs={2} className="pr-0">
+                      <div onClick={setOpenTrending} className="float-right img-container">
+                        <img src={whatsTrendingMb} />
+                        <span className="img-centered-text">What's <br /> Trending?</span>
+                      </div>
+                    </Col>
+
+                  </Row>
+                ) : (
+                    <ParallaxImg logo={mainImg} height="721px" />
+                  )
+              }
+            </Media>
+          </div>
+          <Media query="(max-width: 500px)">
             {matches =>
               matches ? (
-                <ParallaxImg logo={logoM} height="411px" />
+                <div className="col-md-6 pl-4 banner-text-align">{BannerText1()}</div>
               ) : (
-                  <ParallaxImg logo={mainImg} height="721px" />
+                  <div className="col-md-4 m-auto">{BannerText1()}</div>
                 )
             }
           </Media>
+          <div className="col-md-2 d-xs-none ">
+            <div onClick={setOpenTrending} className="img-container">
+              <img src={whatsNewLogo} />
+              <span className="img-centered-text">What's <br /> Trending?</span>
+            </div>
+          </div>
         </div>
-        <Media query="(max-width: 500px)">
-          {matches =>
-            matches ? (
-              <div className="col-md-6 pl-4 banner-text-align">{BannerText1()}</div>
-            ) : (
-                <div className="col-md-6 m-auto">{BannerText1()}</div>
-              )
-          }
-        </Media>
       </div>
-    </div>
+    </>
   )
 }
 
@@ -48,6 +72,7 @@ const BR = <Media query="(max-width: 500px)">
 
 const BannerText1 = () => (
   <Fragment>
+
     <BannerText className="banner-text"> INNOVATION &amp; DISRUPTION </BannerText>
     <BannerSubText className="banner-subtext-padding">Is the way {BR} We change the Game</BannerSubText>
 

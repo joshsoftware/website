@@ -12,7 +12,7 @@ const ProjectDetails = (props) => {
         <h2 className="card-title">{title}</h2>
         <div className="portfolio-wrap">
           <div className="portfolio-img">
-            <img src={require(`../../assetes/images/${logo}`)} alt="IOT-Logo" className="img-fluid" /></div>
+            <img src={require(`../../assets/images/${logo}`)} alt="IOT-Logo" className="img-fluid" /></div>
           <div className="portfolio-info">
             <p className="card-text">{description}</p>
             <div className="link-box">

@@ -6,7 +6,7 @@ import Layout from './layout';
 import Footer from './components/layout/Footer.js';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './assetes/stylesheets/main.css';
+import './assets/stylesheets/main.css';
 
 
 const App = () => {

@@ -2,9 +2,9 @@ import React, { useState, useRef } from 'react';
 import Media from 'react-media';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assetes/images/josh-logo-web.svg';
-import logoM from '../../assetes/images/josh-logo1.svg';
-import hamburger from "../../assetes/images/hamburger.svg"
+import logo from '../../assets/images/josh-logo-web.svg';
+import logoM from '../../assets/images/josh-logo1.svg';
+import hamburger from "../../assets/images/hamburger.svg"
 
 import NavDropdown from './NavDropdown.js';
 import NavLink from './NavLink.js';

@@ -6,6 +6,7 @@
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.8.6",
     "react-google-recaptcha": "^2.0.0-rc.1",
     "react-media": "^1.9.2",

@@ -2,8 +2,8 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 
-import companyImg from "../../assetes/images/company.png";
-import companyMbImg from "../../assetes/images/home/compnay_mb.png";
+import companyImg from "../../assets/images/company.png";
+import companyMbImg from "../../assets/images/home/compnay_mb.png";
 import { ParallaxImg, CompanyDetailsText } from "./homeStyledComponents.js";
 
 const Company = () => {

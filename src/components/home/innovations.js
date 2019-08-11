@@ -3,13 +3,13 @@ import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 
 import { ParallaxImg, InnovationHeading1 } from './homeStyledComponents';
-import innovationsImg from "../../assetes/images/home/innovation.png"
-import innovationBgMobile from "../../assetes/images/home/innovationBgMobile.png"
-import innovationBtnImg from "../../assetes/images/home/innovation_button.svg";
-import innovationBtnMobile from "../../assetes/images/home/innovation_button_mb.svg";
+import innovationsImg from "../../assets/images/home/innovation.png"
+import innovationBgMobile from "../../assets/images/home/innovationBgMobile.png"
+import innovationBtnImg from "../../assets/images/home/innovation_button.svg";
+import innovationBtnMobile from "../../assets/images/home/innovation_button_mb.svg";
 
-import kimayaLogo from "../../assetes/images/home/Kimaya.svg";
-import kimayaMbLogo from '../../assetes/images/home/Kimaya_mb.svg';
+import kimayaLogo from "../../assets/images/home/Kimaya.svg";
+import kimayaMbLogo from '../../assets/images/home/Kimaya_mb.svg';
 
 
 const Innovations = () => {

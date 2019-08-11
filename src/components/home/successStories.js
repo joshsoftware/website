@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 
-import successStoriesBg from "../../assetes/images/home/successStoryBg.png";
-import mobileSuccessStoriesBg from "../../assetes/images/home/mob_sucess_stories.png";
+import successStoriesBg from "../../assets/images/home/successStoryBg.png";
+import mobileSuccessStoriesBg from "../../assets/images/home/mob_sucess_stories.png";
 import { ParallaxImg, Heading1Orange } from './homeStyledComponents';
 
 const SuccessStories = () => {

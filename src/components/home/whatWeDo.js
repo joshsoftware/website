@@ -17,7 +17,7 @@ const WhatWeDo = (props) => {
                 <div className="border-2">
                   <Row>
                     <Col md={12}>
-                      <img src={require(`../../assetes/images/home/${domain.logo}`)} />
+                      <img src={require(`../../assets/images/home/${domain.logo}`)} />
                     </Col>
                   </Row>
                   <Row className="bg-white mx-auto text-center h-52">
