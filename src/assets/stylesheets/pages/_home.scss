@@ -641,3 +641,77 @@
 .h-52 {
   height: 52%;
 }
+
+.mt-140 {
+  margin-top: 140px;
+}
+
+.trending-title {
+  font-size: 39px;
+  color: #FFFFFF;
+  line-height: 46px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  // font-family: lato bold;
+}
+
+.trending-subtitle {
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 30px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 17px;
+    line-height: 21px;
+  }
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.d-xs-none {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.slick-active > .orange-color {
+  background-color: #CF4338;
+  // // display: in  line-block;
+    width: 10px;
+    height: 10px;
+  //   // margin: 6px;
+    // background-color: #555;
+}
+
+.slick-dots > :not(.slick-active) > .orange-color{
+  background-color: #FFF;
+  width: 10px;
+  height: 10px;
+}
+
+.bottom-30 {
+  bottom: 30px !important;
+}

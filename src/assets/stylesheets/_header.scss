@@ -1,6 +1,6 @@
 .josh-header {
   height: rem(76px);
-  background-color: transparent;
+  background-color: #000;
   @include flexbox();
   @include align-items(center);
   // box-shadow: 0px 0px 69px -23px rgba(0,0,0,0.75);
@@ -58,8 +58,9 @@
       }
 
       &.active {
-        color: $gray-20;
+        color: #FFF;
         font-weight: 700;
+        border-bottom: 3px solid #FFF;
       }
 
       // &:hover, &:focus {
