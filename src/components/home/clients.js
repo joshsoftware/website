@@ -29,7 +29,7 @@ Clients.defaultProps = {
   clients: [
     {
       website: "",
-      logo: "startv.png",
+      logo: "clogo-star.jpg",
       name: "Star India"
     },
     {

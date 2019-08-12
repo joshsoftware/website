@@ -3,6 +3,7 @@ import { Row, Col } from 'reactstrap';
 import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
 import domainBg from "../../assets/images/domain.svg";
 import previousSvg from "../../assets/images/previous.svg";
+import nextSvg from "../../assets/images/next.svg";
 import redArrowSvg from "../../assets/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
 
@@ -28,7 +29,7 @@ const DomainExpertise = (props) => {
     const { className, onClick } = props;
     return (
       <img
-        src={previousSvg}
+        src={nextSvg}
         className={className}
         onClick={onClick}
         alt="Next"
@@ -45,8 +46,8 @@ const DomainExpertise = (props) => {
     slidesToScroll: 1,
     centerPadding: "10px",
     adaptiveHeight: true,
-    nextArrow: <PreviousArrow />,
-    prevArrow: <NextArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PreviousArrow />,
     responsive: [
       {
         breakpoint: 1024,
