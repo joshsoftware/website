@@ -63,6 +63,13 @@
         border-bottom: 3px solid #FFF;
       }
 
+      @include media-breakpoint-down(sm) {
+        &.active {
+          color: #333333;
+          font-weight: 700;
+        }
+      }
+
       // &:hover, &:focus {
       //   color: $gray-20;
       //   outline: 0;

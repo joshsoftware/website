@@ -715,3 +715,11 @@
 .bottom-30 {
   bottom: 30px !important;
 }
+
+.main-container {
+  height:  67px;
+
+  @include media-breakpoint-down(sm) {
+    height: 47px;
+  }
+}

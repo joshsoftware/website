@@ -68,11 +68,11 @@ const Component = props => {
 
 Component.defaultProps = {
   menues: [
-    {
-      id: 1,
-      title: "INNOVATION",
-      url: "/innovation.html"
-    },
+    // {
+    //   id: 1,
+    //   title: "INNOVATION",
+    //   url: "/innovation.html"
+    // },
     {
       id: 2,
       title: "SERVICES",
@@ -83,16 +83,16 @@ Component.defaultProps = {
       title: "Technologies",
       url: routes.TECHNOLOGIES_URL
     },
-    {
-      id: 5,
-      title: "Products",
-      url: "/domain_experties"
-    },
-    {
-      id: 6,
-      title: "Stories",
-      url: "/domain_experties"
-    },
+    // {
+    //   id: 5,
+    //   title: "Products",
+    //   url: "/domain_experties"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Stories",
+    //   url: "/domain_experties"
+    // },
     {
       id: 3,
       title: "COMPANY",

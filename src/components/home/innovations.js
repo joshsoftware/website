@@ -85,15 +85,15 @@ Innovations.defaultProps = {
       url: ""
     },
     {
-      name: "Hunger Terminal",
-      logo: 'hunger_terminal',
-      logo_type: 'svg',
-      url: ""
-    },
-    {
       name: "Code Curiosity",
       logo: 'code_curiosity',
       logo_type: 'png',
+      url: ""
+    },
+    {
+      name: "Hunger Terminal",
+      logo: 'hunger_terminal',
+      logo_type: 'svg',
       url: ""
     }
   ]

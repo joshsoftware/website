@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <>
-      <div style={{ height: 67 }} />
+      <div className="main-container" />
       <Menu pageWrapId={"page-wrap"} outerContainerId={"root"} right isOpen={openTrending} width="100%" disableCloseOnEsc>
         {/* <div style={{ height: 67 }} /> */}
         <Trending setOpenTrending={toggleOpenTrending} />
