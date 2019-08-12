@@ -1,6 +1,6 @@
 .josh-header {
-  height: rem(76px);
-  background-color: #000;
+  // height: rem(76px);
+  background-color: #FFF;
   @include flexbox();
   @include align-items(center);
   // box-shadow: 0px 0px 69px -23px rgba(0,0,0,0.75);
@@ -26,7 +26,7 @@
   padding-left: 0px;
   // margin-left: -5px;
   // margin-top: -1px;
-  margin-top: -12px;
+  // margin-top: -12px;
 }
 
 .josh-navbar {
@@ -45,7 +45,7 @@
   .navbar-nav {
 
     .nav-link {
-      color: #FFFFFF;
+      color: #666666;
       font-size: rem(14px);
       font-weight: 300;
       text-transform: uppercase;
@@ -58,9 +58,9 @@
       }
 
       &.active {
-        color: #FFF;
-        font-weight: 700;
-        border-bottom: 3px solid #FFF;
+        color: #333333;
+        // font-weight: 700;
+        border-bottom: 4px solid #CF4338;
       }
 
       @include media-breakpoint-down(sm) {
@@ -111,7 +111,7 @@
       padding: rem(0 20px);
       @include boxShadow(none);
     }
-  }
+  } 
 
   .dropdown-item {
     color: $gray-60;
@@ -141,4 +141,7 @@
       }
     }
   }
+}
+.mb-10px{
+  margin-bottom: -10px;
 }
