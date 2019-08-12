@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import Media from 'react-media';
 import { Link } from 'react-router-dom';
 import { Button, Row, Col } from "reactstrap";
@@ -29,7 +29,7 @@ const HomePage = (props) => {
                     </Col>
                     <Col xs={2} className="pr-0">
                       <div onClick={setOpenTrending} className="float-right img-container">
-                        <img src={whatsTrendingMb} />
+                        <img src={whatsTrendingMb} alt="What's Trending?" />
                         <span className="img-centered-text">What's <br /> Trending?</span>
                       </div>
                     </Col>
@@ -52,7 +52,7 @@ const HomePage = (props) => {
           </Media>
           <div className="col-md-2 d-xs-none ">
             <div onClick={setOpenTrending} className="img-container">
-              <img src={whatsNewLogo} />
+              <img src={whatsNewLogo} alt="What's Trending?" />
               <span className="img-centered-text">What's <br /> Trending?</span>
             </div>
           </div>

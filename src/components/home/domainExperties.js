@@ -3,7 +3,6 @@ import { Row, Col } from 'reactstrap';
 import { Heading1 } from "./homeStyledComponents.js";
 import domainBg from "../../assets/images/domain.svg";
 import previousSvg from "../../assets/images/previous.svg";
-import nextSvg from "../../assets/images/next.svg"
 import JoshCarousel from './carousel.js';
 
 const DomainExperties = (props) => {

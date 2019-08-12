@@ -43,7 +43,7 @@ const Component = props => {
           <button className="navbar-toggler p-0 border-0 ml-n2 mt-2" type="button"
             onClick={() => toggleSidebar(!isOpenSidebar)}
             data-toggle="offcanvas">
-            <img src={hamburger} />
+            <img src={hamburger} alt="Menu" />
           </button>
           <div
             className={`navbar-collapse offcanvas-collapse mt-4 mb-2 ${isOpenSidebar ? 'open' : ''}`}

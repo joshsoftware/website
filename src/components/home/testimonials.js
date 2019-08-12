@@ -10,7 +10,6 @@ import {
   Quotes,
   ReadMoreBtn,
   ClientName,
-  Circle
 } from "./homeStyledComponents.js"
 
 
@@ -31,7 +30,7 @@ const Testimonials = (props) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    dotsClass: "slick-dots slick-thumb",
+    dotsClass: "slick-dots slick-thumb orange-color",
     variableWidth: true,
     responsive: [
       {

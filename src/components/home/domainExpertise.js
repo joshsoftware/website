@@ -3,20 +3,13 @@ import { Row, Col } from 'reactstrap';
 import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
 import domainBg from "../../assets/images/domain.svg";
 import previousSvg from "../../assets/images/previous.svg";
-import nextSvg from "../../assets/images/next.svg"
 import redArrowSvg from "../../assets/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
-import healthSvg from "../../assets/images/home/health.svg"
-import insuranceSvg from "../../assets/images/home/insurance.svg"
-import financeSvg from "../../assets/images/home/finance.svg"
-import sportSvg from "../../assets/images/home/sport.svg"
-import mediaSvg from "../../assets/images/home/media.svg"
-import manufacturingSvg from "../../assets/images/home/manufacturing.svg"
 
 const DomainExpertise = (props) => {
   const { domainsData, industriesData } = props;
   const carouselItems = domainsData.map(domain => {
-    return <img src={require(`../../assets/images/technologies/${domain.logo}`)} />
+    return <img src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} />
   })
 
   const PreviousArrow = (props) => {
@@ -26,6 +19,7 @@ const DomainExpertise = (props) => {
         src={previousSvg}
         className={className}
         onClick={onClick}
+        alt="Previous"
       />
     );
   }
@@ -37,6 +31,7 @@ const DomainExpertise = (props) => {
         src={previousSvg}
         className={className}
         onClick={onClick}
+        alt="Next"
       />
     );
   }
@@ -105,9 +100,9 @@ const DomainExpertise = (props) => {
                 return <Col sm={6} md={4} xs={6} className="pb-14">
                   <ParallaxImg logo={domainBg} height="120px">
                     <div className="text-center pt-3">
-                      <img src={require(`../../assets/images/home/${industry.logo}`)} /> <br />
+                      <img src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
                       <DomainText>{industry.name}</DomainText>
-                      <img src={redArrowSvg} />
+                      <img src={redArrowSvg} alt={industry.name} />
                     </div>
                   </ParallaxImg>
                 </Col>

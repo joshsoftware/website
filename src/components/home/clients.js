@@ -33,7 +33,7 @@ Clients.defaultProps = {
       name: "Star India"
     },
     {
-      website: "javascript:void(0);",
+      website: "",
       logo: "clogo-gojek.jpg",
       name: "GO JEK"
     },
@@ -93,7 +93,7 @@ Clients.defaultProps = {
       name: "Skout Deals"
     },
     {
-      website: "javascript:void(0);",
+      website: "",
       logo: "clogo-druva.jpg",
       name: "Druva"
     },

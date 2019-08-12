@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
+import { Link } from "react-router-dom";
 
 import successStoriesBg from "../../assets/images/home/successStoryBg.png";
 import mobileSuccessStoriesBg from "../../assets/images/home/mob_sucess_stories.png";
@@ -22,11 +23,11 @@ const SuccessStories = () => {
             </Row>
           </ParallaxImg>
           <ul className="succss-stories">
-            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-            <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
           </ul>
         </Fragment>
       ) : (
@@ -37,11 +38,11 @@ const SuccessStories = () => {
               </Col>
               <Col md={6} className="d-flex justify-content-start align-items-center">
                 <ul className="w-100 text-white">
-                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
-                  <li className="bullet font-weight-bold"><a href="" >Freedom from Diabetis</a></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
                 </ul>
               </Col>
             </Row>
