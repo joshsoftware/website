@@ -17,15 +17,41 @@ const Component = props => {
 
   const ref = useRef();
   useOnClickedOutside(ref, () => toggleSidebar(false));
+  /** Right Navigation Bar */
+  const Navigations = (
+    <>
+      <button className="navbar-toggler p-0 border-0 ml-n2 mt-2" type="button"
+        onClick={() => toggleSidebar(!isOpenSidebar)}
+        data-toggle="offcanvas">
+        <img src={hamburger} alt="Menu" />
+      </button>
+      <div
+        className={`navbar-collapse offcanvas-collapse mt-4 mb-2 ${isOpenSidebar ? 'open' : ''}`}
+        id="joshOffcanvasNavbar"
+        ref={ref}
+      >
+        <div className="navbar-nav ml-auto">
+
+          {
+            menues.map(menu => {
+              return menu.type === 'dropdown'
+                ? <NavDropdown {...menu} key={menu.id} />
+                : <NavLink {...menu} key={menu.id} />
+            })
+          }
+        </div>
+      </div>
+    </>
+  )
 
   return (
     <header className="josh-header fixed-top">
       <div className="container header-new">
         <nav className="navbar navbar-expand-lg josh-navbar ">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 ">
               <Link className="navbar-brand pt-0 pb-md-1" to="/" activeClassName="text-decoration-none">
-                <Media query="(max-width: 600px)">
+                <Media query="(max-width: 700px)">
                   {matches =>
                     matches ? (
                       <img src={logoM} alt="Josh Software" className="ml-n2 mt-n2" />
@@ -38,47 +64,46 @@ const Component = props => {
               </Link>
             </div>
             <div className="col-md-8">
+              <Media query="(max-width: 900px)">
+                {matches =>
+                  matches ? (
+                    null
+                  ) : Navigations
+                }
+              </Media>
             </div>
           </div>
-          <button className="navbar-toggler p-0 border-0 ml-n2 mt-2" type="button"
-            onClick={() => toggleSidebar(!isOpenSidebar)}
-            data-toggle="offcanvas">
-            <img src={hamburger} alt="Menu" />
-          </button>
-          <div
-            className={`navbar-collapse offcanvas-collapse mt-4 mb-2 ${isOpenSidebar ? 'open' : ''}`}
-            id="joshOffcanvasNavbar"
-            ref={ref}
-          >
-            <div className="navbar-nav ml-auto">
+          <Media query="(max-width: 900px)">
+            {matches =>
+              matches ? (
+                Navigations
+              ) : null
+            }
+          </Media>
 
-              {
-                menues.map(menu => {
-                  return menu.type === 'dropdown'
-                    ? <NavDropdown {...menu} key={menu.id} />
-                    : <NavLink {...menu} key={menu.id} />
-                })
-              }
-            </div>
-          </div>
         </nav>
       </div>
-    </header>
+    </header >
   )
 }
 
 Component.defaultProps = {
   menues: [
-    // {
-    //   id: 1,
-    //   title: "INNOVATION",
-    //   url: "/innovation.html"
-    // },
     {
-      id: 2,
-      title: "SERVICES",
-      url: routes.SERVICES_URL
+      id: 1,
+      title: "Domain Experties",
+      url: "/domain_expertise"
     },
+    {
+      id: 3,
+      title: "Our Innovation",
+      url: "/innovation"
+    },
+    // {
+    //   id: 2,
+    //   title: "SERVICES",
+    //   url: routes.SERVICES_URL
+    // },
     {
       id: 4,
       title: "Technologies",
@@ -89,13 +114,13 @@ Component.defaultProps = {
     //   title: "Products",
     //   url: "/domain_experties"
     // },
-    // {
-    //   id: 6,
-    //   title: "Stories",
-    //   url: "/domain_experties"
-    // },
     {
-      id: 3,
+      id: 6,
+      title: "Success Stories",
+      url: "/domain_experties"
+    },
+    {
+      id: 7,
       title: "COMPANY",
       items: [
         {

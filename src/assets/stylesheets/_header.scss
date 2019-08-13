@@ -58,9 +58,9 @@
       }
 
       &.active {
-        color: #333333;
-        // font-weight: 700;
-        border-bottom: 4px solid #CF4338;
+        color: #333;
+        font-weight: 700;
+        // border-bottom: 4px solid #CF4338;
       }
 
       @include media-breakpoint-down(sm) {
