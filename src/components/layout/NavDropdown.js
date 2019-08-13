@@ -14,7 +14,7 @@ const NavDropdown = props => {
     <div className={`dropdown ${isOpen ? 'show' : ''}`} ref={ref}>
       <Link
         href='#'
-        className="nav-item nav-link dropdown-toggle"
+        className="nav-item nav-link dropdown-toggle mb-10px"
         id="companyDropdownMenu"
         data-toggle="dropdown"
         aria-haspopup="true"

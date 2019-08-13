@@ -1,6 +1,6 @@
 .section-home {
   min-height: calc(100vh - 76px);
-  padding: rem(80px 0);
+  padding: rem(20px 0);
   background-color: $gray-96;
 
   @include media-breakpoint-down(md) {
@@ -722,4 +722,8 @@
   @include media-breakpoint-down(sm) {
     height: 47px;
   }
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

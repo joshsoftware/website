@@ -24,11 +24,11 @@ const Component = props => {
         <nav className="navbar navbar-expand-lg josh-navbar ">
           <div className="row">
             <div className="col-md-4">
-              <Link className="navbar-brand" to="/" activeClassName="text-decoration-none">
+              <Link className="navbar-brand pt-0 pb-md-1" to="/" activeClassName="text-decoration-none">
                 <Media query="(max-width: 600px)">
                   {matches =>
                     matches ? (
-                      <img src={logoM} alt="Josh Software" className="ml-n2 mt-2" />
+                      <img src={logoM} alt="Josh Software" className="ml-n2 mt-n2" />
                     ) : (
                         <img src={logo} alt="Josh Software" />
                       )
@@ -51,6 +51,7 @@ const Component = props => {
             ref={ref}
           >
             <div className="navbar-nav ml-auto">
+
               {
                 menues.map(menu => {
                   return menu.type === 'dropdown'

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,21 +24,22 @@ const Footer = () => {
         </div>
         <div className="footer-nav-wrap">
           <nav className="nav footer-nav">
-            <a href="/" className="nav-link">Home</a>
-            <a href="services.html" className="nav-link">Services</a>
-            <a href="services.html#ourWork" className="nav-link">Our Work</a>
-            <a href="innovation.html" className="nav-link">Innovation</a>
-            <a href="technologies.html" className="nav-link">Technologies</a>
-            <a href="industries.html" className="nav-link">Industries</a>
-            <a href="testimonial.html" className="nav-link">Testimonials</a>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="services" className="nav-link">Services</Link>
+            <Link to="services#ourWork" className="nav-link">Our Work</Link>
+            {/* <a href="innovation.html" className="nav-link">Innovation</a> */}
+            <Link to="technologies" className="nav-link">Technologies</Link>
+            {/* <a href="industries.html" className="nav-link">Industries</a> */}
+            {/* <a href="testimonial.html" className="nav-link">Testimonials</a> */}
           </nav>
-          <nav className="nav footer-nav"><a href="about-us.html" className="nav-link">Company</a>
-            <a href="open-source.html" className="nav-link">Open Source</a>
-            <a href="about-us.html#news" className="nav-link">In News</a>
-            <a href="team.html" className="nav-link">Our Team</a>
+          <nav className="nav footer-nav">
+            <Link to="about-us" className="nav-link">Company</Link>
+            {/* <a href="open-source.html" className="nav-link">Open Source</a> */}
+            {/* <a href="about-us.html#news" className="nav-link">In News</a> */}
+            <Link to="team" className="nav-link">Our Team</Link>
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
             <a href="http://careers.joshsoftware.com/" className="nav-link">Career</a>
-            <a href="contact-us.html" className="nav-link">Contact Us</a>
+            <Link tp="contact-us" className="nav-link">Contact Us</Link>
           </nav>
         </div>
         <div className="social-links-wrap">

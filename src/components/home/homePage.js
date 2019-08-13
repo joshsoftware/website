@@ -28,7 +28,7 @@ const HomePage = (props) => {
                       <ParallaxImg logo={logoM} height="411px" />
                     </Col>
                     <Col xs={2} className="pr-0">
-                      <div onClick={setOpenTrending} className="float-right img-container">
+                      <div onClick={setOpenTrending} className="float-right img-container cursor-pointer">
                         <img src={whatsTrendingMb} alt="What's Trending?" />
                         <span className="img-centered-text">What's <br /> Trending?</span>
                       </div>
@@ -51,7 +51,7 @@ const HomePage = (props) => {
             }
           </Media>
           <div className="col-md-2 d-xs-none ">
-            <div onClick={setOpenTrending} className="img-container">
+            <div onClick={setOpenTrending} className="img-container cursor-pointer">
               <img src={whatsNewLogo} alt="What's Trending?" />
               <span className="img-centered-text">What's <br /> Trending?</span>
             </div>

@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import { Card } from 'reactstrap';
 
 export const Heading1 = styled.h1`
-  font-size: 20px;
+  font-size: 43px;
   text-align: center;
   text-transform: uppercase;
   color: #CF4338;
   min-width: 158px;
   max-height: 24px;
-  margin: 3rem 0 3.5rem;
+  margin: 2rem 0 5.5rem;
 `
 
 export const InnovationHeading1 = styled.h1`

@@ -24,7 +24,7 @@ const Trending = (props) => {
   const carouselItems = items.map(cItem => (
     <Row>
       <Col xs={12} md={12} lg={12} className="img-container mh-100 p-3" style={{ height: 600 }}>
-        <div className="float-right img-container top-right" onClick={setOpenTrending}>
+        <div className="float-right img-container top-right cursor-pointer" onClick={setOpenTrending}>
           <img src={whatsTrendingMb} alt="what's new?" />
           <span className="img-centered-text">Back</span>
         </div>

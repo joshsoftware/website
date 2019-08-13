@@ -6,7 +6,7 @@ const NavLink = props => {
   const { url, title } = props;
 
   return (
-    < Link className="nav-item nav-link"
+    < Link className="nav-item nav-link  mb-10px"
       to={url}
     >{title}</Link>
   )
