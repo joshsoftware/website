@@ -42,6 +42,11 @@ const WhatWeDo = (props) => {
 WhatWeDo.defaultProps = {
   domains: [
     {
+      logo: "Rescue.png",
+      title: "Rescue Missions",
+      subTitle: "Re-engineer existing inefficient architectures with zero down-time and complete data"
+    },
+    {
       logo: "domain.png",
       title: "Simplify Domain Complexities",
       subTitle: "Focus on simplifying complexities in our client's industry through intelligent technological intervention"
@@ -65,12 +70,8 @@ WhatWeDo.defaultProps = {
       logo: "Accelerate.png",
       title: "Accelerate Time to Market",
       subTitle: "Ensure swift ‘Concept to Code’ delivery to ensure our clients beat their competition to market."
-    },
-    {
-      logo: "Rescue.png",
-      title: "Rescue Missions",
-      subTitle: "Re-engineer existing inefficient architectures with zero down-time and complete data"
     }
+
   ]
 }
 
