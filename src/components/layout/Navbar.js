@@ -92,7 +92,7 @@ Component.defaultProps = {
     {
       id: 1,
       title: "Domain Experties",
-      url: "/domain_expertise"
+      url: routes.DOMAIN_EXPERTISE
     },
     {
       id: 3,
@@ -143,7 +143,12 @@ Component.defaultProps = {
           title: "Career",
           url: "http://careers.joshsoftware.com/",
           otherDomain: true
-        }
+        },
+        {
+          id: 5,
+          title: "Testimonials",
+          url: routes.TESTIMONIALS
+        },
       ],
       type: 'dropdown'
     }
