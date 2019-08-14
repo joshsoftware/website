@@ -5,3 +5,4 @@ export const SERVICES_URL = '/services';
 export const TECHNOLOGIES_URL = '/technologies';
 export const DOMAIN_EXPERTISE = '/domain_expertise'
 export const TESTIMONIALS = '/testimonials'
+export const INNOVATIONS = "/innovations"

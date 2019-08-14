@@ -8,7 +8,8 @@ import ContactUs from './components/contact_us';
 import Services from './components/services';
 import Technologies from './components/technologies';
 import DomainExpertise from './components/domainExpertise';
-import TestimonialsList from './components/testimonials.js';
+import TestimonialsList from './components/testimonials/index.js';
+import Innovation from './components/innovations';
 
 const Layout = () => {
   return (
@@ -21,6 +22,7 @@ const Layout = () => {
       <Route exact path={routes.TECHNOLOGIES_URL} component={Technologies} />
       <Route exact path={routes.DOMAIN_EXPERTISE} component={DomainExpertise} />
       <Route exact path={routes.TESTIMONIALS} component={TestimonialsList} />
+      <Route exact path={routes.INNOVATIONS} component={Innovation} />
     </Switch>
   );
 }

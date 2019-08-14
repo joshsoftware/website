@@ -97,7 +97,7 @@ Component.defaultProps = {
     {
       id: 3,
       title: "Our Innovation",
-      url: "/innovation"
+      url: routes.INNOVATIONS
     },
     // {
     //   id: 2,

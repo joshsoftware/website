@@ -83,11 +83,11 @@
     width: rem(632px);
   }
 
-  ol{
+  .slick-dots{
     margin: 0;
     bottom: 0;
 
-    .active{
+    .slick-active{
       background-color: $roman;
     }
   }
