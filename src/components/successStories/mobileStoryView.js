@@ -9,7 +9,7 @@ const MobileStoryView = (props) => {
         <H4Black> {props.subHeading} </H4Black>
       </Row>
       <Row>
-        <img src={require(`../../assets/images/success_stories/${props.image}.png`)} alt={props.subHeading} className="m-auto w-100 img-responsive"/>
+        <img src={require(`../../assets/images/successStories/${props.image}.png`)} alt={props.subHeading} className="m-auto w-100 img-responsive"/>
       </Row>
       <div className="container-fluid">
         <Row className="m-auto w-100 pt-2">

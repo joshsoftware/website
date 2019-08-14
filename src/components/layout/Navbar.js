@@ -91,7 +91,7 @@ Component.defaultProps = {
   menues: [
     {
       id: 1,
-      title: "Domain Experties",
+      title: "Domain Expertise",
       url: routes.DOMAIN_EXPERTISE
     },
     {
@@ -117,7 +117,7 @@ Component.defaultProps = {
     {
       id: 6,
       title: "Success Stories",
-      url: "/domain_experties"
+      url: routes.SUCCESS_STORIES_URL
     },
     {
       id: 7,
