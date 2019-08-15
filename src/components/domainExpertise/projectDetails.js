@@ -16,7 +16,7 @@ const ProjectDetails = (props) => {
         </Row>
         <Row>
           <Col>
-            <img src={logo} />
+            <img src={require(`../../assets/images/domainExpertise/${logo}`)} alt={title} />
           </Col>
         </Row>
         <br />
@@ -34,17 +34,14 @@ const ProjectDetails = (props) => {
           <Col>
             <Row>
               <Col md={1} xs={2} sm={2}>
-                <img src={BusinessLogo} />
+                <img src={BusinessLogo} alt="Business" />
               </Col>
               <Col md={11} xs={8} sm={8} className="align-self-center">
                 <span>Business </span>
-                {/* <p>A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.</p> */}
               </Col>
             </Row>
             <Row>
               <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
-                {/* <span>Business </span> */}
-                {/* <p>A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.</p> */}
                 <p>{business}</p>
               </Col>
             </Row>
@@ -54,7 +51,7 @@ const ProjectDetails = (props) => {
           <Col>
             <Row>
               <Col md={1} xs={2} sm={2}>
-                <img src={SolutionSVG} />
+                <img src={SolutionSVG} alt="Solution" />
               </Col>
               <Col md={11} xs={8} sm={8} className="align-self-center">
                 <span>Solution </span>
@@ -62,9 +59,6 @@ const ProjectDetails = (props) => {
             </Row>
             <Row>
               <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
-                {/* <p>
-                A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers
-            </p> */}
                 <p>{solution}</p>
               </Col>
             </Row>
@@ -74,11 +68,10 @@ const ProjectDetails = (props) => {
           <Col>
             <Row>
               <Col md={1} xs={2} sm={2}>
-                <img src={ImpactSVG} />
+                <img src={ImpactSVG} alt="Impact" />
               </Col>
               <Col md={11} xs={8} sm={8} className="align-self-center">
                 <span>Impact </span>
-                {/* <p>A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.</p> */}
               </Col>
             </Row>
             <Row>

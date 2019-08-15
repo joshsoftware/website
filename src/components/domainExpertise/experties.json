@@ -1,0 +1,70 @@
+{
+  "health": [
+    {
+      "title": "KimayaNICU",
+      "techStack": [
+        "go"
+      ],
+      "logo": "kimaya.png",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues"
+    },
+    {
+      "title": "GoJek",
+      "techStack": [
+        "go"
+      ],
+      "logo": "kimaya.png",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues"
+    }
+  ],
+  "sports": [
+    {
+      "title": "England Hockey",
+      "techStack": [
+        "go"
+      ],
+      "logo": "kimaya.png",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues"
+    },
+    {
+      "title": "CrikBuzz",
+      "techStack": [
+        "go"
+      ],
+      "logo": "kimaya.png",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues"
+    }
+  ],
+  "fianance": [
+    {
+      "title": "Fianance England Hockey",
+      "techStack": [
+        "go"
+      ],
+      "logo": "kimaya.png",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues"
+    },
+    {
+      "title": "CrikBuzz",
+      "techStack": [
+        "go"
+      ],
+      "logo": "kimaya.png",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 countries. Ease of communication across the entire player-coach ecosystem also enhanced, as custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues"
+    }
+  ],
+  "media": [],
+  "manufacturing": []
+}

@@ -92,7 +92,7 @@ Component.defaultProps = {
     {
       id: 1,
       title: "Domain Expertise",
-      url: routes.DOMAIN_EXPERTISE
+      url: `${routes.DOMAIN_EXPERTISE}/health`
     },
     {
       id: 3,
