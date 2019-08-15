@@ -13,8 +13,8 @@ const SuccessStories = () => {
     {matches =>
       matches ? (
         <Fragment>
-          <ParallaxImg height="160px" logo={mobileSuccessStoriesBg}>
-            <Row>
+          <ParallaxImg className="d-flex" height="160px" logo={mobileSuccessStoriesBg}>
+            <Row className="m-auto">
               <Col xs={2} />
               <Col md={6} xs={4} >
                 <Heading1Orange fontSize="31">Success Stories</Heading1Orange>
@@ -24,10 +24,10 @@ const SuccessStories = () => {
           </ParallaxImg>
           <ul className="succss-stories">
             <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
+            {/* <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
             <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
             <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
-            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
-            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
+            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li> */}
           </ul>
         </Fragment>
       ) : (
@@ -39,10 +39,10 @@ const SuccessStories = () => {
               <Col md={6} className="d-flex justify-content-start align-items-center">
                 <ul className="w-100 text-white">
                   <li className="bullet font-weight-bold"><Link to="/success_stories" >Freedom from Diabetes</Link></li>
+                  {/* <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
                   <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
                   <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li> */}
                 </ul>
               </Col>
             </Row>
