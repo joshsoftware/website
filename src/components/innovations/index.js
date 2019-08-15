@@ -19,6 +19,7 @@ export default function Innovation() {
   }
   const settings = {
     dots: true,
+    // dotsClass: "d-none",
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -27,11 +28,11 @@ export default function Innovation() {
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    customPaging: function (i) {
-      return (
-        <li data-target="#carouselInnovation" data-slide-to="0" className="active"></li>
-      );
-    },
+    // customPaging: function (i) {
+    //   return (
+    //     <div data-target="#carouselInnovation" data-slide-to="0" className="active"></div>
+    //   );
+    // },
   };
 
 

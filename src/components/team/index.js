@@ -20,7 +20,7 @@ const OurTeam = (props) => {
       </section>
 
       {/** JOSH LEADERS */}
-      <section id="ourTeam" className="section-content section-leadership">
+      <section id="ourTeam" className="section-content section-leadership section-home">
         <div className="container">
           <div className="section-header">
             <h2 className="section-heading">Josh Leadership</h2>

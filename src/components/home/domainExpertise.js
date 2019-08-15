@@ -96,6 +96,18 @@ const DomainExpertise = (props) => {
   return (
     <Fragment>
       <section id="clientsSlide" className="section-home ">
+        <Row className="justify-content-center m-auto d-xs-none w-50 p-md-3">
+          <Col>
+            <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
+          </p>
+          </Col>
+        </Row>
+        <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
+          <Col>
+            <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
+          </p>
+          </Col>
+        </Row>
         <Heading1>Domain Expertise</Heading1>
         <Row>
           <Col sm={2} md={3} />

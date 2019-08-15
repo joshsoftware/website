@@ -45,7 +45,7 @@
 }
 
 .section-leadership {
-  background-color: #7AA6B2;
+  // background-color: #7AA6B2;
   padding: rem(100px 0 40px);
 
   @include media-breakpoint-down(sm){
@@ -110,7 +110,7 @@
 
       i {
         font-size: rem(38px);
-        color: $white;
+        color: #666;
         transition: color .3s linear;
 
         @include media-breakpoint-down(sm) {
@@ -145,7 +145,7 @@
 }
 
 .person-info{
-  color: $white;
+  color: #666;
   letter-spacing: rem(1px);
   padding: 0 rem(8px) 0 0;
   min-height: rem(34px);
