@@ -9,6 +9,9 @@ export const Heading1 = styled.h1`
   min-width: 158px;
   max-height: 24px;
   margin: 2rem 0 5.5rem;
+  @media(max-width: 600px) {
+    font-size: 30px;
+  }
 `
 
 export const InnovationHeading1 = styled.h1`
@@ -64,8 +67,8 @@ export const ClientDesignationBox = styled.div`
   padding-bottom: 24px;
 
   & span {
-    width: 42px;
-    height: 29px;
+    // width: 42px;
+    // height: 29px;
     color: #fff;
     font-size: 11px;
     text-align: center;
@@ -92,23 +95,6 @@ export const Quotes = styled.div`
   right: 6px;
 `
 
-export const ReadMoreBtn = styled("Button")`
-  background-color: #FFFFFF;
-  float: right;
-  margin-top: 14px;
-  height: 30px;
-  position: relative;
-  bottom: 5px;
-  width: 92px;
-  width: 92px;
-    border-radius: 15px 15px 15px 15px;
-  
-  & span {
-    font-size: 9px;
-    position: relative;
-    bottom: 5px;
-  }
-`
 export const ClientName = styled.span`
   position: absolute;
   bottom: 10px;
