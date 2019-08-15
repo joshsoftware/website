@@ -4,23 +4,28 @@ import BusinessLogo from "../../assets/images/domainExpertise/business.svg"
 import SolutionSVG from "../../assets/images/domainExpertise/Solution.svg"
 import ImpactSVG from "../../assets/images/domainExpertise/Impact.svg"
 
+import { Text, Paragraph } from "../home/homeStyledComponents.js";
+
 const ProjectDetails = (props) => {
   const { logo, title, techStack, techLogoMap, business, solution, impact } = props;
   return (
     <Row className="justify-content-around m-auto w-90">
       <Col md={4}>
         <Row>
-          <Col>
-            <h1>{title}</h1>
+          <Col className="justify-content-center d-flex m-auto p-3">
+            <Text color="#CF4338" fontSize={22} className="text-center">{title}</Text>
           </Col>
         </Row>
         <Row>
-          <Col>
-            <img src={require(`../../assets/images/domainExpertise/${logo}`)} alt={title} />
+          <Col md={2} />
+          <Col md={10} xs={12} sm={12}>
+            <img src={require(`../../assets/images/domainExpertise/${logo}`)} alt={title} className="img-responsive" />
           </Col>
         </Row>
         <br />
-        <Row className="justify-content-around m-auto"><h5>Tech Stack</h5></Row>
+        <Row className="justify-content-around m-auto">
+          <Text color="#CF4338" fontSize="19">Tech Stack</Text>
+        </Row>
         <Row>
           <Col>
             {techStack.map(tech => {
@@ -37,12 +42,12 @@ const ProjectDetails = (props) => {
                 <img src={BusinessLogo} alt="Business" />
               </Col>
               <Col md={11} xs={8} sm={8} className="align-self-center">
-                <span>Business </span>
+                <Text fontSize="20" color="#CF4338">Business </Text>
               </Col>
             </Row>
-            <Row>
+            <Row className="pt-xs-5">
               <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
-                <p>{business}</p>
+                <Paragraph fontSize="14">{business}</Paragraph>
               </Col>
             </Row>
           </Col>
@@ -54,12 +59,12 @@ const ProjectDetails = (props) => {
                 <img src={SolutionSVG} alt="Solution" />
               </Col>
               <Col md={11} xs={8} sm={8} className="align-self-center">
-                <span>Solution </span>
+                <Text fontSize="20" color="#CF4338">Solution </Text>
               </Col>
             </Row>
             <Row>
               <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
-                <p>{solution}</p>
+                <Paragraph fontSize="14">{solution}</Paragraph>
               </Col>
             </Row>
           </Col>
@@ -71,12 +76,12 @@ const ProjectDetails = (props) => {
                 <img src={ImpactSVG} alt="Impact" />
               </Col>
               <Col md={11} xs={8} sm={8} className="align-self-center">
-                <span>Impact </span>
+                <Text fontSize="20" color="#CF4338">Impact </Text>
               </Col>
             </Row>
             <Row>
               <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
-                {impact}
+                <Paragraph fontSize="14">{impact}</Paragraph>
               </Col>
             </Row>
           </Col>

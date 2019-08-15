@@ -207,3 +207,12 @@ export const DomainText = styled.div`
   font-family: lato light;
 `
 
+export const Text = styled.span`
+  color: ${(props) => props.color};
+  font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "17px"};
+`
+
+export const Paragraph = styled.p`
+  font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "17px"}
+`
+

@@ -10,13 +10,13 @@ const DomainHeader = (props) => {
 
   const items = domains.map(domain => {
     const domainImg = domain.title.toLowerCase() === selectedDomain ? `${domain.logo}_Red.png` : `${domain.logo}.png`
-
+    const textClass = domain.title.toLowerCase() === selectedDomain ? "text-orange" : "text-black"
     return <Link to={`${routes.DOMAIN_EXPERTISE}/${domain.title.toLowerCase()}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
         <div className="text-center">
           <img src={require(`../../assets/images/domainExpertise/${domainImg}`)} alt={domain.title} className="img-responsive m-auto" />
         </div>
-        <div>{domain.title}</div>
+        <div className={textClass}>{domain.title}</div>
       </div>
     </Link>
   })

@@ -11,7 +11,7 @@ export default class JoshCarousel extends Component {
     const { items, settings } = this.props;
 
     return (
-      <Slider {...settings}>
+      <Slider {...settings} className="testst">
         {
           items.map(item => {
             return item

@@ -17,14 +17,14 @@ const DomainWork = (props) => {
   const NextArrow = (props) => {
     const { onClick } = props;
     return <div onClick={onClick} className="carousel-control-next cursor-pointer">
-      <img src={nextSVG} alt="next" />
+      <img src={nextSVG} alt="next" className="pl-md-5" />
       <span className="sr-only">Previous</span></div>
   }
 
   const PrevArrow = (props) => {
     const { onClick } = props;
     return <div onClick={onClick} className="carousel-control-prev cursor-pointer">
-      <img src={previousSVG} alt="next" />
+      <img src={previousSVG} alt="next" className="pr-md-5" />
       <span className="sr-only">Previous</span></div>
   }
 
@@ -32,11 +32,8 @@ const DomainWork = (props) => {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 500,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    autoplaySpeed: 5000,
     arrows: true,
     customPaging: function (i) {
       return (
