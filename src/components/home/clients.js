@@ -6,7 +6,7 @@ export const Clients = (props) => {
 
   return (
     <section id="clientsSlide"
-      className="section-home section-clients bg-props skrollable skrollable-between">
+      className="bg-props skrollable skrollable-between">
       <div className="container" style={{ paddingRight: 5, paddingLeft: 5 }}>
         <Heading1>Our Top Clients</Heading1>
         <ul className="list-unstyled list-client">
@@ -14,7 +14,7 @@ export const Clients = (props) => {
             clients.map(client => {
               return <li key={client.name}>
                 <a href={client.website}>
-                  <img src={require(`../../assets/images/${client.logo}`)} alt={client.name} className="img-fluid" />
+                  <img src={require(`../../assets/images/clients/${client.logo}`)} alt={client.name} className="img-fluid" />
                 </a>
               </li>
             })
@@ -29,77 +29,82 @@ Clients.defaultProps = {
   clients: [
     {
       website: "",
-      logo: "clogo-star.jpg",
+      logo: "star.png",
       name: "Star India"
     },
     {
       website: "",
-      logo: "clogo-gojek.jpg",
-      name: "GO JEK"
-    },
-    {
-      website: "http://www.dealsignal.com/",
-      logo: "clogo-dealsignal.jpg",
-      name: "DealSignal"
-    },
-    {
-      website: "http://brandscope.com.au/",
-      logo: "clogo-brandscope.jpg",
-      name: "Brandscope"
-    },
-    {
-      website: "http://www.clubbuzz.co.uk/",
-      logo: "clogo-clubbuzz.jpg",
-      name: "ClubBuzz"
-    },
-    {
-      website: "https://www.cubictree.com/",
-      logo: "clogo-cubictree.jpg",
-      name: "Cubictree"
-    },
-    {
-      website: "https://www.willswayfoundation.us/",
-      logo: "clogo-we3.jpg",
-      name: "We3"
-    },
-    {
-      website: "https://thepediatricnetwork.com/#/",
-      logo: "clogo-tpn.jpg",
-      name: "The Pediatric Network"
-    },
-    {
-      website: "http://www.freedomfromdiabetes.org/Program",
-      logo: "clogo-ffd.jpg",
-      name: "Freedom From Diabetes"
-    },
-    {
-      website: "http://www.synergydesignsolutions.com.sg/",
-      logo: "clogo-synergy.jpg",
-      name: "Synergy Design Solutions"
-    },
-    {
-      website: "https://next.merchdirect.com/",
-      logo: "clogo-mdny.jpg",
-      name: "Merch Direct"
-    },
-    {
-      website: "https://fundamentor.com/",
-      logo: "clogo-fundamentor.jpg",
-      name: "Fundamentor"
-    },
-    {
-      website: "http://www.skoutdeals.com/",
-      logo: "clogo-skoutdeals.jpg",
-      name: "Skout Deals"
+      logo: "gojek.png",
+      name: "GoJek"
     },
     {
       website: "",
-      logo: "clogo-druva.jpg",
+      logo: "biznbound.png",
+      name: "Bizunbound"
+    },
+    {
+      website: "",
+      logo: "brandscope.png",
+      name: "Brandscope"
+    },
+    {
+      website: "",
+      logo: "clubbuzz.png",
+      name: "Clubbuzz"
+    },
+    {
+      website: "",
+      logo: "cubictree.png",
+      name: "Cubic Tree"
+    },
+    {
+      website: "",
+      logo: "we3health.png",
+      name: "We3Health"
+    },
+    {
+      website: "",
+      logo: "pediatric.png",
+      name: "Docterz"
+    },
+    {
+      website: "",
+      logo: "ffd.png",
+      name: "Freedom from Diabetic"
+    },
+    {
+      website: "",
+      logo: "firstcircle.png",
+      name: "First Circle"
+    },
+    {
+      website: "",
+      logo: "circleslife.png",
+      name: "Circles Life"
+    },
+    {
+      website: "",
+      logo: "fundamentor.png",
+      name: "Fundamentor"
+    },
+    {
+      website: "",
+      logo: "banyan.png",
+      name: "Banyan"
+    },
+    {
+      website: "",
+      logo: "druva.png",
       name: "Druva"
     },
     {
-      website: "https://quickinsure.co.in/",
-      logo: "clogo-quickinsure.jpg",
-      name: "Quickinsure"
-    }]
+      website: "",
+      logo: "quickInsure.png",
+      name: "QuickInsure"
+    }
+
+
+
+
+  ]
 }

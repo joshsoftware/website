@@ -18,7 +18,7 @@ export const InnovationHeading1 = styled.h1`
   color: #FF7B71;
   min-width: 158px;
   max-height: 24px;
-  margin: 3rem 0 3.5rem;
+  margin: 2rem 0 3.5rem;
 `
 
 export const TestimonialBox = styled.div`

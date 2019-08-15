@@ -52,13 +52,16 @@ const DomainHeader = (props) => {
   };
 
   return (
-    <Row className="justify-content-around text-center mx-auto w-80">
-      <Col md={2} />
-      <Col md={8}>
-        <JoshCarousel items={items} settings={settings}></JoshCarousel>
-      </Col>
-      <Col md={2} />
-    </Row>
+    <>
+      <div style={{ height: 67 }} />
+      <Row className="justify-content-around text-center mx-auto w-80">
+        <Col md={2} />
+        <Col md={8}>
+          <JoshCarousel items={items} settings={settings}></JoshCarousel>
+        </Col>
+        <Col md={2} />
+      </Row>
+    </>
   )
 }
 

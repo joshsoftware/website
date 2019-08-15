@@ -154,8 +154,8 @@ DomainExpertise.defaultProps = {
     },
     {
       id: 5,
-      name: "java",
-      logo: "java.png"
+      name: "React",
+      logo: "react.png"
     },
     {
       id: 6,
@@ -164,8 +164,13 @@ DomainExpertise.defaultProps = {
     },
     {
       id: 7,
-      name: "react",
-      logo: "angular.png"
+      name: "java",
+      logo: "java.png"
+    },
+    {
+      id: 7,
+      name: "Python",
+      logo: "java.png"
     }
   ],
 

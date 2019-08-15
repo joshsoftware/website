@@ -14,7 +14,7 @@ const App = ({ match }) => {
   return (
     <BrowserRouter>
       <Navbar />
-      <div style={{ height: 67 }} />
+      {/* <div style={{ height: 67 }} /> */}
       <Switch>
         <Layout />
       </Switch>

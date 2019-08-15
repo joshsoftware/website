@@ -301,6 +301,8 @@
     width: 20%;
     padding: rem(0 12px);
     margin: rem(0 0 24px);
+    min-height: 117px;
+    display: flex;
 
     @include media-breakpoint-down(md) {
       width: 33.33%;
