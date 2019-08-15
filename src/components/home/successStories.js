@@ -23,11 +23,11 @@ const SuccessStories = () => {
             </Row>
           </ParallaxImg>
           <ul className="succss-stories">
-            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-            <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
+            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
+            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
+            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
+            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
           </ul>
         </Fragment>
       ) : (
@@ -38,11 +38,11 @@ const SuccessStories = () => {
               </Col>
               <Col md={6} className="d-flex justify-content-start align-items-center">
                 <ul className="w-100 text-white">
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetis</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="/success_stories" >Freedom from Diabetes</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
+                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
                 </ul>
               </Col>
             </Row>
