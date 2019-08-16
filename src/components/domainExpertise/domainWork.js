@@ -11,14 +11,14 @@ const DomainWork = (props) => {
 
   const NextArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-next cursor-pointer">
+    return <div onClick={onClick} className="carousel-control-next cursor-pointer bottom-94p">
       <img src={nextSVG} alt="next" className="pl-md-5" />
       <span className="sr-only">Previous</span></div>
   }
 
   const PrevArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-prev cursor-pointer">
+    return <div onClick={onClick} className="carousel-control-prev cursor-pointer bottom-94p">
       <img src={previousSVG} alt="next" className="pr-md-5" />
       <span className="sr-only">Previous</span></div>
   }

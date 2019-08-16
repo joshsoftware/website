@@ -816,3 +816,9 @@
 .w-55 {
   width: 55%;
 }
+
+.bottom-94p {
+  @include media-breakpoint-down(sm) {
+    bottom: 94%;
+  }
+}

@@ -10,7 +10,7 @@ const ProjectDetails = (props) => {
   const { logo, title, techStack, business, solution, impact } = props;
   return (
     <Row className="justify-content-around m-auto w-90">
-      <Col md={4}>
+      <Col md={4} className="pb-14">
         <Row>
           <Col className="justify-content-center d-flex m-auto p-3">
             <Text color="#CF4338" fontSize={22} className="text-center">{title}</Text>
