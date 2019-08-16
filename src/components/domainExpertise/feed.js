@@ -11,7 +11,7 @@ const Feed = (props) => {
   shortBody = shortBody.substring(0, 200) + '...'
 
   return (
-    <li className="feed mb-2 card-wrap -striped" key={title}>
+    <li className="feed mb-2" key={title}>
       <img src={thumbnail} className="img-feed align-self-start mr-3" alt="Teaser"/>
       <div className="feed-body">
         <h5 className="font-weight-normal mt-0 mb-1">
@@ -22,7 +22,7 @@ const Feed = (props) => {
           {author}, <small className="font-weight-light">{date.toDateString()}</small>
         </h6>
 
-        <div dangerouslySetInnerHTML={{__html: sanitizer(shortBody)}} />
+        <div dangerouslySetInnerHTML={{__html: sanitizer(shortBody)}} className="text-justify" />
       </div>
     </li>
   )
