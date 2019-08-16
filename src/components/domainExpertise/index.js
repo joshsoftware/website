@@ -5,6 +5,7 @@ import DomainHeader from "./domainHeader.js";
 import DomainWork from "./domainWork.js";
 import ExpertiesJSON from "./experties.json"
 import * as routes from '../../routeConstants';
+import RssFeeds from './rssFeeds.js';
 
 const DomainExpertise = (props) => {
   return (
@@ -22,6 +23,7 @@ const DomainExpertiseLyaout = ({ match }) => {
     <section className="w-100 section-home">
       <DomainHeader selectedDomain={selectedDomain} />
       <DomainWork domainExpertiseData={ExpertiesJSON[match.params.domain]} />
+      <RssFeeds rssTag={ExpertiesJSON.rssFeeds[selectedDomain]} />
     </section>
   )
 }
