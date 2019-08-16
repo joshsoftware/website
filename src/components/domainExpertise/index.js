@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 
 import DomainHeader from "./domainHeader.js";
 import DomainWork from "./domainWork.js";

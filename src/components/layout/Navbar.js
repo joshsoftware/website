@@ -50,7 +50,7 @@ const Component = props => {
         <nav className="navbar navbar-expand-lg josh-navbar ">
           <div className="row">
             <div className="col-md-4 ">
-              <Link className="navbar-brand pt-0 pb-md-1" to="/" className="text-decoration-none">
+              <Link className="navbar-brand pt-0 pb-md-1 text-decoration-none" to="/">
                 <Media query="(max-width: 700px)">
                   {matches =>
                     matches ? (
@@ -104,7 +104,6 @@ Component.defaultProps = {
       title: "Success Stories",
       url: routes.SUCCESS_STORIES_URL
     },
-    ,
     {
       id: 4,
       title: "Career",
@@ -134,13 +133,13 @@ Component.defaultProps = {
         {
           id: 4,
           title: "Contact Us",
-          url: routes.CONTACT_US_URL,
+          url: routes.CONTACT_US_URL
         },
         {
           id: 5,
           title: "Testimonials",
           url: routes.TESTIMONIALS
-        },
+        }
       ],
       type: 'dropdown'
     }
