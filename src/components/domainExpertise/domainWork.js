@@ -10,10 +10,6 @@ import previousSVG from "../../assets/images/domainExpertise/previous.svg";
 const DomainWork = (props) => {
   const { domainExpertiseData } = props;
 
-  const techLogoMap = {
-    go: GOLogo
-  }
-
   const NextArrow = (props) => {
     const { onClick } = props;
     return <div onClick={onClick} className="carousel-control-next cursor-pointer">
@@ -42,7 +38,7 @@ const DomainWork = (props) => {
     },
   };
 
-  const items = domainExpertiseData.map(project => <ProjectDetails techLogoMap={techLogoMap} key={project.title} {...project} />)
+  const items = domainExpertiseData.map(project => <ProjectDetails key={project.title} {...project} />)
 
   return (
     <Row className="justify-content-center m-auto w-90 card">
