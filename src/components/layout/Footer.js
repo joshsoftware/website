@@ -47,7 +47,7 @@ const Footer = () => {
           <nav className="nav footer-nav">
             <Link to="about-us" className="nav-link">Company</Link>
             {/* <a href="open-source.html" className="nav-link">Open Source</a> */}
-            <a href="/domain_expertise" className="nav-link">Domain Experties</a>
+            <a href="/domain_expertise" className="nav-link">Domain Expertise</a>
             <Link to="team" className="nav-link">Our Team</Link>
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
             <a href="http://careers.joshsoftware.com/" className="nav-link">Career</a>
