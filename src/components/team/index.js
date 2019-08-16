@@ -327,10 +327,6 @@ OurTeam.defaultProps = {
       name: "Anuj Verma",
       githubId: "anuj-verma"
     }, {
-      profilePic: "nikhil-mohadikar@2x.jpg",
-      name: "Nikhil Mohadikar",
-      githubId: ""
-    }, {
       profilePic: "ninad-nehete@2x.jpg",
       name: "Ninad Nehete",
       githubId: "ninadnehete"
@@ -398,10 +394,6 @@ OurTeam.defaultProps = {
       profilePic: "suhas-more.jpg",
       name: "Suhas More",
       githubId: "suhas010"
-    }, {
-      profilePic: "vaibhav-kale.jpg",
-      name: "Vaibhav Kale",
-      githubId: ""
     }, {
       profilePic: "vikas-khichar.jpg",
       name: "Vikas Khichar",

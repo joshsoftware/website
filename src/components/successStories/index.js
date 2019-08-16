@@ -127,30 +127,30 @@ FFD.defaultProps = {
   summary: {
     subHeading: 'SUMMARY',
     image: 'summary',
-    text: <p>Diabetes is traditionally considered to be an incurable disease, and is a deeply anchored health concern today. Aimed at improving the lives of diabetes patients <strong> Freedom from Diabetes (FFD) was launched in 2013 by Dr. Pramod Tripathi.</strong> <br /><br /> With more than 25 doctors on board, more than 6000 people have given up insulin and sugar tables. What started with a batch of 200 people has now benefited more than 18,000 people. FFD has its headquarters in Pune, and a rapidly growing network of doctors in 10+ cities.</p>
+    text: <><p><strong>The International Diabetes Federation projects that the number of diabetes patients in the South East Asian region will double by 2045. Currently, 8.8% of the Indian adult population suffers from diabetes. This is cause for extreme concern.</strong></p><p>Traditionally incurable, diabetes is a deeply rooted health concern making millions miserable. But when the best of tech and medicine come together, there&#39;s hope for radical improvement. Freedom From Diabetes (FFD), launched in 2013 by Dr. Pramod Tripathi has a singular aim: not just cure diabetes, but eliminate it completely. The program has 18,000 diabetes-free success stories to its credit and this number is only growing with each passing year. With a steadily increasing number of medical practitioners on board, FFD, headquartered in Pune, now has a network in more than 10 Indian cities. </p> </>
   },
 
   challenge: {
     subHeading: 'CHALLENGE',
     image: 'challenge',
-    text: <p> The number of patients was steadily increasing by 2015, and <strong>maintaining patient records offline was becoming cumbersome</strong>. The need for tech intervention was real, with an objective of digitizing all patient records. Further, the first app that was developed was facing performance lags due to a very high turnaround time for doctor-patient interactions. The overall customer experience, had thus, deteriorated massively. </p>
+    text: <p>The number of patients grew incrementally in the first two years of the program, and by 2015 there were a few thousand knocking on FFD’s door. The biggest challenge was maintaining patient records offline, and the need for digitisation meant only one thing: tech intervention. The first version of the CRM and mobile application was built, but it failed at scale. Both doctors and patients were using this app, at the cost of a high turnaround time, major performance lags and extremely poor customer experience.</p>
   },
   insight: {
     subHeading: 'INSIGHT',
     image: 'insight',
-    text: <p> The first version of the application could not be modified or scaled up since it was built on a legacy tech stack. The newer version of the app would have to be rebuilt entirely to integrate all patient records in a single database. </p>
+    text: <p>Revamping the initial applications was not possible, since it had been built on a legacy tech stack that was not connected to FFD’s other digital systems. A new version of the app backed by new age tech was the need of the hour. </p>
   },
 
   joshEdge: {
     subHeading: 'THE JOSH EDGE',
     image: 'joshEdge',
-    text: <p>The entire digital platform was built from scratch on a tech stack of Trailblazer, Ruby on Rails, Mongo and lasticSearch, for Android and iOS. The Josh team also integrated the app with the business's CRM system, enabling a centralized accessible database. A call tracker for marketing teams was introduced, along with a plug-in with WhatsApp patient groups. Communication with doctors was possible through chat, and patients could update their blood test reports every three to four hours. The app also enabled them to connect with mentors who had benefited from the program. Each patient's app is activated as soon as they register for the program, and doctors are notified in real time.</p>
+    text: <p>Keeping the rescue mission philosophy in mind, the Josh team started building the app from scratch. We built the CRM system on the backs of Trailblazer, Ruby on Rails, Mongo and ElasticSearch, along with Android and iOS compatibility. The foundation of the application was implemented one step at a time. A centrally accessible database was also created to enable seamless integration of patient records with the existing website & marketing systems. The team also introduced a call tracker for the in house marketing teams to stay updated in real time. A chat module was also rolled out to enable round the clock communication between doctors and patients. The app ensured that patients could upload blood test reports every 3 to 4 hours. The doctors were also notified about patient behaviour in real time, ensuring a transparent, efficient treatment program. Designed to scale up with the program, the app is a huge success with all stakeholders, new and old! </p>
   },
 
   impact: {
     subHeading: 'IMPACT',
     image: 'impact',
-    text: <p> Blood sugar and insulin levels mapped in real time The doctor's turnaround time with patients reduced from a few hours to 10 seconds More than 18,000 users as compared to less than 100 users on the previous app Clean, improved end customer experience with maximum operational efficiency </p>
+    text: <><p>Reduced turnaround time. Doctor-patient interactions in seconds, not hours. </p> <p>No wait time for patients, with a provision to share reports and readings digitally.</p> <p>More than 18,000 active users.</p><p>Real time mapping of blood sugar and insulin levels.</p><p>Improved end customer experience with maximum operational efficiency and no performance lags.</p></>
   }
 }
 

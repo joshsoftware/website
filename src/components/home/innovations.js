@@ -29,7 +29,7 @@ const Innovations = (props) => {
                 <Row>
                   {
                     innovations.map(innovation => {
-                      return <Col md={4} sm={4} xs={4} >
+                      return <Col md={4} sm={4} xs={4} key={innovation.name} >
                         <Link to={innovation.url}>
                           <ParallaxImg logo={innovationBtnMobile} height="88px" className="d-flex justify-content-center width-100">
                             <img src={require(`../../assets/images/home/${innovation.logo}_mb.${innovation.logo_type}`)} alt={innovation.name} />
@@ -53,7 +53,7 @@ const Innovations = (props) => {
                   <Row>
                     {
                       innovations.map(innovation => {
-                        return <Col md={4} key={innovation.name} >
+                        return <Col md={4} key={innovation.name}>
                           <Link to={innovation.url}>
                             <ParallaxImg logo={innovationBtnImg} height="150px" className="d-flex justify-content-center">
                               <img src={require(`../../assets/images/home/${innovation.logo}.${innovation.logo_type}`)} alt={innovation.name} />

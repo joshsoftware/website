@@ -74,7 +74,7 @@ const BannerText1 = () => (
   <Fragment>
 
     <BannerText className="banner-text"> INNOVATION &amp; DISRUPTION </BannerText>
-    <BannerSubText className="banner-subtext-padding">Is the way {BR} We change the Game</BannerSubText>
+    <BannerSubText className="banner-subtext-padding">is the way {BR} We change the Game</BannerSubText>
 
     <div className="text-white" >
       <Link to={routeConstants.CONTACT_US_URL} className="text-decoration-none">
