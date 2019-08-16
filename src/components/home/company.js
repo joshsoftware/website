@@ -128,7 +128,6 @@ const Company = () => {
                   </CompanyDetailsText>
                 </Col>
                 <Col md={6} sm={6} xs={6} />
-
               </Row>
             </ParallaxImg >
           )

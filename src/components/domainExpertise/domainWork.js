@@ -1,7 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap';
 
-import GOLogo from "../../assets/images/domainExpertise/go.png";
 import ProjectDetails from './projectDetails';
 import JoshCarousel from "../../components/home/carousel.js";
 import nextSVG from "../../assets/images/domainExpertise/next.svg";
@@ -25,7 +24,7 @@ const DomainWork = (props) => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,

@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 
 import * as routeConstants from '../../routeConstants';
+import { Heading1 } from '../home/homeStyledComponents';
 
 const IMAGE_BASE_URL = "http://new.joshsoftware.com:8080/images/";
 const LINKED_IN_BASE_URL = "https://www.linkedin.com/in/";
@@ -13,14 +14,15 @@ const OurTeam = (props) => {
 
   return (
     <Fragment>
-      <section className="section-team section-banner">
+      {/* <section className="section-team section-banner">
         <div className="heading-overlay">
-          <h1 className="section-heading">Josh Leadership</h1>
         </div><a href="#ourTeam" className="scroll-down"><i className="icon-angle-double-down"></i></a>
-      </section>
+      </section> */}
+      <div style={{ height: 67 }} />
 
       {/** JOSH LEADERS */}
       <section id="ourTeam" className="section-content section-leadership section-home">
+        <Heading1 className="section-heading">Josh Leadership</Heading1>
         <div className="container">
           <div className="section-header">
             <h2 className="section-heading">Josh Leadership</h2>

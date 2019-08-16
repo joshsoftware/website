@@ -714,8 +714,8 @@
   height: 10px;
 }
 
-.bottom-30 {
-  bottom: 30px !important;
+.bottom-50 {
+  bottom: -50px !important;
 }
 
 .main-container {
@@ -788,8 +788,27 @@
 
 .font-size-20 {
   font-size: 20px;
-  
+
   @include media-breakpoint-down(sm) {
     font-size: 16px;
   }
+}
+
+
+.carousel-arrow {
+  width: 63px !important;
+  height: 63px !important;
+}
+
+.slick-prev {
+  left: -72px !important;
+}
+
+.slick-next {
+  right: -72px !important;
+}
+
+.size-30 {
+  width: 30px;
+  height: 30px;
 }

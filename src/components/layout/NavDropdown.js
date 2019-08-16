@@ -12,8 +12,8 @@ const NavDropdown = props => {
 
   return (
     <div className={`dropdown ${isOpen ? 'show' : ''}`} ref={ref}>
-      <Link
-        to=''
+      <a
+        href='#company'
         className="nav-item nav-link dropdown-toggle mb-10px"
         id="companyDropdownMenu"
         data-toggle="dropdown"
@@ -21,7 +21,7 @@ const NavDropdown = props => {
         onClick={() => toggle(!isOpen)}
         aria-expanded={isOpen}>
         Company
-      </Link>
+      </a>
       <div className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="companyDropdownMenu">
         {
           items.map(item => {

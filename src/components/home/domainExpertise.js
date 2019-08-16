@@ -3,9 +3,7 @@ import { Row, Col } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
-// import domainBg from "../../assets/images/domain.svg";
 import previousSvg from "../../assets/images/previous.svg";
-import nextSvg from "../../assets/images/next.svg";
 import redArrowSvg from "../../assets/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
 
@@ -33,10 +31,10 @@ const DomainExpertise = (props) => {
     const { className, onClick } = props;
     return (
       <img
-        src={nextSvg}
+        src={previousSvg}
         className={className}
         onClick={onClick}
-        alt="Next"
+        alt="Previous"
       />
     );
   }
@@ -182,7 +180,7 @@ DomainExpertise.defaultProps = {
     {
       id: 7,
       name: "Python",
-      logo: "java.png"
+      logo: "python.png"
     }
   ],
 
