@@ -6,7 +6,7 @@ const Feed = (props) => {
   let {title, author, thumbnail, description, link, pubDate} = props.feed
   let shortBody =  /<p\b[^>]*>(.*?)<\/p>/.exec(description) ||[]
   const sanitizer = dompurify.sanitize;
-
+  let date = new Date(pubDate)
   shortBody = shortBody[0] || ''
   shortBody = shortBody.substring(0, 200) + '...'
 
@@ -19,7 +19,7 @@ const Feed = (props) => {
         </h5>
 
         <h6 className="font-weight-normal mb-3">
-          {author}, <small className="font-weight-light">{pubDate}</small>
+          {author}, <small className="font-weight-light">{date.toDateString()}</small>
         </h6>
 
         <div dangerouslySetInnerHTML={{__html: sanitizer(shortBody)}} />
