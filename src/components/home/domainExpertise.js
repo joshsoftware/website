@@ -3,7 +3,7 @@ import { Row, Col } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
-import domainBg from "../../assets/images/domain.svg";
+// import domainBg from "../../assets/images/domain.svg";
 import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
 import redArrowSvg from "../../assets/images/arrow-red.svg"
@@ -95,7 +95,7 @@ const DomainExpertise = (props) => {
 
   return (
     <Fragment>
-      <section id="clientsSlide" className="section-home ">
+      <section id="clientsSlide" className="section-home pb-5">
         <Row className="justify-content-center m-auto d-xs-none w-50 p-md-3">
           <Col>
             <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
@@ -116,7 +116,7 @@ const DomainExpertise = (props) => {
               {industriesData.map(industry => {
                 return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
-                    <ParallaxImg logo={domainBg} height="120px">
+                    <ParallaxImg logo={require(`../../assets/images/home/${industry.name.toLowerCase()}Bg.svg`)} height="120px">
                       <div className="text-center pt-3">
                         <img src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
                         <DomainText>{industry.name}</DomainText>
