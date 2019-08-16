@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import Media from "react-media";
-import {Row, Col} from "reactstrap";
+import { Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
-import {PinkDiv, H3Text} from './successStoriesStyledComponents';
+import { PinkDiv, H3Text } from './successStoriesStyledComponents';
 import TextImage from './textImage';
 import ImageText from './imageText';
 import MobileStoryView from './mobileStoryView';
@@ -12,7 +12,7 @@ import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
 
 const FFD = (props) => {
-  let storyTitles = ["Freedom from Diabetes", "Success Stories 1"]
+  let storyTitles = ["Freedom from Diabetes"]
 
   const carouseItems = storyTitles.map(item => {
     return (
@@ -25,15 +25,15 @@ const FFD = (props) => {
   })
 
   const NextArrow = (props) => {
-     const { className, onClick } = props;
-     return (
-       <img
-         src={nextSvg}
-         className={className}
-         onClick={onClick}
-         alt="Next"
-       />
-     );
+    const { className, onClick } = props;
+    return (
+      <img
+        src={nextSvg}
+        className={className}
+        onClick={onClick}
+        alt="Next"
+      />
+    );
   }
 
   const PrevArrow = (props) => {
@@ -59,7 +59,7 @@ const FFD = (props) => {
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll:1,
+        slidesToScroll: 1,
         initialSlide: 0,
         arrows: false,
         dots: true
@@ -69,7 +69,7 @@ const FFD = (props) => {
       breakpoint: 330,
       settings: {
         slidesToShow: 1,
-        slidesToScroll:1,
+        slidesToScroll: 1,
         initialSlide: 0,
         arrows: false,
         dots: true
@@ -80,45 +80,45 @@ const FFD = (props) => {
 
   const carouselMobile = <Row className="w-80 m-auto justify-content-around text-danger pt-2">
     <Col>
-      <JoshCarousel items={carouseItems} settings={settings}/>
+      <JoshCarousel items={carouseItems} settings={settings} />
     </Col>
   </Row>
 
   const carouselWeb = <Row className="w-75 m-auto justify-content-around text-danger pt-2">
     <Col>
-      <JoshCarousel items={carouseItems} settings={settings}/>
+      <JoshCarousel items={carouseItems} settings={settings} />
     </Col>
   </Row>
 
-    return (
-      <Media query="(max-width: 900px)">
-        {matches =>
-            matches ? (
-              <Fragment>
-                <PinkDiv />
-                {carouselMobile}
-                <H3Text className="mt-5 text-center mb-5" color="#0F0F0F"> {props.title} </H3Text>
-                {props.contentKeys.map((key) => {
-                  return <MobileStoryView text={props[key].text} subHeading={props[key].subHeading} image={props[key].image} />
-                })}
-              </Fragment>
-            ) : (
-              <Fragment>
-                <PinkDiv />
-                {carouselWeb}
-                <H3Text className="mt-5 text-center mb-5" color="#CF4338"> {props.title} </H3Text>
-                {props.contentKeys.map( (key, index) => {
-                  if (index%2 === 0) {
-                    return <TextImage text={props[key].text} subHeading={props[key].subHeading} image={props[key].image} />
-                  }
-                  else
-                    return <ImageText text={props[key].text} subHeading={props[key].subHeading} image={props[key].image} />
-                })}
-              </Fragment>
-            )
-        }
-      </Media>
-    )
+  return (
+    <Media query="(max-width: 900px)">
+      {matches =>
+        matches ? (
+          <Fragment>
+            <PinkDiv />
+            {carouselMobile}
+            <H3Text className="mt-5 text-center mb-5" color="#0F0F0F"> {props.title} </H3Text>
+            {props.contentKeys.map((key) => {
+              return <MobileStoryView text={props[key].text} subHeading={props[key].subHeading} image={props[key].image} />
+            })}
+          </Fragment>
+        ) : (
+            <Fragment>
+              <PinkDiv />
+              {carouselWeb}
+              <H3Text className="mt-5 text-center mb-5" color="#CF4338"> {props.title} </H3Text>
+              {props.contentKeys.map((key, index) => {
+                if (index % 2 === 0) {
+                  return <TextImage text={props[key].text} subHeading={props[key].subHeading} image={props[key].image} />
+                }
+                else
+                  return <ImageText text={props[key].text} subHeading={props[key].subHeading} image={props[key].image} />
+              })}
+            </Fragment>
+          )
+      }
+    </Media>
+  )
 }
 
 FFD.defaultProps = {
@@ -127,7 +127,7 @@ FFD.defaultProps = {
   summary: {
     subHeading: 'SUMMARY',
     image: 'summary',
-    text: <p>Diabetes is traditionally considered to be an incurable disease, and is a deeply anchored health concern today. Aimed at improving the lives of diabetes patients <strong> Freedom from Diabetes (FFD) was launched in 2013 by Dr. Pramod Tripathi.</strong> <br/><br/> With more than 25 doctors on board, more than 6000 people have given up insulin and sugar tables. What started with a batch of 200 people has now benefited more than 18,000 people. FFD has its headquarters in Pune, and a rapidly growing network of doctors in 10+ cities.</p>
+    text: <p>Diabetes is traditionally considered to be an incurable disease, and is a deeply anchored health concern today. Aimed at improving the lives of diabetes patients <strong> Freedom from Diabetes (FFD) was launched in 2013 by Dr. Pramod Tripathi.</strong> <br /><br /> With more than 25 doctors on board, more than 6000 people have given up insulin and sugar tables. What started with a batch of 200 people has now benefited more than 18,000 people. FFD has its headquarters in Pune, and a rapidly growing network of doctors in 10+ cities.</p>
   },
 
   challenge: {
