@@ -156,5 +156,13 @@
       ],
       "impact": "More than 10,000 suppliers registered. Judicious use of time, money and resources. Automated contracts and packages across hotels, car rentals, bike rentals, safaris, cruise rentals and more."
     }
-  ]
+  ],
+  "rssFeeds": {
+    "health": "healthcare",
+    "media": "media",
+    "sports": "sports",
+    "manufacturing": "manufacturing",
+    "insurance": "insurtech",
+    "fianance": "banking"
+  }
 }
