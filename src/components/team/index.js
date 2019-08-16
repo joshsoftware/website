@@ -18,16 +18,17 @@ const OurTeam = (props) => {
         <div className="heading-overlay">
         </div><a href="#ourTeam" className="scroll-down"><i className="icon-angle-double-down"></i></a>
       </section> */}
-      <div style={{ height: 67 }} />
+      {/* <div style={{ height: 67 }} /> */}
 
       {/** JOSH LEADERS */}
       <section id="ourTeam" className="section-content section-leadership section-home">
-        <Heading1 className="section-heading">Josh Leadership</Heading1>
+        <Heading1>Josh Leadership</Heading1>
         <div className="container">
-          <div className="section-header">
+          {/* <h1 className="section-heading">Josh Leadership</h1> */}
+          {/* <div className="section-header">
             <h2 className="section-heading">Josh Leadership</h2>
             <p>Re-engineering existing inefficient architectures with zero down-time and complete data integrity</p>
-          </div>
+          </div> */}
           <div className="row">
             {
               leaders.map(leader => {

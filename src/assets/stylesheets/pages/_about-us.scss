@@ -56,7 +56,7 @@
 }
 
 .section-about_info {
-  background-color: $roman;
+  background-color: #F4F4F4;
   padding: rem(48px 0 32px);
 
   @include media-breakpoint-down(sm) {
@@ -76,11 +76,11 @@
     .wrap-title {
       font-size: rem(32px);
       line-height: rem(40px);
-      font-weight: 100;
+      font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 2px;
       text-align: center;
-      color: $white;
+      color: #666666;
       margin: 0 0 rem(32px);
 
       @include media-breakpoint-down(md) {
@@ -92,10 +92,10 @@
     .wrap-subtitle {
       font-size: rem(28px);
       line-height: rem(34px);
-      font-weight: 100;
+      font-weight: 300;
       letter-spacing: 2px;
       text-align: center;
-      color: $white;
+      color: #666666;
       margin: 0 0 rem(64px);
 
       @include media-breakpoint-down(md) {
@@ -110,9 +110,9 @@
     .para {
       font-size: rem(18px);
       line-height: rem(28px);
-      font-weight: 100;
+      font-weight: 300;
       letter-spacing: 1px;
-      color: $white;
+      color: #666666;
       margin: 0 0 rem(80px);
       text-align: justify;
 
