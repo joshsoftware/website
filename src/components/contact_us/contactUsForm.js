@@ -9,17 +9,16 @@ const ContactUsForm = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     const contact_us = { name, email, orgnization, job_title, role, message, phone, 'g-recaptcha-response': gCaptcha }
-
     fetch(`${API_BASE_URL}contact_us.json`, {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
-      body: contact_us
+      body: JSON.stringify(contact_us)
     }).then(res => res.json())
       .then(res => {
         alert("Thanks for contacting us! We will get back to you soon!");
       })
       .catch(result => {
-        alert(result);
+        console.log(result);
       });
   };
 
