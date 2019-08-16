@@ -5,10 +5,15 @@ import { useOnClickedOutside } from '../../hooks/useOnClickedOutside.js';
 
 const NavDropdown = props => {
   const [isOpen, toggle] = useState(false);
-  const { items } = props;
+  const { items, closeSidebar } = props;
 
   const ref = useRef();
   useOnClickedOutside(ref, () => toggle(false));
+
+  const toggleNavigations = () => {
+    toggle(!isOpen);
+    closeSidebar();
+  }
 
   return (
     <div className={`dropdown ${isOpen ? 'show' : ''}`} ref={ref}>
@@ -30,8 +35,7 @@ const NavDropdown = props => {
               : <Link to={item.url}
                 className="dropdown-item"
                 key={item.id}
-
-                onClick={() => toggle(!isOpen)}
+                onClick={toggleNavigations}
               >{item.title}</Link>
           })
         }

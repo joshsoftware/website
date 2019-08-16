@@ -9,14 +9,14 @@ import hamburger from "../../assets/images/hamburger.svg"
 import NavDropdown from './NavDropdown.js';
 import NavLink from './NavLink.js';
 import * as routes from '../../routeConstants.js'
-import { useOnClickedOutside } from '../../hooks/useOnClickedOutside';
+// import { useOnClickedOutside } from '../../hooks/useOnClickedOutside';
 
 const Component = props => {
   const [isOpenSidebar, toggleSidebar] = useState(false)
   const { menues } = props;
 
   const ref = useRef();
-  useOnClickedOutside(ref, () => toggleSidebar(false));
+  // useOnClickedOutside(ref, () => toggleSidebar(false));
   /** Right Navigation Bar */
   const Navigations = (
     <>
@@ -35,8 +35,10 @@ const Component = props => {
           {
             menues.map(menu => {
               return menu.type === 'dropdown'
-                ? <NavDropdown {...menu} key={menu.id} />
-                : <NavLink {...menu} key={menu.id} />
+                ? <NavDropdown {...menu} key={menu.id}
+                  closeSidebar={() => toggleSidebar(false)} />
+                : <NavLink {...menu} key={menu.id}
+                  closeSidebar={() => toggleSidebar(false)} />
             })
           }
         </div>
