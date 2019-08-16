@@ -72,25 +72,26 @@ DomainHeader.defaultProps = {
       logo: 'Health'
     },
     {
-      title: "Media",
-      logo: "Media"
-    },
-    {
-      title: "Fianance",
-      logo: "Fianance"
-    },
-    {
-      title: "Manufacturing",
-      logo: 'Manufacturing'
-    },
-    {
       title: "Sports",
       logo: "Sports"
     },
     {
-      title: "More",
-      logo: "more"
+      "title": "Marketing & Sales",
+      logo: "sales"
+    },
+    {
+      title: "Media",
+      logo: "Media"
+    },
+    {
+      title: "Education",
+      logo: "education"
+    },
+    {
+      title: "Insurance",
+      logo: 'insurance'
     }
+
   ]
 }
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
 import previousSvg from "../../assets/images/previous.svg";
+import nextSvg from "../../assets/images/next.svg";
 import redArrowSvg from "../../assets/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
 
@@ -31,10 +32,10 @@ const DomainExpertise = (props) => {
     const { className, onClick } = props;
     return (
       <img
-        src={previousSvg}
+        src={nextSvg}
         className={className}
         onClick={onClick}
-        alt="Previous"
+        alt="Next"
       />
     );
   }
@@ -114,7 +115,7 @@ const DomainExpertise = (props) => {
               {industriesData.map(industry => {
                 return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
-                    <ParallaxImg logo={require(`../../assets/images/home/${industry.name.toLowerCase()}Bg.svg`)} height="120px">
+                    <ParallaxImg logo={require(`../../assets/images/home/${industry.bgImg}`)} height="120px">
                       <div className="text-center pt-3">
                         <img src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
                         <DomainText>{industry.name}</DomainText>
@@ -188,34 +189,42 @@ DomainExpertise.defaultProps = {
     {
       id: '1',
       name: 'HEALTH',
-      logo: 'health.svg'
+      logo: 'health.svg',
+      bgImg: 'healthBg.svg'
     },
     {
       id: '2',
       name: 'MEDIA',
-      logo: 'media.svg'
+      logo: 'media.svg',
+      bgImg: 'mediaBg.svg'
     },
     {
       id: '3',
-      name: 'FINANCE',
-      logo: 'finance.svg'
+      name: 'Education',
+      logo: 'Education.png',
+      bgImg: 'educationBg.svg'
     },
     {
       id: '4',
       name: 'SPORTS',
-      logo: 'sport.svg'
+      logo: 'sport.svg',
+      bgImg: 'sportsBg.svg'
     },
     {
       id: '5',
       name: 'INSURANCE',
-      logo: 'insurance.svg'
+      logo: 'insurance.svg',
+      bgImg: 'insuranceBg.svg'
     },
     {
       id: '6',
-      name: 'MANUFACTURING',
-      logo: 'manufacturing.svg'
+      name: 'Marketing & Sales',
+      logo: 'Sales.png',
+      bgImg: "salesBg.svg"
     },
   ]
 }
+
+
 
 export default DomainExpertise;

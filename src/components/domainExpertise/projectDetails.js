@@ -19,7 +19,7 @@ const ProjectDetails = (props) => {
         <Row>
           <Col md={2} />
           <Col md={10} xs={12} sm={12}>
-            <img src={require(`../../assets/images/domainExpertise/${logo}`)} alt={title} className="img-responsive" />
+            <img src={require(`../../assets/images/domainExpertise/Products/${logo}`)} alt={title} className="img-responsive" />
           </Col>
         </Row>
         <br />
@@ -28,7 +28,7 @@ const ProjectDetails = (props) => {
         </Row>
         <Row>
           {techStack.map(tech => {
-            return <Col md={3} sm={3} xs={3}><img src={require(`../../assets/images/domainExpertise/${tech.toLowerCase()}.png`)} alt={tech} key={tech}/></Col>
+            return <Col md={3} sm={3} xs={3}><img src={require(`../../assets/images/domainExpertise/${tech.toLowerCase()}.png`)} alt={tech} key={tech} /></Col>
           })}
 
         </Row>
