@@ -39,16 +39,16 @@ const Footer = () => {
             <Link to="/" className="nav-link">Home</Link>
             {/* <Link to="services" className="nav-link">Services</Link>
             <Link to="services#ourWork" className="nav-link">Our Work</Link> */}
-            <a href="/innovations" className="nav-link">Innovation</a>
+            <Link to="/innovations" className="nav-link">Innovation</Link>
             {/* <Link to="technologies" className="nav-link">Technologies</Link> */}
-            <a href="success_stories" className="nav-link">Success Stories</a>
-            <a href="/testimonials" className="nav-link">Testimonials</a>
+            <Link to="/success_stories" className="nav-link">Success Stories</Link>
+            <Link to="/testimonials" className="nav-link">Testimonials</Link>
           </nav>
           <nav className="nav footer-nav">
             <Link to="about-us" className="nav-link">Company</Link>
             {/* <a href="open-source.html" className="nav-link">Open Source</a> */}
-            <a href="/domain_expertise" className="nav-link">Domain Expertise</a>
-            <Link to="team" className="nav-link">Our Team</Link>
+            <Link to="/domain_expertise" className="nav-link">Domain Expertise</Link>
+            <Link to="/team" className="nav-link">Our Team</Link>
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
             <a href="http://careers.joshsoftware.com/" className="nav-link">Career</a>
             <Link to="contact_us" className="nav-link">Contact Us</Link>
