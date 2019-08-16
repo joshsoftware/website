@@ -9,12 +9,6 @@ import innovationBgMobile from "../../assets/images/home/innovationBgMobile.png"
 import innovationBtnImg from "../../assets/images/home/innovation_button.svg";
 import innovationBtnMobile from "../../assets/images/home/innovation_button_mb.svg";
 
-// import kimayaLogo from "../../assets/images/home/Kimaya.svg";
-// import kimayaMbLogo from '../../assets/images/home/Kimaya_mb.svg';
-// import codeCuriosityMb from "../../assets/images/home/code_curiosity_mb.png";
-// import hungerTerminalMb from "../../assets/images/home/hunger_terminal_mb.png";
-
-
 const Innovations = (props) => {
   const { innovations } = props;
 

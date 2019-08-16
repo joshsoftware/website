@@ -28,11 +28,7 @@ export default function Innovation() {
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    // customPaging: function (i) {
-    //   return (
-    //     <div data-target="#carouselInnovation" data-slide-to="0" className="active"></div>
-    //   );
-    // },
+    customPaging: () => <div className="rounded-circle orange-color" />
   };
 
 

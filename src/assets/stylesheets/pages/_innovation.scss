@@ -71,9 +71,9 @@
 
   li{
     background-color:$white ;
-    border: 3px solid rgba($roman,0.5);
-    width:rem(15px);
-    height: rem(15px);
+    // border: 3px solid rgba($roman,0.5);
+    width:rem(12px);
+    height: rem(12px);
     border-radius: rem(10px);
   }
 
@@ -86,6 +86,7 @@
   .slick-dots{
     margin: 0;
     bottom: 0;
+    // background-color: #fff;
 
     .slick-active{
       background-color: $roman;

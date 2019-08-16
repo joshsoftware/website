@@ -47,10 +47,12 @@ const DomainExpertise = (props) => {
     arrows: true,
     slidesToShow: 6,
     slidesToScroll: 1,
-    centerPadding: "10px",
+    centerPadding: "15px",
     adaptiveHeight: true,
+    dotsClass: "slick-dots slick-thumb bottom-50",
     nextArrow: <NextArrow />,
     prevArrow: <PreviousArrow />,
+    customPaging: () => <div className="rounded-circle orange-color" />,
     responsive: [
       {
         breakpoint: 1024,
@@ -95,7 +97,7 @@ const DomainExpertise = (props) => {
   return (
     <Fragment>
       <section id="clientsSlide" className="section-home pb-5">
-        <Row className="justify-content-center m-auto d-xs-none w-50 p-md-3">
+        <Row className="justify-content-center m-auto d-xs-none w-55 p-md-3">
           <Col>
             <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
           </p>

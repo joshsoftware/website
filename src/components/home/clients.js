@@ -13,9 +13,9 @@ export const Clients = (props) => {
           {
             clients.map(client => {
               return <li key={client.name}>
-                <a href={client.website}>
+                <span>
                   <img src={require(`../../assets/images/clients/${client.logo}`)} alt={client.name} className="img-fluid" />
-                </a>
+                </span>
               </li>
             })
           }

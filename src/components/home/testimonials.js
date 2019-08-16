@@ -31,7 +31,8 @@ const Testimonials = (props) => {
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: false,
-    dotsClass: "slick-dots slick-thumb orange-color",
+    dotsClass: "slick-dots slick-thumb bottom-50",
+    customPaging: () => <div className="rounded-circle orange-color" />,
     // variableWidth: true,
     responsive: [
       {
@@ -164,60 +165,6 @@ Testimonials.defaultProps = {
       "clientName": "Satjot",
       "designation": "CEO",
       "projectName": "Predikt it"
-    },
-    {
-      "description": "Gautam and his guys are a smart set of people. They helped us out at a critical time, when our company needed immediate growth. Enjoyed working with them.",
-      "clientName": "Saqib Rasool",
-      "designation": "CEO",
-      "projectName": "Conceivian"
-    },
-    {
-      "description": "Josh Software is a great company and I highly recommend them. They are very professional, responsive and easy to work with. In addition, they are very responsive and reliable.",
-      "clientName": "Dave Kaiser",
-      "designation": "Co-Founder",
-      "projectName": "The Deal Pages"
-    },
-    {
-      "description": "We worked with Gautam (biz) and Sethu (Project Manager) to develop a product roadmap for The Deal Pages and tracked the development process through pivotal tracker for organization. Josh Software is a leader in RoR development in India and they often hold Ruby learning sessions. Even though they were based in India (far from North America) we found that they broke all stereotypes for outsourced software development. Communication was great and we could skype everyday to review work completed and deal with hurdles that came up.",
-      "clientName": "Chi Chen",
-      "designation": "Co-Founder and CEO",
-      "projectName": "The Deal Pages"
-    },
-    {
-      "description": "These guys are the most passionate team that I have ever seen dedicated to a technology, and they take immense pride in their expertise on RoR. At multiple times, the team has stood up to the challenges and delivered on aggressive timelines with good quality. The team with different skillsets helps a lot when you can get in a facebook development expert to come in and tweak your fb related code, whereas someone else would actually come in and fix in the rendering issues that are being faced on IE and go back to his regular assighments (which might not be your project). A good focus on writing test cases and automating them helps catch some bugs beforehand. All in all, an awesome, well balanced team. Strongly recommended.",
-      "clientName": "Hetal Rach",
-      "designation": "Founder",
-      "projectName": "GroupGyaan.com"
-    },
-    {
-      "description": "Josh team is significantly different from other outsourced teams I have worked with. Josh works exclusively with Ruby on Rails. Hence, the team has deep understanding about the framework and all supplementary libraries from the ecosystem. Another difference, which sets this team apart, is that Josh works more as partner than a service provider. More than once, team has gone extra mile to deliver project on time and on budget. Gautam's relaxed manner of project management worked well with our agile and fast pace of product development. I have found him flexible and accommodating with spec changes and timeline changes. Josh is also leading the Rails interest groups in their community. I am sure the efforts helping them attract best talent and keep themselves up to date with latest from the Rails world.",
-      "clientName": "Kunal Mahajan",
-      "designation": "Project Lead",
-      "projectName": "Conceivian"
-    },
-    {
-      "description": "I was looking for an offshore partner specialising in Ruby on Rails, but also with a knowledge of more mainstream web languages such as .NET. As such Josh fit the bill perfectly. They have proved to be extremely proficient in their knowledge of Ruby and how quickly they picked up our working methods and the complexities of our client's sites. We're looking forward to a long term and productive relationship.",
-      "clientName": "Mark Godfrey",
-      "designation": "Head of eCommerce",
-      "projectName": "Twenty Ci Limited"
-    },
-    {
-      "description": "We asked Josh Software to join the execution phase of a complex project in partnership with a very relevant national brand in India. The project required a tight level of back-end integration with existing technical assets/systems that we made available, and was managed with mutual satisfaction.",
-      "clientName": "Antongiulio La Corte",
-      "designation": "International Development Director ",
-      "projectName": "H-Farm"
-    },
-    {
-      "description": "In addition to the technical expertise, the Josh team comes across as a team with thinking brains. Throughout the development lifecycle, I have seen them getting their heads around to deliver an enhanced functionality, which at times meant increased complexity and incremental developmental efforts. I am impressed with their degree of involvement and proactive approach to conceive solutions.",
-      "clientName": "Anand Kulkarni",
-      "designation": "Founder",
-      "projectName": "Paisamatters.com"
-    },
-    {
-      "description": "As a startup, TourConnect hired Josh to take out concept and wireframes and turn it into a product. They have done a fantastic job! They did an excellent job of asking good questions and then running with the requirements with minimal supervision. They know their technology, they are excellent communicator and produced a great product with very few issues. Highly Recommended.",
-      "clientName": "Robert Patterson",
-      "designation": "Partner",
-      "projectName": "TourConnect"
     }
   ]
 }

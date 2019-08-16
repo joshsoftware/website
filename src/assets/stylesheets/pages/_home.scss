@@ -314,7 +314,7 @@
       margin: rem(0 0 10px);
     }
 
-    a{
+    span {
       // height: rem(124px);
       @extend .d-flex;
       @extend .justify-content-center;
@@ -709,7 +709,7 @@
 }
 
 .slick-dots > :not(.slick-active) > .orange-color{
-  background-color: #FFF;
+  background-color: #666;
   width: 10px;
   height: 10px;
 }
@@ -811,4 +811,8 @@
 .size-30 {
   width: 30px;
   height: 30px;
+}
+
+.w-55 {
+  width: 55%;
 }
