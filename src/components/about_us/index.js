@@ -21,7 +21,7 @@ const AboutUs = () => {
                   <br />And, passion for technology <br />is who we are.
                 </p>
                 <p className="para">The success of Josh Software is a direct reflection of the magnificent team behind it! Their passion and enthusiasm have been the greatest driving factors and are responsible for every milestone of the brand. Here’s to every individual who has been part of this wonderful journey!</p><img src="http://new.joshsoftware.com:8080/images/group-photos-mobile.png" alt="Josh Software Team" className="img-fluid img-mobile" />
-                <div className="btn-wrap"><a href="team.html" className="btn btn-white">Meet Our Team</a><a href="http://careers.joshsoftware.com/" className="btn btn-outline-white">Job Openings</a></div>
+                <div className="btn-wrap"><a href="/team" className="btn btn-white">Meet Our Team</a><a href="http://careers.joshsoftware.com/" className="btn btn-outline-white">Job Openings</a></div>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">

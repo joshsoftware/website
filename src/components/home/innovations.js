@@ -53,7 +53,7 @@ const Innovations = (props) => {
                   <Row>
                     {
                       innovations.map(innovation => {
-                        return <Col md={4} >
+                        return <Col md={4} key={innovation.name} >
                           <Link to={innovation.url}>
                             <ParallaxImg logo={innovationBtnImg} height="150px" className="d-flex justify-content-center">
                               <img src={require(`../../assets/images/home/${innovation.logo}.${innovation.logo_type}`)} alt={innovation.name} />

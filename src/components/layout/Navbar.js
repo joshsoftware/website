@@ -50,7 +50,7 @@ const Component = props => {
         <nav className="navbar navbar-expand-lg josh-navbar ">
           <div className="row">
             <div className="col-md-4 ">
-              <Link className="navbar-brand pt-0 pb-md-1" to="/" activeClassName="text-decoration-none">
+              <Link className="navbar-brand pt-0 pb-md-1" to="/" className="text-decoration-none">
                 <Media query="(max-width: 700px)">
                   {matches =>
                     matches ? (

@@ -51,7 +51,7 @@ const Footer = () => {
             <Link to="team" className="nav-link">Our Team</Link>
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
             <a href="http://careers.joshsoftware.com/" className="nav-link">Career</a>
-            <Link tp="contact-us" className="nav-link">Contact Us</Link>
+            <Link to="contact_us" className="nav-link">Contact Us</Link>
           </nav>
         </div>
         <p className="text-policy text-center mb-3"><a href="https://s3.ap-south-1.amazonaws.com/josh-website/PrivacyPolicyWebsite.pdf" target="_blank">View Privacy Policy</a></p>

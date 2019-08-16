@@ -18,7 +18,7 @@ const Testimonials = (props) => {
   const { testimonialData } = props;
 
   const items = testimonialData.map(testimonial => {
-    return <Testimonial {...testimonial} key={testimonial.id} />
+    return <Testimonial {...testimonial} key={testimonial.clientName} />
 
   })
 
@@ -29,7 +29,7 @@ const Testimonials = (props) => {
     speed: 500,
     centerPadding: "10px",
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     arrows: false,
     dotsClass: "slick-dots slick-thumb orange-color",
     // variableWidth: true,

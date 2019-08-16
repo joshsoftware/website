@@ -14,7 +14,7 @@ import * as routes from "../../routeConstants.js";
 const DomainExpertise = (props) => {
   const { domainsData, industriesData } = props;
   const carouselItems = domainsData.map(domain => {
-    return <img src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} />
+    return <img src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
   })
 
   const PreviousArrow = (props) => {
@@ -114,7 +114,7 @@ const DomainExpertise = (props) => {
           <Col sm={8} md={6}>
             <Row>
               {industriesData.map(industry => {
-                return <Col sm={6} md={4} xs={6} className="pb-14">
+                return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
                     <ParallaxImg logo={domainBg} height="120px">
                       <div className="text-center pt-3">

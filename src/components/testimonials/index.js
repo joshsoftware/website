@@ -20,7 +20,9 @@ const TestimonialsList = (props) => {
             }
           </div>
         </div>
-        <div className="btn-wrap"><a href="about-us.html" className="btn btn-gray">Indusrties</a><a href="contact-us.html" className="btn btn-outline-gray">About Us</a></div>
+        <div className="btn-wrap">
+          {/* <a href="about-us.html" className="btn btn-gray">Indusrties</a> */}
+          <a href="/contact_us" className="btn btn-outline-gray">About Us</a></div>
       </section>
     </>
   )
