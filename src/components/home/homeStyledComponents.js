@@ -124,20 +124,11 @@ export const BannerSubText = styled.div`
   min-height: 55px;
   text-align: left;
   font-size: 24px;
+  font-weight: 300;
   color: #FFFFFF;
 `
 
-// export const ContactUSBtnText = styled.span`
-//   background-image: ${(props) => `url(${props.logo})`}
-//   // color: white;
-//   // position: relative;
-//   // left: 27px;
-//   // top: 573px;
-//   // right: 103px;
-// `
-
 export const ConctactUsRightText = styled.span`
-  font-weight: bold;
   color: #FFFFFF;
 `
 
@@ -157,12 +148,31 @@ export const CompanyDetailsText = styled.div`
   float: ${(props) => props.pull};
   width: ${(props) => props.width};
   color: #fff;
+  & span {
+    font-size: 14px;
+    // font-weight: 100;
+  }
+
+  & h5 {
+    font-size: 20px;
+    
+  }
+
+  & b {
+    font-weight: 400;
+  }
 
   @media(max-width: 900px) {
-    font-size: 13px;
-    & h5 {
-      font-size: 21px;
+    & span {
+      font-size: 11px;
+      // font-weight: 100;
     }
+    & h5 {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+    line-height: 24px;
   }
 `
 export const InnovationBox = styled.span`
