@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+
+import { CONTACT_US_URL } from "../../routeConstants.js";
 
 const ContactUs = () => {
   return (
@@ -8,7 +11,9 @@ const ContactUs = () => {
           <div className="col-lg-6 col-md-12">
             <div className="contact-wrap">
               <p>Looking for an <br />expert technical partner?</p>
-              <div className="d-none d-lg-block"><a href="contact-us.html" className="btn btn-gray">Contact Us</a></div>
+              <div className="d-none d-lg-block">
+                <Link to={CONTACT_US_URL} className="btn btn-gray">Contact Us</Link>
+              </div>
             </div>
           </div>
         </div>
