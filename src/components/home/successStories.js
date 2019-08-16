@@ -31,7 +31,7 @@ const SuccessStories = () => {
           </ul>
         </Fragment>
       ) : (
-          <ParallaxImg height="277px" logo={successStoriesBg}>
+          <ParallaxImg height="249px" logo={successStoriesBg}>
             <Row style={{ height: "inherit" }}>
               <Col md={6} className="d-flex justify-content-end align-items-center" >
                 <Heading1Orange>Success Stories</Heading1Orange>
