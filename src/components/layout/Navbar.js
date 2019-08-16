@@ -92,32 +92,30 @@ Component.defaultProps = {
     {
       id: 1,
       title: "Domain Expertise",
-      url: `${routes.DOMAIN_EXPERTISE}/health`
+      url: `${routes.DOMAIN_EXPERTISE}`
     },
     {
       id: 3,
       title: "Our Innovation",
       url: routes.INNOVATIONS
     },
-    // {
-    //   id: 2,
-    //   title: "SERVICES",
-    //   url: routes.SERVICES_URL
-    // },
-    {
-      id: 4,
-      title: "Technologies",
-      url: routes.TECHNOLOGIES_URL
-    },
-    // {
-    //   id: 5,
-    //   title: "Products",
-    //   url: "/domain_experties"
-    // },
     {
       id: 6,
       title: "Success Stories",
       url: routes.SUCCESS_STORIES_URL
+    },
+    ,
+    {
+      id: 4,
+      title: "Career",
+      url: "http://careers.joshsoftware.com/",
+      otherDomain: true
+    },
+    {
+      id: 5,
+      title: "Blog",
+      url: "https://blog.joshsoftware.com/",
+      otherDomain: true
     },
     {
       id: 7,
@@ -137,12 +135,6 @@ Component.defaultProps = {
           id: 4,
           title: "Contact Us",
           url: routes.CONTACT_US_URL,
-        },
-        {
-          id: 3,
-          title: "Career",
-          url: "http://careers.joshsoftware.com/",
-          otherDomain: true
         },
         {
           id: 5,
