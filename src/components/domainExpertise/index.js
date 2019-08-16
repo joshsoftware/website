@@ -6,12 +6,11 @@ import DomainWork from "./domainWork.js";
 import ExpertiesJSON from "./experties.json"
 import * as routes from '../../routeConstants';
 
-const DomainExpertise = ({ match }) => {
-
+const DomainExpertise = (props) => {
   return (
     <>
       <Route path={`${routes.DOMAIN_EXPERTISE}/:domain`} component={DomainExpertiseLyaout} />
-      <Redirect to={`${routes.DOMAIN_EXPERTISE}/health`} />
+      {props.location.pathname === routes.DOMAIN_EXPERTISE && <Redirect to={`${routes.DOMAIN_EXPERTISE}/health`} from={routes.DOMAIN_EXPERTISE} />}
     </>
   )
 }
