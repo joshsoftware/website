@@ -6,15 +6,15 @@ export default function Innovation() {
 
   const NextArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-prev cursor-pointer">
-      <span aria-hidden="true" className="carousel-control-prev-icon"></span>
+    return <div onClick={onClick} className="carousel-control-next cursor-pointer">
+      <span aria-hidden="true" className="carousel-control-next-icon"></span>
       <span className="sr-only">Previous</span></div>
   }
 
   const PrevArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-next cursor-pointer">
-      <span aria-hidden="true" className="carousel-control-next-icon"></span>
+    return <div onClick={onClick} className="carousel-control-prev cursor-pointer">
+      <span aria-hidden="true" className="carousel-control-prev-icon"></span>
       <span className="sr-only">Next</span></div>
   }
   const settings = {

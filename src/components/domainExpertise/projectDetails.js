@@ -29,7 +29,7 @@ const ProjectDetails = (props) => {
         <Row>
           <Col>
             {techStack.map(tech => {
-              return <img src={techLogoMap[tech]} alt={tech} />
+              return <img src={techLogoMap[tech]} alt={tech} key={tech}/>
             })}
           </Col>
         </Row>
@@ -46,7 +46,7 @@ const ProjectDetails = (props) => {
               </Col>
             </Row>
             <Row className="pt-xs-5">
-              <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
+              <Col md={{ size: 10, offset: 1 }} xs={12} sm={12} className="text-justify">
                 <Paragraph fontSize="14">{business}</Paragraph>
               </Col>
             </Row>
@@ -63,7 +63,7 @@ const ProjectDetails = (props) => {
               </Col>
             </Row>
             <Row>
-              <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
+              <Col md={{ size: 10, offset: 1 }} xs={12} sm={12} className="text-justify">
                 <Paragraph fontSize="14">{solution}</Paragraph>
               </Col>
             </Row>
@@ -80,14 +80,14 @@ const ProjectDetails = (props) => {
               </Col>
             </Row>
             <Row>
-              <Col md={{ size: 11, offset: 1 }} xs={12} sm={12}>
+              <Col md={{ size: 10, offset: 1 }} xs={12} sm={12} className="text-justify">
                 <Paragraph fontSize="14">{impact}</Paragraph>
               </Col>
             </Row>
           </Col>
         </Row>
       </Col>
-    </Row >
+    </Row>
   )
 }
 
