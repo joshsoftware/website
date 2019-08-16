@@ -12,15 +12,15 @@ const TestimonialsList = (props) => {
           </div>
         </div>
       </section>
-      <section class="section-testimonial section-content">
-        <div class="container">
-          <div class="card-wrap -striped client-testimonial">
+      <section className="section-testimonial section-content">
+        <div className="container">
+          <div className="card-wrap -striped client-testimonial">
             {
               testimonialList.map((testimonial, index) => <Testimonial key={testimonial.clientName} {...testimonial} seqNumber={index} />)
             }
           </div>
         </div>
-        <div class="btn-wrap"><a href="about-us.html" class="btn btn-gray">Indusrties</a><a href="contact-us.html" class="btn btn-outline-gray">About Us</a></div>
+        <div className="btn-wrap"><a href="about-us.html" className="btn btn-gray">Indusrties</a><a href="contact-us.html" className="btn btn-outline-gray">About Us</a></div>
       </section>
     </>
   )
@@ -53,19 +53,33 @@ TestimonialsList.defaultProps = {
       "projectName": "Synergy Design Solutions Pte.Ltd"
     },
     {
-      "description": "<p className='para-text'>Before getting Josh on board for our startup , we had done a lot of homework on IT vendors as well as tackled the question of whether to inhouse or outsource tech . The points which were in Josh's favour were <p className='para-text'>Very competent &amp; experienced team<br>B. Use of efficient, robust &amp; thorough processes/tools like pivotal tracker , github etc<br>C. They had worked with a lot of startups across the world with good customer feedback on quality as well as timelines. <p className='para-text'>We had a heard a lot of horror stories faced by startups about outsourced tech work so we kept our fingers crossed after they started work , but to our absolute delight Josh has functioned as an extended IT dept of our startup. They are very good at execution as well as providing suggestions/advice. They have delivered as per their estimates and forecasts of time and effort .I will strongly recommend them for any startup who wants to be lean and efficient.",
+      "description": <div >
+        <p className="para-text">Before getting Josh on board for our startup , we had done a lot of homework on IT vendors as well as tackled the question of whether to inhouse or outsource tech . The points which were in Josh's favour were</p>
+        <p className="para-text">A. Very competent & experienced team<br />B. Use of efficient, robust & thorough processes/tools like pivotal tracker , github etc<br />C. They had worked with a lot of startups across the world with good customer feedback on quality as well as timelines.</p>
+        <p className="para-text">We had a heard a lot of horror stories faced by startups about outsourced tech work so we kept our fingers crossed after they started work , but to our absolute delight Josh has functioned as an extended IT dept of our startup. They are very good at execution as well as providing suggestions/advice. They have delivered as per their estimates and forecasts of time and effort .</p>
+        <p className="card-text">I will strongly recommend them for any startup who wants to be lean and efficient.</p>
+      </div>,
       "clientName": "Amol Patkar",
-      "designation": "Founder &amp; Director",
+      "designation": "Founder & Director",
       "projectName": "Fundamentor"
     },
     {
-      "description": " <p className='para-text'>Josh has provided DealSignal with highly experienced engineering management, disciplined development processes, talented developers, and have always excellent project management and client communications.<p className='para-text'>The Josh team consistently delivers nearly flawless, well documented code. They can quickly understand product requirements, and breakdown development tasks to ensure rapid execution. The team sets good expectations on delivery timeframes and always meets expectations. In many urgent situations, Josh managers and developers have gone many extra miles to make a deliverable happen by a key deadline. <p className='para-text'>With regard to technology, the Josh team's knowledge of Ruby, Postgres, Rest APIs, AWS, Regex, web crawling, data management, and systems integration far exceed all other non-US resources and frankly have proven to be much better than many Silicon Valley developers that we have worked with in the past. Along with modern software development stack, Josh team also uses modern development tools including Pivotaltracker, Github and provide detailed status updates to manage the project and keep our executives informed. The Josh team takes great pride in their work, takes great care to ensure their clients' success, and we have grown to feel strongly that our Josh team is part of the family in our venture. We would recommend Josh team for any server side development project and have already referred other entrepreneurs we know to engage them.",
+      "description": <div>
+        <p className="para-text">Josh has provided DealSignal with highly experienced engineering management, disciplined development processes, talented developers, and have always excellent project management and client communications.</p>
+        <p className="para-text">The Josh team consistently delivers nearly flawless, well documented code. They can quickly understand product requirements, and breakdown development tasks to ensure rapid execution. The team sets good expectations on delivery timeframes and always meets expectations. In many urgent situations, Josh managers and developers have gone many extra miles to make a deliverable happen by a key deadline.</p>
+        <p className="para-text">With regard to technology, the Josh team's knowledge of Ruby, Postgres, Rest APIs, AWS, Regex, web crawling, data management, and systems integration far exceed all other non-US resources and frankly have proven to be much better than many Silicon Valley developers that we have worked with in the past. Along with modern software development stack, Josh team also uses modern development tools including Pivotaltracker, Github and provide detailed status updates to manage the project and keep our executives informed.</p>
+        <p className="card-text"> The Josh team takes great pride in their work, takes great care to ensure their clients' success, and we have grown to feel strongly that our Josh team is part of the family in our venture. We would recommend Josh team for any server side development project and have already referred other entrepreneurs we know to engage them.</p>
+      </div>,
       "clientName": "Rob Weedn",
-      "designation": "Founder &amp; CEO",
+      "designation": "Founder& CEO",
       "projectName": "DealSignal, Inc."
     },
     {
-      "description": "<p className='para-text'>Josh has been responsible for both the support of our products and there on-going development for the last two years.Communication between us is key and Josh have worked hard, not only to understand our product, but also our philosophy. We would be hard-pressed indeed to find another partner of this quality.",
+      "description": <div>
+        <p className="para-text">Josh has been responsible for both the support of our products and there on-going development for the last two years.</p>
+        <p className="para-text">Their performance in both areas has been excellent. In support I would go further and describe it as exceptional. When there is a problem, Josh are onto it; serious issues are dealt with at whatever time of day or night.</p>
+        <p className="card-text">Communication between us is key and Josh have worked hard, not only to understand our product, but also our philosophy. We would be hard-pressed indeed to find another partner of this quality.</p>
+      </div>,
       "clientName": "Sarah Sedgwick",
       "designation": "Managing Director",
       "projectName": "Clubbuzz"
