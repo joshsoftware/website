@@ -11,7 +11,7 @@ const Company = () => {
     <Media query="(max-width: 900px)">
       {matches =>
         matches ? (
-          <ParallaxImg logo={companyMbImg}  >
+          <ParallaxImg logo={companyMbImg} height="634px" >
             <Row className="company-details">
               <Col md={6} sm={6} xs={6} >
                 <CompanyDetailsText className="text-right">
@@ -72,7 +72,7 @@ const Company = () => {
             </Row>
           </ParallaxImg >
         ) : (
-            <ParallaxImg logo={companyImg} height="700px" >
+            <ParallaxImg logo={companyImg} height="721px" >
               <Row className="company-details">
                 <Col md={6} sm={6} xs={6} >
                   <CompanyDetailsText className="text-right">

@@ -7,7 +7,7 @@ import ImpactSVG from "../../assets/images/domainExpertise/Impact.svg"
 import { Text, Paragraph } from "../home/homeStyledComponents.js";
 
 const ProjectDetails = (props) => {
-  const { logo, title, techStack, techLogoMap, business, solution, impact } = props;
+  const { logo, title, techStack, business, solution, impact } = props;
   return (
     <Row className="justify-content-around m-auto w-90">
       <Col md={4}>
@@ -24,14 +24,13 @@ const ProjectDetails = (props) => {
         </Row>
         <br />
         <Row className="justify-content-around m-auto">
-          <Text color="#CF4338" fontSize="19">Tech Stack</Text>
+          {techStack.length && <Text color="#CF4338" fontSize="19">Tech Stack</Text>}
         </Row>
         <Row>
-          <Col>
-            {techStack.map(tech => {
-              return <img src={techLogoMap[tech]} alt={tech} key={tech}/>
-            })}
-          </Col>
+          {techStack.map(tech => {
+            return <Col md={3} sm={3} xs={3}><img src={require(`../../assets/images/domainExpertise/${tech.toLowerCase()}.png`)} alt={tech} key={tech}/></Col>
+          })}
+
         </Row>
       </Col>
       <Col md={8} >

@@ -109,7 +109,7 @@ const DomainExpertise = (props) => {
           </Col>
         </Row>
         <Heading1>Domain Expertise</Heading1>
-        <Row>
+        <Row className="justify-content-around m-auto">
           <Col sm={2} md={3} />
           <Col sm={8} md={6}>
             <Row>
