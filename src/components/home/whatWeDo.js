@@ -9,7 +9,7 @@ const WhatWeDo = (props) => {
     <section id="clientsSlide" className="section-home ">
       <Heading1>What We Do</Heading1>
       <Row>
-        <Col md={2} xs={2} sm={2} />
+        <Col md={2} xs={1} sm={1} />
         <Col xs={8} sm={10} md={8}>
           <Row>
             {domains.map(domain => {
@@ -33,7 +33,7 @@ const WhatWeDo = (props) => {
             })}
           </Row>
         </Col>
-        <Col sm={1} md={2} xs={2} />
+        <Col sm={1} md={2} xs={1} />
       </Row>
     </section>
   )
