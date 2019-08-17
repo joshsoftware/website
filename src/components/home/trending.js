@@ -45,6 +45,14 @@ const Trending = (props) => {
     prevArrow: <PreviousArrow />,
     customPaging: () => <div className="rounded-circle orange-color" />,
     dotsClass: "slick-dots bottom-50",
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false
+        }
+      },
+    ]
   };
 
   const carouselItems = items.map(cItem => (
