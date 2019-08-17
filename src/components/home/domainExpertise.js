@@ -118,7 +118,7 @@ const DomainExpertise = (props) => {
                 return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
                     <ParallaxImg logo={require(`../../assets/images/home/${industry.bgImg}`)} height="120px">
-                      <div className="text-center pt-3">
+                      <div className="text-center pt-md-3">
                         <img src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
                         <DomainText>{industry.name}</DomainText>
                         <img src={redArrowSvg} alt={industry.name} />
@@ -202,7 +202,7 @@ DomainExpertise.defaultProps = {
     },
     {
       id: '3',
-      name: 'Education',
+      name: 'EDUCATION',
       logo: 'Education.png',
       bgImg: 'educationBg.svg'
     },
@@ -220,7 +220,7 @@ DomainExpertise.defaultProps = {
     },
     {
       id: '6',
-      name: 'Marketing & Sales',
+      name: 'MARKETING & SALES',
       logo: 'Sales.png',
       bgImg: "salesBg.svg"
     },
