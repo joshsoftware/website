@@ -13,8 +13,8 @@ export default class JoshCarousel extends Component {
     return (
       <Slider {...settings} className="testst">
         {
-          items.map(item => {
-            return item
+          items.map((item, index) => {
+            return <div key={index}>{item}</div>
           })
         }
       </Slider>

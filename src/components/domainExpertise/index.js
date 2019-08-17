@@ -22,7 +22,8 @@ const DomainExpertiseLyaout = ({ match }) => {
   return (
     <section className="w-100 section-home">
       <DomainHeader selectedDomain={selectedDomain} />
-      {ExpertiesJSON[match.params.domain].length !== 0 && <DomainWork domainExpertiseData={ExpertiesJSON[match.params.domain]} />}
+      {ExpertiesJSON[match.params.domain] && ExpertiesJSON[match.params.domain].length !== 0 &&
+        <DomainWork domainExpertiseData={ExpertiesJSON[match.params.domain]} />}
       {ExpertiesJSON.rssFeeds[selectedDomain] && <RssFeeds rssTag={ExpertiesJSON.rssFeeds[selectedDomain]} />}
     </section>
   )
