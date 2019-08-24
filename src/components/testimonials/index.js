@@ -93,7 +93,7 @@ TestimonialsList.defaultProps = {
       "projectName": "ShowMe"
     },
     {
-      "description": "Gautam and his team were a pleasure to work with. They dispel all the common myths of oursourcing. &gt; They were forthright with their work &gt; They provided suggestions and feedback before jumping into the work &gt; They held themselves accountable to the work they delivered, in fact, only billing for the work completed. Many firms bill for time, and you never know if that company is working on other projects during your time. Josh Software is great in that sense. &gt; These guys know Rails (period).",
+      "description": "Gautam and his team were a pleasure to work with. They dispel all the common myths of oursourcing. > They were forthright with their work > They provided suggestions and feedback before jumping into the work >They held themselves accountable to the work they delivered, in fact, only billing for the work completed. Many firms bill for time, and you never know if that company is working on other projects during your time. Josh Software is great in that sense. >These guys know Rails.",
       "clientName": "Satjot",
       "designation": "CEO",
       "projectName": "Predikt it"
