@@ -59,11 +59,11 @@ const Trending = (props) => {
     <Media query="(max-width: 500px)" key={cItem.name}>
       {matches =>
         matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
-          className="img-responsive mt-2" alt="what's new?" />
+          className="img-fluid mt-2" alt="what's new?" />
           : <Row className="justify-content-around m-auto w-100 d-flex">
             <Col>
               <img src={require(`../../assets/images/home/${cItem.image}.png`)}
-                className=" img-responsive mt-5" alt="what's new?" />
+                className=" img-fluid mt-5" alt="what's new?" />
             </Col>
           </Row>
       }
@@ -76,7 +76,7 @@ const Trending = (props) => {
       <Row className="float-right justify-content-around m-auto pt-3 pl-5">
         <Col>
           <img src={require(`../../assets/images/home/Close.png`)}
-            className="img-responsive cursor-pointer "
+            className="img-fluid cursor-pointer "
             onClick={setOpenTrending}
             alt="Close" />
         </Col>
@@ -97,7 +97,7 @@ const Trending = (props) => {
       <Row className="float-right justify-content-around m-auto pt-3 pl-5">
         <Col>
           <img src={require(`../../assets/images/home/Close.png`)}
-            className="img-responsive cursor-pointer size-30"
+            className="img-fluid cursor-pointer size-30"
             onClick={setOpenTrending}
             alt="Close" />
         </Col>

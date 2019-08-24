@@ -14,7 +14,7 @@ const DomainHeader = (props) => {
     return <Link to={`${routes.DOMAIN_EXPERTISE}/${domain.title.toLowerCase()}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
         <div className="text-center">
-          <img src={require(`../../assets/images/domainExpertise/${domainImg}`)} alt={domain.title} className="img-responsive m-auto" />
+          <img src={require(`../../assets/images/domainExpertise/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" />
         </div>
         <div className={textClass}>{domain.title}</div>
       </div>

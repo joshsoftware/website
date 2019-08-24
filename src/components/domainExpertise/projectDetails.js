@@ -19,7 +19,7 @@ const ProjectDetails = (props) => {
         <Row>
           <Col md={2} />
           <Col md={10} xs={12} sm={12}>
-            <img src={require(`../../assets/images/domainExpertise/Products/${logo}`)} alt={title} className="img-responsive" />
+            <img src={require(`../../assets/images/domainExpertise/Products/${logo}`)} alt={title} className="img-fluid" />
           </Col>
         </Row>
         <br />
