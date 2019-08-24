@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import * as routeConstants from '../../routeConstants';
 import { Heading1 } from '../home/homeStyledComponents';
 
-const IMAGE_BASE_URL = "http://new.joshsoftware.com:8080/images/";
 const LINKED_IN_BASE_URL = "https://www.linkedin.com/in/";
 const GITHUB_BASE_URL = "https://github.com/";
 const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
@@ -35,7 +34,7 @@ const OurTeam = (props) => {
                 return (
                   <div className="col-lg-4 col-sm-6" key={leader.name}>
                     <div className="card card-team">
-                      <img src={`${IMAGE_BASE_URL}${leader.profilePic}`} alt={leader.name} className="img-fluid" />
+                      <img src={require(`../../assets/images/${leader.profilePic}`)} alt={leader.name} className="img-fluid" />
                       <div className="card-body">
                         <div className="person-info">
                           <h5>{leader.name}</h5>
@@ -73,7 +72,7 @@ const OurTeam = (props) => {
                 return (
                   <div className="col-lg-3 col-md-6 col-6" key={member.name}>
                     <div className="card card-team">
-                      <img src={`${IMAGE_BASE_URL}${member.profilePic}`} alt={member.name} className="img-fluid" />
+                      <img src={require(`../../assets/images/${member.profilePic}`)} alt={member.name} className="img-fluid" />
                       <div className="card-body">
                         <div className="person-info -nerds">
                           <h5>{member.name}</h5>

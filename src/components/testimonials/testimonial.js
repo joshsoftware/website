@@ -17,7 +17,7 @@ const Testimonial = (props) => {
 
   const TestimonialImage = (
     <div className="testimonial-image">
-      <img src="http://new.joshsoftware.com:8080/images/client-face.svg" alt="Client" className="img-fluid img-thumbnail rounded-circle" />
+      <img src={require("../../assets/images/client-face.svg")} alt="Client" className="img-fluid img-thumbnail rounded-circle" />
     </div>
   )
 
