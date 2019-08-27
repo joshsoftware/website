@@ -13,7 +13,7 @@ const WhatWeDo = () => {
                 }\
               "}</style>
             <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1891 830">
-              <image width="1891" height="830" xlinkHref="http://new.joshsoftware.com:8080/images/services-banner-image.png"></image>
+              <image width="1891" height="830" xlinkHref={require("../../assets/images/services-banner-image.png")}></image>
             </pattern>
           </defs>
           <g id="Group_942" data-name="Group 942" transform="translate(-93 -274)">
@@ -109,7 +109,7 @@ const WhatWeDo = () => {
         </svg>
         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.626 1021" className="services-banner-svg-sm">
           <g id="services-gear-mobile" transform="translate(-486 -2011)">
-            <image id="services-gear-sm" width="471" height="1021" transform="translate(486 2011)" xlinkHref="http://new.joshsoftware.com:8080/images/services-gear-sm.png"></image>
+            <image id="services-gear-sm" width="471" height="1021" transform="translate(486 2011)" xlinkHref={require("../../assets/images/services-gear-sm.png")}></image>
             <g id="gear-sm-6">
               <text id="Rescue_Missions_sm" data-name="Rescue Missions" transform="translate(572.704 2864.404)" className="title">
                 <tspan x="23.041" y="18">Rescue </tspan>

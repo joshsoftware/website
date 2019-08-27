@@ -40,13 +40,15 @@ const DomainExpertise = (props) => {
     );
   }
 
+
+
   const carouselSettings = {
     dots: false,
     infinite: true,
     speed: 500,
     arrows: true,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 6,
     centerPadding: "15px",
     adaptiveHeight: true,
     dotsClass: "slick-dots slick-thumb bottom-50",
@@ -132,12 +134,12 @@ const DomainExpertise = (props) => {
           <Col sm={2} md={3} />
         </Row>
       </section>
-      <Row className="height-100">
-        <Col md={2} />
-        <Col md={8} xs="12" sm={12} >
+      <Row className="justify-content-around m-auto">
+        {/* <Col md={2} /> */}
+        <Col md={8} xs={12} sm={12} >
           <JoshCarousel items={carouselItems} settings={carouselSettings} />
         </Col>
-        <Col md={2} />
+        {/* <Col md={2} /> */}
       </Row>
     </Fragment>
   )
@@ -145,6 +147,21 @@ const DomainExpertise = (props) => {
 
 DomainExpertise.defaultProps = {
   domainsData: [
+    {
+      id: 4,
+      name: "ruby",
+      logo: "ruby.png"
+    },
+    {
+      id: 3,
+      name: "go",
+      logo: "go.png"
+    },
+    {
+      id: 5,
+      name: "React",
+      logo: "react.png"
+    },
     {
       id: 1,
       name: "ios",
@@ -154,21 +171,6 @@ DomainExpertise.defaultProps = {
       id: 2,
       name: "android",
       logo: "android.png"
-    },
-    {
-      id: 3,
-      name: "go",
-      logo: "go.png"
-    },
-    {
-      id: 4,
-      name: "ruby",
-      logo: "ruby.png"
-    },
-    {
-      id: 5,
-      name: "React",
-      logo: "react.png"
     },
     {
       id: 6,
