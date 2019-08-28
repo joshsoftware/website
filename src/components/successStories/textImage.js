@@ -12,7 +12,7 @@ const TextImage = (props) => {
             <StoryText className="text-justify" fontSize="18px"> {props.text} </StoryText>
           </Col>
           <Col>
-            <img src={require(`../../assets/images/successStories/${props.image}.png`)} alt={props.subHeading} className="img-responsive"/>
+            <img src={require(`../../assets/images/successStories/${props.image}.png`)} alt={props.subHeading} className="img-fluid" />
           </Col>
         </Row>
       </Col>

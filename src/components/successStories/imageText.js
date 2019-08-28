@@ -8,7 +8,7 @@ const ImageText = (props) => {
       <Col className="m-auto justify-content-center col-md-8">
         <Row>
           <Col>
-            <img src={require(`../../assets/images/successStories/${props.image}.png`)} alt={props.subHeading} className="img-responsive"/>
+            <img src={require(`../../assets/images/successStories/${props.image}.png`)} alt={props.subHeading} className="img-fluid" />
           </Col>
           <Col>
             <H4Black>{props.subHeading} </H4Black>
