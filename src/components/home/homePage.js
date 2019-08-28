@@ -3,8 +3,8 @@ import Media from 'react-media';
 import { Link } from 'react-router-dom';
 import { Button, Row, Col } from "reactstrap";
 
-import mainImg from '../../assets/images/black-bulb-image.png';
-import logoM from '../../assets/images/bulb-image-mobile.png';
+import mainImg from '../../assets/images/home/black-bulb-image.png';
+import logoM from '../../assets/images/home/bulb-image-mobile.png';
 
 import { ParallaxImg, BannerSubText, BannerText, ConctactUsRightText } from "./homeStyledComponents.js"
 import * as routeConstants from "../../routeConstants.js";

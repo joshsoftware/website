@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import { Link } from "react-router-dom";
 
-import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
+import { Heading1, DomainText } from "./homeStyledComponents.js";
 import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
 import JoshCarousel from './carousel.js';
@@ -121,7 +121,7 @@ const DomainExpertise = (props) => {
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
 
                     <div className="img-container text-center pt-md-3">
-                      <img className="img-fluid" src={require(`../../assets/images/home/${industry.bgImg}`)} className="img-fluid" />
+                      <img alt={industry.name} src={require(`../../assets/images/home/${industry.bgImg}`)} className="img-fluid" />
                       <div className="img-centered-text">
                         <img className="img-fluid" src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
                         <DomainText>{industry.name}</DomainText>
