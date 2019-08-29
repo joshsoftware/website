@@ -2,10 +2,9 @@ import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import { Link } from "react-router-dom";
 
-import { Heading1, ParallaxImg, DomainText } from "./homeStyledComponents.js";
+import { Heading1, DomainText } from "./homeStyledComponents.js";
 import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
-import redArrowSvg from "../../assets/images/arrow-red.svg"
 import JoshCarousel from './carousel.js';
 
 import * as routes from "../../routeConstants.js";
@@ -15,7 +14,7 @@ const DomainExpertise = (props) => {
   const carouselItems = domainsData.map(domain => {
     return (
       <div style={{ borderRight: '1px solid #ececec' }}>
-        <img src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
+        <img className="img-fluid" src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
       </div>
     )
   })
@@ -55,9 +54,10 @@ const DomainExpertise = (props) => {
     slidesToScroll: 6,
     centerPadding: "15px",
     adaptiveHeight: true,
+    initialSlide: 0,
     dotsClass: "slick-dots slick-thumb bottom-50",
-    nextArrow: <NextArrow />,
     prevArrow: <PreviousArrow />,
+    nextArrow: <NextArrow />,
     customPaging: () => <div className="rounded-circle orange-color" />,
     responsive: [
       {
@@ -123,13 +123,15 @@ const DomainExpertise = (props) => {
               {industriesData.map(industry => {
                 return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
-                    <ParallaxImg logo={require(`../../assets/images/home/${industry.bgImg}`)} height="120px">
-                      <div className="text-center pt-md-3">
-                        <img src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
+
+                    <div className="img-container text-center pt-md-3">
+                      <img alt={industry.name} src={require(`../../assets/images/home/${industry.bgImg}`)} className="img-fluid" />
+                      <div className="img-centered-text">
+                        <img className="img-fluid" src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
                         <DomainText>{industry.name}</DomainText>
-                        <img src={redArrowSvg} alt={industry.name} />
                       </div>
-                    </ParallaxImg>
+                    </div>
+
                   </Link>
                 </Col>
               })}

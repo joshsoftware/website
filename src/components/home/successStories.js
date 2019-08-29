@@ -7,7 +7,8 @@ import successStoriesBg from "../../assets/images/home/successStoryBg.png";
 import mobileSuccessStoriesBg from "../../assets/images/home/mob_sucess_stories.png";
 import { ParallaxImg, Heading1Orange } from './homeStyledComponents';
 
-const SuccessStories = () => {
+const SuccessStories = (props) => {
+  const { stories } = props;
 
   return <Media query="(max-width: 900px)">
     {matches =>
@@ -23,11 +24,15 @@ const SuccessStories = () => {
             </Row>
           </ParallaxImg>
           <ul className="succss-stories">
-            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
-            {/* <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
-            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
-            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li>
-            <li className="bullet font-weight-bold"><Link to="success_stories">Freedom from Diabetes</Link></li> */}
+            {
+              stories.map(story => {
+                return (
+                  <li className="bullet font-weight-bold" key={story.name}>
+                    <Link to={`/success_stories/${story.slug}`} >{story.name}</Link>
+                  </li>
+                )
+              })
+            }
           </ul>
         </Fragment>
       ) : (
@@ -38,11 +43,15 @@ const SuccessStories = () => {
               </Col>
               <Col md={6} className="d-flex justify-content-start align-items-center">
                 <ul className="w-100 text-white">
-                  <li className="bullet font-weight-bold"><Link to="/success_stories" >Freedom from Diabetes</Link></li>
-                  {/* <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li>
-                  <li className="bullet font-weight-bold"><Link to="" >Freedom from Diabetes</Link></li> */}
+                  {
+                    stories.map(story => {
+                      return (
+                        <li className="bullet font-weight-bold" key={story.name}>
+                          <Link to={`/success_stories/${story.slug}`} >{story.name}</Link>
+                        </li>
+                      )
+                    })
+                  }
                 </ul>
               </Col>
             </Row>
@@ -50,6 +59,14 @@ const SuccessStories = () => {
         )
     }
   </Media>
+}
+
+SuccessStories.defaultProps = {
+  stories: [
+    { name: "Freedom from Diabetes", slug: "ffd" },
+    { name: "BrandScope", slug: "brandscope" },
+    { name: "Star Network", slug: "star" }
+  ]
 }
 
 export default SuccessStories;
