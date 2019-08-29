@@ -16,7 +16,7 @@ const Innovations = (props) => {
     <Media query="(max-width: 900px)">
       {matches =>
         matches ? (
-          <ParallaxImg logo={innovationBgMobile} height="262px">
+          <ParallaxImg logo={innovationBgMobile} height="262px" style={{ paddingBottom: '16em' }}>
             <Row className="p-4">
               <Col md={3} sm={2} xs={2} />
               <Col md={6} sm={9} xs={9}>
@@ -40,7 +40,7 @@ const Innovations = (props) => {
             </Row>
           </ParallaxImg>
         ) : (
-            <ParallaxImg logo={innovationsImg} height="262px">
+            <ParallaxImg logo={innovationsImg} height="262px" style={{ paddingBottom: '22em' }}>
               <Row className="p-4">
                 <Col md={3} sm={2} />
                 <Col md={6} sm={2}>

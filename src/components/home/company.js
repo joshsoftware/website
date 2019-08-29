@@ -72,7 +72,7 @@ const Company = () => {
             </Row>
           </ParallaxImg >
         ) : (
-            <ParallaxImg logo={companyImg} height="721px" >
+            <ParallaxImg logo={companyImg} height="676px" >
               <Row className="company-details">
                 <Col md={6} sm={6} xs={6} >
                   <CompanyDetailsText className="text-right">

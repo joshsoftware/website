@@ -72,7 +72,7 @@ const Testimonials = (props) => {
   };
 
   return (
-    <div>
+    <div style={{ paddingBottom: '5em' }}>
       <Heading1>Here’s what our clients are saying</Heading1>
       <div className="row">
         <div className="col-md-1" />

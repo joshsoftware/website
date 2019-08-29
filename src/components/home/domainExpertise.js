@@ -13,7 +13,11 @@ import * as routes from "../../routeConstants.js";
 const DomainExpertise = (props) => {
   const { domainsData, industriesData } = props;
   const carouselItems = domainsData.map(domain => {
-    return <img src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
+    return (
+      <div style={{ borderRight: '1px solid #ececec' }}>
+        <img src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
+      </div>
+    )
   })
 
   const PreviousArrow = (props) => {
@@ -98,7 +102,7 @@ const DomainExpertise = (props) => {
 
   return (
     <Fragment>
-      <section id="clientsSlide" className="section-home pb-5">
+      <section id="clientsSlide" className="section-home" style={{ paddingBottom: "7em" }}>
         <Row className="justify-content-center m-auto d-xs-none w-55 p-md-3">
           <Col>
             <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.

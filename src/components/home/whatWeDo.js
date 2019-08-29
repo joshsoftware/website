@@ -6,7 +6,7 @@ const WhatWeDo = (props) => {
   const { domains } = props;
 
   return (
-    <section id="clientsSlide" className="section-home ">
+    <section id="clientsSlide" className="section-home" style={{ paddingTop: '5em', paddingBottom: '8em' }}>
       <Heading1>What We Do</Heading1>
       <Row>
         <Col md={2} xs={1} sm={1} />
