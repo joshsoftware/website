@@ -47,7 +47,7 @@ const SuccessStoriesLayout = (props) => {
     );
   }
 
-  const currentSlideIndex = storyTitles.findIndex(story => story.slug == props.match.params.story)
+  const currentSlideIndex = storyTitles.findIndex(story => story.slug === props.match.params.story)
   const initialSlide = currentSlideIndex > -1 ? currentSlideIndex : 0
 
   const settings = {
