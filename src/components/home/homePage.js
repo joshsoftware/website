@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Media from 'react-media';
 import { Link } from 'react-router-dom';
 import { Button, Row, Col } from "reactstrap";
@@ -8,18 +8,18 @@ import logoM from '../../assets/images/home/bulb-image-mobile.png';
 
 import { ParallaxImg, BannerSubText, BannerText, ConctactUsRightText } from "./homeStyledComponents.js"
 import * as routeConstants from "../../routeConstants.js";
-import whatsNewLogo from "../../assets/images/home/whats_new.png";
+import whatsNewLogo from "../../assets/images/home/whats_new.svg";
 import whatsTrendingMb from "../../assets/images/home/whats_trending_mb.svg";
 import whatsTrendingHover from "../../assets/images/home/whats_trending_hover.png"
 
 const HomePage = (props) => {
   const { setOpenTrending } = props;
+  const [hoverState, setHoverState] = useState(false);
 
   return (
     <>
       <div style={{ backgroundColor: "#333333", }}>
         <div className="row">
-
           <div className="col-md-6 col-xs-12">
             <Media query="(max-width: 500px)">
               {matches =>
@@ -52,12 +52,12 @@ const HomePage = (props) => {
             }
           </Media>
           <div className="col-md-2 d-xs-none ">
-            <div onClick={setOpenTrending} className="img-container cursor-pointer">
-              <img src={whatsNewLogo} alt="What's Trending?"
-                onMouseOver={e => (e.currentTarget.src = whatsTrendingHover)}
-                onMouseOut={e => (e.currentTarget.src = whatsNewLogo)}
-              />
-              {/* <span className="img-centered-text">What's <br /> Trending?</span> */}
+            <div onClick={setOpenTrending} className="img-container cursor-pointer"
+              onMouseOver={() => setHoverState(true)}
+              onMouseOut={() => setHoverState(false)}
+            >
+              <img src={hoverState ? whatsTrendingHover : whatsNewLogo} alt="What's Trending?" />
+              <span className="img-centered-text">What's <br /> Trending?</span>
             </div>
           </div>
         </div>
