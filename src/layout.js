@@ -21,7 +21,7 @@ const Layout = () => {
       <Route exact path={routes.CONTACT_US_URL} component={ContactUs} />
       <Route exact path={routes.SERVICES_URL} component={Services} />
       <Route exact path={routes.TECHNOLOGIES_URL} component={Technologies} />
-      <Route exact path={routes.SUCCESS_STORIES_URL} component={SuccessStory} />
+      <Route path={routes.SUCCESS_STORIES_URL} component={SuccessStory} />
       <Route path={`${routes.DOMAIN_EXPERTISE}`} component={DomainExpertise} />
       <Route exact path={routes.TESTIMONIALS} component={TestimonialsList} />
       <Route exact path={routes.INNOVATIONS} component={Innovation} />
