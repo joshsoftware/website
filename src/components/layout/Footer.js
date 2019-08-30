@@ -54,7 +54,7 @@ const Footer = () => {
             <Link to="contact_us" className="nav-link">Contact Us</Link>
           </nav>
         </div>
-        <p className="text-policy text-center mb-3"><a href="https://s3.ap-south-1.amazonaws.com/josh-website/PrivacyPolicyWebsite.pdf" target="_blank" rel="noopener noreferrer">View Privacy Policy</a></p>
+        <p className="text-policy text-center mb-3"><a style={{ fontSize: '12px' }} href="https://s3.ap-south-1.amazonaws.com/josh-website/PrivacyPolicyWebsite.pdf" target="_blank" rel="noopener noreferrer">View Privacy Policy</a></p>
         <p className="text-copyright text-center mb-3">Copyright © 2007 - 2019 Josh Software Pvt. Ltd.</p>
       </div>
     </footer>

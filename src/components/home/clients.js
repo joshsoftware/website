@@ -12,7 +12,7 @@ export const Clients = (props) => {
         <ul className="list-unstyled list-client">
           {
             clients.map(client => {
-              return <li key={client.name}>
+              return <li key={client.name} style={{ border: '1px solid #f5f5f5', margin: '0' }}>
                 <span>
                   <img src={require(`../../assets/images/clients/${client.logo}`)} alt={client.name} className="img-fluid" />
                 </span>
@@ -102,9 +102,5 @@ Clients.defaultProps = {
       logo: "quickInsure.png",
       name: "QuickInsure"
     }
-
-
-
-
   ]
 }
