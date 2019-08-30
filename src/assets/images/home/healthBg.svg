@@ -1,1 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{opacity:0.618;fill:url(#b);}.d{opacity:0.461;fill:url(#c);}.e{fill:url(#d);}</style><clipPath id="a"><rect class="a" width="194.026" height="120.212"/></clipPath><linearGradient id="b" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#6b6b6b"/><stop offset="1"/></linearGradient><linearGradient id="c" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#828282"/><stop offset="1"/></linearGradient><linearGradient id="d" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.129"/></linearGradient></defs><g class="b"><path class="c" d="M16,0H178.026a16,16,0,0,1,16,16v88.212a16,16,0,0,1-16,16H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0Z"/><path class="d" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)"/><path class="e" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="194.026" height="120.212" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b6b6b"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#828282"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.129"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.177" y1="0.5" x2="0.883" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.678"/>
+    </linearGradient>
+  </defs>
+  <g id="Health" transform="translate(-377.737 -1132.177)">
+    <g id="Component_4" data-name="Component 4" transform="translate(377.737 1132.177)" clip-path="url(#clip-path)">
+      <g id="Group_1438" data-name="Group 1438">
+        <path id="Path_4066" data-name="Path 4066" d="M16,0H178.026a16,16,0,0,1,16,16v88.212a16,16,0,0,1-16,16H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0Z" opacity="0.618" fill="url(#linear-gradient)"/>
+        <path id="Subtraction_152" data-name="Subtraction 152" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)" opacity="0.461" fill="url(#linear-gradient-2)"/>
+        <path id="Intersection_1" data-name="Intersection 1" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <text id="HEALTH-2" data-name="HEALTH" transform="translate(473.385 1228)" fill="#fff" font-size="15" font-family="Lato-Regular, Lato"><tspan x="-28.436" y="0">HEALTH</tspan></text>
+    <g id="Group_1523" data-name="Group 1523" transform="translate(0.161 5.284)">
+      <rect id="Rectangle_2312" data-name="Rectangle 2312" width="50" height="50" transform="translate(449.839 1148.716)" fill="none"/>
+      <path id="Union_17" class="health" data-name="Union 17" d="M0,26.244c0-4.234,2.932-6.952,5.573-8.376C2.932,16.444,0,13.727,0,9.492,0,4.121,4.359,0,10.139,0a10.876,10.876,0,0,1,4.239.858V8.845l-3.609,1.8a1.09,1.09,0,0,0,0,1.873l6.5,3.252-2.315,1.157a1.09,1.09,0,0,0,0,1.873l2.315,1.158-6.5,3.251a1.091,1.091,0,0,0,0,1.873l3.609,1.8v7.987a10.885,10.885,0,0,1-4.239.858C4.359,35.737,0,31.616,0,26.244Zm16.473,0a1.048,1.048,0,0,0-.579-.937L13.579,24.15l6.5-3.252a1.09,1.09,0,0,0,0-1.873l-2.315-1.158,2.315-1.157a1.047,1.047,0,0,0,0-1.873l-6.5-3.251,2.315-1.158a1.047,1.047,0,0,0,.579-.937V1.957c3.39,2.155,6.61,6.036,10.708,10.89,1.15,1.363,2.374,2.813,3.694,4.335a1.049,1.049,0,0,1,0,1.372c-1.32,1.522-2.544,2.972-3.694,4.335-4.1,4.854-7.318,8.735-10.708,10.89Z" transform="translate(492.708 1158.151) rotate(90)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>

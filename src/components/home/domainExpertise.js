@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import { Link } from "react-router-dom";
 
-import { Heading1, DomainText } from "./homeStyledComponents.js";
+import { Heading1 } from "./homeStyledComponents.js";
 import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
 import JoshCarousel from './carousel.js';
+import Svg from "./svg.js";
 
 import * as routes from "../../routeConstants.js";
 
@@ -99,12 +100,12 @@ const DomainExpertise = (props) => {
   return (
     <Fragment>
       <section className="gray-back d-flex justify-content-center">
-          <Row className="d-xs-none w-55">
-            <Col>
-              <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
+        <Row className="d-xs-none w-55">
+          <Col>
+            <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
             </p>
-            </Col>
-          </Row>
+          </Col>
+        </Row>
         <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
           <Col>
             <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
@@ -122,14 +123,7 @@ const DomainExpertise = (props) => {
                 return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
                   <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
 
-                    <div className="img-container text-center pt-md-3">
-                      <img alt={industry.name} src={require(`../../assets/images/home/${industry.bgImg}`)} className="img-fluid" />
-                      <div className="img-centered-text">
-                        <img className="img-fluid" src={require(`../../assets/images/home/${industry.logo}`)} alt={industry.name} /> <br />
-                        <DomainText>{industry.name}</DomainText>
-                      </div>
-                    </div>
-
+                    <Svg src={require(`../../assets/images/home/${industry.bgImg}`)} />
                   </Link>
                 </Col>
               })}

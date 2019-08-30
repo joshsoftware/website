@@ -1,1 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{opacity:0.605;fill:url(#b);}.d{fill:url(#c);}.e{fill:url(#d);}</style><clipPath id="a"><rect class="a" width="194.026" height="120.212"/></clipPath><linearGradient id="b" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#6b6b6b"/><stop offset="1"/></linearGradient><linearGradient id="c" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#828282"/><stop offset="1"/></linearGradient><linearGradient id="d" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.129"/></linearGradient></defs><g class="b"><rect class="c" width="194.026" height="120.212" rx="16"/><path class="d" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)"/><path class="e" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="194.026" height="120.212" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b6b6b"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#828282"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.129"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.678"/>
+    </linearGradient>
+  </defs>
+  <g id="insurance" transform="translate(-585.737 -1265.903)">
+    <g id="Component_5" data-name="Component 5" transform="translate(585.737 1265.903)" clip-path="url(#clip-path)">
+      <g id="Group_1438" data-name="Group 1438">
+        <rect id="Rectangle_2252" data-name="Rectangle 2252" width="194.026" height="120.212" rx="16" opacity="0.605" fill="url(#linear-gradient)"/>
+        <path id="Subtraction_152" data-name="Subtraction 152" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)" fill="url(#linear-gradient-2)"/>
+        <path id="Intersection_1" data-name="Intersection 1" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <text id="INSURANCE-2" data-name="INSURANCE" transform="translate(686.222 1357)" fill="#fff" font-size="15" font-family="Lato-Regular, Lato"><tspan x="-42.255" y="0">INSURANCE</tspan></text>
+    <g id="Group_1527" data-name="Group 1527" transform="translate(-0.327 3.272)">
+      <rect id="Rectangle_2316" data-name="Rectangle 2316" width="50" height="50" transform="translate(661.327 1279.728)" fill="none"/>
+      <path id="Path_3645" class="insurance" data-name="Path 3645" d="M39.728,17.8a7.126,7.126,0,0,0-4.073-1.137c-2.542,0-4.663,1.061-5.156,2.473h-.209c-.481-1.421-2.608-2.491-5.161-2.491a7.106,7.106,0,0,0-4.074,1.142V29.738a5.393,5.393,0,0,1-10.784,0,1.189,1.189,0,0,1,2.379,0,3.017,3.017,0,0,0,6.026,0V17.81A7.106,7.106,0,0,0,14.6,16.668c-2.542,0-4.663,1.061-5.156,2.473H9.232c-.481-1.421-2.608-2.491-5.161-2.491A7.121,7.121,0,0,0,0,17.784C.777,9.313,8.748,2.579,18.677,2.078V1.188a1.189,1.189,0,0,1,2.379,0v.889C30.992,2.581,38.967,9.324,39.728,17.8Z" transform="translate(666.463 1287.196)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>

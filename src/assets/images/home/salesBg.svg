@@ -1,1 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{opacity:0.802;fill:url(#b);}.d{fill:url(#c);}.e{fill:url(#d);}</style><clipPath id="a"><rect class="a" width="194.026" height="120.212"/></clipPath><linearGradient id="b" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#6b6b6b"/><stop offset="1"/></linearGradient><linearGradient id="c" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#828282"/><stop offset="1"/></linearGradient><linearGradient id="d" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.129"/></linearGradient></defs><g class="b"><rect class="c" width="194.026" height="120.212" rx="16"/><path class="d" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)"/><path class="e" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="194.026" height="120.212" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b6b6b"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#828282"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.129"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.678"/>
+    </linearGradient>
+  </defs>
+  <g id="marketing_and_sales" data-name="marketing and sales" transform="translate(-794.025 -1265.903)">
+    <g id="Component_3" data-name="Component 3" transform="translate(794.025 1265.903)" clip-path="url(#clip-path)">
+      <g id="Group_1438" data-name="Group 1438">
+        <rect id="Rectangle_2252" data-name="Rectangle 2252" width="194.026" height="120.212" rx="16" opacity="0.802" fill="url(#linear-gradient)"/>
+        <path id="Subtraction_152" data-name="Subtraction 152" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)" fill="url(#linear-gradient-2)"/>
+        <path id="Intersection_1" data-name="Intersection 1" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <text id="MARKETING_AND_SALES-2" data-name="MARKETING AND SALES" transform="translate(890.823 1357)" fill="#fff" font-size="15" font-family="Lato-Regular, Lato"><tspan x="-85.17" y="0">MARKETING AND SALES</tspan></text>
+    <g id="Sales_50" data-name="Sales 50" transform="translate(-4774 -1234)">
+      <g id="Manufacturing" transform="translate(5640 2517)">
+        <rect id="Rectangle_2315" data-name="Rectangle 2315" width="50" height="50" fill="none"/>
+      </g>
+      <g id="marketing-icon-2" transform="translate(5648.572 2531.286)">
+        <path id="diagram" d="M163.421,185.922V168.2l-2.977,1.617v16.108H159.08V170.556l-2.977,1.617v13.748h-1.365V172.916l-2.977,1.617v11.389H150.4V175.275l-.108.058-2.869-3.19v13.779h-1.365v-15.3l-.144-.16-2.833,1.049v14.407h-1.365v-13.9l-2.977,1.1v12.8h-1.365V173.631l-2.977,1.1v11.188h-1.365V173.007l12.879-4.773,4.377,4.865,12.824-6.968.772,1.337,2.05-3.552h-4.1l.782,1.353-12.113,6.585-4.3-4.786-13.167,4.88V162.01h-1.116v25.028h34.435v-1.116Z" transform="translate(-131.918 -162.01)" fill="url(#linear-gradient-4)"/>
+      </g>
+    </g>
+  </g>
+</svg>

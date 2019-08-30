@@ -855,3 +855,14 @@
   right: 2%;
   overflow: auto;
 }
+
+.injected-svg:hover {
+  #MEDIA-2,.health, .video-player, #education-icon path, .sports,.insurance, #marketing-icon-2 path, text{
+    fill: #CF4338;
+  }
+}
+
+.injected-svg {
+  max-width: 100%;
+  height: auto;
+}

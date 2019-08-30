@@ -1,1 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{opacity:0.618;fill:url(#b);}.d{opacity:0.461;fill:url(#c);}.e{fill:url(#d);}</style><clipPath id="a"><rect class="a" width="194.026" height="120.212"/></clipPath><linearGradient id="b" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#6b6b6b"/><stop offset="1"/></linearGradient><linearGradient id="c" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#828282"/><stop offset="1"/></linearGradient><linearGradient id="d" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.129"/></linearGradient></defs><g class="b"><path class="c" d="M16,0H178.026a16,16,0,0,1,16,16v88.212a16,16,0,0,1-16,16H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0Z"/><path class="d" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)"/><path class="e" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.026" height="120.212" viewBox="0 0 194.026 120.212">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="194.026" height="120.212" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b6b6b"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <filter id="Rectangle_2252" x="-24" y="-21" width="242.026" height="168.212" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#828282"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.129"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.678"/>
+    </linearGradient>
+  </defs>
+  <g id="Media" transform="translate(-586.025 -1132.177)">
+    <g id="Component_2" data-name="Component 2" transform="translate(586.025 1132.177)" clip-path="url(#clip-path)">
+      <g id="Group_1438" data-name="Group 1438">
+        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_2252)">
+          <rect id="Rectangle_2252-2" data-name="Rectangle 2252" width="194.026" height="120.212" rx="16" opacity="0.799" fill="url(#linear-gradient)"/>
+        </g>
+        <path id="Subtraction_152" data-name="Subtraction 152" d="M168.381,110.628H16a16,16,0,0,1-16-16V16A16,16,0,0,1,16,0H168.381a16,16,0,0,1,16,16V94.628a16,16,0,0,1-16,16ZM16.841.849a16,16,0,0,0-16,16V92.93a16,16,0,0,0,16,16h150.7a16,16,0,0,0,16-16V16.849a16,16,0,0,0-16-16Z" transform="translate(4.822 4.792)" fill="url(#linear-gradient-2)"/>
+        <path id="Intersection_1" data-name="Intersection 1" d="M0,103.729V16A16,16,0,0,1,16,0H177.247a16,16,0,0,1,16,16V39.484c-12.108-.417-25.651-1.35-40.471-2.28-21.353-1.339-40.823-.544-64.713-6.945-9.255-2.48-28.026,18.058-46.6,38.6C25.61,86.376,9.9,103.9.362,107.127A16.067,16.067,0,0,1,0,103.729Z" transform="translate(0.39 1.715)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <text id="MEDIA-2" data-name="MEDIA" transform="translate(684.588 1228)" fill="#fff" font-size="15" font-family="Lato-Regular, Lato"><tspan x="-24.176" y="0">MEDIA</tspan></text>
+    <g id="Group_1524" data-name="Group 1524" transform="translate(0.059 4.641)">
+      <rect id="Rectangle_2313" data-name="Rectangle 2313" width="50" height="50" transform="translate(660.941 1149.359)" fill="none"/>
+      <path id="video-player" class="video-player" d="M36.984,0H.649A.649.649,0,0,0,0,.649V29.2a.648.648,0,0,0,.649.649H36.984a.649.649,0,0,0,.649-.649V.649A.649.649,0,0,0,36.984,0ZM6.488,28.548H1.3V22.709H6.488Zm0-7.137H1.3V15.572H6.488Zm0-7.137H1.3V8.435H6.488Zm0-7.137H1.3V1.3H6.488Zm17.217,8.335-7.137,4.542a.648.648,0,0,1-1-.548V10.385a.649.649,0,0,1,1-.548l7.137,4.542a.649.649,0,0,1,.2.9.641.641,0,0,1-.2.2ZM36.334,28.548H31.142V22.709h5.192Zm0-7.137H31.142V15.572h5.192Zm0-7.137H31.142V8.435h5.192Zm0-7.137H31.142V1.3h5.192Z" transform="translate(667.125 1159.436)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>
