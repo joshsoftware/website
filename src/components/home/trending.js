@@ -60,7 +60,7 @@ const Trending = (props) => {
       {matches =>
         matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
           className="img-fluid mt-2" alt="what's new?" />
-          : <Row className="justify-content-around m-auto w-100 d-flex">
+          : <Row className="justify-content-around m-auto w-75 d-flex">
             <Col>
               <img src={require(`../../assets/images/home/${cItem.image}.png`)}
                 className=" img-fluid mt-5" alt="what's new?" />
@@ -82,9 +82,9 @@ const Trending = (props) => {
         </Col>
       </Row >
       <img src={require(`../../assets/images/home/Close.png`)}
-            className="img-fluid cursor-pointer close-button"
-            onClick={setOpenTrending}
-            alt="Close" />
+        className="img-fluid cursor-pointer close-button"
+        onClick={setOpenTrending}
+        alt="Close" />
     </>
   )
 
@@ -135,6 +135,12 @@ Trending.defaultProps = {
     {
       image: "conference",
       name: "Shweta Kale",
+      title: "Speaker at Go-pher Conference",
+      subTitle: "Sample Text, U.K."
+    },
+    {
+      image: "conference_2",
+      name: "Anusha Bhat",
       title: "Speaker at Go-pher Conference",
       subTitle: "Sample Text, U.K."
     }

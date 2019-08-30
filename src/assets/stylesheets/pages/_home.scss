@@ -817,6 +817,14 @@
   height: 40px !important;
 }
 
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
 .size-30 {
   width: 30px;
   height: 30px;
@@ -843,6 +851,7 @@
 
 .close-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2%;
+  right: 2%;
+  overflow: auto;
 }
