@@ -98,19 +98,21 @@ const DomainExpertise = (props) => {
 
   return (
     <Fragment>
-      <section id="clientsSlide" className="section-home pb-5">
-        <Row className="justify-content-center m-auto d-xs-none w-55 p-md-3">
-          <Col>
-            <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
-          </p>
-          </Col>
-        </Row>
+      <section className="gray-back d-flex justify-content-center">
+          <Row className="d-xs-none w-55">
+            <Col>
+              <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
+            </p>
+            </Col>
+          </Row>
         <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
           <Col>
-            <p className="text-center">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
+            <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
           </p>
           </Col>
         </Row>
+      </section>
+      <section id="clientsSlide" className="section-home pb-5">
         <Heading1>Domain Expertise</Heading1>
         <Row className="justify-content-around m-auto">
           <Col sm={2} md={3} />

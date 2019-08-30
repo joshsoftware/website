@@ -73,22 +73,18 @@ const Trending = (props) => {
 
   const WebView = (
     <>
-      <Row className="float-right justify-content-around m-auto pt-3 pl-5">
-        <Col>
-          <img src={require(`../../assets/images/home/Close.png`)}
-            className="img-fluid cursor-pointer "
-            onClick={setOpenTrending}
-            alt="Close" />
-        </Col>
-      </Row>
-      <Row className="justify-content-around m-auto w-75" >
-        <Col>
+      <Row className="justify-content-around m-auto mt-1">
+        <Col sm={12}>
           <JoshCarousel
             className="img-centered-text"
             items={carouselItems}
             settings={settings} />
         </Col>
       </Row >
+      <img src={require(`../../assets/images/home/Close.png`)}
+            className="img-fluid cursor-pointer close-button"
+            onClick={setOpenTrending}
+            alt="Close" />
     </>
   )
 

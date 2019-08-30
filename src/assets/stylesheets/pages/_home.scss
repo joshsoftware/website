@@ -536,7 +536,12 @@
 
 .company-details {
   position: relative;
-  top: 55%;
+  @include media-breakpoint-only(xl) { top: 54%; }
+  @include media-breakpoint-only(lg) { top: 57%; }
+  @include media-breakpoint-only(md) { top: 54%; }
+  @include media-breakpoint-only(sm) { top: 52%; }
+  @include media-breakpoint-only(xs) { top: 52%; }
+
 }
 
 .pull-right {
@@ -671,6 +676,18 @@
   }
 }
 
+.top-pad-5 {
+  padding-top: 5%;
+}
+
+.m-none {
+  margin-top: none;
+}
+
+.gray-back {
+  background: #dedede;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -796,16 +813,8 @@
 
 
 .carousel-arrow {
-  width: 63px !important;
-  height: 63px !important;
-}
-
-.slick-prev {
-  left: -72px !important;
-}
-
-.slick-next {
-  right: -72px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .size-30 {
@@ -821,4 +830,19 @@
   @include media-breakpoint-down(sm) {
     bottom: 94%;
   }
+}
+
+.disruption-margin {
+  margin: 3.5rem 3.5rem !important;
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
