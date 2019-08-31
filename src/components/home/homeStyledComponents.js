@@ -206,6 +206,11 @@ export const DomainText = styled.div`
 export const Text = styled.span`
   color: ${(props) => props.color};
   font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "17px"};
+  &:before {
+    content: ${(props) => `url(${props.url})`};
+    padding-right: 20px;
+    vertical-align: middle;
+  }
 `
 
 export const Paragraph = styled.p`

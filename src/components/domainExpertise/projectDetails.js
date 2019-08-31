@@ -37,11 +37,11 @@ const ProjectDetails = (props) => {
         <Row>
           <Col>
             <Row>
-              <Col md={1} xs={2} sm={2}>
-                <img src={BusinessLogo} alt="Business" />
-              </Col>
-              <Col md={11} xs={8} sm={8} className="align-self-center">
-                <Text fontSize="20" color="#CF4338">Business </Text>
+              {/* <Col md={1} xs={2} sm={2}>
+                <img src={BusinessLogo} alt="Business" className="img-fluid" />
+              </Col> */}
+              <Col md={12} xs={8} sm={8} className="align-self-center">
+                <Text fontSize="20" color="#CF4338" url={BusinessLogo} className="business-title">Business </Text>
               </Col>
             </Row>
             <Row className="pt-xs-5">
@@ -54,11 +54,11 @@ const ProjectDetails = (props) => {
         <Row>
           <Col>
             <Row>
-              <Col md={1} xs={2} sm={2}>
-                <img src={SolutionSVG} alt="Solution" />
-              </Col>
-              <Col md={11} xs={8} sm={8} className="align-self-center">
-                <Text fontSize="20" color="#CF4338">Solution </Text>
+              {/* <Col md={1} xs={2} sm={2}>
+                <img src={SolutionSVG} alt="Solution" className="img-fluid" />
+              </Col> */}
+              <Col md={12} xs={8} sm={8} className="align-self-center">
+                <Text fontSize="20" color="#CF4338" url={SolutionSVG} className="solution-title">Solution </Text>
               </Col>
             </Row>
             <Row>
@@ -71,16 +71,20 @@ const ProjectDetails = (props) => {
         <Row>
           <Col>
             <Row>
-              <Col md={1} xs={2} sm={2}>
-                <img src={ImpactSVG} alt="Impact" />
-              </Col>
-              <Col md={11} xs={8} sm={8} className="align-self-center">
-                <Text fontSize="20" color="#CF4338">Impact </Text>
+              <Col md={12} xs={8} sm={8} className="align-self-center">
+                <Text fontSize="20" color="#CF4338" url={ImpactSVG} className="impact-title">Impact </Text>
               </Col>
             </Row>
             <Row>
               <Col md={{ size: 10, offset: 1 }} xs={12} sm={12} className="text-justify">
-                <Paragraph fontSize="14">{impact}</Paragraph>
+                {
+                  impact instanceof Array
+                    ? impact.map((impact, index) => {
+                      return <Paragraph key={impact} fontSize="14">{impact}</Paragraph>
+                    })
+                    : <Paragraph fontSize="14">{impact}</Paragraph>
+                }
+
               </Col>
             </Row>
           </Col>
