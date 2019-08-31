@@ -38,7 +38,7 @@ const stories = {
     contentKeys: ['summary', 'challenge', 'insight', 'joshEdge', 'impact'],
     summary: {
       subHeading: 'SUMMARY',
-      image: 'summary',
+      image: 'summary-star',
       text: <>
         <p> With more than 60 channels in 8 different languages, the Star Network is a media conglomerate that reaches almost every Indian in the country. With more than 790 million viewers in more than 100 countries, the Star channels are the go to place for content distribution both, from a producer’s, and a consumer’s perspective.</p>
         <p>However, most of their revenue generation is driven by advertising, and optimising these ads is an imperative that they need to follow. Managing the menu cards for advertisers, keeping track of inventory and staying on top of changing ad rates is necessary. For Star, the most important bit is mapping target audiences with show ratings, and then deciding ad slots based on these ratings. </p>
@@ -81,7 +81,7 @@ const stories = {
     contentKeys: ['summary', 'challenge', 'insight', 'joshEdge', 'impact'],
     summary: {
       subHeading: 'SUMMARY',
-      image: 'summary',
+      image: 'summary-brandscope',
       text: <>
         <p>In a digitally evolving world, convenience matters most to the customer, especially in the case of buying behaviour.</p>
         <p>Brandscope was started in 2011 with an aim to simplify the selling process for suppliers and agents in the Australian surf industry. The goal was to create an omnichannel delivery platform for brands through webstores and brick and mortar retail outlets. The main purpose of this platform was to reduce logistical barriers between brands, suppliers and retailers.
