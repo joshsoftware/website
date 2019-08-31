@@ -9,7 +9,7 @@ const DomainHeader = (props) => {
   const { domains, selectedDomain } = props;
 
   const items = domains.map(domain => {
-    const domainImg = domain.title.toLowerCase() === selectedDomain ? `${domain.logo}_Red.png` : `${domain.logo}.png`
+    const domainImg = domain.title.toLowerCase() === selectedDomain ? `${domain.logo}_Red.${domain.fileType}` : `${domain.logo}.${domain.fileType}`
     const textClass = domain.title.toLowerCase() === selectedDomain ? "text-orange" : "text-black"
     return <Link to={`${routes.DOMAIN_EXPERTISE}/${domain.title.toLowerCase()}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
@@ -24,8 +24,8 @@ const DomainHeader = (props) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 7,
+    slidesToScroll: 7,
     arrows: false,
     adaptiveHeight: true,
     responsive: [{
@@ -69,27 +69,38 @@ DomainHeader.defaultProps = {
   domains: [
     {
       title: "Health",
-      logo: 'Health'
+      logo: 'Health',
+      fileType: "png"
     },
     {
       title: "Sports",
-      logo: "Sports"
+      logo: "Sports",
+      fileType: "png"
     },
     {
       "title": "Marketing & Sales",
-      logo: "sales"
+      logo: "sales",
+      fileType: "png"
     },
     {
       title: "Media",
-      logo: "Media"
+      logo: "Media",
+      fileType: "png"
     },
     {
       title: "Education",
-      logo: "education"
+      logo: "education",
+      fileType: "png"
     },
     {
       title: "Insurance",
-      logo: 'insurance'
+      logo: 'insurance',
+      fileType: "png"
+    },
+    {
+      title: "Travel",
+      logo: 'travel',
+      fileType: "svg"
     }
 
   ]

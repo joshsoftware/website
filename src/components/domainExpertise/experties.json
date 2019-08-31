@@ -152,19 +152,20 @@
 			"impact": "Pilot deployed in 5 schools pan India Demonstrated in 17 schools, out of which 90% converted to clients. A hassle free, intuitive learning experience for students of all ages."
 		}
 	],
-	"Travel": [
+	"travel": [
 		{
 			"title": "Tourconnect",
-			"logo": "England Hockey.png",
+			"logo": "tourconnect.png",
 			"business": "An IT framework to support the soon to be launched web portal to streamline the contracting between tour contractors, supplier and end users",
 			"solution": "A cost effective, high performing web platform that automates supplier-vendor contracts to provide customers a complete tour package at attractive rates built in three months",
 			"techStack": [
-				"ROR"
+				"ROR",
+				"MongoDB"
 			],
 			"impact": [
-				"ReducedTimeMore than 10,000 suppliers registered",
-				"OneJudicious use of time, money and resources",
-				"EnhancedAutomated contracts and packages across hotels, car rentals, bike rentals, safaris, cruise rentals and more"
+				"More than 10,000 suppliers registered",
+				"Judicious use of time, money and resources",
+				"Automated contracts and packages across hotels, car rentals, bike rentals, safaris, cruise rentals and more"
 			]
 		}
 	],
