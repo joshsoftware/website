@@ -72,7 +72,7 @@
 			"title": "Star",
 			"domain": "Media",
 			"logo": "star.png",
-			"business": "UpgradingAA digital platform to streamline budgets for advertising inventory and media spends",
+			"business": "A digital platform to streamline budgets for advertising inventory and media spends",
 			"solution": "An automated proposal creator that optimizes the availability of advertising slots based on channel, programs, show ratings and keeps tracks the data and revenue generated from these ads",
 			"techStack": [
 				"ROR",
