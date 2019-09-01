@@ -8,3 +8,4 @@ npm-debug.log
 dist
 .vscode
 src/assets/stylesheets/*.css
+build/
