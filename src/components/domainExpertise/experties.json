@@ -76,7 +76,8 @@
 			"solution": "An automated proposal creator that optimizes the availability of advertising slots based on channel, programs, show ratings and keeps tracks the data and revenue generated from these ads",
 			"techStack": [
 				"ROR",
-				"React"
+				"React",
+				"postgres"
 			],
 			"impact": [
 				"Time to market for proposals reduced from two days to 10 minutes",
