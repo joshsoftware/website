@@ -581,7 +581,7 @@
   text-decoration: none;
   text-decoration-color: #333333;
   font-size: 20px;
-  
+
   color: #FFFFFF;
   &:hover{
     color: #FFFFFF;
@@ -771,10 +771,9 @@
    display: -webkit-box;
    -webkit-box-orient: vertical;
    -webkit-line-clamp: 6; /* number of lines to show */
-   line-height: 20px;        /* fallback */
-   max-height: 100px;
+   padding-left: 1rem;
+   padding-right: 1rem;
 }
-
 
 
 .read-more {
@@ -794,12 +793,12 @@
     position: relative;
     bottom: 5px;
   }
-  
-  
+
+
   .btn-secondary {
     // display: none;
     background-color: transparent;
-    
+
   }
 }
 
@@ -866,3 +865,54 @@
   max-width: 100%;
   height: auto;
 }
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows:65% 20% 15%;
+  grid-template-areas:
+    "row row"
+    "name designation"
+    ". designation";
+}
+
+.testimony {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background: #EFEFEF;
+  border-radius: 12px 12px 12px 12px;
+  border-color: #D76964;
+  border: 0.5px;
+}
+
+.testimonial-grid-item {
+  display: grid;
+}
+
+.client-name {
+  grid-area: name;
+  grid-row: 2;
+  border-radius: 0 0 0 22px;
+  background: #D76964;
+  border-color: #D76964;
+  color: #fff;
+  align-content: center;
+  justify-content: center;
+}
+
+.project-name {
+  grid-area: designation;
+  grid-row: 2 / span 3;
+  border-color: #AF5B57;
+  border-radius: 0 0 15px 15px;
+  background: #AF5B57;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.quotes {
+  font-size: 3rem;
+}
+
