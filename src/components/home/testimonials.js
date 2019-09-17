@@ -1,16 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import JoshCarousel from './carousel.js';
 import {
   Heading1,
-  TestimonialBox,
-  TestimonialBoxText,
-  ClientDesignationBox,
-  ClientNameBox,
-  Quotes,
-  ClientName,
 } from "./homeStyledComponents.js"
 
 
@@ -18,7 +12,7 @@ const Testimonials = (props) => {
   const { testimonialData } = props;
 
   const items = testimonialData.map(testimonial => {
-    return <Testimonial {...testimonial} key={testimonial.clientName} />
+    return <TestimonialGridItem {...testimonial} key={testimonial.clientName} />
 
   })
 
@@ -85,28 +79,25 @@ const Testimonials = (props) => {
   )
 }
 
-const Testimonial = (props) => {
+const TestimonialGridItem = (props) => {
   const { description, clientName, designation, projectName } = props;
-  /** To adjust description in box, we are only 260 characters from the description */
-  // const descriptionText = description.length > 280 ? `${description.substr(0, 280)}...` : description
-
   return (
-    <Fragment>
-      <TestimonialBox >
-        <Quotes><i>&#65282;</i></Quotes>
-        <TestimonialBoxText >
-          <span className="ellipsis">{description}</span>
+    <div className="testimonial-container mx-3">
+      <div className="testimonial-grid-item testimony">
+        <div className="quotes"><i>&#65282;</i></div>
+          <div className="ellipsis">{description}</div>
           <Link to="/testimonials" className="read-more" >
             <Button className="btn btn-outline-danger">
               <span>Read More</span></Button>
           </Link>
-        </TestimonialBoxText>
-      </TestimonialBox>
-      <ClientNameBox>
-        <ClientName>{clientName}</ClientName>
-      </ClientNameBox>
-      <ClientDesignationBox ><span>{designation}<br />{projectName}</span></ClientDesignationBox>
-    </Fragment>
+      </div>
+      <div className="testimonial-grid-item client-name">
+        {clientName}
+      </div>
+      <div className="testimonial-grid-item project-name pl-2">
+        {designation}<br /> {projectName}
+      </div>
+    </div>
   )
 }
 
