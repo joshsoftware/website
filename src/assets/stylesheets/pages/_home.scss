@@ -873,11 +873,19 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1em 1fr;
   align-items: start;
 }
 
 .grid-item {
   display: grid;
-  margin: 0 0.5rem 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  height:   100%;
+  align-self: stretch;
+  justify-self: center;
+  grid-column: 2;
+  grid-row: 1 / span 4;
 }

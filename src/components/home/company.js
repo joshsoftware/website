@@ -28,11 +28,14 @@ const companyData = () => {
         <strong>experience of 22 years </strong>
       </CompanyDetailsText>
 
+      <div className="divider border-solid-left-1" />
+
       <CompanyDetailsText className="grid-item">
         Service clients from <strong> 14 different countries </strong>
       </CompanyDetailsText>
 
       <CompanyDetailsText className="grid-item  text-right"><strong>100+</strong>developers</CompanyDetailsText>
+
       <CompanyDetailsText className="grid-item ">
         <strong>85+</strong>Satisfied Clients
       </CompanyDetailsText>
