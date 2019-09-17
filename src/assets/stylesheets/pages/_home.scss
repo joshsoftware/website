@@ -866,3 +866,18 @@
   max-width: 100%;
   height: auto;
 }
+
+.border-solid-left-1 {
+  border-left: 1px solid #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: start;
+}
+
+.grid-item {
+  display: grid;
+  margin: 0 0.5rem 0.5rem 0;
+}

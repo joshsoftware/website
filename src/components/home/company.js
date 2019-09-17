@@ -2,138 +2,69 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 
+import companyMbImg from "../../assets/images/home/company_mb.png";
 import companyImg from "../../assets/images/home/company.png";
-import companyMbImg from "../../assets/images/home/compnay_mb.png";
-import { ParallaxImg, CompanyDetailsText } from "./homeStyledComponents.js";
+import companyBackgroundImg from "../../assets/images/home/red_background.png";
+import companyBackgroundMbImg from "../../assets/images/home/red_background_mb.png";
+
+import {CompanyDetailsText, CompanyBackground } from "./homeStyledComponents.js";
 
 const Company = () => {
   return (
     <Media query="(max-width: 900px)">
       {matches =>
-        matches ? (
-          <ParallaxImg logo={companyMbImg} height="634px" >
-            <Row className="company-details">
-              <Col md={6} sm={6} xs={6} >
-                <CompanyDetailsText className="text-right">
-                  <span> Core Team has an average </span>
-                  <h5><b>experience of 22 years</b></h5></CompanyDetailsText>
-              </Col>
-              <Col md={6} sm={6} xs={6}>
-                <CompanyDetailsText>
-                  <span>Service clients from  </span>
-                  <h5><b>14 different countries</b></h5>
-                </CompanyDetailsText>
-              </Col>
-            </Row>
-            <br />
-            <Row className="company-details">
-              <Col md={6} sm={6} xs={6} >
-                <CompanyDetailsText className="text-right">
-                  <h5><b> 100+</b></h5>
-                  <span>Developers</span>
-                </CompanyDetailsText>
-              </Col>
-              <Col md={6} sm={6} xs={6} >
-                <CompanyDetailsText>
-                  <h5><b>85+  </b></h5>
-                  <span>Satisfied Clients</span>
-                </CompanyDetailsText>
-              </Col>
-            </Row>
-            <br />
-            <Row className="company-details">
-
-              <Col md={6} sm={6} xs={6}>
-                <CompanyDetailsText className="text-right">
-                  <span> Custom Software Solutions </span>
-                  <h5><b>since 2007</b></h5>
-                </CompanyDetailsText>
-
-              </Col>
-              <Col md={6} sm={6} xs={6}>
-                <CompanyDetailsText>
-                  <span>Sole Technology owners for</span>
-                  <h5><b>
-                    12 product startups!
-                      </b></h5>
-                </CompanyDetailsText>
-              </Col>
-            </Row>
-            <Row className="company-details pt-3">
-              <Col md={6} sm={6} xs={6} >
-                <CompanyDetailsText className="text-right">
-                  <span> Helped <b className="font-size-20">5 Fortune</b> 500 companies</span>
-                  <br />
-                  <span>to build Intellectual Property! </span>
-                </CompanyDetailsText>
-              </Col>
-              {/* <Col md={6} sm={6} xs={6} /> */}
-              <Col md={6} sm={6} xs={6} />
-            </Row>
-          </ParallaxImg >
-        ) : (
-            <ParallaxImg logo={companyImg} height="721px" >
-              <Row className="company-details">
-                <Col md={6} sm={6} xs={6} >
-                  <CompanyDetailsText className="text-right">
-                    <span> Core Team has an average </span>
-                    <h5><b>experience of 22 years</b></h5></CompanyDetailsText>
-                </Col>
-                <Col md={6} sm={6} xs={6}>
-                  <CompanyDetailsText>
-                    <span>Service clients from  </span>
-                    <h5><b>14 different countries</b></h5>
-                  </CompanyDetailsText>
-                </Col>
-              </Row>
-              <br />
-              <Row className="company-details">
-                <Col md={6} sm={6} xs={6} >
-                  <CompanyDetailsText className="text-right">
-                    <h5><b> 100+</b></h5>
-                    <span>Developers</span>
-                  </CompanyDetailsText>
-                </Col>
-                <Col md={6} sm={6} xs={6}>
-                  <CompanyDetailsText>
-                    <h5><b>85+  </b></h5>
-                    <span>Satisfied Clients</span>
-                  </CompanyDetailsText>
-                </Col>
-              </Row>
-              <br />
-              <Row className="company-details">
-                <Col md={6} sm={6} xs={6} >
-                  <CompanyDetailsText className="text-right">
-                    <span> Custom Software Solutions </span>
-                    <h5><b>since 2007</b></h5>
-                  </CompanyDetailsText>
-                </Col>
-                <Col md={6} sm={6} xs={6}>
-                  <CompanyDetailsText>
-                    <span>Sole Technology owners for</span>
-                    <h5><b>
-                      12 product startups!
-                      </b></h5>
-                  </CompanyDetailsText>
-                </Col>
-              </Row>
-              <br />
-              <Row className="company-details">
-                <Col md={6} sm={6} xs={6} >
-                  <CompanyDetailsText className="text-right">
-                    <span> Helped <b className="font-size-20">5 Fortune</b> 500 companies</span>
-                    <br />
-                    <span>to build Intellectual Property! </span>
-                  </CompanyDetailsText>
-                </Col>
-                <Col md={6} sm={6} xs={6} />
-              </Row>
-            </ParallaxImg >
-          )
+        matches ? companyComponent(companyBackgroundMbImg, companyMbImg) :
+            companyComponent(companyBackgroundImg, companyImg)
       }
     </Media>
+  )
+}
 
+const companyData = () => {
+  return(
+    <div className="grid-container">
+      <CompanyDetailsText className=" grid-item text-right">
+        Core Team has an average
+        <strong>experience of 22 years </strong>
+      </CompanyDetailsText>
+
+      <CompanyDetailsText className="grid-item">
+        Service clients from <strong> 14 different countries </strong>
+      </CompanyDetailsText>
+
+      <CompanyDetailsText className="grid-item  text-right"><strong>100+</strong>developers</CompanyDetailsText>
+      <CompanyDetailsText className="grid-item ">
+        <strong>85+</strong>Satisfied Clients
+      </CompanyDetailsText>
+
+      <CompanyDetailsText className="grid-item  text-right">
+        Custom Software Solutions
+        <strong>since 2007</strong>
+      </CompanyDetailsText>
+
+      <CompanyDetailsText className="grid-item ">
+        Sole Technology owners for <strong>12 product startups!</strong>
+      </CompanyDetailsText>
+
+      <CompanyDetailsText className="grid-item  text-right">
+        Helped <strong>5 Fortune</strong>
+        500 companies
+        to build Intellectual Property!
+      </CompanyDetailsText>
+    </div>
+  )
+}
+
+const companyComponent = (backgroundImg, img) => {
+  return(
+    <CompanyBackground image={backgroundImg} className="container-fluid" >
+      <Row className="">
+        <Col>
+          <img src={img} className='img-fluid mx-auto d-block' alt="Company" />
+        </Col>
+      </Row>
+      {companyData()}
+    </CompanyBackground>
   )
 }
 
