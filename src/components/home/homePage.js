@@ -11,6 +11,11 @@ import * as routeConstants from "../../routeConstants.js";
 import whatsNewLogo from "../../assets/images/home/whats_new.svg";
 import whatsTrendingMb from "../../assets/images/home/whats_trending_mb.svg";
 import whatsTrendingHover from "../../assets/images/home/whats_trending_hover.png"
+import GopherGuides from  './gopherGuidesModal.js';
+import gopherGuideWeb from '../../assets/images/home/gopherGuideWeb.jpg';
+import gopherGuideMobile from '../../assets/images/home/gopherGuideMobile.jpg';
+import gopherGuideStickerMobile from '../../assets/images/home/gopherGuideStickerMobile.png';
+import gopherGuideStickerWeb from '../../assets/images/home/gopherGuideStickerWeb.png';
 
 const HomePage = (props) => {
   const { setOpenTrending } = props;
@@ -33,6 +38,9 @@ const HomePage = (props) => {
                         <img src={whatsTrendingMb} alt="What's Trending?" />
                         <span className="img-centered-text">What's <br /> Trending?</span>
                       </div>
+                      <GopherGuides gopherGuideImg={gopherGuideMobile}
+                        containerClassName="img-container top-4 pr-3 float-right"
+                        gopherGuideSticker={gopherGuideStickerMobile}/>
                     </Col>
 
                   </Row>
@@ -59,6 +67,10 @@ const HomePage = (props) => {
               <img src={hoverState ? whatsTrendingHover : whatsNewLogo} alt="What's Trending?" />
               <span className="img-centered-text">What's <br /> Trending?</span>
             </div>
+            <GopherGuides gopherGuideImg={gopherGuideWeb}
+              containerClassName="img-container top-2 float-right"
+              gopherGuideSticker={gopherGuideStickerWeb}
+            />
           </div>
         </div>
       </div>
