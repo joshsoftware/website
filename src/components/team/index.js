@@ -167,6 +167,13 @@ OurTeam.defaultProps = {
       designation: "Head of Operations- Smart Cities",
       linkedinId: "avadhoot-bhatye-78082312",
       githubId: ""
+    },
+    {
+      profilePic: "core_shailesh_kalekar.jpg",
+      name: "Shailesh Kalekar",
+      designation: "Vice President – Global Strategy and Growth",
+      linkedinId: "shailesh-kalekar-ba0a87a",
+      githubId: ""
     }
   ],
   members: [
