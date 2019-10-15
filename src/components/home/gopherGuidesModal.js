@@ -13,7 +13,7 @@ const GopherGuides = (props) => {
       <Modal isOpen={showModal} toggle={toggle} className="modal-lg mx-auto modal-dialog-centered">
         <ModalHeader toggle={toggle} className="gopher-guide">Gopher Guides </ModalHeader>
         <ModalBody className="text-center">
-          <img src={props.gopherGuideImg} class="img-container img-fluid"/>
+          <img src={props.gopherGuideImg} alt="Gopher Guides" class="img-container img-fluid"/>
         </ModalBody>
       </Modal>
     </div>
