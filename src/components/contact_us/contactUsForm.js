@@ -12,7 +12,7 @@ const ContactUsForm = () => {
     fetch(`${API_BASE_URL}contact_us.json`, {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({contact_us: contact_us})
+      body: JSON.stringify({contact_us})
     }).then(res => res.json())
       .then(res => {
         alert("Thanks for contacting us! We will get back to you soon!");
