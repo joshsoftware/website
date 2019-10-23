@@ -13,13 +13,18 @@ const ContactUsForm = () => {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({contact_us})
-    }).then(res => res.json())
-      .then(res => {
-        alert("Thanks for contacting us! We will get back to you soon!");
-      })
-      .catch(result => {
-        console.log(result);
-      });
+    })
+    .then(res => {
+      if ( res.ok ) return res.json();
+
+      throw new Error(`${ res.status } - ${ res.statusText }`);
+    })
+    .then(() => {
+      alert("Thanks for contacting us! We will get back to you soon!");
+    })
+    .catch(result => {
+      console.log(result);
+    });
   };
 
   const { value: name, onChange: onChangeName } = useInput("");
