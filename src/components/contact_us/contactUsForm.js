@@ -41,27 +41,27 @@ const ContactUsForm = () => {
       <Row>
         <Col md={6}>
           <div className="form-group">
-            <label for="input-fname">Name</label><span className="text-danger">*</span>
-            <input id="input-fname" type="text" required="true" className="form-control" onChange={onChangeName} />
+            <label htmlFor="input-fname">Name</label><span className="text-danger">*</span>
+            <input id="input-fname" type="text" required={ true } className="form-control" onChange={onChangeName} />
           </div>
           <div className="form-group">
-            <label for="inputEmail">Email</label><span className="text-danger">*</span>
-            <input id="inputEmail" type="email" required="true" className="form-control" onChange={onChangeEmail} />
+            <label htmlFor="inputEmail">Email</label><span className="text-danger">*</span>
+            <input id="inputEmail" type="email" required={ true } className="form-control" onChange={onChangeEmail} />
           </div>
           <div className="form-group">
-            <label for="inputnumber">Contact Number</label>
+            <label htmlFor="inputnumber">Contact Number</label>
             <input id="inputnumber" type="text" className="form-control" onChange={onChangePhone} />
           </div>
           <div className="form-group">
-            <label for="input-organization">Organization</label><span className="text-danger">*</span>
-            <input id="input-organization" type="text" required="true" className="form-control" onChange={onChangeOrganization} />
+            <label htmlFor="input-organization">Organization</label><span className="text-danger">*</span>
+            <input id="input-organization" type="text" required={ true } className="form-control" onChange={onChangeOrganization} />
           </div>
           <div className="form-group">
-            <label for="inputcompany">Job Title</label>
+            <label htmlFor="inputcompany">Job Title</label>
             <input id="inputcompany" type="text" className="form-control" onChange={onChangeJobTitle} />
           </div>
           <div className="form-group">
-            <label for="exampleFormControlSelect1">You are:</label>
+            <label htmlFor="exampleFormControlSelect1">You are:</label>
             <select id="exampleFormControlSelect1" aria-describedby="form-control" className="form-control" onChange={onChangeRole}>
               <option>- Please Select -</option>
               <option>Potential Customer</option>
@@ -73,7 +73,7 @@ const ContactUsForm = () => {
         </Col>
         <Col md={6}>
           <div className="form-group textarea-group">
-            <label for="exampleFormControlTextarea1">How can we help you?</label>
+            <label htmlFor="exampleFormControlTextarea1">How can we help you?</label>
             <textarea id="exampleFormControlTextarea1" rows="7" className="form-control" onChange={onChangeMessage}>
 
             </textarea>
