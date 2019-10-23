@@ -8,11 +8,11 @@ import useInput from '../../hooks/useInput';
 const ContactUsForm = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    const contact_us = { name, email, orgnization, job_title, role, message, phone, 'g-recaptcha-response': gCaptcha }
+    const contact_us = { name, email, orgnization, job_title, role, message, phone }
     fetch(`${API_BASE_URL}contact_us.json`, {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({contact_us})
+      body: JSON.stringify({ 'g-recaptcha-response': gCaptcha, contact_us })
     })
     .then(res => {
       if ( res.ok ) return res.json();
