@@ -581,7 +581,7 @@
   text-decoration: none;
   text-decoration-color: #333333;
   font-size: 20px;
-  
+
   color: #FFFFFF;
   &:hover{
     color: #FFFFFF;
@@ -794,12 +794,12 @@
     position: relative;
     bottom: 5px;
   }
-  
-  
+
+
   .btn-secondary {
     // display: none;
     background-color: transparent;
-    
+
   }
 }
 
@@ -888,4 +888,20 @@
   justify-self: center;
   grid-column: 2;
   grid-row: 1 / span 4;
+}
+
+.top-2 {
+  top: -2%;
+}
+
+.top-4 {
+  top: -4%;
+}
+
+.gopher-guide {
+  color: #CF4338;
+
+  .close {
+    color: #CF4338;
+  }
 }
