@@ -59,7 +59,6 @@ export const ParallaxImg = styled.div`
   width: 100%;
   height: ${(props) => props.height};
   background-repeat: no-repeat;
-  background-size: 100%;
 `
 
 export const CurvedCard = styled(Card)`
@@ -70,19 +69,6 @@ export const CompanyDetailsText = styled.div`
   float: ${(props) => props.pull};
   width: ${(props) => props.width};
   color: #fff;
-  & span {
-    font-size: 14px;
-    // font-weight: 100;
-  }
-
-  & h5 {
-    font-size: 20px;
-    
-  }
-
-  & b {
-    font-weight: 400;
-  }
 
   @media(max-width: 900px) {
     & span {
@@ -139,3 +125,10 @@ export const Paragraph = styled.p`
   font-size: ${(props) => props.fontSize ? `${props.fontSize}px` : "17px"}
 `
 
+export const CompanyBackground = styled.div`
+  background-image: ${(props) => `url(${props.image})`} ;
+  width: auto;
+  height: 722px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+`

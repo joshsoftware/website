@@ -796,11 +796,9 @@
     bottom: 5px;
   }
 
-
   .btn-secondary {
     // display: none;
     background-color: transparent;
-
   }
 }
 
@@ -916,6 +914,28 @@
 
 .quotes {
   font-size: 3rem;
+}
+  .border-solid-left-1 {
+  border-left: 1px solid #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1em 1fr;
+  align-items: start;
+}
+
+.grid-item {
+  display: grid;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  height:   100%;
+  align-self: stretch;
+  justify-self: center;
+  grid-column: 2;
+  grid-row: 1 / span 4;
 }
 
 .top-2 {
