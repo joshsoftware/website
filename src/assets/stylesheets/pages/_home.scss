@@ -581,7 +581,7 @@
   text-decoration: none;
   text-decoration-color: #333333;
   font-size: 20px;
-  
+
   color: #FFFFFF;
   &:hover{
     color: #FFFFFF;
@@ -794,12 +794,10 @@
     position: relative;
     bottom: 5px;
   }
-  
-  
+
   .btn-secondary {
     // display: none;
     background-color: transparent;
-    
   }
 }
 
@@ -865,6 +863,29 @@
 .injected-svg {
   max-width: 100%;
   height: auto;
+}
+
+.border-solid-left-1 {
+  border-left: 1px solid #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1em 1fr;
+  align-items: start;
+}
+
+.grid-item {
+  display: grid;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  height:   100%;
+  align-self: stretch;
+  justify-self: center;
+  grid-column: 2;
+  grid-row: 1 / span 4;
 }
 
 .top-2 {
