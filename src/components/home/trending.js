@@ -121,29 +121,35 @@ const Trending = (props) => {
 Trending.defaultProps = {
   items: [
     {
+      image: "anniversary",
+      name: "Anniversary",
+      title: "12 th Anniversary",
+      subTitle: "anniversary"
+    },
+    {
+      image: "gautam-talk",
+      name: "Gautam's talk",
+      title: "Impossible Go",
+      subTitle: "gautam's talk"
+    },
+    {
+      image: "shweta-talk",
+      name: "Shweta's talk",
+      title: "Going long way with Rails",
+      subTitle: "shweta's talk"
+    },
+    {
       image: "deccan",
-      name: "Gautam Rege",
-      title: "Speaker at Go-pher Conference",
-      subTitle: "Sample Text, U.K."
+      name: "Deccan Ruby Conf",
+      title: "Lightening Talk and Gold Sponsors",
+      subTitle: "Lightening Talk."
     },
     {
-      image: "droid_jam",
-      name: "Shweta Kale",
-      title: "Speaker at Go-pher Conference",
-      subTitle: "Sample Text, U.K."
+      image: "droid-jam",
+      name: "Droid Jam 2019",
+      title: "Gold Sponsors",
+      subTitle: "Past event."
     },
-    {
-      image: "conference",
-      name: "Shweta Kale",
-      title: "Speaker at Go-pher Conference",
-      subTitle: "Sample Text, U.K."
-    },
-    {
-      image: "conference_2",
-      name: "Anusha Bhat",
-      title: "Speaker at Go-pher Conference",
-      subTitle: "Sample Text, U.K."
-    }
   ]
 }
 
