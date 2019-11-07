@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const ImageInCard = props => {
-  const { imgSrc, imgAltText, classNames } = props;
+  const { imgSrc, imgAltText, className } = props;
 
-  return <img src={imgSrc} alt={imgAltText} className={classNames} />;
+  return <img src={imgSrc} alt={imgAltText} className={className} />;
 };
 
 ImageInCard.propTypes = {

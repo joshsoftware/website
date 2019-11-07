@@ -10,7 +10,7 @@ const getProfileImage = (API_PUBLIC_URL, public_profile) => {
     <ImageInCard
       imgSrc={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
       imgAltText={public_profile.name}
-      classNames="img-fluid"
+      className="img-fluid"
     />
   );
 };
@@ -82,7 +82,7 @@ JoshLeaderProfiles.propTypes = {
   API_PUBLIC_URL: PropTypes.string.isRequired,
   leaders: PropTypes.arrayOf(
     PropTypes.shape({
-      email: PropTypes.string.isRequired,
+      email: PropTypes.string,
       employee_detail: PropTypes.shape({
         description: PropTypes.string,
         designation: PropTypes.shape({
@@ -107,6 +107,7 @@ JoshLeaderProfiles.propTypes = {
 JoshLeaderProfiles.defaultProps = {
   leaders: [
     {
+      email: "",
       employee_detail: {
         description: ""
       },
