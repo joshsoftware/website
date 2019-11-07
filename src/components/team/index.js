@@ -82,6 +82,7 @@ const OurTeam = props => {
         {/* <div style={{ height: 67 }} /> */}
 
         {/** JOSH LEADERS */}
+<<<<<<< HEAD
         <section
           id="ourTeam"
           className="section-content section-leadership section-home"
@@ -170,6 +171,13 @@ const OurTeam = props => {
             </div>
           </div>
         </section>
+=======
+        <JoshLeaderProfiles
+          GITHUB_BASE_URL={GITHUB_BASE_URL}
+          API_PUBLIC_URL={API_PUBLIC_URL}
+          leaders={leaders}
+        />
+>>>>>>> [team-api-integration] Uses individual components for Josh employee profiles.
 
 <<<<<<< HEAD
       {/** JOSH NERDS */}
@@ -200,6 +208,7 @@ const OurTeam = props => {
         {/** JOSH NERDS */}
         <section className="section-content section-nerds">
           <div className="container">
+<<<<<<< HEAD
             <h1 className="section-heading">Meet Our Nerds</h1>
             <div className="row">
 <<<<<<< HEAD
@@ -258,6 +267,13 @@ const OurTeam = props => {
                 );
               })}
             </div>
+=======
+            <JoshNerdProfiles
+              GITHUB_BASE_URL={GITHUB_BASE_URL}
+              API_PUBLIC_URL={API_PUBLIC_URL}
+              members={members}
+            />
+>>>>>>> [team-api-integration] Uses individual components for Josh employee profiles.
 
             {/** Navigations */}
             <div className="btn-wrap">
