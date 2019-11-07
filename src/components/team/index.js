@@ -8,26 +8,28 @@ const GITHUB_BASE_URL = "https://github.com/";
 const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
 const LINKED_IN_BASE_URL = "https://www.linkedin.com/in/";
 
-const OurTeam = (props) => {
-  const [ members, setMembers ] = useState([]),
-  [ leaders, setLeaders ] = useState([]),
-  [ loading, setLoading ] = useState(true);
+const OurTeam = props => {
+  const [members, setMembers] = useState([]),
+    [leaders, setLeaders] = useState([]),
+    [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
       fetch(`${API_BASE_URL}team`, {
-        method: 'get',
-        headers: { 'Content-Type': 'application/json' },
-      }).then(res => res.json())
-      .then(res => {
-        setMembers(res.members);
-        setLeaders(res.leaders)
-        setLoading(false);
+        method: "get",
+        headers: { "Content-Type": "application/json" }
       })
+        .then(res => res.json())
+        .then(res => {
+          setMembers(res.members);
+          setLeaders(res.leaders);
+          setLoading(false);
+        });
     }
     fetchData();
   }, []);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       {/** JOSH LEADERS */}
       <section id="ourTeam" className="section-content section-leadership section-home">
@@ -66,6 +68,9 @@ const OurTeam = (props) => {
                           }
 =======
   if(loading) {
+=======
+  if (loading) {
+>>>>>>> [team-api-integration] Updates some prop attributes in component.
     return null;
   } else {
     return (
@@ -77,7 +82,10 @@ const OurTeam = (props) => {
         {/* <div style={{ height: 67 }} /> */}
 
         {/** JOSH LEADERS */}
-        <section id="ourTeam" className="section-content section-leadership section-home">
+        <section
+          id="ourTeam"
+          className="section-content section-leadership section-home"
+        >
           <Heading1>Josh Leadership</Heading1>
           <div className="container">
             {/* <h1 className="section-heading">Josh Leadership</h1> */}
@@ -86,6 +94,7 @@ const OurTeam = (props) => {
               <p>Re-engineering existing inefficient architectures with zero down-time and complete data integrity</p>
             </div> */}
             <div className="row">
+<<<<<<< HEAD
               {
                 leaders.map(leader => {
                   const { public_profile, employee_detail } = leader;
@@ -111,12 +120,53 @@ const OurTeam = (props) => {
                             }
                           </div>
 >>>>>>> Added team api for loading team details
+=======
+              {leaders.map(leader => {
+                const {
+                  public_profile,
+                  employee_detail: { designation: { name } = {} } = {}
+                } = leader;
+
+
+                return (
+                  <div className="col-lg-4 col-sm-6" key={public_profile.name}>
+                    <div className="card card-team">
+                      <img
+                        src={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
+                        alt={public_profile.name}
+                        className="img-fluid"
+                      />
+                      <div className="card-body">
+                        <div className="person-info">
+                          <h5>{public_profile.name}</h5>
+                          <p className="designation">{name}</p>
+                        </div>
+                        <div className="professional-platforms">
+                          {public_profile.linkedin_url && (
+                            <a
+                              href={`${public_profile.linkedin_url}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <i className="icon-linkedin"></i>
+                            </a>
+                          )}
+                          {public_profile.github_handle && (
+                            <a
+                              href={`${GITHUB_BASE_URL}${public_profile.github_handle}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <i className="icon-github"></i>
+                            </a>
+                          )}
+>>>>>>> [team-api-integration] Updates some prop attributes in component.
                         </div>
                       </div>
                     </div>
-                  )
-                })
-              }
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -152,6 +202,7 @@ const OurTeam = (props) => {
           <div className="container">
             <h1 className="section-heading">Meet Our Nerds</h1>
             <div className="row">
+<<<<<<< HEAD
               {
                 members.map(member => {
                   const { public_profile } = member;
@@ -171,18 +222,51 @@ const OurTeam = (props) => {
                             }
                           </div>
 >>>>>>> Added team api for loading team details
+=======
+              {members.map(member => {
+                const { public_profile } = member;
+                return (
+                  <div
+                    className="col-lg-3 col-md-6 col-6"
+                    key={public_profile.name}
+                  >
+                    <div className="card card-team">
+                      <img
+                        src={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
+                        alt={public_profile.name}
+                        className="img-fluid"
+                      />
+                      <div className="card-body">
+                        <div className="person-info -nerds">
+                          <h5>{public_profile.name}</h5>
+                        </div>
+                        <div className="professional-platforms">
+                          {public_profile.github_handle && (
+                            <a
+                              href={`${GITHUB_BASE_URL}${public_profile.github_handle}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <i className="icon-github"></i>
+                            </a>
+                          )}
+>>>>>>> [team-api-integration] Updates some prop attributes in component.
                         </div>
                       </div>
                     </div>
-                  )
-                })
-              }
+                  </div>
+                );
+              })}
             </div>
 
             {/** Navigations */}
             <div className="btn-wrap">
-              <Link to={routeConstants.ABOUT_US_URL} className="btn btn-gray">About Us</Link>
-              <a href={JOSH_CAREER_URL} className="btn btn-outline-gray">Career</a>
+              <Link to={routeConstants.ABOUT_US_URL} className="btn btn-gray">
+                About Us
+              </Link>
+              <a href={JOSH_CAREER_URL} className="btn btn-outline-gray">
+                Career
+              </a>
             </div>
           </div>
 <<<<<<< HEAD
@@ -495,9 +579,13 @@ OurTeam.defaultProps = {
 =======
         </section>
       </Fragment>
-    )
+    );
   }
+<<<<<<< HEAD
 >>>>>>> Added team api for loading team details
 }
+=======
+};
+>>>>>>> [team-api-integration] Updates some prop attributes in component.
 
 export default OurTeam;
