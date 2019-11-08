@@ -1,15 +1,20 @@
-import React from 'react';
-import { Row, Col } from 'reactstrap';
+import React from "react";
+import { Row, Col } from "reactstrap";
 import Media from "react-media";
 
-import JoshCarousel from './carousel';
+import JoshCarousel from "./carousel";
+import {
+  WebImageComponent,
+  MobileImageComponent
+} from "../shared/imageComponent";
+
 import NextImg from "../../assets/images/home/Next.png";
 import PreviousImg from "../../assets/images/home/previous.png";
 
-const Trending = (props) => {
+const Trending = props => {
   const { setOpenTrending, items } = props;
 
-  const PreviousArrow = (props) => {
+  const PreviousArrow = props => {
     const { className, onClick } = props;
     return (
       <img
@@ -19,9 +24,9 @@ const Trending = (props) => {
         alt="Previous"
       />
     );
-  }
+  };
 
-  const NextArrow = (props) => {
+  const NextArrow = props => {
     const { className, onClick } = props;
     return (
       <img
@@ -31,7 +36,7 @@ const Trending = (props) => {
         alt="Next"
       />
     );
-  }
+  };
 
   const settings = {
     dots: true,
@@ -51,25 +56,34 @@ const Trending = (props) => {
         settings: {
           arrows: false
         }
-      },
+      }
     ]
   };
 
   const carouselItems = items.map(cItem => (
     <Media query="(max-width: 500px)" key={cItem.name}>
       {matches =>
-        matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
-          className="img-fluid mt-2" alt="what's new?" />
-          : <Row className="justify-content-around m-auto w-75 d-flex">
+        matches ? (
+          <MobileImageComponent
+            image={cItem.image}
+            src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
+            className="img-fluid mt-2"
+            alt="what's new?"
+          />
+        ) : (
+          <Row className="justify-content-around m-auto w-75 d-flex">
             <Col>
-              <img src={require(`../../assets/images/home/${cItem.image}.png`)}
-                className=" img-fluid mt-5" alt="what's new?" />
+              <WebImageComponent
+                src={require(`../../assets/images/home/${cItem.image}.png`)}
+                className=" img-fluid mt-5"
+                alt="what's new?"
+              />
             </Col>
           </Row>
+        )
       }
     </Media>
   ));
-
 
   const WebView = (
     <>
@@ -78,79 +92,58 @@ const Trending = (props) => {
           <JoshCarousel
             className="img-centered-text"
             items={carouselItems}
-            settings={settings} />
+            settings={settings}
+          />
         </Col>
-      </Row >
-      <img src={require(`../../assets/images/home/Close.png`)}
+      </Row>
+      <img
+        src={require(`../../assets/images/home/Close.png`)}
         className="img-fluid cursor-pointer close-button"
         onClick={setOpenTrending}
-        alt="Close" />
+        alt="Close"
+      />
     </>
-  )
+  );
 
   const MobileView = (
     <>
       <Row className="float-right justify-content-around m-auto pt-3 pl-5">
         <Col>
-          <img src={require(`../../assets/images/home/Close.png`)}
+          <img
+            src={require(`../../assets/images/home/Close.png`)}
             className="img-fluid cursor-pointer size-30"
             onClick={setOpenTrending}
-            alt="Close" />
+            alt="Close"
+          />
         </Col>
       </Row>
-      <Row className="justify-content-center m-auto w-100  d-flex" >
+      <Row className="justify-content-center m-auto w-100  d-flex">
         <Col>
           <JoshCarousel
             className="img-centered-text"
             items={carouselItems}
-            settings={settings} />
+            settings={settings}
+          />
         </Col>
-      </Row >
+      </Row>
     </>
-  )
+  );
   return (
     <Media query="(max-width: 500px)">
-      {matches => matches ? MobileView : WebView}
+      {matches => (matches ? MobileView : WebView)}
     </Media>
-
-  )
-}
-
-
+  );
+};
 
 Trending.defaultProps = {
   items: [
     {
-      image: "anniversary",
-      name: "Anniversary",
-      title: "12 th Anniversary",
-      subTitle: "anniversary"
-    },
-    {
-      image: "gautam-talk",
-      name: "Gautam's talk",
-      title: "Impossible Go",
-      subTitle: "gautam's talk"
-    },
-    {
-      image: "shweta-talk",
-      name: "Shweta's talk",
-      title: "Going long way with Rails",
-      subTitle: "shweta's talk"
-    },
-    {
-      image: "deccan",
-      name: "Deccan Ruby Conf",
-      title: "Lightening Talk and Gold Sponsors",
-      subTitle: "Lightening Talk."
-    },
-    {
-      image: "droid-jam",
-      name: "Droid Jam 2019",
-      title: "Gold Sponsors",
-      subTitle: "Past event."
-    },
+      image: "go_girls_19",
+      name: "GoLang Girls 2019",
+      title: "GoLang Girls 2019",
+      subTitle: "GoLang Girls 2019"
+    }
   ]
-}
+};
 
 export default Trending;
