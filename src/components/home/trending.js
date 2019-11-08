@@ -121,6 +121,12 @@ const Trending = (props) => {
 Trending.defaultProps = {
   items: [
     {
+      image: "go_girls_19",
+      name: "GoLang Girls 2019",
+      title: "GoLang Girls 2019",
+      subTitle: "GoLang Girls 2019"
+    },
+    {
       image: "anniversary",
       name: "Anniversary",
       title: "12 th Anniversary",
