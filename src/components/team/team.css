@@ -1,0 +1,30 @@
+.leader-img {
+  /* start of desktop styles */
+  width: 349.98px;
+  height: 237px; }
+  @media screen and (max-width: 991px) {
+    .leader-img {
+      /* start of large tablet styles */
+      width: 240px;
+      height: 160px; } }
+  @media screen and (max-width: 767px) {
+    .leader-img {
+      /* start of medium tablet styles */
+      width: 240px;
+      height: 160px; } }
+  @media screen and (max-width: 479px) {
+    .leader-img {
+      /* start of phone styles */
+      width: 345px;
+      height: 230px; } }
+
+.nerd-img {
+  /* start of desktop styles */
+  width: 255px;
+  height: 238.85px; }
+  @media screen and (max-width: 479px) {
+    .nerd-img {
+      /* start of phone styles */
+      min-width: 157.5px;
+      max-width: 157.5px;
+      height: 147.51px; } }

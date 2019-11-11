@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ImageInCard from "../shared/imageInCard";
 import IconWithLink from "../shared/iconWithLink";
+
+import "./team.scss";
 
 const getProfileImage = (API_PUBLIC_URL, public_profile) => {
   return (
-    <ImageInCard
-      imgSrc={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
-      imgAltText={public_profile.name}
+    <img
+      src={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
+      alt={public_profile.name}
       classNames="img-fluid"
     />
   );
@@ -25,7 +26,7 @@ const JoshNerdProfiles = props => {
           const githubUrl = `${GITHUB_BASE_URL}${public_profile.github_handle ||
             ""}`;
           return (
-            <div className="col-lg-3 col-md-6 col-6" key={public_profile.name}>
+            <div className="col-lg-3 col-md-3 col-sm-4 col-6" key={public_profile.name}>
               <div className="card card-team">
                 {getProfileImage(API_PUBLIC_URL, public_profile)}
                 <div className="card-body">

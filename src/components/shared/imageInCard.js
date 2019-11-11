@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./shared.scss";
+
 const ImageInCard = props => {
   const { imgSrc, imgAltText, className } = props;
 
-  return <img src={imgSrc} alt={imgAltText} className={className} />;
+  return <img src={imgSrc} alt={imgAltText} className={`${className} img-in-card`} />;
 };
 
 ImageInCard.propTypes = {
