@@ -10,7 +10,7 @@ const getProfileImage = (API_PUBLIC_URL, public_profile) => {
     <img
       src={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
       alt={public_profile.name}
-      classNames="img-fluid"
+      className="img-fluid nerd-img"
     />
   );
 };
@@ -26,7 +26,10 @@ const JoshNerdProfiles = props => {
           const githubUrl = `${GITHUB_BASE_URL}${public_profile.github_handle ||
             ""}`;
           return (
-            <div className="col-lg-3 col-md-3 col-sm-4 col-6" key={public_profile.name}>
+            <div
+              className="col-lg-3 col-md-3 col-sm-4 col-6"
+              key={public_profile.name}
+            >
               <div className="card card-team">
                 {getProfileImage(API_PUBLIC_URL, public_profile)}
                 <div className="card-body">

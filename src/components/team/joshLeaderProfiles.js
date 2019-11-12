@@ -11,7 +11,7 @@ const getProfileImage = (API_PUBLIC_URL, public_profile) => {
     <img
       src={`${API_PUBLIC_URL}${public_profile.image_medium_url}`}
       alt={public_profile.name}
-      className="img-fluid"
+      className="img-fluid leader-img"
     />
   );
 };
