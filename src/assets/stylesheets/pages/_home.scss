@@ -30,10 +30,10 @@
     }
   }
 
-  .link-box{
+  .link-box {
     text-align: right;
 
-    a{
+    a {
       font-size: rem(18px);
       line-height: rem(22px);
       font-weight: 300;
@@ -53,7 +53,7 @@
       }
     }
 
-    i{
+    i {
       font-size: rem(28px);
       margin-right: rem(12px);
 
@@ -75,7 +75,8 @@
     height: 190vh;
 
     &.bg-props {
-      background: #121212 url("#{$assets_url}images/home-banner-mobile.jpg") no-repeat;
+      background: #121212 url("#{$assets_url}images/home-banner-mobile.jpg")
+        no-repeat;
       background-position: top right;
       background-size: 100% auto;
     }
@@ -83,10 +84,10 @@
 
   .section-slide {
     min-height: calc(100vh - 76px);
-    height:  calc(100vh - 76px);
+    height: calc(100vh - 76px);
 
     @include media-breakpoint-down(md) {
-    height:  calc(100vh - 54px);
+      height: calc(100vh - 54px);
     }
   }
 
@@ -95,15 +96,15 @@
     position: relative;
   }
 
-  .overlay-content{
+  .overlay-content {
     position: absolute;
     width: rem(490px);
     display: inline-block;
     left: 0;
     text-align: center;
 
-    span{
-      padding:rem(10px) 0;
+    span {
+      padding: rem(10px) 0;
       color: $white;
       font-weight: 300;
       text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
@@ -134,18 +135,18 @@
     }
   }
 
-  .-slide2{
+  .-slide2 {
     top: calc(50vh - 107px);
 
     @include media-breakpoint-down(sm) {
       top: calc(50vh - 187px);
     }
 
-    h1{
+    h1 {
       margin: 0 0 rem(48px);
     }
 
-    p{
+    p {
       font-size: rem(20px);
       line-height: rem(26px);
       letter-spacing: 1px;
@@ -156,7 +157,7 @@
     }
   }
 
-  h1{
+  h1 {
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     margin: 0;
@@ -172,7 +173,7 @@
     }
   }
 
-  h3{
+  h3 {
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
     margin: 0 0 rem(48px);
@@ -189,11 +190,11 @@
     }
   }
 
-  .btn{
+  .btn {
     margin: 0 0 rem(14px);
   }
 
-  p{
+  p {
     font-size: 16px;
     color: $white;
     text-shadow: 0 0 rem(16px) rgba(255, 157, 0, 1);
@@ -229,7 +230,8 @@
 }
 
 .section-expertise {
-  background: $galliano url("#{$assets_url}images/home-industries-bg.jpg") repeat top center;
+  background: $galliano url("#{$assets_url}images/home-industries-bg.jpg")
+    repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -240,7 +242,7 @@
     height: unset;
   }
 
-  .section-heading{
+  .section-heading {
     margin: 0 0 rem(65px);
 
     @include media-breakpoint-down(md) {
@@ -248,7 +250,7 @@
     }
   }
 
-  .img-expertise{
+  .img-expertise {
     max-width: rem(512px);
     margin: 0 0 rem(80px);
 
@@ -259,14 +261,15 @@
 }
 
 .section-work {
-  background: $fountain-blue url("#{$assets_url}images/home-service-bg.jpg") no-repeat top center;
+  background: $fountain-blue url("#{$assets_url}images/home-service-bg.jpg")
+    no-repeat top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
     @include align-items(center);
   }
 
-  .section-heading{
+  .section-heading {
     margin: 0 0 rem(46px);
   }
 }
@@ -286,7 +289,7 @@
   }
 }
 
-.list-client{
+.list-client {
   width: 86%;
   margin: 0 auto rem(80px);
   @extend .d-flex;
@@ -297,7 +300,7 @@
     margin: 0 auto rem(50px);
   }
 
-  li{
+  li {
     width: 20%;
     padding: rem(0 12px);
     margin: rem(0 0 24px);
@@ -328,7 +331,8 @@
 /* End */
 
 .section-about {
-  background: $roman url("#{$assets_url}images/home-aboutus-bg.jpg") no-repeat top center;
+  background: $roman url("#{$assets_url}images/home-aboutus-bg.jpg") no-repeat
+    top center;
 
   @include media-breakpoint-up(lg) {
     @include flexbox();
@@ -343,7 +347,7 @@
     }
   }
 
-  .about-wrap{
+  .about-wrap {
     @extend .d-flex;
 
     @include media-breakpoint-down(md) {
@@ -351,7 +355,7 @@
     }
   }
 
-  .stats-box{
+  .stats-box {
     @extend .d-flex;
     @extend .flex-column;
     @include justify-content(space-between);
@@ -364,7 +368,7 @@
     }
   }
 
-  .stats{
+  .stats {
     color: $white;
     text-align: center;
 
@@ -372,36 +376,34 @@
       margin: 0 0 rem(32px);
     }
 
-    h4{
+    h4 {
       font-size: rem(40px);
       line-height: rem(48px);
       font-weight: 300;
       margin: 0 0 rem(4px);
-      opacity: 0.80;
+      opacity: 0.8;
     }
 
-    p{
+    p {
       font-size: rem(13px);
       line-height: rem(18px);
       font-weight: 300;
       margin: 0;
       letter-spacing: 1px;
-      opacity: 0.80;
+      opacity: 0.8;
     }
   }
 
-  .stats-button{
-
-    .btn{
-
-      &:hover{
+  .stats-button {
+    .btn {
+      &:hover {
         color: $roman;
         font-weight: 300;
       }
     }
   }
 
-  .about-banner{
+  .about-banner {
     @include flex(0 0 40%);
     text-align: center;
 
@@ -413,7 +415,8 @@
 }
 
 .section-contact {
-  background: transparent url("#{$assets_url}images/bg-contact.png") no-repeat top center;
+  background: transparent url("#{$assets_url}images/bg-contact.png") no-repeat
+    top center;
   background-size: cover;
   padding: rem(142px 0 110px);
 
@@ -428,10 +431,10 @@
     padding: rem(56px 0);
   }
 
-  .contact-wrap{
+  .contact-wrap {
     text-align: center;
 
-    p{
+    p {
       color: $gray-40;
       font-size: rem(28px);
       line-height: rem(39px);
@@ -449,7 +452,7 @@
     @include media-breakpoint-down(md) {
       margin: rem(0 0 56px);
 
-      p{
+      p {
         margin: 0;
       }
 
@@ -459,11 +462,12 @@
     }
   }
 
-  .contact-banner{
+  .contact-banner {
     display: none;
 
     @include media-breakpoint-down(md) {
-      background: transparent url("#{$assets_url}images/bg-contact.png") no-repeat top right;
+      background: transparent url("#{$assets_url}images/bg-contact.png")
+        no-repeat top right;
       background-size: cover;
       display: block;
       height: rem(217px);
@@ -493,14 +497,14 @@
         }
       }
 
-      p{
+      p {
         margin: 0;
         color: $gray-40;
         font-size: rem(16px);
         line-height: rem(22px);
         font-weight: 300;
 
-        i{
+        i {
           font-size: rem(24px);
           color: $olivine;
           padding-right: rem(12px);
@@ -521,10 +525,10 @@
 
 // Parallax Scroll SCSS
 .bg-props {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 // Parallax Scroll SCSS End
 
@@ -536,36 +540,45 @@
 
 .company-details {
   position: relative;
-  @include media-breakpoint-only(xl) { top: 54%; }
-  @include media-breakpoint-only(lg) { top: 57%; }
-  @include media-breakpoint-only(md) { top: 54%; }
-  @include media-breakpoint-only(sm) { top: 52%; }
-  @include media-breakpoint-only(xs) { top: 52%; }
-
+  @include media-breakpoint-only(xl) {
+    top: 54%;
+  }
+  @include media-breakpoint-only(lg) {
+    top: 57%;
+  }
+  @include media-breakpoint-only(md) {
+    top: 54%;
+  }
+  @include media-breakpoint-only(sm) {
+    top: 52%;
+  }
+  @include media-breakpoint-only(xs) {
+    top: 52%;
+  }
 }
 
 .pull-right {
   float: right;
 }
 
-.pb-14{
+.pb-14 {
   padding-bottom: 14px;
 }
 
-.border-2{
+.border-2 {
   border: 2px solid;
-  border-color: #FFFFFF;
+  border-color: #ffffff;
   width: 300px;
   height: 211px;
   border-radius: 16px 16px 16px 16px;
 }
 
 .bg-white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .width-100 {
-  width: 100px!important;
+  width: 100px !important;
 }
 
 .succss-stories {
@@ -577,22 +590,22 @@
   }
 }
 
-.bullet li, a{
+.bullet li,
+a {
   text-decoration: none;
   text-decoration-color: #333333;
   font-size: 20px;
 
-  color: #FFFFFF;
-  &:hover{
-    color: #FFFFFF;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
   }
   @include media-breakpoint-down(sm) {
     color: #333333;
-    &:hover{
+    &:hover {
       color: #333333;
     }
   }
-
 }
 
 .width-adjust {
@@ -620,14 +633,14 @@
     font-size: 33px;
     font-family: lato bold;
     line-height: 40px;
-    color: #A8A8A8;
+    color: #a8a8a8;
   }
 }
 
 .banner-text-align {
   position: relative;
-    bottom: 30px;
-    margin-left: 9px
+  bottom: 30px;
+  margin-left: 9px;
 }
 
 .banner-text-md {
@@ -637,11 +650,11 @@
 
 .banner-subtext-padding {
   line-height: 29px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
-.height-100{
+.height-100 {
   height: 114px;
 }
 
@@ -655,7 +668,7 @@
 
 .trending-title {
   font-size: 39px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 46px;
 
   @include media-breakpoint-down(sm) {
@@ -667,7 +680,7 @@
 
 .trending-subtitle {
   font-size: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 30px;
 
   @include media-breakpoint-down(sm) {
@@ -717,15 +730,15 @@
 }
 
 .slick-active > .orange-color {
-  background-color: #CF4338;
+  background-color: #cf4338;
   // // display: in  line-block;
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
   //   // margin: 6px;
-    // background-color: #555;
+  // background-color: #555;
 }
 
-.slick-dots > :not(.slick-active) > .orange-color{
+.slick-dots > :not(.slick-active) > .orange-color {
   background-color: #666;
   width: 10px;
   height: 10px;
@@ -736,7 +749,7 @@
 }
 
 .main-container {
-  height:  67px;
+  height: 67px;
 
   @include media-breakpoint-down(sm) {
     height: 47px;
@@ -756,30 +769,28 @@
 }
 
 .text-orange {
-  color: #CF4338;
+  color: #cf4338;
   font-size: 13px;
 }
 
-.text-black{
-  color: #03232D;
+.text-black {
+  color: #03232d;
   font-size: 10px;
 }
 
 .ellipsis {
   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-box-orient: vertical;
-   -webkit-line-clamp: 6; /* number of lines to show */
-   line-height: 20px;        /* fallback */
-   max-height: 100px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  line-height: 20px; /* fallback */
+  max-height: 100px;
 }
-
-
 
 .read-more {
   button {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     float: right;
     margin-top: 14px;
     height: 30px;
@@ -809,19 +820,18 @@
   }
 }
 
-
 .carousel-arrow {
   width: 40px !important;
   height: 40px !important;
 }
 
-.slick-prev {
-  left: 0 !important;
-}
+// .slick-prev {
+//   left: 0 !important;
+// }
 
-.slick-next {
-  right: 0 !important;
-}
+// .slick-next {
+//   right: 0 !important;
+// }
 
 .size-30 {
   width: 30px;
@@ -855,8 +865,15 @@
 }
 
 .injected-svg:hover {
-  #MEDIA-2,.health, .video-player, #education-icon path, .sports,.insurance, #marketing-icon-2 path, text{
-    fill: #CF4338;
+  #MEDIA-2,
+  .health,
+  .video-player,
+  #education-icon path,
+  .sports,
+  .insurance,
+  #marketing-icon-2 path,
+  text {
+    fill: #cf4338;
   }
 }
 
@@ -881,7 +898,7 @@
 }
 
 .divider {
-  height:   100%;
+  height: 100%;
   align-self: stretch;
   justify-self: center;
   grid-column: 2;
@@ -897,9 +914,9 @@
 }
 
 .gopher-guide {
-  color: #CF4338;
+  color: #cf4338;
 
   .close {
-    color: #CF4338;
+    color: #cf4338;
   }
 }

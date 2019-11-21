@@ -1,25 +1,35 @@
-import React, { Fragment } from 'react'
-import { Row, Col } from 'reactstrap';
+import React, { Fragment } from "react";
+import { Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import { Heading1 } from "./homeStyledComponents.js";
 import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
-import JoshCarousel from './carousel.js';
+import JoshCarousel from "./carousel.js";
 import Svg from "./svg.js";
 
 import * as routes from "../../routeConstants.js";
-import { TECHNOLOGIES_USED } from "../../globalConstants"
+import { TECHNOLOGIES_USED } from "../../globalConstants";
 
-const DomainExpertise = (props) => {
+const DomainExpertise = props => {
   const { domainsData, industriesData } = props;
   const carouselItems = domainsData.map(domain => {
-    return <Link to={`${routes.TECHNOLOGIES_URL}#${domain.name.toUpperCase()}`} className="text-decoration-none">
-      <img className="img-fluid" src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
-    </Link>
-  })
+    return (
+      <Link
+        to={`${routes.TECHNOLOGIES_URL}#${domain.name}`}
+        className="text-decoration-none"
+      >
+        <img
+          className="img-fluid"
+          src={require(`../../assets/images/technologies/${domain.logo}`)}
+          alt={domain.name}
+          key={domain.name}
+        />
+      </Link>
+    );
+  });
 
-  const PreviousArrow = (props) => {
+  const PreviousArrow = props => {
     const { className, onClick } = props;
     return (
       <img
@@ -29,21 +39,14 @@ const DomainExpertise = (props) => {
         alt="Previous"
       />
     );
-  }
+  };
 
-  const NextArrow = (props) => {
+  const NextArrow = props => {
     const { className, onClick } = props;
     return (
-      <img
-        src={nextSvg}
-        className={className}
-        onClick={onClick}
-        alt="Next"
-      />
+      <img src={nextSvg} className={className} onClick={onClick} alt="Next" />
     );
-  }
-
-
+  };
 
   const carouselSettings = {
     dots: false,
@@ -68,7 +71,7 @@ const DomainExpertise = (props) => {
           infinite: true,
           dots: true,
           variableWidth: true,
-          arrows: true,
+          arrows: true
         }
       },
       {
@@ -78,7 +81,7 @@ const DomainExpertise = (props) => {
           slidesToScroll: 6,
           infinite: true,
           dots: true,
-          arrows: true,
+          arrows: true
         }
       },
       {
@@ -86,7 +89,7 @@ const DomainExpertise = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          initialSlide: 1,
+          initialSlide: 1
         }
       },
       {
@@ -98,21 +101,29 @@ const DomainExpertise = (props) => {
         }
       }
     ]
-  }
+  };
 
   return (
     <Fragment>
       <section className="gray-back d-flex justify-content-center">
         <Row className="d-xs-none w-55">
           <Col>
-            <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
+            <p className="text-center disruption-margin">
+              Disruption is not the future, it is the present. In an ever
+              evolving technological landscape, it is imperative for innovation
+              to win over the mundane, and that's exactly what we aim to
+              achieve.
             </p>
           </Col>
         </Row>
         <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
           <Col>
-            <p className="text-center disruption-margin">Disruption is not the future, it is the present. In an ever evolving technological landscape, it is imperative for innovation to win over the mundane, and that's exactly what we aim to achieve.
-          </p>
+            <p className="text-center disruption-margin">
+              Disruption is not the future, it is the present. In an ever
+              evolving technological landscape, it is imperative for innovation
+              to win over the mundane, and that's exactly what we aim to
+              achieve.
+            </p>
           </Col>
         </Row>
       </section>
@@ -123,12 +134,26 @@ const DomainExpertise = (props) => {
           <Col sm={8} md={6}>
             <Row>
               {industriesData.map(industry => {
-                return <Col sm={6} md={4} xs={6} className="pb-14" key={industry.name}>
-                  <Link to={`${routes.DOMAIN_EXPERTISE}/${industry.name.toLowerCase()}`} className="text-decoration-none">
-
-                    <Svg src={require(`../../assets/images/home/${industry.bgImg}`)} />
-                  </Link>
-                </Col>
+                return (
+                  <Col
+                    sm={6}
+                    md={4}
+                    xs={6}
+                    className="pb-14"
+                    key={industry.name}
+                  >
+                    <Link
+                      to={`${
+                        routes.DOMAIN_EXPERTISE
+                      }/${industry.name.toLowerCase()}`}
+                      className="text-decoration-none"
+                    >
+                      <Svg
+                        src={require(`../../assets/images/home/${industry.bgImg}`)}
+                      />
+                    </Link>
+                  </Col>
+                );
               })}
             </Row>
           </Col>
@@ -137,14 +162,14 @@ const DomainExpertise = (props) => {
       </section>
       <Row className="justify-content-around m-auto">
         {/* <Col md={2} /> */}
-        <Col md={8} xs={12} sm={12} >
+        <Col md={8} xs={12} sm={12}>
           <JoshCarousel items={carouselItems} settings={carouselSettings} />
         </Col>
         {/* <Col md={2} /> */}
       </Row>
     </Fragment>
-  )
-}
+  );
+};
 
 DomainExpertise.defaultProps = {
   domainsData: [
@@ -192,44 +217,42 @@ DomainExpertise.defaultProps = {
 
   industriesData: [
     {
-      id: '1',
-      name: 'HEALTH',
-      logo: 'health.svg',
-      bgImg: 'healthBg.svg'
+      id: "1",
+      name: "HEALTH",
+      logo: "health.svg",
+      bgImg: "healthBg.svg"
     },
     {
-      id: '2',
-      name: 'MEDIA',
-      logo: 'media.svg',
-      bgImg: 'mediaBg.svg'
+      id: "2",
+      name: "MEDIA",
+      logo: "media.svg",
+      bgImg: "mediaBg.svg"
     },
     {
-      id: '3',
-      name: 'EDUCATION',
-      logo: 'Education.png',
-      bgImg: 'educationBg.svg'
+      id: "3",
+      name: "EDUCATION",
+      logo: "Education.png",
+      bgImg: "educationBg.svg"
     },
     {
-      id: '4',
-      name: 'SPORTS',
-      logo: 'sport.svg',
-      bgImg: 'sportsBg.svg'
+      id: "4",
+      name: "SPORTS",
+      logo: "sport.svg",
+      bgImg: "sportsBg.svg"
     },
     {
-      id: '5',
-      name: 'INSURANCE',
-      logo: 'insurance.svg',
-      bgImg: 'insuranceBg.svg'
+      id: "5",
+      name: "INSURANCE",
+      logo: "insurance.svg",
+      bgImg: "insuranceBg.svg"
     },
     {
-      id: '6',
-      name: 'MARKETING & SALES',
-      logo: 'Sales.png',
+      id: "6",
+      name: "MARKETING & SALES",
+      logo: "Sales.png",
       bgImg: "salesBg.svg"
-    },
+    }
   ]
-}
-
-
+};
 
 export default DomainExpertise;

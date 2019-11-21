@@ -1,16 +1,15 @@
-.section-technologies{
-
-  &.section-banner{
+.section-technologies {
+  &.section-banner {
     position: relative;
-    background-color: $chambray;
+    background-color: $gray-20;
     min-height: calc(100vh - 76px);
     padding: rem(100px 0 75px);
 
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       min-height: calc(100vh - 54px);
     }
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       min-height: unset;
       padding: rem(70px 0);
     }
@@ -27,23 +26,23 @@
       letter-spacing: 1px;
       margin: 0 0 rem(36px);
 
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         font-size: rem(32px);
         margin: 0 0 rem(24px);
       }
     }
 
-    .para{
+    .para {
       font-weight: 300;
       color: $white;
       letter-spacing: 1px;
       margin: 0 0 rem(30px);
 
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         text-align: justify;
       }
 
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         font-size: rem(14px);
         line-height: rem(19px);
         margin: 0;
@@ -55,7 +54,7 @@
 .technologies-banner-svg {
   height: rem(350px);
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     width: 100%;
     height: auto;
   }
@@ -64,18 +63,17 @@
     cursor: pointer;
 
     &:hover {
-      
       .cls-1 {
         fill: #ffe200;
       }
     }
   }
 
-  .cls-1{
+  .cls-1 {
     fill: $white;
   }
 
   .cls-2 {
-    fill: $chambray;
-    }
+    fill: $gray-20;
+  }
 }

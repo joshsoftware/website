@@ -11,7 +11,7 @@ body {
 @include media-breakpoint-down(md) {
   .offcanvas-collapse {
     position: fixed;
-    top: rem(28px); /* Height of navbar */
+    top: rem(54px); /* Height of navbar */
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -20,9 +20,9 @@ body {
     visibility: hidden;
     background-color: $white;
     transition-timing-function: ease-in-out;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transition-property: left, visibility;
-    @include boxShadow(0 6px 8px 0 rgba(0,0,0,.3));
+    @include boxShadow(0 6px 8px 0 rgba(0, 0, 0, 0.3));
 
     &.open {
       left: rem(80px);
@@ -33,9 +33,7 @@ body {
 }
 
 @include media-breakpoint-down(sm) {
-
   .offcanvas-collapse {
-
     &.open {
       left: 18%;
       width: 82%;
