@@ -9,11 +9,14 @@ import JoshCarousel from './carousel.js';
 import Svg from "./svg.js";
 
 import * as routes from "../../routeConstants.js";
+import { TECHNOLOGIES_USED } from "../../globalConstants"
 
 const DomainExpertise = (props) => {
   const { domainsData, industriesData } = props;
   const carouselItems = domainsData.map(domain => {
-    return <img className="img-fluid" src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
+    return <Link to={`${routes.TECHNOLOGIES_URL}#${domain.name.toUpperCase()}`} className="text-decoration-none">
+      <img className="img-fluid" src={require(`../../assets/images/technologies/${domain.logo}`)} alt={domain.name} key={domain.name} />
+    </Link>
   })
 
   const PreviousArrow = (props) => {
@@ -147,42 +150,42 @@ DomainExpertise.defaultProps = {
   domainsData: [
     {
       id: 4,
-      name: "ruby",
+      name: TECHNOLOGIES_USED.ruby,
       logo: "ruby.png"
     },
     {
       id: 3,
-      name: "go",
+      name: TECHNOLOGIES_USED.go,
       logo: "go.png"
     },
     {
       id: 5,
-      name: "React",
+      name: TECHNOLOGIES_USED.react,
       logo: "react.png"
     },
     {
       id: 1,
-      name: "ios",
+      name: TECHNOLOGIES_USED.ios,
       logo: "ios.png"
     },
     {
       id: 2,
-      name: "android",
+      name: TECHNOLOGIES_USED.android,
       logo: "android.png"
     },
     {
       id: 6,
-      name: "angular",
+      name: TECHNOLOGIES_USED.angular,
       logo: "angular.png"
     },
     {
       id: 7,
-      name: "java",
+      name: TECHNOLOGIES_USED.java,
       logo: "java.png"
     },
     {
       id: 7,
-      name: "Python",
+      name: TECHNOLOGIES_USED.python,
       logo: "python.png"
     }
   ],
