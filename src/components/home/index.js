@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import BurgerMenu from 'react-burger-menu';
 
-import HomePage from './homePage.js';
+import HomePageCarousal from './homePageCarousal.js';
 import { Clients } from './clients.js';
 import Testimonials from './testimonials.js';
 import Company from "./company.js";
@@ -27,7 +27,7 @@ const Home = () => {
         <Trending setOpenTrending={toggleOpenTrending} />
       </Menu>
       <main id="page-wrap" style={openTrending ? { filter: `blur(120px)` } : {}}>
-        <HomePage setOpenTrending={toggleOpenTrending} />
+        <HomePageCarousal />
         <DomainExpertise />
         <WhatWeDo />
         <Innovations />
