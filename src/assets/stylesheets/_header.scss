@@ -1,32 +1,24 @@
 .josh-header {
-  // height: rem(76px);
-  background-color: #FFF;
+  height: rem(76px);
+  background-color: $white;
   @include flexbox();
   @include align-items(center);
-  box-shadow: 0px 0px 69px -23px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 69px -23px rgba(0, 0, 0, 0.75);
 
   @include media-breakpoint-down(md) {
     height: rem(54px);
   }
 
   .navbar-brand {
-
     > img {
-      // width: rem(216px);
+      width: rem(210px);
       height: auto;
 
       @include media-breakpoint-down(md) {
-        // width: rem(120px);
+        width: rem(120px);
       }
     }
   }
-}
-
-.header-new {
-  padding-left: 0px;
-  // margin-left: -5px;
-  // margin-top: -1px;
-  // margin-top: -12px;
 }
 
 .josh-navbar {
@@ -43,14 +35,13 @@
   }
 
   .navbar-nav {
-
     .nav-link {
-      color: #666666;
+      color: $gray-40;
       font-size: rem(14px);
       font-weight: 300;
       text-transform: uppercase;
       padding: rem(5px 15px);
-      // font-family: Barlow, regular;
+
       @include media-breakpoint-down(md) {
         font-size: rem(18px);
         color: $gray-20;
@@ -58,22 +49,15 @@
       }
 
       &.active {
-        color: #333;
+        color: $gray-20;
         font-weight: 700;
-        // border-bottom: 4px solid #CF4338;
       }
 
-      @include media-breakpoint-down(sm) {
-        &.active {
-          color: #333333;
-          font-weight: 700;
-        }
+      &:hover,
+      &:focus {
+        color: $gray-20;
+        outline: 0;
       }
-
-      // &:hover, &:focus {
-      //   color: $gray-20;
-      //   outline: 0;
-      // }
     }
 
     .nav-offcanvas-link {
@@ -86,8 +70,7 @@
   }
 
   .dropdown-toggle {
-
-    &::after{
+    &::after {
       margin-left: rem(8px);
 
       @include media-breakpoint-down(md) {
@@ -102,7 +85,7 @@
     border: 0 none;
     margin: rem(9px) 0 0;
     padding: rem(5px) 0;
-    @include boxShadow(0 4px 8px 0 rgba(0,0,0,.07));
+    @include boxShadow(0 4px 8px 0 rgba(0, 0, 0, 0.07));
 
     @include media-breakpoint-down(md) {
       display: block;
@@ -111,10 +94,10 @@
       padding: rem(0 20px);
       @include boxShadow(none);
     }
-  } 
+  }
 
   .dropdown-item {
-    color: $gray-60;
+    color: $gray-40;
     font-size: rem(14px);
     font-weight: 300;
     text-transform: uppercase;
@@ -141,7 +124,4 @@
       }
     }
   }
-}
-.mb-10px{
-  margin-bottom: -10px;
 }
