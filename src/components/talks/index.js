@@ -8,7 +8,7 @@ const Talks = (props) => {
   return (
     <div className='section-content'>
       <br/>
-      <Row className="col-lg-12 col-sm-12">
+      <Row className="col-lg-12 col-sm-12 padding-row">
         {
           data.map((video) => {
             const url = video.link ? video.link : `https://www.youtube.com/embed/${video.videoId}`;

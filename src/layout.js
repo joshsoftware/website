@@ -1,6 +1,7 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useEffect} from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import * as routes from './routeConstants';
+import ReactGA from 'react-ga';
 import AboutUs from './components/about_us';
 import OurTeam from './components/team';
 import Home from './components/home';
@@ -14,7 +15,10 @@ import Innovation from './components/innovations';
 import News from './components/news/index.js';
 import Talks from './components/talks/index.js';
 
-const Layout = () => {
+const Layout = ({ location }) => {
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  },[location])
   return (
     <Switch>
       <Route exact path="/" component={Home} />
@@ -33,4 +37,4 @@ const Layout = () => {
   );
 }
 
-export default Layout;
+export default withRouter(Layout);
