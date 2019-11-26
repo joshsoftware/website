@@ -20,7 +20,7 @@ html {
   letter-spacing: rem(0.638px);
   text-transform: uppercase;
   padding: rem(10px 10px 9px);
-  border-radius: rem(6px); 
+  border-radius: rem(6px);
 }
 
 button:focus {
@@ -70,7 +70,7 @@ button:focus {
 
     .btn{
       margin: 0 rem(20px) 0 0;
-    
+
       @include media-breakpoint-down(sm){
         margin: 0 0 rem(20px);
       }
@@ -103,7 +103,7 @@ button:focus {
   border-radius: 0;
   background-color: transparent;
   padding: rem(80px 16px);
-  
+
   @include media-breakpoint-down(sm){
     padding: rem(40px 16px);
   }
@@ -290,7 +290,7 @@ button:focus {
     line-height: rem(17px);
     color: #00B1FF;
   }
-  
+
   iframe{
     width: auto;
     height: rem(310px);
@@ -299,11 +299,11 @@ button:focus {
     @include media-breakpoint-down(md) {
       height: rem(290px);
      }
-     
+
     @include media-breakpoint-down(sm) {
      height: rem(194px);
     }
-    
+
   }
 }
 
@@ -311,5 +311,10 @@ img {
   font-size: rem(12px);
   font-weight: 300;
   letter-spacing: 0.5px;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 /* shared end */

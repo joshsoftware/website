@@ -1,58 +1,52 @@
 import React from 'react';
 import Media from "react-media";
 import { Row, Col } from 'reactstrap';
-import {
-  Card, CardText, CardBody, CardSubtitle, CardHeader,
-} from 'reactstrap';
 
 const Talks = (props) => {
   const {data} = props;
 
   return (
     <div className='section-content'>
-    <Row>
-      {
-        data.map((video) => {
-          const url = video.link ? video.link : `https://www.youtube.com/embed/${video.videoId}`;
-          return (
-            (
-                <Media query="(max-width: 500px)" key={video.videoId}>
-                  {matches =>
-                    matches
-                    ? (
-                      <Col sm="12" className="pt-2 pb-2">
-                        <Card>
-                          <CardHeader tag="h6"><b>{video.topic}</b></CardHeader>
-                          <CardBody>
-                            <CardText>
-                              <iframe width="360" height="260" src={url} title={video.topic}/>
-                            </CardText>
-                            <CardSubtitle>By {video.speaker} - At {video.event}</CardSubtitle>
-                            <CardSubtitle>{video.date}</CardSubtitle>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    )
-                    : (
-                      <Col lg="4" className="pt-3 pb-3">
-                        <Card>
-                          <CardHeader tag="h6"><b>{video.topic}</b></CardHeader>
-                          <CardBody>
-                            <CardText>
-                              <iframe width="360" height="260" src={url} title={video.topic}/>
-                            </CardText>
-                            <CardSubtitle>By {video.speaker} - At {video.event}</CardSubtitle>
-                            <CardSubtitle>{video.date}</CardSubtitle>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    )
-                  }
-                </Media>
+      <br/>
+      <Row className="col-lg-12 col-sm-12">
+        {
+          data.map((video) => {
+            const url = video.link ? video.link : `https://www.youtube.com/embed/${video.videoId}`;
+            return (
+              (
+                  <Media query="(max-width: 500px)" key={video.videoId}>
+                    {matches =>
+                      matches
+                      ? (
+                        <Col sm="12" className="pt-2 pb-2">
+                          <div className="m-2">
+                            <iframe src={url} width="100%" height="100%" title={video.topic}/>
+                              <div>
+                              <b>{video.topic}</b><br/>
+                              <b>At {video.event}</b><br/>
+                              By {video.speaker} ({video.date})
+                            </div>
+                          </div>
+                        </Col>
+                      )
+                      : (
+                        <Col lg="4">
+                          <div className="pt-2 pb-2">
+                            <iframe src={url} width="100%" height="100%" title={video.topic}/>
+                              <div>
+                              <b>{video.topic}</b><br/>
+                              <b>At {video.event}</b><br/>
+                              By {video.speaker} ({video.date})
+                            </div>
+                          </div>
+                        </Col>
+                      )
+                    }
+                  </Media>
+              )
             )
-          )
-        })
-      }
+          })
+        }
       </Row>
     </div>
   )

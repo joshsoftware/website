@@ -76,11 +76,6 @@ Component.defaultProps = {
       url: routes.SUCCESS_STORIES_URL
     },
     {
-      id: 4,
-      title: "In News",
-      url: routes.NEWS
-    },
-    {
       id: 9,
       title: "Talks",
       url: routes.TALKS
