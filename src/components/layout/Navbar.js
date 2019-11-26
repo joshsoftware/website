@@ -66,11 +66,6 @@ Component.defaultProps = {
       url: `${routes.DOMAIN_EXPERTISE}`
     },
     {
-      id: 3,
-      title: "Our Innovation",
-      url: routes.INNOVATIONS
-    },
-    {
       id: 8,
       title: "Technologies",
       url: routes.TECHNOLOGIES_URL
@@ -82,9 +77,13 @@ Component.defaultProps = {
     },
     {
       id: 4,
-      title: "Career",
-      url: "http://careers.joshsoftware.com/",
-      otherDomain: true
+      title: "In News",
+      url: routes.NEWS
+    },
+    {
+      id: 9,
+      title: "Talks",
+      url: routes.TALKS
     },
     {
       id: 5,
@@ -107,7 +106,18 @@ Component.defaultProps = {
           url: routes.OUR_TEAM_URL
         },
         {
+          id: 3,
+          title: "Our Innovation",
+          url: routes.INNOVATIONS
+        },
+        {
           id: 4,
+          title: "Career",
+          url: "http://careers.joshsoftware.com/",
+          otherDomain: true
+        },
+        {
+          id: 6,
           title: "Contact Us",
           url: routes.CONTACT_US_URL
         },
