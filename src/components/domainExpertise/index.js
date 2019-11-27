@@ -11,7 +11,8 @@ const DomainExpertise = (props) => {
   return (
     <>
       <Route path={`${routes.DOMAIN_EXPERTISE}/:domain`} component={DomainExpertiseLyaout} />
-      {props.location.pathname === routes.DOMAIN_EXPERTISE && <Redirect to={`${routes.DOMAIN_EXPERTISE}/health`} from={routes.DOMAIN_EXPERTISE} />}
+      {props.location.pathname === routes.DOMAIN_EXPERTISE
+        && <Redirect to={`${routes.DOMAIN_EXPERTISE}/health`} from={routes.DOMAIN_EXPERTISE} />}
     </>
   )
 }

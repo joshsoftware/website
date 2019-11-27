@@ -24,7 +24,7 @@ const TechnologiesList = props => {
 TechnologiesList.defaultProps = {
   technologies: [
     {
-      name: TECHNOLOGIES_USED.rubyOnRails,
+      name: TECHNOLOGIES_USED.ruby,
       logo: "ruby.png",
       description:
         "From last 10 years, we have delivered solutions using RoR open source technology, which helps in building web applications and back-end api applications (for mobile apps) in lightening fast time period, resulting in highly maintainable &amp; efficient systems in cost effective manner."

@@ -16,7 +16,7 @@ const DomainExpertise = props => {
   const carouselItems = domainsData.map(domain => {
     return (
       <Link
-        to={`${routes.TECHNOLOGIES_URL}#${domain.name}`}
+        to={`${routes.TECHNOLOGIES_URL}/${domain.name.toLowerCase()}`}
         className="text-decoration-none"
       >
         <img
@@ -25,6 +25,7 @@ const DomainExpertise = props => {
           alt={domain.name}
           key={domain.name}
         />
+        <span style={{color: 'black', fontSize: 'small'}}> {domain.name} </span>
       </Link>
     );
   });
@@ -53,15 +54,11 @@ const DomainExpertise = props => {
     infinite: true,
     speed: 500,
     arrows: true,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    centerPadding: "15px",
-    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     initialSlide: 0,
-    dotsClass: "slick-dots slick-thumb bottom-50",
     prevArrow: <PreviousArrow />,
     nextArrow: <NextArrow />,
-    customPaging: () => <div className="rounded-circle orange-color" />,
     responsive: [
       {
         breakpoint: 1024,
@@ -105,29 +102,14 @@ const DomainExpertise = props => {
 
   return (
     <Fragment>
-      <section className="gray-back d-flex justify-content-center">
-        <Row className="d-xs-none w-55">
-          <Col>
-            <p className="text-center disruption-margin">
-              Disruption is not the future, it is the present. In an ever
-              evolving technological landscape, it is imperative for innovation
-              to win over the mundane, and that's exactly what we aim to
-              achieve.
-            </p>
-          </Col>
-        </Row>
-        <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
-          <Col>
-            <p className="text-center disruption-margin">
-              Disruption is not the future, it is the present. In an ever
-              evolving technological landscape, it is imperative for innovation
-              to win over the mundane, and that's exactly what we aim to
-              achieve.
-            </p>
+      <section className="gray-back justify-content-center">
+        <Row className="justify-content-around m-auto tech-list">
+          <Col md={8} xs={12} sm={12}>
+            <JoshCarousel items={carouselItems} settings={carouselSettings} />
           </Col>
         </Row>
       </section>
-      <section id="clientsSlide" className="section-home pb-5">
+      <section id="clientsSlide" className="section-home">
         <Heading1>Domain Expertise</Heading1>
         <Row className="justify-content-around m-auto">
           <Col sm={2} md={3} />
@@ -160,13 +142,28 @@ const DomainExpertise = props => {
           <Col sm={2} md={3} />
         </Row>
       </section>
-      <Row className="justify-content-around m-auto">
-        {/* <Col md={2} /> */}
-        <Col md={8} xs={12} sm={12}>
-          <JoshCarousel items={carouselItems} settings={carouselSettings} />
-        </Col>
-        {/* <Col md={2} /> */}
-      </Row>
+      <section className="gray-back d-flex justify-content-center">
+        <Row className="d-xs-none w-55">
+          <Col>
+            <p className="text-center disruption-margin">
+              Disruption is not the future, it is the present. In an ever
+              evolving technological landscape, it is imperative for innovation
+              to win over the mundane, and that's exactly what we aim to
+              achieve.
+            </p>
+          </Col>
+        </Row>
+        <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
+          <Col>
+            <p className="text-center disruption-margin">
+              Disruption is not the future, it is the present. In an ever
+              evolving technological landscape, it is imperative for innovation
+              to win over the mundane, and that's exactly what we aim to
+              achieve.
+            </p>
+          </Col>
+        </Row>
+      </section>
     </Fragment>
   );
 };
@@ -175,13 +172,13 @@ DomainExpertise.defaultProps = {
   domainsData: [
     {
       id: 4,
-      name: TECHNOLOGIES_USED.ruby,
+      name: TECHNOLOGIES_USED.ror,
       logo: "ruby.png"
     },
     {
       id: 3,
       name: TECHNOLOGIES_USED.go,
-      logo: "go.png"
+      logo: "gopher.png"
     },
     {
       id: 5,
@@ -191,28 +188,18 @@ DomainExpertise.defaultProps = {
     {
       id: 1,
       name: TECHNOLOGIES_USED.ios,
-      logo: "ios.png"
+      logo: "apple.png"
     },
     {
       id: 2,
       name: TECHNOLOGIES_USED.android,
       logo: "android.png"
     },
-    {
-      id: 6,
-      name: TECHNOLOGIES_USED.angular,
-      logo: "angular.png"
-    },
-    {
-      id: 7,
-      name: TECHNOLOGIES_USED.java,
-      logo: "java.png"
-    },
-    {
-      id: 7,
-      name: TECHNOLOGIES_USED.python,
-      logo: "python.png"
-    }
+    // {
+    //   id: 6,
+    //   name: 'Other',
+    //   logo: "other.png"
+    // },
   ],
 
   industriesData: [

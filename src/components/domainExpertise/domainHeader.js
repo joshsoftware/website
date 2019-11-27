@@ -6,15 +6,15 @@ import JoshCarousel from '../home/carousel';
 import * as routes from "../../routeConstants.js";
 
 const DomainHeader = (props) => {
-  const { domains, selectedDomain } = props;
+  const { domains, selectedDomain, imagesPath, baseRoute, changeImageOnSelect, imageSize } = props;
 
   const items = domains.map(domain => {
-    const domainImg = domain.title.toLowerCase() === selectedDomain ? `${domain.logo}_Red.${domain.fileType}` : `${domain.logo}.${domain.fileType}`
+    const domainImg = domain.title.toLowerCase() === selectedDomain && changeImageOnSelect ? `${domain.logo}_Red.${domain.fileType}` : `${domain.logo}.${domain.fileType}`
     const textClass = domain.title.toLowerCase() === selectedDomain ? "text-orange" : "text-black"
-    return <Link to={`${routes.DOMAIN_EXPERTISE}/${domain.title.toLowerCase()}`}>
+    return <Link to={`${baseRoute}/${domain.title.toLowerCase()}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
         <div className="text-center">
-          <img src={require(`../../assets/images/domainExpertise/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" />
+          <img src={require(`../../assets/images/${imagesPath}/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" height={imageSize} width={imageSize}/>
         </div>
         <div className={textClass}>{domain.title}</div>
       </div>
@@ -66,6 +66,10 @@ const DomainHeader = (props) => {
 }
 
 DomainHeader.defaultProps = {
+  imagesPath: 'domainExpertise',
+  baseRoute: routes.DOMAIN_EXPERTISE,
+  imageSize: null,
+  changeImageOnSelect: true,
   domains: [
     {
       title: "Health",

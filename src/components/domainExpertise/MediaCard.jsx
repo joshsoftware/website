@@ -10,7 +10,7 @@ const MediaCard = ({
       <Col>
         <Media>
           <Media left>
-            <Media className="img-fluid" object src={ logo } alt={ altText } />
+            <Media className="img-fluid media-svg-logo" object src={ logo } alt={ altText } />
           </Media>
 
           <Media body>

@@ -68,7 +68,7 @@ Component.defaultProps = {
     {
       id: 1,
       title: "Industries",
-      url: `${routes.DOMAIN_EXPERTISE}`
+      url: routes.DOMAIN_EXPERTISE
     },
     {
       id: 6,
