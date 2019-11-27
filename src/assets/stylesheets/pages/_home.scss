@@ -595,6 +595,10 @@ a {
   text-decoration: none;
   text-decoration-color: #333333;
   font-size: 20px;
+  color: #ffffff;
+    &:hover {
+      color: #ffffff;
+    }
   @include media-breakpoint-down(sm) {
     color: #333333;
     &:hover {
