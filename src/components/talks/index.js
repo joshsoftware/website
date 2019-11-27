@@ -5,6 +5,17 @@ import { Row, Col } from 'reactstrap';
 const Talks = (props) => {
   const {data} = props;
 
+  const VideoFrame = ({url, video}) => (
+    <div>
+      <iframe src={url} width="100%" height="100%" title={video.topic}/>
+        <div>
+        <b>{video.topic}</b><br/>
+        <b>At {video.event}</b><br/>
+        By {video.speaker} ({video.date})
+      </div>
+    </div>
+  )
+
   return (
     <div className='section-content'>
       <br/>
@@ -19,26 +30,12 @@ const Talks = (props) => {
                       matches
                       ? (
                         <Col sm="12" className="pt-2 pb-2">
-                          <div className="m-2">
-                            <iframe src={url} width="100%" height="100%" title={video.topic}/>
-                              <div>
-                              <b>{video.topic}</b><br/>
-                              <b>At {video.event}</b><br/>
-                              By {video.speaker} ({video.date})
-                            </div>
-                          </div>
+                          <VideoFrame url={url} video={video} />
                         </Col>
                       )
                       : (
-                        <Col lg="4">
-                          <div className="pt-2 pb-2">
-                            <iframe src={url} width="100%" height="100%" title={video.topic}/>
-                              <div>
-                              <b>{video.topic}</b><br/>
-                              <b>At {video.event}</b><br/>
-                              By {video.speaker} ({video.date})
-                            </div>
-                          </div>
+                        <Col lg="4" className="pt-2 pb-2">
+                          <VideoFrame url={url} video={video} />
                         </Col>
                       )
                     }

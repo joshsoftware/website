@@ -29,6 +29,8 @@ const HomePageCarousal = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     adaptiveHeight: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -48,11 +50,10 @@ const HomePageCarousal = (props) => {
     <Media query="(max-width: 500px)" key={cItem.name}>
       {matches =>
         matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
-          className="img-fluid mt-2" alt="Trending" />
+        className="img-fluid mt-5" alt={cItem.title} />
           : <Row className="justify-content-around m-auto w-75 d-flex">
             <Col>
-              <img src={require(`../../assets/images/home/${cItem.image}.png`)}
-                className=" img-fluid mt-5" alt="Treding" />
+              <img src={require(`../../assets/images/home/${cItem.image}.png`)} alt={cItem.title} />
             </Col>
           </Row>
       }
