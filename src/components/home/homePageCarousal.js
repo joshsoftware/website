@@ -52,9 +52,7 @@ const HomePageCarousal = (props) => {
         matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
         className="img-fluid mt-5" alt={cItem.title} />
           : <Row className="justify-content-around m-auto w-75 d-flex">
-            <Col>
               <img src={require(`../../assets/images/home/${cItem.image}.png`)} alt={cItem.title} />
-            </Col>
           </Row>
       }
     </Media>

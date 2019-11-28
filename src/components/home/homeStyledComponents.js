@@ -46,7 +46,7 @@ export const ClientNameBox = styled.div`
   margin-left: 61px;
   margin-top: -15%;
   position: relative;
-  z-index: 9;  
+  z-index: 9;
 `
 
 export const ClientDesignationBox = styled.div`
@@ -120,7 +120,7 @@ export const BannerText = styled.span`
 `
 
 export const BannerSubText = styled.div`
-  min-width: 230px; 
+  min-width: 230px;
   min-height: 55px;
   text-align: left;
   font-size: 24px;
@@ -136,7 +136,7 @@ export const ParallaxImg = styled.div`
   background-image: ${(props) => `url(${props.logo})`} ;
   width: 100%;
   height: ${(props) => props.height};
-  background-repeat: no-repeat;
+  background-repeat: round;
 `
 
 export const CurvedCard = styled(Card)`
@@ -207,6 +207,6 @@ export const CompanyBackground = styled.div`
   background-image: ${(props) => `url(${props.image})`} ;
   width: auto;
   height: 722px;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: auto 100%;
 `

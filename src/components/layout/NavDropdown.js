@@ -5,7 +5,7 @@ import { useOnClickedOutside } from "../../hooks/useOnClickedOutside.js";
 
 const NavDropdown = props => {
   const [isOpen, toggle] = useState(false);
-  const { items, closeSidebar } = props;
+  const { title, items, closeSidebar } = props;
 
   const ref = useRef();
   useOnClickedOutside(ref, () => toggle(false));
@@ -26,7 +26,7 @@ const NavDropdown = props => {
         onClick={() => toggle(!isOpen)}
         aria-expanded={isOpen}
       >
-        Company
+        {title}
       </a>
       <div
         className={`dropdown-menu ${isOpen ? "show" : ""}`}

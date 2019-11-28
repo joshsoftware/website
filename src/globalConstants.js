@@ -10,13 +10,14 @@ export const TECHNOLOGIES_USED = {
     ml: "MachineLearning",
     cloud: "Cloud",
     rubyOnRails: "RubyOnRails",
-    ruby: "RubyOnRails",
+    ruby: "Ruby",
+    rails: 'Rails',
     react: "React",
     angular: "Angular",
     android: "Android",
     ios: "iOS",
     openSource: "OpenSource",
     java: "Java",
-    python: "Python"
-
+    python: "Python",
+    ror: "Ruby On Rails"
 }

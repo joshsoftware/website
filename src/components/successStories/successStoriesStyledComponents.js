@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PinkDiv = styled.div`
-  width: 1366px;
+  width: 100%;
   height: 202px;
   background: #FFB5B5 0% 0% no-repeat padding-box;
 `
@@ -25,4 +25,3 @@ export const H4Black = styled.h4`
 export const StoryText = styled.div`
   font-size: ${props => props.fontSize};
 `
-

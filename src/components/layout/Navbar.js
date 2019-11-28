@@ -61,14 +61,14 @@ const Component = props => {
 Component.defaultProps = {
   menues: [
     {
-      id: 1,
-      title: "Domain Expertise",
-      url: `${routes.DOMAIN_EXPERTISE}`
-    },
-    {
       id: 8,
       title: "Technologies",
       url: routes.TECHNOLOGIES_URL
+    },
+    {
+      id: 1,
+      title: "Industries",
+      url: routes.DOMAIN_EXPERTISE
     },
     {
       id: 6,
@@ -76,15 +76,22 @@ Component.defaultProps = {
       url: routes.SUCCESS_STORIES_URL
     },
     {
-      id: 9,
-      title: "Talks",
-      url: routes.TALKS
-    },
-    {
       id: 5,
-      title: "Blog",
+      title: "Blogs",
       url: "https://blog.joshsoftware.com/",
       otherDomain: true
+    },
+    {
+      id: 9,
+      title: "In News",
+      items: [
+        {
+          id: 1,
+          title: "Talks",
+          url: routes.TALKS,
+        },
+      ],
+      type: "dropdown"
     },
     {
       id: 7,
