@@ -7,12 +7,15 @@ const Talks = (props) => {
 
   const VideoFrame = ({url, video}) => (
     <div>
-      <iframe src={url} width="100%" height="100%" title={video.topic}/>
+      <iframe src={url} width="100%" height="300px" title={video.topic} frameBorder="0" allowFullScreen/>
         <div>
-        <b>{video.topic}</b><br/>
-        <b>At {video.event}</b><br/>
-        By {video.speaker} ({video.date})
-      </div>
+          <a href={`https://www.youtube.com/watch?v=${video.videoId}`} target='_blank' rel="noopener noreferrer" style={{color:'black'}}>
+            {video.topic}
+          </a>
+          <br/>
+          <b>At {video.event}</b><br/>
+          By {video.speaker} ({video.date})
+        </div>
     </div>
   )
 
@@ -34,7 +37,7 @@ const Talks = (props) => {
                         </Col>
                       )
                       : (
-                        <Col lg="4" className="pt-2 pb-2">
+                        <Col lg="4" md='4' className="pt-2 pb-2">
                           <VideoFrame url={url} video={video} />
                         </Col>
                       )
@@ -52,7 +55,7 @@ const Talks = (props) => {
 Talks.defaultProps = {
   data: [
     {
-      event: "Gophercon Uk 2019",
+      event: "Gophercon UK 2019",
       date: "2 October 2019",
       topic: "Impossible Go",
       speaker: "Gautam Rege",
@@ -61,14 +64,14 @@ Talks.defaultProps = {
     {
       event: "RCI 2019",
       date: "19 January 2019",
-      topic: "keynote",
+      topic: "Keynote",
       speaker: "Gautam Rege",
       videoId: "NKdEx5ZPsFU"
     },
     {
       event: "RubyConf Philippines 2018",
       date: "2 April 2018",
-      topic: "Standup Comedy and Ruby Programmin",
+      topic: "Standup Comedy and Ruby Programming",
       speaker: "Gautam Rege",
       videoId: "N98cnuW0bm0"
     },
