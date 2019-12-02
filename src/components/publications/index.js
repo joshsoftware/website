@@ -36,10 +36,10 @@ const Publications = ({books}) => {
             <Card style={{border: '2px solid lightgrey'}}>
               <CardBody>
                 <Row className="justify-content-md-center">
-                  <Col md="4" lg="4" sm="6">
+                  <Col md="3" lg="3" sm="6">
                     <img src={book.imageUrl} alt={book.title} className="img-fluid img-desktop" />
                   </Col>
-                  <Col md="5" lg="5" sm="6">
+                  <Col md="6" lg="6" sm="6">
                     <a href={book.link} target='_blank' rel="noopener noreferrer" style={{color: 'black'}}>
                       <h3 color="black">{book.title}</h3>
                     </a>
@@ -121,21 +121,21 @@ Publications.defaultProps = {
     {
       title: "Ruby and MongoDB Web Development Beginner's Guide",
       link: "https://www.packtpub.com/in/web-development/ruby-and-mongodb-web-development-beginners-guide",
-      description: "MongoDB is a high-performance, open source, schema-free document-oriented database. Ruby is an object- oriented scripting language. Ruby and MongoDB are an ideal partnership for building scalable web applications. \n\n\n\n\n Ruby and MongoDB Web Development Beginner's Guide is a fast-paced, hands-on guide to get started with web application development using Ruby and MongoDB. The book follows a practical approach, using clear and step-by-step instructions and examples in Ruby to demonstrate application development using MongoDB.",
+      description: "MongoDB is a high-performance, open source, schema-free document-oriented database. Ruby is an object- oriented scripting language. Ruby and MongoDB are an ideal partnership for building scalable web Ruby and MongoDB Web Development Beginner's Guide is a fast-paced, hands-on guide to get started with web application development using Ruby and MongoDB.applications.",
       imageUrl: `${S3_IMAGS_PATH}/Publications/ruby_mongodb.jpg`,
       price: 'Rs. 299.00'
     },
     {
       title: "Hands-on Microservices with Go and MongoDB",
       link: "https://www.packtpub.com/web-development/hands-on-microservices-with-go-and-mongodb-video",
-      description: "How do you build a service-oriented architecture, using microservices system that should not only be scalable with high performance but also handle frequently changing features? This is a real-world problem and it’s important that you empower yourself with the knowledge, tools, and skills today, so that you can build these systems with confidence! This course dissects the real-world problem into various aspects for understanding the data models, large-scale request processing, communication strategies, securing the system, and even testing. It will help you with all the knowledge needed to build scalable, extensible, and highly performant and future-proof systems that will make you proud of your work! We shall use a real-world example of managing a large number of events from wearable devices to showcase all the aspects of a performant system.",
+      description: "How do you build a service-oriented architecture, using microservices system that should not only be scalable with high performance but also handle frequently changing features? This is a real-world problem and it’s important that you empower yourself with the knowledge, tools, and skills today, so that you can build these systems with confidence!",
       imageUrl: `${S3_IMAGS_PATH}/Publications/go_mongodb.png`,
       price: '$10.00'
     },
     {
       title: "Learning Mongoid",
       link: "https://www.packtpub.com/in/big-data-and-business-intelligence/learning-mongoid",
-      description: "Mongoid helps you to leverage the power of schema-less and efficient document-based design, dynamic queries, and atomic modifier operations. Mongoid eases the work of Ruby developers while they are working on complex frameworks. Starting with why and how you should use Mongoid, this book covers the various components of Mongoid. It then delves deeper into the detail of queries and relations, and you will learn some tips and tricks on improving performance. With this book, you will be able to build robust and large-scale web applications with Mongoid and Rails.",
+      description: "Mongoid helps you to leverage the power of schema-less and efficient document-based design, dynamic queries, and atomic modifier operations. Mongoid eases the work of Ruby developers while they are working on complex frameworks. Starting with why and how you should use Mongoid, this book covers the various components of Mongoid.you will be able to build robust and large-scale web applications with Mongoid and Rails.",
       imageUrl: `${S3_IMAGS_PATH}/Publications/mongodb.jpg`,
       price: 'Rs. 299.00'
     }
