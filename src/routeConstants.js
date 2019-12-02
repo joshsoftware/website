@@ -8,3 +8,4 @@ export const DOMAIN_EXPERTISE = '/domain_expertise';
 export const TESTIMONIALS = '/testimonials';
 export const INNOVATIONS = "/innovations";
 export const TALKS = "/talks";
+export const PUBLICATIONS = "/publications";
