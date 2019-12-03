@@ -13,6 +13,7 @@ import DomainExpertise from './components/domainExpertise';
 import TestimonialsList from './components/testimonials/index.js';
 import Innovation from './components/innovations';
 import Talks from './components/talks/index.js';
+import Publications from './components/publications/index.js';
 
 const Layout = ({ location }) => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const Layout = ({ location }) => {
       <Route exact path={routes.TESTIMONIALS} component={TestimonialsList} />
       <Route exact path={routes.INNOVATIONS} component={Innovation} />
       <Route exact path={routes.TALKS} component={Talks} />
+      <Route path={routes.PUBLICATIONS} component={Publications} />
     </Switch>
   );
 }

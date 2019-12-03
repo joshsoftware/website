@@ -90,6 +90,11 @@ Component.defaultProps = {
           title: "Talks",
           url: routes.TALKS,
         },
+        {
+          id: 1,
+          title: "Publications",
+          url: routes.PUBLICATIONS,
+        },
       ],
       type: "dropdown"
     },
