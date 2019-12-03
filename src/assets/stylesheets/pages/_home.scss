@@ -596,9 +596,9 @@ a {
   text-decoration-color: #333333;
   font-size: 20px;
   color: #ffffff;
-    &:hover {
-      color: #ffffff;
-    }
+  &:hover {
+    color: #ffffff;
+  }
   @include media-breakpoint-down(sm) {
     color: #333333;
     &:hover {
@@ -918,4 +918,14 @@ a {
   .close {
     color: #cf4338;
   }
+}
+
+.tech-list {
+  height: 130px !important;
+  text-align: left;
+  padding: 30px;
+}
+
+.media-svg-logo {
+  padding-right: 20px;
 }
