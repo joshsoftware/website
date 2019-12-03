@@ -596,9 +596,9 @@ a {
   text-decoration-color: #333333;
   font-size: 20px;
   color: #ffffff;
-  &:hover {
-    color: #ffffff;
-  }
+    &:hover {
+      color: #ffffff;
+    }
   @include media-breakpoint-down(sm) {
     color: #333333;
     &:hover {
@@ -928,4 +928,9 @@ a {
 
 .media-svg-logo {
   padding-right: 20px;
+}
+
+.book-share-card {
+  padding: 20px;
+  border: 1px solid black;
 }
