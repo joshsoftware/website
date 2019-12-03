@@ -7,7 +7,7 @@ import nextSVG from "../../assets/images/domainExpertise/next.svg";
 import previousSVG from "../../assets/images/domainExpertise/previous.svg";
 
 const ProjectWork = (props) => {
-  const { domainExpertiseData } = props;
+  const { domainExpertiseData, selectedDomain } = props;
 
   const NextArrow = (props) => {
     const { onClick } = props;
@@ -37,7 +37,7 @@ const ProjectWork = (props) => {
     dotsClass: "slick-dots bottom-100",
   };
 
-  const items = domainExpertiseData.map(project => <ProjectDetails key={project.title} {...project} />)
+  const items = domainExpertiseData.map(project => <ProjectDetails key={project.title} {...project} selectedDomain={selectedDomain}/>)
 
   return (
     <Row className="justify-content-center m-auto w-90 card">

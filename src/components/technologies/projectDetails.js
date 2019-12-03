@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Badge } from "reactstrap";
-
+import { TECHNOLOGIES_USED } from "../../globalConstants";
 import DetailsLogo from "../../assets/images/domainExpertise/details.svg"
 import TechnologyStackLogo from "../../assets/images/domainExpertise/TechnologyStack.svg"
 
@@ -8,7 +8,18 @@ import { Text } from "../home/homeStyledComponents.js";
 import MediaCard from "../domainExpertise/MediaCard.jsx";
 
 const ProjectDetails = (props) => {
-  const { logo, title, techStack, url, description } = props;
+  const { logo, title, techStack, url, description, androidAppUrl, iosAppUrl, selectedDomain } = props;
+
+  const urlForSelectedDomain = () => {
+    if(selectedDomain === TECHNOLOGIES_USED.ios.toLowerCase()) {
+      return iosAppUrl;
+    } else if (selectedDomain === TECHNOLOGIES_USED.android.toLowerCase()) {
+      return androidAppUrl;
+    }
+    return url;
+  }
+
+  const link = urlForSelectedDomain();
   return (
     <Row className="justify-content-around m-auto w-90">
       <Col md={4} className="pb-14">
@@ -17,8 +28,8 @@ const ProjectDetails = (props) => {
             <Text color="#CF4338" fontSize={22} className="text-center">
               {title} {' '}
               {
-                url.length > 0
-                && <a href={url} target='_blank' rel="noopener noreferrer">
+                link.length > 0
+                && <a href={link} target='_blank' rel="noopener noreferrer">
                   <svg id="i-external" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="18" fill="none"
                     stroke="currentcolor" color="#CF4338" fontSize={22}
                     strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">

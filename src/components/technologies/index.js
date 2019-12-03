@@ -39,7 +39,7 @@ const TechnologiesLayout = ({ match }) => {
         changeImageOnSelect={false}
         selectedDomain={selectedDomain}
         imageSize="30px" />
-      <ProjectWork domainExpertiseData={filterDataForSelectDomain()} />
+      <ProjectWork domainExpertiseData={filterDataForSelectDomain()} selectedDomain={selectedDomain} />
     </section>
   )
 }
