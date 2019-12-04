@@ -165,10 +165,14 @@ Testimonials.defaultProps = {
       "clientName": "Satjot",
       "designation": "CEO",
       "projectName": "Predikt it"
+    },
+    {
+      "description": "The search for a development partner can be a daunting task. You are not just looking for the right skill set and experience, you need a team you can trust. My search finished a little over 6 years ago when I found Josh. Since the early days of Brandscope, the Josh team have been with us all the way. They have worked with us, not for us, and have helped transform Brandscope into something we are all proud of. It's great to have had them with us for the journey. We'll be sticking with them for many years to come.",
+      "clientName": "Hec Heenan",
+      "designation": "CTO",
+      "projectName": "Brandscope, Inc., Australia"
     }
   ]
 }
 
 export default Testimonials;
-
-
