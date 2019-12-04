@@ -31,6 +31,14 @@ const TestimonialsList = (props) => {
 TestimonialsList.defaultProps = {
   testimonialList: [
     {
+      "description": <div>
+        <p className="para-text">The search for a development partner can be a daunting task. You are not just looking for the right skill set and experience, you need a team you can trust. My search finished a little over 6 years ago when I found Josh. Since the early days of Brandscope, the Josh team have been with us all the way. They have worked with us, not for us, and have helped transform Brandscope into something we are all proud of.</p>
+        <p className="para-text">It's great to have had them with us for the journey. We'll be sticking with them for many years to come.</p></div>,
+      "clientName": "Hec Heenan",
+      "designation": "CTO",
+      "projectName": "Brandscope, Inc., Australia"
+    },
+    {
       "description": "Josh Team has been able to turnaround our CRM and mobile App by understanding our needs, engaging in continuous dialogue during development phase to align the output and giving a product which is working with wonderful speed and ease for our doctors and patients. Deeper listening, long term view, flexibility and timely output have been some qualities that have made this a mutually beneficial experience!",
       "clientName": "Dr. Pramod Tripathi",
       "designation": "Founder",
