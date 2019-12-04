@@ -9,9 +9,9 @@ const DomainHeader = (props) => {
   const { domains, selectedDomain, imagesPath, baseRoute, changeImageOnSelect, imageSize } = props;
 
   const items = domains.map(domain => {
-    const domainImg = domain.title.toLowerCase() === selectedDomain && changeImageOnSelect ? `${domain.logo}_Red.${domain.fileType}` : `${domain.logo}.${domain.fileType}`
-    const textClass = domain.title.toLowerCase() === selectedDomain ? "text-orange" : "text-black"
-    return <Link to={`${baseRoute}/${domain.title.toLowerCase()}`}>
+    const domainImg = domain.urlParameter === selectedDomain && changeImageOnSelect ? `${domain.logo}_Red.${domain.fileType}` : `${domain.logo}.${domain.fileType}`
+    const textClass = domain.urlParameter === selectedDomain ? "text-orange" : "text-black"
+    return <Link to={`${baseRoute}/${domain.urlParameter}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
         <div className="text-center">
           <img src={require(`../../assets/images/${imagesPath}/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" height={imageSize} width={imageSize}/>
@@ -74,37 +74,44 @@ DomainHeader.defaultProps = {
     {
       title: "Health",
       logo: 'Health',
-      fileType: "png"
+      fileType: "png",
+      urlParameter: 'health',
     },
     {
       title: "Sports",
       logo: "Sports",
-      fileType: "png"
+      fileType: "png",
+      urlParameter: 'sports'
     },
     {
       "title": "Marketing & Sales",
       logo: "sales",
-      fileType: "png"
+      fileType: "png",
+      urlParameter: 'marketing-sales'
     },
     {
       title: "Media",
       logo: "Media",
-      fileType: "png"
+      fileType: "png",
+      urlParameter: 'media'
     },
     {
       title: "Education",
       logo: "education",
-      fileType: "png"
+      fileType: "png",
+      urlParameter: 'education'
     },
     {
       title: "Insurance",
       logo: 'insurance',
-      fileType: "png"
+      fileType: "png",
+      urlParameter: 'insurance'
     },
     {
       title: "Travel",
       logo: 'travel',
-      fileType: "svg"
+      fileType: "svg",
+      urlParameter: 'travel'
     }
 
   ]
