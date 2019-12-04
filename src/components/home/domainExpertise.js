@@ -16,7 +16,7 @@ const DomainExpertise = props => {
   const carouselItems = domainsData.map(domain => {
     return (
       <Link
-        to={`${routes.TECHNOLOGIES_URL}/${domain.name.toLowerCase()}`}
+        to={`${routes.TECHNOLOGIES_URL}/${domain.urlParameter}`}
         className="text-decoration-none"
       >
         <img
@@ -127,7 +127,7 @@ const DomainExpertise = props => {
                     <Link
                       to={`${
                         routes.DOMAIN_EXPERTISE
-                      }/${industry.name.toLowerCase()}`}
+                      }/${industry.urlParameter}`}
                       className="text-decoration-none"
                     >
                       <Svg
@@ -173,27 +173,32 @@ DomainExpertise.defaultProps = {
     {
       id: 4,
       name: TECHNOLOGIES_USED.ror,
-      logo: "ruby.png"
+      logo: "ruby.png",
+      urlParameter: 'ruby-on-rails'
     },
     {
       id: 3,
       name: TECHNOLOGIES_USED.go,
-      logo: "gopher.png"
+      logo: "gopher.png",
+      urlParameter: 'go'
     },
     {
       id: 5,
       name: TECHNOLOGIES_USED.react,
-      logo: "react.png"
+      logo: "react.png",
+      urlParameter: 'react'
     },
     {
       id: 1,
       name: TECHNOLOGIES_USED.ios,
-      logo: "apple.png"
+      logo: "apple.png",
+      urlParameter: 'ios'
     },
     {
       id: 2,
       name: TECHNOLOGIES_USED.android,
-      logo: "android.png"
+      logo: "android.png",
+      urlParameter: 'android'
     },
     // {
     //   id: 6,
@@ -207,37 +212,43 @@ DomainExpertise.defaultProps = {
       id: "1",
       name: "HEALTH",
       logo: "health.svg",
-      bgImg: "healthBg.svg"
+      bgImg: "healthBg.svg",
+      urlParameter: 'health'
     },
     {
       id: "2",
       name: "MEDIA",
       logo: "media.svg",
-      bgImg: "mediaBg.svg"
+      bgImg: "mediaBg.svg",
+      urlParameter: 'media'
     },
     {
       id: "3",
       name: "EDUCATION",
       logo: "Education.png",
-      bgImg: "educationBg.svg"
+      bgImg: "educationBg.svg",
+      urlParameter: 'education'
     },
     {
       id: "4",
       name: "SPORTS",
       logo: "sport.svg",
-      bgImg: "sportsBg.svg"
+      bgImg: "sportsBg.svg",
+      urlParameter: 'sports'
     },
     {
       id: "5",
       name: "INSURANCE",
       logo: "insurance.svg",
-      bgImg: "insuranceBg.svg"
+      bgImg: "insuranceBg.svg",
+      urlParameter: 'insurance'
     },
     {
       id: "6",
       name: "MARKETING & SALES",
       logo: "Sales.png",
-      bgImg: "salesBg.svg"
+      bgImg: "salesBg.svg",
+      urlParameter: 'marketing-sales'
     }
   ]
 };
