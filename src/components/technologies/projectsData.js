@@ -59,7 +59,7 @@ export const ProjectData = [
     url: "http://groupbuzz.co.uk/",
     androidAppUrl: '',
     iosAppUrl: '',
-    logo: "group_buzz.jpg",
+    logo: "group_buzz.png",
     techStack: ["Rails 4.2.0", "Ruby 2.1.1", "MySQL", "DelayedJob", "AWS S3", "GoCardless", "PayPal", 'Rackspace'],
     description: "GroupBuzz is dedicated to creating an optimum end user experience for group owners and members. To achieve this, the owners wanted to build a portal that meets the demands of groups of all shapes and sizes wanting a professional website to manage their members and member payments.  They also worked towards making GroupBuzz a platform open for different groups where they can plan various meet ups, activities, exchange ideas and manage payments and accounts hassle free, efficiently and fast.",
   },
@@ -96,7 +96,7 @@ export const ProjectData = [
     url: "http://altizon.com/altizon-datonis-platform/",
     androidAppUrl: '',
     iosAppUrl: '',
-    logo: "altizon-scaled.png",
+    logo: "altizone.png",
     techStack: ["Rails 4.0.0", "MongoDB", "ElasticSearch", "AWS-EC2"],
     description: "Altizon Datonis platform has the ability for connected devices to stream extremely large amounts of sensor data, securely, in real time. The platform also has the ability to perform real-time analytics on this data and influence decision making. As an example, a supervisor in a manufacturing plant can keep track of the operational efficiency of all the Altizon-connected machines in his plant, in real time and take corrective actions if he is falling behind schedule. Analytics on data gathered directly from his machines would help production planning, execution and maintenance.",
   },
@@ -126,7 +126,7 @@ export const ProjectData = [
     url: "http://erp.phalcomm.com",
     androidAppUrl: '',
     iosAppUrl: '',
-    logo: "phalcomm_logo.png",
+    logo: "phalcom.png",
     techStack: ["Ruby 2.0", "Rails 3.2.11", "MongoDB", "Sidekiq", "Redis", "WebSockets", "Control-S",  'Android'],
     description: "Phalcomm is an E-Commerce Platform which offers online buying of real estate, real time brokerage and generates project specific report. It is used by over 500+ distributor and agents of phalcomm. Software provides real time information of about various bookings in progress across the nation and thus avoid double booking of same property. It also tracks the workflow from booking till allotment of the unit to customer. System is very rich in reports to help ground staff and management as well to take decisions based on the total sale by various distributors, enquiry to sale conversion ratio, demands in the market etc. Reports are also supported by various graphs for better visual understanding and comparison.",
   },
@@ -176,7 +176,7 @@ export const ProjectData = [
     url: "https://play.google.com/store/apps/details?id=com.goplay.android&hl=en_US",
     androidAppUrl: 'https://play.google.com/store/apps/details?id=com.goplay.android&hl=en_US',
     iosAppUrl: 'https://apps.apple.com/id/app/goplay-tontonan-indonesia/id1445402611',
-    logo: "play.png",
+    logo: "goplay.png",
     description: "GoPlay is an on-demand video streaming service, where user can subscribe to the streaming movie and serial content and also download from the application to watch it later. The content is an integral part of the system and is created and updated by the in-house Content Management System. Right from Creating the catalog (Movies and Series) to managing it, like how, where(under which feed) and, up till when(publish duration) it will be accessible to the user, is all taken care of by GoPlay CMS. All the meta-data like title, description, and associated cast, and crews are handled by it.",
     techStack: [
       "Ruby", 'Rails', "ElasticSearch", 'Android', 'iOS'
@@ -286,7 +286,7 @@ export const ProjectData = [
     url: "http://simplysmart.tech/",
     androidAppUrl: 'https://play.google.com/store/apps/details?id=com.simplysmart.app',
     iosAppUrl: 'https://apps.apple.com/in/app/simplysmart-solutions/id1102408572',
-    logo: "simplysmart.png",
+    logo: "Simply Smart.png",
     description: "Gather data from multiple water and electricity meters and send it to the cloud server. Analysis for daily consumption and billing. Graphical comparison usage of water / electricity with other houses of the same type. Send notifications when thresholds are crossed.",
     techStack: [
       "Android", 'iOS', 'Rails', 'ElasticSearch', 'Redis'
@@ -325,17 +325,17 @@ export const ProjectData = [
       'Rails', 'TrailBlazer', 'Android', 'iOS', 'ElasticSearch'
     ],
   },
-  {
-    title: "Bebanx",
-    url: "",
-    androidAppUrl: '',
-    iosAppUrl: '',
-    logo: "bebanx.png",
-    description: "Bebanx is a global platform to connect people to exchange currency to currency and earn money like a bank at the same time. ",
-    techStack: [
-      'Rails', 'Amazon Rekognition', 'Android', 'iOS', 'Chat Server'
-    ],
-  },
+  // {
+  //   title: "Bebanx",
+  //   url: "",
+  //   androidAppUrl: '',
+  //   iosAppUrl: '',
+  //   logo: "bebanx.png",
+  //   description: "Bebanx is a global platform to connect people to exchange currency to currency and earn money like a bank at the same time. ",
+  //   techStack: [
+  //     'Rails', 'Amazon Rekognition', 'Android', 'iOS', 'Chat Server', 'PostGIS'
+  //   ],
+  // },
   // {
   //   title: "Rakuten",
   //   url: "",
@@ -348,7 +348,7 @@ export const ProjectData = [
   //   ],
   // },
   {
-    title: "Transaport",
+    title: "Go-Ride",
     url: "",
     androidAppUrl: '',
     iosAppUrl: '',
