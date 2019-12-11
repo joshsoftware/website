@@ -5,19 +5,19 @@ import Navbar from './navbar.js';
 const Component = (props) => {
   const { news } = props;
 
-  const years = Object.keys(news).map((y) => parseInt(y)).sort().reverse();
+  const years = Object.keys(news).map((y) => parseInt(y)).sort().reverse().map((n) => `${n}`);
   const renderCardItems = () => {
     return years.map((year, index) => (
       <section id={year} key={index}>
-        <div class="container">
-          <div class="row d-flex justify-content-center">
+        <div className="container">
+          <div className="row d-flex justify-content-center">
             <h4 style={{color: '#CF4338', margin: '60px' }}><b>{year}</b></h4>
           </div>
         </div>
         <Row className="justify-content-center">
         {
            news[year].map((n, i) => (
-             <Col sm="4" lg="4" md="4" xs="12" className="d-flex align-items-stretch pb-8">
+             <Col sm="4" lg="4" md="4" xs="12" className="d-flex align-items-stretch pb-8" key={i}>
                <Card body>
                  {
                    n.image_url.startsWith('http')

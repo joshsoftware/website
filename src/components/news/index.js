@@ -30,8 +30,8 @@ const News = (props) => {
   return (
     <div>
       {
-        loading && <div class="container section-content">
-          <div class="row d-flex justify-content-center">
+        loading && <div className="container section-content">
+          <div className="row d-flex justify-content-center">
             <Spinner style={{ width: '3rem', height: '3rem' }} />
           </div>
         </div>
