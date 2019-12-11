@@ -12,6 +12,7 @@ import SuccessStory from './components/successStories';
 import DomainExpertise from './components/domainExpertise';
 import TestimonialsList from './components/testimonials/index.js';
 import Innovation from './components/innovations';
+import News from './components/news/index.js';
 import Talks from './components/talks/index.js';
 import Publications from './components/publications/index.js';
 
@@ -31,6 +32,7 @@ const Layout = ({ location }) => {
       <Route path={routes.DOMAIN_EXPERTISE} component={DomainExpertise} />
       <Route exact path={routes.TESTIMONIALS} component={TestimonialsList} />
       <Route exact path={routes.INNOVATIONS} component={Innovation} />
+      <Route exact path={routes.NEWS} component={News} />
       <Route exact path={routes.TALKS} component={Talks} />
       <Route path={routes.PUBLICATIONS} component={Publications} />
     </Switch>
