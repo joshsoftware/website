@@ -35,7 +35,7 @@ const NavDropdown = props => {
       >
         {items.map(item => {
           return item.otherDomain ? (
-            <a href={item.url} className="dropdown-item">
+            <a href={item.url} className="dropdown-item" key={item.id}>
               {item.title}
             </a>
           ) : (
