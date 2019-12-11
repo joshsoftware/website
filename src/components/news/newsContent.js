@@ -21,7 +21,7 @@ const Component = (props) => {
                <Card body>
                  {
                    n.image_url.startsWith('http')
-                   && <CardImg top width="100%" height="180px" src={n.image_url} alt={n.title} />
+                   && <CardImg top width="100%" height="200px" src={n.image_url} alt={n.title} />
                  }
                  <CardTitle>
                    <a href={n.link} target='_blank' rel="noopener noreferrer" style={{textDecoration: 'none' }}>
