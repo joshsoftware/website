@@ -14,7 +14,7 @@ const DomainHeader = (props) => {
     return <Link to={`${baseRoute}/${domain.urlParameter}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
         <div className="text-center">
-          <img src={require(`../../assets/images/${imagesPath}/${domainImg}`)} alt={domain.title} className="img-fluid m-auto d-flex align-items-stretch" height={imageSize} width={imageSize}/>
+          <img src={require(`../../assets/images/${imagesPath}/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" height={imageSize} width={imageSize}/>
         </div>
         <div className={textClass}>{domain.title}</div>
       </div>
