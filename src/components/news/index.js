@@ -30,7 +30,7 @@ const News = (props) => {
   return (
     <div>
       {
-        loading && <div className="container section-content">
+        loading && <div className="container section-content news-mob-spinner-section">
           <div className="row d-flex justify-content-center">
             <Spinner style={{ width: '3rem', height: '3rem' }} />
           </div>

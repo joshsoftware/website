@@ -1006,3 +1006,8 @@
     padding: 10px;
   }
 }
+.news-mob-spinner-section {
+  @include media-breakpoint-down(sm) {
+    padding: 4rem;
+  }
+}
