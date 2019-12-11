@@ -31,8 +31,8 @@ const Publications = ({books}) => {
     <div className='section-content gray-back'>
       <Header />
       {
-        books.map(book => (
-          <div className="container pb-3">
+        books.map((book, i) => (
+          <div className="container pb-3" key={i}>
             <Card style={{border: '2px solid lightgrey'}}>
               <CardBody>
                 <Row className="justify-content-md-center">
@@ -86,7 +86,7 @@ const shareCard = ({book}) => (
     </Row>
     <Row>
       <Button color="danger" size="lg" block style={{width: '100%', backgroundColor: '#CF4338'}}>
-        <a href={book.link} target='_blank' rel="noopener noreferrer">Buy Now  </a>
+        <a href={book.link} target='_blank' rel="noopener noreferrer" style={{color: 'white'}}>Buy Now</a>
       </Button>
     </Row>
     <br />
