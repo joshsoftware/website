@@ -19,6 +19,12 @@ const Home = () => {
 
   const toggleOpenTrending = () => setOpenTrending(!openTrending)
 
+  const snowflakes = []
+
+  for (var i = 0; i < 100; i++) {
+    snowflakes.push(<div className="snowflake" key={i}></div>)
+  }
+
   return (
     <>
       <div className="main-container" />
@@ -27,6 +33,9 @@ const Home = () => {
         <Trending setOpenTrending={toggleOpenTrending} />
       </Menu>
       <main id="page-wrap" style={openTrending ? { filter: `blur(120px)` } : {}}>
+      <div className="snowfall">
+        {snowflakes}
+      </div>
         <HomePageCarousal />
         <DomainExpertise />
         <WhatWeDo />

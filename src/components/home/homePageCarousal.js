@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 import JoshCarousel from "./carousel.js";
+import santa from "../../assets/images/santa.png";
 import nextSVG from "../../assets/images/domainExpertise/next.svg";
 import previousSVG from "../../assets/images/domainExpertise/previous.svg";
 
@@ -51,7 +52,7 @@ const HomePageCarousal = (props) => {
       {matches =>
         matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
         className="img-fluid mt-5" alt={cItem.title} />
-          : <Row className="justify-content-around m-auto w-75 d-flex">
+          : <Row className="justify-content-around m-auto w-75 d-flex" style={{paddingTop: '3%'}}>
               <img src={require(`../../assets/images/home/${cItem.image}.png`)} alt={cItem.title} />
           </Row>
       }
@@ -59,12 +60,13 @@ const HomePageCarousal = (props) => {
   ));
 
   return (
-    <Row className="justify-content-center m-auto card">
+    <Row className="justify-content-center m-auto card cristmas-theme">
       <Col>
         <div className="pb-5">
           <JoshCarousel items={homePageCarouselItems} settings={settings} />
         </div>
       </Col>
+      <img class="imageAnimation" style={{position: 'absolute', top:'100%', left:'0px' }} src={santa} alt='santa' width="190px"/>
     </Row>
   )
 }
@@ -72,16 +74,16 @@ const HomePageCarousal = (props) => {
 HomePageCarousal.defaultProps = {
   carousalItems: [
       {
-        image: "go_girls_19_success",
-        name: "Golang Girls 2019 Success",
-        title: "Golang Girls 2019 Success",
-        subTitle: "Golang Girls 2019 Success",
-      },
-      {
         image: "anniversary",
         name: "Anniversary",
         title: "12 th Anniversary",
         subTitle: "anniversary"
+      },
+      {
+        image: "go_girls_19_success",
+        name: "Golang Girls 2019 Success",
+        title: "Golang Girls 2019 Success",
+        subTitle: "Golang Girls 2019 Success",
       },
       {
         image: "gautam-talk",
