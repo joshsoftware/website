@@ -2,6 +2,9 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/josh-iso-logo.svg";
+
+// import logo from "../../assets/images/josh-christmas-logo.png";
+
 import NavDropdown from "./NavDropdown";
 import NavLink from "./NavLink";
 import * as routes from "../../routeConstants.js";
@@ -17,7 +20,7 @@ const Component = (props) => {
       <div className="container">
         <nav className="navbar navbar-expand-lg josh-navbar">
           <Link className="navbar-brand" to="/">
-            <img src={logo} alt="Josh Software" />
+            <img src={logo} alt="Josh Software" className="christmas-logo" />
           </Link>
           <button
             className="navbar-toggler p-0 border-0"

@@ -1,27 +1,40 @@
-import React from 'react'
-import { Row, Col } from 'reactstrap';
+import React from "react";
+import { Row, Col } from "reactstrap";
 import Media from "react-media";
 import JoshCarousel from "./carousel.js";
+import santa from "../../assets/images/santa.png";
 import nextSVG from "../../assets/images/domainExpertise/next.svg";
 import previousSVG from "../../assets/images/domainExpertise/previous.svg";
-import Image from 'react-image-webp';
+import Image from "react-image-webp";
 
 const HomePageCarousal = (props) => {
   const { carousalItems } = props;
 
   const NextArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-next cursor-pointer bottom-94p">
-      <img src={nextSVG} alt="next" className="pl-md-5" />
-      <span className="sr-only">Previous</span></div>
-  }
+    return (
+      <div
+        onClick={onClick}
+        className="carousel-control-next cursor-pointer bottom-94p"
+      >
+        <img src={nextSVG} alt="next" className="pl-md-5" />
+        <span className="sr-only">Previous</span>
+      </div>
+    );
+  };
 
   const PrevArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-prev cursor-pointer bottom-94p">
-      <img src={previousSVG} alt="next" className="pr-md-5" />
-      <span className="sr-only">Previous</span></div>
-  }
+    return (
+      <div
+        onClick={onClick}
+        className="carousel-control-prev cursor-pointer bottom-94p"
+      >
+        <img src={previousSVG} alt="next" className="pr-md-5" />
+        <span className="sr-only">Previous</span>
+      </div>
+    );
+  };
 
   const settings = {
     dots: true,
@@ -41,55 +54,75 @@ const HomePageCarousal = (props) => {
       {
         breakpoint: 600,
         settings: {
-          arrows: false
-        }
+          arrows: false,
+        },
       },
-    ]
+    ],
   };
 
-  const homePageCarouselItems = carousalItems.map(cItem => (
+  const homePageCarouselItems = carousalItems.map((cItem) => (
     <Media query="(max-width: 500px)" key={cItem.name}>
-      {matches =>
-        matches ? <Image src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
-        webp={require(`../../assets/images/home/${cItem.image}_mb.png.webp`)}
-        className="img-fluid mt-5" alt={cItem.title} />
-          : <Row className="justify-content-around m-auto w-75 d-flex" style={{paddingTop: '3%'}}>
-              <Image
+      {(matches) =>
+        matches ? (
+          <Image
+            src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
+            webp={require(`../../assets/images/home/${cItem.image}_mb.png.webp`)}
+            className="img-fluid mt-5"
+            alt={cItem.title}
+          />
+        ) : (
+          <Row
+            className="justify-content-around m-auto w-75 d-flex"
+            style={{ paddingTop: "3%" }}
+          >
+            {/* <Image
                 src={require(`../../assets/images/home/${cItem.image}.png`)}
                 webp={require(`../../assets/images/home/${cItem.image}.png.webp`)}
-                alt={cItem.title} />
+                alt={cItem.title} /> */}
+
+            <img
+              src={require(`../../assets/images/home/${cItem.image}.png`)}
+              alt={cItem.title}
+            />
           </Row>
+        )
       }
     </Media>
   ));
 
   return (
-    <Row className="justify-content-center m-auto card">
+    <Row className="justify-content-center m-auto card cristmas-theme">
       <Col>
         <div className="pb-5">
           <JoshCarousel items={homePageCarouselItems} settings={settings} />
         </div>
       </Col>
+      <img
+        class="imageAnimation"
+        style={{ position: "absolute", top: "100%", left: "0px" }}
+        src={santa}
+        alt="santa"
+        width="190px"
+      />
     </Row>
-  )
-}
+  );
+};
 
 HomePageCarousal.defaultProps = {
   carousalItems: [
-      {
-        image: "gopher_guide",
-        name: "Gopher Guide",
-        title: "Gopher Guide",
-        subTitle: "Past event."
-      },
-      {
-        image: "gophercon",
-        name: "Gophercon 2020",
-        title: "Gophercon 2020",
-        subTitle: "Upcoming event."
-      },
-    ]
-}
-
+    {
+      image: "gopher_guide",
+      name: "Gopher Guide",
+      title: "Gopher Guide",
+      subTitle: "Past event.",
+    },
+    {
+      image: "gophercon",
+      name: "Gophercon 2020",
+      title: "Gophercon 2020",
+      subTitle: "Upcoming event.",
+    },
+  ],
+};
 
 export default HomePageCarousal;
