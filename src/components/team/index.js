@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
-
+import Image from 'react-image-webp';
 import * as routeConstants from '../../routeConstants';
 import { Heading1 } from '../home/homeStyledComponents';
 
@@ -34,7 +34,10 @@ const OurTeam = (props) => {
                 return (
                   <div className="col-lg-4 col-sm-6" key={leader.name}>
                     <div className="card card-team">
-                      <img src={require(`../../assets/images/${leader.profilePic}`)} alt={leader.name} className="img-fluid" />
+                      <Image
+                        src={require(`../../assets/images/${leader.profilePic}`)}
+                        webp={require(`../../assets/images/${leader.profilePic}.webp`)}
+                        alt={leader.name} className="img-fluid" />
                       <div className="card-body">
                         <div className="person-info">
                           <h5>{leader.name}</h5>
@@ -72,7 +75,10 @@ const OurTeam = (props) => {
                 return (
                   <div className="col-lg-3 col-md-6 col-6" key={member.name}>
                     <div className="card card-team">
-                      <img src={require(`../../assets/images/${member.profilePic}`)} alt={member.name} className="img-fluid" />
+                      <Image
+                        src={require(`../../assets/images/${member.profilePic}`)}
+                        webp={require(`../../assets/images/${member.profilePic}.webp`)}
+                        alt={member.name} className="img-fluid" />
                       <div className="card-body">
                         <div className="person-info -nerds">
                           <h5>{member.name}</h5>

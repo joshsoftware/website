@@ -21,7 +21,7 @@ const App = ({ match }) => {
         <Navbar />
         {/* <div style={{ height: 67 }} /> */}
         <Switch>
-          <Layout />
+            <Layout />
         </Switch>
         <Footer />
       </ScrollToTop>

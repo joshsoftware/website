@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
-
+import Image from 'react-image-webp';
 import { Heading1 } from "./homeStyledComponents.js";
 import previousSvg from "../../assets/images/previous.svg";
 import nextSvg from "../../assets/images/next.svg";
@@ -19,9 +19,10 @@ const DomainExpertise = props => {
         to={`${routes.TECHNOLOGIES_URL}/${domain.urlParameter}`}
         className="text-decoration-none"
       >
-        <img
+        <Image
           className="img-fluid"
           src={require(`../../assets/images/technologies/${domain.logo}`)}
+          webp={require(`../../assets/images/technologies/${domain.logo}.webp`)}
           alt={domain.name}
           key={domain.name}
         />

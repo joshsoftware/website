@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import {H4Black, StoryText} from './successStoriesStyledComponents';
+import Image from 'react-image-webp';
 
 const ImageText = (props) => {
   return(
@@ -8,7 +9,10 @@ const ImageText = (props) => {
       <Col className="m-auto justify-content-center col-md-8">
         <Row>
           <Col>
-            <img src={require(`../../assets/images/successStories/${props.image}.png`)} alt={props.subHeading} className="img-fluid" />
+            <Image
+              src={require(`../../assets/images/successStories/${props.image}.png`)}
+              webp={require(`../../assets/images/successStories/${props.image}.png.webp`)}
+              alt={props.subHeading} className="img-fluid" />
           </Col>
           <Col>
             <H4Black>{props.subHeading} </H4Black>

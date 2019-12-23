@@ -5,6 +5,7 @@ import JoshCarousel from "./carousel.js";
 import santa from "../../assets/images/santa.png";
 import nextSVG from "../../assets/images/domainExpertise/next.svg";
 import previousSVG from "../../assets/images/domainExpertise/previous.svg";
+import Image from 'react-image-webp';
 
 const HomePageCarousal = (props) => {
   const { carousalItems } = props;
@@ -53,7 +54,10 @@ const HomePageCarousal = (props) => {
         matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
         className="img-fluid mt-5" alt={cItem.title} />
           : <Row className="justify-content-around m-auto w-75 d-flex" style={{paddingTop: '3%'}}>
-              <img src={require(`../../assets/images/home/${cItem.image}.png`)} alt={cItem.title} />
+              <Image
+                src={require(`../../assets/images/home/${cItem.image}.png`)}
+                webp={require(`../../assets/images/home/${cItem.image}.png.webp`)}
+                alt={cItem.title} />
           </Row>
       }
     </Media>
