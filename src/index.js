@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Layout from './layout';
@@ -12,6 +12,7 @@ import './assets/stylesheets/main.css';
 import './assets/stylesheets/christmas-theme.css';
 import ReactGA from 'react-ga';
 ReactGA.initialize("UA-293708-3");
+serviceWorker.register();
 
 const App = ({ match }) => {
   return (
