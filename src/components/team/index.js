@@ -392,10 +392,6 @@ OurTeam.defaultProps = {
       name: "Rohit",
       githubId: ""
     }, {
-      profilePic: "rupali.jpg",
-      name: "Rupali",
-      githubId: ""
-    }, {
       profilePic: "shailendra.jpg",
       name: "Shailendra Kanherkar",
       githubId: ""
