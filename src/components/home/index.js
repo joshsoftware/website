@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import BurgerMenu from 'react-burger-menu';
+import React from 'react'
 
 import HomePageCarousal from './homePageCarousal.js';
 import { Clients } from './clients.js';
@@ -11,14 +10,7 @@ import Innovations from './innovations.js'
 import SuccessStories from './successStories.js';
 import ContactUs from './contactUs.js'
 
-import Trending from './trending.js';
-
 const Home = () => {
-  const [openTrending, setOpenTrending] = useState(false);
-  const Menu = BurgerMenu["slide"];
-
-  const toggleOpenTrending = () => setOpenTrending(!openTrending)
-
   const snowflakes = []
 
   for (var i = 0; i < 100; i++) {
@@ -28,11 +20,7 @@ const Home = () => {
   return (
     <>
       <div className="main-container" />
-      <Menu pageWrapId={"page-wrap"} outerContainerId={"root"} right isOpen={openTrending} width="100%" disableCloseOnEsc>
-        {/* <div style={{ height: 67 }} /> */}
-        <Trending setOpenTrending={toggleOpenTrending} />
-      </Menu>
-      <main id="page-wrap" style={openTrending ? { filter: `blur(120px)` } : {}}>
+      <main id="page-wrap">
       <div className="snowfall">
         {snowflakes}
       </div>

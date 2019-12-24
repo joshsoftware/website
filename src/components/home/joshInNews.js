@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heading1, CurvedCard } from "./homeStyledComponents.js";
-import { TabContent, TabPane, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import JoshCarousel from './carousel.js';
 
 const JoshInNews = (props) => {

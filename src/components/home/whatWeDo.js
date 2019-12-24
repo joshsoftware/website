@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import { Heading1 } from "./homeStyledComponents.js";
+import Image from 'react-image-webp';
 
 const WhatWeDo = (props) => {
   const { domains } = props;
@@ -17,7 +18,10 @@ const WhatWeDo = (props) => {
                 <div className="border-2">
                   <Row>
                     <Col md={12}>
-                      <img src={require(`../../assets/images/home/${domain.logo}`)} alt={domain.title} />
+                      <Image
+                        src={require(`../../assets/images/home/${domain.logo}`)}
+                        webp={require(`../../assets/images/home/${domain.logo}.webp`)}
+                        alt={domain.title} />
                     </Col>
                   </Row>
                   <Row className="bg-white mx-auto text-center h-52">

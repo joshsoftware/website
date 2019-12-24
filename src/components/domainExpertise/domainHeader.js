@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import Image from 'react-image-webp';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 import JoshCarousel from '../home/carousel';
 import * as routes from "../../routeConstants.js";
@@ -9,12 +11,13 @@ const DomainHeader = (props) => {
   const { domains, selectedDomain, imagesPath, baseRoute, changeImageOnSelect, imageSize } = props;
 
   const items = domains.map(domain => {
-    const domainImg = domain.urlParameter === selectedDomain && changeImageOnSelect ? `${domain.logo}_Red.${domain.fileType}` : `${domain.logo}.${domain.fileType}`
+    const imgExt = isWebpSupported() && domain.fileType !== 'svg' ? `${domain.fileType}.webp` : domain.fileType;
+    const domainImg = domain.urlParameter === selectedDomain && changeImageOnSelect ? `${domain.logo}_Red.${imgExt}` : `${domain.logo}.${imgExt}`
     const textClass = domain.urlParameter === selectedDomain ? "text-orange" : "text-black"
     return <Link to={`${baseRoute}/${domain.urlParameter}`}>
       <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
         <div className="text-center">
-          <img src={require(`../../assets/images/${imagesPath}/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" height={imageSize} width={imageSize}/>
+          <Image src={require(`../../assets/images/${imagesPath}/${domainImg}`)} webp={require(`../../assets/images/${imagesPath}/${domainImg}`)} alt={domain.title} className="img-fluid m-auto" height={imageSize} width={imageSize} />
         </div>
         <div className={textClass}>{domain.title}</div>
       </div>

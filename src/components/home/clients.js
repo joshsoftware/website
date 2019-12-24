@@ -1,5 +1,6 @@
 import React from 'react'
 import { Heading1 } from "./homeStyledComponents.js"
+import Image from 'react-image-webp';
 
 export const Clients = (props) => {
   const { clients } = props;
@@ -14,7 +15,10 @@ export const Clients = (props) => {
             clients.map(client => {
               return <li key={client.name}>
                 <span>
-                  <img src={require(`../../assets/images/clients/${client.logo}`)} alt={client.name} className="img-fluid" />
+                  <Image
+                    src={require(`../../assets/images/clients/${client.logo}`)}
+                    webp={require(`../../assets/images/clients/${client.logo}.webp`)}
+                    alt={client.name} className="img-fluid" />
                 </span>
               </li>
             })
@@ -102,9 +106,5 @@ Clients.defaultProps = {
       logo: "quickInsure.png",
       name: "QuickInsure"
     }
-
-
-
-
   ]
 }

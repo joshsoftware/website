@@ -3,6 +3,7 @@ import { Row, Col, Badge } from "reactstrap";
 import { TECHNOLOGIES_USED } from "../../globalConstants";
 import DetailsLogo from "../../assets/images/domainExpertise/details.svg"
 import TechnologyStackLogo from "../../assets/images/domainExpertise/TechnologyStack.svg"
+import Image from 'react-image-webp';
 
 import { Text } from "../home/homeStyledComponents.js";
 import MediaCard from "../domainExpertise/MediaCard.jsx";
@@ -44,8 +45,9 @@ const ProjectDetails = (props) => {
           <Col>
             {
               logo &&
-              <img
+              <Image
                 src={ require(`../../assets/images/domainExpertise/Products/${logo}`) }
+                webp={ require(`../../assets/images/domainExpertise/Products/${logo}.webp`) }
                 alt={ title }
                 className="img-fluid m-auto"
               />
