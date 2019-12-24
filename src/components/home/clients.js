@@ -113,12 +113,12 @@ Clients.defaultProps = {
     },
     {
       website: '',
-      logo: 'cuarta-logo.png',
+      logo: 'cuarta2.png',
       name: 'Cuarta'
     },
     {
       website: '',
-      logo: 'rakuten.png',
+      logo: 'rakuten2.png',
       name: 'Rakuten'
     }
   ]
