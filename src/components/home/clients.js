@@ -105,6 +105,21 @@ Clients.defaultProps = {
       website: "",
       logo: "quickInsure.png",
       name: "QuickInsure"
+    },
+    {
+      website: '',
+      logo: 'logo-simplysmart.png',
+      name: 'Simply Smart'
+    },
+    {
+      website: '',
+      logo: 'cuarta-logo.png',
+      name: 'Cuarta'
+    },
+    {
+      website: '',
+      logo: 'rakuten.png',
+      name: 'Rakuten'
     }
   ]
 }
