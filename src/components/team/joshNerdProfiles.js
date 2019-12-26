@@ -25,26 +25,30 @@ const JoshNerdProfiles = props => {
           const { public_profile } = member;
           const githubUrl = `${GITHUB_BASE_URL}${public_profile.github_handle ||
             ""}`;
-          return (
-            <div
-              className="col-lg-3 col-md-3 col-sm-4 col-6"
-              key={public_profile.name}
-            >
-              <div className="card card-team">
-                {getProfileImage(API_PUBLIC_URL, public_profile)}
-                <div className="card-body">
-                  <div className="person-info -nerds">
-                    <h5>{public_profile.name}</h5>
-                  </div>
-                  <div className="professional-platforms">
-                    {public_profile.github_handle && (
-                      <IconWithLink url={githubUrl} iconClass="icon-github" />
-                    )}
+          if(member.public_profile.image_medium_url) {
+            return (
+              <div
+                className="col-lg-3 col-md-3 col-sm-4 col-6"
+                key={public_profile.name}
+              >
+                <div className="card card-team">
+                  {getProfileImage(API_PUBLIC_URL, public_profile)}
+                  <div className="card-body">
+                    <div className="person-info -nerds">
+                      <h5>{public_profile.name}</h5>
+                    </div>
+                    <div className="professional-platforms">
+                      {public_profile.github_handle && (
+                        <IconWithLink url={githubUrl} iconClass="icon-github" />
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
+            );
+          } else {
+            return <></>;
+          }
         })}
       </div>
     </React.Fragment>
