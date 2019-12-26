@@ -120,6 +120,16 @@ Clients.defaultProps = {
       website: '',
       logo: 'rakuten2.png',
       name: 'Rakuten'
+    },
+    {
+      website: '',
+      logo: 'realix.png',
+      name: 'Realix'
+    },
+    {
+      website: '',
+      logo: 'legal-zoom.png',
+      name: 'legal Zoom'
     }
   ]
 }
