@@ -11,19 +11,11 @@ import SuccessStories from './successStories.js';
 import ContactUs from './contactUs.js'
 
 const Home = () => {
-  const snowflakes = []
-
-  for (var i = 0; i < 100; i++) {
-    snowflakes.push(<div className="snowflake" key={i}></div>)
-  }
 
   return (
     <>
       <div className="main-container" />
       <main id="page-wrap">
-      <div className="snowfall">
-        {snowflakes}
-      </div>
         <HomePageCarousal />
         <DomainExpertise />
         <WhatWeDo />

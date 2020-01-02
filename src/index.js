@@ -9,7 +9,6 @@ import ScrollToTop from "./hooks/scrollToTop.js";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/stylesheets/main.css';
-import './assets/stylesheets/christmas-theme.css';
 import ReactGA from 'react-ga';
 ReactGA.initialize("UA-293708-3");
 serviceWorker.register();
