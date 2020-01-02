@@ -2,10 +2,10 @@ import React, { useEffect, Suspense, lazy } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import * as routes from './routeConstants';
 import ReactGA from 'react-ga';
+import Home from './components/home';
+import  OurTeam from './components/team';
 
 const AboutUs = lazy(() => import('./components/about_us'));
-const OurTeam = lazy(() => import('./components/team'));
-const Home = lazy(() => import('./components/home'));
 const ContactUs = lazy(() => import('./components/contact_us'));
 const Services = lazy(() => import('./components/services'));
 const Technologies = lazy(() => import('./components/technologies'));

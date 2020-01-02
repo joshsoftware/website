@@ -1014,8 +1014,8 @@
 
 .nerd-img {
   @include media-breakpoint-up(sm) {
-    min-height: 250px;
-    max-height: 250px
+    min-height: 230px;
+    max-height: 230px
   }
   @include media-breakpoint-down(sm) {
     min-height: 150px;

@@ -19,14 +19,16 @@ const DomainExpertise = props => {
         to={`${routes.TECHNOLOGIES_URL}/${domain.urlParameter}`}
         className="text-decoration-none"
       >
-        <Image
-          className="img-fluid"
-          src={require(`../../assets/images/technologies/${domain.logo}`)}
-          webp={require(`../../assets/images/technologies/${domain.logo}.webp`)}
-          alt={domain.name}
-          key={domain.name}
-        />
-        <span style={{color: 'black', fontSize: 'small'}}> {domain.name} </span>
+        <div style={{height: '4rem'}}>
+          <Image
+            className="img-fluid"
+            src={require(`../../assets/images/technologies/${domain.logo}`)}
+            webp={require(`../../assets/images/technologies/${domain.logo}.webp`)}
+            alt={domain.name}
+            key={domain.name}
+          />
+        </div>
+        <p style={{color: 'black', fontSize: 'small', paddingLeft: '0.5rem'}} > {domain.name} </p>
       </Link>
     );
   });
