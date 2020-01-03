@@ -50,7 +50,8 @@ const HomePageCarousal = (props) => {
   const homePageCarouselItems = carousalItems.map(cItem => (
     <Media query="(max-width: 500px)" key={cItem.name}>
       {matches =>
-        matches ? <img src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
+        matches ? <Image src={require(`../../assets/images/home/${cItem.image}_mb.png`)}
+        webp={require(`../../assets/images/home/${cItem.image}_mb.png.webp`)}
         className="img-fluid mt-5" alt={cItem.title} />
           : <Row className="justify-content-around m-auto w-75 d-flex" style={{paddingTop: '3%'}}>
               <Image
