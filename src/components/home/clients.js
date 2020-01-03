@@ -42,9 +42,9 @@ Clients.defaultProps = {
       name: "GoJek"
     },
     {
-      website: "",
-      logo: "biznbound.png",
-      name: "Bizunbound"
+      website: '',
+      logo: 'rakuten2.png',
+      name: 'Rakuten'
     },
     {
       website: "",
@@ -72,9 +72,9 @@ Clients.defaultProps = {
       name: "Docterz"
     },
     {
-      website: "",
-      logo: "ffd.png",
-      name: "Freedom from Diabetic"
+      website: '',
+      logo: 'legal-zoom.png',
+      name: 'legal Zoom'
     },
     {
       website: "",
@@ -117,9 +117,9 @@ Clients.defaultProps = {
       name: 'Cuarta'
     },
     {
-      website: '',
-      logo: 'rakuten2.png',
-      name: 'Rakuten'
+      website: "",
+      logo: "biznbound.png",
+      name: "Bizunbound"
     },
     {
       website: '',
@@ -127,9 +127,9 @@ Clients.defaultProps = {
       name: 'Realix'
     },
     {
-      website: '',
-      logo: 'legal-zoom.png',
-      name: 'legal Zoom'
-    }
+      website: "",
+      logo: "ffd.png",
+      name: "Freedom from Diabetic"
+    },
   ]
 }
