@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import {isWebpSupported} from 'react-image-webp/dist/utils';
 
 import { CONTACT_US_URL } from "../../routeConstants.js";
 
 const ContactUs = () => {
   return (
-    <section id="contactSlide" className="section-contact">
+    <section id="contactSlide" className={`section-contact ${isWebpSupported() ? 'webp-bg-contact' : 'no-webp-bg-contact'}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-12">
@@ -18,7 +19,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <div className="contact-banner"></div>
+      <div className={`contact-banner ${isWebpSupported() ? 'mb-webp-bg-contact' : 'mb-no-webp-bg-contact'}`}></div>
       <div className="contact-number">
         <div className="container">
           <h6>Call Us</h6>

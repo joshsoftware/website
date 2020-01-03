@@ -29,7 +29,7 @@ const Testimonials = (props) => {
     speed: 500,
     centerPadding: "10px",
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: false,
     dotsClass: "slick-dots slick-thumb bottom-50",
     customPaging: () => <div className="rounded-circle orange-color" />,

@@ -2,10 +2,15 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 import { Link } from "react-router-dom";
+import {isWebpSupported} from 'react-image-webp/dist/utils';
 
 import { ParallaxImg, InnovationHeading1 } from './homeStyledComponents';
+import innovationsImgWebp from "../../assets/images/home/innovation.png.webp"
+import innovationBgMobileWebp from "../../assets/images/home/innovationBgMobile.png.webp"
+
 import innovationsImg from "../../assets/images/home/innovation.png"
 import innovationBgMobile from "../../assets/images/home/innovationBgMobile.png"
+
 import innovationBtnImg from "../../assets/images/home/innovation_button.svg";
 import innovationBtnMobile from "../../assets/images/home/innovation_button_mb.svg";
 
@@ -16,7 +21,7 @@ const Innovations = (props) => {
     <Media query="(max-width: 900px)">
       {matches =>
         matches ? (
-          <ParallaxImg logo={innovationBgMobile} height="262px">
+          <ParallaxImg logo={isWebpSupported() ? innovationBgMobileWebp : innovationBgMobile} height="262px">
             <Row className="p-4">
               <Col md={3} sm={2} xs={2} />
               <Col md={6} sm={9} xs={9}>
@@ -40,7 +45,7 @@ const Innovations = (props) => {
             </Row>
           </ParallaxImg>
         ) : (
-            <ParallaxImg logo={innovationsImg} height="262px">
+            <ParallaxImg logo={isWebpSupported() ? innovationsImgWebp : innovationsImg} height="262px">
               <Row className="p-4">
                 <Col md={3} sm={2} />
                 <Col md={6} sm={2}>

@@ -2,6 +2,9 @@ import React, { Fragment } from 'react'
 import { Row, Col } from 'reactstrap';
 import Media from "react-media";
 import { Link } from "react-router-dom";
+import {isWebpSupported} from 'react-image-webp/dist/utils';
+import successStoriesBgWebp from "../../assets/images/home/successStoryBg.png.webp";
+import mobileSuccessStoriesBgWebp from "../../assets/images/home/mob_sucess_stories.png.webp";
 
 import successStoriesBg from "../../assets/images/home/successStoryBg.png";
 import mobileSuccessStoriesBg from "../../assets/images/home/mob_sucess_stories.png";
@@ -14,7 +17,7 @@ const SuccessStories = (props) => {
     {matches =>
       matches ? (
         <Fragment>
-          <ParallaxImg className="d-flex" height="160px" logo={mobileSuccessStoriesBg}>
+          <ParallaxImg className="d-flex" height="160px" logo={isWebpSupported() ? mobileSuccessStoriesBgWebp : mobileSuccessStoriesBg}>
             <Row className="m-auto">
               <Col xs={2} />
               <Col md={6} xs={4} >
@@ -36,7 +39,7 @@ const SuccessStories = (props) => {
           </ul>
         </Fragment>
       ) : (
-          <ParallaxImg height="277px" logo={successStoriesBg}>
+          <ParallaxImg height="277px" logo={isWebpSupported() ? successStoriesBgWebp : successStoriesBg}>
             <Row style={{ height: "inherit" }}>
               <Col md={6} className="d-flex justify-content-end align-items-center" >
                 <Heading1Orange>Success Stories</Heading1Orange>

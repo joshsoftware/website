@@ -14,7 +14,7 @@ const WhatWeDo = (props) => {
         <Col xs={8} sm={10} md={8}>
           <Row>
             {domains.map(domain => {
-              return <Col sm={6} md={4} xs={10} className="pb-14" key={domain.title}>
+              return <Col sm={6} md={4} xs={10} className="pb-14" key={domain.title} style={{padding: '2px'}}>
                 <div className="border-2">
                   <Row>
                     <Col md={12}>
