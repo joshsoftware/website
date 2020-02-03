@@ -77,12 +77,6 @@ const HomePageCarousal = (props) => {
 HomePageCarousal.defaultProps = {
   carousalItems: [
       {
-        image: "rails_girls_2020",
-        name: "Rails Girls 2020",
-        title: "Rails Girls 2020",
-        subTitle: "Rails Girls 2020",
-      },
-      {
         image: "gopher_guide",
         name: "Gopher Guide",
         title: "Gopher Guide",
