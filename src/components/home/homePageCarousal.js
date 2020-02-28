@@ -82,6 +82,12 @@ HomePageCarousal.defaultProps = {
         title: "Gopher Guide",
         subTitle: "Past event."
       },
+      {
+        image: "gophercon",
+        name: "Gophercon 2020",
+        title: "Gophercon 2020",
+        subTitle: "Upcoming event."
+      },
     ]
 }
 
