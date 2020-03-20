@@ -88,18 +88,23 @@ Component.defaultProps = {
         {
           id: 1,
           title: "Talks",
-          url: routes.TALKS,
+          url: routes.TALKS
         },
         {
           id: 2,
           title: "Publications",
-          url: routes.PUBLICATIONS,
+          url: routes.PUBLICATIONS
         },
         {
           id: 3,
           title: "Media Coverage",
-          url: routes.NEWS,
+          url: routes.NEWS
         },
+        {
+          id: 4,
+          title: "White Papers",
+          url: routes.WHITE_PAPERS
+        }
       ],
       type: "dropdown"
     },
