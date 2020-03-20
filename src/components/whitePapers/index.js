@@ -10,7 +10,7 @@ const Header = () => (
         <Row className="justify-content-center mt-5 pt-2">
           <Col>
             <h2 align="center" style={{ color: "black" }}>
-              <b>OUR WHITE PAPERS</b>
+              <b>OUR WHITEPAPERS</b>
             </h2>
           </Col>
         </Row>
@@ -89,7 +89,7 @@ WhitePapers.defaultProps = {
         "https://josh-website.s3.ap-south-1.amazonaws.com/Josh+Whitepaper_Feb2020.pdf",
       description:
         "How Open Source Enables Organisation Wide Growth For Business Leaders",
-      imageUrl: require("../../assets/images/whitePaper-preview.png"),
+      imageUrl: `${S3_IMAGS_PATH}/Publications/josh_white_paper_1.png`,
       price: "Rs. 299.00"
     }
   ]
