@@ -101,7 +101,7 @@ Component.defaultProps = {
           url: routes.NEWS
         },
         {
-          id: 2,
+          id: 4,
           title: "White Papers",
           url: routes.WHITE_PAPERS
         }
