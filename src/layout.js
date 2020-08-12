@@ -19,6 +19,7 @@ const News = lazy(() => import("./components/news/index.js"));
 const Talks = lazy(() => import("./components/talks/index.js"));
 const Publications = lazy(() => import("./components/publications/index.js"));
 const WhitePapers = lazy(() => import("./components/whitePapers/index.js"));
+const OpenSource = lazy(() => import("./components/opensource/index.jsx"))
 
 const Layout = ({ location }) => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const Layout = ({ location }) => {
         <Route exact path={routes.TALKS} component={Talks} />
         <Route path={routes.PUBLICATIONS} component={Publications} />
         <Route path={routes.WHITE_PAPERS} component={WhitePapers} />
+        <Route path={routes.OPEN_SOURCE_URL} component={OpenSource} />
       </Switch>
     </Suspense>
   );

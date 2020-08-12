@@ -11,3 +11,4 @@ export const NEWS = "/media-coverage";
 export const TALKS = "/talks";
 export const PUBLICATIONS = "/publications";
 export const WHITE_PAPERS = "/white-papers";
+export const OPEN_SOURCE_URL = "/open-source";
