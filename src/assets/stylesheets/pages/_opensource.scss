@@ -1,0 +1,107 @@
+.section-opensource {
+  margin-top: rem(75px);
+  .section-content {
+    padding: rem(150px 0);
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+
+    &.section-even {
+      background-color: #fafafa;
+    }
+    &.section-odd {
+      background-color: #f4f4f4;
+    }
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    .section-heading {
+      font-family: Lato-Bold;
+      text-transform: uppercase;
+      font-size: 26pt;
+      color: #333333;
+      margin-bottom: rem(32px);
+      @include media-breakpoint-down(sm) {
+        font-size: 24pt;
+        margin: rem(42px) rem(5px);
+      }
+    }
+
+    .txt-info {
+      font-family: Lato-Light;
+      font-size: 14pt;
+      color: #333333;
+      margin-bottom: rem(42px);
+      @include media-breakpoint-down(sm) {
+        margin: rem(42px) rem(5px);
+        text-align: center;
+      }
+    }
+
+    .btn-wrap {
+      @include media-breakpoint-down(sm) {
+        margin: rem(62px) rem(5px);
+        text-align: center;
+      }
+    }
+
+    .card-carousel {
+      border-radius: rem(20px);
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+      .card-carousel-title {
+        font-family: Lato-Bold;
+        color: #333333;
+        font-size: 18pt;
+      }
+      .card-carousel-description {
+        font-family: Lato-Light;
+        color: #808080;
+        font-size: 14px;
+      }
+      .card-carousel-domain {
+        padding: 8px;
+        border: 1px solid #cf4338;
+        border-radius: 15px;
+        color: #cf4338;
+        font-size: 11px;
+      }
+      .tech-tag {
+        margin: 5px;
+        font-size: 11pt;
+      }
+    }
+
+    .card {
+      &.card-community-event {
+        border-radius: 2rem;
+        width: 75%;
+        margin: auto;
+      }
+
+      .card-body {
+        padding: 0.75rem;
+      }
+
+      .community-event-description {
+        font-size: 11pt;
+      }
+
+      .card-title {
+        font-family: Lato-Bold;
+        font-size: 14pt;
+        margin-bottom: 0.4rem;
+      }
+
+      .card-video {
+        // border-radius: 2.25rem;
+        height: 96px;
+        border-top-left-radius: 2.25rem;
+        border-top-right-radius: 2.25rem;
+      }
+    }
+  }
+}
