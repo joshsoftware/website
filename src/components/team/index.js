@@ -62,9 +62,9 @@ const OurTeam = props => {
               <Link to={routeConstants.ABOUT_US_URL} className="btn btn-gray">
                 About Us
               </Link>
-              <a href={JOSH_CAREER_URL} className="btn btn-outline-gray">
+              {/* <a href={JOSH_CAREER_URL} className="btn btn-outline-gray">
                 Career
-              </a>
+              </a> */}
             </div>
           </div>
         </section>
