@@ -10,7 +10,7 @@ import ScrollToTop from "./hooks/scrollToTop.js";
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/stylesheets/main.css';
 import ReactGA from 'react-ga';
-ReactGA.initialize("UA-293708-3");
+ReactGA.initialize("UA-123082738-1");
 serviceWorker.register();
 
 const App = ({ match }) => {
