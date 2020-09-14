@@ -113,6 +113,12 @@ const Testimonial = (props) => {
 Testimonials.defaultProps = {
   testimonialData: [
     {
+      "description": "At this moment I would like to take the opportunity to say thanks to the entire Josh Team who have been part of this journey. I must say that it has been the most comfortable engagements ever in my experience so far.",
+      "clientName": "Mr. Prakash Pandey",
+      "designation": "Head of Technology",
+      "projectName": "BCSG/Legalzoom UK"
+    },
+    {
       "description": "Josh Team has been able to turnaround our CRM and mobile App by understanding our needs, engaging in continuous dialogue during development phase to align the output and giving a product which is working with wonderful speed and ease for our doctors and patients. Deeper listening, long term view, flexibility and timely output have been some qualities that have made this a mutually beneficial experience!",
       "clientName": "Dr. Pramod Tripathi",
       "designation": "Founder",
