@@ -32,6 +32,15 @@ TestimonialsList.defaultProps = {
   testimonialList: [
     {
       "description": <div>
+        <p className="para-text">At this moment I would like to take the opportunity to say thanks to the entire Josh Team who have been part of this journey. I must say that it has been the most comfortable engagements ever in my experience so far.</p>
+        <p className="para-text">I must say I am thoroughly impressed with Josh team.  They have managed the expectation very well from the engagement perspective. They are technically very sound on the project as well as professional in delivering the output yet keeping things very informal and comfortable for the client.
+All in all, it was a thorough satisfying journey with Josh so far in my experience. </p></div>,
+      "clientName": "Mr. Prakash Pandey",
+      "designation": "Head of Technology",
+      "projectName": "BCSG/Legalzoom UK"
+    },
+    {
+      "description": <div>
         <p className="para-text">The search for a development partner can be a daunting task. You are not just looking for the right skill set and experience, you need a team you can trust. My search finished a little over 6 years ago when I found Josh. Since the early days of Brandscope, the Josh team have been with us all the way. They have worked with us, not for us, and have helped transform Brandscope into something we are all proud of.</p>
         <p className="para-text">It's great to have had them with us for the journey. We'll be sticking with them for many years to come.</p></div>,
       "clientName": "Hec Heenan",
