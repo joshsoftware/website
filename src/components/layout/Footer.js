@@ -45,13 +45,13 @@ const Footer = () => {
             <Link to="/testimonials" className="nav-link">Testimonials</Link>
           </nav>
           <nav className="nav footer-nav">
-            <Link to="about-us" className="nav-link">Company</Link>
+            <Link to="/about-us" className="nav-link">Company</Link>
             {/* <a href="open-source.html" className="nav-link">Open Source</a> */}
             <Link to="/domain_expertise" className="nav-link">Domain Expertise</Link>
             <Link to="/team" className="nav-link">Our Team</Link>
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
             {/* <a href="http://careers.joshsoftware.com/" className="nav-link">Career</a> */}
-            <Link to="contact_us" className="nav-link">Contact Us</Link>
+            <Link to="/contact_us" className="nav-link">Contact Us</Link>
           </nav>
         </div>
         <p className="text-policy text-center mb-3"><a href="https://s3.ap-south-1.amazonaws.com/josh-website/PrivacyPolicyWebsite.pdf" target="_blank" rel="noopener noreferrer">View Privacy Policy</a></p>
