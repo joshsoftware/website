@@ -25,7 +25,9 @@ const ContactUs = () => {
                     JOSH SOFTWARE PVT. LTD.
                     <br />
                     2nd Floor, I-Space, IT Park, <br />
-                    Mumbai Pune Bypass Rd Bavdhan, Pune, Maharashtra 411021
+                      Mumbai Pune Bypass Rd Bavdhan, Pune, Maharashtra 411021
+                    <br />
+                      <i className="icon-phone"></i> <a href="tel:+917887889902">+91-7887889902 </a>
                   </p>
                   <p>
                     <b className="text-center"> US Office </b>
@@ -33,14 +35,18 @@ const ContactUs = () => {
                     JOSH SOFTWARE INC.
                     <br />
                     7300 Lone Star Drive, Suite C200, Plano, TX 75024
+                      <br />
+                        {/*
+                           Google doc suggest to add href with tel
+                          https://developers.google.com/web/fundamentals/native-hardware/click-to-call */
+                        }
+                      <i className="icon-phone"></i> <a href="tel:+1-469-300-1564">+1 (469) 300-1564</a>
                   </p>
                 </div>
               </div>
               <div className="col-sm-8">
                 <ul className="list-inline list-contact">
                   <li className="contact">
-                    <i className="icon-phone"></i>
-                    <p className="font-weight-light mb-0">+91-7887889902</p>
                   </li>
                   <li className="josh-email-links">
                     <div className="email">
