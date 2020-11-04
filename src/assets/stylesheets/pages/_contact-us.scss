@@ -136,7 +136,7 @@
     margin-bottom: rem(77px);
   }
 
-  i{
+  i.icon-location{
     font-size: rem(45px);
     margin-bottom: rem(30px);
 
@@ -153,6 +153,9 @@
     @include media-breakpoint-down(sm) {
      text-align: center;
      }
+  }
+  a{
+    color: $white
   }
 }
 
