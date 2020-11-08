@@ -76,6 +76,11 @@ Component.defaultProps = {
       url: routes.SUCCESS_STORIES_URL
     },
     {
+      id: 10,
+      title: "Open Source",
+      url: routes.OPEN_SOURCE_URL
+    },
+    {
       id: 5,
       title: "Blogs",
       url: "https://blog.joshsoftware.com/",
