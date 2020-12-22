@@ -133,11 +133,11 @@
   align-items: center;
 
   @include media-breakpoint-down(sm) {
-    margin-bottom: rem(77px);
+    margin-bottom: rem(57px);
   }
 
-  i{
-    font-size: rem(45px);
+  i.icon-location{
+    font-size: rem(30px);
     margin-bottom: rem(30px);
 
     @include media-breakpoint-down(sm) {
@@ -152,7 +152,11 @@
 
     @include media-breakpoint-down(sm) {
      text-align: center;
-     }
+     padding-top: rem(15px);
+    }
+  }
+  a{
+    color: $white
   }
 }
 
@@ -162,7 +166,7 @@
   align-items: center;
 
   @include media-breakpoint-down(sm) {
-    margin-bottom: rem(80px);
+    margin-bottom: rem(0px);
   }
 
   i{
