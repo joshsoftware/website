@@ -105,13 +105,6 @@ const DomainExpertise = props => {
 
   return (
     <Fragment>
-      <section className="gray-back justify-content-center">
-        <Row className="justify-content-around m-auto tech-list">
-          <Col md={8} xs={12} sm={12}>
-            <JoshCarousel items={carouselItems} settings={carouselSettings} />
-          </Col>
-        </Row>
-      </section>
       <section id="clientsSlide" className="section-home">
         <Heading1>Domain Expertise</Heading1>
         <Row className="justify-content-around m-auto">
@@ -145,25 +138,10 @@ const DomainExpertise = props => {
           <Col sm={2} md={3} />
         </Row>
       </section>
-      <section className="gray-back d-flex justify-content-center">
-        <Row className="d-xs-none w-55">
-          <Col>
-            <p className="text-center disruption-margin">
-              Disruption is not the future, it is the present. In an ever
-              evolving technological landscape, it is imperative for innovation
-              to win over the mundane, and that's exactly what we aim to
-              achieve.
-            </p>
-          </Col>
-        </Row>
-        <Row className="justify-content-center d-md-none m-auto w-100 p-md-3">
-          <Col>
-            <p className="text-center disruption-margin">
-              Disruption is not the future, it is the present. In an ever
-              evolving technological landscape, it is imperative for innovation
-              to win over the mundane, and that's exactly what we aim to
-              achieve.
-            </p>
+      <section className="gray-back justify-content-center">
+        <Row className="justify-content-around m-auto tech-list">
+          <Col md={8} xs={12} sm={12}>
+            <JoshCarousel items={carouselItems} settings={carouselSettings} />
           </Col>
         </Row>
       </section>
