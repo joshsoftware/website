@@ -1,6 +1,6 @@
 import React from 'react'
 
-import HomePageCarousal from './homePageCarousal.js';
+import HomePageBanner from './HomePageBanner.js';
 import { Clients } from './clients.js';
 import Testimonials from './testimonials.js';
 import Company from "./company.js";
@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <div className="main-container" />
       <main id="page-wrap">
-        <HomePageCarousal />
+        <HomePageBanner />
         <DomainExpertise />
         <WhatWeDo />
         <Innovations />
