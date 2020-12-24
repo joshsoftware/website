@@ -1,7 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import Banner from '../../assets/images/home/banner.png';
-import BannerMob from '../../assets/images/home/banner_mb.png';
 import Santa from '../../assets/images/home/santa.png';
 import Media from 'react-media';
 
@@ -11,12 +9,23 @@ const HomePageBanner = () => {
       {matches =>
         matches ? (
           <section className="bg-light-gray justify-content-center">
-            <img src={BannerMob} alt="banner-mobile" />
-
-            <div className="text-center">
+            <div className="banner-wrapper-mb">
+                <h2 className="font-weight-bold text-white">
+                  INNOVATION & DISRUPTION
+                </h2>
+                <h5 className="font-weight-bold text-white">
+                  is the way We change the Game
+                </h5>
+                <a href="/contact_us" className="btn btn-xs btn-danger rounded-pill mb-1 btn-banner-contact-us">
+                  Contact us
+                </a>
+                <h6 className="text-white">
+                    to change yours
+                </h6>
+            </div>
+            <div className="text-center banner-text" style={{ marginTop: '-4px' }}>
               <img src={Santa} alt="santa-mobile" />
             </div>
-
             <Row className="justify-content-center m-auto p-md-3">
               <Col>
                 <p className="text-center disruption-margin">
@@ -29,23 +38,22 @@ const HomePageBanner = () => {
           </section>
         ) : (
           <section className="bg-light-gray justify-content-center">
-            <img src={Banner} alt="banner" />
-            <div className="text-center">
+            <div className="banner-wrapper">
                 <h2 className="font-weight-bold text-white">
                   INNOVATION & DISRUPTION
                 </h2>
-                <h5 className="text-white">
+                <h5 className="font-weight-bold text-white">
                   is the way We change the Game
                 </h5>
-                <a href="/contact_us" className="btn btn-danger rounded-pill btn-xs">
+                <a href="/contact_us" className="btn btn-danger rounded-pill mb-1 btn-banner-contact-us">
                   Contact us
                 </a>
                 <h6 className="text-white">
                     to change yours
                 </h6>
             </div>
-            <div className="text-center">
-              <img src={Santa} alt="santa-mobile" />
+            <div className="text-center" style={{ marginTop: '-4px' }}>
+              <img src={Santa} alt="santa" />
             </div>
             <Row className="justify-content-center m-auto p-md-3">
               <Col>

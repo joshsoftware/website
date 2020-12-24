@@ -14,7 +14,6 @@ const Home = () => {
 
   return (
     <>
-      <div className="main-container" />
       <main id="page-wrap">
         <HomePageBanner />
         <DomainExpertise />
