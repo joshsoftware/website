@@ -504,7 +504,7 @@
 }
 
 .disruption-margin {
-  margin: 3.5rem 3.5rem !important;
+  margin: 1rem 1rem !important;
 }
 
 .slider {
@@ -678,15 +678,6 @@
   }
 }
 
-#page-wrap {
-  @include media-breakpoint-down(sm) {
-    padding-top: 54px;
-  }
-  @include media-breakpoint-up(sm) {
-    padding-top: 76px;
-  }
-}
-
 .bg-light-gray {
   background-color: $gray-96;
 }
@@ -696,7 +687,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: transparent url('../images/home/banner_mb.png') no-repeat top center;
+  background: transparent url('../images/home/banner_mb.png') no-repeat bottom center;
   background-size: cover;
   flex-direction: column;
   padding-bottom: 48px;
@@ -707,12 +698,46 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: transparent url('../images/home/banner.png') no-repeat top center;
+  background: transparent url('../images/home/banner.png') no-repeat bottom center;
   background-size: cover;
   flex-direction: column;
   padding-bottom: 48px;
 }
 
+.banner-normal-text {
+  margin-top: -10px;
+  font-size: 16px;
+  line-height: 20px;
+  @include media-breakpoint-down(sm) {
+    margin-top: -4px;
+  }
+}
+
 .btn-banner-contact-us {
+  margin-bottom: 8px;
+}
+
+.banner-heading-font-weight-bold {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 62px;
+  margin-bottom: 24px;
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 18px;
+  }
+}
+
+.banner-secondary-heading-font-weight-bold {
+  font-weight: 700;
+  line-height: 0px;
+  font-size: 24px;
+  margin-bottom: 24px;
+    @include media-breakpoint-down(sm) {
+      line-height: 16px;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
 
 }
