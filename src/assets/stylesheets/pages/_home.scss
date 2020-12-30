@@ -121,8 +121,8 @@
 /* End */
 
 .webp-bg-contact {
-  background: transparent url("#{$assets_url}images/bg-contact.png.webp") no-repeat
-    top center;
+  background: transparent url("#{$assets_url}images/bg-contact.png.webp")
+    no-repeat top center;
 }
 .no-webp-bg-contact {
   background: transparent url("#{$assets_url}images/bg-contact.png") no-repeat
@@ -178,11 +178,11 @@
     @include media-breakpoint-down(md) {
       background: transparent url("#{$assets_url}images/bg-contact.png.webp")
         no-repeat top right;
-      }
+    }
   }
   .mb-no-webp-bg-contact {
     @include media-breakpoint-down(md) {
-      background: transparent url("#{$assets_url}images/bg-contact.png")
+      background: transparent url("#{$assets_url}images/bg-contact.png");
     }
   }
 
@@ -285,14 +285,15 @@
 }
 
 .bullet {
-  li, a {
+  li,
+  a {
     text-decoration: none;
     text-decoration-color: #333333;
     font-size: 20px;
     color: #ffffff;
-      &:hover {
-        color: #ffffff;
-      }
+    &:hover {
+      color: #ffffff;
+    }
     @include media-breakpoint-down(sm) {
       color: #333333;
       &:hover {
@@ -603,7 +604,7 @@
   }
 
   .active {
-      border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
   }
 
   .news-navbar {
@@ -670,7 +671,7 @@
 .nerd-img {
   @include media-breakpoint-up(sm) {
     min-height: 230px;
-    max-height: 230px
+    max-height: 230px;
   }
   @include media-breakpoint-down(sm) {
     min-height: 150px;
@@ -687,7 +688,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: transparent url('../images/home/banner_mb.png') no-repeat bottom center;
+  background: transparent url("../images/home/banner_mb.png") no-repeat bottom
+    center;
   background-size: cover;
   flex-direction: column;
   padding-bottom: 48px;
@@ -698,7 +700,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: transparent url('../images/home/banner.png') no-repeat bottom center;
+  background: transparent url("../images/home/banner.png") no-repeat bottom
+    center;
   background-size: cover;
   flex-direction: column;
   padding-bottom: 48px;
@@ -734,10 +737,64 @@
   line-height: 0px;
   font-size: 24px;
   margin-bottom: 24px;
-    @include media-breakpoint-down(sm) {
-      line-height: 16px;
-      font-size: 18px;
-      margin-bottom: 16px;
-    }
+  @include media-breakpoint-down(sm) {
+    line-height: 16px;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+.domain-section {
+  padding: 0 85px;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+  .domain-expertise-wrapper {
+    margin: 0 -25px;
+    list-style-type: none;
+  }
 
+  .domain-expertise-content {
+    padding: 0 25px;
+    margin-bottom: 25px;
+  }
+  .domain-expertise-items {
+    width: 200px;
+    img {
+      height: 130px;
+    }
+    h5 {
+      color: $gray-20;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.what-we-do-section {
+  .domain-card {
+    margin: 0 -25px;
+    list-style-type: none;
+  }
+  .domain-card-content {
+    padding: 0 8px;
+    margin-bottom: 25px;
+  }
+  .domain-card-items {
+    flex: 0 0 280px;
+    max-width: 280px;
+    height: 100%;
+    background: #fcfcfc;
+    padding: 12px;
+    border-radius: 10px;
+    img {
+      width: 100%;
+    }
+    h5 {
+      color: #7e88a5;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 }
