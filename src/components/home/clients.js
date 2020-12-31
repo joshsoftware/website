@@ -7,7 +7,7 @@ export const Clients = (props) => {
 
   return (
     <section id="clientsSlide"
-      className="bg-props skrollable skrollable-between">
+      className="bg-props skrollable skrollable-between section-home">
       <div className="container" style={{ paddingRight: 5, paddingLeft: 5 }}>
         <Heading1>Our Top Clients</Heading1>
         <ul className="list-unstyled list-client">

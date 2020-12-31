@@ -10,7 +10,8 @@ import WhatWeDo from './whatWeDo.js';
 import WhatWeDoNew from './whatWeDoNew.js';
 import Innovations from './innovations.js'
 import SuccessStories from './successStories.js';
-import ContactUs from './contactUs.js'
+import ContactUs from './contactUs.js';
+import HomepageTestimonials from './homepageTestimonials.js'
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
         <Innovations />
         <Clients />
         <Testimonials />
+        <HomepageTestimonials />
         <SuccessStories />
         <Company />
         <ContactUs />
