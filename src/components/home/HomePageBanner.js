@@ -40,7 +40,7 @@ const HomePageBanner = () => {
                     to change yours
                 </h6>
             </div>
-            <div className="text-center banner-text">
+            <div className="text-center banner-text d-none">
               <img src={SantaMob} alt="santa-mobile" style={{ transform: `rotate(-10deg)` }}/>
             </div>
             <TagLines />
@@ -61,7 +61,7 @@ const HomePageBanner = () => {
                     to change yours
                 </h6>
             </div>
-            <div className="text-center">
+            <div className="text-center d-none">
               <img src={Santa} alt="santa" style={{ transform: `rotate(-10deg)` }}/>
             </div>
             <TagLines />

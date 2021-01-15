@@ -10,6 +10,7 @@ import WhatWeDo from './whatWeDo.js';
 import WhatWeDoNew from './whatWeDoNew.js';
 import Innovations from './innovations.js'
 import SuccessStories from './successStories.js';
+import SuccessStoriesNew from './successStoriesNew.js';
 import ContactUs from './contactUs.js';
 import HomepageTestimonials from './homepageTestimonials.js'
 
@@ -19,16 +20,17 @@ const Home = () => {
     <>
       <main id="page-wrap">
         <HomePageBanner />
-        <DomainExpertise />
+        {/* <DomainExpertise /> */}
         <DomainExpertiseNew />
-        <WhatWeDo />
+        {/* <WhatWeDo /> */}
         <WhatWeDoNew />
-        <Innovations />
+        {/* <Innovations /> */}
         <Clients />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <HomepageTestimonials />
-        <SuccessStories />
-        <Company />
+        {/* <SuccessStories /> */}
+        <SuccessStoriesNew />
+        {/* <Company /> */}
         <ContactUs />
       </main>
     </>
