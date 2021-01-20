@@ -707,6 +707,11 @@
   background-size: cover;
   flex-direction: column;
   padding-bottom: 48px;
+  margin-top: 0;
+  transition: all 0.5s ease;
+  &.hide {
+    margin-top: -328px;
+  }
 }
 
 .banner-wrapper {
@@ -719,6 +724,14 @@
   background-size: cover;
   flex-direction: column;
   padding-bottom: 48px;
+  margin-top: 0;
+  transition: all 0.5s ease;
+  &.hide {
+    margin-top: -307px;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      margin-top: -330px;
+    }
+  }
 }
 
 .banner-normal-text {
@@ -771,40 +784,48 @@
   }
 
   .domain-expertise-content {
-    padding: 0 25px;
-    margin-bottom: 25px;
+    position: relative;
+    padding: 42px 25px 26px;
+    background-color: rgba(239, 239, 239, 0.29);
+    border: 1px solid $white;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    transform: scale(1);
+    transition: transform 0.2s;
+    z-index: 1;
+    &:hover {
+      background-color: #fff;
+      transform: scale(1.1);
+      transition: transform 0.2s;
+      z-index: 2;
+    }
     @include media-breakpoint-down(sm) {
-      padding: 0 12px;
-      margin-bottom: 16px;
+      padding: 12px;
     }
   }
+
   .domain-expertise-items {
     width: 200px;
     @include media-breakpoint-down(sm) {
       width: 120px;
     }
     img {
-      height: 130px;
+      width: 100%;
+      height: 75px;
       padding: rem(8px);
-      border: 2px solid transparent;
-      &:hover,
-      &:active {
-        border-color: $white;
-        border-radius: rem(8px);
-        -webkit-border-radius: rem(8px);
-        -moz-border-radius: rem(8px);
-        -ms-border-radius: rem(8px);
-        -o-border-radius: rem(8px);
-      }
+
       @include media-breakpoint-down(sm) {
-        height: 80px;
+        height: 60px;
       }
     }
     h5 {
-      color: $gray-20;
+      color: #a5a5a5;
+      font-size: rem(18px);
       line-height: 24px;
       letter-spacing: 0;
-      text-transform: capitalize;
+      @include media-breakpoint-down(sm) {
+        font-size: rem(14px);
+      }
     }
   }
 }
@@ -900,6 +921,7 @@
     position: absolute;
     background-size: 46px auto;
     background-repeat: no-repeat;
+    z-index: 999;
     @include media-breakpoint-down(sm) {
       height: 30px;
       width: 30px;
@@ -917,4 +939,227 @@
     }
   }
 }
+
+// technology-section
+.section-technologies {
+  padding: 30px 0;
+  .technology-wrap {
+    list-style-type: none;
+    li {
+      border-left: 2px solid #f1efef;
+      border-right: 2px solid #f1efef;
+      margin-left: -1px;
+      margin-right: -1px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+      a {
+        width: 150px;
+        @include media-breakpoint-down(sm) {
+          width: 90px;
+        }
+      }
+    }
+  }
+}
+
 // success stories scss
+.section-stories {
+  background: transparent url("../images/successStories/success-bg.png")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    background: transparent
+      url("../images/successStories/success-mobile-bg.png");
+    padding: 60px 0;
+  }
+  .success-section-heading {
+    position: absolute;
+    left: 54%;
+    top: 30%;
+    color: $white;
+    font-size: 42px;
+    line-height: 51px;
+    opacity: 0.85;
+    letter-spacing: 0;
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
+    }
+    @include media-breakpoint-down(sm) {
+      left: -2%;
+      top: 22%;
+      font-size: 28px;
+      transform: rotate(-90deg);
+    }
+  }
+}
+.story-wrap {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  height: 450px;
+  padding: 70px 0;
+  margin: 0 70px;
+  @include media-breakpoint-down(md) {
+    margin: 0 25px;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 270px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 50px 0 40px;
+  }
+  .story-list-item {
+    position: absolute;
+    &.story-item-1 {
+      left: 15%;
+      @include media-breakpoint-down(lg) {
+        left: 9%;
+      }
+      @include media-breakpoint-down(md) {
+        left: 0;
+      }
+      @include media-breakpoint-down(sm) {
+        right: 0;
+        left: unset;
+      }
+    }
+    &.story-item-2 {
+      left: 32%;
+      @include media-breakpoint-down(lg) {
+        left: 30%;
+      }
+      @include media-breakpoint-down(md) {
+        left: 26%;
+      }
+      @include media-breakpoint-down(sm) {
+        right: 0;
+        top: 32%;
+        left: unset;
+      }
+    }
+    &.story-item-3 {
+      left: 41%;
+      top: 47%;
+      @include media-breakpoint-down(lg) {
+        left: 41%;
+      }
+      @include media-breakpoint-down(md) {
+        top: 48%;
+        left: 39%;
+      }
+      @include media-breakpoint-down(sm) {
+        top: 44%;
+        left: 0;
+      }
+    }
+    &.story-item-4 {
+      left: 58%;
+      top: 47%;
+      @include media-breakpoint-down(lg) {
+        top: 47%;
+        left: 62%;
+      }
+      @include media-breakpoint-down(md) {
+        top: 48%;
+        left: 65%;
+      }
+      @include media-breakpoint-down(sm) {
+        top: 67%;
+        left: 0;
+      }
+    }
+    a {
+      background: transparent url("../images/successStories/honey-shape.png")
+        no-repeat;
+      display: block;
+      background-size: contain;
+      height: 180px;
+      width: 180px;
+      background-position: center;
+      position: relative;
+      @include media-breakpoint-down(sm) {
+        height: 150px;
+        width: 150px;
+        transform: rotate(30deg);
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include media-breakpoint-down(sm) {
+          // transform: rotate(-30deg);
+          display: none;
+        }
+      }
+    }
+  }
+}
+// Innovation section scss
+.innovation-section {
+  .innovations-wrap {
+    background-image: url("../images/innovations/innovations-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(md) {
+      background-image: url("../images/innovations/innovation-mobile.png");
+      height: 550px;
+      flex-direction: column;
+      align-items: unset;
+      justify-content: unset;
+    }
+    @include media-breakpoint-down(sm) {
+      background-position: center;
+      height: 450px;
+    }
+
+    .innovation-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      margin-bottom: -10%;
+      padding-left: 0;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding-top: 50px;
+        margin-left: -20px;
+        margin-bottom: 0;
+      }
+    }
+    .innovation-items {
+      background: $white;
+      list-style-type: none;
+      width: 200px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin: 20px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include media-breakpoint-down(md) {
+        margin: 10px;
+        height: 150px;
+        width: 250px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      @include media-breakpoint-down(sm) {
+        height: 100px;
+        width: 200px;
+      }
+    }
+  }
+}
