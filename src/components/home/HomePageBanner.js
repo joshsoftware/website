@@ -3,6 +3,7 @@ import { Row, Col } from 'reactstrap';
 import Santa from '../../assets/images/home/santa.png';
 import SantaMob from '../../assets/images/home/santa_mb.png';
 import Gopher from '../../assets/images/home/gopher_banner.png';
+import GopherMob from '../../assets/images/home/gopher-banner-mobile.png';
 import ContactUsBtn from '../../assets/images/home/contact_us_btn.png';
 import ContactUsBtnMob from '../../assets/images/home/contact_us_btn_mb.png';
 import Media from 'react-media';
@@ -22,13 +23,13 @@ const TagLines = () => {
 };
 
 const HomePageBanner = () => {
-  const [showBanner, setShowBanner] = useState(false);
+  // const [showBanner, setShowBanner] = useState(false);
   return (
     <Media query="(max-width: 500px)">
       {matches =>
         matches ? (
           <section className="bg-light-gray justify-content-center">
-            <div className={`banner-wrapper-mb ${showBanner ? "" : "hide"}`}>
+            <div className="banner-wrapper-mb">
                 <h2 className="banner-heading-font-weight-bold text-white text-center">
                   INNOVATION & DISRUPTION
                 </h2>
@@ -42,14 +43,14 @@ const HomePageBanner = () => {
                     to change yours
                 </h6>
             </div>
-            <div className="text-center banner-text" onClick={()=>setShowBanner(true)}>
-              <img src={Gopher} alt="santa-mobile" style={{ transform: `rotate(-10deg)` }}/>
+            <div className="text-center banner-text">
+              <img src={GopherMob} alt="gopher mobile"/>
             </div>
             <TagLines />
           </section>
         ) : (
           <section className="bg-light-gray justify-content-center">
-            <div className={`banner-wrapper ${showBanner ? "" : "hide"}`}>
+            <div className="banner-wrapper">
                 <h2 className="banner-heading-font-weight-bold text-white">
                   INNOVATION & DISRUPTION
                 </h2>
@@ -63,8 +64,8 @@ const HomePageBanner = () => {
                     to change yours
                 </h6>
             </div>
-            <div className="text-center" onClick={()=>setShowBanner(true)}>
-              <img src={Gopher} alt="santa" style={{ transform: `rotate(-10deg)` }}/>
+            <div className="text-center">
+              <img src={Gopher} alt="gopher"/>
             </div>
             <TagLines />
           </section>

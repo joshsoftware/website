@@ -158,7 +158,9 @@
   }
 
   .contact-wrap {
-    text-align: center;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
 
     p {
       color: $gray-40;
@@ -972,7 +974,9 @@
   position: relative;
   @include media-breakpoint-down(sm) {
     background: transparent
-      url("../images/successStories/success-mobile-bg.png");
+      url("../images/successStories/success-mobile-bg.png") no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 60px 0;
   }
   .success-section-heading {
@@ -1083,9 +1087,11 @@
       background-position: center;
       position: relative;
       @include media-breakpoint-down(sm) {
+        background: transparent
+          url("../images/successStories/honey-shape-mobile.png") no-repeat;
+        background-size: contain;
         height: 150px;
         width: 150px;
-        transform: rotate(30deg);
       }
       img {
         position: absolute;
@@ -1093,8 +1099,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         @include media-breakpoint-down(sm) {
-          // transform: rotate(-30deg);
-          display: none;
+          width: 100px;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-45%, -50%);
         }
       }
     }

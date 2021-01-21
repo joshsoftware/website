@@ -48,7 +48,7 @@ Technologies.defaultProps = {
           id: 5,
           name: TECHNOLOGIES_USED.java,
           logo: "java-new.png",
-          urlParameter: 'react'
+          urlParameter: 'java'
         },
         {
           id: 1,

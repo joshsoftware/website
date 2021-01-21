@@ -30,7 +30,7 @@ SuccessStoriesNew.defaultProps = {
     { name: "Freedom from Diabetes", slug: "ffd", logo: "dibetic.png" },
     { name: "BrandScope", slug: "brandscope", logo: "Brandscope2.png" },
     { name: "Star Network", slug: "star", logo: "Star.png" },
-    { name: "Star Network", slug: "star", logo: "Star.png"}
+    // { name: "Star Network", slug: "star", logo: "Star.png"}
   ]
 }
 
