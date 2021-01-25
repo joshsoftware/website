@@ -51,7 +51,7 @@ DomainExpertiseNew.defaultProps = {
     {
       id: "2",
       name: "INSURANCE",
-      bgImg: "INSURANCE.svg",
+      bgImg: "insurance.svg",
       urlParameter: 'insurance',
       title: "insurance"
     },
@@ -65,14 +65,14 @@ DomainExpertiseNew.defaultProps = {
     {
       id: "4",
       name: "MEDIA",
-      bgImg: "Media.svg",
+      bgImg: "media.svg",
       urlParameter: 'media',
       title: "Media"
     },
     {
       id: "5",
       name: "SPORTS",
-      bgImg: "Sport.svg",
+      bgImg: "sport.svg",
       urlParameter: 'sports',
       title: "sports"
     },

@@ -13,7 +13,7 @@ const SuccessStoriesNew = (props) => {
               return (
                 <li className={"story-list-item story-item-"+(index+1)} key={story.name}>
                 <Link to={`/success_stories/${story.slug}`} >
-                  <img src={require(`../../assets/images/successStories/${story.logo}`)} />
+                  <img src={require(`../../assets/images/successStories/${story.logo}`)} alt={story.name}/>
                 </Link>
               </li>
               )})

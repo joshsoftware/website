@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
 import { Heading1 } from "./homeStyledComponents.js";
 import Image from 'react-image-webp';
 
