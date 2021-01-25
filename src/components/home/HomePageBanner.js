@@ -1,7 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import Santa from '../../assets/images/home/santa.png';
-import SantaMob from '../../assets/images/home/santa_mb.png';
+// import Santa from '../../assets/images/home/santa.png';
+// import SantaMob from '../../assets/images/home/santa_mb.png';
+import Gopher from '../../assets/images/home/gopher_banner.png';
+import GopherMob from '../../assets/images/home/gopher-banner-mobile.png';
 import ContactUsBtn from '../../assets/images/home/contact_us_btn.png';
 import ContactUsBtnMob from '../../assets/images/home/contact_us_btn_mb.png';
 import Media from 'react-media';
@@ -41,7 +43,7 @@ const HomePageBanner = () => {
                 </h6>
             </div>
             <div className="text-center banner-text">
-              <img src={SantaMob} alt="santa-mobile" style={{ transform: `rotate(-10deg)` }}/>
+              <img src={GopherMob} alt="Gopher mobile"/>
             </div>
             <TagLines />
           </section>
@@ -62,7 +64,7 @@ const HomePageBanner = () => {
                 </h6>
             </div>
             <div className="text-center">
-              <img src={Santa} alt="santa" style={{ transform: `rotate(-10deg)` }}/>
+              <img src={Gopher} alt="Gopher"/>
             </div>
             <TagLines />
           </section>
