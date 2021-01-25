@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row, Col } from 'reactstrap';
-import Santa from '../../assets/images/home/santa.png';
-import SantaMob from '../../assets/images/home/santa_mb.png';
+// import Santa from '../../assets/images/home/santa.png';
+// import SantaMob from '../../assets/images/home/santa_mb.png';
 import Gopher from '../../assets/images/home/gopher_banner.png';
 import GopherMob from '../../assets/images/home/gopher-banner-mobile.png';
 import ContactUsBtn from '../../assets/images/home/contact_us_btn.png';

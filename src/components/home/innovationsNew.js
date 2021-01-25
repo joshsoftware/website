@@ -20,7 +20,7 @@ const InnovationsNew = (props) => {
                         <Link to={innovation.url}>
                           <img
                             src={require(`../../assets/images/innovations/${innovation.logo}`)}
-                            className="img-fluid"
+                            className="img-fluid" alt={innovation.name}
                           />
                           </Link>
                       </li>
