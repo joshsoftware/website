@@ -311,4 +311,9 @@ img {
   margin-left: 0px !important;
 }
 
+.text-truncate-multi-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 /* shared end */

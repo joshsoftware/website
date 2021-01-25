@@ -93,7 +93,7 @@ export default class SimpleSlider extends Component {
             {testimonialData.map((slide) =>
               <div class="slider-item d-flex align-items-center justify-content-center flex-column text-center">
                 <h3>{slide.clientName}</h3>
-                <p className="mb-2">{slide.description}</p>
+                <p className="mb-2 text-truncate-multi-line overflow-hidden">{slide.description}</p>
                 <h6>{slide.designation}</h6>
               </div>
               )}

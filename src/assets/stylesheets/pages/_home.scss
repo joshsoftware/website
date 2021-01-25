@@ -868,6 +868,9 @@
   }
   .slider-item {
     padding: rem(50px) rem(30px) 0;
+    @include media-breakpoint-down(sm) {
+      padding: rem(10px) rem(15px) rem(12px);
+    }
     h3,
     p,
     h6 {
