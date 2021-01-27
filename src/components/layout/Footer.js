@@ -43,6 +43,8 @@ const Footer = () => {
             {/* <Link to="technologies" className="nav-link">Technologies</Link> */}
             <Link to="/success_stories" className="nav-link">Success Stories</Link>
             <Link to="/testimonials" className="nav-link">Testimonials</Link>
+            <a href="https://careers.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Careers</a>
+            
           </nav>
           <nav className="nav footer-nav">
             <Link to="/about-us" className="nav-link">Company</Link>
@@ -55,7 +57,7 @@ const Footer = () => {
           </nav>
         </div>
         <p className="text-policy text-center mb-3"><a href="https://s3.ap-south-1.amazonaws.com/josh-website/PrivacyPolicyWebsite.pdf" target="_blank" rel="noopener noreferrer">View Privacy Policy</a></p>
-        <p className="text-copyright text-center mb-3">Copyright © 2007 - 2019 Josh Software Pvt. Ltd.</p>
+        <p className="text-copyright text-center mb-3">Copyright © 2007 - 2021 Josh Software Pvt. Ltd.</p>
       </div>
     </footer>
   )
