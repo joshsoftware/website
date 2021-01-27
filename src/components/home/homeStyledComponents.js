@@ -7,10 +7,10 @@ export const Heading1 = styled.h1`
   text-transform: uppercase;
   color: #CF4338;
   min-width: 158px;
-  max-height: 24px;
   margin: 2rem 0 5.5rem;
   @media(max-width: 600px) {
     font-size: 30px;
+    margin:0 0 2rem;
   }
 `
 
