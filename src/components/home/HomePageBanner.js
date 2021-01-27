@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Row, Col } from 'reactstrap';
 // import Santa from '../../assets/images/home/santa.png';
 // import SantaMob from '../../assets/images/home/santa_mb.png';
@@ -23,13 +23,20 @@ const TagLines = () => {
 };
 
 const HomePageBanner = () => {
-  // const [showBanner, setShowBanner] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+
+
+  useEffect(() => {
+    setShowBanner(true);
+  },
+  []);
+ 
   return (
     <Media query="(max-width: 500px)">
       {matches =>
         matches ? (
           <section className="bg-light-gray justify-content-center">
-            <div className="banner-wrapper-mb">
+            <div className={`banner-wrapper-mb ${showBanner ? '': 'hide'}`}>
                 <h2 className="banner-heading-font-weight-bold text-white text-center">
                   INNOVATION & DISRUPTION
                 </h2>
@@ -50,7 +57,7 @@ const HomePageBanner = () => {
           </section>
         ) : (
           <section className="bg-light-gray justify-content-center">
-            <div className="banner-wrapper">
+            <div className={`banner-wrapper ${showBanner ? '': 'hide'}`}>
                 <h2 className="banner-heading-font-weight-bold text-white">
                   INNOVATION & DISRUPTION
                 </h2>

@@ -96,10 +96,10 @@ export default class SimpleSlider extends Component {
               <div class="slider-item d-flex align-items-center justify-content-center flex-column text-center">
                 <h3>{slide.clientName}</h3>
                 <p className="mb-2 text-truncate-multi-line overflow-hidden">{slide.description}</p>
+                <h6>{slide.designation}</h6>
                 <Link to="/testimonials" className="read-more" >
                   <Button className="btn btn-outline-danger my-2">Read More</Button>
                 </Link>
-                <h6>{slide.designation}</h6>
               </div>
               )}
             </Slider>

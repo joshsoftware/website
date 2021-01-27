@@ -717,7 +717,8 @@
   flex-direction: column;
   padding-bottom: 48px;
   margin-top: 0;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
+  transition-delay: 1s;
   &.hide {
     margin-top: -328px;
   }
@@ -734,7 +735,8 @@
   flex-direction: column;
   padding-bottom: 48px;
   margin-top: 0;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
+  transition-delay: 1s;
   &.hide {
     margin-top: -307px;
     @media (min-width: 768px) and (max-width: 991.98px) {
@@ -781,8 +783,10 @@
 }
 .domain-section {
   padding: 0 85px;
+  margin-bottom: 70px;
   @include media-breakpoint-down(md) {
     padding: 0;
+    margin-bottom: 30px;
   }
   .domain-expertise-wrapper {
     margin: 0 -25px;
@@ -876,7 +880,7 @@
   .slider-item {
     padding: rem(50px) rem(30px) 0;
     @include media-breakpoint-down(sm) {
-      padding: rem(10px) rem(15px) rem(12px);
+      padding: rem(10px) rem(15px) rem(30px);
     }
     h3,
     p,
@@ -942,10 +946,8 @@
   }
   .slick-next,
   .slick-prev {
-    top: 25%;
-    @include media-breakpoint-down(sm) {
-      top: 10%;
-    }
+    top: 50%;
+
     &::before {
       content: "";
     }
