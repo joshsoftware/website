@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Heading1 } from "./homeStyledComponents.js";
 import Slider from "react-slick";
+import { Button } from "reactstrap";
+import { Link } from "react-router-dom";
 
 
 import "slick-carousel/slick/slick.css";
@@ -48,7 +50,7 @@ export default class SimpleSlider extends Component {
         "projectName": "Synergy"
       },
       {
-        "description": "Before getting Josh on board for our startup , we had done a lot of homework on IT vendors as well as tackled the question of whether to inhouse or outsource tech . The points which were in Josh's favour were Very competent &amp; experienced team<br>B. Use of efficient, robust &amp; thorough processes/tools like pivotal tracker , github etc<br>C. They had worked with a lot of startups across the world with good customer feedback on quality as well as timelines. We had a heard a lot of horror stories faced by startups about outsourced tech work so we kept our fingers crossed after they started work , but to our absolute delight Josh has functioned as an extended IT dept of our startup. They are very good at execution as well as providing suggestions/advice. They have delivered as per their estimates and forecasts of time and effort .I will strongly recommend them for any startup who wants to be lean and efficient.",
+        "description": "Before getting Josh on board for our startup , we had done a lot of homework on IT vendors as well as tackled the question of whether to inhouse or outsource tech . The points which were in Josh's favour were Very competent &amp; experienced team. Use of efficient, robust &amp; thorough processes/tools like pivotal tracker , github etc. They had worked with a lot of startups across the world with good customer feedback on quality as well as timelines. We had a heard a lot of horror stories faced by startups about outsourced tech work so we kept our fingers crossed after they started work , but to our absolute delight Josh has functioned as an extended IT dept of our startup. They are very good at execution as well as providing suggestions/advice. They have delivered as per their estimates and forecasts of time and effort .I will strongly recommend them for any startup who wants to be lean and efficient.",
         "clientName": "Amol Patkar",
         "designation": "Founder & Director",
         "projectName": "Fundamentor"
@@ -72,7 +74,7 @@ export default class SimpleSlider extends Component {
         "projectName": "ShowMe"
       },
       {
-        "description": "Gautam and his team were a pleasure to work with. They dispel all the common myths of oursourcing. They were forthright with their work . They provided suggestions and feedback before jumping into the work  They held themselves accountable to the work they delivered, in fact, only billing for the work completed. Many firms bill for time, and you never know if that company is working on other projects during your time. Josh Software is great in that sense. These guys know Rails (period).",
+        "description": "Gautam and his team were a pleasure to work with. They dispel all the common myths of outsourcing. They were forthright with their work . They provided suggestions and feedback before jumping into the work  They held themselves accountable to the work they delivered, in fact, only billing for the work completed. Many firms bill for time, and you never know if that company is working on other projects during your time. Josh Software is great in that sense. These guys know Rails (period).",
         "clientName": "Satjot",
         "designation": "CEO",
         "projectName": "Predikt it"
@@ -94,6 +96,9 @@ export default class SimpleSlider extends Component {
               <div class="slider-item d-flex align-items-center justify-content-center flex-column text-center">
                 <h3>{slide.clientName}</h3>
                 <p className="mb-2 text-truncate-multi-line overflow-hidden">{slide.description}</p>
+                <Link to="/testimonials" className="read-more" >
+                  <Button className="btn btn-outline-danger my-2">Read More</Button>
+                </Link>
                 <h6>{slide.designation}</h6>
               </div>
               )}
