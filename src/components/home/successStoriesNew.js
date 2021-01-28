@@ -28,7 +28,7 @@ const SuccessStoriesNew = (props) => {
 SuccessStoriesNew.defaultProps = {
   stories: [
     { name: "Freedom from Diabetes", slug: "ffd", logo: "dibetic.png" },
-    { name: "BrandScope", slug: "brandscope", logo: "Brandscope2.png" },
+    { name: "BrandScope", slug: "brandscope", logo: "brandscope-logo.png" },
     { name: "Star Network", slug: "star", logo: "Star.png" },
     // { name: "Star Network", slug: "star", logo: "Star.png"}
   ]
