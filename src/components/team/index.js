@@ -7,7 +7,7 @@ import JoshNerdProfiles from "./joshNerdProfiles";
 import { API_BASE_URL, API_PUBLIC_URL } from "../../globalConstants";
 
 const GITHUB_BASE_URL = "https://github.com/";
-const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
+// const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
 
 const OurTeam = props => {
   const [members, setMembers] = useState([]),

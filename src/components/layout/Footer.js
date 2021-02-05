@@ -67,8 +67,10 @@ const Footer = () => {
             <a href="https://joshsoftware.com/media-coverage" className="nav-link">In News</a>
             {/* <Link to="/domain_expertise" className="nav-link">Domain Expertise</Link> */}
             {/* <Link to="/team" className="nav-link">Our Team</Link> */}
+
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
-            <a href="https://careers.joshsoftware.com/" target="_blank" className="nav-link">Career</a>
+
+            <a href="https://careers.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Career</a>
             <Link to="/contact_us" className="nav-link">Contact Us</Link>
           </nav>
         </div>
