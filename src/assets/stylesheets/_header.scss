@@ -10,12 +10,14 @@
   }
 
   .navbar-brand {
+    padding: 0;
+
     > img {
-      width: rem(210px);
+      width: rem(148px);
       height: auto;
 
       @include media-breakpoint-down(md) {
-        width: rem(120px);
+        width: rem(104px);
       }
     }
   }

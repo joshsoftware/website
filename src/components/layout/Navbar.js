@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/images/josh-logo.png";
+import logo from "../../assets/images/josh-iso-logo@2x.png";
 import NavDropdown from "./NavDropdown";
 import NavLink from "./NavLink";
 import * as routes from "../../routeConstants.js";
 
-const Component = props => {
+const Component = (props) => {
   const [isOpenSidebar, toggleSidebar] = useState(false);
   const { menues } = props;
 
@@ -35,7 +35,7 @@ const Component = props => {
             ref={ref}
           >
             <div className="navbar-nav ml-auto">
-              {menues.map(menu => {
+              {menues.map((menu) => {
                 return menu.type === "dropdown" ? (
                   <NavDropdown
                     {...menu}
@@ -63,23 +63,23 @@ Component.defaultProps = {
     {
       id: 8,
       title: "Technologies",
-      url: routes.TECHNOLOGIES_URL
+      url: routes.TECHNOLOGIES_URL,
     },
     {
       id: 1,
       title: "Industries",
-      url: routes.DOMAIN_EXPERTISE
+      url: routes.DOMAIN_EXPERTISE,
     },
     {
       id: 6,
       title: "Success Stories",
-      url: routes.SUCCESS_STORIES_URL
+      url: routes.SUCCESS_STORIES_URL,
     },
     {
       id: 5,
       title: "Blogs",
       url: "https://blog.joshsoftware.com/",
-      otherDomain: true
+      otherDomain: true,
     },
     {
       id: 9,
@@ -88,25 +88,25 @@ Component.defaultProps = {
         {
           id: 1,
           title: "Talks",
-          url: routes.TALKS
+          url: routes.TALKS,
         },
         {
           id: 2,
           title: "Publications",
-          url: routes.PUBLICATIONS
+          url: routes.PUBLICATIONS,
         },
         {
           id: 3,
           title: "Media Coverage",
-          url: routes.NEWS
+          url: routes.NEWS,
         },
         {
           id: 4,
           title: "White Papers",
-          url: routes.WHITE_PAPERS
-        }
+          url: routes.WHITE_PAPERS,
+        },
       ],
-      type: "dropdown"
+      type: "dropdown",
     },
     {
       id: 7,
@@ -115,37 +115,37 @@ Component.defaultProps = {
         {
           id: 1,
           title: "About Us",
-          url: routes.ABOUT_US_URL
+          url: routes.ABOUT_US_URL,
         },
         {
           id: 2,
           title: "Our Team",
-          url: routes.OUR_TEAM_URL
+          url: routes.OUR_TEAM_URL,
         },
         {
           id: 3,
           title: "Our Innovation",
-          url: routes.INNOVATIONS
+          url: routes.INNOVATIONS,
         },
         {
           id: 4,
           title: "Career",
           url: "http://careers.joshsoftware.com/",
-          otherDomain: true
+          otherDomain: true,
         },
         {
           id: 6,
           title: "Contact Us",
-          url: routes.CONTACT_US_URL
+          url: routes.CONTACT_US_URL,
         },
         {
           id: 5,
           title: "Testimonials",
-          url: routes.TESTIMONIALS
-        }
+          url: routes.TESTIMONIALS,
+        },
       ],
-      type: "dropdown"
-    }
-  ]
+      type: "dropdown",
+    },
+  ],
 };
 export default Component;
