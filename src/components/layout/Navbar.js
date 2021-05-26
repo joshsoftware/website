@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/images/josh-iso-logo@2x.png";
+import logo from "../../assets/images/josh-iso-logo.svg";
 import NavDropdown from "./NavDropdown";
 import NavLink from "./NavLink";
 import * as routes from "../../routeConstants.js";
