@@ -1,0 +1,57 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.media-item {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .media-item {
+      padding: 0 1.5rem;
+      margin-bottom: 3.375rem;
+      max-width: 23.375rem; } }
+
+.media-frame {
+  padding: 0 0.5rem; }
+  .media-frame iframe {
+    border-radius: 1rem 1rem 0 0;
+    height: auto; }
+    @media (min-width: 992px) {
+      .media-frame iframe {
+        height: 10.375rem; } }
+
+.media-content {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 4.5rem 1.5rem 1.5rem;
+  margin-top: -4rem;
+  flex: 1; }
+  @media (min-width: 992px) {
+    .media-content {
+      padding: 4.5rem 1rem 1.5rem; } }
+  .media-content .profile-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #000; }
+
+.media-content-info {
+  flex: 1; }
+  .media-content-info > a {
+    color: #020449;
+    font-size: 1.125rem;
+    line-height: 0.875rem; }
+    @media (min-width: 992px) {
+      .media-content-info > a {
+        font-size: 0.875rem; } }
+  .media-content-info p {
+    font-size: 1rem;
+    line-height: 1.0625rem;
+    color: #333333;
+    font-weight: 500; }
+    @media (min-width: 992px) {
+      .media-content-info p {
+        font-size: 0.75rem; } }

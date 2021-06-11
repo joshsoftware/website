@@ -1,0 +1,12 @@
+.media-wrapper {
+  padding: 0 rem(24px);
+  flex-wrap: wrap;
+  background-color: gray;
+  display: flex;
+  // display: grid;
+  // grid-template-columns: auto;
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+    // grid-template-columns: auto auto auto;
+  }
+}
