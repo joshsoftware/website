@@ -1,6 +1,7 @@
 import React from "react";
 import Article from "../../shared-components/article/article";
 import MediaItem from "../../shared-components/media/media";
+import NewsBanner from "../../shared-components/newsBanner/newsBanner";
 
 const Talks = (props) => {
   const { data } = props;
@@ -61,6 +62,9 @@ const Talks = (props) => {
           );
         })}
       </Row> */}
+
+      <NewsBanner bannerTitle="talks" />
+
       <div className="media-wrapper justify-content-center">
         {data.map((video) => {
           const url = video.link
@@ -227,19 +231,19 @@ Talks.defaultProps = {
       articleTitle: "Publications",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "",
+      articleImg: "talks.jpeg",
     },
     {
       articleTitle: "Media Coverage",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "",
+      articleImg: "publication.jpeg",
     },
     {
       articleTitle: "Our White papers",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "",
+      articleImg: "our_white_paper.jpeg",
     },
   ],
 };

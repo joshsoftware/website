@@ -1,0 +1,64 @@
+@import "../../assets/stylesheets/core";
+
+.news-banner-wrap {
+  background: url("../../assets/images/revampImages/talks_banner.jpeg")
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: rem(292px);
+  border-radius: 0px 0px 12px 12px;
+  padding: rem(40px) rem(32px);
+
+  @include media-breakpoint-up(lg) {
+    height: rem(315px);
+    background-position: center bottom;
+    padding: rem(48px) 0;
+  }
+
+  h1 {
+    font-size: rem(38px);
+    line-height: rem(45px);
+    margin-bottom: rem(48px);
+
+    @include media-breakpoint-up(lg) {
+      font-size: rem(75px);
+      line-height: rem(89px);
+      margin-bottom: rem(40px);
+    }
+  }
+}
+
+.filter-wrap {
+  margin: 0 rem(-6px);
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 rem(-8px);
+    justify-content: center;
+  }
+}
+
+.filter-pill-item {
+  padding: 0 rem(6px);
+  margin-bottom: rem(12px);
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 rem(8px);
+    margin-bottom: rem(16px);
+  }
+  > span {
+    font-size: rem(16px);
+    line-height: rem(12px);
+    color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    padding: rem(8px) rem(32px);
+
+    &.active {
+      font-weight: bold;
+      color: #001427;
+      background-color: #f2f2f2;
+      border: unset;
+    }
+  }
+}

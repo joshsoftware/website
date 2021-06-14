@@ -23,4 +23,29 @@
   padding: rem(8px) rem(8px) rem(8px) rem(14px);
   font-size: rem(15px);
   line-height: rem(16px);
+
+  &.active,
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: #000000;
+    border-left: 17px solid #e86055;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.view-more-btn:not(:disabled):not(.disabled):active:focus,
+.view-more-btn:not(:disabled):not(.disabled).active:focus,
+.show > .view-more-btn.dropdown-toggle:focus {
+  background-color: #000000;
+  border-left: 17px solid #e86055;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  box-shadow: none;
+  outline: none;
 }

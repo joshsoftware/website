@@ -14,12 +14,14 @@
       margin-bottom: 3.375rem;
       max-width: 23.375rem; } }
 
-.media-frame iframe {
-  border-radius: 1rem 1rem 0 0;
-  height: auto; }
-  @media (min-width: 992px) {
-    .media-frame iframe {
-      height: 10.375rem; } }
+.media-frame {
+  flex: 1; }
+  .media-frame iframe {
+    border-radius: 1rem 1rem 0 0;
+    height: auto; }
+    @media (min-width: 992px) {
+      .media-frame iframe {
+        height: 10.375rem; } }
 
 .media-content {
   background-color: #fff;

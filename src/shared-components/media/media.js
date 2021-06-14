@@ -26,7 +26,7 @@ const MediaItem = ({ url, topic, speaker, event, date, videoId }) => {
 
   return (
     <div className="media-item d-flex flex-column">
-      <div className="media-frame">
+      <div className="media-frame d-flex flex-column">
         <iframe
           src={url}
           width="100%"

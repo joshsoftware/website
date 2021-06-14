@@ -10,7 +10,10 @@ const Article = ({ articleDesc, articleTitle, articleImg }) => {
           {articleTitle}
         </h1>
         <div className="image-wrap">
-          <img src="" alt="article image" />
+          <img
+            src={require(`../../assets/images/revampImages/${articleImg}`)}
+            alt="article"
+          />
         </div>
         <p className="mb-3 overflow-hidden">{articleDesc}</p>
 

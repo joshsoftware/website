@@ -1,0 +1,55 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.news-banner-wrap {
+  background: url("../../assets/images/revampImages/talks_banner.jpeg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 18.25rem;
+  border-radius: 0px 0px 12px 12px;
+  padding: 2.5rem 2rem; }
+  @media (min-width: 992px) {
+    .news-banner-wrap {
+      height: 19.6875rem;
+      background-position: center bottom;
+      padding: 3rem 0; } }
+  .news-banner-wrap h1 {
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+    margin-bottom: 3rem; }
+    @media (min-width: 992px) {
+      .news-banner-wrap h1 {
+        font-size: 4.6875rem;
+        line-height: 5.5625rem;
+        margin-bottom: 2.5rem; } }
+
+.filter-wrap {
+  margin: 0 -0.375rem; }
+  @media (min-width: 992px) {
+    .filter-wrap {
+      margin: 0 -0.5rem;
+      justify-content: center; } }
+
+.filter-pill-item {
+  padding: 0 0.375rem;
+  margin-bottom: 0.75rem; }
+  @media (min-width: 992px) {
+    .filter-pill-item {
+      padding: 0 0.5rem;
+      margin-bottom: 1rem; } }
+  .filter-pill-item > span {
+    font-size: 1rem;
+    line-height: 0.75rem;
+    color: #ffffff;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    padding: 0.5rem 2rem; }
+    .filter-pill-item > span.active {
+      font-weight: bold;
+      color: #001427;
+      background-color: #f2f2f2;
+      border: unset; }

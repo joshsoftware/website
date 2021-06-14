@@ -67,12 +67,17 @@
   .image-wrap {
     max-width: 388px;
     margin: 0 rem(-34px) rem(24px);
-    height: 100px;
-    border: 3px solid red;
-    background-color: lightgrey;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: rem(8px);
 
     @include media-breakpoint-up(lg) {
       margin: 0 rem(-34px) rem(16px);
+    }
+
+    img {
+      height: 146px;
+      width: 100%;
+      border-radius: rem(8px);
     }
   }
 }
