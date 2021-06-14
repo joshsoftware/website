@@ -10,3 +10,17 @@
     // grid-template-columns: auto auto auto;
   }
 }
+
+.view-more-btn {
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 0;
+  border-left: 17px solid #e86055;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  width: auto;
+  padding: rem(8px) rem(8px) rem(8px) rem(14px);
+  font-size: rem(15px);
+  line-height: rem(16px);
+}

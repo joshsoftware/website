@@ -1,8 +1,11 @@
 import React from "react";
+import Article from "../../shared-components/article/article";
 import MediaItem from "../../shared-components/media/media";
 
 const Talks = (props) => {
   const { data } = props;
+
+  const { dataList } = props;
 
   // const VideoFrame = ({ url, video }) => (
   //   <div>
@@ -74,6 +77,16 @@ const Talks = (props) => {
             />
           );
         })}
+      </div>
+
+      <div className="article-list d-flex">
+        {dataList.map((dataListItems) => (
+          <Article
+            articleDesc={dataListItems.articleDesc}
+            articleImg={dataListItems.articleImg}
+            articleTitle={dataListItems.articleTitle}
+          />
+        ))}
       </div>
     </div>
   );
@@ -207,6 +220,27 @@ Talks.defaultProps = {
     //   speaker: "Gautam Rege",
     //   link: "https://confreaks.tv/videos/lsrc2010-mobile-value-added-service-vas"
     // },
+  ],
+
+  dataList: [
+    {
+      articleTitle: "Publications",
+      articleDesc:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      articleImg: "",
+    },
+    {
+      articleTitle: "Media Coverage",
+      articleDesc:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      articleImg: "",
+    },
+    {
+      articleTitle: "Our White papers",
+      articleDesc:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      articleImg: "",
+    },
   ],
 };
 
