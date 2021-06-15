@@ -1,0 +1,11 @@
+@import "../../assets/stylesheets/core";
+
+.article-content-card {
+  box-shadow: 6px 0px 10px #1270a817;
+  border-radius: 12px;
+  background-color: #ffffff;
+
+  &:not(:first-child) {
+    margin-top: rem(24px);
+  }
+}

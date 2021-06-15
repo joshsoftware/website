@@ -49,3 +49,10 @@
   box-shadow: none;
   outline: none;
 }
+
+.news-banner-wrap {
+  &.white-paper-banner {
+    background: url("../../assets/images/revampImages/our_white_paper_banner.jpeg")
+      no-repeat;
+  }
+}

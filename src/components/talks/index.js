@@ -3,11 +3,7 @@ import Article from "../../shared-components/article/article";
 import MediaItem from "../../shared-components/media/media";
 import NewsBanner from "../../shared-components/newsBanner/newsBanner";
 
-const Talks = (props) => {
-  const { data } = props;
-
-  const { dataList } = props;
-
+const Talks = ({ data, dataList }) => {
   // const VideoFrame = ({ url, video }) => (
   //   <div>
   //     <iframe
