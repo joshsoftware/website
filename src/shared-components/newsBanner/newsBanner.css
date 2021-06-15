@@ -4,27 +4,42 @@
 /* rem unit mixin */
 /* flex Sass mixin */
 /* mixins end */
+.news-banner-section {
+  position: relative; }
+  .news-banner-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e86055;
+    width: 100%;
+    height: 2.75rem;
+    z-index: -1; }
+
 .news-banner-wrap {
   background: url("../../assets/images/revampImages/talks_banner.jpeg") no-repeat;
   background-size: cover;
   width: 100%;
-  height: 18.25rem;
+  height: 10rem;
+  background-position: left 30% center;
   border-radius: 0px 0px 12px 12px;
-  padding: 2.5rem 2rem; }
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   @media (min-width: 992px) {
     .news-banner-wrap {
       height: 19.6875rem;
-      background-position: center bottom;
-      padding: 3rem 0; } }
+      padding: 3rem 0;
+      background-position: center center; } }
   .news-banner-wrap h1 {
     font-size: 2.375rem;
-    line-height: 2.8125rem;
-    margin-bottom: 3rem; }
+    line-height: 2.8125rem; }
     @media (min-width: 992px) {
       .news-banner-wrap h1 {
         font-size: 4.6875rem;
-        line-height: 5.5625rem;
-        margin-bottom: 2.5rem; } }
+        line-height: 5.5625rem; } }
 
 .filter-wrap {
   margin: 0 -0.375rem; }

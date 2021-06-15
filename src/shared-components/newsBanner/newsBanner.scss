@@ -1,29 +1,45 @@
 @import "../../assets/stylesheets/core";
 
+.news-banner-section {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e86055;
+    width: 100%;
+    height: rem(44px);
+    z-index: -1;
+  }
+}
 .news-banner-wrap {
   background: url("../../assets/images/revampImages/talks_banner.jpeg")
     no-repeat;
   background-size: cover;
   width: 100%;
-  height: rem(292px);
+  height: rem(160px);
+  background-position: left 30% center;
   border-radius: 0px 0px 12px 12px;
   padding: rem(40px) rem(32px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media-breakpoint-up(lg) {
     height: rem(315px);
-    background-position: center bottom;
     padding: rem(48px) 0;
+    background-position: center center;
   }
 
   h1 {
     font-size: rem(38px);
     line-height: rem(45px);
-    margin-bottom: rem(48px);
 
     @include media-breakpoint-up(lg) {
       font-size: rem(75px);
       line-height: rem(89px);
-      margin-bottom: rem(40px);
     }
   }
 }

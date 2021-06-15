@@ -2,23 +2,27 @@ import React from "react";
 import "./newsBanner.css";
 
 const NewsBanner = ({ bannerTitle, filterItem }) => {
-  const FilterPill = ({ filterLabel }) => {
-    return (
-      <div className="filter-pill-item text-center">
-        <span className="d-block">{filterLabel}</span>
-      </div>
-    );
-  };
+  // const FilterPill = ({ filterLabel }) => {
+  //   return (
+  //     <div className="filter-pill-item text-center">
+  //       <span className="d-block">{filterLabel}</span>
+  //     </div>
+  //   );
+  // };
   return (
-    <div className="news-banner-wrap text-center">
-      <h1 className="font-weight-bold text-white text-capitalize">
-        {bannerTitle}
-      </h1>
+    <div className="news-banner-section">
+      <div className="container">
+        <div className="news-banner-wrap text-center">
+          <h1 className="font-weight-bold text-white text-capitalize">
+            {bannerTitle}
+          </h1>
 
-      <div className="filter-wrap d-flex flex-wrap align-items-center">
-        {filterItem.map((items) => (
-          <FilterPill filterLabel={items.filterLabel} />
-        ))}
+          {/* <div className="filter-wrap d-flex flex-wrap align-items-center">
+          {filterItem.map((items) => (
+            <FilterPill filterLabel={items.filterLabel} />
+          ))}
+        </div> */}
+        </div>
       </div>
     </div>
   );
