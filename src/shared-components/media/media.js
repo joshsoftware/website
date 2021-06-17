@@ -1,7 +1,18 @@
 import React from "react";
+import { Button } from "reactstrap";
+import DefaultButton from "../defaultButton/defaultButton";
 import "./media.css";
 
-const MediaItem = ({ url, topic, speaker, event, date, videoId }) => {
+const MediaItem = ({
+  url,
+  topic,
+  speaker,
+  event,
+  date,
+  videoId,
+  mediaCoverageTitle,
+  mediaCoverageDesc,
+}) => {
   const MediaTile = (props) => (
     <div className="media-content d-flex align-items-start">
       <div className="profile-icon mr-3"></div>
@@ -23,6 +34,14 @@ const MediaItem = ({ url, topic, speaker, event, date, videoId }) => {
       </div>
     </div>
   );
+
+  // const MediaCoverageTile = (props) => (
+  //   <div className="media-coverage-content">
+  //     <h5>{mediaCoverageTitle}</h5>
+  //     <p>{mediaCoverageDesc}</p>
+  //     <DefaultButton buttonText={"know More"} />
+  //   </div>
+  // );
 
   return (
     <div className="media-item d-flex flex-column">

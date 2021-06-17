@@ -1,7 +1,7 @@
 import React from "react";
 import "./newsBanner.css";
 
-const NewsBanner = ({ bannerTitle, filterItem }) => {
+const NewsBanner = ({ bannerTitle, filterItem, className }) => {
   // const FilterPill = ({ filterLabel }) => {
   //   return (
   //     <div className="filter-pill-item text-center">
@@ -10,7 +10,8 @@ const NewsBanner = ({ bannerTitle, filterItem }) => {
   //   );
   // };
   return (
-    <div className="news-banner-section">
+    // <div className="news-banner-section">
+    <div className={`news-banner-section ${className}`}>
       <div className="container">
         <div className="news-banner-wrap text-center">
           <h1 className="font-weight-bold text-white text-capitalize">
