@@ -1,0 +1,36 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.default-btn {
+  background-color: #000000;
+  border-radius: 0;
+  border-left: 17px solid #e86055;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  width: auto;
+  min-width: 7.6875rem;
+  font-size: 0.9375rem;
+  line-height: 1rem; }
+  .default-btn.active, .default-btn:active, .default-btn:hover, .default-btn:focus {
+    background-color: #000000;
+    border-left: 17px solid #e86055;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    outline: none; }
+
+.default-btn:not(:disabled):not(.disabled):active:focus,
+.default-btn:not(:disabled):not(.disabled).active:focus,
+.show > .default-btn.dropdown-toggle:focus {
+  background-color: #000000;
+  border-left: 17px solid #e86055;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  box-shadow: none;
+  outline: none; }

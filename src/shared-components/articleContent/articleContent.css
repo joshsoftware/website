@@ -7,6 +7,43 @@
 .article-content-card {
   box-shadow: 6px 0px 10px #1270a817;
   border-radius: 12px;
-  background-color: #ffffff; }
-  .article-content-card:not(:first-child) {
-    margin-top: 1.5rem; }
+  background-color: #ffffff;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 992px) {
+    .article-content-card:last-child {
+      margin-bottom: 0; } }
+  @media (min-width: 992px) {
+    .article-content-card {
+      flex-direction: row; } }
+
+.card-img-wrap img {
+  width: 11.5rem;
+  margin: 0 auto; }
+  @media (min-width: 992px) {
+    .card-img-wrap img {
+      width: 14.25rem; } }
+
+@media (min-width: 992px) {
+  .card-img-wrap {
+    margin-right: 4rem; } }
+
+.article-content {
+  margin-bottom: 0.5rem; }
+  .article-content h4 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: #020449;
+    margin-bottom: 1.5rem; }
+    @media (min-width: 992px) {
+      .article-content h4 {
+        margin-bottom: 2rem; } }
+  .article-content p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #020449;
+    min-height: 8.875rem; }
+    @media (min-width: 992px) {
+      .article-content p {
+        min-height: 7.125rem; } }

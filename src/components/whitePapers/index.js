@@ -154,13 +154,13 @@ WhitePapers.defaultProps = {
 
   articleList: [
     {
-      cardImg: "",
+      cardImg: "Diligence_for_investors.png",
       cardTitle: "Scaling Up Business On The Back Of Open Source",
       cardDesc:
         "How Open Source Enables Organisation Wide Growth For Business Leaders",
     },
     {
-      cardImg: "",
+      cardImg: "Back_Of_Open_Source.png",
       cardTitle: "The Importance of Technical Due Diligence for Investors",
       cardDesc:
         "Technical due diligence is a highly recommended component of the technology company investment cycle, whether you are a private equity firm, investment bank, or acquiring company. It is usually undertaken before fundraising rounds, or in some cases, right before mergers and acquisitions. In this white paper, we will focus on answering the key questions related to why emerging businesses should consider it, and how they can get the process right to build long term scalability and profitability.",

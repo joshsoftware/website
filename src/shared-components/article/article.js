@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "reactstrap";
+import DefaultButton from "../defaultButton/defaultButton";
 import "./article.css";
 
 const Article = ({ articleDesc, articleTitle, articleImg }) => {
@@ -17,9 +18,7 @@ const Article = ({ articleDesc, articleTitle, articleImg }) => {
         </div>
         <p className="mb-3 overflow-hidden">{articleDesc}</p>
 
-        <Button className="view-more-btn text-uppercase text-white d-block text-center font-weight-bold">
-          view more
-        </Button>
+        <DefaultButton buttonText={"view more"} />
       </div>
     </div>
   );

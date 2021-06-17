@@ -1,15 +1,21 @@
 import React from "react";
+import DefaultButton from "../defaultButton/defaultButton";
 import "./articleContent.css";
 
 const ArticleContent = ({ cardDesc, cardTitle, cardImg }) => {
   return (
     <div className="article-content-card d-flex">
-      <div className="card-img-wrap">
-        <img src={cardImg} alt="article card img" />
+      <div className="card-img-wrap text-center">
+        <img
+          src={require(`../../assets/images/revampImages/${cardImg}`)}
+          alt="article card img"
+        />
       </div>
       <div className="article-content">
-        <h4>{cardTitle}</h4>
+        <h4 className="font-weight-bold">{cardTitle}</h4>
         <p>{cardDesc}</p>
+
+        <DefaultButton buttonText="Continue Reading" />
       </div>
     </div>
   );
