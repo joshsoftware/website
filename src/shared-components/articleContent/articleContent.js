@@ -1,8 +1,17 @@
 import React from "react";
 import DefaultButton from "../defaultButton/defaultButton";
+import BookInfo from "../bookInfo/bookInfo";
 import "./articleContent.css";
 
-const ArticleContent = ({ cardDesc, cardTitle, cardImg }) => {
+const ArticleContent = ({
+  cardDesc,
+  cardTitle,
+  cardImg,
+  cardBtnText,
+  bookInfoList,
+  bookTitle,
+  bookPrice,
+}) => {
   return (
     <div className="article-content-card d-flex">
       <div className="card-img-wrap text-center">
@@ -15,8 +24,11 @@ const ArticleContent = ({ cardDesc, cardTitle, cardImg }) => {
         <h4 className="font-weight-bold">{cardTitle}</h4>
         <p>{cardDesc}</p>
 
-        <DefaultButton buttonText="Continue Reading" />
+        <DefaultButton buttonText={cardBtnText} />
       </div>
+      {bookPrice && bookTitle && (
+        <BookInfo bookTitle={bookTitle} bookPrice={bookPrice} />
+      )}
     </div>
   );
 };

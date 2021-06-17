@@ -10,7 +10,8 @@
   background-color: #ffffff;
   flex-direction: column;
   padding: 1rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 4.5rem;
+  position: relative; }
   @media (min-width: 992px) {
     .article-content-card:last-child {
       margin-bottom: 0; } }
@@ -30,7 +31,10 @@
     margin-right: 4rem; } }
 
 .article-content {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 7.5rem; }
+  @media (min-width: 992px) {
+    .article-content {
+      margin-bottom: 0; } }
   .article-content h4 {
     font-size: 1.125rem;
     line-height: 1.625rem;

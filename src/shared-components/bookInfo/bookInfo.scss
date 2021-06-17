@@ -1,0 +1,77 @@
+@import "../../assets/stylesheets/core";
+
+.book-info-card {
+  box-shadow: rem(3px) 0px rem(14px) #335d7622;
+  border-radius: rem(8px);
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  margin: 0 rem(16px);
+  z-index: 9999;
+  background-color: #fff;
+  padding: rem(16px);
+
+  .top-content {
+    > p {
+      font-size: rem(14px);
+      line-height: rem(22px);
+      color: #333333;
+      flex: 0 0 70%;
+      margin-right: auto;
+      font-weight: 600;
+    }
+
+    margin-bottom: rem(16px);
+  }
+
+  .price-wrap {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+
+    > p {
+      font-size: rem(13px);
+      line-height: rem(22px);
+      color: #ec6513;
+      margin-bottom: rem(4px);
+    }
+
+    span {
+      font-size: rem(16px);
+      line-height: rem(22px);
+      color: #1000ff;
+    }
+  }
+
+  .buy-now-btn {
+    background-color: #cf4338;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    width: auto;
+    padding: rem(5px) rem(16px);
+
+    &:hover,
+    &:active,
+    &.active,
+    &:focus {
+      background-color: #cf4338;
+      color: #fff;
+      outline: unset;
+      border-color: unset;
+      box-shadow: unset;
+    }
+  }
+}
+
+.buy-now-btn:not(:disabled):not(.disabled):active:focus,
+.buy-now-btn:not(:disabled):not(.disabled).active:focus,
+.show > .buy-now-btn.dropdown-toggle:focus {
+  background-color: #cf4338;
+  color: #fff;
+  outline: unset;
+  border-color: unset;
+  box-shadow: unset;
+}

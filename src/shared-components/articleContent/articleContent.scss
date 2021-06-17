@@ -6,7 +6,8 @@
   background-color: #ffffff;
   flex-direction: column;
   padding: rem(16px);
-  margin-bottom: rem(24px);
+  margin-bottom: rem(72px);
+  position: relative;
 
   &:last-child {
     @include media-breakpoint-up(lg) {
@@ -35,7 +36,11 @@
 }
 
 .article-content {
-  margin-bottom: rem(8px);
+  margin-bottom: rem(120px);
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
 
   h4 {
     font-size: rem(18px);

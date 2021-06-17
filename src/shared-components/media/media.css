@@ -43,7 +43,8 @@
   .media-content-info > a {
     color: #020449;
     font-size: 1.125rem;
-    line-height: 0.875rem; }
+    line-height: 0.875rem;
+    text-decoration: none; }
     @media (min-width: 992px) {
       .media-content-info > a {
         font-size: 0.875rem; } }

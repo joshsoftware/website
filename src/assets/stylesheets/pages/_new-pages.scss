@@ -21,6 +21,14 @@
       background-size: cover;
     }
   }
+
+  &.publication-banner {
+    .news-banner-wrap {
+      background: url("../../assets/images/revampImages/publications_banner.jpeg")
+        no-repeat;
+      background-size: cover;
+    }
+  }
 }
 
 .article-content-wrapper {

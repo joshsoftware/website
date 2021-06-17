@@ -1,0 +1,61 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.book-info-card {
+  box-shadow: 0.1875rem 0px 0.875rem #335d7622;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  margin: 0 1rem;
+  z-index: 9999;
+  background-color: #fff;
+  padding: 1rem; }
+  .book-info-card .top-content {
+    margin-bottom: 1rem; }
+    .book-info-card .top-content > p {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      color: #333333;
+      flex: 0 0 70%;
+      margin-right: auto;
+      font-weight: 600; }
+  .book-info-card .price-wrap {
+    text-align: center; }
+    @media (min-width: 992px) {
+      .book-info-card .price-wrap {
+        text-align: left; } }
+    .book-info-card .price-wrap > p {
+      font-size: 0.8125rem;
+      line-height: 1.375rem;
+      color: #ec6513;
+      margin-bottom: 0.25rem; }
+    .book-info-card .price-wrap span {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      color: #1000ff; }
+  .book-info-card .buy-now-btn {
+    background-color: #cf4338;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    width: auto;
+    padding: 0.3125rem 1rem; }
+    .book-info-card .buy-now-btn:hover, .book-info-card .buy-now-btn:active, .book-info-card .buy-now-btn.active, .book-info-card .buy-now-btn:focus {
+      background-color: #cf4338;
+      color: #fff;
+      outline: unset;
+      border-color: unset;
+      box-shadow: unset; }
+
+.buy-now-btn:not(:disabled):not(.disabled):active:focus,
+.buy-now-btn:not(:disabled):not(.disabled).active:focus,
+.show > .buy-now-btn.dropdown-toggle:focus {
+  background-color: #cf4338;
+  color: #fff;
+  outline: unset;
+  border-color: unset;
+  box-shadow: unset; }

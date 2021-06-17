@@ -50,6 +50,7 @@
     color: #020449;
     font-size: rem(18px);
     line-height: rem(14px);
+    text-decoration: none;
     @include media-breakpoint-up(lg) {
       font-size: rem(14px);
     }
