@@ -11,9 +11,11 @@ const ArticleContent = ({
   bookInfoList,
   bookTitle,
   bookPrice,
+  className,
 }) => {
   return (
-    <div className="article-content-card d-flex">
+    // <div className="article-content-card d-flex">
+    <div className={`article-content-card d-flex ${className}`}>
       <div className="card-img-wrap text-center">
         <img
           src={require(`../../assets/images/revampImages/${cardImg}`)}

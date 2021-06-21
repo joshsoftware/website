@@ -1,7 +1,7 @@
 @import "../../assets/stylesheets/core";
 
 .article-content-card {
-  box-shadow: 6px 0px 10px #1270a817;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.161);
   border-radius: 12px;
   background-color: #ffffff;
   flex-direction: column;
@@ -17,6 +17,14 @@
 
   @include media-breakpoint-up(lg) {
     flex-direction: row;
+  }
+
+  &.publication-content-wrapper {
+    .article-content {
+      @include media-breakpoint-up(lg) {
+        padding-right: 20%;
+      }
+    }
   }
 }
 

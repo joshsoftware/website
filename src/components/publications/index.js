@@ -73,6 +73,7 @@ const Publications = ({ books, dataList, articleList }) => {
         <div className="article-content-wrapper">
           {articleList.map((articleListItems) => (
             <ArticleContent
+              className="publication-content-wrapper"
               cardImg={articleListItems.cardImg}
               cardTitle={articleListItems.cardTitle}
               cardDesc={articleListItems.cardDesc}
@@ -269,7 +270,7 @@ Publications.defaultProps = {
 
   articleList: [
     {
-      cardImg: "Diligence_for_investors.png",
+      cardImg: "ruby_mongodb.png",
       cardTitle: "Ruby and MongoDB Web Development Beginner’s Guide",
       cardDesc:
         "MongoDB is a high-performance, open source, schema-free document-oriented database. Ruby is an object- oriented scripting language. Ruby and MongoDB are an ideal partnership for building scalable web Ruby and MongoDB Web Development Beginner’s Guide is a fast-paced, hands-on guide to get started with web application development using Ruby and MongoDB.applications.",
@@ -278,7 +279,7 @@ Publications.defaultProps = {
       bookPrice: "Rs. 299.00",
     },
     {
-      cardImg: "Back_Of_Open_Source.png",
+      cardImg: "microservives.png",
       cardTitle: "Hands-on Microservices with Go and MongoDB",
       cardDesc:
         "How do you build a service-oriented architecture, using microservices system that should not only be scalable with high performance but also handle frequently changing features? This is a real-world problem and it’s important that you empower yourself with the knowledge, tools, and skills today, so that you can build these systems with confidence!",
