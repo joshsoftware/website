@@ -32,62 +32,66 @@ const Talks = ({ data, dataList }) => {
   // );
 
   return (
-    <div className="section-content">
-      {/* <br />
-      <Row className="col-lg-12 col-sm-12 padding-row">
-        {data.map((video) => {
-          const url = video.link
-            ? video.link
-            : `https://www.youtube.com/embed/${video.videoId}`;
-          return (
-            (
-              <Media query="(max-width: 500px)" key={video.videoId}>
-                {(matches) =>
-                  matches ? (
-                    <Col sm="12" className="pt-2 pb-2">
-                      <VideoFrame url={url} video={video} />
-                    </Col>
-                  ) : (
-                    <Col lg="4" md="4" className="pt-2 pb-2">
-                      <VideoFrame url={url} video={video} />
-                    </Col>
-                  )
-                }
-              </Media>
-            )
-          );
-        })}
-      </Row> */}
+    //     <div className="section-content">
+    //       <br />
+    //       <Row className="col-lg-12 col-sm-12 padding-row">
+    //         {data.map((video) => {
+    //           const url = video.link
+    //             ? video.link
+    //             : `https://www.youtube.com/embed/${video.videoId}`;
+    //           return (
+    //             (
+    //               <Media query="(max-width: 500px)" key={video.videoId}>
+    //                 {(matches) =>
+    //                   matches ? (
+    //                     <Col sm="12" className="pt-2 pb-2">
+    //                       <VideoFrame url={url} video={video} />
+    //                     </Col>
+    //                   ) : (
+    //                     <Col lg="4" md="4" className="pt-2 pb-2">
+    //                       <VideoFrame url={url} video={video} />
+    //                     </Col>
+    //                   )
+    //                 }
+    //               </Media>
+    //             )
+    //           );
+    //         })}
+    //       </Row>
+    // </div>
+    <div className="josh-content">
+      <section className="banner-section position-relative">
+        <NewsBanner bannerTitle="talks" />
+      </section>
+      <section className="main-section">
+        <div className="media-wrapper justify-content-center">
+          {data.map((video) => {
+            const url = video.link
+              ? video.link
+              : `https://www.youtube.com/embed/${video.videoId}`;
+            return (
+              <MediaItem
+                url={url}
+                topic={video.topic}
+                speaker={video.speaker}
+                date={video.date}
+                event={video.event}
+                videoId={video.videoId}
+              />
+            );
+          })}
+        </div>
 
-      <NewsBanner bannerTitle="talks" />
-
-      <div className="media-wrapper justify-content-center">
-        {data.map((video) => {
-          const url = video.link
-            ? video.link
-            : `https://www.youtube.com/embed/${video.videoId}`;
-          return (
-            <MediaItem
-              url={url}
-              topic={video.topic}
-              speaker={video.speaker}
-              date={video.date}
-              event={video.event}
-              videoId={video.videoId}
+        <div className="article-list d-flex">
+          {dataList.map((dataListItems) => (
+            <Article
+              articleDesc={dataListItems.articleDesc}
+              articleImg={dataListItems.articleImg}
+              articleTitle={dataListItems.articleTitle}
             />
-          );
-        })}
-      </div>
-
-      <div className="article-list d-flex">
-        {dataList.map((dataListItems) => (
-          <Article
-            articleDesc={dataListItems.articleDesc}
-            articleImg={dataListItems.articleImg}
-            articleTitle={dataListItems.articleTitle}
-          />
-        ))}
-      </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
