@@ -9,30 +9,34 @@
   border-radius: 12px;
   background-color: #ffffff;
   flex-direction: column;
-  padding: 1rem;
-  margin-bottom: 3.25rem;
+  padding: 1.5rem 1.5rem 3rem;
+  margin-bottom: 1.5rem;
   position: relative; }
-  .article-content-card:not(:first-child) {
-    margin-top: 4.5rem; }
-    @media (min-width: 992px) {
-      .article-content-card:not(:first-child) {
-        margin-top: 0; } }
   @media (min-width: 992px) {
     .article-content-card {
       flex-direction: row;
-      margin-bottom: 2.5rem; } }
+      margin-bottom: 2.5rem;
+      padding: 3.5rem 1.5rem 3rem; } }
   @media (min-width: 992px) {
     .article-content-card:last-child {
       margin-bottom: 0; } }
-  @media (min-width: 992px) {
-    .article-content-card.publication-content-wrapper .article-content {
-      padding-right: 20%; } }
-  .article-content-card.publication-content-wrapper .card-img-wrap img {
-    width: 17.5rem;
-    height: 14.0625rem; }
+  .article-content-card.publication-content-wrapper {
+    margin-bottom: 4.5rem; }
     @media (min-width: 992px) {
-      .article-content-card.publication-content-wrapper .card-img-wrap img {
-        width: 11.5625rem; } }
+      .article-content-card.publication-content-wrapper {
+        margin-bottom: 2.5rem; } }
+    @media (min-width: 992px) {
+      .article-content-card.publication-content-wrapper:last-child {
+        margin-bottom: 0; } }
+    @media (min-width: 992px) {
+      .article-content-card.publication-content-wrapper .article-content {
+        padding-right: 20%; } }
+    .article-content-card.publication-content-wrapper .card-img-wrap img {
+      width: 17.5rem;
+      height: 14.0625rem; }
+      @media (min-width: 992px) {
+        .article-content-card.publication-content-wrapper .card-img-wrap img {
+          width: 11.5625rem; } }
 
 .card-img-wrap img {
   width: 11.5rem;
@@ -46,10 +50,7 @@
     margin-right: 4rem; } }
 
 .article-content {
-  margin-bottom: 7.5rem; }
-  @media (min-width: 992px) {
-    .article-content {
-      margin-bottom: 0; } }
+  flex: 1; }
   .article-content h4 {
     font-size: 1.125rem;
     line-height: 1.625rem;

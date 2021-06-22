@@ -1,0 +1,19 @@
+@import "../../assets/stylesheets/core";
+
+.testimonial-card-content {
+  margin-bottom: rem(24px);
+  background-color: #fff;
+  padding: rem(24px);
+  box-shadow: 6px 0px 10px rgba(18, 112, 168, 0.09);
+  border-radius: 12px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: rem(40px);
+  }
+}
+
+.client-profile {
+  @include media-breakpoint-up(lg) {
+    flex-direction: column;
+  }
+}

@@ -5,6 +5,12 @@
   max-width: 100%;
   width: 100%;
 
+  @include media-breakpoint-up(md) {
+    padding: 0 rem(24px);
+    margin-bottom: rem(48px);
+    max-width: rem(360px);
+  }
+
   @include media-breakpoint-up(lg) {
     padding: 0 rem(24px);
     margin-bottom: rem(54px);

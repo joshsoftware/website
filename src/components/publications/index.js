@@ -67,33 +67,37 @@ const Publications = ({ books, dataList, articleList }) => {
     //     ))
     //   }
     // </div>
-    <div className="section-content">
-      <NewsBanner bannerTitle="Publications" className="publication-banner" />
-      <div className="container">
-        <div className="article-content-wrapper">
-          {articleList.map((articleListItems) => (
-            <ArticleContent
-              className="publication-content-wrapper"
-              cardImg={articleListItems.cardImg}
-              cardTitle={articleListItems.cardTitle}
-              cardDesc={articleListItems.cardDesc}
-              cardBtnText={articleListItems.cardBtnText}
-              bookTitle={articleListItems.bookTitle}
-              bookPrice={articleListItems.bookPrice}
+    <div className="josh-content">
+      <section className="banner-section position-relative">
+        <NewsBanner bannerTitle="Publications" className="publication-banner" />
+      </section>
+      <section className="main-section">
+        <div className="container">
+          <div className="article-content-wrapper">
+            {articleList.map((articleListItems) => (
+              <ArticleContent
+                className="publication-content-wrapper"
+                cardImg={articleListItems.cardImg}
+                cardTitle={articleListItems.cardTitle}
+                cardDesc={articleListItems.cardDesc}
+                cardBtnText={articleListItems.cardBtnText}
+                bookTitle={articleListItems.bookTitle}
+                bookPrice={articleListItems.bookPrice}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="article-list d-flex">
+          {dataList.map((dataListItems) => (
+            <Article
+              articleDesc={dataListItems.articleDesc}
+              articleImg={dataListItems.articleImg}
+              articleTitle={dataListItems.articleTitle}
             />
           ))}
         </div>
-      </div>
-
-      <div className="article-list d-flex">
-        {dataList.map((dataListItems) => (
-          <Article
-            articleDesc={dataListItems.articleDesc}
-            articleImg={dataListItems.articleImg}
-            articleTitle={dataListItems.articleTitle}
-          />
-        ))}
-      </div>
+      </section>
     </div>
   );
 };
@@ -255,16 +259,16 @@ Publications.defaultProps = {
       articleImg: "talks.jpeg",
     },
     {
-      articleTitle: "Publications",
-      articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "publication.jpeg",
-    },
-    {
       articleTitle: "Media Coverage",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "media_coverage.jpeg",
+    },
+    {
+      articleTitle: "Our White Papers",
+      articleDesc:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      articleImg: "our_white_paper.jpeg",
     },
   ],
 
@@ -286,6 +290,15 @@ Publications.defaultProps = {
       cardBtnText: "Read",
       bookTitle: "Hands on Microdervices with Go and MangoDB",
       bookPrice: "Rs. 10.00",
+    },
+    {
+      cardImg: "ruby_mongodb.png",
+      cardTitle: "Learning Mongoid",
+      cardDesc:
+        "Mongoid helps you to leverage the power of schema-less and efficient document-based design, dynamic queries, and atomic modifier operations. Mongoid eases the work of Ruby developers while they are working on complex frameworks. Starting with why and how you should use Mongoid, this book covers the various components of Mongoid. It then delves deeper into the detail of queries and relations, and you will learn some tips and tricks.",
+      cardBtnText: "Read",
+      bookTitle: "Learning Mongoid",
+      bookPrice: "Rs. 299.00",
     },
   ],
 };

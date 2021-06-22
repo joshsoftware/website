@@ -83,34 +83,37 @@ const WhitePapers = ({ whitePapers, dataList, articleList }) => {
     //     </div>
     //   ))}
     // </div>
+    <div className="josh-content">
+      <section className="banner-section position-relative">
+        <NewsBanner
+          bannerTitle="Our White Papers"
+          className="white-paper-banner"
+        />
+      </section>
+      <section className="main-section">
+        <div className="container">
+          <div className="article-content-wrapper">
+            {articleList.map((articleListItems) => (
+              <ArticleContent
+                cardImg={articleListItems.cardImg}
+                cardTitle={articleListItems.cardTitle}
+                cardDesc={articleListItems.cardDesc}
+                cardBtnText={articleListItems.cardBtnText}
+              />
+            ))}
+          </div>
+        </div>
 
-    <div className="section-content">
-      <NewsBanner
-        bannerTitle="Our White Papers"
-        className="white-paper-banner"
-      />
-      <div className="container">
-        <div className="article-content-wrapper">
-          {articleList.map((articleListItems) => (
-            <ArticleContent
-              cardImg={articleListItems.cardImg}
-              cardTitle={articleListItems.cardTitle}
-              cardDesc={articleListItems.cardDesc}
-              cardBtnText={articleListItems.cardBtnText}
+        <div className="article-list d-flex">
+          {dataList.map((dataListItems) => (
+            <Article
+              articleDesc={dataListItems.articleDesc}
+              articleImg={dataListItems.articleImg}
+              articleTitle={dataListItems.articleTitle}
             />
           ))}
         </div>
-      </div>
-
-      <div className="article-list d-flex">
-        {dataList.map((dataListItems) => (
-          <Article
-            articleDesc={dataListItems.articleDesc}
-            articleImg={dataListItems.articleImg}
-            articleTitle={dataListItems.articleTitle}
-          />
-        ))}
-      </div>
+      </section>
     </div>
   );
 };
@@ -134,17 +137,18 @@ WhitePapers.defaultProps = {
   ],
   dataList: [
     {
-      articleTitle: "Talks",
-      articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "talks.jpeg",
-    },
-    {
       articleTitle: "Publications",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "publication.jpeg",
     },
+    {
+      articleTitle: "Talks",
+      articleDesc:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      articleImg: "talks.jpeg",
+    },
+
     {
       articleTitle: "Media Coverage",
       articleDesc:
