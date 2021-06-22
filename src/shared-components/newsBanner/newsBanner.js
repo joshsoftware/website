@@ -13,7 +13,7 @@ const NewsBanner = ({ bannerTitle, filterItem, className }) => {
     // <div className="news-banner-section">
     <div className={`news-banner-section ${className}`}>
       <div className="container">
-        <div className="news-banner-wrap text-center">
+        <div className="banner-wrap text-center">
           <h1 className="font-weight-bold text-white text-capitalize">
             {bannerTitle}
           </h1>

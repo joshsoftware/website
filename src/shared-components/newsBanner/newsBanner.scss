@@ -1,7 +1,6 @@
 @import "../../assets/stylesheets/core";
 
 .news-banner-section {
-  position: relative;
   &::before {
     content: "";
     position: absolute;
@@ -14,7 +13,7 @@
     z-index: -1;
   }
 }
-.news-banner-wrap {
+.banner-wrap {
   background: url("../../assets/images/revampImages/talks_banner.jpeg")
     no-repeat;
   background-size: cover;
