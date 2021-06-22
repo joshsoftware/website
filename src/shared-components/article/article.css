@@ -5,7 +5,7 @@
 /* flex Sass mixin */
 /* mixins end */
 .article-list {
-  padding: 4rem 3rem 0;
+  padding: 4rem 3rem 1.5rem;
   background-color: #e6e6e6;
   flex-wrap: wrap; }
   @media (min-width: 992px) {
@@ -14,12 +14,20 @@
       flex-wrap: unset;
       justify-content: center; } }
 
-.article-item-wrap {
-  margin-bottom: 1.5rem; }
-  @media (min-width: 992px) {
-    .article-item-wrap {
-      padding: 0 1.5rem;
-      margin-bottom: 0; } }
+@media (min-width: 768px) {
+  .article-item-wrap {
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem; } }
+
+@media (min-width: 992px) {
+  .article-item-wrap {
+    margin-bottom: 0; } }
+
+.article-item-wrap:not(:first-child) {
+  margin-top: 1.5rem; }
+  @media (min-width: 768px) {
+    .article-item-wrap:not(:first-child) {
+      margin-top: 0; } }
 
 .article-items {
   background-color: #fff;
@@ -29,17 +37,20 @@
   padding: 1.5rem;
   flex: 1;
   height: 100%; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .article-items {
       margin-bottom: 0;
-      max-width: 15.5rem;
+      max-width: 17.8125rem;
       padding: 1rem 1.5rem 1.5rem; } }
+  @media (min-width: 992px) {
+    .article-items {
+      max-width: 15.5rem; } }
   .article-items h1 {
     font-size: 2.125rem;
     line-height: 2.5rem;
     color: #333333;
     margin-bottom: 1rem; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .article-items h1 {
         font-size: 1.4375rem;
         line-height: 1.6875rem;
@@ -52,7 +63,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .article-items p {
         font-size: 1rem;
         line-height: 1.5rem;

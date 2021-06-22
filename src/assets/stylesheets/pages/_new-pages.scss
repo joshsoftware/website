@@ -42,10 +42,11 @@
 }
 
 .article-content-wrapper {
-  margin-top: rem(24px);
-  margin-bottom: rem(56px);
+  // margin-top: rem(24px);
+  // margin-bottom: rem(56px);
+  padding: rem(24px) 0;
 
   @include media-breakpoint-up(lg) {
-    margin: rem(80px) 0;
+    padding: rem(80px) 0;
   }
 }
