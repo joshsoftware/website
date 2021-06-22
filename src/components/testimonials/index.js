@@ -27,21 +27,23 @@ const TestimonialsList = (props) => {
       {/* <a href="/contact_us" className="btn btn-outline-gray">About Us</a></div>
         </section> */}
 
-      <section className="section-content">
-        <div className="container">
-          <div className="testimonial-card-wrap">
-            {testimonialItemList.map((testimonialItems) => (
-              <TestimonialItem
-                clientName={testimonialItems.clientName}
-                clientCompany={testimonialItems.clientCompany}
-                clientDesignation={testimonialItems.clientDesignation}
-                clientProfile={testimonialItems.clientProfile}
-                clientDesc={testimonialItems.clientDesc}
-              />
-            ))}
+      <div className="josh-content">
+        <section className="testimonial-section">
+          <div className="container">
+            <div className="testimonial-card-wrap">
+              {testimonialItemList.map((testimonialItems) => (
+                <TestimonialItem
+                  clientName={testimonialItems.clientName}
+                  clientCompany={testimonialItems.clientCompany}
+                  clientDesignation={testimonialItems.clientDesignation}
+                  clientProfile={testimonialItems.clientProfile}
+                  clientDesc={testimonialItems.clientDesc}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };
@@ -352,14 +354,68 @@ TestimonialsList.defaultProps = {
       clientName: "Wee Tien Guan",
       clientDesignation: "Manager (Projects and Quality)",
       clientCompany: "Synergy Design Solutions Pte.Ltd",
-      clientDesc: "  ",
+      clientDesc: (
+        <div>
+          <p>
+            We engaged Josh Software two years ago to provide both web
+            development utilizing Ruby on Rails and Mobile development on
+            Android. Since then we have released two highly customized ERP
+            solutions and a subscription based Android app with a subscription
+            management backend. The people at Josh are not just experienced and
+            excellent professionals, but working with them has been an enjoyable
+            experience. They have been able to meet our targets despite strict
+            requirements and tight timelines on all three projects. Due to the
+            highly customized nature of the ERP solutions and the Android app,
+            requirements were often increased in scope or new requirements added
+            as the projects progressed. Despite all these, Josh Software
+            delivered and we are more than happy to work with them on upcoming
+            projects.
+          </p>
+        </div>
+      ),
     },
     {
       clientProfile: "",
       clientName: "Amol Patkar",
       clientDesignation: "Founder & Director",
       clientCompany: "Fundamentor",
-      clientDesc: "  ",
+      clientDesc: (
+        <div>
+          <p>
+            Before getting Josh on board for our startup , we had done a lot of
+            homework on IT vendors as well as tackled the question of whether to
+            inhouse or outsource tech,
+          </p>
+          <p>The points which were in Josh's favour were</p>
+          <p className="m-0">
+            <strong> A. Very competent & experienced team</strong>
+          </p>
+          <p className="m-0">
+            <strong>
+              B. Use of efficient, robust & thorough processes/tools like
+              pivotal tracker , github etc
+            </strong>
+          </p>
+          <p className="m-0">
+            <strong>
+              C. They had worked with a lot of startups across the world with
+              good customer feedback on quality as well as timelines.
+            </strong>
+          </p>
+          <p>
+            We had a heard a lot of horror stories faced by startups about
+            outsourced tech work so we kept our fingers crossed after they
+            started work , but to our absolute delight Josh has functioned as an
+            extended IT dept of our startup. They are very good at execution as
+            well as providing suggestions/advice. They have delivered as per
+            their estimates and forecasts of time and effort .
+          </p>
+          <p>
+            I will strongly recommend them for any startup who wants to be lean
+            and efficient.
+          </p>
+        </div>
+      ),
     },
   ],
 };

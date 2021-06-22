@@ -9,11 +9,73 @@
 
   @include media-breakpoint-up(lg) {
     margin-bottom: rem(40px);
+    padding: rem(48px) rem(56px);
   }
 }
 
-.client-profile {
+.client-content {
+  flex-direction: column;
   @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+}
+.client-profile {
+  margin-bottom: rem(24px);
+
+  @include media-breakpoint-up(lg) {
+    min-width: rem(150px);
+    text-align: center;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 0;
+    margin-right: rem(32px);
+  }
+
+  .profile-img {
+    width: rem(100px);
+    height: rem(100px);
+    border-radius: 50%;
+    margin-right: rem(16px);
+
+    @include media-breakpoint-up(lg) {
+      width: rem(125px);
+      height: rem(125px);
+      margin: 0 auto;
+    }
+  }
+}
+
+.client-details {
+  h6,
+  .client-designation-text,
+  .client-company-text {
+    line-height: rem(22px);
+    color: #333333;
+  }
+  h6 {
+    font-size: rem(20px);
+    margin-bottom: rem(8px);
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  .client-designation-text,
+  .client-company-text {
+    font-size: rem(14px);
+  }
+}
+
+.client-testimonial-info {
+  flex: 1;
+  p {
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: #333333;
+
+    &:not(:first-child) {
+      margin-top: rem(24px);
+    }
   }
 }
