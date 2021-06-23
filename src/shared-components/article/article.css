@@ -7,12 +7,12 @@
 .article-list {
   padding: 4rem 3rem 1.5rem;
   background-color: #e6e6e6;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   @media (min-width: 992px) {
     .article-list {
       padding: 5rem 0;
-      flex-wrap: unset;
-      justify-content: center; } }
+      flex-wrap: unset; } }
 
 @media (min-width: 768px) {
   .article-item-wrap {

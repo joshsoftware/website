@@ -14,23 +14,24 @@ const ArticleContent = ({
   className,
 }) => {
   return (
-    // <div className="article-content-card d-flex">
-    <div className={`article-content-card d-flex ${className}`}>
-      <div className="card-img-wrap text-center">
-        <img
-          src={require(`../../assets/images/revampImages/${cardImg}`)}
-          alt="article card img"
-        />
-      </div>
-      <div className="article-content">
-        <h4 className="font-weight-bold">{cardTitle}</h4>
-        <p>{cardDesc}</p>
+    <div className={`article-content-card-item ${className}`}>
+      <div className="article-content-card d-flex h-100 position-relative">
+        <div className="card-img-wrap text-center">
+          <img
+            src={require(`../../assets/images/revampImages/${cardImg}`)}
+            alt="article card img"
+          />
+        </div>
+        <div className="article-content">
+          <h4 className="font-weight-bold">{cardTitle}</h4>
+          <p>{cardDesc}</p>
 
-        <DefaultButton buttonText={cardBtnText} />
+          <DefaultButton buttonText={cardBtnText} />
+        </div>
+        {bookPrice && bookTitle && (
+          <BookInfo bookTitle={bookTitle} bookPrice={bookPrice} />
+        )}
       </div>
-      {bookPrice && bookTitle && (
-        <BookInfo bookTitle={bookTitle} bookPrice={bookPrice} />
-      )}
     </div>
   );
 };

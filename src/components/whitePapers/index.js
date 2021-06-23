@@ -92,7 +92,7 @@ const WhitePapers = ({ whitePapers, dataList, articleList }) => {
       </section>
       <section className="main-section">
         <div className="container">
-          <div className="article-content-wrapper">
+          <div className="article-content-wrapper d-flex flex-wrap">
             {articleList.map((articleListItems) => (
               <ArticleContent
                 cardImg={articleListItems.cardImg}
@@ -104,7 +104,7 @@ const WhitePapers = ({ whitePapers, dataList, articleList }) => {
           </div>
         </div>
 
-        <div className="article-list d-flex">
+        <div className="article-list d-flex justify-content-center">
           {dataList.map((dataListItems) => (
             <Article
               articleDesc={dataListItems.articleDesc}

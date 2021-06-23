@@ -8,7 +8,7 @@
   position: absolute;
   left: 0;
   bottom: -50px;
-  z-index: 9999;
+  z-index: 9;
   width: 100%; }
   @media (min-width: 992px) {
     .book-info-wrap {
