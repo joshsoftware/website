@@ -82,7 +82,7 @@ const Talks = ({ data, dataList }) => {
           })}
         </div>
 
-        <div className="article-list d-flex">
+        <div className="article-list d-flex justify-content-center">
           {dataList.map((dataListItems) => (
             <Article
               articleDesc={dataListItems.articleDesc}
