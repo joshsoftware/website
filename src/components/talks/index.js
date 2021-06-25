@@ -64,22 +64,24 @@ const Talks = ({ data, dataList }) => {
         <NewsBanner bannerTitle="talks" />
       </section>
       <section className="main-section">
-        <div className="media-wrapper justify-content-center">
-          {data.map((video) => {
-            const url = video.link
-              ? video.link
-              : `https://www.youtube.com/embed/${video.videoId}`;
-            return (
-              <MediaItem
-                url={url}
-                topic={video.topic}
-                speaker={video.speaker}
-                date={video.date}
-                event={video.event}
-                videoId={video.videoId}
-              />
-            );
-          })}
+        <div className="container">
+          <div className="media-wrapper justify-content-center">
+            {data.map((video) => {
+              const url = video.link
+                ? video.link
+                : `https://www.youtube.com/embed/${video.videoId}`;
+              return (
+                <MediaItem
+                  url={url}
+                  topic={video.topic}
+                  speaker={video.speaker}
+                  date={video.date}
+                  event={video.event}
+                  videoId={video.videoId}
+                />
+              );
+            })}
+          </div>
         </div>
 
         <div className="article-list d-flex justify-content-center">

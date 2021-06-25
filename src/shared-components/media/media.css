@@ -5,19 +5,19 @@
 /* flex Sass mixin */
 /* mixins end */
 .media-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   max-width: 100%;
   width: 100%; }
   @media (min-width: 768px) {
     .media-item {
       padding: 0 1.5rem;
       margin-bottom: 3rem;
-      max-width: 22.5rem; } }
+      max-width: 20.9375rem; } }
   @media (min-width: 992px) {
     .media-item {
       padding: 0 1.5rem;
       margin-bottom: 3.375rem;
-      max-width: 23.375rem; } }
+      max-width: 23.125rem; } }
 
 .media-frame {
   flex: 1; }
@@ -26,7 +26,7 @@
     height: auto; }
     @media (min-width: 992px) {
       .media-frame iframe {
-        height: 10.375rem; } }
+        height: 11.25rem; } }
 
 .media-content {
   background-color: #fff;
@@ -38,6 +38,7 @@
     .media-content {
       padding: 4.5rem 1rem 1.5rem; } }
   .media-content .profile-icon {
+    display: none;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
