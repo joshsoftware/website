@@ -38,7 +38,7 @@
       width: 11.5625rem; }
 
 .article-content-card {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.161);
+  box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.161);
   border-radius: 12px;
   background-color: #ffffff;
   flex-direction: column;

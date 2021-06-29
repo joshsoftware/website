@@ -14,11 +14,11 @@ const TestimonialItem = ({
       <CardBody className="p-0">
         <div className="client-content d-flex">
           <div className="client-profile d-flex">
-            <img
+            {/* <img
               src={clientProfile}
               alt="profile icon"
               className="profile-img"
-            />
+            /> */}
             <div className="client-details">
               <h6 className="font-weight-bold">{clientName}</h6>
               <p className="client-designation-text font-weight-bold mb-2">

@@ -28,6 +28,9 @@ const TestimonialsList = (props) => {
         </section> */}
 
       <div className="josh-content">
+        <div className="testimonial-banner">
+          <h2 className="mb-0 font-weight-bold text-center">Testimonials</h2>
+        </div>
         <section className="testimonial-section">
           <div className="container">
             <div className="testimonial-card-wrap">
