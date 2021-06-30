@@ -79,16 +79,14 @@
 .article-content {
   flex: 1;
 
-  h4 {
-    a {
-      font-size: rem(18px);
-      line-height: rem(26px);
-      color: #020449;
-      margin-bottom: rem(24px);
+  > a {
+    font-size: rem(18px);
+    line-height: rem(26px);
+    color: #020449;
+    margin-bottom: rem(24px);
 
-      @include media-breakpoint-up(lg) {
-        margin-bottom: rem(32px);
-      }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: rem(32px);
     }
   }
 

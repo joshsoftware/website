@@ -24,11 +24,12 @@ const ArticleContent = ({
           />
         </div>
         <div className="article-content">
-          <h4 className="font-weight-bold">
-            <a href={link} className="text-decoration-none">
-              {cardTitle}
-            </a>
-          </h4>
+          <a
+            href={link}
+            className="text-decoration-none font-weight-bold d-block card-title"
+          >
+            {cardTitle}
+          </a>
           <p>{cardDesc}</p>
 
           <DefaultButton buttonText={cardBtnText} link={link} />
