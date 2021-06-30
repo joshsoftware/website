@@ -1,6 +1,12 @@
 import React from "react";
 import { Button } from "reactstrap";
 import "./bookInfo.css";
+import {
+  S3_IMAGS_PATH,
+  FACEBOOK_SHARE_URL,
+  TWITTER_SHARE_URL,
+  LINKED_IN_SHARE_URL,
+} from "../../globalConstants.js";
 import bookImg from "../../assets/images/revampImages/book_icon.png";
 
 const BookInfo = ({ bookTitle, bookPrice, socialIcons, link }) => {
@@ -24,7 +30,11 @@ const BookInfo = ({ bookTitle, bookPrice, socialIcons, link }) => {
           <ul className="d-flex list-unstyled mb-0 social-media-list">
             {socialIcons.map((socialIconsItems) => (
               <li className="social-media-item">
-                <a href="javascript:void(0);">
+                <a
+                  href={`${LINKED_IN_SHARE_URL}${link}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={require(`../../assets/images/revampImages/${socialIconsItems.iconSrc}`)}
                     alt="social Icon"
@@ -35,7 +45,14 @@ const BookInfo = ({ bookTitle, bookPrice, socialIcons, link }) => {
             ))}
           </ul>
           <Button className="text-uppercase buy-now-btn font-weight-bold">
-            <a href={link}>Buy Now</a>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-decoration-none"
+            >
+              Buy Now
+            </a>
           </Button>
         </div>
       </div>
