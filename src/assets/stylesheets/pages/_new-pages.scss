@@ -60,12 +60,13 @@
 }
 
 .testimonial-banner {
-  background: url("../../assets/images/revampImages/testimonial-bg.png")
+  background: url("../../assets/images/revampImages/testimonials-bg.png")
     no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   width: 100%;
-  height: 230px;
+  height: 255px;
+  padding-top: 48px;
 
   h2 {
     font-size: rem(32px);

@@ -45,14 +45,16 @@ const MediaItem = ({
 
   return (
     <div className="media-item d-flex flex-column">
-      <div className="media-frame d-flex flex-column">
-        <iframe
-          src={url}
-          width="100%"
-          title={topic}
-          frameBorder="0"
-          allowFullScreen
-        />
+      <div className="media d-flex flex-column">
+        <div className="media-frame">
+          <iframe
+            src={url}
+            width="100%"
+            title={topic}
+            frameBorder="0"
+            allowFullScreen
+          />
+        </div>
         <MediaTile />
       </div>
     </div>

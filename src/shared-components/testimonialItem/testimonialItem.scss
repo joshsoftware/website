@@ -23,7 +23,7 @@
   margin-bottom: rem(24px);
 
   @include media-breakpoint-up(lg) {
-    min-width: rem(150px);
+    width: rem(150px);
     text-align: center;
     align-items: center;
     flex-direction: column;
