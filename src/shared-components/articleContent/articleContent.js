@@ -26,9 +26,11 @@ const ArticleContent = ({
         <div className="article-content">
           <a
             href={link}
-            className="text-decoration-none font-weight-bold d-block card-title"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none d-block"
           >
-            {cardTitle}
+            <h4 className="font-weight-bold"> {cardTitle}</h4>
           </a>
           <p>{cardDesc}</p>
 

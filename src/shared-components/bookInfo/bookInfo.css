@@ -116,6 +116,15 @@
       border-color: unset;
       box-shadow: unset; }
 
+.buy-now-btn:not(:disabled):not(.disabled):active,
+.buy-now-btn:not(:disabled):not(.disabled).active,
+.show > .buy-now-btn.dropdown-toggle {
+  background-color: #cf4338;
+  color: #fff;
+  outline: unset;
+  border-color: unset;
+  box-shadow: unset; }
+
 .buy-now-btn:not(:disabled):not(.disabled):active:focus,
 .buy-now-btn:not(:disabled):not(.disabled).active:focus,
 .show > .buy-now-btn.dropdown-toggle:focus {

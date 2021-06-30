@@ -61,13 +61,13 @@
 
 .article-content {
   flex: 1; }
-  .article-content > a {
+  .article-content > a h4 {
     font-size: 1.125rem;
     line-height: 1.625rem;
     color: #020449;
     margin-bottom: 1.5rem; }
     @media (min-width: 992px) {
-      .article-content > a {
+      .article-content > a h4 {
         margin-bottom: 2rem; } }
   .article-content p {
     font-size: 0.875rem;
