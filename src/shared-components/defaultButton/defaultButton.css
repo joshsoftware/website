@@ -12,9 +12,12 @@
   border-bottom: none;
   border-right: none;
   width: auto;
-  min-width: 7.6875rem;
-  font-size: 0.9375rem;
-  line-height: 1rem; }
+  min-width: 7.6875rem; }
+  .default-btn a {
+    font-size: 0.9375rem;
+    line-height: 1rem;
+    color: #fff;
+    text-decoration: none; }
   .default-btn.active, .default-btn:active, .default-btn:hover, .default-btn:focus {
     background-color: #000000;
     border-left: 17px solid #e86055;

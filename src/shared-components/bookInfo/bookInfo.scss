@@ -26,6 +26,8 @@
   @include media-breakpoint-up(lg) {
     margin: 0;
     padding: rem(16px) rem(4px);
+    height: rem(260px);
+    position: relative;
   }
 
   .top-content {
@@ -35,15 +37,18 @@
       padding: 0 rem(16px);
     }
     > p {
-      font-size: rem(14px);
-      line-height: rem(22px);
-      color: #333333;
-      flex: 0 0 70%;
-      margin-right: auto;
-      font-weight: 600;
+      a {
+        font-size: rem(14px);
+        line-height: rem(22px);
+        color: #333333;
+        flex: 0 0 70%;
+        margin-right: auto;
+        font-weight: 600;
+        text-decoration: none;
 
-      @include media-breakpoint-up(lg) {
-        line-height: rem(18px);
+        @include media-breakpoint-up(lg) {
+          line-height: rem(18px);
+        }
       }
     }
   }
@@ -54,6 +59,10 @@
 
     @include media-breakpoint-up(lg) {
       flex-direction: column;
+      position: absolute;
+      width: 100%;
+      padding: 0 rem(8px);
+      bottom: rem(16px);
     }
   }
   .price-wrap {
@@ -105,18 +114,25 @@
   .buy-now-btn {
     background-color: #cf4338;
     border-radius: 5px;
-    color: #fff;
     border: none;
     width: auto;
     padding: rem(5px) rem(16px);
-    font-size: rem(15px);
-    line-height: rem(16px);
+
+    a {
+      text-decoration: none;
+      font-size: rem(15px);
+      line-height: rem(16px);
+      color: #fff;
+    }
 
     @include media-breakpoint-up(lg) {
       width: 100%;
       margin-bottom: rem(8px);
-      font-size: rem(12px);
-      line-height: rem(14px);
+
+      a {
+        font-size: rem(12px);
+        line-height: rem(14px);
+      }
     }
 
     &:hover,

@@ -4,6 +4,7 @@ import BookInfo from "../bookInfo/bookInfo";
 import "./articleContent.css";
 
 const ArticleContent = ({
+  link,
   cardDesc,
   cardTitle,
   cardImg,
@@ -23,13 +24,17 @@ const ArticleContent = ({
           />
         </div>
         <div className="article-content">
-          <h4 className="font-weight-bold">{cardTitle}</h4>
+          <h4 className="font-weight-bold">
+            <a href={link} className="text-decoration-none">
+              {cardTitle}
+            </a>
+          </h4>
           <p>{cardDesc}</p>
 
-          <DefaultButton buttonText={cardBtnText} />
+          <DefaultButton buttonText={cardBtnText} link={link} />
         </div>
         {bookPrice && bookTitle && (
-          <BookInfo bookTitle={bookTitle} bookPrice={bookPrice} />
+          <BookInfo bookTitle={bookTitle} bookPrice={bookPrice} link={link} />
         )}
       </div>
     </div>

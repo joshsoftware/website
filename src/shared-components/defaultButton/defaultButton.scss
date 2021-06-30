@@ -10,8 +10,13 @@
   width: auto;
   min-width: rem(123px);
   // padding: rem(8px) rem(8px) rem(8px) rem(14px);
-  font-size: rem(15px);
-  line-height: rem(16px);
+
+  a {
+    font-size: rem(15px);
+    line-height: rem(16px);
+    color: $white;
+    text-decoration: none;
+  }
 
   &.active,
   &:active,

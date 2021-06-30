@@ -3,12 +3,14 @@ import { Button } from "reactstrap";
 import "./bookInfo.css";
 import bookImg from "../../assets/images/revampImages/book_icon.png";
 
-const BookInfo = ({ bookTitle, bookPrice, socialIcons }) => {
+const BookInfo = ({ bookTitle, bookPrice, socialIcons, link }) => {
   return (
     <div className="book-info-wrap">
       <div className="book-info-card">
         <div className="top-content d-flex">
-          <p className="mb-0">{bookTitle}</p>
+          <p className="mb-0">
+            <a href={link}>{bookTitle}</a>
+          </p>
 
           <div className="book-price-details d-flex">
             <div className="price-wrap mr-auto">
@@ -33,7 +35,7 @@ const BookInfo = ({ bookTitle, bookPrice, socialIcons }) => {
             ))}
           </ul>
           <Button className="text-uppercase buy-now-btn font-weight-bold">
-            Buy Now
+            <a href={link}>Buy Now</a>
           </Button>
         </div>
       </div>
