@@ -16,6 +16,12 @@
     line-height: rem(16px);
     color: $white;
     text-decoration: none;
+
+    > img {
+      vertical-align: middle;
+      width: rem(22px);
+      height: auto;
+    }
   }
 
   &.active,
