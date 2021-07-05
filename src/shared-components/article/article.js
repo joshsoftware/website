@@ -18,7 +18,7 @@ const Article = ({ articleDesc, articleTitle, articleImg }) => {
         </div>
         <p className="mb-3 overflow-hidden">{articleDesc}</p>
 
-        <DefaultButton buttonText={"view more"} />
+        <DefaultButton buttonText="vIEW MORE" />
       </div>
     </div>
   );

@@ -28,12 +28,9 @@
     @media (min-width: 992px) {
       .article-content-card-item.publication-content-wrapper:last-child {
         margin-bottom: 0; } }
-    .article-content-card-item.publication-content-wrapper .article-content {
-      margin-bottom: 5rem; }
-      @media (min-width: 992px) {
-        .article-content-card-item.publication-content-wrapper .article-content {
-          padding-right: 20%;
-          margin-bottom: 0; } }
+    @media (min-width: 992px) {
+      .article-content-card-item.publication-content-wrapper .article-content {
+        padding-right: 2.5rem; } }
     .article-content-card-item.publication-content-wrapper .card-img-wrap img {
       width: 11.5625rem; }
 
@@ -73,3 +70,28 @@
     font-size: 0.875rem;
     line-height: 1.375rem;
     color: #020449; }
+
+.book-info-details {
+  flex-wrap: wrap;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .book-info-details {
+      flex-wrap: unset;
+      flex-direction: unset;
+      align-items: center; } }
+  .book-info-details .book-price-wrap span {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #e86055; }
+
+.social-media-list {
+  margin: 1rem -0.75rem 0; }
+  @media (min-width: 992px) {
+    .social-media-list {
+      order: 2; } }
+  .social-media-list .social-media-item {
+    padding: 0 0.75rem; }
+  .social-media-list .social-media-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: inherit; }

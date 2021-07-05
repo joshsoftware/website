@@ -34,10 +34,8 @@
     }
 
     .article-content {
-      margin-bottom: rem(80px);
       @include media-breakpoint-up(lg) {
-        padding-right: 20%;
-        margin-bottom: 0;
+        padding-right: rem(40px);
       }
     }
 
@@ -96,5 +94,41 @@
     font-size: rem(14px);
     line-height: rem(22px);
     color: #020449;
+  }
+}
+
+.book-info-details {
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    flex-wrap: unset;
+    flex-direction: unset;
+    align-items: center;
+  }
+
+  .book-price-wrap {
+    span {
+      font-size: rem(14px);
+      line-height: rem(22px);
+      color: #e86055;
+    }
+  }
+}
+
+.social-media-list {
+  margin: rem(16px) rem(-12px) 0;
+
+  @include media-breakpoint-up(lg) {
+    order: 2;
+  }
+  .social-media-item {
+    padding: 0 rem(12px);
+  }
+
+  .social-media-icon {
+    width: rem(16px);
+    height: rem(16px);
+    vertical-align: inherit;
   }
 }

@@ -18,6 +18,10 @@
     line-height: 1rem;
     color: #fff;
     text-decoration: none; }
+    .default-btn a > img {
+      vertical-align: middle;
+      width: 1.375rem;
+      height: auto; }
   .default-btn.active, .default-btn:active, .default-btn:hover, .default-btn:focus {
     background-color: #000000;
     border-left: 17px solid #e86055;

@@ -233,13 +233,13 @@ Talks.defaultProps = {
       articleTitle: "Publications",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "talks.jpeg",
+      articleImg: "publication.jpeg",
     },
     {
       articleTitle: "Media Coverage",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      articleImg: "publication.jpeg",
+      articleImg: "media_coverage.jpeg",
     },
     {
       articleTitle: "Our White papers",
