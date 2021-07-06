@@ -32,14 +32,22 @@
   }
 
   .profile-img {
-    width: rem(100px);
-    height: rem(100px);
+    width: rem(73px);
+    height: rem(73px);
     border-radius: 50%;
     margin-right: rem(16px);
 
     @include media-breakpoint-up(lg) {
-      width: rem(125px);
-      height: rem(125px);
+      margin: 0 auto;
+    }
+  }
+
+  .company-logo {
+    width: rem(150px);
+    height: auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -69,6 +77,8 @@
 
 .client-testimonial-info {
   flex: 1;
+  height: rem(250px);
+
   p {
     font-size: rem(16px);
     line-height: rem(24px);

@@ -1,6 +1,6 @@
 /* mixins */
 /* rem unit mixin */
-@import '../../../node_modules/sass-rem/_rem.scss';
+@import "../../../node_modules/sass-rem/_rem.scss";
 /* flex Sass mixin */
 @import "../../../node_modules/sass-flex-mixin/_flex.scss";
 
@@ -28,7 +28,7 @@
 }
 
 // rotate
-@mixin rotate ($deg) {
+@mixin rotate($deg) {
   @include transform(rotate(#{$deg}deg));
 }
 
@@ -38,12 +38,12 @@
 }
 
 // translate
-@mixin translate ($x, $y) {
+@mixin translate($x, $y) {
   @include transform(translate($x, $y));
 }
 
 // skew
-@mixin skew ($x, $y) {
+@mixin skew($x, $y) {
   @include transform(skew(#{$x}deg, #{$y}deg));
 }
 
@@ -55,3 +55,29 @@
   filter: alpha(opacity=$opacity-ie);
 }
 /* mixins end */
+
+//scrollbar mixins
+
+@mixin scrollbars() {
+  scrollbar-width: thin;
+  scrollbar-color: #b2b3bd transparent;
+
+  &::-webkit-scrollbar {
+    width: rem(6px);
+    height: rem(6px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #b2b3bd;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: #b2b3bd;
+    scrollbar-track-color: transparent;
+  }
+}

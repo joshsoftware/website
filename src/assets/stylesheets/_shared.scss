@@ -316,4 +316,21 @@ img {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+// Scroll
+.scroll-y {
+  min-height: 0;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+  @include scrollbars();
+}
+
+.scroll-x {
+  min-width: 0;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-behavior: smooth;
+  @include scrollbars();
+}
 /* shared end */

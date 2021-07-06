@@ -2,7 +2,7 @@ import React from "react";
 import DefaultButton from "../defaultButton/defaultButton";
 import BookInfo from "../bookInfo/bookInfo";
 import "./articleContent.css";
-import icon from "../../assets/images/revampImages/book-white.svg";
+import icon from "../../assets/images/revampImages/book_white.svg";
 import {
   FACEBOOK_SHARE_URL,
   TWITTER_SHARE_URL,
