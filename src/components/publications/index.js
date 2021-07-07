@@ -95,6 +95,7 @@ const Publications = ({ books, dataList, articleList }) => {
               articleDesc={dataListItems.articleDesc}
               articleImg={dataListItems.articleImg}
               articleTitle={dataListItems.articleTitle}
+              link={dataListItems.link}
             />
           ))}
         </div>
@@ -258,18 +259,21 @@ Publications.defaultProps = {
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "talks.jpeg",
+      link: "/talks",
     },
     {
       articleTitle: "Media Coverage",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "media_coverage.jpeg",
+      link: "/media-coverage",
     },
     {
       articleTitle: "Our White Papers",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "our_white_paper.jpeg",
+      link: "white-papers",
     },
   ],
 

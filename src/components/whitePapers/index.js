@@ -111,6 +111,7 @@ const WhitePapers = ({ whitePapers, dataList, articleList }) => {
               articleDesc={dataListItems.articleDesc}
               articleImg={dataListItems.articleImg}
               articleTitle={dataListItems.articleTitle}
+              link={dataListItems.link}
             />
           ))}
         </div>
@@ -142,18 +143,21 @@ WhitePapers.defaultProps = {
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "talks.jpeg",
+      link: "/talks",
     },
     {
       articleTitle: "Publications",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "publication.jpeg",
+      link: "/publications",
     },
     {
       articleTitle: "Media Coverage",
       articleDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       articleImg: "media_coverage.jpeg",
+      link: "media-coverage",
     },
   ],
 

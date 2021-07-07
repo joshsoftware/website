@@ -49,3 +49,10 @@
   box-shadow: none;
   outline: none;
 }
+
+.default-btn-link {
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}
