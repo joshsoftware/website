@@ -13,7 +13,7 @@
   @media (min-width: 992px) {
     .testimonial-card-content {
       margin-bottom: 2.5rem;
-      padding: 3rem 3.5rem; } }
+      padding: 3rem 1.5rem 3rem 3.5rem; } }
 
 .client-content {
   flex-direction: column; }
@@ -67,6 +67,9 @@
 .client-testimonial-info {
   flex: 1;
   height: 15.625rem; }
+  @media (min-width: 992px) {
+    .client-testimonial-info {
+      padding-right: 1.5rem; } }
   .client-testimonial-info p {
     font-size: 1rem;
     line-height: 1.5rem;

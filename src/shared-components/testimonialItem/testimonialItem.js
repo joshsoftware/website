@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardBody } from "reactstrap";
 import "./testimonialItem.css";
-import clientProfile from "../../assets/images/revampImages/client_profile_img.png";
+import clientProfile from "../../assets/images/revampImages/user_placeholder.png";
 import clientCompanyLogo from "../../assets/images/revampImages/logo_kimaya_nicu.png";
 
 const TestimonialItem = ({

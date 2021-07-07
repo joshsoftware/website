@@ -9,7 +9,7 @@
 
   @include media-breakpoint-up(lg) {
     margin-bottom: rem(40px);
-    padding: rem(48px) rem(56px);
+    padding: rem(48px) rem(24px) rem(48px) rem(56px);
   }
 }
 
@@ -78,6 +78,10 @@
 .client-testimonial-info {
   flex: 1;
   height: rem(250px);
+
+  @include media-breakpoint-up(lg) {
+    padding-right: rem(24px);
+  }
 
   p {
     font-size: rem(16px);

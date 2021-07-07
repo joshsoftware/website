@@ -60,7 +60,7 @@
 
 @mixin scrollbars() {
   scrollbar-width: thin;
-  scrollbar-color: #b2b3bd transparent;
+  scrollbar-color: #cccccc transparent;
 
   &::-webkit-scrollbar {
     width: rem(6px);
@@ -68,7 +68,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #b2b3bd;
+    background: #cccccc;
   }
 
   &::-webkit-scrollbar-track {
@@ -77,7 +77,7 @@
 
   // For Internet Explorer
   & {
-    scrollbar-face-color: #b2b3bd;
+    scrollbar-face-color: #cccccc;
     scrollbar-track-color: transparent;
   }
 }
