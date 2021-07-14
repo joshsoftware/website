@@ -1,6 +1,7 @@
 import React from "react";
 import TestimonialItem from "../../shared-components/testimonialItem/testimonialItem";
 import Testimonial from "./testimonial";
+import arrowImg from "../../assets/images/revampImages/next-arrow.png";
 
 const TestimonialsList = (props) => {
   const { testimonialList } = props;
@@ -46,6 +47,36 @@ const TestimonialsList = (props) => {
             </div>
           </div>
         </section>
+        <div className="link-item-wrap">
+          <ul className="link-item-list list-unstyled mb-0 position-relative d-flex align-items-center justify-content-center">
+            <li className="link-item d-flex">
+              <a
+                href="#"
+                className="text-center text-decoration-none -leadership"
+              >
+                Josh Leadership
+                <img
+                  src={arrowImg}
+                  alt="arrow icon"
+                  className="ml-3 arrow-img"
+                />
+              </a>
+            </li>
+            <li className="link-item d-flex">
+              <a
+                href="#"
+                className="text-center text-decoration-none -contact-us"
+              >
+                Contact Us
+                <img
+                  src={arrowImg}
+                  alt="arrow icon"
+                  className="ml-3 arrow-img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
