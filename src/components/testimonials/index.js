@@ -64,7 +64,7 @@ const TestimonialsList = (props) => {
             </li>
             <li className="link-item d-flex">
               <a
-                href="#"
+                href="/contact_us"
                 className="text-center text-decoration-none -contact-us"
               >
                 Contact Us
