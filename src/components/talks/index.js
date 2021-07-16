@@ -233,21 +233,21 @@ Talks.defaultProps = {
     {
       articleTitle: "Publications",
       articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Collection of publications which gives insights about our knowledge, experience and capabilities.",
       articleImg: "publication.jpeg",
       link: "/publications",
     },
     {
       articleTitle: "Media Coverage",
       articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Selected video content which speak of current trends and  technological advancements.",
       articleImg: "media_coverage.jpeg",
       link: "/media-coverage",
     },
     {
       articleTitle: "Our White papers",
       articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Information to guide our readers about complex issues like Technology and Business connections.",
       articleImg: "our_white_paper.jpeg",
       link: "/white-papers",
     },

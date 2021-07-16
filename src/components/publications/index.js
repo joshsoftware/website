@@ -257,21 +257,21 @@ Publications.defaultProps = {
     {
       articleTitle: "Talks",
       articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Assorted talks by our associates about  the pathbreaking trends in technology, the problems it solve, and more.",
       articleImg: "talks.jpeg",
       link: "/talks",
     },
     {
       articleTitle: "Media Coverage",
       articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Selected video content which speak of current trends and  technological advancements.",
       articleImg: "media_coverage.jpeg",
       link: "/media-coverage",
     },
     {
       articleTitle: "Our White Papers",
       articleDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Information to guide our readers about complex issues like Technology and Business connections.",
       articleImg: "our_white_paper.jpeg",
       link: "white-papers",
     },
