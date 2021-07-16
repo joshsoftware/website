@@ -163,7 +163,7 @@ WhitePapers.defaultProps = {
 
   articleList: [
     {
-      cardImg: "Diligence_for_investors.png",
+      cardImg: "Back_Of_Open_Source.png",
       cardTitle: "Scaling Up Business On The Back Of Open Source",
       link: "https://josh-website.s3.ap-south-1.amazonaws.com/Josh+Whitepaper_Feb2020.pdf",
 
@@ -172,7 +172,7 @@ WhitePapers.defaultProps = {
       cardBtnText: "Continue Reading",
     },
     {
-      cardImg: "Back_Of_Open_Source.png",
+      cardImg: "Diligence_for_investors.png",
       cardTitle: "The Importance of Technical Due Diligence for Investors",
       link: "https://josh-website.s3.ap-south-1.amazonaws.com/Whitepaper+-+Tech+Due+Diligence+-+Josh+Software.pdf",
       cardDesc:
