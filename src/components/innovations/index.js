@@ -89,7 +89,7 @@ export default function Innovation({ productList }) {
 Innovation.defaultProps = {
   productList: [
     {
-      productLogo: "logo_kimaya_nicu.png",
+      productLogo: "kimaya-logo-with-bg.png",
       productDesc:
         "Kimaya-TPN is a cutting-edge, pilot-tested application, built with the aim of making nutritional calculations fully automated, error free and fast. Kimaya-TPN is being used by KEM-NICU & alike, to do calculations using the Hyperalimentation Worksheet for preparing TPN",
       features: [
@@ -112,7 +112,7 @@ Innovation.defaultProps = {
       ],
     },
     {
-      productLogo: "logo_kimaya_nicu.png",
+      productLogo: "kimaya-logo-with-bg.png",
       productDesc:
         "CodeCuriosity is a platform that encourages contributions to open source. Everyone is rewarded for their efforts, no matter how big or small they are. Our aim is to make open source contribution a habit!",
       features: [
@@ -135,7 +135,7 @@ Innovation.defaultProps = {
       ],
     },
     {
-      productLogo: "logo_kimaya_nicu.png",
+      productLogo: "kimaya-logo-with-bg.png",
       productDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       features: [
@@ -158,10 +158,18 @@ Innovation.defaultProps = {
       ],
     },
     {
-      productLogo: "logo_kimaya_nicu.png",
+      productLogo: "kimaya-logo-with-bg.png",
       productDesc:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       features: [
+        {
+          img: "",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+        },
+        {
+          img: "",
+          desc: "Lorem ipsum d98928294328olor sit amet, consectetur adipisicing elit, sed do",
+        },
         {
           img: "",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",

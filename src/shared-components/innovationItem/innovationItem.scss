@@ -1,60 +1,51 @@
 @import "../../assets/stylesheets/core";
 
 .innovation-item-wrap {
-  border-radius: 0 0 rem(12px) rem(12px);
-  background-color: $white;
-
-  .border-box {
-    height: rem(24px);
-    background: linear-gradient(
-      279deg,
-      rgba(2, 4, 73, 1) 0%,
-      rgba(19, 75, 108, 1) 90%
-    );
-
-    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.392);
-  }
-
-  &:not(:first-child) {
-    margin-top: rem(56px);
-  }
+  // border-radius: 0 0 rem(12px) rem(12px);
+  // background-color: $white;
+  margin-top: rem(56px);
 }
 
-.product-content {
-  flex-wrap: wrap;
+// .product-content {
+//   flex-wrap: wrap;
 
-  @include media-breakpoint-up(lg) {
-    flex-wrap: unset;
-  }
-}
+//   @include media-breakpoint-up(lg) {
+//     flex-wrap: unset;
+//   }
+// }
 
-.product-features {
-  flex: 1;
-  background-color: #fbfbfb;
-  box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.051);
-  border-radius: 0 0 rem(12px) rem(12px);
+// .product-features {
+//   background-color: #fbfbfb;
+//   box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.051);
+//   border-radius: 0 0 rem(12px) rem(12px);
 
-  @include media-breakpoint-up(lg) {
-    padding: rem(48px);
-    border-radius: 0 0 rem(12px) 0;
-  }
-}
+//   @include media-breakpoint-up(lg) {
+//     padding: rem(48px);
+//     border-radius: 0 0 rem(12px) 0;
+//   }
+// }
 
 .product-details {
-  align-items: center;
+  padding: rem(24px) rem(16px);
+  border-radius: rem(12px);
   flex-direction: column;
-  padding: rem(16px);
 
   @include media-breakpoint-up(lg) {
-    flex: 0 0 30%;
-    align-items: flex-start;
-    padding: rem(48px);
+    align-items: center;
+    flex-direction: row;
+    padding: rem(24px) rem(48px);
   }
+
   img {
-    width: rem(200px);
-    height: auto;
+    width: rem(300px);
+    margin: 0 auto;
+    height: 100%;
+    margin-bottom: rem(32px);
     @include media-breakpoint-up(lg) {
-      width: rem(290px);
+      width: rem(300px);
+      border-right: 1px solid #707070;
+      padding-right: rem(48px);
+      margin: 0;
     }
   }
 
@@ -65,19 +56,37 @@
 
     @include media-breakpoint-up(lg) {
       line-height: rem(24px);
+      margin-left: rem(48px);
     }
   }
 }
 
 .feature-list {
+  flex-wrap: wrap;
+  @include media-breakpoint-up(lg) {
+    margin: 0 rem(-8px);
+    flex-wrap: unset;
+  }
+
   li {
-    &:not(:first-child) {
-      margin-top: rem(24px);
+    @include media-breakpoint-up(lg) {
+      padding: 0 rem(8px);
     }
 
-    > img {
-      width: rem(90px);
-      height: auto;
+    .feature-list-item {
+      border-radius: rem(12px);
+
+      > img {
+        width: rem(90px);
+        height: auto;
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(24px);
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
     }
   }
 }
