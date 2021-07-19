@@ -4,61 +4,7 @@ import MediaItem from "../../shared-components/media/media";
 import NewsBanner from "../../shared-components/newsBanner/newsBanner";
 
 const Talks = ({ data, dataList }) => {
-  // const VideoFrame = ({ url, video }) => (
-  //   <div>
-  //     <iframe
-  //       src={url}
-  //       width="100%"
-  //       height="300px"
-  //       title={video.topic}
-  //       frameBorder="0"
-  //       allowFullScreen
-  //     />
-  //     <div>
-  //       <a
-  //         href={`https://www.youtube.com/watch?v=${video.videoId}`}
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //         style={{ color: "black" }}
-  //       >
-  //         {video.topic}
-  //       </a>
-  //       <br />
-  //       <b>At {video.event}</b>
-  //       <br />
-  //       By {video.speaker} ({video.date})
-  //     </div>
-  //   </div>
-  // );
-
   return (
-    //     <div className="section-content">
-    //       <br />
-    //       <Row className="col-lg-12 col-sm-12 padding-row">
-    //         {data.map((video) => {
-    //           const url = video.link
-    //             ? video.link
-    //             : `https://www.youtube.com/embed/${video.videoId}`;
-    //           return (
-    //             (
-    //               <Media query="(max-width: 500px)" key={video.videoId}>
-    //                 {(matches) =>
-    //                   matches ? (
-    //                     <Col sm="12" className="pt-2 pb-2">
-    //                       <VideoFrame url={url} video={video} />
-    //                     </Col>
-    //                   ) : (
-    //                     <Col lg="4" md="4" className="pt-2 pb-2">
-    //                       <VideoFrame url={url} video={video} />
-    //                     </Col>
-    //                   )
-    //                 }
-    //               </Media>
-    //             )
-    //           );
-    //         })}
-    //       </Row>
-    // </div>
     <div className="josh-content">
       <section className="banner-section position-relative">
         <NewsBanner bannerTitle="talks" />
@@ -218,15 +164,17 @@ Talks.defaultProps = {
       date: "May 2012",
       topic: "Push it push it some more",
       speaker: "Gautam Rege",
-      link: "https://dev.tube/video/HDvk9PZx2t8",
+      videoId: "HDvk9PZx2t8",
+      // link: "https://dev.tube/video/HDvk9PZx2t8",
     },
-    // {
-    //   event: "Lone Star RubyCOnf 2010",
-    //   date: "2010",
-    //   topic: "Mobile Value Added Services",
-    //   speaker: "Gautam Rege",
-    //   link: "https://confreaks.tv/videos/lsrc2010-mobile-value-added-service-vas"
-    // },
+    {
+      event: "Lone Star RubyCOnf 2010",
+      date: "2010",
+      topic: "Mobile Value Added Services",
+      speaker: "Gautam Rege",
+      videoId: "3hdUN00DEWE",
+      // link: "https://confreaks.tv/videos/lsrc2010-mobile-value-added-service-vas"
+    },
   ],
 
   dataList: [

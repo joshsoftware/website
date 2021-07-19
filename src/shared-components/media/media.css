@@ -5,19 +5,18 @@
 /* flex Sass mixin */
 /* mixins end */
 .media-item {
-  margin-bottom: 3rem;
   max-width: 100%;
-  width: 100%; }
+  width: 100%;
+  margin-top: 3rem; }
   @media (min-width: 768px) {
     .media-item {
-      padding: 0 1.5rem;
-      margin-bottom: 3rem;
-      max-width: 20.9375rem; } }
+      max-width: 20.9375rem;
+      padding: 0 1.5rem; } }
   @media (min-width: 992px) {
     .media-item {
+      max-width: 23.125rem;
       padding: 0 1.5rem;
-      margin-bottom: 3.375rem;
-      max-width: 23.125rem; } }
+      margin-top: 3.5rem; } }
 
 .media {
   flex: 1; }

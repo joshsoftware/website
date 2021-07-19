@@ -1,26 +1,25 @@
 @import "../../assets/stylesheets/core";
 
 .media-item {
-  margin-bottom: rem(48px);
   max-width: 100%;
   width: 100%;
+  margin-top: 3rem;
 
   @include media-breakpoint-up(md) {
-    padding: 0 rem(24px);
-    margin-bottom: rem(48px);
     max-width: rem(335px);
+    padding: 0 1.5rem;
   }
 
   @include media-breakpoint-up(lg) {
-    padding: 0 rem(24px);
-    margin-bottom: rem(54px);
     max-width: rem(370px);
+    padding: 0 1.5rem;
+    margin-top: 3.5rem;
   }
 }
 
 .media {
-  // padding: 0 rem(8px);
   flex: 1;
+
   .media-frame {
     padding: 0 rem(12px);
     height: 100%;
@@ -71,6 +70,7 @@
     font-size: rem(18px);
     line-height: rem(14px);
     text-decoration: none;
+
     @include media-breakpoint-up(lg) {
       font-size: rem(14px);
     }

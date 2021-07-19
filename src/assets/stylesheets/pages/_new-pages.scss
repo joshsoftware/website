@@ -15,11 +15,9 @@
   padding: rem(24px) rem(8px) rem(56px);
   flex-wrap: wrap;
   display: flex;
-  // display: grid;
-  // grid-template-columns: auto;
+
   @include media-breakpoint-up(lg) {
-    padding: rem(80px) 0 rem(32px);
-    // grid-template-columns: auto auto auto;
+    padding: 1.5rem 0 5rem;
   }
 }
 
@@ -60,10 +58,6 @@
 }
 
 .testimonial-banner {
-  // background: url("../../assets/images/revampImages/testimonials-bg.png")
-  //   no-repeat;
-  // background-size: cover;
-  // background-position: top center;
   background: linear-gradient(
     279deg,
     rgba(2, 4, 73, 1) 0%,
@@ -105,6 +99,7 @@
     width: 45px;
     height: 42px;
     background-size: 100%;
+
     @include media-breakpoint-up(lg) {
       right: 15%;
       bottom: -54px;

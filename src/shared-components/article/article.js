@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "reactstrap";
 import DefaultButton from "../defaultButton/defaultButton";
 import "./article.css";
 
