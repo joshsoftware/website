@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import NewsContent from './newsContent.js';
-import { Spinner } from 'reactstrap';
+import React, { useEffect, useState } from "react";
+import NewsContent from "./newsContent.js";
+import { Spinner } from "reactstrap";
 import { API_BASE_URL } from "../../globalConstants.js";
 
 const News = (props) => {
@@ -8,42 +8,45 @@ const News = (props) => {
   const [loading, setLoading] = useState(false);
 
   const fetchNews = () => {
-    setLoading(true)
+    setLoading(true);
     return fetch(`${API_BASE_URL}news`, {
-      method: 'get',
-      headers: {  'Accept': 'application/json', 'Content-Type': 'application/json' },
-    })
-    .then((response) => response.json())
-  }
+      method: "get",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    }).then((response) => response.json());
+  };
 
   useEffect(() => {
     const promis = fetchNews();
-    promis.then((responseData) => {
-      setNewsData(responseData.news)
-      setLoading(false)
-    })
-    .catch(result => {
-      console.log(result)
-    });
+    promis
+      .then((responseData) => {
+        setNewsData(responseData.news);
+        setLoading(false);
+      })
+      .catch((result) => {
+        console.log(result);
+      });
   }, []);
 
   return (
-    <div>
-      {
-        loading && <div className="container section-content news-mob-spinner-section">
+    <>
+      {loading && (
+        <div className="container section-content news-mob-spinner-section">
           <div className="row d-flex justify-content-center">
-            <Spinner style={{ width: '3rem', height: '3rem' }} />
+            <Spinner style={{ width: "3rem", height: "3rem" }} />
           </div>
         </div>
-      }
-      {
-        newsData && Object.keys(newsData).length > 0 && <NewsContent news={newsData} loading={loading}/>
-      }
-    </div>
-  )
-}
+      )}
+      {newsData && Object.keys(newsData).length > 0 && (
+        <NewsContent news={newsData} loading={loading} />
+      )}
+    </>
+  );
+};
 
 News.defaultProps = {
-  data: []
-}
+  data: [],
+};
 export default News;
