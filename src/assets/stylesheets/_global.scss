@@ -1,0 +1,22 @@
+html {
+  @include rem-baseline;
+}
+
+// Main Content
+.josh-content {
+  padding: 3.5rem 0 0;
+  background-color: #f7f7f7;
+
+  @include media-breakpoint-up(lg) {
+    padding: 4.5rem 0 0;
+  }
+}
+
+// Media Grid
+.media-grid {
+  padding: rem(24px) rem(8px) rem(56px);
+
+  @include media-breakpoint-up(lg) {
+    padding: 1.5rem 0 5rem;
+  }
+}
