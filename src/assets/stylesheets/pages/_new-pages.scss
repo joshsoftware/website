@@ -1,21 +1,3 @@
-.banner-wrapper {
-  &.white-paper-banner {
-    .banner-wrap {
-      background: url("../../assets/images/revampImages/our_white_paper_banner.jpeg")
-        no-repeat;
-      background-size: cover;
-    }
-  }
-
-  &.publication-banner {
-    .banner-wrap {
-      background: url("../../assets/images/revampImages/publications_banner.jpeg")
-        no-repeat;
-      background-size: cover;
-    }
-  }
-}
-
 .article-content-wrapper {
   padding: rem(24px) 0 rem(48px);
 

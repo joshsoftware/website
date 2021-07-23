@@ -8,7 +8,7 @@ import NewsBanner from "../../shared-components/newsBanner/newsBanner";
 const Talks = ({ data, dataList }) => {
   return (
     <section className="josh-content">
-      <NewsBanner caption="talks" />
+      <NewsBanner caption="talks" bannerClassName="talks" />
       <Container>
         <div className="media-grid d-flex flex-wrap justify-content-center">
           {data.map((video) => {

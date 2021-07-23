@@ -8,7 +8,7 @@ import Article from "../../shared-components/article/article.js";
 const Publications = ({ dataList, articleList }) => {
   return (
     <section className="josh-content">
-      <NewsBanner caption="Publications" className="publication-banner" />
+      <NewsBanner caption="Publications" bannerClassName="publications" />
       <Container>
         <div className="article-content-wrapper d-flex flex-wrap">
           {articleList.map((articleListItems) => (
