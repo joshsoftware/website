@@ -1,15 +1,15 @@
 import React from "react";
-import { Card, CardBody } from "reactstrap";
-import "./testimonialItem.css";
+
+import { Card, CardBody } from "../../core-components";
 import clientProfile from "../../assets/images/revampImages/user_placeholder.png";
 import clientCompanyLogo from "../../assets/images/revampImages/logo_kimaya_nicu.png";
+import "./testimonialItem.css";
 
 const TestimonialItem = ({
   clientDesc,
   clientName,
   clientDesignation,
   clientCompany,
-  companyLogo,
 }) => {
   return (
     <Card className="testimonial-card-content border-0">

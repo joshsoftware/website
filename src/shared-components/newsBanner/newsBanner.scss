@@ -1,6 +1,8 @@
 @import "../../assets/stylesheets/core";
 
-.news-banner-section {
+.banner-wrapper {
+  z-index: 0;
+
   &::before {
     content: "";
     position: absolute;
@@ -9,71 +11,36 @@
     transform: translateY(-50%);
     background-color: #e86055;
     width: 100%;
-    height: rem(44px);
+    height: 2.75rem;
     z-index: -1;
   }
 }
+
 .banner-wrap {
   background: url("../../assets/images/revampImages/talks_banner.jpeg")
     no-repeat;
   background-size: cover;
   width: 100%;
-  height: rem(160px);
+  height: 10rem;
   background-position: left 30% center;
-  border-radius: 0px 0px 12px 12px;
-  padding: rem(40px) rem(32px);
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 2.5rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include media-breakpoint-up(lg) {
-    height: rem(315px);
-    padding: rem(48px) 0;
+    height: 19.75rem;
+    padding: 3rem 0;
     background-position: center center;
   }
 
-  h1 {
-    font-size: rem(38px);
-    line-height: rem(45px);
+  .caption {
+    font-size: 2.25rem;
+    line-height: normal;
 
     @include media-breakpoint-up(lg) {
-      font-size: rem(75px);
-      line-height: rem(89px);
-    }
-  }
-}
-
-.filter-wrap {
-  margin: 0 rem(-6px);
-
-  @include media-breakpoint-up(lg) {
-    margin: 0 rem(-8px);
-    justify-content: center;
-  }
-}
-
-.filter-pill-item {
-  padding: 0 rem(6px);
-  margin-bottom: rem(12px);
-
-  @include media-breakpoint-up(lg) {
-    padding: 0 rem(8px);
-    margin-bottom: rem(16px);
-  }
-  > span {
-    font-size: rem(16px);
-    line-height: rem(12px);
-    color: #ffffff;
-    font-weight: 500;
-    border: 1px solid #ffffff;
-    border-radius: 16px;
-    padding: rem(8px) rem(32px);
-
-    &.active {
-      font-weight: bold;
-      color: #001427;
-      background-color: #f2f2f2;
-      border: unset;
+      font-size: 4.5rem;
     }
   }
 }

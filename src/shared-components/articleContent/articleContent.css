@@ -32,11 +32,11 @@
       .article-content-card-item.publication-content-wrapper .article-content {
         padding-right: 2.5rem; } }
     .article-content-card-item.publication-content-wrapper .card-img-wrap img {
-      width: 11.5625rem; }
+      width: 11.5rem; }
 
 .article-content-card {
-  box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.161);
-  border-radius: 12px;
+  box-shadow: 6px 0 10px rgba(0, 0, 0, 0.161);
+  border-radius: 0.75rem;
   background-color: #ffffff;
   flex-direction: column;
   padding: 1.5rem 1.5rem 3rem; }

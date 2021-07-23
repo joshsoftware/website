@@ -1,47 +1,45 @@
 import React from "react";
+
+import { Container } from "../../core-components";
 import Article from "../../shared-components/article/article";
 import MediaItem from "../../shared-components/media/media";
 import NewsBanner from "../../shared-components/newsBanner/newsBanner";
 
 const Talks = ({ data, dataList }) => {
   return (
-    <div className="josh-content">
-      <section className="banner-section position-relative">
-        <NewsBanner bannerTitle="talks" />
-      </section>
-      <section className="main-section">
-        <div className="container">
-          <div className="media-wrapper justify-content-center">
-            {data.map((video) => {
-              const url = video.link
-                ? video.link
-                : `https://www.youtube.com/embed/${video.videoId}`;
-              return (
-                <MediaItem
-                  url={url}
-                  topic={video.topic}
-                  speaker={video.speaker}
-                  date={video.date}
-                  event={video.event}
-                  videoId={video.videoId}
-                />
-              );
-            })}
-          </div>
+    <section className="josh-content">
+      <NewsBanner caption="talks" />
+      <Container>
+        <div className="media-grid d-flex flex-wrap justify-content-center">
+          {data.map((video) => {
+            const url = video.link
+              ? video.link
+              : `https://www.youtube.com/embed/${video.videoId}`;
+            return (
+              <MediaItem
+                url={url}
+                topic={video.topic}
+                speaker={video.speaker}
+                date={video.date}
+                event={video.event}
+                videoId={video.videoId}
+              />
+            );
+          })}
         </div>
+      </Container>
 
-        <div className="article-list d-flex justify-content-center">
-          {dataList.map((dataListItems) => (
-            <Article
-              articleDesc={dataListItems.articleDesc}
-              articleImg={dataListItems.articleImg}
-              articleTitle={dataListItems.articleTitle}
-              link={dataListItems.link}
-            />
-          ))}
-        </div>
-      </section>
-    </div>
+      <div className="article-list d-flex justify-content-center">
+        {dataList.map((dataListItems) => (
+          <Article
+            articleDesc={dataListItems.articleDesc}
+            articleImg={dataListItems.articleImg}
+            articleTitle={dataListItems.articleTitle}
+            link={dataListItems.link}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 
