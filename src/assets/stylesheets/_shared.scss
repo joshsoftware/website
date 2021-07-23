@@ -311,6 +311,13 @@ img {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+
+  &.-three-line {
+    -webkit-line-clamp: 3;
+  }
+  &.-two-line {
+    -webkit-line-clamp: 2;
+  }
 }
 
 // Scroll
