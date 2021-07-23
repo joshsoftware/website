@@ -1,0 +1,61 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.video-card {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 3rem; }
+  @media (min-width: 768px) {
+    .video-card {
+      max-width: 21rem;
+      padding: 0 1.5rem; } }
+  @media (min-width: 992px) {
+    .video-card {
+      max-width: 23rem;
+      padding: 0 1.5rem;
+      margin-top: 3.5rem; } }
+
+.video-frame {
+  padding: 0 0.75rem;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .video-frame {
+      height: 9.25rem; } }
+  @media (min-width: 992px) {
+    .video-frame {
+      height: 10.5rem; } }
+  .video-frame iframe {
+    border-radius: 1rem 1rem 0 0;
+    height: 100%; }
+
+.video-details {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 4.75rem 1rem 1rem;
+  margin-top: -4rem;
+  flex: 1;
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.12); }
+  .video-details > a {
+    color: #020449;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-decoration: none; }
+    @media (min-width: 992px) {
+      .video-details > a {
+        font-size: 0.875rem;
+        line-height: 1.25rem; } }
+  .video-details p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #333333;
+    font-weight: 500; }
+    @media (min-width: 992px) {
+      .video-details p {
+        font-size: 0.75rem;
+        line-height: 1rem; } }
