@@ -11,13 +11,13 @@
   z-index: 1; }
   @media (min-width: 768px) {
     .media-frame {
-      height: 11rem; } }
+      height: 10.75rem; } }
   @media (min-width: 992px) {
     .media-frame {
       height: 9rem; } }
   @media (min-width: 1200px) {
     .media-frame {
-      height: 11rem; } }
+      height: 10.875rem; } }
   .media-frame .img-box {
     background-color: #adadad;
     border-radius: 1rem 1rem 0 0; }

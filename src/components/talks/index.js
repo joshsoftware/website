@@ -10,7 +10,7 @@ const Talks = ({ data, dataList }) => {
     <section className="josh-content">
       <NewsBanner caption="talks" bannerClassName="talks" />
       <Container>
-        <div className="video-grid d-flex flex-wrap justify-content-center">
+        <div className="video-grid">
           {data.map((video) => {
             const url = video.link
               ? video.link

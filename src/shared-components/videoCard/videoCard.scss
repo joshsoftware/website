@@ -1,50 +1,36 @@
 @import "../../assets/stylesheets/core";
 
-.video-card {
-  max-width: 100%;
-  width: 100%;
-  margin-top: 3rem;
-
-  @include media-breakpoint-up(md) {
-    max-width: 21rem;
-    padding: 0 1.5rem;
-  }
-
-  @include media-breakpoint-up(lg) {
-    max-width: 23rem;
-    padding: 0 1.5rem;
-    margin-top: 3.5rem;
-  }
-}
-
 .video-frame {
+  height: 9rem;
   padding: 0 0.75rem;
-  height: 100%;
-  width: 100%;
+  border-radius: 1rem 1rem 0 0;
   z-index: 1;
 
   @include media-breakpoint-up(md) {
-    height: 9.25rem;
+    height: 10.75rem;
   }
 
   @include media-breakpoint-up(lg) {
-    height: 10.5rem;
+    height: 9rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 10.875rem;
   }
 
   iframe {
     border-radius: 1rem 1rem 0 0;
-    height: 100%;
   }
 }
 
 .video-details {
-  background-color: #fff;
+  background-color: $white;
   border-radius: 0.75rem;
   padding: 4.75rem 1rem 1rem;
   margin-top: -4rem;
   flex: 1;
   width: 100%;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 1rem 0 rgba($color: $black, $alpha: 0.12);
 
   > a {
     color: #020449;
@@ -61,7 +47,7 @@
   p {
     font-size: 1rem;
     line-height: 1.25rem;
-    color: #333333;
+    color: $gray;
     font-weight: 500;
 
     @include media-breakpoint-up(lg) {

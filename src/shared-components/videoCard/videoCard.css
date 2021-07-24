@@ -4,34 +4,22 @@
 /* rem unit mixin */
 /* flex Sass mixin */
 /* mixins end */
-.video-card {
-  max-width: 100%;
-  width: 100%;
-  margin-top: 3rem; }
-  @media (min-width: 768px) {
-    .video-card {
-      max-width: 21rem;
-      padding: 0 1.5rem; } }
-  @media (min-width: 992px) {
-    .video-card {
-      max-width: 23rem;
-      padding: 0 1.5rem;
-      margin-top: 3.5rem; } }
-
 .video-frame {
+  height: 9rem;
   padding: 0 0.75rem;
-  height: 100%;
-  width: 100%;
+  border-radius: 1rem 1rem 0 0;
   z-index: 1; }
   @media (min-width: 768px) {
     .video-frame {
-      height: 9.25rem; } }
+      height: 10.75rem; } }
   @media (min-width: 992px) {
     .video-frame {
-      height: 10.5rem; } }
+      height: 9rem; } }
+  @media (min-width: 1200px) {
+    .video-frame {
+      height: 10.875rem; } }
   .video-frame iframe {
-    border-radius: 1rem 1rem 0 0;
-    height: 100%; }
+    border-radius: 1rem 1rem 0 0; }
 
 .video-details {
   background-color: #fff;

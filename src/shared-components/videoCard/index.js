@@ -29,6 +29,7 @@ const VideoCard = ({ url, topic, speaker, event, date, videoId }) => {
         <iframe
           src={url}
           width="100%"
+          height="100%"
           title={topic}
           frameBorder="0"
           allowFullScreen
