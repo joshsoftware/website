@@ -3,7 +3,10 @@ import NewsContent from "./newsContent.js";
 import { Spinner } from "reactstrap";
 import { API_BASE_URL } from "../../globalConstants.js";
 
-const News = (props) => {
+import NewsBanner from "../../shared-components/newsBanner/newsBanner";
+import { Container } from "../../core-components";
+
+const News = () => {
   const [newsData, setNewsData] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -31,18 +34,22 @@ const News = (props) => {
   }, []);
 
   return (
-    <>
-      {loading && (
-        <div className="container section-content news-mob-spinner-section">
-          <div className="row d-flex justify-content-center">
+    <section className="josh-content">
+      <NewsBanner caption="Media Coverage" bannerClassName="media-coverage" />
+      <Container>
+        <div className="media-grid">
+          {/* {loading && (
+          <div className="d-flex align-items-center justify-content-center py-5">
             <Spinner style={{ width: "3rem", height: "3rem" }} />
           </div>
+        )}
+        {newsData && Object.keys(newsData).length > 0 && (
+          <NewsContent news={newsData} loading={loading} />
+        )} */}
+          <NewsContent />
         </div>
-      )}
-      {newsData && Object.keys(newsData).length > 0 && (
-        <NewsContent news={newsData} loading={loading} />
-      )}
-    </>
+      </Container>
+    </section>
   );
 };
 

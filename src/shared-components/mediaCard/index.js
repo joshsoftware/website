@@ -15,7 +15,9 @@ const MediaCard = ({ photo, headline, bodycopy, date, url }) => {
       >
         {headline}
       </a>
-      <p className="mb-2">{bodycopy}</p>
+      <p className="text-truncate-multi-line -three-line overflow-hidden mb-2">
+        {bodycopy}
+      </p>
       <p className="mb-2">{date}</p>
       <DefaultButton buttonText="Know More" link={url} className="mt-auto" />
     </Card>
@@ -24,7 +26,7 @@ const MediaCard = ({ photo, headline, bodycopy, date, url }) => {
   return (
     <div className="media-card d-flex flex-column">
       <div className="media-frame position-relative overflow-hidden">
-        <div className="img-box w-100 h-100 overflow-hidden">
+        <div className="img-box h-100 overflow-hidden">
           <img src={photo} alt={headline} />
         </div>
       </div>

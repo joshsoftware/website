@@ -309,8 +309,16 @@ img {
 
 .text-truncate-multi-line {
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+
+  &.-three-line {
+    -webkit-line-clamp: 3;
+  }
+
+  &.-four-line {
+    -webkit-line-clamp: 4;
+  }
 }
 
 // Scroll

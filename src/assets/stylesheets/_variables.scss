@@ -20,14 +20,14 @@ $assets_url: "../";
 //$gray-800: #343a40 !default;
 //$gray-900: #212529 !default;
 //$black:    #000 !default;
-$gray-10: #1A1A1A; // black 90%
+$gray-10: #1a1a1a; // black 90%
 $gray-20: #333333; // black 80%
 $gray-40: #666666; // black 60%
 $gray-60: #999999; // black 40%
-$gray-68: #ADADAD; // black 32%
-$gray-94: #EFEFEF; // black 6%
-$gray-95: #F2F2F2; // black 5%
-$gray-96: #F4F4F4; // black 4%
+$gray-68: #adadad; // black 32%
+$gray-94: #efefef; // black 6%
+$gray-95: #f2f2f2; // black 5%
+$gray-96: #f4f4f4; // black 4%
 
 //$grays: () !default;
 //$grays: map-merge((
@@ -52,13 +52,13 @@ $gray-96: #F4F4F4; // black 4%
 //$green:   #28a745 !default;
 //$teal:    #20c997 !default;
 //$cyan:    #17a2b8 !default;
-$olivine:    #95BA75;
-$chambray:    #495380;
+$olivine: #95ba75;
+$chambray: #495380;
 $bunting: #283047;
-$galliano: #CAAE0D;
-$fountain-blue: #62AAAC;
-$roman: #D1645D;
-$tea-green: #CCEBB7;
+$galliano: #caae0d;
+$fountain-blue: #62aaac;
+$roman: #d1645d;
+$tea-green: #ccebb7;
 
 //$colors: () !default;
 //$colors: map-merge((
@@ -85,21 +85,24 @@ $tea-green: #CCEBB7;
 //$danger:        $red !default;
 //$light:         $gray-100 !default;
 //$dark:          $gray-800 !default;
-$gray:          $gray-20;
+$gray: $gray-20;
 
 $theme-colors: ();
-$theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
-  "white":       $white,
-  "gray":       $gray
-), $theme-colors);
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "white": $white,
+    "gray": $gray,
+  ),
+  $theme-colors
+);
 // stylelint-enable
 
 // Set a specific jump point for requesting color jumps
@@ -235,7 +238,7 @@ $body-color: $gray-40;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-lato: 'Lato', sans-serif;
+$font-family-lato: "Lato", sans-serif;
 //$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 //$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-lato;
@@ -262,7 +265,7 @@ $font-family-base: $font-family-lato;
 //$headings-margin-bottom:      ($spacer / 2) !default;
 //$headings-font-family:        inherit !default;
 //$headings-font-weight:        500 !default;
-$headings-font-weight:        300;
+$headings-font-weight: 300;
 //$headings-line-height:        1.2 !default;
 //$headings-color:              inherit !default;
 
@@ -270,7 +273,7 @@ $headings-font-weight:        300;
 //$display2-size:               5.5rem !default;
 //$display3-size:               4.5rem !default;
 //$display4-size:               3.5rem !default;
-$display4-size:               3.75rem;
+$display4-size: 3.75rem;
 
 //$display1-weight:             300 !default;
 //$display2-weight:             300 !default;
