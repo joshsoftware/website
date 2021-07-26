@@ -37,12 +37,8 @@ const News = () => {
     <section className="josh-content">
       <NewsBanner caption="Media Coverage" bannerClassName="media-coverage" />
       <Container>
-        <div className="media-grid">
-          {loading && (
-            <div className="d-flex align-items-center justify-content-center py-5">
-              <Spinner style={{ width: "3rem", height: "3rem" }} />
-            </div>
-          )}
+        <div className={`${loading ? "spinner-wrapper" : "media-grid"}`}>
+          {loading && <Spinner style={{ width: "3rem", height: "3rem" }} />}
           {newsData && Object.keys(newsData).length > 0 && (
             <NewsContent news={newsData} loading={loading} />
           )}
