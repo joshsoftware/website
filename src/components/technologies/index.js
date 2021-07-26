@@ -6,6 +6,21 @@ import { Route, Redirect } from "react-router-dom";
 import ProjectWork from "./projectsWork.js";
 import { ProjectData } from "./projectsData.js";
 import Tile from "../../shared-components/tile/tile.js";
+import PageLinks from "../../shared-components/pageLinks/pageLinks.js";
+import MainBanner from "../../shared-components/mainBanner/mainBanner.js";
+
+const linkListItem = [
+  {
+    linkTitle: "Success Stories",
+    link: routes.SUCCESS_STORIES_URL,
+    linkClassName: "-success-story",
+  },
+  {
+    linkTitle: "Innovations",
+    link: routes.INNOVATIONS,
+    linkClassName: "-innovation",
+  },
+];
 
 const Technologies = (props) => {
   return (
@@ -17,6 +32,15 @@ const Technologies = (props) => {
       } */}
 
       <div className="josh-content">
+        <section className="main-banner-section">
+          <MainBanner
+            className="-technology-banner-wrap"
+            startText="We"
+            middleText="experts"
+            endText="speak about..."
+            mainBannerTitle="Technology"
+          />
+        </section>
         <section className="main-section">
           <div className="container">
             <div className="tiles-wrapper py-5">
@@ -31,6 +55,7 @@ const Technologies = (props) => {
               ))}
             </div>
           </div>
+          <PageLinks linkListItem={linkListItem} />
         </section>
       </div>
     </>

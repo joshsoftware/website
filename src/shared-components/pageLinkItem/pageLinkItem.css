@@ -1,0 +1,11 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.link-item-wrap .link-item > a.-success-story {
+  background: url("../../assets/images/revampImages/success-story@2x.png") no-repeat; }
+
+.link-item-wrap .link-item > a.-innovation {
+  background: url("../../assets/images/revampImages/innovations-bg@2x.png") no-repeat; }

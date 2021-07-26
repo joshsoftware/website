@@ -1,0 +1,33 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.main-banner-wrap {
+  width: 100%;
+  height: 11.375rem; }
+  @media (min-width: 992px) {
+    .main-banner-wrap {
+      height: 15.6875rem; } }
+  .main-banner-wrap.-technology-banner-wrap {
+    background: url("../../assets/images/revampImages/technology-banner.png") no-repeat;
+    background-size: cover;
+    background-position: right 40% center; }
+    @media (min-width: 992px) {
+      .main-banner-wrap.-technology-banner-wrap {
+        background-position: top center; } }
+  .main-banner-wrap h6 {
+    font-size: 0.75rem;
+    line-height: 0.875rem; }
+    @media (min-width: 992px) {
+      .main-banner-wrap h6 {
+        font-size: 1.25rem;
+        line-height: 1.5rem; } }
+  .main-banner-wrap h1 {
+    font-size: 2.375rem;
+    line-height: 2.8125rem; }
+    @media (min-width: 992px) {
+      .main-banner-wrap h1 {
+        font-size: 4.6875rem;
+        line-height: 5.5625rem; } }

@@ -1,0 +1,41 @@
+@import "../../assets/stylesheets/core";
+
+.main-banner-wrap {
+  width: 100%;
+  height: 11.375rem;
+
+  @include media-breakpoint-up(lg) {
+    height: 15.6875rem;
+  }
+
+  &.-technology-banner-wrap {
+    background: url("../../assets/images/revampImages/technology-banner.png")
+      no-repeat;
+    background-size: cover;
+    background-position: right 40% center;
+
+    @include media-breakpoint-up(lg) {
+      background-position: top center;
+    }
+  }
+
+  h6 {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  h1 {
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 4.6875rem;
+      line-height: 5.5625rem;
+    }
+  }
+}
