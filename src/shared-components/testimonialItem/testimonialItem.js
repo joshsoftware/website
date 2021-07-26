@@ -2,7 +2,6 @@ import React from "react";
 
 import { Card, CardBody } from "../../core-components";
 import clientProfile from "../../assets/images/revampImages/user_placeholder.png";
-import clientCompanyLogo from "../../assets/images/revampImages/logo_kimaya_nicu.png";
 import "./testimonialItem.css";
 
 const TestimonialItem = ({
@@ -27,11 +26,6 @@ const TestimonialItem = ({
                 {clientDesignation}
               </p>
               <p className="client-company-text mb-3">{clientCompany}</p>
-              <img
-                src={clientCompanyLogo}
-                alt="company logo"
-                className="company-logo"
-              />
             </div>
           </div>
           <div className="client-testimonial-info scroll-y">{clientDesc}</div>

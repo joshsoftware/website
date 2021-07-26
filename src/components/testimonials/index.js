@@ -1,33 +1,13 @@
 import React from "react";
+
 import TestimonialItem from "../../shared-components/testimonialItem/testimonialItem";
-import Testimonial from "./testimonial";
+import * as routes from "../../routeConstants.js";
 import arrowImg from "../../assets/images/revampImages/next-arrow.png";
 
 const TestimonialsList = (props) => {
   const { testimonialList } = props;
-  const { testimonialItemList } = props;
   return (
     <>
-      {/* <section className="section-testimonial section-banner">
-        <div className="container">
-          <div className="testimonial-content">
-            <h1 className="section-heading text-white">Here’s what our clients are saying</h1>
-          </div>
-        </div>
-      </section>
-      <section className="section-testimonial section-content">
-        <div className="container">
-          <div className="card-wrap -striped client-testimonial">
-            {
-              testimonialList.map((testimonial, index) => <Testimonial key={testimonial.clientName} {...testimonial} seqNumber={index} />)
-            }
-          </div>
-        </div>
-        <div className="btn-wrap"> */}
-      {/* <a href="about-us.html" className="btn btn-gray">Indusrties</a> */}
-      {/* <a href="/contact_us" className="btn btn-outline-gray">About Us</a></div>
-        </section> */}
-
       <div className="josh-content">
         <div className="testimonial-banner">
           <h2 className="mb-0 font-weight-bold text-center">Testimonials</h2>
@@ -35,13 +15,13 @@ const TestimonialsList = (props) => {
         <section className="testimonial-section">
           <div className="container">
             <div className="testimonial-card-wrap">
-              {testimonialItemList.map((testimonialItems) => (
+              {testimonialList.map((testimonialItems) => (
                 <TestimonialItem
                   clientName={testimonialItems.clientName}
-                  clientCompany={testimonialItems.clientCompany}
-                  clientDesignation={testimonialItems.clientDesignation}
+                  clientCompany={testimonialItems.projectName}
+                  clientDesignation={testimonialItems.designation}
                   clientProfile={testimonialItems.clientProfile}
-                  clientDesc={testimonialItems.clientDesc}
+                  clientDesc={testimonialItems.description}
                 />
               ))}
             </div>
@@ -51,7 +31,7 @@ const TestimonialsList = (props) => {
           <ul className="link-item-list list-unstyled mb-0 position-relative d-flex align-items-center justify-content-center">
             <li className="link-item d-flex">
               <a
-                href="#"
+                href={routes.OUR_TEAM_URL}
                 className="text-center text-decoration-none -leadership"
               >
                 Josh Leadership
@@ -64,7 +44,7 @@ const TestimonialsList = (props) => {
             </li>
             <li className="link-item d-flex">
               <a
-                href="/contact_us"
+                href={routes.CONTACT_US_URL}
                 className="text-center text-decoration-none -contact-us"
               >
                 Contact Us
@@ -99,7 +79,7 @@ TestimonialsList.defaultProps = {
             They are technically very sound on the project as well as
             professional in delivering the output yet keeping things very
             informal and comfortable for the client. All in all, it was a
-            thorough satisfying journey with Josh so far in my experience.{" "}
+            thorough satisfying journey with Josh so far in my experience.
           </p>
         </div>
       ),
@@ -243,7 +223,6 @@ TestimonialsList.defaultProps = {
             updates to manage the project and keep our executives informed.
           </p>
           <p className="card-text">
-            {" "}
             The Josh team takes great pride in their work, takes great care to
             ensure their clients' success, and we have grown to feel strongly
             that our Josh team is part of the family in our venture. We would
@@ -356,121 +335,6 @@ TestimonialsList.defaultProps = {
       clientName: "Robert Patterson",
       designation: "Partner",
       projectName: "TourConnect",
-    },
-  ],
-
-  testimonialItemList: [
-    {
-      clientProfile: "",
-      clientName: "Mr. Prakash",
-      clientDesignation: "CEO",
-      clientCompany: " XYZ Company",
-      clientDesc: (
-        <div>
-          <p>
-            At this moment I would like to take the opportunity to say thanks to
-            the entire Josh Team who have been part of this journey. I must say
-            that it has been the most comfortable engagements ever in my
-            experience so far.
-          </p>{" "}
-          <p>
-            {" "}
-            I must say I am thoroughly impressed with Josh team. They have
-            managed the expectation very well from the engagement perspective.
-            They are technically very sound on the project as well as
-            professional in delivering the output yet keeping things very
-            informal and comfortable for the client. All in all, it was a
-            thorough satisfying journey with Josh so far in my experience.
-          </p>
-        </div>
-      ),
-    },
-    {
-      clientProfile: "",
-      clientName: "Hec Heenen",
-      clientDesignation: "CTO",
-      clientCompany: "Brandscope, Inc., Australia",
-      clientDesc: (
-        <div>
-          <p>
-            The search for a development partner can be a daunting task. You are
-            not just looking for the right skill set and experience, you need a
-            team you can trust. My search finished a little over 6 years ago
-            when I found Josh. Since the early days of Brandscope, the Josh team
-            have been with us all the way. They have worked with us, not for us,
-            and have helped transform Brandscope into something we are all proud
-            of.
-          </p>
-        </div>
-      ),
-    },
-    {
-      clientProfile: "",
-      clientName: "Wee Tien Guan",
-      clientDesignation: "Manager (Projects and Quality)",
-      clientCompany: "Synergy Design Solutions Pte.Ltd",
-      clientDesc: (
-        <div>
-          <p>
-            We engaged Josh Software two years ago to provide both web
-            development utilizing Ruby on Rails and Mobile development on
-            Android. Since then we have released two highly customized ERP
-            solutions and a subscription based Android app with a subscription
-            management backend. The people at Josh are not just experienced and
-            excellent professionals, but working with them has been an enjoyable
-            experience. They have been able to meet our targets despite strict
-            requirements and tight timelines on all three projects. Due to the
-            highly customized nature of the ERP solutions and the Android app,
-            requirements were often increased in scope or new requirements added
-            as the projects progressed. Despite all these, Josh Software
-            delivered and we are more than happy to work with them on upcoming
-            projects.
-          </p>
-        </div>
-      ),
-    },
-    {
-      clientProfile: "",
-      clientName: "Amol Patkar",
-      clientDesignation: "Founder & Director",
-      clientCompany: "Fundamentor",
-      clientDesc: (
-        <div>
-          <p>
-            Before getting Josh on board for our startup , we had done a lot of
-            homework on IT vendors as well as tackled the question of whether to
-            inhouse or outsource tech,
-          </p>
-          <p>The points which were in Josh's favour were</p>
-          <p className="m-0">
-            <strong> A. Very competent & experienced team</strong>
-          </p>
-          <p className="m-0">
-            <strong>
-              B. Use of efficient, robust & thorough processes/tools like
-              pivotal tracker , github etc
-            </strong>
-          </p>
-          <p className="m-0">
-            <strong>
-              C. They had worked with a lot of startups across the world with
-              good customer feedback on quality as well as timelines.
-            </strong>
-          </p>
-          <p>
-            We had a heard a lot of horror stories faced by startups about
-            outsourced tech work so we kept our fingers crossed after they
-            started work , but to our absolute delight Josh has functioned as an
-            extended IT dept of our startup. They are very good at execution as
-            well as providing suggestions/advice. They have delivered as per
-            their estimates and forecasts of time and effort .
-          </p>
-          <p>
-            I will strongly recommend them for any startup who wants to be lean
-            and efficient.
-          </p>
-        </div>
-      ),
     },
   ],
 };
