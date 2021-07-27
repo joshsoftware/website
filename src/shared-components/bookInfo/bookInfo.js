@@ -1,12 +1,7 @@
 import React from "react";
 import { Button } from "reactstrap";
 import "./bookInfo.css";
-import {
-  S3_IMAGS_PATH,
-  FACEBOOK_SHARE_URL,
-  TWITTER_SHARE_URL,
-  LINKED_IN_SHARE_URL,
-} from "../../globalConstants.js";
+import { LINKED_IN_SHARE_URL } from "../../globalConstants.js";
 import bookImg from "../../assets/images/revampImages/book_icon.png";
 
 const BookInfo = ({ bookTitle, bookPrice, socialIcons, link }) => {

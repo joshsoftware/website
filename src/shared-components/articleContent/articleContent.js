@@ -1,6 +1,5 @@
 import React from "react";
 import DefaultButton from "../defaultButton/defaultButton";
-import BookInfo from "../bookInfo/bookInfo";
 import "./articleContent.css";
 import icon from "../../assets/images/revampImages/book_white.svg";
 import {
@@ -72,9 +71,6 @@ const ArticleContent = ({
             <DefaultButton buttonText={cardBtnText} link={link} />
           )}
         </div>
-        {/* {bookPrice && bookTitle && (
-          <BookInfo bookTitle={bookTitle} bookPrice={bookPrice} link={link} />
-        )} */}
       </div>
     </div>
   );
