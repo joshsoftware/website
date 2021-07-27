@@ -11,8 +11,9 @@ const WhitePapers = ({ dataList, articleList }) => {
       <NewsBanner caption="Our White Papers" bannerClassName="white-papers" />
       <Container>
         <div className="article-content-wrapper d-flex flex-wrap">
-          {articleList.map((articleListItems) => (
+          {articleList.map((articleListItems, i) => (
             <ArticleContent
+              key={i}
               cardImg={articleListItems.cardImg}
               link={articleListItems.link}
               cardTitle={articleListItems.cardTitle}
@@ -23,8 +24,9 @@ const WhitePapers = ({ dataList, articleList }) => {
         </div>
       </Container>
       <div className="article-list d-flex justify-content-center">
-        {dataList.map((dataListItems) => (
+        {dataList.map((dataListItems, i) => (
           <Article
+            key={i}
             articleDesc={dataListItems.articleDesc}
             articleImg={dataListItems.articleImg}
             articleTitle={dataListItems.articleTitle}

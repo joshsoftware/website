@@ -11,12 +11,13 @@ const Talks = ({ data, dataList }) => {
       <NewsBanner caption="talks" bannerClassName="talks" />
       <Container>
         <div className="video-grid">
-          {data.map((video) => {
+          {data.map((video, i) => {
             const url = video.link
               ? video.link
               : `https://www.youtube.com/embed/${video.videoId}`;
             return (
               <VideoCard
+                key={i}
                 url={url}
                 topic={video.topic}
                 speaker={video.speaker}
@@ -30,8 +31,9 @@ const Talks = ({ data, dataList }) => {
       </Container>
 
       <div className="article-list d-flex justify-content-center">
-        {dataList.map((dataListItems) => (
+        {dataList.map((dataListItems, i) => (
           <Article
+            key={i}
             articleDesc={dataListItems.articleDesc}
             articleImg={dataListItems.articleImg}
             articleTitle={dataListItems.articleTitle}

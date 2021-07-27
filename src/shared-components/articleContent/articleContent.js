@@ -50,8 +50,8 @@ const ArticleContent = ({
                 <span className="font-weight-bold ml-2">{bookPrice}</span>
               </div>
               <ul className="d-flex list-unstyled mb-0 social-media-list">
-                {socialIcons.map((socialIconsItems) => (
-                  <li className="social-media-item">
+                {socialIcons.map((socialIconsItems, i) => (
+                  <li key={i} className="social-media-item">
                     <a
                       href={`${socialIconsItems.mediaLinks}${link}`}
                       target="_blank"

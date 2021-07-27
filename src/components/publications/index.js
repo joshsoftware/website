@@ -11,8 +11,9 @@ const Publications = ({ dataList, articleList }) => {
       <NewsBanner caption="Publications" bannerClassName="publications" />
       <Container>
         <div className="article-content-wrapper d-flex flex-wrap">
-          {articleList.map((articleListItems) => (
+          {articleList.map((articleListItems, i) => (
             <ArticleContent
+              key={i}
               className="publication-content-wrapper"
               cardImg={articleListItems.cardImg}
               link={articleListItems.link}
@@ -26,8 +27,9 @@ const Publications = ({ dataList, articleList }) => {
         </div>
       </Container>
       <div className="article-list d-flex justify-content-center">
-        {dataList.map((dataListItems) => (
+        {dataList.map((dataListItems, i) => (
           <Article
+            key={i}
             articleDesc={dataListItems.articleDesc}
             articleImg={dataListItems.articleImg}
             articleTitle={dataListItems.articleTitle}

@@ -15,8 +15,9 @@ const TestimonialsList = (props) => {
         <section className="testimonial-section">
           <div className="container">
             <div className="testimonial-card-wrap">
-              {testimonialList.map((testimonialItems) => (
+              {testimonialList.map((testimonialItems, i) => (
                 <TestimonialItem
+                  key={i}
                   clientName={testimonialItems.clientName}
                   clientCompany={testimonialItems.projectName}
                   clientDesignation={testimonialItems.designation}
