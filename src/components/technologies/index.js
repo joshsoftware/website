@@ -6,8 +6,10 @@ import { Route, Redirect } from "react-router-dom";
 import ProjectWork from "./projectsWork.js";
 import { ProjectData } from "./projectsData.js";
 import Tile from "../../shared-components/tile/tile.js";
-import PageLinks from "../../shared-components/pageLinks/pageLinks.js";
 import MainBanner from "../../shared-components/mainBanner/mainBanner.js";
+import CtaButton from "../../shared-components/ctaButton/ctaButton.js";
+import IndustryTypeItem from "../../shared-components/industryTypeItem/industryTypeItem.js";
+import "./technologies-new.css";
 
 const linkListItem = [
   {
@@ -55,7 +57,13 @@ const Technologies = (props) => {
               ))}
             </div>
           </div>
-          <PageLinks linkListItem={linkListItem} />
+          <CtaButton linkListItem={linkListItem} />
+        </section>
+        <section className="industry-type-section">
+          <p className="industry-type-heading text-center font-weight-bold">
+            Explore our work in these Industries
+          </p>
+          <IndustryTypeItem industryItem={industryItemData} />
         </section>
       </div>
     </>
@@ -147,7 +155,48 @@ const Technologies = (props) => {
 //   urlParameter: 'other'
 // },
 // ];
-
+const industryItemData = [
+  {
+    imgPath: "media.png",
+    industryTitle: "medium",
+  },
+  {
+    imgPath: "../../assets/images/revampImages/medium-scale.png",
+    industryTitle: "scale",
+  },
+  {
+    imgPath: "",
+    industryTitle: "medium",
+  },
+  {
+    imgPath: "",
+    industryTitle: "scale",
+  },
+  {
+    imgPath: "",
+    industryTitle: "medium",
+  },
+  {
+    imgPath: "",
+    industryTitle: "scale",
+  },
+  {
+    imgPath: "",
+    industryTitle: "medium",
+  },
+  {
+    imgPath: "",
+    industryTitle: "scale",
+  },
+  {
+    imgPath: "",
+    industryTitle: "medium",
+  },
+  {
+    imgPath: "",
+    industryTitle: "scale",
+  },
+];
 const tileData = [
   {
     tileImg: "pediatric-network.png",

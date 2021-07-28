@@ -1,15 +1,9 @@
 import React from "react";
-import "./pageLinkItem.scss";
+import "./ctaButtonItem.css";
 import PropTypes from "prop-types";
 import arrowImg from "../../assets/images/revampImages/next-arrow.png";
 
-const PageLinkItem = ({
-  leadership,
-  contactus,
-  linkTitle,
-  link,
-  linkClassName,
-}) => {
+const CtaButtonItem = ({ linkTitle, link, linkClassName }) => {
   return (
     <>
       <li className="link-item d-flex">
@@ -36,11 +30,11 @@ const PageLinkItem = ({
   );
 };
 
-PageLinkItem.prototype = {
+CtaButtonItem.prototype = {
   link: PropTypes.string,
   leadership: PropTypes.string,
   contactus: PropTypes.string,
   linkClassName: PropTypes.string,
 };
 
-export default PageLinkItem;
+export default CtaButtonItem;
