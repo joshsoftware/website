@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Card, CardBody } from "../../core-components";
-import clientProfile from "../../assets/images/revampImages/user_placeholder.png";
+import clientProfile from "../../assets/images/clients/placeholder@2x.png";
 import "./testimonialItem.css";
 
 const TestimonialItem = ({
@@ -18,14 +18,14 @@ const TestimonialItem = ({
             <img
               src={clientProfile}
               alt="profile icon"
-              className="profile-img mb-2"
+              className="profile-img mb-3"
             />
             <div className="client-details">
-              <h6 className="font-weight-bold">{clientName}</h6>
+              <h6 className="font-weight-bold mb-3">{clientName}</h6>
               <p className="client-designation-text font-weight-bold mb-1">
                 {clientDesignation}
               </p>
-              <p className="client-company-text mb-3">{clientCompany}</p>
+              <p className="client-company-text mb-0">{clientCompany}</p>
             </div>
           </div>
           <div className="client-testimonial-info scroll-y">{clientDesc}</div>
