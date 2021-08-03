@@ -18,6 +18,7 @@ const TestimonialsList = (props) => {
               {testimonialList.map((testimonialItems, i) => (
                 <TestimonialItem
                   key={i}
+                  clientLogo={testimonialItems.clientLogo}
                   clientName={testimonialItems.clientName}
                   clientCompany={testimonialItems.projectName}
                   clientDesignation={testimonialItems.designation}
@@ -87,6 +88,7 @@ TestimonialsList.defaultProps = {
       clientName: "Mr. Prakash Pandey",
       designation: "Head of Technology",
       projectName: "BCSG/Legalzoom UK",
+      clientLogo: require("../../assets/images/clients/new/bcsg@2x.png"),
     },
     {
       description: (
@@ -109,6 +111,7 @@ TestimonialsList.defaultProps = {
       clientName: "Hec Heenan",
       designation: "CTO",
       projectName: "Brandscope, Inc., Australia",
+      clientLogo: require("../../assets/images/clients/new/brandscope@2x.png"),
     },
     {
       description:
@@ -116,6 +119,7 @@ TestimonialsList.defaultProps = {
       clientName: "Dr. Pramod Tripathi",
       designation: "Founder",
       projectName: "FFD",
+      clientLogo: require("../../assets/images/clients/new/ffd@2x.png"),
     },
     {
       description:
@@ -123,6 +127,7 @@ TestimonialsList.defaultProps = {
       clientName: "Dr. Atish Laddad",
       designation: "Pediatrician and Mentor",
       projectName: "The Pediatric Network",
+      clientLogo: require("../../assets/images/clients/new/the-pediatric-network@2x.png"),
     },
     {
       description:
@@ -130,6 +135,7 @@ TestimonialsList.defaultProps = {
       clientName: "Mehul Shah",
       designation: "Co-Founder",
       projectName: "Blueshift Labs",
+      clientLogo: require("../../assets/images/clients/new/blueshift@2x.png"),
     },
     {
       description: (
@@ -158,6 +164,7 @@ TestimonialsList.defaultProps = {
       clientName: "Wee Tien Guan",
       designation: "Manager (Projects and Quality)",
       projectName: "Synergy Design Solutions Pte.Ltd",
+      clientLogo: require("../../assets/images/clients/new/synergy-design@2x.png"),
     },
     {
       description: (
@@ -194,6 +201,7 @@ TestimonialsList.defaultProps = {
       clientName: "Amol Patkar",
       designation: "Founder & Director",
       projectName: "Fundamentor",
+      clientLogo: require("../../assets/images/clients/new/fundamentor@2x.png"),
     },
     {
       description: (
@@ -235,6 +243,7 @@ TestimonialsList.defaultProps = {
       clientName: "Rob Weedn",
       designation: "Founder& CEO",
       projectName: "DealSignal, Inc.",
+      clientLogo: require("../../assets/images/clients/new/dealsignal@2x.png"),
     },
     {
       description: (
@@ -259,6 +268,7 @@ TestimonialsList.defaultProps = {
       clientName: "Sarah Sedgwick",
       designation: "Managing Director",
       projectName: "Clubbuzz",
+      clientLogo: require("../../assets/images/clients/new/clubbuzz@2x.png"),
     },
     {
       description:
@@ -266,6 +276,7 @@ TestimonialsList.defaultProps = {
       clientName: "Gabriele Antoniazzi",
       designation: "CWO",
       projectName: "ShowMe",
+      clientLogo: require("../../assets/images/clients/new/showme@2x.png"),
     },
     {
       description:
@@ -273,6 +284,7 @@ TestimonialsList.defaultProps = {
       clientName: "Satjot",
       designation: "CEO",
       projectName: "Predikt it",
+      clientLogo: require("../../assets/images/clients/new/predictit@2x.png"),
     },
     {
       description:
@@ -280,6 +292,7 @@ TestimonialsList.defaultProps = {
       clientName: "Saqib Rasool",
       designation: "CEO",
       projectName: "Conceivian",
+      clientLogo: require("../../assets/images/clients/new/conceivian@2x.png"),
     },
     {
       description:
@@ -308,6 +321,7 @@ TestimonialsList.defaultProps = {
       clientName: "Kunal Mahajan",
       designation: "Project Lead",
       projectName: "Conceivian",
+      clientLogo: require("../../assets/images/clients/new/conceivian@2x.png"),
     },
     {
       description:
@@ -315,6 +329,7 @@ TestimonialsList.defaultProps = {
       clientName: "Mark Godfrey",
       designation: "Head of eCommerce",
       projectName: "Twenty Ci Limited",
+      clientLogo: require("../../assets/images/clients/new/twentyci@2x.png"),
     },
     {
       description:
@@ -322,6 +337,7 @@ TestimonialsList.defaultProps = {
       clientName: "Antongiulio La Corte",
       designation: "International Development Director ",
       projectName: "H-Farm",
+      clientLogo: require("../../assets/images/clients/new/h-farm@2x.png"),
     },
     {
       description:
@@ -329,6 +345,7 @@ TestimonialsList.defaultProps = {
       clientName: "Anand Kulkarni",
       designation: "Founder",
       projectName: "Paisamatters.com",
+      clientLogo: require("../../assets/images/clients/new/paisa-matters@2x.png"),
     },
     {
       description:
@@ -336,6 +353,7 @@ TestimonialsList.defaultProps = {
       clientName: "Robert Patterson",
       designation: "Partner",
       projectName: "TourConnect",
+      clientLogo: require("../../assets/images/clients/new/tourconnect@2x.png"),
     },
   ],
 };

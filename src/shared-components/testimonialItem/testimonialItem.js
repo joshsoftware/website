@@ -1,10 +1,10 @@
 import React from "react";
-
 import { Card, CardBody } from "../../core-components";
-import clientProfile from "../../assets/images/clients/placeholder@2x.png";
+import placeholderLogo from "../../assets/images/clients/new/placeholder@2x.png";
 import "./testimonialItem.css";
 
 const TestimonialItem = ({
+  clientLogo,
   clientDesc,
   clientName,
   clientDesignation,
@@ -16,7 +16,7 @@ const TestimonialItem = ({
         <div className="client-content d-flex">
           <div className="client-profile d-flex">
             <img
-              src={clientProfile}
+              src={clientLogo}
               alt="profile icon"
               className="profile-img mb-3"
             />
@@ -36,3 +36,7 @@ const TestimonialItem = ({
 };
 
 export default TestimonialItem;
+
+TestimonialItem.defaultProps = {
+  clientLogo: placeholderLogo,
+};
