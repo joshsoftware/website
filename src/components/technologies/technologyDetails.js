@@ -1,7 +1,7 @@
 import React from "react";
-import Image from 'react-image-webp';
+import Image from "react-image-webp";
 
-const TechnologyDetails = props => {
+const TechnologyDetails = (props) => {
   const { name, description, logo } = props;
 
   return (

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Row, Col } from 'reactstrap';
+import React from "react";
+import { Row, Col } from "reactstrap";
 
-import ProjectDetails from './projectDetails';
+import ProjectDetails from "./projectDetails";
 import JoshCarousel from "../../components/home/carousel.js";
 import nextSVG from "../../assets/images/domainExpertise/next.svg";
 import previousSVG from "../../assets/images/domainExpertise/previous.svg";
@@ -11,17 +11,29 @@ const ProjectWork = (props) => {
 
   const NextArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-next cursor-pointer bottom-94p">
-      <img src={nextSVG} alt="next" className="pl-md-5" />
-      <span className="sr-only">Previous</span></div>
-  }
+    return (
+      <div
+        onClick={onClick}
+        className="carousel-control-next cursor-pointer bottom-94p"
+      >
+        <img src={nextSVG} alt="next" className="pl-md-5" />
+        <span className="sr-only">Previous</span>
+      </div>
+    );
+  };
 
   const PrevArrow = (props) => {
     const { onClick } = props;
-    return <div onClick={onClick} className="carousel-control-prev cursor-pointer bottom-94p">
-      <img src={previousSVG} alt="next" className="pr-md-5" />
-      <span className="sr-only">Previous</span></div>
-  }
+    return (
+      <div
+        onClick={onClick}
+        className="carousel-control-prev cursor-pointer bottom-94p"
+      >
+        <img src={previousSVG} alt="next" className="pr-md-5" />
+        <span className="sr-only">Previous</span>
+      </div>
+    );
+  };
 
   const settings = {
     dots: true,
@@ -37,7 +49,13 @@ const ProjectWork = (props) => {
     dotsClass: "slick-dots bottom-100",
   };
 
-  const items = domainExpertiseData.map(project => <ProjectDetails key={project.title} {...project} selectedDomain={selectedDomain}/>)
+  const items = domainExpertiseData.map((project) => (
+    <ProjectDetails
+      key={project.title}
+      {...project}
+      selectedDomain={selectedDomain}
+    />
+  ));
 
   return (
     <Row className="justify-content-center m-auto w-90 card">
@@ -47,12 +65,12 @@ const ProjectWork = (props) => {
         </div>
       </Col>
     </Row>
-  )
-}
+  );
+};
 
 ProjectWork.defaultProps = {
-  selectedDomain: 'rubyonrails',
-  domainExpertiseData: []
-}
+  selectedDomain: "rubyonrails",
+  domainExpertiseData: [],
+};
 
 export default ProjectWork;
