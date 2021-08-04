@@ -89,7 +89,8 @@
 
   .default-btn-link {
     position: absolute;
-    left: rem(24px);
+    left: 50%;
+    transform: translateX(-50%);
     bottom: rem(24px);
   }
 

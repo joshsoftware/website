@@ -5,18 +5,41 @@ html {
 // Main Content
 .josh-content {
   padding: 3.5rem 0 0;
-  background-color: #f7f7f7;
+  background-color: $gray-96;
 
   @include media-breakpoint-up(lg) {
-    padding: 4.5rem 0 0;
+    padding: 4.75rem 0 0;
   }
 }
 
-// Media Grid
+// Video/Media Grid
+.video-grid,
 .media-grid {
-  padding: rem(24px) rem(8px) rem(56px);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 3rem 0;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @include media-breakpoint-up(lg) {
-    padding: 1.5rem 0 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
   }
+
+  @include media-breakpoint-up(xl) {
+    gap: 2.25rem 3.5rem;
+    padding: 5rem 0;
+  }
+}
+
+// Spinner Wrapper
+.spinner-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 0;
 }

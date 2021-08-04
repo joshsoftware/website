@@ -32,11 +32,11 @@
       .article-content-card-item.publication-content-wrapper .article-content {
         padding-right: 2.5rem; } }
     .article-content-card-item.publication-content-wrapper .card-img-wrap img {
-      width: 11.5625rem; }
+      width: 11.5rem; }
 
 .article-content-card {
-  box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.161);
-  border-radius: 12px;
+  box-shadow: 6px 0 10px rgba(0, 0, 0, 0.161);
+  border-radius: 0.75rem;
   background-color: #ffffff;
   flex-direction: column;
   padding: 1.5rem 1.5rem 3rem; }
@@ -63,13 +63,11 @@
     line-height: 1.625rem;
     color: #020449;
     margin-bottom: 1.5rem; }
-    @media (min-width: 992px) {
-      .article-content > a h4 {
-        margin-bottom: 2rem; } }
   .article-content p {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    color: #020449; }
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333333;
+    text-align: justify; }
 
 .book-info-details {
   flex-wrap: wrap;

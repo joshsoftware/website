@@ -75,7 +75,8 @@
       border-radius: 0.5rem; }
   .article-items .default-btn-link {
     position: absolute;
-    left: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 1.5rem; }
   .article-items .article-item-top-content {
     flex: 1;

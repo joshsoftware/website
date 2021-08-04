@@ -1,15 +1,14 @@
 import React from "react";
-import { Card, CardBody } from "reactstrap";
+import { Card, CardBody } from "../../core-components";
+import placeholderLogo from "../../assets/images/clients/new/placeholder@2x.png";
 import "./testimonialItem.css";
-import clientProfile from "../../assets/images/revampImages/user_placeholder.png";
-import clientCompanyLogo from "../../assets/images/revampImages/logo_kimaya_nicu.png";
 
 const TestimonialItem = ({
+  clientLogo,
   clientDesc,
   clientName,
   clientDesignation,
   clientCompany,
-  companyLogo,
 }) => {
   return (
     <Card className="testimonial-card-content border-0">
@@ -17,21 +16,16 @@ const TestimonialItem = ({
         <div className="client-content d-flex">
           <div className="client-profile d-flex">
             <img
-              src={clientProfile}
+              src={clientLogo}
               alt="profile icon"
-              className="profile-img mb-2"
+              className="profile-img mb-3"
             />
             <div className="client-details">
-              <h6 className="font-weight-bold">{clientName}</h6>
+              <h6 className="font-weight-bold mb-3">{clientName}</h6>
               <p className="client-designation-text font-weight-bold mb-1">
                 {clientDesignation}
               </p>
-              <p className="client-company-text mb-3">{clientCompany}</p>
-              <img
-                src={clientCompanyLogo}
-                alt="company logo"
-                className="company-logo"
-              />
+              <p className="client-company-text mb-0">{clientCompany}</p>
             </div>
           </div>
           <div className="client-testimonial-info scroll-y">{clientDesc}</div>
@@ -42,3 +36,7 @@ const TestimonialItem = ({
 };
 
 export default TestimonialItem;
+
+TestimonialItem.defaultProps = {
+  clientLogo: placeholderLogo,
+};

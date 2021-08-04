@@ -1,63 +1,33 @@
 import React from "react";
+import PropTypes from "prop-types";
+
+import { Container } from "../../core-components";
 import "./newsBanner.css";
 
-const NewsBanner = ({ bannerTitle, filterItem, className }) => {
-  // const FilterPill = ({ filterLabel }) => {
-  //   return (
-  //     <div className="filter-pill-item text-center">
-  //       <span className="d-block">{filterLabel}</span>
-  //     </div>
-  //   );
-  // };
+const NewsBanner = ({ caption, className, bannerClassName }) => {
   return (
-    // <div className="news-banner-section">
-    <div className={`news-banner-section ${className}`}>
-      <div className="container">
-        <div className="banner-wrap text-center">
-          <h1 className="font-weight-bold text-white text-capitalize">
-            {bannerTitle}
-          </h1>
-
-          {/* <div className="filter-wrap d-flex flex-wrap align-items-center">
-          {filterItem.map((items) => (
-            <FilterPill filterLabel={items.filterLabel} />
-          ))}
-        </div> */}
+    <div className={`banner-wrapper position-relative ${className}`}>
+      <Container>
+        <div className={`banner ${bannerClassName}`}>
+          {caption && (
+            <h1 className="caption font-weight-bold text-white text-capitalize mb-0">
+              {caption}
+            </h1>
+          )}
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
 
-NewsBanner.defaultProps = {
-  filterItem: [
-    {
-      filterLabel: "Filter 1",
-    },
-    {
-      filterLabel: "Filter 2",
-    },
-    {
-      filterLabel: "Filter name 3",
-    },
-    {
-      filterLabel: "Filter sample name 4",
-    },
-    {
-      filterLabel: "Filter 1",
-    },
-    {
-      filterLabel: "Filter 1",
-    },
-    {
-      filterLabel: "Filter 1",
-    },
-    {
-      filterLabel: "Filter 1",
-    },
-    {
-      filterLabel: "Filter 1",
-    },
-  ],
+NewsBanner.propTypes = {
+  className: PropTypes.string,
+  bannerClassName: PropTypes.string,
 };
+
+NewsBanner.defaultProps = {
+  className: "",
+  bannerClassName: "",
+};
+
 export default NewsBanner;
