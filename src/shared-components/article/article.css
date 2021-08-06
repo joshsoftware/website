@@ -1,0 +1,86 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.article-list {
+  padding: 4rem 3rem 1.5rem;
+  background-color: #e6e6e6;
+  flex-wrap: wrap; }
+  @media (min-width: 992px) {
+    .article-list {
+      padding: 5rem 0;
+      flex-wrap: unset; } }
+
+@media (min-width: 768px) {
+  .article-item-wrap {
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem; } }
+
+@media (min-width: 992px) {
+  .article-item-wrap {
+    margin-bottom: 0; } }
+
+.article-item-wrap:not(:first-child) {
+  margin-top: 1.5rem; }
+  @media (min-width: 768px) {
+    .article-item-wrap:not(:first-child) {
+      margin-top: 0; } }
+
+.article-items {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  max-width: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  flex: 1;
+  height: 100%; }
+  @media (min-width: 768px) {
+    .article-items {
+      margin-bottom: 0;
+      max-width: 17.8125rem; } }
+  @media (min-width: 992px) {
+    .article-items {
+      max-width: 15.5rem; } }
+  .article-items h1 {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+    color: #333333;
+    margin-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .article-items h1 {
+        font-size: 1.4375rem;
+        line-height: 1.6875rem;
+        margin-bottom: 0.5rem; } }
+  .article-items p {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: #020449;
+    font-weight: 500; }
+    @media (min-width: 768px) {
+      .article-items p {
+        font-size: 0.875rem;
+        line-height: 1.5rem; } }
+  .article-items .image-wrap {
+    margin: 0 -2.125rem 1.5rem;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0.5rem; }
+    @media (min-width: 992px) {
+      .article-items .image-wrap {
+        margin: 0 -2.125rem 1rem; } }
+    .article-items .image-wrap img {
+      height: 146px;
+      width: 100%;
+      border-radius: 0.5rem; }
+  .article-items .default-btn-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem; }
+  .article-items .article-item-top-content {
+    flex: 1;
+    padding-bottom: 3rem; }
+    @media (min-width: 992px) {
+      .article-items .article-item-top-content {
+        padding-bottom: 2.5rem; } }

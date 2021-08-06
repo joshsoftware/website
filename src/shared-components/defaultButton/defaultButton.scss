@@ -1,0 +1,58 @@
+@import "../../assets/stylesheets/core";
+
+.default-btn {
+  background-color: #000000;
+  border-radius: 0;
+  border-left: 17px solid #e86055;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  width: auto;
+  min-width: rem(123px);
+  // padding: rem(8px) rem(8px) rem(8px) rem(14px);
+
+  a {
+    font-size: rem(15px);
+    line-height: rem(16px);
+    color: $white;
+    text-decoration: none;
+
+    > img {
+      vertical-align: middle;
+      width: rem(22px);
+      height: auto;
+    }
+  }
+
+  &.active,
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: #000000;
+    border-left: 17px solid #e86055;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.default-btn:not(:disabled):not(.disabled):active:focus,
+.default-btn:not(:disabled):not(.disabled).active:focus,
+.show > .default-btn.dropdown-toggle:focus {
+  background-color: #000000;
+  border-left: 17px solid #e86055;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.default-btn-link {
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}

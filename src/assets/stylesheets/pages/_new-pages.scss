@@ -1,0 +1,69 @@
+.article-content-wrapper {
+  padding: rem(24px) 0 rem(48px);
+
+  @include media-breakpoint-up(md) {
+    margin: 0 rem(-16px);
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: rem(80px) 0;
+    margin: 0;
+  }
+}
+
+.testimonial-section {
+  padding: rem(24px) 0 0;
+}
+
+.testimonial-banner {
+  background: linear-gradient(
+    279deg,
+    rgba(2, 4, 73, 1) 0%,
+    rgba(19, 75, 108, 1) 90%
+  );
+  width: 100%;
+  height: rem(100px);
+  padding-top: rem(30px);
+  position: relative;
+  margin-bottom: rem(32px);
+  border-radius: 0 0 40px 40px;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.392);
+
+  @include media-breakpoint-up(lg) {
+    height: rem(140px);
+    padding-top: rem(36px);
+    margin-bottom: rem(64px);
+  }
+
+  h2 {
+    font-size: rem(32px);
+    line-height: rem(37px);
+    color: $white;
+
+    @include media-breakpoint-up(lg) {
+      font-size: rem(48px);
+      line-height: rem(56px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../images/revampImages/testimonial-bg-shadow.png")
+      no-repeat;
+    right: 66px;
+    bottom: -34px;
+    z-index: 1;
+    width: 45px;
+    height: 42px;
+    background-size: 100%;
+
+    @include media-breakpoint-up(lg) {
+      right: 15%;
+      bottom: -54px;
+      width: 55px;
+      height: 55px;
+    }
+  }
+}

@@ -1,8 +1,4 @@
 /* shared */
-html {
-  @include rem-baseline;
-}
-
 #bodyTop {
   height: rem(76px);
 
@@ -313,7 +309,101 @@ img {
 
 .text-truncate-multi-line {
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+
+  &.-three-line {
+    -webkit-line-clamp: 3;
+  }
+
+  &.-four-line {
+    -webkit-line-clamp: 4;
+  }
+}
+
+// Scroll
+.scroll-y {
+  min-height: 0;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+  @include scrollbars();
+}
+
+.scroll-x {
+  min-width: 0;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-behavior: smooth;
+  @include scrollbars();
 }
 /* shared end */
+
+.link-item-wrap {
+  padding: rem(40px) 0 rem(80px);
+
+  .link-item-list {
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #e86055;
+        width: 100%;
+        height: rem(4px);
+      }
+    }
+  }
+
+  .link-item {
+    padding: 0 rem(24px);
+    z-index: 9999;
+
+    > a {
+      border-radius: 12px;
+      max-width: rem(329px);
+      width: rem(329px);
+      font-size: rem(20px);
+      line-height: rem(24px);
+      color: $white;
+      font-weight: 600;
+      background-size: cover !important;
+      background-position: center !important;
+      padding: 40px 24px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: rem(31px);
+        line-height: rem(36px);
+      }
+
+      &:focus-visible {
+        outline-offset: unset;
+        outline: none;
+      }
+
+      &.-leadership {
+        background: url("../images/revampImages/leadership-bg.png") no-repeat;
+      }
+
+      &.-contact-us {
+        background: url("../images/revampImages/contact-us-bg.png") no-repeat;
+      }
+    }
+
+    .arrow-img {
+      width: rem(25px);
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(24px);
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+    }
+  }
+}

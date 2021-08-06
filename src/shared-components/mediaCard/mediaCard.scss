@@ -1,0 +1,63 @@
+@import "../../assets/stylesheets/core";
+
+.media-frame {
+  height: 9rem;
+  padding: 0 0.75rem;
+  border-radius: 1rem 1rem 0 0;
+  z-index: 1;
+
+  @include media-breakpoint-up(md) {
+    height: 10.75rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 9rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 10.875rem;
+  }
+
+  .img-box {
+    background-color: $gray-68;
+    border-radius: 1rem 1rem 0 0;
+
+    > img {
+      max-width: 150%;
+    }
+  }
+}
+
+.media-details {
+  background-color: $white;
+  border-radius: 0.75rem;
+  padding: 4.75rem 1rem 1rem;
+  margin-top: -4rem;
+  flex: 1;
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba($color: $black, $alpha: 0.12);
+
+  > a {
+    color: #020449;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $gray;
+    font-weight: 500;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+  }
+}

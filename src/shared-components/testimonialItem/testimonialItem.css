@@ -1,0 +1,64 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.testimonial-card-content {
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 6px 0 10px rgba(18, 112, 168, 0.09);
+  border-radius: 0.75rem; }
+  @media (min-width: 992px) {
+    .testimonial-card-content {
+      margin-bottom: 2.5rem;
+      padding: 3rem 1.5rem 3rem 3.5rem; } }
+
+.client-content {
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .client-content {
+      flex-direction: row; } }
+
+.client-profile {
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 992px) {
+    .client-profile {
+      width: 13rem;
+      margin-bottom: 0;
+      margin-right: 2rem; } }
+  .client-profile .profile-img {
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.5rem; }
+
+.client-details {
+  text-align: center; }
+  .client-details h6,
+  .client-details .client-designation-text,
+  .client-details .client-company-text {
+    color: #333333; }
+  .client-details h6 {
+    font-size: 1.25rem;
+    line-height: 1.5rem; }
+  .client-details .client-designation-text,
+  .client-details .client-company-text {
+    font-size: 0.875rem;
+    line-height: 1.125rem; }
+
+.client-testimonial-info {
+  flex: 1;
+  height: 11.5rem; }
+  @media (min-width: 992px) {
+    .client-testimonial-info {
+      padding-right: 1.5rem; } }
+  .client-testimonial-info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333333;
+    text-align: justify; }
+    .client-testimonial-info p:not(:first-child) {
+      margin-top: 1.5rem; }
