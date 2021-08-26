@@ -5,7 +5,9 @@
 /* flex Sass mixin */
 /* mixins end */
 .about-us-box {
-  background-color: #575353; }
+  background-color: #575353;
+  padding: 0 1rem;
+  height: 13.75rem; }
   .about-us-box h6,
   .about-us-box p {
     color: #fff; }
