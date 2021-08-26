@@ -108,14 +108,14 @@ const OurTeam = (props) => {
               <div className="content-wrapper d-flex flex-column">
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-profile-wrap">
+                    <div className="leader-profile-wrap d-flex flex-column">
                       <img
                         src={gautumRege}
                         alt="profile img"
                         className="img-fluid"
                       />
                     </div>
-                    <div className="leader-info position-relative -light-grey">
+                    <div className="leader-info position-relative -light-grey d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -146,7 +146,7 @@ const OurTeam = (props) => {
                 </Card>
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-info position-relative -left -dark-blue">
+                    <div className="leader-info position-relative -left -dark-blue d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -175,8 +175,12 @@ const OurTeam = (props) => {
                         />
                       </div>
                     </div>
-                    <div className="leader-profile-wrap">
-                      <img src={sethu} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={sethu}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
                   </CardBody>
                 </Card>
@@ -186,10 +190,14 @@ const OurTeam = (props) => {
               <div className="content-wrapper d-flex flex-column">
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-profile-wrap">
-                      <img src={vaibhaviRege} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={vaibhaviRege}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
-                    <div className="leader-info position-relative -light-blue">
+                    <div className="leader-info position-relative -light-blue d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -210,7 +218,7 @@ const OurTeam = (props) => {
                 </Card>
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-info position-relative -left -dark-grey">
+                    <div className="leader-info position-relative -left -dark-grey d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -229,8 +237,12 @@ const OurTeam = (props) => {
                         </label>
                       </div>
                     </div>
-                    <div className="leader-profile-wrap">
-                      <img src={maragatha} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={maragatha}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
                   </CardBody>
                 </Card>
@@ -240,10 +252,14 @@ const OurTeam = (props) => {
               <div className="content-wrapper d-flex flex-column">
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-profile-wrap">
-                      <img src={sameerTilak} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={sameerTilak}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
-                    <div className="leader-info position-relative -light-grey">
+                    <div className="leader-info position-relative -light-grey d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -274,7 +290,7 @@ const OurTeam = (props) => {
                 </Card>
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-info position-relative -left -light-blue">
+                    <div className="leader-info position-relative -left -light-blue d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -303,8 +319,12 @@ const OurTeam = (props) => {
                         />
                       </div>
                     </div>
-                    <div className="leader-profile-wrap">
-                      <img src={sachinShintre} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={sachinShintre}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
                   </CardBody>
                 </Card>
@@ -314,10 +334,14 @@ const OurTeam = (props) => {
               <div className="content-wrapper d-flex flex-column">
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-profile-wrap">
-                      <img src={satishTalim} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={satishTalim}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
-                    <div className="leader-info position-relative -dark-blue">
+                    <div className="leader-info position-relative -dark-blue d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -344,7 +368,7 @@ const OurTeam = (props) => {
                 </Card>
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-info position-relative -left -light-blue">
+                    <div className="leader-info position-relative -left -light-blue d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -363,8 +387,12 @@ const OurTeam = (props) => {
                         </label>
                       </div>
                     </div>
-                    <div className="leader-profile-wrap">
-                      <img src={avadhootBhayte} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={avadhootBhayte}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
                   </CardBody>
                 </Card>
@@ -374,10 +402,14 @@ const OurTeam = (props) => {
               <div className="content-wrapper d-flex flex-column">
                 <Card className="leadership-item border-0">
                   <CardBody className="p-0 leadership-item-body d-flex">
-                    <div className="leader-profile-wrap">
-                      <img src={shaileshKalekar} alt="profile img" />
+                    <div className="leader-profile-wrap d-flex flex-column">
+                      <img
+                        src={shaileshKalekar}
+                        alt="profile img"
+                        className="img-fluid"
+                      />
                     </div>
-                    <div className="leader-info position-relative -light-blue">
+                    <div className="leader-info position-relative -light-blue d-flex flex-column">
                       <div className="leader-details">
                         <img
                           src={quotesImg}
@@ -408,260 +440,6 @@ const OurTeam = (props) => {
               </div>
             </div>
           </div>
-          {/* <div className="leadership-col d-flex justify-content-center">
-            <div className="leadership-content">
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                  <div className="leader-info position-relative -light-blue">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">Vaibhavi Rege</h5>
-                      <label className="font-weight-normal mb-2">
-                        Director
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                </CardBody>
-              </Card>
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-info position-relative -left -dark-grey">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">
-                        Maragatha Sundari
-                      </h5>
-                      <label className="font-weight-normal mb-2">
-                        Director
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                </CardBody>
-              </Card>
-            </div>
-            <div className="leadership-content">
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                  <div className="leader-info position-relative -light-grey">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">Sameer Tilak</h5>
-                      <label className="font-weight-normal mb-2">
-                        Chief Technical Officer
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                </CardBody>
-              </Card>
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-info position-relative -left -light-blue">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">Sachin Shintre</h5>
-                      <label className="font-weight-normal mb-2">
-                        Chief Business Officer
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                </CardBody>
-              </Card>
-            </div>
-          </div> */}
-          {/* <div className="leadership-col d-flex justify-content-center">
-            <div className="leadership-content">
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                  <div className="leader-info position-relative -dark-blue">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">Satish Talim</h5>
-                      <label className="font-weight-normal mb-2">
-                        Director
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                </CardBody>
-              </Card>
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-info position-relative -left -light-blue">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">Avadhoot Bhatye</h5>
-                      <label className="font-weight-normal mb-2">
-                        Operations Head
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                </CardBody>
-              </Card>
-            </div>
-            <div className="leadership-content">
-              <Card className="leadership-item border-0">
-                <CardBody className="p-0 leadership-item-body d-flex">
-                  <div className="leader-profile-wrap">
-                    <img src="" alt="profile img" />
-                  </div>
-                  <div className="leader-info position-relative -light-blue">
-                    <div className="leader-details">
-                      <img
-                        src={quotesImg}
-                        alt="quotes img"
-                        className="d-block quotes-img ml-auto"
-                      />
-                      <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusm.
-                      </p>
-                      <h5 className="mb-0 font-weight-bold">
-                        Shailesh Kalekar
-                      </h5>
-                      <label className="font-weight-normal mb-2">
-                        Chief Operating Officer
-                      </label>
-                    </div>
-                    <div className="professional-platforms">
-                      <IconWithLink
-                        url="https://www.linkedin.com/in/gautamrege"
-                        iconClass="icon-linkedin"
-                      />
-                      <IconWithLink
-                        url="https://github.com/gautamrege"
-                        iconClass="icon-github"
-                      />
-                    </div>
-                  </div>
-                </CardBody>
-              </Card>
-            </div>
-          </div> */}
         </div>
       </section>
     </Fragment>
