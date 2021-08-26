@@ -19,7 +19,6 @@ import sachinShintre from "../../assets/images/leaders/sachin-shintre@2x.jpeg";
 import shaileshKalekar from "../../assets/images/leaders/shailesh-kalekar@2x.jpeg";
 import "./team.scss";
 import AboutUsCard from "../../shared-components/aboutUsCard";
-import { DefaultButton } from "../../shared-components";
 const GITHUB_BASE_URL = "https://github.com/";
 // const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
 
