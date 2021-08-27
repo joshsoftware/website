@@ -19,10 +19,23 @@ import sachinShintre from "../../assets/images/leaders/sachin-shintre@2x.jpeg";
 import shaileshKalekar from "../../assets/images/leaders/shailesh-kalekar@2x.jpeg";
 import "./team.scss";
 import AboutUsCard from "../../shared-components/aboutUsCard/aboutUsCard";
+import CtaButton from "../../shared-components/ctaButton/ctaButton";
 const GITHUB_BASE_URL = "https://github.com/";
 // const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
 
 const OurTeam = (props) => {
+  const linkListItem = [
+    {
+      linkTitle: "Success Stories",
+      // link: routes.SUCCESS_STORIES_URL,
+      linkClassName: "-success-story",
+    },
+    {
+      linkTitle: "Innovations",
+      // link: routes.INNOVATIONS,
+      linkClassName: "-innovation",
+    },
+  ];
   // const [members, setMembers] = useState([]),
   //   [leaders, setLeaders] = useState([]),
   //   [loading, setLoading] = useState(true);
@@ -391,6 +404,7 @@ const OurTeam = (props) => {
             </div>
           </div>
         </div>
+        <CtaButton linkListItem={linkListItem} />
       </section>
     </Fragment>
   );
