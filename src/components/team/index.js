@@ -97,7 +97,7 @@ const OurTeam = (props) => {
         </section> */}
       <section className="josh-content">
         <div className="josh-leadership-wrapper d-flex align-items-center flex-column">
-          <div className="leadership-row d-flex flex-wrap">
+          <div className="leadership-row -first-row">
             <div className="leadership-item d-flex flex-column founders-col">
               <div className="leadership-item-wrapper d-flex">
                 <div className="leader-profile-wrap d-flex flex-column">
@@ -136,7 +136,7 @@ const OurTeam = (props) => {
                 </div>
               </div>
               <div className="leadership-item-wrapper d-flex">
-                <div className="leader-info position-relative -left -dark-blue d-flex flex-column">
+                <div className="leader-info position-relative -dark-blue d-flex flex-column">
                   <div className="leader-details">
                     <img
                       src={quotesImg}
@@ -189,7 +189,7 @@ const OurTeam = (props) => {
             </div>
           </div>
 
-          <div className="leadership-row d-flex flex-wrap">
+          <div className="leadership-row -second-row">
             <div className="leadership-item d-flex">
               <div className="leader-profile-wrap d-flex flex-column">
                 <img
@@ -250,10 +250,11 @@ const OurTeam = (props) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="leadership-row d-flex flex-wrap">
             <div className="leadership-item d-flex">
-              <div className="leader-info position-relative -left -dark-grey d-flex flex-column">
+              <div className="leader-profile-wrap d-flex flex-column">
+                <img src={maragatha} alt="profile img" className="img-fluid" />
+              </div>
+              <div className="leader-info position-relative -dark-grey d-flex flex-column">
                 <div className="leader-details">
                   <img
                     src={quotesImg}
@@ -268,12 +269,16 @@ const OurTeam = (props) => {
                   <label className="font-weight-normal mb-2">Director</label>
                 </div>
               </div>
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img src={maragatha} alt="profile img" className="img-fluid" />
-              </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-info position-relative -left -light-blue d-flex flex-column">
+              <div className="leader-profile-wrap d-flex flex-column">
+                <img
+                  src={sachinShintre}
+                  alt="profile img"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="leader-info position-relative -light-blue d-flex flex-column">
                 <div className="leader-details">
                   <img
                     src={quotesImg}
@@ -300,16 +305,7 @@ const OurTeam = (props) => {
                   />
                 </div>
               </div>
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={sachinShintre}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
             </div>
-          </div>
-          <div className="leadership-row d-flex flex-wrap">
             <div className="leadership-item d-flex">
               <div className="leader-profile-wrap d-flex flex-column">
                 <img
@@ -341,7 +337,14 @@ const OurTeam = (props) => {
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-info position-relative -left -light-blue d-flex flex-column">
+              <div className="leader-profile-wrap d-flex flex-column">
+                <img
+                  src={avadhootBhayte}
+                  alt="profile img"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="leader-info position-relative -light-blue d-flex flex-column">
                 <div className="leader-details">
                   <img
                     src={quotesImg}
@@ -358,16 +361,7 @@ const OurTeam = (props) => {
                   </label>
                 </div>
               </div>
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={avadhootBhayte}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
             </div>
-          </div>
-          <div className="leadership-row d-flex flex-wrap">
             <div className="leadership-item d-flex">
               <div className="leader-profile-wrap d-flex flex-column">
                 <img
