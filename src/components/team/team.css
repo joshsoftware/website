@@ -5,7 +5,7 @@
 /* flex Sass mixin */
 /* mixins end */
 .josh-leadership-wrapper {
-  padding: 2rem 0; }
+  padding: 2rem 0 0; }
 
 .leadership-item {
   flex: 0 0 100%;
@@ -97,6 +97,10 @@
     @media (min-width: 992px) {
       .leadership-item.founders-col {
         order: unset; } }
+
+@media (min-width: 992px) {
+  .leadership-row:last-child .leadership-item {
+    margin-bottom: 0; } }
 
 .professional-platforms a {
   background-color: #fff;
