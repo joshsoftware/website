@@ -1,7 +1,7 @@
 @import "../../assets/stylesheets/core";
 
 .josh-leadership-wrapper {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
 
 .leadership-item {
@@ -132,6 +132,16 @@
 
     @include media-breakpoint-up(lg) {
       order: unset;
+    }
+  }
+}
+
+.leadership-row {
+  &:last-child {
+    .leadership-item {
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
     }
   }
 }

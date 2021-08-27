@@ -17,6 +17,7 @@ import avadhootBhayte from "../../assets/images/leaders/avadhoot-bhayte@2x.jpeg"
 import satishTalim from "../../assets/images/leaders/satish-talim@2x.jpeg";
 import sachinShintre from "../../assets/images/leaders/sachin-shintre@2x.jpeg";
 import shaileshKalekar from "../../assets/images/leaders/shailesh-kalekar@2x.jpeg";
+import * as routes from "../../routeConstants.js";
 import "./team.scss";
 import AboutUsCard from "../../shared-components/aboutUsCard/aboutUsCard";
 import CtaButton from "../../shared-components/ctaButton/ctaButton";
@@ -26,14 +27,14 @@ const GITHUB_BASE_URL = "https://github.com/";
 const OurTeam = (props) => {
   const linkListItem = [
     {
-      linkTitle: "Success Stories",
-      // link: routes.SUCCESS_STORIES_URL,
-      linkClassName: "-success-story",
+      linkTitle: "Contact Us",
+      link: routes.CONTACT_US_URL,
+      linkClassName: "-contact-us",
     },
     {
-      linkTitle: "Innovations",
-      // link: routes.INNOVATIONS,
-      linkClassName: "-innovation",
+      linkTitle: "Success Stories",
+      link: routes.SUCCESS_STORIES_URL,
+      linkClassName: "-success-story",
     },
   ];
   // const [members, setMembers] = useState([]),
