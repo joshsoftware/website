@@ -1,0 +1,17 @@
+@import "../../assets/stylesheets/core";
+
+.link-item-wrap {
+  .link-item {
+    > a {
+      &.-success-story {
+        background: url("../../assets/images/revampImages/success-story@2x.png")
+          no-repeat;
+      }
+
+      &.-innovation {
+        background: url("../../assets/images/revampImages/leadership-bg.png")
+          no-repeat;
+      }
+    }
+  }
+}

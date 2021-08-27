@@ -1,5 +1,5 @@
 import React from "react";
-import CtaButton from "../ctaButton/ctaButton";
+import LinkButton from "../linkButton/linkButton";
 import "./aboutUsCard.css";
 
 const AboutUsCard = ({ link }) => {
@@ -16,7 +16,7 @@ const AboutUsCard = ({ link }) => {
           consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
           labore.
         </p>
-        <CtaButton buttonText="view more" />
+        <LinkButton buttonText="view more" />
       </div>
     </>
   );

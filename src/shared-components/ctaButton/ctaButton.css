@@ -4,20 +4,3 @@
 /* rem unit mixin */
 /* flex Sass mixin */
 /* mixins end */
-.cta-btn {
-  background-color: #e86055;
-  border-radius: 0;
-  border-left: 17px solid #000;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
-  width: auto;
-  min-width: 7.6875rem; }
-  .cta-btn.active, .cta-btn:active, .cta-btn:hover, .cta-btn:focus {
-    background-color: #e86055;
-    border-left: 17px solid #000;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    box-shadow: none;
-    outline: none; }
