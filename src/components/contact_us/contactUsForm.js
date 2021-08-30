@@ -114,9 +114,9 @@ const ContactUsForm = () => {
           onChange={onChangeName}
         />
 
-        <span htmlFor="input-fname" className="mb-0">
+        <label htmlFor="input-fname" className="mb-0">
           Name
-        </span>
+        </label>
       </div>
       <div className="form-group position-relative">
         <input
