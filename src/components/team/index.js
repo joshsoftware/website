@@ -114,7 +114,7 @@ const OurTeam = (props) => {
                       alt="quotes img"
                       className="d-block quotes-img ml-auto"
                     />
-                    <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusm.adipisicing elit, sed do eiusm.
                     </p>
@@ -143,7 +143,7 @@ const OurTeam = (props) => {
                       alt="quotes img"
                       className="d-block quotes-img ml-auto"
                     />
-                    <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusm.adipisicing elit, sed do eiusm.
                     </p>
@@ -205,7 +205,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
@@ -229,7 +229,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
@@ -261,7 +261,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
@@ -285,7 +285,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
@@ -321,7 +321,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
@@ -351,7 +351,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
@@ -377,7 +377,7 @@ const OurTeam = (props) => {
                     alt="quotes img"
                     className="d-block quotes-img ml-auto"
                   />
-                  <p className="mb-3 overflow-hidden text-truncate-multi-line -four-line">
+                  <p className="overflow-hidden text-truncate-multi-line -four-line">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusm.adipisicing elit, sed do eiusm.
                   </p>
