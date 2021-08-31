@@ -59,29 +59,77 @@
 }
 
 .contact-form-wrap {
-  .form-group {
-    margin-bottom: 2rem;
+  padding: 0 0.75rem;
 
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 0.5rem;
+  .form-floating {
+    > .form-control,
+    > .form-select {
+      height: calc(3.5rem + 2px);
+      line-height: 1.25;
     }
-    label,
-    .form-control {
-      font-size: 0.875rem;
-      line-height: 1.375rem;
+
+    > .form-control {
+      background-color: transparent;
+      border-bottom: 1px solid $rhino;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: unset;
+      padding: 0.5rem 0;
+      color: $white;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+        line-height: 1.9375rem;
+        border-bottom: 4px solid transparent;
+        height: auto;
+      }
+
+      &:focus {
+        box-shadow: unset;
+        border-color: $rhino;
+        background-color: transparent;
+      }
+
+      &.form-select-field {
+        @include media-breakpoint-up(lg) {
+          font-size: 1rem;
+          line-height: 1.25;
+          border-bottom: 4px solid $rhino;
+        }
+      }
     }
-    label {
+
+    > label {
       position: absolute;
       top: 0;
-      bottom: 0;
       left: 0;
-      color: #8e8e8e;
+      height: 100%;
+      padding: 0.25rem 0;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+      color: $white;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      margin-bottom: 0;
+
+      @media (prefers-reduced-motion: reduce) {
+        > label {
+          transition: none;
+        }
+      }
+
+      > .form-control {
+        padding: 1rem 0.75rem;
+      }
 
       &::before {
         content: "";
         position: absolute;
         left: -0.75rem;
-        top: 0.625rem;
+        top: 0.75rem;
         width: 0.25rem;
         height: 0.25rem;
         background-color: $denim;
@@ -93,58 +141,59 @@
       }
     }
 
-    .form-control {
-      background-color: transparent;
-      border-bottom: 1px solid $rhino;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-radius: unset;
-      padding: 0.5rem 0;
-      height: auto;
-      color: $white;
-
-      @include media-breakpoint-up(lg) {
-        font-size: 2.25rem;
-        line-height: 1.9375rem;
-        border-bottom: 4px solid transparent;
-      }
-
-      &:focus {
-        box-shadow: unset;
-        border-color: $rhino;
-        background-color: transparent;
-      }
-
-      &:focus,
-      &:valid {
-        + label {
-          transition: 0.2s ease-in-out;
-          top: -1rem;
+    &.form-select-floating {
+      > .form-control {
+        ~ label {
+          color: $white !important;
         }
       }
     }
-
-    // input:-webkit-autofill {
-    //   background-color: transparent !important;
-    // }
-  }
-}
-
-.form-group.select-field {
-  label {
-    position: unset;
   }
 
-  .form-select-field {
-    background-color: transparent;
-    border: 1px solid $rhino;
-    color: $white;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-
-    &:focus {
-      box-shadow: unset;
+  .form-floating > .form-control::-moz-placeholder {
+    color: transparent;
+  }
+  .form-floating > .form-control::placeholder {
+    color: transparent;
+  }
+  .form-floating > .form-control:not(:-moz-placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-control:focus,
+  .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-control:-webkit-autofill {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-select {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+    color: #8e8e8e;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
+    }
+  }
+  .form-floating > .form-control:focus ~ label,
+  .form-floating > .form-control:not(:placeholder-shown) ~ label,
+  .form-floating > .form-select ~ label {
+    color: #8e8e8e;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
+    }
+  }
+  .form-floating > .form-control:-webkit-autofill ~ label {
+    color: #8e8e8e;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
     }
   }
 }

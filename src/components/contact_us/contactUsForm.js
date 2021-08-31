@@ -105,23 +105,22 @@ const ContactUsForm = () => {
     // </form>
 
     <form className="contact-form-wrap" onSubmit={handleSubmit}>
-      <div className="form-group position-relative">
+      <div className="form-floating mb-3 position-relative">
         <input
-          id="input-fname"
           type="text"
+          class="form-control"
+          id="input-fname"
           required={true}
-          className="form-control"
+          placeholder="name"
           onChange={onChangeName}
         />
-
-        <label htmlFor="input-fname" className="mb-0">
-          Name
-        </label>
+        <label htmlFor="input-fname">Name</label>
       </div>
-      <div className="form-group position-relative">
+      <div className="form-floating mb-3 position-relative">
         <input
           id="inputEmail"
           type="email"
+          placeholder="email"
           required={true}
           className="form-control"
           onChange={onChangeEmail}
@@ -131,33 +130,31 @@ const ContactUsForm = () => {
           Email
         </label>
       </div>
-      <div className="form-group position-relative">
+      <div className="form-floating mb-3 position-relative">
         <input
           id="input-organization"
           type="text"
           required={true}
           className="form-control"
+          placeholder="organization"
           onChange={onChangeOrganization}
         />
         <label htmlFor="input-organization" className="mb-0">
           Organization
         </label>
       </div>
-      <div className="form-group position-relative textarea-group">
+      <div className="form-floating mb-3 position-relative">
         <textarea
           id="exampleFormControlTextarea1"
-          rows="7"
           className="form-control"
+          placeholder="Leave a comment here"
           onChange={onChangeMessage}
         ></textarea>
         <label htmlFor="exampleFormControlTextarea1" className="mb-0">
           How can we help you?
         </label>
       </div>
-      <div className="form-group position-relative select-field">
-        <label htmlFor="exampleFormControlSelect1" className="mb-2">
-          You are:
-        </label>
+      <div className="form-floating mb-3 position-relative form-select-floating">
         <select
           id="exampleFormControlSelect1"
           aria-describedby="form-control"
@@ -172,6 +169,9 @@ const ContactUsForm = () => {
         <small id="form-control" className="form-text text-muted">
           (Potential Customer; Partner or Alliance; Job Seeker)
         </small>
+        <label htmlFor="exampleFormControlSelect1" className="mb-2">
+          You are:
+        </label>
       </div>
       <LinkButton buttonText="submit" type="submit" id="contact-us-btn" />
     </form>
