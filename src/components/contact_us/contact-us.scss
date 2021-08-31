@@ -174,7 +174,7 @@
     padding-bottom: 0.625rem;
   }
   .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
-    color: #8e8e8e;
+    color: $gray-56;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
     @include media-breakpoint-up(lg) {
       transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
@@ -183,14 +183,14 @@
   .form-floating > .form-control:focus ~ label,
   .form-floating > .form-control:not(:placeholder-shown) ~ label,
   .form-floating > .form-select ~ label {
-    color: #8e8e8e;
+    color: $gray-56;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
     @include media-breakpoint-up(lg) {
       transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
     }
   }
   .form-floating > .form-control:-webkit-autofill ~ label {
-    color: #8e8e8e;
+    color: $gray-56;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
     @include media-breakpoint-up(lg) {
       transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
