@@ -5,10 +5,61 @@
 /* flex Sass mixin */
 /* mixins end */
 .about-us-section {
-  padding-top: 5.5rem; }
+  padding: 5.5rem 1.25rem 3rem; }
   @media (min-width: 992px) {
     .about-us-section {
-      padding-top: 4.5rem; } }
-  .about-us-section > h2 {
+      padding: 4.5rem 0 3rem; } }
+  .about-us-section h2 {
     font-size: 2.25rem;
-    line-height: 2.625rem; }
+    line-height: 2.625rem;
+    color: #1c1c1c;
+    margin-bottom: 2.5rem; }
+    @media (min-width: 992px) {
+      .about-us-section h2 {
+        font-size: 3rem;
+        line-height: 3.5rem; } }
+  .about-us-section .tag-line-box {
+    border: 0.5rem solid #fff;
+    padding: 0.25rem 1rem; }
+    @media (min-width: 992px) {
+      .about-us-section .tag-line-box {
+        max-width: 34.5rem;
+        margin: 0 auto; } }
+    .about-us-section .tag-line-box span {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: #1c1c1c;
+      font-weight: 600; }
+      @media (min-width: 992px) {
+        .about-us-section .tag-line-box span {
+          font-size: 1.375rem;
+          line-height: 2rem; } }
+  .about-us-section p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #1c1c1c;
+    margin: 2.5rem 0; }
+    @media (min-width: 992px) {
+      .about-us-section p {
+        margin: 1.5rem 0; } }
+
+.programs-slider-wrapper .slider-item {
+  padding: 0 1rem; }
+  @media (min-width: 992px) {
+    .programs-slider-wrapper .slider-item {
+      padding: 0 1.5rem; } }
+  .programs-slider-wrapper .slider-item:first-child {
+    padding-left: 0; }
+  .programs-slider-wrapper .slider-item h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #1c1c1c; }
+  .programs-slider-wrapper .slider-item img {
+    width: 11.25rem;
+    height: 11.25rem; }
+  .programs-slider-wrapper .slider-item p {
+    font-size: 1rem;
+    line-height: 1.25rem; }
+    @media (min-width: 992px) {
+      .programs-slider-wrapper .slider-item p {
+        font-size: 0.875rem; } }
