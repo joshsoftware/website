@@ -1,0 +1,14 @@
+@import "../../assets/stylesheets/core";
+
+.about-us-section {
+  padding-top: 5.5rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 4.5rem;
+  }
+
+  > h2 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+}
