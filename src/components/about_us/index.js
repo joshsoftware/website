@@ -47,7 +47,7 @@ const sliderSettings = {
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 5.2,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
@@ -58,8 +58,8 @@ const sliderSettings = {
       settings: {
         arrows: false,
         centerMode: true,
-        slidesToShow: 4.2,
-        // centerPadding: "20px",
+        slidesToShow: 4,
+        centerPadding: "8px",
       },
     },
     {
