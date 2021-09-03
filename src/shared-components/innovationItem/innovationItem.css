@@ -1,0 +1,67 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.innovation-item-wrap:not(:first-child) {
+  margin-top: 1rem; }
+
+.product-details {
+  padding: 1.5rem 1rem;
+  border-radius: 0.75rem;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .product-details {
+      align-items: center;
+      flex-direction: row;
+      padding: 1.5rem 3rem; } }
+  .product-details img {
+    width: 18.75rem;
+    margin: 0 auto;
+    height: 100%;
+    margin-bottom: 2rem; }
+    @media (min-width: 992px) {
+      .product-details img {
+        border-right: 1px solid #707070;
+        padding-right: 3rem;
+        margin: 0; } }
+  .product-details p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #707070; }
+    @media (min-width: 992px) {
+      .product-details p {
+        line-height: 1.5rem;
+        margin-left: 3rem; } }
+
+.feature-list {
+  flex-wrap: wrap; }
+  @media (min-width: 992px) {
+    .feature-list {
+      margin: 0 -0.5rem;
+      flex-wrap: unset; } }
+  .feature-list li {
+    max-width: 100%;
+    flex: 0 0 100%; }
+    @media (min-width: 992px) {
+      .feature-list li {
+        padding: 0 0.5rem;
+        max-width: unset;
+        flex: unset; } }
+    .feature-list li .feature-list-item {
+      border-radius: 0.75rem;
+      width: 100%;
+      height: 100%; }
+      .feature-list li .feature-list-item > img {
+        width: 5.625rem;
+        height: auto; }
+      .feature-list li .feature-list-item p {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        color: #020449; }
+    .feature-list li:not(:first-child) {
+      margin-top: 1.5rem; }
+      @media (min-width: 992px) {
+        .feature-list li:not(:first-child) {
+          margin-top: 0; } }

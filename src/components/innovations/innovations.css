@@ -1,0 +1,11 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.innovation-details-section {
+  padding: 3.5rem 0; }
+  @media (min-width: 992px) {
+    .innovation-details-section {
+      padding: 6.375rem 0; } }
