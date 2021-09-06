@@ -2,7 +2,7 @@
 
 .about-us-box {
   background-color: $mortor;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   @include media-breakpoint-up(lg) {
     height: 13.75rem;
     padding: 0.5rem 2rem;
