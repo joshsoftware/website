@@ -13,9 +13,6 @@
   line-height: 1.1875rem;
 
   @include media-breakpoint-up(lg) {
-    // font-size: 0.625rem;
-    // line-height: 0.6875rem;
-
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
@@ -31,5 +28,6 @@
     border-right: none;
     box-shadow: none;
     outline: none;
+    text-decoration: none;
   }
 }
