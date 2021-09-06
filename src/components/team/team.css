@@ -23,6 +23,12 @@
       .leadership-row:not(:first-child) {
         margin-top: 0.75rem; } }
 
+.leadership-item .leadership-item-card {
+  height: 12.1875rem; }
+  @media (min-width: 768px) {
+    .leadership-item .leadership-item-card {
+      height: unset; } }
+
 .leadership-item .leader-profile-wrap img {
   height: 100%; }
 
@@ -154,12 +160,6 @@
     border-top: 0.625rem solid transparent;
     border-bottom: 0.625rem solid transparent;
     border-left: 0.625rem solid #5886b2; }
-
-.leadership-row.-leaders-row .leadership-item .leadership-item-card {
-  height: 12.1875rem; }
-  @media (min-width: 992px) {
-    .leadership-row.-leaders-row .leadership-item .leadership-item-card {
-      height: unset; } }
 
 @media (min-width: 992px) {
   .leadership-row.-leaders-row .leadership-item:nth-child(4n + 3) .leadership-item-card, .leadership-row.-leaders-row .leadership-item:nth-child(4n + 4) .leadership-item-card {

@@ -25,6 +25,13 @@
 }
 
 .leadership-item {
+  .leadership-item-card {
+    height: 12.1875rem;
+
+    @include media-breakpoint-up(md) {
+      height: unset;
+    }
+  }
   .leader-profile-wrap {
     img {
       height: 100%;
@@ -224,14 +231,6 @@
 
   &.-leaders-row {
     .leadership-item {
-      .leadership-item-card {
-        height: 12.1875rem;
-
-        @include media-breakpoint-up(lg) {
-          height: unset;
-        }
-      }
-
       &:nth-child(4n + 3),
       &:nth-child(4n + 4) {
         .leadership-item-card {
