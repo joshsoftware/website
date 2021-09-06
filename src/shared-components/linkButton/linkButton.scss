@@ -1,6 +1,6 @@
 @import "../../assets/stylesheets/core";
 
-.link-btn {
+.btn.link-btn {
   background-color: $burnt-sienna;
   border-radius: 0;
   border-left: 17px solid $black;
@@ -9,6 +9,16 @@
   border-right: none;
   width: auto;
   min-width: rem(123px);
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+
+  @include media-breakpoint-up(lg) {
+    // font-size: 0.625rem;
+    // line-height: 0.6875rem;
+
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
 
   &.active,
   &:active,

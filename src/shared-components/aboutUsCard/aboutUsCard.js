@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButton from "../linkButton/linkButton";
+import { LinkButton } from "..";
 import "./aboutUsCard.css";
 
 const AboutUsCard = ({ link }) => {
