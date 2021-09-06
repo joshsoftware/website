@@ -130,8 +130,9 @@
   }
 
   &:nth-child(even) {
-    flex-direction: row-reverse;
-
+    .leadership-item-card {
+      flex-direction: row-reverse;
+    }
     .leader-info {
       &::before {
         content: unset;
@@ -158,8 +159,9 @@
     }
 
     @include media-breakpoint-up(lg) {
-      flex-direction: unset;
-
+      .leadership-item-card {
+        flex-direction: unset;
+      }
       .leader-info {
         &::after {
           content: unset;
@@ -189,13 +191,8 @@
 }
 
 .leadership-row {
-  &.-first-row {
-    .leadership-item-wrapper {
-      height: 12.1875rem;
-
-      @include media-breakpoint-up(lg) {
-        height: unset;
-      }
+  &.-founders-row {
+    .leadership-item-card {
       &:last-child {
         margin-top: 0.5rem;
 
@@ -225,46 +222,50 @@
     }
   }
 
-  &.-second-row {
+  &.-leaders-row {
     .leadership-item {
-      height: 12.1875rem;
+      .leadership-item-card {
+        height: 12.1875rem;
 
-      @include media-breakpoint-up(lg) {
-        height: unset;
+        @include media-breakpoint-up(lg) {
+          height: unset;
+        }
       }
 
       &:nth-child(4n + 3),
       &:nth-child(4n + 4) {
-        @include media-breakpoint-up(lg) {
-          flex-direction: row-reverse;
+        .leadership-item-card {
+          @include media-breakpoint-up(lg) {
+            flex-direction: row-reverse;
 
-          .leader-info {
-            &::before {
-              content: unset;
-            }
-
-            &::after {
-              content: "";
-              position: absolute;
-              display: block;
-              width: 0;
-              height: 0;
-              top: 0.75rem;
-              right: -0.5625rem;
-              border-top: 0.625rem solid transparent;
-              border-bottom: 0.625rem solid transparent;
-              border-left: 0.625rem solid $north-gray;
-            }
-
-            &.-light-blue {
-              &::after {
-                border-left: 0.625rem solid $jordy-blue;
+            .leader-info {
+              &::before {
+                content: unset;
               }
-            }
 
-            &.-dark-grey {
               &::after {
-                border-left: 0.625rem solid $mortor;
+                content: "";
+                position: absolute;
+                display: block;
+                width: 0;
+                height: 0;
+                top: 0.75rem;
+                right: -0.5625rem;
+                border-top: 0.625rem solid transparent;
+                border-bottom: 0.625rem solid transparent;
+                border-left: 0.625rem solid $north-gray;
+              }
+
+              &.-light-blue {
+                &::after {
+                  border-left: 0.625rem solid $jordy-blue;
+                }
+              }
+
+              &.-dark-grey {
+                &::after {
+                  border-left: 0.625rem solid $mortor;
+                }
               }
             }
           }

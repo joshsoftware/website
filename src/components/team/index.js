@@ -97,9 +97,9 @@ const OurTeam = (props) => {
         </section> */}
       <section className="josh-content">
         <div className="josh-leadership-wrapper d-flex align-items-center flex-column">
-          <div className="leadership-row -first-row">
+          <div className="leadership-row -founders-row">
             <div className="leadership-item d-flex flex-column founders-col">
-              <div className="leadership-item-wrapper d-flex">
+              <div className="leadership-item-card d-flex">
                 <div className="leader-profile-wrap d-flex flex-column">
                   <img
                     src={gautumRege}
@@ -135,7 +135,7 @@ const OurTeam = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="leadership-item-wrapper d-flex">
+              <div className="leadership-item-card d-flex">
                 <div className="leader-info position-relative -dark-blue d-flex flex-column">
                   <div className="leader-details">
                     <img
@@ -189,208 +189,226 @@ const OurTeam = (props) => {
             </div>
           </div>
 
-          <div className="leadership-row -second-row">
+          <div className="leadership-row -leaders-row">
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={vaibhaviRege}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="leader-info position-relative -light-blue d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={vaibhaviRege}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Vaibhavi Rege</h5>
-                  <label className="font-weight-normal mb-2">Director</label>
+                </div>
+                <div className="leader-info position-relative -light-blue d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Vaibhavi Rege</h5>
+                    <label className="font-weight-normal mb-2">Director</label>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={sameerTilak}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="leader-info position-relative -light-grey d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={sameerTilak}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Sameer Tilak</h5>
-                  <label className="font-weight-normal mb-2">
-                    Chief Technical Officer
-                  </label>
                 </div>
-                <div className="professional-platforms">
-                  <IconWithLink
-                    url="http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw"
-                    iconClass="icon-linkedin"
-                  />
-                  <IconWithLink
-                    url="https://github.com/Sameer-Tilak"
-                    iconClass="icon-github"
-                  />
+                <div className="leader-info position-relative -light-grey d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Sameer Tilak</h5>
+                    <label className="font-weight-normal mb-2">
+                      Chief Technical Officer
+                    </label>
+                  </div>
+                  <div className="professional-platforms">
+                    <IconWithLink
+                      url="http://in.linkedin.com/pub/sameer-tilak/5/a82/425?trk=shareTw"
+                      iconClass="icon-linkedin"
+                    />
+                    <IconWithLink
+                      url="https://github.com/Sameer-Tilak"
+                      iconClass="icon-github"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img src={maragatha} alt="profile img" className="img-fluid" />
-              </div>
-              <div className="leader-info position-relative -dark-grey d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={maragatha}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Maragatha Sundari</h5>
-                  <label className="font-weight-normal mb-2">Director</label>
+                </div>
+                <div className="leader-info position-relative -dark-grey d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Maragatha Sundari</h5>
+                    <label className="font-weight-normal mb-2">Director</label>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={sachinShintre}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="leader-info position-relative -light-blue d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={sachinShintre}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Sachin Shintre</h5>
-                  <label className="font-weight-normal mb-2">
-                    Chief Business Officer
-                  </label>
                 </div>
-                <div className="professional-platforms">
-                  <IconWithLink
-                    url="http://in.linkedin.com/pub/sachin-shintre/15/b8b/787"
-                    iconClass="icon-linkedin"
-                  />
-                  <IconWithLink
-                    url="https://github.com/shintre"
-                    iconClass="icon-github"
-                  />
+                <div className="leader-info position-relative -light-blue d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Sachin Shintre</h5>
+                    <label className="font-weight-normal mb-2">
+                      Chief Business Officer
+                    </label>
+                  </div>
+                  <div className="professional-platforms">
+                    <IconWithLink
+                      url="http://in.linkedin.com/pub/sachin-shintre/15/b8b/787"
+                      iconClass="icon-linkedin"
+                    />
+                    <IconWithLink
+                      url="https://github.com/shintre"
+                      iconClass="icon-github"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={satishTalim}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="leader-info position-relative -dark-blue d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={satishTalim}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Satish Talim</h5>
-                  <label className="font-weight-normal mb-2">Director</label>
                 </div>
-                <div className="professional-platforms">
-                  <IconWithLink
-                    url="http://www.linkedin.com/in/satishtalim"
-                    iconClass="icon-linkedin"
-                  />
+                <div className="leader-info position-relative -dark-blue d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Satish Talim</h5>
+                    <label className="font-weight-normal mb-2">Director</label>
+                  </div>
+                  <div className="professional-platforms">
+                    <IconWithLink
+                      url="http://www.linkedin.com/in/satishtalim"
+                      iconClass="icon-linkedin"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={avadhootBhayte}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="leader-info position-relative -light-blue d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={avadhootBhayte}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Avadhoot Bhatye</h5>
-                  <label className="font-weight-normal mb-2">
-                    Operations Head
-                  </label>
+                </div>
+                <div className="leader-info position-relative -light-blue d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Avadhoot Bhatye</h5>
+                    <label className="font-weight-normal mb-2">
+                      Operations Head
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="leadership-item d-flex">
-              <div className="leader-profile-wrap d-flex flex-column">
-                <img
-                  src={shaileshKalekar}
-                  alt="profile img"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="leader-info position-relative -light-blue d-flex flex-column">
-                <div className="leader-details">
+              <div className="leadership-item-card d-flex">
+                <div className="leader-profile-wrap d-flex flex-column">
                   <img
-                    src={quotesImg}
-                    alt="quotes img"
-                    className="d-block quotes-img ml-auto"
+                    src={shaileshKalekar}
+                    alt="profile img"
+                    className="img-fluid"
                   />
-                  <p className="overflow-hidden text-truncate-multi-line -four-line">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusm.adipisicing elit, sed do eiusm.
-                  </p>
-                  <h5 className="mb-0 font-weight-bold">Shailesh Kalekar</h5>
-                  <label className="font-weight-normal mb-2">
-                    Chief Operating Officer
-                  </label>
                 </div>
-                <div className="professional-platforms">
-                  <IconWithLink
-                    url="https://www.linkedin.com/in/shailesh-kalekar-ba0a87a/"
-                    iconClass="icon-linkedin"
-                  />
+                <div className="leader-info position-relative -light-blue d-flex flex-column">
+                  <div className="leader-details">
+                    <img
+                      src={quotesImg}
+                      alt="quotes img"
+                      className="d-block quotes-img ml-auto"
+                    />
+                    <p className="overflow-hidden text-truncate-multi-line -four-line">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusm.adipisicing elit, sed do eiusm.
+                    </p>
+                    <h5 className="mb-0 font-weight-bold">Shailesh Kalekar</h5>
+                    <label className="font-weight-normal mb-2">
+                      Chief Operating Officer
+                    </label>
+                  </div>
+                  <div className="professional-platforms">
+                    <IconWithLink
+                      url="https://www.linkedin.com/in/shailesh-kalekar-ba0a87a/"
+                      iconClass="icon-linkedin"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
