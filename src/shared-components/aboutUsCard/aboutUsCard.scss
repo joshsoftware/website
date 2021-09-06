@@ -2,8 +2,10 @@
 
 .about-us-box {
   background-color: $mortor;
+  padding: 0.5rem 1rem;
   @include media-breakpoint-up(lg) {
     height: 13.75rem;
+    padding: 0.5rem 2rem;
   }
 
   h6,
@@ -21,6 +23,13 @@
     @include media-breakpoint-up(lg) {
       font-size: 0.75rem;
       line-height: 1.125rem;
+    }
+  }
+
+  .btn.link-btn {
+    @include media-breakpoint-up(lg) {
+      font-size: 0.625rem;
+      line-height: 0.6875rem;
     }
   }
 }

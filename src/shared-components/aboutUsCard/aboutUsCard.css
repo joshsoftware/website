@@ -5,10 +5,12 @@
 /* flex Sass mixin */
 /* mixins end */
 .about-us-box {
-  background-color: #575353; }
+  background-color: #575353;
+  padding: 0.5rem 1rem; }
   @media (min-width: 992px) {
     .about-us-box {
-      height: 13.75rem; } }
+      height: 13.75rem;
+      padding: 0.5rem 2rem; } }
   .about-us-box h6,
   .about-us-box p {
     color: #fff; }
@@ -22,3 +24,7 @@
       .about-us-box p {
         font-size: 0.75rem;
         line-height: 1.125rem; } }
+  @media (min-width: 992px) {
+    .about-us-box .btn.link-btn {
+      font-size: 0.625rem;
+      line-height: 0.6875rem; } }
