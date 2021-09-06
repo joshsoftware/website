@@ -50,60 +50,6 @@ const ContactUsForm = () => {
   const [gCaptcha, setGCaptcha] = useState(false);
 
   return (
-    // <form className="form-contact" onSubmit={handleSubmit}>
-    //   <Row>
-    //     <Col md={6}>
-    //       <div className="form-group">
-    //         <label htmlFor="input-fname">Name</label><span className="text-danger">*</span>
-    //         <input id="input-fname" type="text" required={ true } className="form-control" onChange={onChangeName} />
-    //       </div>
-    //       <div className="form-group">
-    //         <label htmlFor="inputEmail">Email</label><span className="text-danger">*</span>
-    //         <input id="inputEmail" type="email" required={ true } className="form-control" onChange={onChangeEmail} />
-    //       </div>
-    //       <div className="form-group">
-    //         <label htmlFor="inputnumber">Contact Number</label>
-    //         <input id="inputnumber" type="text" className="form-control" onChange={onChangePhone} />
-    //       </div>
-    //       <div className="form-group">
-    //         <label htmlFor="input-organization">Organization</label><span className="text-danger">*</span>
-    //         <input id="input-organization" type="text" required={ true } className="form-control" onChange={onChangeOrganization} />
-    //       </div>
-    //       <div className="form-group">
-    //         <label htmlFor="inputcompany">Job Title</label>
-    //         <input id="inputcompany" type="text" className="form-control" onChange={onChangeJobTitle} />
-    //       </div>
-    //       <div className="form-group">
-    //         <label htmlFor="exampleFormControlSelect1">You are:</label>
-    //         <select id="exampleFormControlSelect1" aria-describedby="form-control" className="form-control" onChange={onChangeRole}>
-    //           <option>- Please Select -</option>
-    //           <option>Potential Customer</option>
-    //           <option>Partner or Alliance</option>
-    //           <option>Job Seeker</option>
-    //         </select>
-    //         <small id="form-control" className="form-text text-muted">(Potential Customer; Partner or Alliance; Job Seeker)</small>
-    //       </div>
-    //     </Col>
-    //     <Col md={6}>
-    //       <div className="form-group textarea-group">
-    //         <label htmlFor="exampleFormControlTextarea1">How can we help you?</label>
-    //         <textarea id="exampleFormControlTextarea1" rows="7" className="form-control" onChange={onChangeMessage}>
-
-    //         </textarea>
-    //       </div>
-    //       <div className="captcha">
-    //         <ReCAPTCHA
-    //           sitekey={GOOGLE_RECAPETCHA_SITE_KEY}
-    //           onChange={setGCaptcha}
-    //         />
-    //       </div>
-    //       <div className="btn-wrap">
-    //         <button type="submit" id="contact-us-btn" className="btn btn-gray">Submit</button>
-    //       </div>
-    //     </Col>
-    //   </Row>
-    // </form>
-
     <form className="contact-form-wrap" onSubmit={handleSubmit}>
       <div className="form-floating mb-3 position-relative">
         <input
@@ -173,7 +119,12 @@ const ContactUsForm = () => {
           You are:
         </label>
       </div>
-      <LinkButton buttonText="submit" type="submit" id="contact-us-btn" />
+      <LinkButton
+        buttonText="submit"
+        type="submit"
+        id="contact-us-btn"
+        className="mt-4"
+      />
     </form>
   );
 };
