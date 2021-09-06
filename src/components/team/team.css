@@ -12,6 +12,9 @@
   grid-template-columns: 1fr;
   gap: 0.5rem;
   margin: 0 1rem; }
+  @media (min-width: 768px) {
+    .leadership-row {
+      grid-template-columns: repeat(1, 434px); } }
   @media (min-width: 992px) {
     .leadership-row {
       grid-template-columns: repeat(2, 434px);
@@ -219,7 +222,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    overflow: hidden; }
+    overflow: hidden;
+    text-align: justify; }
     @media (min-width: 992px) {
       .leadership-description p {
         display: block; } }
