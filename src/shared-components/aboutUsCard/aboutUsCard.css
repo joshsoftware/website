@@ -6,7 +6,7 @@
 /* mixins end */
 .about-us-box {
   background-color: #575353;
-  padding: 0.5rem 1rem; }
+  padding: 1rem; }
   @media (min-width: 992px) {
     .about-us-box {
       height: 13.75rem;
