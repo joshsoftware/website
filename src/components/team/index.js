@@ -1,11 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
-import * as routeConstants from "../../routeConstants";
-import JoshLeaderProfiles from "./joshLeaderProfiles";
-import JoshNerdProfiles from "./joshNerdProfiles";
-import { API_BASE_URL, API_PUBLIC_URL } from "../../globalConstants";
-import { Card, CardBody } from "reactstrap";
+import React, { Fragment } from "react";
 import IconWithLink from "../shared/iconWithLink";
 import quotesImg from "../../assets/images/quotes@2x.png";
 import gautumRege from "../../assets/images/leaders/gautam-rege@2x.jpeg";
@@ -21,8 +14,6 @@ import * as routes from "../../routeConstants.js";
 import "./team.scss";
 import AboutUsCard from "../../shared-components/aboutUsCard/aboutUsCard";
 import CtaButton from "../../shared-components/ctaButton/ctaButton";
-const GITHUB_BASE_URL = "https://github.com/";
-// const JOSH_CAREER_URL = "http://careers.joshsoftware.com/";
 
 const OurTeam = (props) => {
   const linkListItem = [
@@ -37,64 +28,9 @@ const OurTeam = (props) => {
       linkClassName: "-success-story",
     },
   ];
-  // const [members, setMembers] = useState([]),
-  //   [leaders, setLeaders] = useState([]),
-  //   [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     fetch(`${API_BASE_URL}team`, {
-  //       method: "get",
-  //       headers: { "Content-Type": "application/json" }
-  //     })
-  //       .then(res => res.json())
-  //       .then(res => {
-  //         setMembers(res.members);
-  //         setLeaders(res.leaders);
-  //         setLoading(false);
-  //       });
-  //   }
-  //   fetchData();
-  // }, []);
-
-  // if (loading) {
-  //   return null;
-  // } else {
   return (
     <Fragment>
-      {/* <section className="section-team section-banner">
-          <div className="heading-overlay">
-          </div><a href="#ourTeam" className="scroll-down"><i className="icon-angle-double-down"></i></a>
-        </section> */}
-      {/* <div style={{ height: 67 }} /> */}
-
-      {/** JOSH LEADERS */}
-      {/* <JoshLeaderProfiles
-        GITHUB_BASE_URL={GITHUB_BASE_URL}
-        API_PUBLIC_URL={API_PUBLIC_URL}
-        leaders={leaders}
-      /> */}
-
-      {/** JOSH NERDS */}
-      {/* <section className="section-content section-nerds">
-          <div className="container">
-            <JoshNerdProfiles
-              GITHUB_BASE_URL={GITHUB_BASE_URL}
-              API_PUBLIC_URL={API_PUBLIC_URL}
-              members={members}
-            /> */}
-
-      {/** Navigations */}
-      {/* <div className="btn-wrap">
-              <Link to={routeConstants.ABOUT_US_URL} className="btn btn-gray">
-                About Us
-              </Link> */}
-      {/* <a href={JOSH_CAREER_URL} className="btn btn-outline-gray">
-                Career
-              </a> */}
-      {/* </div>
-          </div>
-        </section> */}
       <section className="josh-content">
         <div className="josh-leadership-wrapper d-flex align-items-center flex-column">
           <div className="leadership-row -founders-row">
@@ -421,7 +357,6 @@ const OurTeam = (props) => {
       </section>
     </Fragment>
   );
-  // }
 };
 
 export default OurTeam;
