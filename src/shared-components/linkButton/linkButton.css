@@ -4,7 +4,7 @@
 /* rem unit mixin */
 /* flex Sass mixin */
 /* mixins end */
-.link-btn {
+.btn.link-btn {
   background-color: #e86055;
   border-radius: 0;
   border-left: 17px solid #000;
@@ -12,8 +12,14 @@
   border-bottom: none;
   border-right: none;
   width: auto;
-  min-width: 7.6875rem; }
-  .link-btn.active, .link-btn:active, .link-btn:hover, .link-btn:focus {
+  min-width: 7.6875rem;
+  font-size: 0.875rem;
+  line-height: 1.1875rem; }
+  @media (min-width: 992px) {
+    .btn.link-btn {
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
+  .btn.link-btn.active, .btn.link-btn:active, .btn.link-btn:hover, .btn.link-btn:focus {
     background-color: #e86055;
     border-left: 17px solid #000;
     border-top: none;
