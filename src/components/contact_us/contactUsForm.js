@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import { Row, Col } from "reactstrap";
-import ReCAPTCHA from "react-google-recaptcha";
 
-import {
-  API_BASE_URL,
-  GOOGLE_RECAPETCHA_SITE_KEY,
-} from "../../globalConstants.js";
+import { API_BASE_URL } from "../../globalConstants.js";
 import useInput from "../../hooks/useInput";
 import LinkButton from "../../shared-components/linkButton/linkButton";
 import "./contact-us.css";
