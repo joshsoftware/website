@@ -16,7 +16,11 @@ const InnovationItem = ({ productLogo, productDesc, productFeatures }) => {
           {productFeatures.map((item) => (
             <li className="d-flex align-items-center">
               <div className="feature-list-item bg-white p-3 text-center">
-                <img src={item.logo} alt="feature img" className="mb-3" />
+                <img
+                  src={require(`../../assets/images/revampImages/${item.img}`)}
+                  alt="feature img"
+                  className="mb-3"
+                />
                 <p className="mb-0">{item.desc}</p>
               </div>
             </li>
