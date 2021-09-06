@@ -8,9 +8,9 @@
   }
 
   .about-us-top-section {
-    padding: 0 1.25rem;
+    padding: 0 0.5rem;
     @include media-breakpoint-up(lg) {
-      padding: 0;
+      padding: 0 1.25rem;
     }
   }
 
@@ -70,23 +70,21 @@
   .slider-item {
     padding: 0 1rem;
 
-    @include media-breakpoint-up(lg) {
-      padding: 0 1.5rem;
-    }
-
     h3 {
       font-size: 1.5rem;
       line-height: 2.25rem;
       color: $gray-11;
     }
 
-    img {
-      width: 9.75rem;
-      height: 9.75rem;
+    .img-wrapper {
+      box-shadow: 0px 3px 6px rgba($black, 0.161);
+      border-radius: 0.75rem;
+      width: 11.25rem;
+      height: 11.25rem;
 
-      @include media-breakpoint-up(lg) {
-        width: 11.25rem;
-        height: 11.25rem;
+      img {
+        width: 100%;
+        border-radius: 0.75rem;
       }
     }
 
@@ -106,10 +104,10 @@
   padding: 3rem 0 5rem 1.5rem;
 
   @include media-breakpoint-up(md) {
-    padding: 3rem 0 5.5rem;
+    padding: 3rem 0 5.5rem 3rem;
   }
   @include media-breakpoint-up(xl) {
-    padding: 3rem 5rem 5.5rem;
+    padding: 3rem 0 5.5rem 6.875rem;
   }
   > h2 {
     font-size: 2rem;
@@ -120,6 +118,17 @@
       font-size: 3.125rem;
       line-height: 3.6875rem;
       margin: 1.5rem 0 2rem;
+    }
+  }
+
+  .slick-list {
+    padding: 0 0 0 27% !important;
+    @include media-breakpoint-up(md) {
+      padding: 0 0 0 23% !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 0 27% !important;
     }
   }
 
@@ -147,10 +156,17 @@
   }
 
   .gallery-item {
-    img {
-      width: 100%;
-      @include media-breakpoint-up(lg) {
-        width: 12.5rem;
+    .gallery-img-wrapper {
+      background-color: $white;
+      border-radius: 0.5rem;
+      box-shadow: 0px 3px 8px rgba($black, 0.098);
+      width: 12.6875rem;
+      height: 12.6875rem;
+
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
       }
     }
   }
