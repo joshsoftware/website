@@ -173,19 +173,19 @@ Innovation.defaultProps = {
         "Kimaya-TPN is a cutting-edge, pilot-tested application, built with the aim of making nutritional calculations fully automated, error free and fast. Kimaya-TPN is being used by KEM-NICU & alike, to do calculations using the Hyperalimentation Worksheet for preparing TPN",
       features: [
         {
-          img: "../../assets/images/revampImages/baby-image@2x.png",
+          img: "baby-image@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/manual-test-img@2x.png",
+          img: "manual-test-img@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/kimaya-test-img@2x.png",
+          img: "kimaya-test-img@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/tpn-img.@2x.png",
+          img: "tpn-img.@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
       ],
@@ -196,42 +196,19 @@ Innovation.defaultProps = {
         "CodeCuriosity is a platform that encourages contributions to open source. Everyone is rewarded for their efforts, no matter how big or small they are. Our aim is to make open source contribution a habit!",
       features: [
         {
-          img: "../../assets/images/revampImages/baby-image@2x.png",
+          img: "baby-image@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/manual-test-img@2x.png",
+          img: "manual-test-img@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/kimaya-test-img@2x.png",
+          img: "kimaya-test-img@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/tpn-img.@2x.png",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
-        },
-      ],
-    },
-    {
-      productLogo: "kimaya-logo-with-bg.png",
-      productDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      features: [
-        {
-          img: "../../assets/images/revampImages/baby-image@2x.png",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
-        },
-        {
-          img: "../../assets/images/revampImages/manual-test-img@2x.png",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
-        },
-        {
-          img: "../../assets/images/revampImages/kimaya-test-img@2x.png",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
-        },
-        {
-          img: "../../assets/images/revampImages/tpn-img.@2x.png",
+          img: "tpn-img.@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
       ],
@@ -242,19 +219,42 @@ Innovation.defaultProps = {
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       features: [
         {
-          img: "../../assets/images/revampImages/baby-image@2x.png",
+          img: "baby-image@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/manual-test-img@2x.png",
+          img: "manual-test-img@2x.png",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+        },
+        {
+          img: "kimaya-test-img@2x.png",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+        },
+        {
+          img: "tpn-img.@2x.png",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+        },
+      ],
+    },
+    {
+      productLogo: "kimaya-logo-with-bg.png",
+      productDesc:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+      features: [
+        {
+          img: "baby-image@2x.png",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+        },
+        {
+          img: "manual-test-img@2x.png",
           desc: "Lorem ipsum d98928294328olor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/kimaya-test-img@2x.png",
+          img: "kimaya-test-img@2x.png",
           desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         },
         {
-          img: "../../assets/images/revampImages/tpn-img.@2x.png",
+          img: "tpn-img.@2x.png",
           desc: "Lorem ipsum d98928294328olor sit amet, consectetur adipisicing elit, sed do",
         },
       ],
