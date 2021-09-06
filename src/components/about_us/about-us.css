@@ -95,12 +95,6 @@
         margin: 1.5rem 0 2rem; } }
   .gallery-slider-wrapper .slick-list {
     padding: 0 0 0 27% !important; }
-    @media (min-width: 768px) {
-      .gallery-slider-wrapper .slick-list {
-        padding: 0 0 0 23% !important; } }
-    @media (min-width: 992px) {
-      .gallery-slider-wrapper .slick-list {
-        padding: 0 0 0 27% !important; } }
   .gallery-slider-wrapper .slick-slider .slick-dots {
     bottom: -2.8125rem; }
     .gallery-slider-wrapper .slick-slider .slick-dots li button::before {

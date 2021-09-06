@@ -123,13 +123,6 @@
 
   .slick-list {
     padding: 0 0 0 27% !important;
-    @include media-breakpoint-up(md) {
-      padding: 0 0 0 23% !important;
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding: 0 0 0 27% !important;
-    }
   }
 
   .slick-slider {
