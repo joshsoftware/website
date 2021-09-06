@@ -29,7 +29,17 @@ const settings = {
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
+  centerPadding: "20px",
   responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 2.2,
+        centerPadding: "20px",
+      },
+    },
     {
       breakpoint: 480,
       settings: {
@@ -47,19 +57,18 @@ const sliderSettings = {
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 5,
+  slidesToShow: 5.5,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  // centerPadding: "40px",
+  centerPadding: "20px",
   responsive: [
     {
       breakpoint: 1200,
       settings: {
         arrows: false,
         centerMode: true,
-        slidesToShow: 4,
-        centerPadding: "8px",
+        slidesToShow: 4.2,
       },
     },
     {
@@ -67,8 +76,8 @@ const sliderSettings = {
       settings: {
         arrows: false,
         centerMode: true,
-        slidesToShow: 3.2,
-        // centerPadding: "20px",
+        slidesToShow: 2.5,
+        centerPadding: "70px",
       },
     },
     {
@@ -76,8 +85,7 @@ const sliderSettings = {
       settings: {
         arrows: false,
         centerMode: true,
-        slidesToShow: 1.2,
-        // centerPadding: "40px",
+        slidesToShow: 1.5,
       },
     },
   ],
@@ -86,32 +94,32 @@ const sliderSettings = {
 const activityData = [
   {
     title: "Josh Talks",
-    imgSrc: "josh-talk@2x.jpeg",
+    imgSrc: "josh-talk@2x.png",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
   },
   {
     title: "Dev Hacks",
-    imgSrc: "dev-hacks@2x.jpeg",
+    imgSrc: "dev-hacks@2x.png",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
   },
   {
     title: "Open Source",
-    imgSrc: "open-source@2x.jpeg",
+    imgSrc: "opensource@2x.png",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
   },
 
   {
     title: "Life Coach",
-    imgSrc: "life-coach@2x.jpeg",
+    imgSrc: "life-coach@2x.png",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
   },
   {
     title: "Debates",
-    imgSrc: "debates@2x.jpeg",
+    imgSrc: "debates@2x.png",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
   },
@@ -119,34 +127,34 @@ const activityData = [
 
 const galleryItems = [
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
   {
-    imgSrc: "galleria-sample@2x.jpeg",
+    imgSrc: "galleria-sample@2x.png",
   },
 ];
 const AboutUs = () => {
@@ -182,10 +190,12 @@ const AboutUs = () => {
                     <h3 className="font-weight-bold mb-3 text-truncate overflow-hidden">
                       {slide.title}
                     </h3>
-                    <img
-                      src={require(`../../assets/images/revampImages/${slide.imgSrc}`)}
-                      alt="program img"
-                    />
+                    <div className="img-wrapper">
+                      <img
+                        src={require(`../../assets/images/revampImages/${slide.imgSrc}`)}
+                        alt="program img"
+                      />
+                    </div>
                     <p className="mb-2 text-truncate-multi-line -four-line overflow-hidden">
                       {slide.description}
                     </p>
@@ -205,10 +215,12 @@ const AboutUs = () => {
                 key={i}
                 className="gallery-item d-flex align-items-center justify-content-center flex-column text-center"
               >
-                <img
-                  src={require(`../../assets/images/revampImages/${slide.imgSrc}`)}
-                  alt="gallery img"
-                />
+                <div className="gallery-img-wrapper">
+                  <img
+                    src={require(`../../assets/images/revampImages/${slide.imgSrc}`)}
+                    alt="gallery img"
+                  />
+                </div>
               </div>
             ))}
           </Slider>
