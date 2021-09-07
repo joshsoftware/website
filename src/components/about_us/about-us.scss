@@ -60,6 +60,12 @@
 
 .programs-slider-wrapper {
   margin-bottom: 3rem;
+
+  .slick-list {
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 0 27% !important;
+    }
+  }
   .slick-slide {
     border-right: 1px solid $gray-84;
 

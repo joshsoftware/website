@@ -50,6 +50,9 @@
 
 .programs-slider-wrapper {
   margin-bottom: 3rem; }
+  @media (min-width: 992px) {
+    .programs-slider-wrapper .slick-list {
+      padding: 0 0 0 27% !important; } }
   .programs-slider-wrapper .slick-slide {
     border-right: 1px solid #d5d5d5; }
     .programs-slider-wrapper .slick-slide:last-child {

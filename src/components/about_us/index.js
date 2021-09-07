@@ -25,11 +25,10 @@ const settings = {
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 4.2,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  centerPadding: "20px",
   responsive: [
     {
       breakpoint: 992,
