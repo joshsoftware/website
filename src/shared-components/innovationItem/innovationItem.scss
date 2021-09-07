@@ -1,8 +1,10 @@
 @import "../../assets/stylesheets/core";
 
 .innovation-item-wrap {
-  &:not(:first-child) {
-    margin-top: 1rem;
+  padding: 3.5rem 0;
+
+  &:nth-child(2n) {
+    background-color: $gray-94;
   }
 }
 
@@ -54,7 +56,7 @@
     @include media-breakpoint-up(lg) {
       padding: 0 0.5rem;
       max-width: unset;
-      flex: unset;
+      flex: 0 0 25%;
     }
 
     .feature-list-item {
@@ -63,8 +65,11 @@
       height: 100%;
 
       > img {
-        width: 5.625rem;
-        height: auto;
+        width: 9.375rem;
+
+        @include media-breakpoint-up(lg) {
+          width: 100%;
+        }
       }
 
       p {

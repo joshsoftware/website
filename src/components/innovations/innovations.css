@@ -5,7 +5,7 @@
 /* flex Sass mixin */
 /* mixins end */
 .innovation-details-section {
-  padding: 3.5rem 0; }
+  padding: 1.5rem 0 0; }
   @media (min-width: 992px) {
     .innovation-details-section {
-      padding: 6.375rem 0; } }
+      padding: 3rem 0 0; } }

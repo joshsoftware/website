@@ -4,8 +4,10 @@
 /* rem unit mixin */
 /* flex Sass mixin */
 /* mixins end */
-.innovation-item-wrap:not(:first-child) {
-  margin-top: 1rem; }
+.innovation-item-wrap {
+  padding: 3.5rem 0; }
+  .innovation-item-wrap:nth-child(2n) {
+    background-color: #efefef; }
 
 .product-details {
   padding: 1.5rem 1rem;
@@ -48,14 +50,16 @@
       .feature-list li {
         padding: 0 0.5rem;
         max-width: unset;
-        flex: unset; } }
+        flex: 0 0 25%; } }
     .feature-list li .feature-list-item {
       border-radius: 0.75rem;
       width: 100%;
       height: 100%; }
       .feature-list li .feature-list-item > img {
-        width: 5.625rem;
-        height: auto; }
+        width: 9.375rem; }
+        @media (min-width: 992px) {
+          .feature-list li .feature-list-item > img {
+            width: 100%; } }
       .feature-list li .feature-list-item p {
         font-size: 0.875rem;
         line-height: 1.375rem;
