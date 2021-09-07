@@ -25,7 +25,7 @@ const settings = {
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4.2,
+  slidesToShow: 4.5,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
