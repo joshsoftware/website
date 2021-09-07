@@ -2,7 +2,6 @@ import React from "react";
 import JoshCarousel from "../home/carousel";
 import { Row, Col } from "reactstrap";
 import Image from "react-image-webp";
-import { Container } from "../../core-components";
 import * as routes from "../../routeConstants.js";
 import InnovationItem from "../../shared-components/innovationItem/innovationItem";
 import "./innovations.css";
@@ -148,15 +147,13 @@ export default function Innovation({ productList }) {
           endTagLine="place of"
         />
         <div className="innovation-details-section">
-          <Container>
-            {productList.map((productListItems) => (
-              <InnovationItem
-                productLogo={productListItems.productLogo}
-                productDesc={productListItems.productDesc}
-                productFeatures={productListItems.features}
-              />
-            ))}
-          </Container>
+          {productList.map((productListItems) => (
+            <InnovationItem
+              productLogo={productListItems.productLogo}
+              productDesc={productListItems.productDesc}
+              productFeatures={productListItems.features}
+            />
+          ))}
         </div>
 
         <CtaButton linkListItem={linkListItem} />
