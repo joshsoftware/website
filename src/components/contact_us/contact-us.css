@@ -53,6 +53,10 @@
 
 .contact-form-wrap {
   padding: 0 0.75rem; }
+  .contact-form-wrap input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-text-fill-color: #fff;
+    transition: background-color 5000s ease-in-out 0s; }
   .contact-form-wrap .form-floating > .form-control,
   .contact-form-wrap .form-floating > .form-select {
     height: calc(3.5rem + 2px);
@@ -164,7 +168,9 @@
 .contact-card {
   background-color: transparent;
   border: 1px solid #1270a8;
-  border-radius: 0.75rem; }
+  border-radius: 0.75rem;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px); }
   @media (min-width: 992px) {
     .contact-card {
       border-radius: 0.75rem 0 0 0.75rem; } }

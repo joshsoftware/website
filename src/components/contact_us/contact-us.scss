@@ -61,6 +61,12 @@
 .contact-form-wrap {
   padding: 0 0.75rem;
 
+  input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-text-fill-color: $white;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
   .form-floating {
     > .form-control,
     > .form-select {
@@ -213,6 +219,8 @@
   background-color: transparent;
   border: 1px solid $denim;
   border-radius: 0.75rem;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
   @include media-breakpoint-up(lg) {
     border-radius: 0.75rem 0 0 0.75rem;
