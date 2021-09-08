@@ -184,9 +184,9 @@ const AboutUs = () => {
                 {activityData.map((slide, i) => (
                   <div
                     key={i}
-                    className="slider-item d-flex align-items-center justify-content-center flex-column text-center"
+                    className="slider-item d-flex align-items-center justify-content-center flex-column"
                   >
-                    <h3 className="font-weight-bold mb-3 text-truncate overflow-hidden">
+                    <h3 className="font-weight-bold mb-3 text-truncate overflow-hidden text-center">
                       {slide.title}
                     </h3>
                     <div className="img-wrapper">
