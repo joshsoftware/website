@@ -7,7 +7,7 @@ const InnovationItem = ({ productLogo, productDesc, productFeatures }) => {
   return (
     <div className="innovation-item-wrap">
       <Container>
-        <div className="product-details d-flex bg-white mb-3">
+        <div className="product-details d-flex bg-white">
           <img
             src={require(`../../assets/images/revampImages/${productLogo}`)}
             alt="product logo"
@@ -18,7 +18,7 @@ const InnovationItem = ({ productLogo, productDesc, productFeatures }) => {
           <ul className="feature-list list-unstyled mb-0 d-flex">
             {productFeatures.map((item) => (
               <li className="d-flex align-items-center">
-                <div className="feature-list-item bg-white p-4 text-center">
+                <div className="feature-list-item bg-white p-4">
                   <img
                     src={require(`../../assets/images/revampImages/${item.img}`)}
                     alt="feature img"
