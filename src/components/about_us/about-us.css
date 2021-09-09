@@ -41,12 +41,13 @@
           line-height: 2rem; } }
   .about-us-section p {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.5rem;
     color: #1c1c1c;
     margin: 1.5rem 0; }
     @media (min-width: 992px) {
       .about-us-section p {
-        margin: 2.5rem 0; } }
+        margin: 2.5rem 0;
+        padding: 0 4.5rem; } }
 
 .programs-slider-wrapper {
   margin-bottom: 3rem; }
@@ -73,10 +74,12 @@
         border-radius: 0.75rem; }
     .programs-slider-wrapper .slider-item p {
       font-size: 1rem;
-      line-height: 1.25rem; }
+      line-height: 1.25rem;
+      text-align: justify; }
       @media (min-width: 992px) {
         .programs-slider-wrapper .slider-item p {
-          font-size: 0.875rem; } }
+          font-size: 0.875rem;
+          padding: 0; } }
 
 .gallery-slider-wrapper {
   background-color: #fff;
