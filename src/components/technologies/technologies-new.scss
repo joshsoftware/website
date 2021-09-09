@@ -1,0 +1,27 @@
+@import "../../assets/stylesheets/core";
+
+.industry-type-section {
+  background: url("../../assets/images/revampImages/industry-type-bg@2x.png")
+    no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 36.375rem;
+  padding: 2.5rem 0;
+
+  @include media-breakpoint-up(lg) {
+    height: 43.75rem;
+  }
+}
+
+.industry-type-heading {
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  color: #1c1c1c;
+  margin-bottom: 1.875rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+}
