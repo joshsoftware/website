@@ -48,12 +48,13 @@
 
   p {
     font-size: 1rem;
-    line-height: 1.375rem;
+    line-height: 1.5rem;
     color: $gray-11;
     margin: 1.5rem 0;
 
     @include media-breakpoint-up(lg) {
       margin: 2.5rem 0;
+      padding: 0 4.5rem;
     }
   }
 }
@@ -97,9 +98,11 @@
     p {
       font-size: 1rem;
       line-height: 1.25rem;
+      text-align: justify;
 
       @include media-breakpoint-up(lg) {
         font-size: 0.875rem;
+        padding: 0;
       }
     }
   }
