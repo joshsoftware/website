@@ -1,0 +1,121 @@
+@import "../../assets/stylesheets/core";
+
+.tile-card-body {
+  padding: 1.5rem 1.5rem 2.5rem;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    padding: 2rem;
+  }
+
+  > img {
+    width: 100%;
+    height: 13.75rem;
+
+    @include media-breakpoint-up(lg) {
+      width: 19.25rem;
+      height: 100%;
+    }
+  }
+
+  .card-title,
+  .card-text {
+    color: #1c1c1c;
+  }
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.375rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.tag-list {
+  margin: 0 -0.125rem 1.25rem;
+
+  .tag-list-item-wrap {
+    padding: 0 0.125rem;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+
+    .tag-list-item {
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      color: #1c1c1c;
+    }
+  }
+}
+
+.tile-card {
+  border-radius: 1rem;
+  background-color: #d6f5f0;
+
+  @include media-breakpoint-up(lg) {
+    border-radius: 0;
+  }
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  &.vertical-tile-card-body {
+    @include media-breakpoint-up(lg) {
+      width: 20.875rem;
+    }
+
+    .tag-list {
+      @include media-breakpoint-up(lg) {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    .tile-card-body {
+      > img {
+        @include media-breakpoint-up(lg) {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &.horizontal-tile-card-body {
+    .tile-card-body {
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
+    }
+
+    .tile-details {
+      @include media-breakpoint-up(lg) {
+        margin-left: 1rem;
+      }
+    }
+
+    .tag-list {
+      @include media-breakpoint-up(lg) {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
