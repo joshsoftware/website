@@ -1,0 +1,82 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.tile-card-body {
+  padding: 1.5rem 1.5rem 2.5rem;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .tile-card-body {
+      padding: 2rem; } }
+  .tile-card-body > img {
+    width: 100%;
+    height: 13.75rem; }
+    @media (min-width: 992px) {
+      .tile-card-body > img {
+        width: 19.25rem;
+        height: 100%; } }
+  .tile-card-body .card-title,
+  .tile-card-body .card-text {
+    color: #1c1c1c; }
+  .tile-card-body .card-title {
+    font-size: 1.25rem;
+    line-height: 1.875rem; }
+    @media (min-width: 992px) {
+      .tile-card-body .card-title {
+        font-size: 1.5rem;
+        line-height: 2rem; } }
+  .tile-card-body .card-text {
+    font-size: 1rem;
+    line-height: 1.375rem; }
+    @media (min-width: 992px) {
+      .tile-card-body .card-text {
+        font-size: 0.875rem; } }
+
+.tag-list {
+  margin: 0 -0.125rem 1.25rem; }
+  .tag-list .tag-list-item-wrap {
+    padding: 0 0.125rem;
+    margin-bottom: 0.25rem;
+    display: inline-block; }
+    .tag-list .tag-list-item-wrap .tag-list-item {
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      color: #1c1c1c; }
+
+.tile-card {
+  border-radius: 1rem;
+  background-color: #d6f5f0; }
+  @media (min-width: 992px) {
+    .tile-card {
+      border-radius: 0; } }
+  .tile-card:not(:first-child) {
+    margin-top: 1rem; }
+  @media (min-width: 992px) {
+    .tile-card.vertical-tile-card-body {
+      width: 20.875rem; } }
+  @media (min-width: 992px) {
+    .tile-card.vertical-tile-card-body .tag-list {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden; } }
+  @media (min-width: 992px) {
+    .tile-card.vertical-tile-card-body .tile-card-body > img {
+      width: 100%;
+      height: auto; } }
+  @media (min-width: 992px) {
+    .tile-card.horizontal-tile-card-body .tile-card-body {
+      flex-direction: row; } }
+  @media (min-width: 992px) {
+    .tile-card.horizontal-tile-card-body .tile-details {
+      margin-left: 1rem; } }
+  @media (min-width: 992px) {
+    .tile-card.horizontal-tile-card-body .tag-list {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; } }
