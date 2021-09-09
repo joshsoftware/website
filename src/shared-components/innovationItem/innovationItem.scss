@@ -17,6 +17,7 @@
     align-items: center;
     flex-direction: row;
     padding: 1.5rem 3rem;
+    margin-bottom: 1rem;
   }
 
   img {
@@ -53,10 +54,18 @@
   li {
     max-width: 100%;
     flex: 0 0 100%;
-    @include media-breakpoint-up(lg) {
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(md) {
+      flex: 0 0 50%;
+      max-width: 50%;
       padding: 0 0.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
       max-width: unset;
       flex: 0 0 25%;
+      margin-top: 0;
     }
 
     .feature-list-item {
@@ -76,13 +85,6 @@
         font-size: 0.875rem;
         line-height: 1.375rem;
         color: $night-blue;
-      }
-    }
-
-    &:not(:first-child) {
-      margin-top: 1.5rem;
-      @include media-breakpoint-up(lg) {
-        margin-top: 0;
       }
     }
   }
