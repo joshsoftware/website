@@ -6,7 +6,7 @@ import { Route, Redirect } from "react-router-dom";
 import ProjectWork from "./projectsWork.js";
 import { ProjectData } from "./projectsData.js";
 import Tile from "../../shared-components/tile/tile.js";
-import MainBanner from "../../shared-components/mainBanner/mainBanner.js";
+import MainBanner from "../../shared-components/mainBanner/mainbanner";
 import CtaButton from "../../shared-components/ctaButton/ctaButton.js";
 import IndustryTypeItem from "../../shared-components/industryTypeItem/industryTypeItem.js";
 import "./technologies-new.css";
@@ -36,11 +36,11 @@ const Technologies = (props) => {
       <div className="josh-content">
         <section className="main-banner-section">
           <MainBanner
-            className="-technology-banner-wrap"
-            startText="We"
-            middleText="experts"
-            endText="speak about..."
-            mainBannerTitle="Technology"
+            bannerClassName="technology"
+            pageCaption="Technology"
+            startTagLine="We"
+            tagText="experts"
+            endTagLine="speak about…"
           />
         </section>
         <section className="main-section">
