@@ -1,0 +1,362 @@
+@import "../../assets/stylesheets/core";
+
+.contact-us-section {
+  background: url("../../assets/images/revampImages/contact-us-bg@2x.jpeg")
+    no-repeat;
+  background-size: cover;
+  background-position: top right;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 4.25rem 0;
+  }
+}
+
+.contact-form-content {
+  padding: 0 0.5rem;
+
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 60%;
+    max-width: 34.625rem;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    color: $white;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      margin-bottom: 3.5rem;
+      text-align: left;
+    }
+  }
+
+  .hello-text-box {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    color: $white;
+
+    > img {
+      width: 1.625rem;
+      height: 100%;
+      vertical-align: text-bottom;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 3.75rem;
+    }
+  }
+}
+
+.contact-form-wrap {
+  padding: 0 0.75rem;
+
+  .form-floating {
+    > .form-control,
+    > .form-select {
+      height: calc(3.5rem + 2px);
+      line-height: 1.25;
+    }
+
+    > .form-control {
+      background-color: transparent;
+      border-bottom: 1px solid $rhino;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: unset;
+      padding: 0.5rem 0;
+      color: $white;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+        line-height: 1.9375rem;
+        border-bottom: 4px solid transparent;
+        height: auto;
+      }
+
+      &:focus {
+        box-shadow: unset;
+        border-color: $rhino;
+        background-color: transparent;
+      }
+
+      &.form-select-field {
+        @include media-breakpoint-up(lg) {
+          font-size: 1rem;
+          line-height: 1.25;
+          border-bottom: 4px solid $rhino;
+        }
+      }
+    }
+
+    > label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 0.25rem 0;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+      color: $white;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      margin-bottom: 0;
+
+      @media (prefers-reduced-motion: reduce) {
+        > label {
+          transition: none;
+        }
+      }
+
+      > .form-control {
+        padding: 1rem 0.75rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -0.75rem;
+        top: 0.75rem;
+        width: 0.25rem;
+        height: 0.25rem;
+        background-color: $denim;
+        border-radius: 50%;
+
+        @include media-breakpoint-up(lg) {
+          left: -1rem;
+        }
+      }
+    }
+
+    &.form-select-floating {
+      > .form-control {
+        ~ label {
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  .form-floating > .form-control::-moz-placeholder {
+    color: transparent;
+  }
+  .form-floating > .form-control::placeholder {
+    color: transparent;
+  }
+  .form-floating > .form-control:not(:-moz-placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-control:focus,
+  .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-control:-webkit-autofill {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-select {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+  .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+    color: #8e8e8e;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
+    }
+  }
+  .form-floating > .form-control:focus ~ label,
+  .form-floating > .form-control:not(:placeholder-shown) ~ label,
+  .form-floating > .form-select ~ label {
+    color: #8e8e8e;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
+    }
+  }
+  .form-floating > .form-control:-webkit-autofill ~ label {
+    color: #8e8e8e;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
+    }
+  }
+}
+
+.contact-details {
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 40%;
+  }
+  .contact-card {
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.contact-card {
+  background-color: transparent;
+  border: 1px solid $denim;
+  border-radius: 0.75rem;
+
+  @include media-breakpoint-up(lg) {
+    border-radius: 0.75rem 0 0 0.75rem;
+  }
+  .card-body {
+    color: $white;
+    padding: 1.5rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 1.5rem 2rem;
+    }
+
+    img {
+      width: 1.75rem;
+      height: auto;
+      right: 1.75rem;
+      top: -0.75rem;
+      z-index: 999;
+    }
+
+    .ofc-heading,
+    h3,
+    p {
+      line-height: 1.5rem;
+    }
+
+    .ofc-heading {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.375rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+
+    span {
+      font-size: 0.8125rem;
+      line-height: 1rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.0625rem;
+        line-height: 1.25rem;
+      }
+    }
+
+    .email-text {
+      font-size: 1.0625rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .social-media-list-wrap {
+    margin: 0 -0.75rem;
+    .social-media-list-item {
+      padding: 0 0.75rem;
+
+      .media-img {
+        width: 1rem;
+        height: 1rem;
+      }
+      .-twitter {
+        .media-img {
+          background: url("../../assets/images/revampImages/twitter-contact-icon@2x.png")
+            no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+
+        &:hover,
+        &:focus {
+          .media-img {
+            @include media-breakpoint-up(lg) {
+              background: url("../../assets/images/revampImages/twitter-contact-hover@3x.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      .-linkedin {
+        .media-img {
+          background: url("../../assets/images/revampImages/linked-contact-icon@2x.png")
+            no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+
+        &:hover,
+        &:focus {
+          .media-img {
+            @include media-breakpoint-up(lg) {
+              background: url("../../assets/images/revampImages/linked-contact-hover@2x.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      .-insta {
+        .media-img {
+          background: url("../../assets/images/revampImages/insta-contact-icon@2x.png")
+            no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+
+        &:hover,
+        &:focus {
+          .media-img {
+            @include media-breakpoint-up(lg) {
+              background: url("../../assets/images/revampImages/insta-contact-hover@2x.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+      .-facebook {
+        .media-img {
+          background: url("../../assets/images/revampImages/facebook-contact-icon@2x.png")
+            no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+
+        &:hover,
+        &:focus {
+          .media-img {
+            @include media-breakpoint-up(lg) {
+              background: url("../../assets/images/revampImages/facebook-contact-hover@2x.png")
+                no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

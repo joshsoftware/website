@@ -15,17 +15,6 @@ const CtaButtonItem = ({ linkTitle, link, linkClassName }) => {
           <img src={arrowImg} alt="arrow icon" className="ml-3 arrow-img" />
         </a>
       </li>
-      {/* {contactus && (
-        <li className="link-item d-flex">
-          <a
-            href="/contact_us"
-            className="text-center text-decoration-none -contact-us"
-          >
-            {linkTitle}
-            <img src={arrowImg} alt="arrow icon" className="ml-3 arrow-img" />
-          </a>
-        </li>
-      )} */}
     </>
   );
 };

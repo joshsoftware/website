@@ -1,0 +1,157 @@
+@import "../../assets/stylesheets/core";
+
+.about-us-section {
+  padding: 5.5rem 0 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 4.5rem 0 0;
+  }
+
+  .about-us-top-section {
+    padding: 0 1.25rem;
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    color: $gray-11;
+    margin-bottom: 2.5rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  .tag-line-box {
+    border: 0.5rem solid $white;
+    padding: 0.25rem 1rem;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 34.5rem;
+      margin: 0 auto;
+    }
+    span {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $gray-11;
+      font-weight: 600;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.375rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: $gray-11;
+    margin: 1.5rem 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 2.5rem 0;
+    }
+  }
+}
+
+.programs-slider-wrapper {
+  margin-bottom: 3rem;
+  .slick-slide {
+    border-right: 1px solid $gray-84;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .slider-item {
+    padding: 0 1rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      color: $gray-11;
+    }
+
+    img {
+      width: 9.75rem;
+      height: 9.75rem;
+
+      @include media-breakpoint-up(lg) {
+        width: 11.25rem;
+        height: 11.25rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.gallery-slider-wrapper {
+  background-color: $white;
+  padding: 3rem 0 5rem 1.5rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 3rem 0 5.5rem;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 3rem 5rem 5.5rem;
+  }
+  > h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: $gray-11;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3.125rem;
+      line-height: 3.6875rem;
+      margin: 1.5rem 0 2rem;
+    }
+  }
+
+  .slick-slider {
+    .slick-dots {
+      bottom: -2.8125rem;
+
+      li {
+        button {
+          &::before {
+            font-size: 0.625rem;
+          }
+        }
+
+        &.slick-active {
+          button {
+            &::before {
+              font-size: 1rem;
+              color: $burnt-sienna;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gallery-item {
+    img {
+      width: 100%;
+      @include media-breakpoint-up(lg) {
+        width: 12.5rem;
+      }
+    }
+  }
+}

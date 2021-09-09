@@ -1,0 +1,25 @@
+@import "../../assets/stylesheets/core";
+
+.link-btn {
+  background-color: $burnt-sienna;
+  border-radius: 0;
+  border-left: 17px solid $black;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  width: auto;
+  min-width: rem(123px);
+
+  &.active,
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $burnt-sienna;
+    border-left: 17px solid $black;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    outline: none;
+  }
+}

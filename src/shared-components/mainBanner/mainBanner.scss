@@ -1,27 +1,44 @@
 @import "../../assets/stylesheets/core";
 
-.main-banner-wrap {
+.main-banner {
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 11.375rem;
+  background-position: center right;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   @include media-breakpoint-up(lg) {
     height: 15.6875rem;
+    padding: 3rem 0;
+    background-position: center;
   }
 
-  &.-technology-banner-wrap {
-    background: url("../../assets/images/revampImages/technology-banner.png")
-      no-repeat;
-    background-size: cover;
-    background-position: right 40% center;
-
-    @include media-breakpoint-up(lg) {
-      background-position: top center;
-    }
+  &.innovation {
+    background-image: url("../../assets/images/revampImages/innovations-banner@2x.jpeg");
   }
 
-  h6 {
+  &.technology {
+    background-image: url("../../assets/images/revampImages/technology-banner@2x.jpeg");
+  }
+
+  &.industry {
+    background-image: url("../../assets/images/revampImages/industry-banner@2x.jpeg");
+  }
+
+  &.success-story {
+    background-image: url("../../assets/images/revampImages/success-story-banner@2x.jpeg");
+  }
+
+  p {
     font-size: 0.75rem;
     line-height: 0.875rem;
+    color: $white;
 
     @include media-breakpoint-up(lg) {
       font-size: 1.25rem;
@@ -29,9 +46,10 @@
     }
   }
 
-  h1 {
+  .pagecaption {
     font-size: 2.375rem;
     line-height: 2.8125rem;
+    color: $white;
 
     @include media-breakpoint-up(lg) {
       font-size: 4.6875rem;
