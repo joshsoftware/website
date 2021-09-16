@@ -96,14 +96,6 @@
         border-color: $rhino;
         background-color: transparent;
       }
-
-      &.form-select-field {
-        @include media-breakpoint-up(lg) {
-          font-size: 1rem;
-          line-height: 1.25;
-          border-bottom: 4px solid $rhino;
-        }
-      }
     }
 
     > label {
@@ -130,7 +122,43 @@
       > .form-control {
         padding: 1rem 0.75rem;
       }
+    }
+  }
 
+  .form-select-floating {
+    label {
+      color: $white !important;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+    > .form-control {
+      background-color: transparent;
+      border-bottom: 1px solid $rhino;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      padding: 0.5rem 0;
+      color: $white;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        line-height: 1.25;
+        border-bottom: 4px solid $rhino;
+        height: auto;
+      }
+
+      &:focus {
+        box-shadow: unset;
+        border-color: $rhino;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .form-floating,
+  .form-select-floating {
+    label {
       &::before {
         content: "";
         position: absolute;
@@ -146,16 +174,7 @@
         }
       }
     }
-
-    &.form-select-floating {
-      > .form-control {
-        ~ label {
-          color: $white !important;
-        }
-      }
-    }
   }
-
   .form-floating > .form-control::-moz-placeholder {
     color: transparent;
   }

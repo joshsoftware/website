@@ -80,11 +80,6 @@
       box-shadow: unset;
       border-color: #283755;
       background-color: transparent; }
-    @media (min-width: 992px) {
-      .contact-form-wrap .form-floating > .form-control.form-select-field {
-        font-size: 1rem;
-        line-height: 1.25;
-        border-bottom: 4px solid #283755; } }
   .contact-form-wrap .form-floating > label {
     position: absolute;
     top: 0;
@@ -104,20 +99,43 @@
         transition: none; } }
     .contact-form-wrap .form-floating > label > .form-control {
       padding: 1rem 0.75rem; }
-    .contact-form-wrap .form-floating > label::before {
-      content: "";
-      position: absolute;
-      left: -0.75rem;
-      top: 0.75rem;
-      width: 0.25rem;
-      height: 0.25rem;
-      background-color: #1270a8;
-      border-radius: 50%; }
-      @media (min-width: 992px) {
-        .contact-form-wrap .form-floating > label::before {
-          left: -1rem; } }
-  .contact-form-wrap .form-floating.form-select-floating > .form-control ~ label {
-    color: #fff !important; }
+  .contact-form-wrap .form-select-floating label {
+    color: #fff !important;
+    font-size: 0.875rem;
+    line-height: 1.375rem; }
+  .contact-form-wrap .form-select-floating > .form-control {
+    background-color: transparent;
+    border-bottom: 1px solid #283755;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    color: #fff; }
+    @media (min-width: 992px) {
+      .contact-form-wrap .form-select-floating > .form-control {
+        font-size: 1rem;
+        line-height: 1.25;
+        border-bottom: 4px solid #283755;
+        height: auto; } }
+    .contact-form-wrap .form-select-floating > .form-control:focus {
+      box-shadow: unset;
+      border-color: #283755;
+      background-color: transparent; }
+  .contact-form-wrap .form-floating label::before,
+  .contact-form-wrap .form-select-floating label::before {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+    top: 0.75rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: #1270a8;
+    border-radius: 50%; }
+    @media (min-width: 992px) {
+      .contact-form-wrap .form-floating label::before,
+      .contact-form-wrap .form-select-floating label::before {
+        left: -1rem; } }
   .contact-form-wrap .form-floating > .form-control::-moz-placeholder {
     color: transparent; }
   .contact-form-wrap .form-floating > .form-control::placeholder {

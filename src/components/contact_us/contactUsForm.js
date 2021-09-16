@@ -15,10 +15,8 @@ const ContactUsForm = () => {
       name,
       email,
       organization,
-      job_title,
       role,
       message,
-      phone,
     };
     fetch(`${API_BASE_URL}contact_us.json`, {
       method: "post",
@@ -41,10 +39,8 @@ const ContactUsForm = () => {
   const { value: name, onChange: onChangeName } = useInput("");
   const { value: email, onChange: onChangeEmail } = useInput("");
   const { value: organization, onChange: onChangeOrganization } = useInput("");
-  const { value: job_title, onChange: onChangeJobTitle } = useInput("");
   const { value: role, onChange: onChangeRole } = useInput("");
   const { value: message, onChange: onChangeMessage } = useInput("");
-  const { value: phone, onChange: onChangePhone } = useInput("");
   const [gCaptcha, setGCaptcha] = useState(false);
 
   return (
@@ -87,7 +83,10 @@ const ContactUsForm = () => {
           Organization
         </label>
       </div>
-      <div className="form-floating mb-3 position-relative form-select-floating">
+      <div className="mb-3 form-select-floating position-relative">
+        <label htmlFor="exampleFormControlSelect1" className="mb-2">
+          You are:
+        </label>
         <select
           id="exampleFormControlSelect1"
           aria-describedby="form-control"
@@ -102,9 +101,6 @@ const ContactUsForm = () => {
         <small id="form-control" className="form-text text-muted">
           (Potential Customer; Partner or Alliance; Job Seeker)
         </small>
-        <label htmlFor="exampleFormControlSelect1" className="mb-2">
-          You are:
-        </label>
       </div>
       <div className="form-floating mb-3 position-relative">
         <textarea
