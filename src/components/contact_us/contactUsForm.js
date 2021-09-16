@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-
-import { API_BASE_URL } from "../../globalConstants.js";
+import ReCAPTCHA from "react-google-recaptcha";
+import {
+  API_BASE_URL,
+  GOOGLE_RECAPETCHA_SITE_KEY,
+} from "../../globalConstants.js";
 import useInput from "../../hooks/useInput";
 import LinkButton from "../../shared-components/linkButton/linkButton";
 import "./contact-us.css";
@@ -11,7 +14,7 @@ const ContactUsForm = () => {
     const contact_us = {
       name,
       email,
-      orgnization,
+      organization,
       job_title,
       role,
       message,
@@ -37,7 +40,7 @@ const ContactUsForm = () => {
 
   const { value: name, onChange: onChangeName } = useInput("");
   const { value: email, onChange: onChangeEmail } = useInput("");
-  const { value: orgnization, onChange: onChangeOrganization } = useInput("");
+  const { value: organization, onChange: onChangeOrganization } = useInput("");
   const { value: job_title, onChange: onChangeJobTitle } = useInput("");
   const { value: role, onChange: onChangeRole } = useInput("");
   const { value: message, onChange: onChangeMessage } = useInput("");
@@ -84,17 +87,6 @@ const ContactUsForm = () => {
           Organization
         </label>
       </div>
-      <div className="form-floating mb-3 position-relative">
-        <textarea
-          id="exampleFormControlTextarea1"
-          className="form-control"
-          placeholder="Leave a comment here"
-          onChange={onChangeMessage}
-        ></textarea>
-        <label htmlFor="exampleFormControlTextarea1" className="mb-0">
-          How can we help you?
-        </label>
-      </div>
       <div className="form-floating mb-3 position-relative form-select-floating">
         <select
           id="exampleFormControlSelect1"
@@ -113,6 +105,23 @@ const ContactUsForm = () => {
         <label htmlFor="exampleFormControlSelect1" className="mb-2">
           You are:
         </label>
+      </div>
+      <div className="form-floating mb-3 position-relative">
+        <textarea
+          id="exampleFormControlTextarea1"
+          className="form-control"
+          placeholder="Leave a comment here"
+          onChange={onChangeMessage}
+        ></textarea>
+        <label htmlFor="exampleFormControlTextarea1" className="mb-0">
+          How can we help you?
+        </label>
+      </div>
+      <div className="captcha">
+        <ReCAPTCHA
+          sitekey={GOOGLE_RECAPETCHA_SITE_KEY}
+          onChange={setGCaptcha}
+        />
       </div>
       <LinkButton
         buttonText="submit"
