@@ -310,13 +310,6 @@ TestimonialsList.defaultProps = {
     },
     {
       description:
-        "These guys are the most passionate team that I have ever seen dedicated to a technology, and they take immense pride in their expertise on RoR. At multiple times, the team has stood up to the challenges and delivered on aggressive timelines with good quality. The team with different skillsets helps a lot when you can get in a facebook development expert to come in and tweak your fb related code, whereas someone else would actually come in and fix in the rendering issues that are being faced on IE and go back to his regular assighments (which might not be your project). A good focus on writing test cases and automating them helps catch some bugs beforehand. All in all, an awesome, well balanced team. Strongly recommended.",
-      clientName: "Hetal Rach",
-      designation: "Founder",
-      projectName: "GroupGyaan.com",
-    },
-    {
-      description:
         "Josh team is significantly different from other outsourced teams I have worked with. Josh works exclusively with Ruby on Rails. Hence, the team has deep understanding about the framework and all supplementary libraries from the ecosystem. Another difference, which sets this team apart, is that Josh works more as partner than a service provider. More than once, team has gone extra mile to deliver project on time and on budget. Gautam's relaxed manner of project management worked well with our agile and fast pace of product development. I have found him flexible and accommodating with spec changes and timeline changes. Josh is also leading the Rails interest groups in their community. I am sure the efforts helping them attract best talent and keep themselves up to date with latest from the Rails world.",
       clientName: "Kunal Mahajan",
       designation: "Project Lead",
