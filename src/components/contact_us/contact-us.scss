@@ -132,7 +132,6 @@
       line-height: 1.375rem;
     }
     > .form-control {
-      background-color: $rhino;
       border-bottom: 1px solid $rhino;
       border-top: none;
       border-left: none;
@@ -140,6 +139,15 @@
       border-radius: 0;
       padding: 0.5rem 0;
       color: $white;
+      background-color: transparent;
+      padding-right: 2rem;
+      position: relative;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='12' height='12' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>")
+        no-repeat;
+      background-position: right 5px top 50%;
 
       @include media-breakpoint-up(lg) {
         font-size: 1rem;
@@ -152,11 +160,6 @@
         box-shadow: unset;
         border-color: $rhino;
         background-color: transparent;
-      }
-
-      option {
-        color: $white;
-        background-color: $rhino;
       }
     }
   }
