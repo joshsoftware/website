@@ -104,7 +104,7 @@
     font-size: 0.875rem;
     line-height: 1.375rem; }
   .contact-form-wrap .form-select-floating > .form-control {
-    background-color: transparent;
+    background-color: #283755;
     border-bottom: 1px solid #283755;
     border-top: none;
     border-left: none;
@@ -122,6 +122,9 @@
       box-shadow: unset;
       border-color: #283755;
       background-color: transparent; }
+    .contact-form-wrap .form-select-floating > .form-control option {
+      color: #fff;
+      background-color: #283755; }
   .contact-form-wrap .form-floating label::before,
   .contact-form-wrap .form-select-floating label::before {
     content: "";

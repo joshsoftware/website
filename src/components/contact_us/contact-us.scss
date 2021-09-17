@@ -132,7 +132,7 @@
       line-height: 1.375rem;
     }
     > .form-control {
-      background-color: transparent;
+      background-color: $rhino;
       border-bottom: 1px solid $rhino;
       border-top: none;
       border-left: none;
@@ -152,6 +152,11 @@
         box-shadow: unset;
         border-color: $rhino;
         background-color: transparent;
+      }
+
+      option {
+        color: $white;
+        background-color: $rhino;
       }
     }
   }
