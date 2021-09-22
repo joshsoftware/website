@@ -48,7 +48,6 @@ const Technologies = (props) => {
             <div className="tiles-wrapper py-5">
               {tileData.map((tileDataItems) => (
                 <Tile
-                  horizontal
                   tileImg={tileDataItems.tileImg}
                   tileTitle={tileDataItems.tileTitle}
                   tileDescription={tileDataItems.tileDescription}

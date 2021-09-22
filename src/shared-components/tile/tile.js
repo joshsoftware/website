@@ -11,12 +11,8 @@ const Tile = ({
   horizontal,
 }) => {
   return (
-    <Card
-      className={`tile-card border-0 ${
-        horizontal ? "horizontal-tile-card-body" : "vertical-tile-card-body"
-      }`}
-    >
-      <CardBody className="tile-card-body d-flex">
+    <Card className={`tile-card border-0`}>
+      <CardBody className="tile-card-body ">
         <img
           src={require(`../../assets/images/revampImages/${tileImg}`)}
           alt="tile img"
