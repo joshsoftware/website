@@ -28,16 +28,14 @@
 .tiles-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 3rem 0; }
+  gap: 1rem; }
   @media (min-width: 768px) {
     .tiles-wrapper {
       grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 992px) {
     .tiles-wrapper {
       grid-template-columns: repeat(3, 1fr);
-      gap: 2rem; } }
+      gap: 1.5rem; } }
   @media (min-width: 1200px) {
     .tiles-wrapper {
-      gap: 2.25rem;
-      padding: 5rem 0; } }
+      gap: 2rem; } }
