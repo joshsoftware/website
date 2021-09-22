@@ -29,8 +29,7 @@
 .tiles-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 3rem 0;
+  gap: 1rem;
 
   @include media-breakpoint-up(md) {
     grid-template-columns: repeat(2, 1fr);
@@ -38,11 +37,10 @@
 
   @include media-breakpoint-up(lg) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   @include media-breakpoint-up(xl) {
-    gap: 2.25rem;
-    padding: 5rem 0;
+    gap: 2rem;
   }
 }
