@@ -8,7 +8,6 @@ const IndustryTypeItem = (props) => {
   const { industryItem } = props;
 
   const items = industryItem.map((industryItem) => {
-    console.log(industryItem);
     return (
       <>
         <div className="domain-item-wrap d-flex flex-column">
