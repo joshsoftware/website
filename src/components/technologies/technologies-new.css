@@ -24,3 +24,20 @@
       font-size: 3.125rem;
       line-height: 3.75rem;
       margin-bottom: 3.75rem; } }
+
+.tiles-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 3rem 0; }
+  @media (min-width: 768px) {
+    .tiles-wrapper {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 992px) {
+    .tiles-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem; } }
+  @media (min-width: 1200px) {
+    .tiles-wrapper {
+      gap: 2.25rem;
+      padding: 5rem 0; } }
