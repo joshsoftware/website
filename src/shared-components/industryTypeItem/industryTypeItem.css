@@ -1,0 +1,12 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.domain-item-wrap img {
+  width: 100%;
+  border-radius: 0.75rem; }
+  @media (min-width: 992px) {
+    .domain-item-wrap img {
+      width: 19.5rem; } }

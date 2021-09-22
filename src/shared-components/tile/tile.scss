@@ -23,7 +23,7 @@
 
   .card-title,
   .card-text {
-    color: #1c1c1c;
+    color: $gray-11;
   }
   .card-title {
     font-size: 1.25rem;
@@ -58,14 +58,14 @@
       border-radius: 0.25rem;
       font-size: 0.875rem;
       line-height: 1.125rem;
-      color: #1c1c1c;
+      color: $gray-11;
     }
   }
 }
 
 .tile-card {
   border-radius: 1.5rem;
-  background-color: #d6f5f0;
+  background-color: $mint;
 
   &.vertical-tile-card-body {
     // .tag-list {
