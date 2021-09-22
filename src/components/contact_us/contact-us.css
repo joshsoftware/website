@@ -130,7 +130,8 @@
       border-color: #283755;
       background-color: transparent; }
   .contact-form-wrap .form-select-floating .form-select-field option {
-    background-color: #283047; }
+    background-color: #283755;
+    padding: 0.5rem 1rem; }
   .contact-form-wrap .form-floating label::before,
   .contact-form-wrap .form-select-floating label::before {
     content: "";
