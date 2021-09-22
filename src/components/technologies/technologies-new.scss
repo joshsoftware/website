@@ -16,7 +16,7 @@
 .industry-type-heading {
   font-size: 2rem;
   line-height: 2.3125rem;
-  color: #1c1c1c;
+  color: $gray-11;
   margin-bottom: 1.875rem;
 
   @include media-breakpoint-up(lg) {

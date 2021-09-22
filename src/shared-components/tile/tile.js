@@ -21,7 +21,7 @@ const Tile = ({
           <ul className="tag-list list-unstyled">
             {tileTags.map((item) => (
               <li className="tag-list-item-wrap">
-                <span className="tag-list-item bg-white">{item.tileTag}</span>
+                <span className="tag-list-item bg-white">{item}</span>
               </li>
             ))}
           </ul>

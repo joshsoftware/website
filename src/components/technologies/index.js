@@ -46,12 +46,14 @@ const Technologies = (props) => {
         <section className="main-section">
           <div className="container">
             <div className="tiles-wrapper py-5">
-              {tileData.map((tileDataItems) => (
+              {ProjectData.map((projectInfo) => (
                 <Tile
-                  tileImg={tileDataItems.tileImg}
-                  tileTitle={tileDataItems.tileTitle}
-                  tileDescription={tileDataItems.tileDescription}
-                  tileTags={tileDataItems.tags}
+                  tileImg={projectInfo.logo}
+                  tileTitle={projectInfo.title}
+                  tileDescription={projectInfo.description}
+                  tileTags={projectInfo.techStack}
+                  // domainExpertiseData={filterDataForSelectDomain()}
+                  // selectedDomain={selectedDomain}
                 />
               ))}
             </div>
@@ -74,23 +76,23 @@ const Technologies = (props) => {
 //     ? match.params.domain
 //     : "ruby-on-rails";
 
-//   const filterDataForSelectDomain = () => {
-//     const techData = domainsData.filter(
-//       (tech) => tech.urlParameter === selectedDomain
+// const filterDataForSelectDomain = () => {
+//   const techData = domainsData.filter(
+//     (tech) => tech.urlParameter === selectedDomain
+//   );
+//   if (techData.length > 0) {
+//     const keywordsToSearch = techData[0].keywords;
+//     return ProjectData.filter((project) =>
+//       project.techStack.find(
+//         (e) =>
+//           keywordsToSearch.filter((l) =>
+//             e.toLowerCase().includes(l.toLowerCase())
+//           ).length > 0
+//       )
 //     );
-//     if (techData.length > 0) {
-//       const keywordsToSearch = techData[0].keywords;
-//       return ProjectData.filter((project) =>
-//         project.techStack.find(
-//           (e) =>
-//             keywordsToSearch.filter((l) =>
-//               e.toLowerCase().includes(l.toLowerCase())
-//             ).length > 0
-//         )
-//       );
-//     }
-//     return [];
-//   };
+//   }
+//   return [];
+// };
 
 //   return (
 //     <section className="w-100 section-home">
@@ -161,189 +163,43 @@ const industryItemData = [
     industryTitle: "medium",
   },
   {
-    imgPath: "../../assets/images/revampImages/medium-scale.png",
+    imgPath: "medium-scale.png",
     industryTitle: "scale",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "medium",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "scale",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "medium",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "scale",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "medium",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "scale",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "medium",
   },
   {
-    imgPath: "",
+    imgPath: "medium-scale.png",
     industryTitle: "scale",
   },
 ];
 const tileData = [
-  {
-    tileImg: "pediatric-network.png",
-    tileTitle: "THE PAEDIATRIC network",
-    tileDescription:
-      "This portal helps the doctors to shorten the consultation time as well as automate the process right from registering the patient till the… prescription of drugs and referring",
-    tags: [
-      {
-        tileTag: "Ruby 2.1.3",
-      },
-      {
-        tileTag: "Rails 5.0.0",
-      },
-      {
-        tileTag: "PosterSQL 9.5.3",
-      },
-      {
-        tileTag: "Sidekiq",
-      },
-      {
-        tileTag: "ElasticSearch 2.3.3",
-      },
-      {
-        tileTag: "Angular JS 1.4.9",
-      },
-      {
-        tileTag: "Gulp",
-      },
-      {
-        tileTag: "Node JS with NPM",
-      },
-      {
-        tileTag: "Bower",
-      },
-      {
-        tileTag: "Ionic 1.7.16",
-      },
-      {
-        tileTag: "Cordova 6.3.0",
-      },
-      {
-        tileTag: "Andriod",
-      },
-      {
-        tileTag: "ios",
-      },
-    ],
-  },
-  {
-    tileImg: "brandscope.png",
-    tileTitle: "BRANDSCOPE",
-    tileDescription:
-      "Brandscope Pty. Ltd. is focused on providing a streamline solution and maximizes the selling process for suppliers, retailers and agents in Australian fashion and Action Sports industry… Through this platform a supplier gets immediate access to quality retailers using unique and dynamic online tools to launch their brand with speed and efficiency giving them the competitive edge as well as a retailer gets the desired brands where they can view and buy product for their stores. An agent can reach to a large number of retailers and suppliers across geographies in no time with negligible efforts.The delivered solution features high resolution photography and video, concise product descriptions, buy plans, PDF catalogue automation, live social networking and ratings systems to mimic the traditional “touch n feel” sales process and create a 24/7 on-line showing experience for the Retailer.",
-    tags: [
-      {
-        tileTag: "Ruby 2.1.0",
-      },
-      {
-        tileTag: "Rails 4.1.10",
-      },
-      {
-        tileTag: "Mongoid 4.0.0",
-      },
-      {
-        tileTag: "Sidekiq 3.3.0",
-      },
-      {
-        tileTag: "Nginx + passenger",
-      },
-      {
-        tileTag: "FTP Server",
-      },
-      {
-        tileTag: "AWS-EC2",
-      },
-    ],
-  },
-
-  {
-    tileImg: "quickinsure.png",
-    tileTitle: "QUICKINSURE",
-    tileDescription:
-      "QuickInsure is a specially developed platform for convenience in buying motor vehicle insurance and third party insurance. Buying an insurance for vehicles can sometimes",
-    tags: [
-      {
-        tileTag: "Rails 2.1.2",
-      },
-      {
-        tileTag: "Rails 4.2.5",
-      },
-      {
-        tileTag: "MongoDB",
-      },
-      {
-        tileTag: "React",
-      },
-      {
-        tileTag: "Action Cable",
-      },
-      {
-        tileTag: "ElacsticSearch 5.3",
-      },
-      {
-        tileTag: "Andriod",
-      },
-    ],
-  },
-  {
-    tileImg: "clubBuzz.png",
-    tileTitle: "CLUBBuzz",
-    tileDescription:
-      "A scalable digital portal built from scratch, that facilitates member meet-ups, manages payments and generated statistical reports pertaining to group activities, attendance and member feedback.",
-    tags: [
-      {
-        tileTag: "Ruby",
-      },
-      {
-        tileTag: "Rails",
-      },
-      {
-        tileTag: "PostgreSQL",
-      },
-      {
-        tileTag: "Rackspace",
-      },
-    ],
-  },
-  {
-    tileImg: "tourconnect.png",
-    tileTitle: "TOURCONNECT",
-    tileDescription:
-      "TourConnect makes managing rates and contracting quick and easy! TourConnect communicates what the Supplier product is and how much it’s going to cost each Contractor.",
-    tags: [
-      {
-        tileTag: "Ruby 3.2..21",
-      },
-      {
-        tileTag: "Mongoid 3.1.6",
-      },
-      {
-        tileTag: "ActiveAdmin",
-      },
-      {
-        tileTag: "NodeJS",
-      },
-    ],
-  },
   {
     tileImg: "fundamentor.png",
     tileTitle: "FUNDAMENTOR",

@@ -1,0 +1,13 @@
+@import "../../assets/stylesheets/core";
+
+.domain-item-wrap {
+  img {
+    width: 100%;
+    // height: 100%;
+    border-radius: 0.75rem;
+
+    @include media-breakpoint-up(lg) {
+      width: 19.5rem;
+    }
+  }
+}

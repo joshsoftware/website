@@ -7,11 +7,15 @@ import "./industryTypeItem.css";
 const IndustryTypeItem = (props) => {
   const { industryItem } = props;
 
-  const items = industryItem.map((industryItem, imagesPath) => {
+  const items = industryItem.map((industryItem) => {
+    console.log(industryItem);
     return (
       <>
-        <div className="domain-item-wrap">
-          <Image src={industryItem.imgPath} alt="industry type img" />
+        <div className="domain-item-wrap d-flex flex-column">
+          <img
+            src={require(`../../assets/images/revampImages/${industryItem.imgPath}`)}
+            alt="industry type img"
+          />
           <DefaultButton buttonText="view" />
           <span>{industryItem.industryTitle}</span>
         </div>
@@ -20,32 +24,39 @@ const IndustryTypeItem = (props) => {
   });
 
   const settings = {
+    dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
-    slidesToScroll: 7,
-    arrows: false,
-    adaptiveHeight: true,
-    dots: true,
+    slidesToShow: 3.2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 0,
           arrows: false,
-          dots: true,
+          centerMode: true,
+          slidesToShow: 4,
+          centerPadding: "8px",
         },
       },
       {
-        breakpoint: 330,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 0,
           arrows: false,
-          dots: true,
+          centerMode: true,
+          slidesToShow: 3,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1.1,
         },
       },
     ],
