@@ -130,7 +130,7 @@
       border-color: #283755;
       background-color: transparent; }
   .contact-form-wrap .form-select-floating .form-select-field option {
-    background-color: transparent; }
+    background-color: #283047; }
   .contact-form-wrap .form-floating label::before,
   .contact-form-wrap .form-select-floating label::before {
     content: "";
