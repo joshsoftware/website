@@ -20,7 +20,7 @@
   line-height: 2.6875rem;
   color: #333333;
   margin-top: 3rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .domain-item-wrap span {
       font-size: 3rem;
       line-height: 3.5625rem; } }
@@ -28,3 +28,6 @@
 .domain-item-wrap .default-btn-link {
   left: 2rem;
   bottom: 4.5rem; }
+
+.industry-slider .slick-slider .slick-dots {
+  bottom: -4.5rem; }

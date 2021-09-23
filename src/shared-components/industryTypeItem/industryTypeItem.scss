@@ -21,7 +21,7 @@
     color: $gray-20;
     margin-top: 3rem;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       font-size: 3rem;
       line-height: 3.5625rem;
     }
@@ -30,5 +30,13 @@
   .default-btn-link {
     left: 2rem;
     bottom: 4.5rem;
+  }
+}
+
+.industry-slider {
+  .slick-slider {
+    .slick-dots {
+      bottom: -4.5rem;
+    }
   }
 }

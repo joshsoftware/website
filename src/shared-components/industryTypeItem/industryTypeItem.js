@@ -15,7 +15,9 @@ const IndustryTypeItem = (props) => {
             alt="industry type img"
           />
           <DefaultButton buttonText="view" className="position-absolute" />
-          <span className="text-capitalize">{industryItem.industryTitle}</span>
+          <span className="text-capitalize overflow-hidden text-truncate">
+            {industryItem.industryTitle}
+          </span>
         </div>
       </>
     );

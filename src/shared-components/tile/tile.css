@@ -46,3 +46,15 @@
 .tile-card {
   border-radius: 1.5rem;
   background-color: #d6f5f0; }
+  @media (min-width: 992px) {
+    .tile-card.vertical-tile-card-body .tag-list {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden; } }
+  @media (min-width: 992px) {
+    .tile-card.horizontal-tile-card-body .tag-list {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; } }

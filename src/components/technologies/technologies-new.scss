@@ -5,12 +5,13 @@
     no-repeat;
   width: 100%;
   background-size: cover;
-  height: 36.375rem;
+  background-position: top right;
+  height: 34.75rem;
   padding: 2.5rem 0 0;
 
   @include media-breakpoint-up(lg) {
     height: 43.75rem;
-    padding: 2.5rem 0 2.5rem 4.5rem;
+    padding: 3.75rem 0 3.75rem 4.5rem;
   }
 }
 
@@ -18,7 +19,7 @@
   font-size: 2rem;
   line-height: 2.3125rem;
   color: $gray-11;
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.5rem;
   padding: 0 1.5rem;
 
   @include media-breakpoint-up(lg) {
