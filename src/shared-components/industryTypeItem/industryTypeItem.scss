@@ -2,12 +2,33 @@
 
 .domain-item-wrap {
   img {
-    width: 100%;
-    // height: 100%;
+    width: 12.5rem;
     border-radius: 0.75rem;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
+      width: 15.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
       width: 19.5rem;
     }
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.6875rem;
+    color: $gray-20;
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+      line-height: 3.5625rem;
+    }
+  }
+
+  .default-btn-link {
+    left: 2rem;
+    bottom: 4.5rem;
   }
 }

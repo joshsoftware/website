@@ -61,7 +61,7 @@ const Technologies = (props) => {
           <CtaButton linkListItem={linkListItem} />
         </section>
         <section className="industry-type-section">
-          <p className="industry-type-heading text-center font-weight-bold">
+          <p className="industry-type-heading text-center font-weight-bold text-capitalize">
             Explore our work in these Industries
           </p>
           <IndustryTypeItem industryItem={industryItemData} />

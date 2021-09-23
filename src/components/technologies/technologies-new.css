@@ -9,21 +9,24 @@
   width: 100%;
   background-size: cover;
   height: 36.375rem;
-  padding: 2.5rem 0; }
+  padding: 2.5rem 0 0; }
   @media (min-width: 992px) {
     .industry-type-section {
-      height: 43.75rem; } }
+      height: 43.75rem;
+      padding: 2.5rem 0 2.5rem 4.5rem; } }
 
 .industry-type-heading {
   font-size: 2rem;
   line-height: 2.3125rem;
   color: #1c1c1c;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  padding: 0 1.5rem; }
   @media (min-width: 992px) {
     .industry-type-heading {
       font-size: 3.125rem;
       line-height: 3.75rem;
-      margin-bottom: 3.75rem; } }
+      margin-bottom: 3.75rem;
+      padding: 0; } }
 
 .tiles-wrapper {
   display: grid;
