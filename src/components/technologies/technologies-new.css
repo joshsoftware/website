@@ -8,18 +8,19 @@
   background: url("../../assets/images/revampImages/industry-type-bg@2x.png") no-repeat;
   width: 100%;
   background-size: cover;
-  height: 36.375rem;
+  background-position: top right;
+  height: 34.75rem;
   padding: 2.5rem 0 0; }
   @media (min-width: 992px) {
     .industry-type-section {
       height: 43.75rem;
-      padding: 2.5rem 0 2.5rem 4.5rem; } }
+      padding: 3.75rem 0 3.75rem 4.5rem; } }
 
 .industry-type-heading {
   font-size: 2rem;
   line-height: 2.3125rem;
   color: #1c1c1c;
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.5rem;
   padding: 0 1.5rem; }
   @media (min-width: 992px) {
     .industry-type-heading {
