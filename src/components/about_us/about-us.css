@@ -95,13 +95,6 @@
         font-size: 3.125rem;
         line-height: 3.6875rem;
         margin: 1.5rem 0 2rem; } }
-  .gallery-slider-wrapper .slick-slider .slick-dots {
-    bottom: -2.8125rem; }
-    .gallery-slider-wrapper .slick-slider .slick-dots li button::before {
-      font-size: 0.625rem; }
-    .gallery-slider-wrapper .slick-slider .slick-dots li.slick-active button::before {
-      font-size: 1rem;
-      color: #e86055; }
   .gallery-slider-wrapper .gallery-item img {
     width: 100%; }
     @media (min-width: 992px) {

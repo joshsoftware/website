@@ -43,3 +43,30 @@ html {
   justify-items: center;
   padding: 3rem 0;
 }
+
+//Slider Dots
+.industry-slider,
+.gallery-slider-wrapper {
+  .slick-slider {
+    .slick-dots {
+      bottom: -2.8125rem;
+
+      li {
+        button {
+          &::before {
+            font-size: 0.625rem;
+          }
+        }
+
+        &.slick-active {
+          button {
+            &::before {
+              font-size: 1rem;
+              color: $burnt-sienna;
+            }
+          }
+        }
+      }
+    }
+  }
+}

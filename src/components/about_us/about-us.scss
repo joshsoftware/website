@@ -123,29 +123,6 @@
     }
   }
 
-  .slick-slider {
-    .slick-dots {
-      bottom: -2.8125rem;
-
-      li {
-        button {
-          &::before {
-            font-size: 0.625rem;
-          }
-        }
-
-        &.slick-active {
-          button {
-            &::before {
-              font-size: 1rem;
-              color: $burnt-sienna;
-            }
-          }
-        }
-      }
-    }
-  }
-
   .gallery-item {
     img {
       width: 100%;
