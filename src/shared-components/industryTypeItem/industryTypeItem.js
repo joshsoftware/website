@@ -1,7 +1,6 @@
 import React from "react";
 import JoshCarousel from "../../components/home/carousel";
 import DefaultButton from "../defaultButton/defaultButton";
-import Image from "react-image-webp";
 import "./industryTypeItem.css";
 
 const IndustryTypeItem = (props) => {
@@ -10,13 +9,13 @@ const IndustryTypeItem = (props) => {
   const items = industryItem.map((industryItem) => {
     return (
       <>
-        <div className="domain-item-wrap d-flex flex-column">
+        <div className="domain-item-wrap d-flex flex-column position-relative">
           <img
             src={require(`../../assets/images/revampImages/${industryItem.imgPath}`)}
             alt="industry type img"
           />
-          <DefaultButton buttonText="view" />
-          <span>{industryItem.industryTitle}</span>
+          <DefaultButton buttonText="view" className="position-absolute" />
+          <span className="text-capitalize">{industryItem.industryTitle}</span>
         </div>
       </>
     );
@@ -27,18 +26,18 @@ const IndustryTypeItem = (props) => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3.2,
+    slidesToShow: 3.1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
           arrows: false,
           centerMode: true,
-          slidesToShow: 4,
-          centerPadding: "8px",
+          slidesToShow: 3.1,
         },
       },
       {
@@ -46,8 +45,7 @@ const IndustryTypeItem = (props) => {
         settings: {
           arrows: false,
           centerMode: true,
-          slidesToShow: 3,
-          centerPadding: "20px",
+          slidesToShow: 2.1,
         },
       },
       {
@@ -63,14 +61,12 @@ const IndustryTypeItem = (props) => {
 
   return (
     <>
-      <div>
-        <JoshCarousel items={items} settings={settings}></JoshCarousel>
+      <div className="industry-slider">
+        <div>
+          <JoshCarousel items={items} settings={settings}></JoshCarousel>
+        </div>
       </div>
     </>
   );
-};
-
-IndustryTypeItem.defaultProps = {
-  // imagesPath: "revampImages",
 };
 export default IndustryTypeItem;
