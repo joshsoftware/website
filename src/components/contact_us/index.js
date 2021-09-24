@@ -38,7 +38,9 @@ const ContactUs = () => {
                 2nd Floor, I-Space, IT Park, Mumbai Pune Bypass Rd Bavdhan,
                 Pune, Maharashtra 411021
               </p>
-              <span className="font-weight-bold">+91-7887889902</span>
+              <a href="tel:+917887889902" className="font-weight-bold">
+                +91-7887889902
+              </a>
             </CardBody>
           </Card>
           <Card className="contact-card">
@@ -53,19 +55,26 @@ const ContactUs = () => {
               <p className="mb-2">
                 7300 Lone Star Drive, Suite C200, Plano, TX 75024
               </p>
-              <span className="font-weight-bold">+1 (469) 300-1564</span>
+              <a href="tel:+1-469-300-1564" className="font-weight-bold">
+                +1 (469) 300-1564
+              </a>
             </CardBody>
           </Card>
           <Card className="contact-card">
             <CardBody>
-              <img
-                src={emailIcon}
-                alt="location icon"
-                className="position-absolute"
-              />
-              <p className="mb-0 email-text font-weight-bold">
+              <a href="mailto:info@joshsoftware.com">
+                <img
+                  src={emailIcon}
+                  alt="location icon"
+                  className="position-absolute"
+                />
+              </a>
+              <a
+                href="mailto:info@joshsoftware.com"
+                className="email-text font-weight-bold"
+              >
                 info@joshsoftware.com
-              </p>
+              </a>
             </CardBody>
           </Card>
           <Card className="contact-card">

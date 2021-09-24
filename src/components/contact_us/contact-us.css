@@ -227,11 +227,12 @@
       font-size: 1.375rem; }
     .contact-card .card-body p {
       font-size: 0.875rem; }
-    .contact-card .card-body span {
+    .contact-card .card-body a {
       font-size: 0.8125rem;
-      line-height: 1rem; }
+      line-height: 1rem;
+      color: #fff; }
       @media (min-width: 992px) {
-        .contact-card .card-body span {
+        .contact-card .card-body a {
           font-size: 1.0625rem;
           line-height: 1.25rem; } }
     .contact-card .card-body .email-text {
