@@ -1,0 +1,31 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.strip-slider {
+  z-index: 999;
+  bottom: -2.5rem; }
+  .strip-slider .slick-slider {
+    margin: 0 0.75rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29); }
+    @media (min-width: 992px) {
+      .strip-slider .slick-slider {
+        margin: 0 6.25rem; } }
+
+.strip-slider-item .slider-item-logo {
+  width: 3rem;
+  height: 3rem; }
+
+.strip-slider-item .title {
+  color: #1c1c1c;
+  font-size: 1rem;
+  line-height: 0.5625rem;
+  margin-left: 1rem; }
+  @media (min-width: 992px) {
+    .strip-slider-item .title {
+      font-size: 1.125rem;
+      line-height: 0.75rem; } }

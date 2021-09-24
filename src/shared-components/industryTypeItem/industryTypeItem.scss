@@ -30,6 +30,10 @@
   .default-btn-link {
     left: 2rem;
     bottom: 4.5rem;
+
+    @include media-breakpoint-up(xl) {
+      bottom: 5.5rem;
+    }
   }
 }
 

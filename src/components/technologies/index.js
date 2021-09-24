@@ -34,7 +34,7 @@ const Technologies = (props) => {
       } */}
 
       <div className="josh-content">
-        <section className="main-banner-section">
+        <section className="main-banner-section position-relative">
           <MainBanner
             bannerClassName="technology"
             pageCaption="Technology"
@@ -42,7 +42,16 @@ const Technologies = (props) => {
             tagText="experts"
             endTagLine="speak about…"
           />
+          <Header
+            domains={domainsData}
+            imagesPath={"technologies"}
+            baseRoute={routes.TECHNOLOGIES_URL}
+            changeImageOnSelect={false}
+            // selectedDomain={selectedDomain}
+            imageSize="30px"
+          />
         </section>
+
         <section className="main-section">
           <div className="container">
             <div className="tiles-wrapper py-5">
@@ -112,50 +121,57 @@ const Technologies = (props) => {
 //   );
 // };
 
-// const domainsData = [
-//   {
-//     title: TECHNOLOGIES_USED.ror,
-//     logo: "ruby",
-//     fileType: "png",
-//     keywords: ["ruby", "rails", "rubyonrails"],
-//     urlParameter: "ruby-on-rails",
-//   },
-//   {
-//     title: TECHNOLOGIES_USED.go,
-//     logo: "gopher",
-//     fileType: "png",
-//     keywords: ["go ", "golang"],
-//     urlParameter: "go",
-//   },
-//   {
-//     title: TECHNOLOGIES_USED.react,
-//     logo: "react",
-//     fileType: "png",
-//     keywords: ["react", "reactjs"],
-//     urlParameter: "react",
-//   },
-//   {
-//     title: TECHNOLOGIES_USED.ios,
-//     logo: "apple",
-//     fileType: "png",
-//     keywords: ["ios", "flux"],
-//     urlParameter: "ios",
-//   },
-//   {
-//     title: TECHNOLOGIES_USED.android,
-//     logo: "android",
-//     fileType: "png",
-//     keywords: ["android", "flux"],
-//     urlParameter: "android",
-//   },
-// {
-//   title: 'Other',
-//   logo: 'other',
-//   fileType: "png",
-//   keywords: ['java']
-//   urlParameter: 'other'
-// },
-// ];
+const domainsData = [
+  {
+    title: TECHNOLOGIES_USED.ror,
+    logo: "ruby",
+    fileType: "png",
+    keywords: ["ruby", "rails", "rubyonrails"],
+    urlParameter: "ruby-on-rails",
+  },
+  {
+    title: TECHNOLOGIES_USED.go,
+    logo: "gopher",
+    fileType: "png",
+    keywords: ["go ", "golang"],
+    urlParameter: "go",
+  },
+  {
+    title: TECHNOLOGIES_USED.react,
+    logo: "react",
+    fileType: "png",
+    keywords: ["react", "reactjs"],
+    urlParameter: "react",
+  },
+  {
+    title: TECHNOLOGIES_USED.ios,
+    logo: "apple",
+    fileType: "png",
+    keywords: ["ios", "flux"],
+    urlParameter: "ios",
+  },
+  {
+    title: TECHNOLOGIES_USED.android,
+    logo: "android",
+    fileType: "png",
+    keywords: ["android", "flux"],
+    urlParameter: "android",
+  },
+  {
+    title: "Other",
+    logo: "other",
+    fileType: "png",
+    keywords: ["java"],
+    urlParameter: "other",
+  },
+  {
+    title: "Other",
+    logo: "other",
+    fileType: "png",
+    keywords: ["java"],
+    urlParameter: "other",
+  },
+];
 
 const industryItemData = [
   {

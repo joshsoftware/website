@@ -12,11 +12,9 @@ export default class JoshCarousel extends Component {
 
     return (
       <Slider {...settings} className="testst">
-        {
-          items.map((item, index) => {
-            return <div key={index}>{item}</div>
-          })
-        }
+        {items.map((item, index) => {
+          return <div key={index}>{item}</div>;
+        })}
       </Slider>
     );
   }
@@ -31,13 +29,11 @@ JoshCarousel.defaultProps = {
     centerPadding: "10px",
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dotsClass: "slick-dots slick-thumb custom-dots",
     // variableWidth: true,
     customPaging: function (i) {
-      return (
-        <Circle />
-      );
+      return <Circle />;
     },
     responsive: [
       {
@@ -46,24 +42,24 @@ JoshCarousel.defaultProps = {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  }
-}
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  },
+};
