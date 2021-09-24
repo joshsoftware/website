@@ -28,12 +28,20 @@ const IndustryTypeItem = (props) => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3.1,
+    slidesToShow: 4.1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
     centerMode: true,
     responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 3.1,
+        },
+      },
       {
         breakpoint: 1200,
         settings: {

@@ -51,18 +51,26 @@ const DomainHeader = (props) => {
       domain.urlParameter === selectedDomain ? "text-orange" : "text-black";
     return (
       <Link to={`${baseRoute}/${domain.urlParameter}`}>
-        <div className="cursor-pointer d-flex align-items-center strip-slider-item">
-          <Image
-            src={require(`../../assets/images/${imagesPath}/${domainImg}`)}
-            webp={require(`../../assets/images/${imagesPath}/${domainImg}`)}
-            alt={domain.title}
-            className="slider-item-logo"
-            // height={imageSize}
-            // width={imageSize}
-          />
-          <div className={`title font-weight-bold ${textClass}`}>
-            {domain.title}
+        {/* <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
+          <div className="text-center">
+            <Image
+              src={require(`../../assets/images/${imagesPath}/${domainImg}`)}
+              webp={require(`../../assets/images/${imagesPath}/${domainImg}`)}
+              alt={domain.title}
+              className="img-fluid m-auto"
+              height={imageSize}
+              width={imageSize}
+            />
           </div>
+          <div className={textClass}>{domain.title}</div>
+        </div> */}
+        <div className="cursor-pointer d-flex align-items-center justify-content-center strip-slider-item">
+          <img
+            className="slider-item-logo"
+            alt={domain.title}
+            src={require(`../../assets/images/revampImages/${domain.logo}`)}
+          />
+          <div className="title font-weight-bold">{domain.title}</div>
         </div>
       </Link>
     );
@@ -120,46 +128,56 @@ DomainHeader.defaultProps = {
   imageSize: null,
   changeImageOnSelect: true,
   domains: [
+    // {
+    //   title: "All",
+    //   urlParameter: "all",
+    // },
     {
       title: "Health",
-      logo: "Health",
-      fileType: "png",
+      logo: "health-icon@2x.png",
+      // fileType: "png",
       urlParameter: "health",
     },
     {
       title: "Sports",
-      logo: "Sports",
-      fileType: "png",
+      logo: "sports-icon@2x.png",
+      // fileType: "png",
       urlParameter: "sports",
     },
     {
       title: "Marketing & Sales",
-      logo: "sales",
-      fileType: "png",
+      logo: "sales-icon@2x.png",
+      // fileType: "png",
       urlParameter: "marketing-sales",
     },
     {
       title: "Media",
-      logo: "Media",
-      fileType: "png",
+      logo: "media-icon@2x.png",
+      // fileType: "png",
       urlParameter: "media",
     },
     {
       title: "Education",
-      logo: "education",
-      fileType: "png",
+      logo: "education-icon@2x.png",
+      // fileType: "png",
       urlParameter: "education",
     },
     {
       title: "Insurance",
-      logo: "insurance",
-      fileType: "png",
+      logo: "insurance-icon@2x.png",
+      // fileType: "png",
       urlParameter: "insurance",
     },
     {
       title: "Travel",
-      logo: "travel",
-      fileType: "svg",
+      logo: "travel-icon@2x.png",
+      // fileType: "svg",
+      urlParameter: "travel",
+    },
+    {
+      title: "Travel",
+      logo: "travel-icon@2x.png",
+      // fileType: "svg",
       urlParameter: "travel",
     },
   ],
