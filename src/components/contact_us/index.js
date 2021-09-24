@@ -78,7 +78,7 @@ const ContactUs = () => {
               <ul className="list-unstyled pl-0 mb-0 social-media-list-wrap d-flex">
                 <li className="social-media-list-item">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/josh.software"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="-insta d-flex"
