@@ -15,14 +15,14 @@
   }
 
   span {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.875rem;
     line-height: 2.6875rem;
     color: $gray-20;
     margin-top: 3rem;
 
     @include media-breakpoint-up(xl) {
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 3.5625rem;
     }
   }
@@ -41,6 +41,15 @@
   .slick-slider {
     .slick-dots {
       bottom: -4.5rem;
+
+      li {
+        button {
+          &::before {
+            color: $white;
+            opacity: unset;
+          }
+        }
+      }
     }
   }
 }

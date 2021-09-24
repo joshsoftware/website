@@ -15,14 +15,14 @@
       width: 19.5rem; } }
 
 .domain-item-wrap span {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.875rem;
   line-height: 2.6875rem;
   color: #333333;
   margin-top: 3rem; }
   @media (min-width: 1200px) {
     .domain-item-wrap span {
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 3.5625rem; } }
 
 .domain-item-wrap .default-btn-link {
@@ -34,3 +34,6 @@
 
 .industry-slider .slick-slider .slick-dots {
   bottom: -4.5rem; }
+  .industry-slider .slick-slider .slick-dots li button::before {
+    color: #fff;
+    opacity: unset; }

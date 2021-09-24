@@ -17,15 +17,14 @@
 
 .strip-slider-item {
   .slider-item-logo {
-    width: 3rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 100%;
   }
 
   .title {
     color: $gray-11;
     font-size: 1rem;
     line-height: 0.5625rem;
-    margin-left: 1rem;
 
     @include media-breakpoint-up(lg) {
       font-size: 1.125rem;
