@@ -1,0 +1,35 @@
+@import "../../assets/stylesheets/core";
+
+.strip-slider {
+  z-index: 999;
+  bottom: -2.5rem;
+  .slick-slider {
+    margin: 0 0.75rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 6.25rem;
+    }
+  }
+}
+
+.strip-slider-item {
+  .slider-item-logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .title {
+    color: $gray-11;
+    font-size: 1rem;
+    line-height: 0.5625rem;
+    margin-left: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.125rem;
+      line-height: 0.75rem;
+    }
+  }
+}
