@@ -123,6 +123,21 @@
     }
   }
 
+  .slick-slider {
+    .slick-dots {
+      bottom: -2.8125rem;
+
+      li {
+        button {
+          &::before {
+            color: $gray-95;
+            opacity: unset;
+          }
+        }
+      }
+    }
+  }
+
   .gallery-item {
     img {
       width: 100%;

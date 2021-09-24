@@ -44,13 +44,12 @@ html {
   padding: 3rem 0;
 }
 
-//Slider Dots
+// Slider Dots
+
 .industry-slider,
 .gallery-slider-wrapper {
   .slick-slider {
     .slick-dots {
-      bottom: -2.8125rem;
-
       li {
         button {
           &::before {
