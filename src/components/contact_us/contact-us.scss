@@ -295,9 +295,10 @@
       font-size: 0.875rem;
     }
 
-    span {
+    a {
       font-size: 0.8125rem;
       line-height: 1rem;
+      color: $white;
       @include media-breakpoint-up(lg) {
         font-size: 1.0625rem;
         line-height: 1.25rem;
