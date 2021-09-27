@@ -6,7 +6,7 @@
 /* mixins end */
 .strip-slider {
   z-index: 999;
-  bottom: -2.5rem; }
+  bottom: -1rem; }
   .strip-slider .slick-slider {
     margin: 0 0.75rem;
     background-color: #fff;
@@ -15,6 +15,8 @@
     @media (min-width: 992px) {
       .strip-slider .slick-slider {
         margin: 0 6.25rem; } }
+  .strip-slider .slick-list {
+    height: auto !important; }
 
 .strip-slider-item .slider-item-logo {
   width: 1.5rem;

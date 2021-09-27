@@ -48,7 +48,7 @@ const Technologies = (props) => {
             baseRoute={routes.TECHNOLOGIES_URL}
             changeImageOnSelect={false}
             // selectedDomain={selectedDomain}
-            imageSize="30px"
+            // imageSize="30px"
           />
         </section>
 
@@ -124,53 +124,74 @@ const Technologies = (props) => {
 const domainsData = [
   {
     title: TECHNOLOGIES_USED.ror,
-    logo: "ruby",
-    fileType: "png",
+    logo: "ruby-logo@2x.png",
+    // fileType: "png",
     keywords: ["ruby", "rails", "rubyonrails"],
     urlParameter: "ruby-on-rails",
   },
   {
     title: TECHNOLOGIES_USED.go,
-    logo: "gopher",
-    fileType: "png",
+    logo: "go-logo@2x.png",
+    // fileType: "png",
     keywords: ["go ", "golang"],
     urlParameter: "go",
   },
   {
     title: TECHNOLOGIES_USED.react,
-    logo: "react",
-    fileType: "png",
+    logo: "react-logo@2x.png",
+    // fileType: "png",
     keywords: ["react", "reactjs"],
     urlParameter: "react",
   },
   {
     title: TECHNOLOGIES_USED.ios,
-    logo: "apple",
-    fileType: "png",
+    logo: "ios-logo@2x.png",
+    // fileType: "png",
     keywords: ["ios", "flux"],
     urlParameter: "ios",
   },
   {
     title: TECHNOLOGIES_USED.android,
-    logo: "android",
-    fileType: "png",
+    logo: "android-logo@2x.png",
+    // fileType: "png",
     keywords: ["android", "flux"],
     urlParameter: "android",
   },
   {
     title: "Other",
-    logo: "other",
+    logo: "angular-logo@2x.png",
+    // fileType: "png",
+    keywords: ["java"],
+    urlParameter: "other",
+  },
+  {
+    title: "Other",
+    logo: "rails-logo@2x.png",
     fileType: "png",
     keywords: ["java"],
     urlParameter: "other",
   },
   {
     title: "Other",
-    logo: "other",
+    logo: "rails-logo@2x.png",
     fileType: "png",
     keywords: ["java"],
     urlParameter: "other",
   },
+  {
+    title: "Other",
+    logo: "rails-logo@2x.png",
+    fileType: "png",
+    keywords: ["java"],
+    urlParameter: "other",
+  },
+  // {
+  //   title: "Other",
+  //   logo: "Other",
+  //   // fileType: "png",
+  //   keywords: ["java"],
+  //   urlParameter: "other",
+  // },
 ];
 
 const industryItemData = [

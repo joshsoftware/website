@@ -2,7 +2,7 @@
 
 .strip-slider {
   z-index: 999;
-  bottom: -2.5rem;
+  bottom: -1rem;
   .slick-slider {
     margin: 0 0.75rem;
     background-color: $white;
@@ -12,6 +12,10 @@
     @include media-breakpoint-up(lg) {
       margin: 0 6.25rem;
     }
+  }
+
+  .slick-list {
+    height: auto !important;
   }
 }
 
