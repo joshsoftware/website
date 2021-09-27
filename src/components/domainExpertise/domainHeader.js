@@ -10,25 +10,6 @@ import * as routes from "../../routeConstants.js";
 import "./domain-header.css";
 
 const DomainHeader = (props) => {
-  const NextArrow = () => {
-    const { onClick } = props;
-    return (
-      <div onClick={onClick} className="carousel-control-next cursor-pointer">
-        <img src={nextSVG} alt="next" />
-        <span className="sr-only">Previous</span>
-      </div>
-    );
-  };
-
-  const PrevArrow = () => {
-    const { onClick } = props;
-    return (
-      <div onClick={onClick} className="carousel-control-prev cursor-pointer">
-        <img src={previousSVG} alt="next" />
-        <span className="sr-only">Previous</span>
-      </div>
-    );
-  };
   const {
     domains,
     selectedDomain,
@@ -38,6 +19,31 @@ const DomainHeader = (props) => {
     imageSize,
   } = props;
 
+  const NextArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <div
+        onClick={onClick}
+        className="carousel-control-next cursor-pointer bottom-94p"
+      >
+        <img src={nextSVG} alt="next" className="pl-md-5" />
+        <span className="sr-only">Previous</span>
+      </div>
+    );
+  };
+
+  const PrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <div
+        onClick={onClick}
+        className="carousel-control-prev cursor-pointer bottom-94p"
+      >
+        <img src={previousSVG} alt="next" className="pr-md-5" />
+        <span className="sr-only">Previous</span>
+      </div>
+    );
+  };
   const items = domains.map((domain) => {
     const imgExt =
       isWebpSupported() && domain.fileType !== "svg"
@@ -82,7 +88,7 @@ const DomainHeader = (props) => {
     slidesToShow: 7,
     slidesToScroll: 7,
     adaptiveHeight: true,
-
+    arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -179,6 +185,30 @@ DomainHeader.defaultProps = {
       logo: "travel-icon@2x.png",
       // fileType: "svg",
       urlParameter: "travel",
+    },
+    {
+      title: "Travel",
+      logo: "travel-icon@2x.png",
+      // fileType: "svg",
+      urlParameter: "travel",
+    },
+    {
+      title: "Travel",
+      logo: "travel-icon@2x.png",
+      // fileType: "svg",
+      urlParameter: "travel",
+    },
+    {
+      title: "Travel",
+      logo: "travel-icon@2x.png",
+      // fileType: "svg",
+      urlParameter: "travel",
+    },
+    {
+      title: "Education",
+      logo: "education-icon@2x.png",
+      // fileType: "png",
+      urlParameter: "education",
     },
   ],
 };
