@@ -1,19 +1,21 @@
 /* icons */
 @font-face {
-  font-family: 'josh-icons';
-  src: url('/fonts/josh-icons.eot?3loxio');
-  src: url('/fonts/josh-icons.eot?3loxio#iefix') format('embedded-opentype'),
-  url('/fonts/josh-icons.ttf?3loxio') format('truetype'),
-  url('/fonts/josh-icons.woff?3loxio') format('woff'),
-  url('/fonts/josh-icons.svg?3loxio#josh-icons') format('svg');
+  font-family: "josh-icons";
+  src: url("/fonts/josh-icons.eot?rcan0e");
+  src: url("/fonts/josh-icons.eot?rcan0e#iefix") format("embedded-opentype"),
+    url("/fonts/josh-icons.ttf?rcan0e") format("truetype"),
+    url("/fonts/josh-icons.woff?rcan0e") format("woff"),
+    url("/fonts/josh-icons.svg?rcan0e#josh-icons") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'josh-icons' !important;
-  speak: none;
+  font-family: "josh-icons" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -28,73 +30,62 @@
 .icon-bars:before {
   content: "\e900";
 }
-
 .icon-location:before {
   content: "\e901";
 }
-
 .icon-mail:before {
   content: "\e902";
 }
-
 .icon-phone:before {
   content: "\e903";
 }
-
 .icon-angle-double-down:before {
   content: "\e904";
 }
-
 .icon-angle-double-left:before {
   content: "\e905";
 }
-
 .icon-angle-double-right:before {
   content: "\e906";
 }
-
 .icon-angle-double-up:before {
   content: "\e907";
 }
-
 .icon-angle-down:before {
   content: "\e908";
 }
-
 .icon-angle-left:before {
   content: "\e909";
 }
-
 .icon-angle-right:before {
   content: "\e90a";
 }
-
 .icon-angle-up:before {
   content: "\e90b";
 }
-
 .icon-arrow-down:before {
   content: "\e90c";
 }
-
 .icon-arrow-left:before {
   content: "\e90d";
 }
-
 .icon-arrow-right:before {
   content: "\e90e";
 }
-
 .icon-arrow-up:before {
   content: "\e90f";
 }
-
 .icon-linkedin:before {
   content: "\e910";
 }
-
 .icon-github:before {
   content: "\e911";
+}
+.icon-thick-left-arrow:before {
+  content: "\e912";
+}
+.icon-thick-right-arrow:before {
+  content: "\e913";
 }
 
 /* icons end */
