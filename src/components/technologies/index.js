@@ -27,99 +27,102 @@ const linkListItem = [
 const Technologies = (props) => {
   return (
     <>
-      {/* <Route path={`${routes.TECHNOLOGIES_URL}/:domain`} component={TechnologiesLayout} />
-      {
-        props.location.pathname === routes.TECHNOLOGIES_URL
-        && <Redirect to={`${routes.TECHNOLOGIES_URL}/ruby-on-rails`} from={routes.TECHNOLOGIES_URL} />
-      } */}
-
-      <div className="josh-content">
-        <section className="main-banner-section position-relative">
-          <MainBanner
-            bannerClassName="technology"
-            pageCaption="Technology"
-            startTagLine="We"
-            tagText="experts"
-            endTagLine="speak about…"
-          />
-          <Header
-            domains={domainsData}
-            imagesPath={"technologies"}
-            baseRoute={routes.TECHNOLOGIES_URL}
-            changeImageOnSelect={false}
-            // selectedDomain={selectedDomain}
-            // imageSize="30px"
-          />
-        </section>
-
-        <section className="main-section">
-          <div className="container">
-            <div className="tiles-wrapper py-5">
-              {ProjectData.map((projectInfo) => (
-                <Tile
-                  tileImg={projectInfo.logo}
-                  tileTitle={projectInfo.title}
-                  tileDescription={projectInfo.description}
-                  tileTags={projectInfo.techStack}
-                  // domainExpertiseData={filterDataForSelectDomain()}
-                  // selectedDomain={selectedDomain}
-                />
-              ))}
-            </div>
-          </div>
-          <CtaButton linkListItem={linkListItem} />
-        </section>
-        <section className="industry-type-section">
-          <p className="industry-type-heading text-center font-weight-bold text-capitalize">
-            Explore our work in these Industries
-          </p>
-          <IndustryTypeItem industryItem={industryItemData} />
-        </section>
-      </div>
+      <Route
+        path={`${routes.TECHNOLOGIES_URL}/:domain`}
+        component={TechnologiesLayout}
+      />
+      {props.location.pathname === routes.TECHNOLOGIES_URL && (
+        <Redirect
+          to={`${routes.TECHNOLOGIES_URL}/ruby-on-rails`}
+          from={routes.TECHNOLOGIES_URL}
+        />
+      )}
     </>
   );
 };
 
-// const TechnologiesLayout = ({ match }) => {
-//   const selectedDomain = match.params.domain
-//     ? match.params.domain
-//     : "ruby-on-rails";
+const TechnologiesLayout = ({ match }) => {
+  const selectedDomain = match.params.domain
+    ? match.params.domain
+    : "ruby-on-rails";
 
-// const filterDataForSelectDomain = () => {
-//   const techData = domainsData.filter(
-//     (tech) => tech.urlParameter === selectedDomain
-//   );
-//   if (techData.length > 0) {
-//     const keywordsToSearch = techData[0].keywords;
-//     return ProjectData.filter((project) =>
-//       project.techStack.find(
-//         (e) =>
-//           keywordsToSearch.filter((l) =>
-//             e.toLowerCase().includes(l.toLowerCase())
-//           ).length > 0
-//       )
-//     );
-//   }
-//   return [];
-// };
+  console.log(selectedDomain);
+  const filterDataForSelectDomain = () => {
+    const techData = domainsData.filter(
+      (tech) => tech.urlParameter === selectedDomain
+    );
+    if (techData.length > 0) {
+      const keywordsToSearch = techData[0].keywords;
+      return ProjectData.filter((project) =>
+        project.techStack.find(
+          (e) =>
+            keywordsToSearch.filter((l) =>
+              e.toLowerCase().includes(l.toLowerCase())
+            ).length > 0
+        )
+      );
+    }
+    return [];
+  };
 
-//   return (
-//     <section className="w-100 section-home">
-//       <Header
-//         domains={domainsData}
-//         imagesPath={"technologies"}
-//         baseRoute={routes.TECHNOLOGIES_URL}
-//         changeImageOnSelect={false}
-//         selectedDomain={selectedDomain}
-//         imageSize="30px"
-//       />
-//       <ProjectWork
-//         domainExpertiseData={filterDataForSelectDomain()}
-//         selectedDomain={selectedDomain}
-//       />
-//     </section>
-//   );
-// };
+  return (
+    // <section className="w-100 section-home">
+    //   <Header
+    //     domains={domainsData}
+    //     imagesPath={"technologies"}
+    //     baseRoute={routes.TECHNOLOGIES_URL}
+    //     changeImageOnSelect={false}
+    //     selectedDomain={selectedDomain}
+    //     imageSize="30px"
+    //   />
+    //   <ProjectWork
+    //     domainExpertiseData={filterDataForSelectDomain()}
+    //     selectedDomain={selectedDomain}
+    //   />
+    // </section>
+    <div className="josh-content">
+      <section className="main-banner-section position-relative">
+        <MainBanner
+          bannerClassName="technology"
+          pageCaption="Technology"
+          startTagLine="We"
+          tagText="experts"
+          endTagLine="speak about…"
+        />
+        <Header
+          domains={domainsData}
+          imagesPath={"technologies"}
+          baseRoute={routes.TECHNOLOGIES_URL}
+          changeImageOnSelect={false}
+          selectedDomain={selectedDomain}
+          // imageSize="30px"
+        />
+      </section>
+
+      <section className="main-section">
+        <div className="container">
+          <div className="tiles-wrapper">
+            {filterDataForSelectDomain().map((projectInfo) => (
+              <Tile
+                tileImg={projectInfo.logo}
+                tileTitle={projectInfo.title}
+                tileDescription={projectInfo.description}
+                tileTags={projectInfo.techStack}
+              />
+            ))}
+          </div>
+        </div>
+        <CtaButton linkListItem={linkListItem} />
+      </section>
+      <section className="industry-type-section">
+        <p className="industry-type-heading text-center font-weight-bold text-capitalize">
+          Explore our work in these Industries
+        </p>
+        <IndustryTypeItem industryItem={industryItemData} />
+      </section>
+    </div>
+  );
+};
 
 const domainsData = [
   {
