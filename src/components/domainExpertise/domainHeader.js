@@ -22,11 +22,8 @@ const DomainHeader = (props) => {
   const NextArrow = (props) => {
     const { onClick } = props;
     return (
-      <div
-        onClick={onClick}
-        className="carousel-control-next cursor-pointer bottom-94p"
-      >
-        <img src={nextSVG} alt="next" className="pl-md-5" />
+      <div onClick={onClick} className="carousel-control-next cursor-pointer">
+        <i className="icon-thick-right-arrow" />
         <span className="sr-only">Previous</span>
       </div>
     );
@@ -35,11 +32,8 @@ const DomainHeader = (props) => {
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
-      <div
-        onClick={onClick}
-        className="carousel-control-prev cursor-pointer bottom-94p"
-      >
-        <img src={previousSVG} alt="next" className="pr-md-5" />
+      <div onClick={onClick} className="carousel-control-prev cursor-pointer">
+        <i className="icon-thick-left-arrow" />
         <span className="sr-only">Previous</span>
       </div>
     );
@@ -54,9 +48,12 @@ const DomainHeader = (props) => {
         ? `${domain.logo}_Red.${imgExt}`
         : `${domain.logo}.${imgExt}`;
     const textClass =
-      domain.urlParameter === selectedDomain ? "text-orange" : "text-black";
+      domain.urlParameter === selectedDomain ? "active-slider" : "";
     return (
-      <Link to={`${baseRoute}/${domain.urlParameter}`}>
+      <Link
+        to={`${baseRoute}/${domain.urlParameter}`}
+        className={`d-flex align-items-center justify-content-center text-decoration-none position-relative ${textClass}`}
+      >
         {/* <div className=" pt-3 pb-3 border-left border-white border-right cursor-pointer">
           <div className="text-center">
             <Image
@@ -70,14 +67,16 @@ const DomainHeader = (props) => {
           </div>
           <div className={textClass}>{domain.title}</div>
         </div> */}
-        <div className="cursor-pointer d-flex align-items-center justify-content-center strip-slider-item">
+        <span className="cursor-pointer d-flex align-items-center strip-slider-item justify-content-center">
           <img
             className="slider-item-logo"
             alt={domain.title}
             src={require(`../../assets/images/revampImages/${domain.logo}`)}
           />
-          <div className="title font-weight-bold">{domain.title}</div>
-        </div>
+          <span className="title font-weight-bold text-uppercase">
+            {domain.title}
+          </span>
+        </span>
       </Link>
     );
   });
@@ -85,28 +84,29 @@ const DomainHeader = (props) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
-    slidesToScroll: 7,
-    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 330,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-    ],
+    variableWidth: true,
+    centerMode: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 330,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
   };
 
   return (
@@ -180,32 +180,32 @@ DomainHeader.defaultProps = {
       // fileType: "svg",
       urlParameter: "travel",
     },
+    // {
+    //   title: "Travel",
+    //   logo: "travel-icon@2x.png",
+    //   // fileType: "svg",
+    //   urlParameter: "travel",
+    // },
+    // {
+    //   title: "Travel",
+    //   logo: "travel-icon@2x.png",
+    //   // fileType: "svg",
+    //   urlParameter: "travel",
+    // },
+    // {
+    //   title: "Travel",
+    //   logo: "travel-icon@2x.png",
+    //   // fileType: "svg",
+    //   urlParameter: "travel",
+    // },
+    // {
+    //   title: "Travel",
+    //   logo: "travel-icon@2x.png",
+    //   // fileType: "svg",
+    //   urlParameter: "travel",
+    // },
     {
-      title: "Travel",
-      logo: "travel-icon@2x.png",
-      // fileType: "svg",
-      urlParameter: "travel",
-    },
-    {
-      title: "Travel",
-      logo: "travel-icon@2x.png",
-      // fileType: "svg",
-      urlParameter: "travel",
-    },
-    {
-      title: "Travel",
-      logo: "travel-icon@2x.png",
-      // fileType: "svg",
-      urlParameter: "travel",
-    },
-    {
-      title: "Travel",
-      logo: "travel-icon@2x.png",
-      // fileType: "svg",
-      urlParameter: "travel",
-    },
-    {
-      title: "Education",
+      title: "Education123",
       logo: "education-icon@2x.png",
       // fileType: "png",
       urlParameter: "education",

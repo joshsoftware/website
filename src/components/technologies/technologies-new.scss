@@ -34,6 +34,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  padding: 3.5rem 0 0;
 
   @include media-breakpoint-up(md) {
     grid-template-columns: repeat(2, 1fr);
@@ -42,6 +43,7 @@
   @include media-breakpoint-up(lg) {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    padding: 7.5rem 0 0;
   }
 
   @include media-breakpoint-up(xl) {

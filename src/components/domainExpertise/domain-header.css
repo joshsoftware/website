@@ -6,7 +6,10 @@
 /* mixins end */
 .strip-slider {
   z-index: 999;
-  bottom: -1rem; }
+  bottom: -1.5rem; }
+  @media (min-width: 992px) {
+    .strip-slider {
+      bottom: -2rem; } }
   .strip-slider .slick-slider {
     margin: 0 0.75rem;
     background-color: #fff;
@@ -15,18 +18,53 @@
     @media (min-width: 992px) {
       .strip-slider .slick-slider {
         margin: 0 6.25rem; } }
-  .strip-slider .slick-list {
-    height: auto !important; }
+  .strip-slider .carousel-control-prev,
+  .strip-slider .carousel-control-next {
+    width: 2rem;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 0.5rem; }
+    .strip-slider .carousel-control-prev i,
+    .strip-slider .carousel-control-next i {
+      font-size: 1rem;
+      color: #dbdbdb; }
+    .strip-slider .carousel-control-prev:hover i,
+    .strip-slider .carousel-control-next:hover i {
+      color: #e86055; }
 
-.strip-slider-item .slider-item-logo {
-  width: 1.5rem;
-  height: 100%; }
-
-.strip-slider-item .title {
-  color: #1c1c1c;
-  font-size: 1rem;
-  line-height: 0.5625rem; }
+.strip-slider-item {
+  padding: 1rem; }
   @media (min-width: 992px) {
-    .strip-slider-item .title {
-      font-size: 1.125rem;
-      line-height: 0.75rem; } }
+    .strip-slider-item {
+      padding: 1.25rem; } }
+  .strip-slider-item .slider-item-logo {
+    width: auto;
+    height: 1.5rem;
+    margin-right: 0.5rem; }
+    @media (min-width: 992px) {
+      .strip-slider-item .slider-item-logo {
+        height: 2rem; } }
+  .strip-slider-item .title {
+    color: #1c1c1c;
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: nowrap; }
+    @media (min-width: 992px) {
+      .strip-slider-item .title {
+        font-size: 1.125rem; } }
+    .strip-slider-item .title:hover, .strip-slider-item .title:active {
+      text-decoration: none; }
+
+.active-slider .strip-slider-item .title {
+  color: #cf4338; }
+
+.active-slider .strip-slider-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1875rem;
+  background-color: #cf4338;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
