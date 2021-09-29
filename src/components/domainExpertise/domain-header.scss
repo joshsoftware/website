@@ -5,7 +5,7 @@
   bottom: -1.5rem;
 
   @include media-breakpoint-up(lg) {
-    bottom: -2rem;
+    bottom: -1.75rem;
   }
   .slick-slider {
     margin: 0 0.75rem;
@@ -18,12 +18,15 @@
     }
   }
 
+  .slick-list {
+    margin: 0 1rem;
+  }
+
   .carousel-control-prev,
   .carousel-control-next {
     width: 2rem;
     opacity: 1;
     background-color: $white;
-    border-radius: 0.5rem;
 
     i {
       font-size: 1rem;
@@ -36,12 +39,20 @@
       }
     }
   }
+
+  .carousel-control-prev {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .carousel-control-next {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
 }
 
 .strip-slider-item {
   padding: 1rem;
   @include media-breakpoint-up(lg) {
-    padding: 1.25rem;
+    padding: 0.75rem 1.5rem;
   }
   .slider-item-logo {
     width: auto;
@@ -59,9 +70,9 @@
     line-height: 1.5;
     white-space: nowrap;
 
-    @include media-breakpoint-up(lg) {
-      font-size: 1.125rem;
-    }
+    // @include media-breakpoint-up(lg) {
+    //   font-size: 1.125rem;
+    // }
 
     &:hover,
     &:active {

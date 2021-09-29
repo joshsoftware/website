@@ -9,7 +9,7 @@
   bottom: -1.5rem; }
   @media (min-width: 992px) {
     .strip-slider {
-      bottom: -2rem; } }
+      bottom: -1.75rem; } }
   .strip-slider .slick-slider {
     margin: 0 0.75rem;
     background-color: #fff;
@@ -18,12 +18,13 @@
     @media (min-width: 992px) {
       .strip-slider .slick-slider {
         margin: 0 6.25rem; } }
+  .strip-slider .slick-list {
+    margin: 0 1rem; }
   .strip-slider .carousel-control-prev,
   .strip-slider .carousel-control-next {
     width: 2rem;
     opacity: 1;
-    background-color: #fff;
-    border-radius: 0.5rem; }
+    background-color: #fff; }
     .strip-slider .carousel-control-prev i,
     .strip-slider .carousel-control-next i {
       font-size: 1rem;
@@ -31,12 +32,16 @@
     .strip-slider .carousel-control-prev:hover i,
     .strip-slider .carousel-control-next:hover i {
       color: #e86055; }
+  .strip-slider .carousel-control-prev {
+    border-radius: 0.5rem 0 0 0.5rem; }
+  .strip-slider .carousel-control-next {
+    border-radius: 0 0.5rem 0.5rem 0; }
 
 .strip-slider-item {
   padding: 1rem; }
   @media (min-width: 992px) {
     .strip-slider-item {
-      padding: 1.25rem; } }
+      padding: 0.75rem 1.5rem; } }
   .strip-slider-item .slider-item-logo {
     width: auto;
     height: 1.5rem;
@@ -49,9 +54,6 @@
     font-size: 1rem;
     line-height: 1.5;
     white-space: nowrap; }
-    @media (min-width: 992px) {
-      .strip-slider-item .title {
-        font-size: 1.125rem; } }
     .strip-slider-item .title:hover, .strip-slider-item .title:active {
       text-decoration: none; }
 
