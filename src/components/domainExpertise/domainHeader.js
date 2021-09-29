@@ -91,22 +91,6 @@ const DomainHeader = (props) => {
     prevArrow: <PrevArrow />,
     variableWidth: true,
     centerMode: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 330,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
   };
 
   return (
@@ -180,32 +164,8 @@ DomainHeader.defaultProps = {
       // fileType: "svg",
       urlParameter: "travel",
     },
-    // {
-    //   title: "Travel",
-    //   logo: "travel-icon@2x.png",
-    //   // fileType: "svg",
-    //   urlParameter: "travel",
-    // },
-    // {
-    //   title: "Travel",
-    //   logo: "travel-icon@2x.png",
-    //   // fileType: "svg",
-    //   urlParameter: "travel",
-    // },
-    // {
-    //   title: "Travel",
-    //   logo: "travel-icon@2x.png",
-    //   // fileType: "svg",
-    //   urlParameter: "travel",
-    // },
-    // {
-    //   title: "Travel",
-    //   logo: "travel-icon@2x.png",
-    //   // fileType: "svg",
-    //   urlParameter: "travel",
-    // },
     {
-      title: "Education123",
+      title: "Education",
       logo: "education-icon@2x.png",
       // fileType: "png",
       urlParameter: "education",
