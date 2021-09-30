@@ -1,0 +1,25 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.technology-slider {
+  padding: 2rem 0; }
+  @media (min-width: 992px) {
+    .technology-slider {
+      margin-bottom: 2rem;
+      padding: 2rem; } }
+  .technology-slider .technology-slider-item img {
+    width: 100%;
+    height: auto; }
+  .technology-slider .slick-slider .slick-slide {
+    padding: 0 0.5rem; }
+    @media (min-width: 768px) {
+      .technology-slider .slick-slider .slick-slide {
+        padding: 0 1rem; } }
+    @media (min-width: 992px) {
+      .technology-slider .slick-slider .slick-slide {
+        padding: 0 0.5rem; } }
+  .technology-slider .slick-slider .slick-dots {
+    bottom: -3.5rem; }

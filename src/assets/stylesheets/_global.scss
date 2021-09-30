@@ -43,3 +43,42 @@ html {
   justify-items: center;
   padding: 3rem 0;
 }
+
+// Slider Dots
+
+.industry-slider,
+.gallery-slider-wrapper,
+.technology-slider-wrapper {
+  .slick-slider {
+    .slick-dots {
+      li {
+        button {
+          &::before {
+            font-size: 0.625rem;
+          }
+
+          &:focus {
+            &::before {
+              opacity: 0.25;
+            }
+          }
+        }
+
+        &.slick-active {
+          button {
+            &::before {
+              font-size: 1rem;
+              color: $burnt-sienna;
+            }
+
+            &:focus {
+              &::before {
+                opacity: 0.75;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
