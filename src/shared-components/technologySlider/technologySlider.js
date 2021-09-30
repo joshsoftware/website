@@ -37,15 +37,15 @@ const TechnologySlider = (props) => {
     ],
   };
 
-  const carouselItems = items.map((cItem) => (
+  const carouselItems = items.map((Item) => (
     <Link
       to="/"
       className="d-flex align-items-center justify-content-center text-decoration-none"
     >
       <div className="technology-slider-item">
         <img
-          src={require(`../../assets/images/revampImages/${cItem.logo}`)}
-          alt={cItem.altText}
+          src={require(`../../assets/images/revampImages/${Item.logo}`)}
+          alt={Item.altText}
         />
       </div>
     </Link>
