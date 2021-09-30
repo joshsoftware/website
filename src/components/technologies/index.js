@@ -1,4 +1,5 @@
 import React from "react";
+import _ from "lodash/array";
 import Header from "../domainExpertise/domainHeader.js";
 import { TECHNOLOGIES_USED } from "../../globalConstants";
 import * as routes from "../../routeConstants.js";
@@ -65,6 +66,8 @@ const TechnologiesLayout = ({ match }) => {
     return [];
   };
 
+  const groupFilteredProjects = _.chunk(filterDataForSelectDomain(), 3);
+
   return (
     // <section className="w-100 section-home">
     //   <Header
@@ -101,15 +104,82 @@ const TechnologiesLayout = ({ match }) => {
 
       <section className="main-section">
         <div className="container">
-          <div className="tiles-wrapper">
-            {filterDataForSelectDomain().map((projectInfo) => (
+          <div className="tiles-wrapper d-flex flex-column">
+            {/* {filterDataForSelectDomain().map((projectInfo) => (
               <Tile
                 tileImg={projectInfo.logo}
                 tileTitle={projectInfo.title}
                 tileDescription={projectInfo.description}
                 tileTags={projectInfo.techStack}
               />
-            ))}
+            ))} */}
+
+            {groupFilteredProjects.map((groupProjects, index) => {
+              return index % 2 === 0 ? (
+                (console.log(groupProjects),
+                (
+                  <>
+                    <div className="tiles-row d-flex">
+                      <div className="vertical-tiles-row">
+                        <Tile
+                          tileImg={groupProjects[0].logo}
+                          tileTitle={groupProjects[0].title}
+                          tileDescription={groupProjects[0].description}
+                          tileTags={groupProjects[0].techStack}
+                          className="vertical"
+                        />
+                      </div>
+                      <div className="horizontal-tiles-row d-flex">
+                        <Tile
+                          tileImg={groupProjects[1].logo}
+                          tileTitle={groupProjects[1].title}
+                          tileDescription={groupProjects[1].description}
+                          tileTags={groupProjects[1].techStack}
+                          className="horizontal"
+                        />
+                        <Tile
+                          tileImg={groupProjects[2].logo}
+                          tileTitle={groupProjects[2].title}
+                          tileDescription={groupProjects[2].description}
+                          tileTags={groupProjects[2].techStack}
+                          className="horizontal"
+                        />
+                      </div>
+                    </div>
+                  </>
+                ))
+              ) : (
+                <>
+                  <div className="tiles-row d-flex">
+                    <div className="horizontal-tiles-row d-flex">
+                      <Tile
+                        tileImg={groupProjects[0].logo}
+                        tileTitle={groupProjects[0].title}
+                        tileDescription={groupProjects[0].description}
+                        tileTags={groupProjects[0].techStack}
+                        className="horizontal"
+                      />
+                      <Tile
+                        tileImg={groupProjects[1].logo}
+                        tileTitle={groupProjects[1].title}
+                        tileDescription={groupProjects[1].description}
+                        tileTags={groupProjects[1].techStack}
+                        className="horizontal"
+                      />
+                    </div>
+                    <div className="vertical-tiles-row">
+                      <Tile
+                        tileImg={groupProjects[2].logo}
+                        tileTitle={groupProjects[2].title}
+                        tileDescription={groupProjects[2].description}
+                        tileTags={groupProjects[2].techStack}
+                        className="vertical"
+                      />
+                    </div>
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
         <CtaButton linkListItem={linkListItem} />

@@ -9,10 +9,12 @@ const Tile = ({
   tileDescription,
   tileTags,
   horizontal,
+  className,
 }) => {
+  console.log(tileImg, tileTitle, "---------------------");
   return (
-    <Card className={`tile-card border-0`}>
-      <CardBody className="tile-card-body ">
+    <Card className={`tile-card border-0 ${className}`}>
+      <CardBody className="tile-card-body d-flex">
         <img
           src={require(`../../assets/images/revampImages/${tileImg}`)}
           alt="tile img"
@@ -39,5 +41,11 @@ const Tile = ({
 
 Tile.prototype = {
   horizontal: PropTypes.bool,
+  className: PropTypes.string,
 };
+
+Tile.defaultProps = {
+  className: "",
+};
+
 export default Tile;
