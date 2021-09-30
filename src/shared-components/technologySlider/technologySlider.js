@@ -30,8 +30,7 @@ const TechnologySlider = (props) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
-          centerPadding: "0",
+          slidesToShow: 4,
         },
       },
     ],
