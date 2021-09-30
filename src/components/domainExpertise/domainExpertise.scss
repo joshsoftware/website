@@ -1,0 +1,54 @@
+@import "../../assets/stylesheets/core";
+.technology-slider-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(230, 230, 230, 0.99),
+    rgba(230, 230, 230, 0)
+  );
+  h3 {
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    color: $gray-11;
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 3.125rem;
+      line-height: 3.6875rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .technology-link-wrap {
+    padding: 0 1em;
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      color: $oxford-blue;
+      margin-right: 1rem;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
+    }
+
+    a {
+      background-color: $burnt-sienna;
+      border-radius: 0.5rem;
+      padding: 0 0.5rem;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0.125rem 1.125rem;
+      }
+      i {
+        font-size: 1rem;
+        color: $white;
+        @include media-breakpoint-up(lg) {
+          font-size: 1.5rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

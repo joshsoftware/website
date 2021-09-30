@@ -72,9 +72,7 @@ const IndustryTypeItem = (props) => {
   return (
     <>
       <div className="industry-slider">
-        <div>
-          <JoshCarousel items={items} settings={settings}></JoshCarousel>
-        </div>
+        <JoshCarousel items={items} settings={settings}></JoshCarousel>
       </div>
     </>
   );

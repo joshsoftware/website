@@ -1,0 +1,33 @@
+@import "../../assets/stylesheets/core";
+
+.technology-slider {
+  padding: 2rem 0;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  .technology-slider-item {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .slick-slider {
+    .slick-slide {
+      padding: 0 0.5rem;
+
+      @include media-breakpoint-up(md) {
+        padding: 0 1rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 0.5rem;
+      }
+    }
+    .slick-dots {
+      bottom: -3.5rem;
+    }
+  }
+}
