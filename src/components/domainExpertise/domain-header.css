@@ -51,7 +51,7 @@
         height: 2rem; } }
   .strip-slider-item .title {
     color: #1c1c1c;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5;
     white-space: nowrap; }
     .strip-slider-item .title:hover, .strip-slider-item .title:active {
