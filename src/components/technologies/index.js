@@ -52,7 +52,7 @@ const TechnologiesLayout = ({ match }) => {
     const techData = domainsData.filter(
       (tech) => tech.urlParameter === selectedDomain
     );
-    if (techData.length > 0) {
+    if (techData.length > 0 && techData[0].urlParameter !== "all") {
       const keywordsToSearch = techData[0].keywords;
       return ProjectData.filter((project) =>
         project.techStack.find(
@@ -63,7 +63,7 @@ const TechnologiesLayout = ({ match }) => {
         )
       );
     }
-    return [];
+    return ProjectData;
   };
 
   const groupFilteredProjects = _.chunk(filterDataForSelectDomain(), 3);
@@ -130,20 +130,24 @@ const TechnologiesLayout = ({ match }) => {
                         />
                       </div>
                       <div className="horizontal-tiles-row d-flex">
-                        <Tile
-                          tileImg={groupProjects[1].logo}
-                          tileTitle={groupProjects[1].title}
-                          tileDescription={groupProjects[1].description}
-                          tileTags={groupProjects[1].techStack}
-                          className="horizontal"
-                        />
-                        <Tile
-                          tileImg={groupProjects[2].logo}
-                          tileTitle={groupProjects[2].title}
-                          tileDescription={groupProjects[2].description}
-                          tileTags={groupProjects[2].techStack}
-                          className="horizontal"
-                        />
+                        {groupProjects[1] && groupProjects[2] && (
+                          <>
+                            <Tile
+                              tileImg={groupProjects[1].logo}
+                              tileTitle={groupProjects[1].title}
+                              tileDescription={groupProjects[1].description}
+                              tileTags={groupProjects[1].techStack}
+                              className="horizontal"
+                            />
+                            <Tile
+                              tileImg={groupProjects[2].logo}
+                              tileTitle={groupProjects[2].title}
+                              tileDescription={groupProjects[2].description}
+                              tileTags={groupProjects[2].techStack}
+                              className="horizontal"
+                            />
+                          </>
+                        )}
                       </div>
                     </div>
                   </>
@@ -159,22 +163,26 @@ const TechnologiesLayout = ({ match }) => {
                         tileTags={groupProjects[0].techStack}
                         className="horizontal"
                       />
-                      <Tile
-                        tileImg={groupProjects[1].logo}
-                        tileTitle={groupProjects[1].title}
-                        tileDescription={groupProjects[1].description}
-                        tileTags={groupProjects[1].techStack}
-                        className="horizontal"
-                      />
+                      {groupProjects[1] && (
+                        <Tile
+                          tileImg={groupProjects[1].logo}
+                          tileTitle={groupProjects[1].title}
+                          tileDescription={groupProjects[1].description}
+                          tileTags={groupProjects[1].techStack}
+                          className="horizontal"
+                        />
+                      )}
                     </div>
                     <div className="vertical-tiles-row">
-                      <Tile
-                        tileImg={groupProjects[2].logo}
-                        tileTitle={groupProjects[2].title}
-                        tileDescription={groupProjects[2].description}
-                        tileTags={groupProjects[2].techStack}
-                        className="vertical"
-                      />
+                      {groupProjects[2] && (
+                        <Tile
+                          tileImg={groupProjects[2].logo}
+                          tileTitle={groupProjects[2].title}
+                          tileDescription={groupProjects[2].description}
+                          tileTags={groupProjects[2].techStack}
+                          className="vertical"
+                        />
+                      )}
                     </div>
                   </div>
                 </>
@@ -196,7 +204,14 @@ const TechnologiesLayout = ({ match }) => {
 
 const domainsData = [
   {
-    title: TECHNOLOGIES_USED.ror,
+    title: "ALL",
+    logo: "",
+    // fileType: "png",
+    keywords: [],
+    urlParameter: "all",
+  },
+  {
+    title: TECHNOLOGIES_USED.ruby,
     logo: "ruby-logo@2x.png",
     // fileType: "png",
     keywords: ["ruby", "rails", "rubyonrails"],
@@ -231,40 +246,19 @@ const domainsData = [
     urlParameter: "android",
   },
   {
-    title: "Other",
+    title: TECHNOLOGIES_USED.angular,
     logo: "angular-logo@2x.png",
     // fileType: "png",
-    keywords: ["java"],
-    urlParameter: "other",
+    keywords: ["angular"],
+    urlParameter: "angular",
   },
   {
-    title: "Other",
+    title: TECHNOLOGIES_USED.ror,
     logo: "rails-logo@2x.png",
     fileType: "png",
     keywords: ["java"],
-    urlParameter: "other",
+    urlParameter: "ruby-on-rails",
   },
-  {
-    title: "Other",
-    logo: "rails-logo@2x.png",
-    fileType: "png",
-    keywords: ["java"],
-    urlParameter: "other",
-  },
-  {
-    title: "Other",
-    logo: "rails-logo@2x.png",
-    fileType: "png",
-    keywords: ["java"],
-    urlParameter: "other",
-  },
-  // {
-  //   title: "Other",
-  //   logo: "Other",
-  //   // fileType: "png",
-  //   keywords: ["java"],
-  //   urlParameter: "other",
-  // },
 ];
 
 const industryItemData = [

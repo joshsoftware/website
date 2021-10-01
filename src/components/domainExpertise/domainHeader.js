@@ -68,11 +68,13 @@ const DomainHeader = (props) => {
           <div className={textClass}>{domain.title}</div>
         </div> */}
         <span className="cursor-pointer d-flex align-items-center strip-slider-item justify-content-center">
-          <img
-            className="slider-item-logo"
-            alt={domain.title}
-            src={require(`../../assets/images/revampImages/${domain.logo}`)}
-          />
+          {domain.logo && (
+            <img
+              className="slider-item-logo"
+              alt={domain.title}
+              src={require(`../../assets/images/revampImages/${domain.logo}`)}
+            />
+          )}
           <span className="title font-weight-bold text-uppercase">
             {domain.title}
           </span>

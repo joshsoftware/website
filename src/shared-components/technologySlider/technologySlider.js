@@ -36,15 +36,16 @@ const TechnologySlider = (props) => {
     ],
   };
 
-  const carouselItems = items.map((Item) => (
+  const carouselItems = items.map((item) => (
     <Link
-      to="/"
+      // to={`/technologies/${item.urlParam}`}
+      to={`${routes.TECHNOLOGIES_URL}/${item.urlParam}`}
       className="d-flex align-items-center justify-content-center text-decoration-none"
     >
       <div className="technology-slider-item">
         <img
-          src={require(`../../assets/images/revampImages/${Item.logo}`)}
-          alt={Item.altText}
+          src={require(`../../assets/images/revampImages/${item.logo}`)}
+          alt={item.altText}
         />
       </div>
     </Link>
@@ -62,34 +63,37 @@ TechnologySlider.defaultProps = {
     {
       logo: "android-with-circle@2x.png",
       altText: "android logo",
+      urlParam: "android",
     },
     {
       logo: "ruby-with-circle@2x.png",
       altText: "ruby logo",
+      urlParam: "ruby-on-rails",
     },
     {
       logo: "angular-with-circle@2x.png",
       altText: "angular logo",
+      urlParam: "angular",
     },
     {
       logo: "ios-with-circle@2x.png",
       altText: "ios logo",
+      urlParam: "ios",
     },
     {
       logo: "go-with-circle@2x.png",
       altText: "go logo",
+      urlParam: "go",
     },
     {
       logo: "rails-with-circle@2x.png",
       altText: "rails logo",
+      urlParam: "ruby-on-rails",
     },
     {
       logo: "react-with-circle@2x.png",
       altText: "react logo",
-    },
-    {
-      logo: "ruby-with-circle@2x.png",
-      altText: "ruby logo",
+      urlParam: "react",
     },
   ],
 };
