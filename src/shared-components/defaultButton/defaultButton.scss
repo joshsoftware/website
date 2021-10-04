@@ -1,6 +1,6 @@
 @import "../../assets/stylesheets/core";
 
-.btn.default-btn {
+.default-btn {
   background-color: #000000;
   border-radius: 0;
   border-left: 17px solid #e86055;
@@ -38,9 +38,9 @@
   }
 }
 
-.btn.default-btn:not(:disabled):not(.disabled):active:focus,
-.btn.default-btn:not(:disabled):not(.disabled).active:focus,
-.show > .btn.default-btn.dropdown-toggle:focus {
+.default-btn:not(:disabled):not(.disabled):active:focus,
+.default-btn:not(:disabled):not(.disabled).active:focus,
+.show > .default-btn.dropdown-toggle:focus {
   background-color: #000000;
   border-left: 17px solid #e86055;
   border-top: none;

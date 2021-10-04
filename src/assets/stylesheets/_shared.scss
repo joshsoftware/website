@@ -340,10 +340,7 @@ img {
 /* shared end */
 
 .link-item-wrap {
-  padding: 3rem 0;
-  @include media-breakpoint-up(lg) {
-    padding: 5rem 0;
-  }
+  padding: rem(40px) 0 rem(80px);
 
   .link-item-list {
     flex-direction: column;
@@ -357,21 +354,21 @@ img {
         transform: translateY(-50%);
         background-color: #e86055;
         width: 100%;
-        height: 0.25rem;
+        height: rem(4px);
       }
     }
   }
 
   .link-item {
-    padding: 0 1.5rem;
+    padding: 0 rem(24px);
     z-index: 9999;
 
     > a {
-      max-width: 17.75rem;
-      width: 17.75rem;
-      border-radius: 0.75rem;
-      font-size: 1.25rem;
-      line-height: 1.5rem;
+      border-radius: 12px;
+      max-width: rem(329px);
+      width: rem(329px);
+      font-size: rem(20px);
+      line-height: rem(24px);
       color: $white;
       font-weight: 600;
       background-size: cover !important;
@@ -379,24 +376,30 @@ img {
       padding: 40px 24px;
 
       @include media-breakpoint-up(lg) {
-        font-size: 1.9375rem;
-        line-height: 2.25rem;
-        max-width: 20.5625rem;
-        width: 20.5625rem;
+        font-size: rem(31px);
+        line-height: rem(36px);
       }
 
       &:focus-visible {
         outline-offset: unset;
         outline: none;
       }
+
+      &.-leadership {
+        background: url("../images/revampImages/leadership-bg.png") no-repeat;
+      }
+
+      &.-contact-us {
+        background: url("../images/revampImages/contact-us-bg.png") no-repeat;
+      }
     }
 
     .arrow-img {
-      width: 1.5625rem;
+      width: rem(25px);
     }
 
     &:not(:first-child) {
-      margin-top: 1.5rem;
+      margin-top: rem(24px);
 
       @include media-breakpoint-up(lg) {
         margin-top: 0;
