@@ -30,7 +30,7 @@
       padding: 0; } }
 
 .tiles-wrapper {
-  padding: 3.5rem 0 0; }
+  padding: 3.5rem 2rem 0; }
   .tiles-wrapper .tiles-row {
     flex-direction: column; }
     @media (min-width: 992px) {

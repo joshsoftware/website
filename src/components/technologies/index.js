@@ -104,7 +104,7 @@ const TechnologiesLayout = ({ match }) => {
 
       <section className="main-section">
         <div className="container">
-          <div className="tiles-wrapper d-flex flex-column">
+          <div className="tiles-wrapper d-flex flex-column align-items-center">
             {/* {filterDataForSelectDomain().map((projectInfo) => (
               <Tile
                 tileImg={projectInfo.logo}
@@ -116,42 +116,39 @@ const TechnologiesLayout = ({ match }) => {
 
             {groupFilteredProjects.map((groupProjects, index) => {
               return index % 2 === 0 ? (
-                (console.log(groupProjects),
-                (
-                  <>
-                    <div className="tiles-row d-flex">
-                      <div className="vertical-tiles-row">
-                        <Tile
-                          tileImg={groupProjects[0].logo}
-                          tileTitle={groupProjects[0].title}
-                          tileDescription={groupProjects[0].description}
-                          tileTags={groupProjects[0].techStack}
-                          className="vertical"
-                        />
-                      </div>
-                      <div className="horizontal-tiles-row d-flex">
-                        {groupProjects[1] && groupProjects[2] && (
-                          <>
-                            <Tile
-                              tileImg={groupProjects[1].logo}
-                              tileTitle={groupProjects[1].title}
-                              tileDescription={groupProjects[1].description}
-                              tileTags={groupProjects[1].techStack}
-                              className="horizontal"
-                            />
-                            <Tile
-                              tileImg={groupProjects[2].logo}
-                              tileTitle={groupProjects[2].title}
-                              tileDescription={groupProjects[2].description}
-                              tileTags={groupProjects[2].techStack}
-                              className="horizontal"
-                            />
-                          </>
-                        )}
-                      </div>
+                <>
+                  <div className="tiles-row d-flex">
+                    <div className="vertical-tiles-row">
+                      <Tile
+                        tileImg={groupProjects[0].logo}
+                        tileTitle={groupProjects[0].title}
+                        tileDescription={groupProjects[0].description}
+                        tileTags={groupProjects[0].techStack}
+                        className="vertical"
+                      />
                     </div>
-                  </>
-                ))
+                    <div className="horizontal-tiles-row d-flex">
+                      {groupProjects[1] && groupProjects[2] && (
+                        <>
+                          <Tile
+                            tileImg={groupProjects[1].logo}
+                            tileTitle={groupProjects[1].title}
+                            tileDescription={groupProjects[1].description}
+                            tileTags={groupProjects[1].techStack}
+                            className="horizontal"
+                          />
+                          <Tile
+                            tileImg={groupProjects[2].logo}
+                            tileTitle={groupProjects[2].title}
+                            tileDescription={groupProjects[2].description}
+                            tileTags={groupProjects[2].techStack}
+                            className="horizontal"
+                          />
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </>
               ) : (
                 <>
                   <div className="tiles-row d-flex">
@@ -173,8 +170,8 @@ const TechnologiesLayout = ({ match }) => {
                         />
                       )}
                     </div>
-                    <div className="vertical-tiles-row">
-                      {groupProjects[2] && (
+                    {groupProjects[2] && (
+                      <div className="vertical-tiles-row">
                         <Tile
                           tileImg={groupProjects[2].logo}
                           tileTitle={groupProjects[2].title}
@@ -182,8 +179,8 @@ const TechnologiesLayout = ({ match }) => {
                           tileTags={groupProjects[2].techStack}
                           className="vertical"
                         />
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 </>
               );

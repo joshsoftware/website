@@ -52,7 +52,7 @@
   .strip-slider-item .title {
     color: #1c1c1c;
     font-size: 0.875rem;
-    line-height: 1.5;
+    line-height: 2rem;
     white-space: nowrap; }
     .strip-slider-item .title:hover, .strip-slider-item .title:active {
       text-decoration: none; }
