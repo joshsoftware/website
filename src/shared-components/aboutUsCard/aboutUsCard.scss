@@ -1,0 +1,26 @@
+@import "../../assets/stylesheets/core";
+
+.about-us-box {
+  background-color: $mortor;
+  @include media-breakpoint-up(lg) {
+    height: 13.75rem;
+  }
+
+  h6,
+  p {
+    color: $white;
+  }
+  h6 {
+    font-size: 1.3125rem;
+    line-height: 2.3125rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+  }
+}
