@@ -69,3 +69,36 @@
     .tile-card.horizontal .tile-card-body img {
       width: 19.5rem;
       margin-right: 16px; } }
+  .tile-card .tile-hover-wrap {
+    display: none; }
+    .tile-card .tile-hover-wrap .title-box {
+      margin-bottom: 2rem; }
+      .tile-card .tile-hover-wrap .title-box h3 {
+        color: #fff;
+        font-size: 2rem;
+        line-height: 2.75rem; }
+    .tile-card .tile-hover-wrap .see-more-btn::after {
+      content: "";
+      position: absolute;
+      background-color: #ddd5ca;
+      height: 0.125rem;
+      width: 50%;
+      right: -1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -1; }
+  .tile-card:hover .tile-hover-wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 1.5rem; }
