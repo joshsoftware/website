@@ -1,0 +1,24 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.tag-list {
+  margin: 0; }
+  @media (min-width: 992px) {
+    .tag-list {
+      margin: 0 -0.125rem 1.25rem; } }
+  .tag-list .tag-list-item-wrap {
+    padding: 0 0.125rem;
+    margin-bottom: 0.25rem; }
+    .tag-list .tag-list-item-wrap .tag-list-item {
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      color: #1c1c1c; }
+      @media (min-width: 992px) {
+        .tag-list .tag-list-item-wrap .tag-list-item {
+          font-size: 0.6875rem;
+          line-height: 0.8125rem; } }

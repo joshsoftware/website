@@ -44,30 +44,6 @@
   }
 }
 
-.tag-list {
-  margin: 0;
-  @include media-breakpoint-up(lg) {
-    margin: 0 -0.125rem 1.25rem;
-  }
-
-  .tag-list-item-wrap {
-    padding: 0 0.125rem;
-    margin-bottom: 0.25rem;
-
-    .tag-list-item {
-      padding: 0.125rem 0.5rem;
-      border-radius: 0.25rem;
-      font-size: 0.875rem;
-      line-height: 1.125rem;
-      color: $gray-11;
-      @include media-breakpoint-up(lg) {
-        font-size: 0.6875rem;
-        line-height: 0.8125rem;
-      }
-    }
-  }
-}
-
 .tile-card {
   border-radius: 1.5rem;
   background-color: $mint;
