@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 import "./tile.css";
+import LinkButton from "../linkButton/linkButton";
 
 var colors = [
   "$mint",
@@ -55,6 +56,14 @@ const Tile = ({
           <CardText className="overflow-hidden text-truncate-multi-line">
             {tileDescription}
           </CardText>
+        </div>
+        <div className="tile-hover-wrap">
+          <div className="title-box">
+            <h3 className="text-uppercase font-weight-bold">{tileTitle}</h3>
+          </div>
+          <div className="see-more-btn-wrap position-relative d-flex justify-content-center w-100">
+            <LinkButton buttonText="see more" className="see-more-btn" />
+          </div>
         </div>
       </CardBody>
     </Card>
