@@ -124,6 +124,7 @@ const TechnologiesLayout = ({ match }) => {
                         tileTitle={groupProjects[0].title}
                         tileDescription={groupProjects[0].description}
                         tileTags={groupProjects[0].techStack}
+                        items={groupFilteredProjects}
                         className="vertical"
                       />
                     </div>
@@ -135,6 +136,7 @@ const TechnologiesLayout = ({ match }) => {
                             tileTitle={groupProjects[1].title}
                             tileDescription={groupProjects[1].description}
                             tileTags={groupProjects[1].techStack}
+                            items={groupFilteredProjects}
                             className="horizontal"
                           />
                           <Tile
@@ -142,6 +144,7 @@ const TechnologiesLayout = ({ match }) => {
                             tileTitle={groupProjects[2].title}
                             tileDescription={groupProjects[2].description}
                             tileTags={groupProjects[2].techStack}
+                            items={groupFilteredProjects}
                             className="horizontal"
                           />
                         </>
@@ -158,6 +161,7 @@ const TechnologiesLayout = ({ match }) => {
                         tileTitle={groupProjects[0].title}
                         tileDescription={groupProjects[0].description}
                         tileTags={groupProjects[0].techStack}
+                        items={groupFilteredProjects}
                         className="horizontal"
                       />
                       {groupProjects[1] && (
@@ -166,6 +170,7 @@ const TechnologiesLayout = ({ match }) => {
                           tileTitle={groupProjects[1].title}
                           tileDescription={groupProjects[1].description}
                           tileTags={groupProjects[1].techStack}
+                          items={groupFilteredProjects}
                           className="horizontal"
                         />
                       )}
@@ -177,6 +182,7 @@ const TechnologiesLayout = ({ match }) => {
                           tileTitle={groupProjects[2].title}
                           tileDescription={groupProjects[2].description}
                           tileTags={groupProjects[2].techStack}
+                          items={groupFilteredProjects}
                           className="vertical"
                         />
                       </div>
