@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 import LinkButton from "../linkButton/linkButton";
-import JwModal from "../jwModal/jwModal";
+import SliderModal from "../sliderModal/sliderModal";
 import TileTags from "../tileTags/tileTags";
 import "./tile.css";
 var colors = [
@@ -33,11 +33,12 @@ const Tile = ({
   tileTags,
   horizontal,
   className,
+  items,
 }) => {
-  const [isJwModalOpen, setIsJwModalOpen] = useState(false);
+  const [isSliderModalOpen, setisSliderModalOpen] = useState(false);
 
-  const toggleJwModal = () => {
-    setIsJwModalOpen(!isJwModalOpen);
+  const toggleSliderModal = () => {
+    setisSliderModalOpen(!isSliderModalOpen);
   };
   return (
     <Card
@@ -66,19 +67,19 @@ const Tile = ({
             <LinkButton
               buttonText="see more"
               className="see-more-btn"
-              onClick={toggleJwModal}
+              onClick={() => {
+                toggleSliderModal();
+              }}
             />
           </div>
         </div>
       </CardBody>
-      {isJwModalOpen && (
-        <JwModal
-          toggle={toggleJwModal}
-          isOpen={isJwModalOpen}
-          tileTags={tileTags}
-          imgSrc={tileImg}
-          title={tileTitle}
-          description={tileDescription}
+
+      {isSliderModalOpen && (
+        <SliderModal
+          toggle={toggleSliderModal}
+          isOpen={isSliderModalOpen}
+          items={items}
         />
       )}
     </Card>
