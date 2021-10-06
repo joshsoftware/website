@@ -48,7 +48,7 @@ const ContactUsForm = () => {
       <div className="form-floating mb-3 position-relative">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="input-fname"
           required={true}
           placeholder="name"
