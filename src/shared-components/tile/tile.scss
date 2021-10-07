@@ -8,15 +8,10 @@
     0% 0% no-repeat padding-box;
   border-radius: 1.5rem;
 
-  > img {
+  .tile-img {
     width: auto;
     height: 13.75rem;
     margin: 0 auto;
-
-    // @include media-breakpoint-up(lg) {
-    //   width: 100%;
-    //   height: auto;
-    // }
   }
 
   .card-title,
@@ -36,10 +31,12 @@
   .card-text {
     font-size: 1rem;
     line-height: 1.375rem;
-    -webkit-line-clamp: 4;
 
     @include media-breakpoint-up(lg) {
       font-size: 0.875rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
     }
   }
 }
@@ -50,6 +47,7 @@
   margin-top: 1rem;
   @include media-breakpoint-up(lg) {
     margin-top: 0;
+    height: 100%;
   }
 
   &.vertical {
@@ -66,35 +64,13 @@
         padding-left: 0;
       }
 
-      img {
+      .tile-img {
         @include media-breakpoint-up(lg) {
           width: 19.5rem;
           margin-right: 16px;
         }
       }
     }
-  }
-
-  &.vertical {
-    .tag-list {
-      // @include media-breakpoint-up(lg) {
-      //   display: -webkit-box;
-      //   -webkit-line-clamp: 4;
-      //   -webkit-box-orient: vertical;
-      //   overflow: hidden;
-      // }
-    }
-  }
-
-  &.horizontal {
-    // .tag-list {
-    //   @include media-breakpoint-up(lg) {
-    //     display: -webkit-box;
-    //     -webkit-line-clamp: 2;
-    //     -webkit-box-orient: vertical;
-    //     overflow: hidden;
-    //   }
-    // }
   }
 
   .tile-hover-wrap {
