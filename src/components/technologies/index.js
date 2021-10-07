@@ -11,6 +11,7 @@ import MainBanner from "../../shared-components/mainBanner/mainbanner";
 import CtaButton from "../../shared-components/ctaButton/ctaButton.js";
 import IndustryTypeItem from "../../shared-components/industryTypeItem/industryTypeItem.js";
 import "./technologies-new.css";
+import GroupedProjectsTiles from "../../shared-components/groupedProjectsTiles.js";
 
 const linkListItem = [
   {
@@ -47,7 +48,6 @@ const TechnologiesLayout = ({ match }) => {
     ? match.params.domain
     : "ruby-on-rails";
 
-  console.log(selectedDomain);
   const filterDataForSelectDomain = () => {
     const techData = domainsData.filter(
       (tech) => tech.urlParameter === selectedDomain
@@ -98,102 +98,15 @@ const TechnologiesLayout = ({ match }) => {
           baseRoute={routes.TECHNOLOGIES_URL}
           changeImageOnSelect={false}
           selectedDomain={selectedDomain}
-          // imageSize="30px"
         />
       </section>
 
       <section className="main-section">
         <div className="container">
           <div className="tiles-wrapper d-flex flex-column align-items-center">
-            {/* {filterDataForSelectDomain().map((projectInfo) => (
-              <Tile
-                tileImg={projectInfo.logo}
-                tileTitle={projectInfo.title}
-                tileDescription={projectInfo.description}
-                tileTags={projectInfo.techStack}
-              />
-            ))} */}
-
-            {groupFilteredProjects.map((groupProjects, index) => {
-              return index % 2 === 0 ? (
-                <>
-                  <div className="tiles-row d-flex">
-                    <div className="vertical-tiles-row">
-                      <Tile
-                        tileImg={groupProjects[0].logo}
-                        tileTitle={groupProjects[0].title}
-                        tileDescription={groupProjects[0].description}
-                        tileTags={groupProjects[0].techStack}
-                        items={groupFilteredProjects}
-                        className="vertical"
-                      />
-                    </div>
-                    <div className="horizontal-tiles-row d-flex">
-                      {groupProjects[1] && groupProjects[2] && (
-                        <>
-                          <Tile
-                            tileImg={groupProjects[1].logo}
-                            tileTitle={groupProjects[1].title}
-                            tileDescription={groupProjects[1].description}
-                            tileTags={groupProjects[1].techStack}
-                            items={groupFilteredProjects}
-                            className="horizontal"
-                          />
-                          <Tile
-                            tileImg={groupProjects[2].logo}
-                            tileTitle={groupProjects[2].title}
-                            tileDescription={groupProjects[2].description}
-                            tileTags={groupProjects[2].techStack}
-                            items={groupFilteredProjects}
-                            className="horizontal"
-                          />
-                        </>
-                      )}
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="tiles-row d-flex">
-                    <div className="horizontal-tiles-row d-flex">
-                      <Tile
-                        tileImg={groupProjects[0].logo}
-                        tileTitle={groupProjects[0].title}
-                        tileDescription={groupProjects[0].description}
-                        tileTags={groupProjects[0].techStack}
-                        items={groupFilteredProjects}
-                        className="horizontal"
-                      />
-                      {groupProjects[1] && (
-                        <Tile
-                          tileImg={groupProjects[1].logo}
-                          tileTitle={groupProjects[1].title}
-                          tileDescription={groupProjects[1].description}
-                          tileTags={groupProjects[1].techStack}
-                          items={groupFilteredProjects}
-                          className="horizontal"
-                        />
-                      )}
-                    </div>
-                    {groupProjects[2] && (
-                      <div className="vertical-tiles-row">
-                        <Tile
-                          tileImg={groupProjects[2].logo}
-                          tileTitle={groupProjects[2].title}
-                          tileDescription={groupProjects[2].description}
-                          tileTags={groupProjects[2].techStack}
-                          items={groupFilteredProjects}
-                          className="vertical"
-                        />
-                      </div>
-                    )}
-                  </div>
-                </>
-              );
-            })}
+            <GroupedProjectsTiles groupedItems={groupFilteredProjects} />
           </div>
         </div>
-        <CtaButton linkListItem={linkListItem} />
       </section>
       <section className="industry-type-section">
         <p className="industry-type-heading text-center font-weight-bold text-capitalize">
@@ -201,6 +114,7 @@ const TechnologiesLayout = ({ match }) => {
         </p>
         <IndustryTypeItem industryItem={industryItemData} />
       </section>
+      <CtaButton linkListItem={linkListItem} />
     </div>
   );
 };

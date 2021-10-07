@@ -1,181 +1,139 @@
 {
-	"health": [
-		{
-			"title": "The Pediatric Network",
-			"techStack": [
-				"ROR",
-				"Angular"
-			],
-			"logo": "The Pediatric Network.png",
-			"solution": "A scalable, high performance web and mobile application that integrates all patient data thon a common portal accessible by the doctors and parents developed in six months. A digital signature for the doctors was also created, enabling online prescriptions.",
-			"business": "A consistent UI with end-to-end automated medical processes that enable digitised registrations, prescriptions and online payments, and streamline the end customer experience for doctors, nurses, receptionists and patients alike.",
-			"impact": "Consultation time reduced to 5-7 minutes per doctor. A single app for scheduling doctor appointments and detailed vaccination charts, Visual dashboards with cumulative patient data."
-		},
-		{
-			"title": "We3Health",
-			"domain": "health",
-			"business": "Developing an app to improve medical outcomes for preterm babies by tracking and monitoring baby activity in ICNs, and keeping parents and medical professionals in sync.",
-			"solution": "A mobile app that enables the dissemination of bite sized information via text, social media and videos through API servers, helping parents stay in touch with doctors, while monitoring the baby’s health in real time",
-			"techStack": [
-				"ROR",
-				"Angular"
-			],
-			"logo": "We3Health.png",
-			"impact": "Early user acceptance and clinical trial testing. Scalable, high performance digital platform that keeps parents engaged and improves the parents ability to care for their child. App already in use across a number of hospitals in UCSF and highly recommended across USA"
-		}
-	],
-	"sports": [
-		{
-			"title": "England Hockey",
-			"logo": "England Hockey.png",
-			"business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
-			"solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 counties. Ease of communication across the entire player-coach ecosystem also enhanced, as  custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers.",
-			"techStack": [
-				"ROR"
-			],
-			"impact": "More than 2000 players, 60 team managers and 50 coaches reached. Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues."
-		},
-		{
-			"title": "ClubBuzz",
-			"domain": "Sports",
-			"logo": "ClubBuzz.png",
-			"business": "An interactive website catering to specific activity groups and occupations, in order to bring together different communities, manage member requests and keep track of consumer data.",
-			"solution": "A scalable digital portal built from scratch, that facilitates member meet-ups, manages payments and generated statistical reports pertaining to group activities, attendance and member feedback.",
-			"techStack": [
-				"ROR"
-			],
-			"impact": "More than 16 registered groups in the first month. Streamlined member communication across various groups and communities.Enhanced organization with automated processes that track and schedule group appointments."
-		}
-	],
-	"insurance": [
-		{
-			"title": "QuickInsure",
-			"domain": "insurance",
-			"logo": "quickinsure.png",
-			"business": "An online platform focused on retail in insurance, to simplify the process of buying and selling insurance for both, providers and consumers",
-			"solution": "An all integrated web portal with a common interface for multiple insurance providers, that connects them directly to the consumer and takes care of instant commissions as well",
-			"techStack": [
-				"ROR",
-				"React",
-				"GO"
-			],
-			"impact": [
-				"More than 7000 trained Quickinsure agents (POS) all over India",
-				"Real time comparison of best quotes and deals",
-				"Quick and transparent online transactions",
-				"Instant commissions provided to 300 agents every day"
-			]
-		}
-	],
-	"media": [
-		{
-			"title": "Star",
-			"domain": "Media",
-			"logo": "star.png",
-			"business": "A digital platform to streamline budgets for advertising inventory and media spends",
-			"solution": "An automated proposal creator that optimizes the availability of advertising slots based on channel, programs, show ratings and keeps tracks the data and revenue generated from these ads",
-			"techStack": [
-				"ROR",
-				"React",
-				"postgres"
-			],
-			"impact": [
-				"Time to market for proposals reduced from two days to 10 minutes",
-				"One all-encompassing platform for salespeople instead of thousands of spreadsheets",
-				"Enhanced transparency across internal company processes"
-			]
-		},
-		{
-			"title": "Gojek",
-			"domain": "Media",
-			"logo": "gojek.png",
-			"business": "Supportive modernized architecture in place of legacy systems that could not support a large number of consumer requests, leading to lags and major performance issues",
-			"solution": "A CMS backed digital platform to manage orders and inventory for GoMart, also ensuring ease of accessibility and holistic end user experiences",
-			"techStack": [
-				"ROR",
-				"GO",
-				"React",
-				"elasticsearch"
-			],
-			"impact": [
-				"More than 100 million orders a day for GoMart",
-				"Real time inventory tracking",
-				"An integrated monitoring systems for payments, vendor management and consumer transactions"
-			]
-		},
-		{
-			"title": "Kwikkopy",
-			"domain": "Media",
-			"logo": "Kwikkopy.png",
-			"business": "Upgrading pre-existing legacy Coldfusion website to create intuitive user interface, that could manage huge amounts of consumer data, queries and orders",
-			"solution": "A scalable, flexible web platform that manages orders from more than 100 locations and provides authorised access to users 24/7",
-			"techStack": [
-				"ROR"
-			],
-			"impact": "Reduced time to market for product orders, along with inventory tracking for weekly, monthly and yearly orders. Customized collaterals for business communication created online. Integrated QR codes, payment gateways, statistical reports for quicker turn-around time"
-		}
-	],
-	"marketing-sales": [
-		{
-			"title": "Brandscope",
-			"domain": "Sales",
-			"logo": "Brandscope.png",
-			"business": "A dynamic platform for retailers, distributors and consumers with a holistic view of inventory to reduce transaction time for retailers.",
-			"solution": "An internet portal created from scratch, that supports high resolution product photographs, videos, catalogues and social network ratings mimicking the traditional retail experience, while tracking inventory in real time.",
-			"techStack": [
-				"ROR"
-			],
-			"impact": "Reduced time to market for salespeople from 3 months to 15 days.A scalable e-Commerce platform started with the Australian apparel industry, available across Europe and USA now Online catalogues across different product segments available, that significantly reduce overhead costs and further global environmental sustainability efforts."
-		},
-		{
-			"title": "Get-a-Limo",
-			"logo": "Get-a-Limo.png",
-			"domain": "Marketing",
-			"business": "A voice messaging app to enable communication between limousine drivers and private hire vehicles in Singapore.",
-			"solution": "An all encompassing application which kept track of driver profiles, included push-to-talk features, auto played new messages, kept track of private chats and sent alert notifications in real time, built on the back of scalable API server.",
-			"techStack": [
-				"ROR"
-			],
-			"impact": "The app replaced the usage of the traditional walkie talkie. Built a community of more than 40 limo drivers in the first few weeks."
-		}
-	],
-	"manufacturing": [],
-	"education": [
-		{
-			"title": "Fundamentor",
-			"logo": "Fundamentor.png",
-			"domain": "Education",
-			"business": "A digital platform to enhance the students’ logical, reasoning and critical thinking skills through Gamification.",
-			"solution": "A scalable webfront and mobile app with an in built analytics engine that operates on test questions, video tutorials, incentivised learning, providing performance based user feedback in real time developed in 8 weeks.",
-			"techStack": [
-				"ROR"
-			],
-			"impact": "Pilot deployed in 5 schools pan India Demonstrated in 17 schools, out of which 90% converted to clients. A hassle free, intuitive learning experience for students of all ages."
-		}
-	],
-	"travel": [
-		{
-			"title": "Tourconnect",
-			"logo": "tourconnect.png",
-			"business": "An IT framework to support the soon to be launched web portal to streamline the contracting between tour contractors, supplier and end users",
-			"solution": "A cost effective, high performing web platform that automates supplier-vendor contracts to provide customers a complete tour package at attractive rates built in three months",
-			"techStack": [
-				"ROR",
-				"MongoDB"
-			],
-			"impact": [
-				"More than 10,000 suppliers registered",
-				"Judicious use of time, money and resources",
-				"Automated contracts and packages across hotels, car rentals, bike rentals, safaris, cruise rentals and more"
-			]
-		}
-	],
-	"rssFeeds": {
-		"health": "healthcare",
-		"media": "media",
-		"sports": "sports",
-		"manufacturing": "manufacturing",
-		"insurance": "insurtech",
-		"fianance": "banking"
-	}
+  "health": [
+    {
+      "title": "The Pediatric Network",
+      "techStack": ["ROR", "Angular"],
+      "logo": "quickinsure.png",
+      "solution": "A scalable, high performance web and mobile application that integrates all patient data thon a common portal accessible by the doctors and parents developed in six months. A digital signature for the doctors was also created, enabling online prescriptions.",
+      "business": "A consistent UI with end-to-end automated medical processes that enable digitised registrations, prescriptions and online payments, and streamline the end customer experience for doctors, nurses, receptionists and patients alike.",
+      "impact": "Consultation time reduced to 5-7 minutes per doctor. A single app for scheduling doctor appointments and detailed vaccination charts, Visual dashboards with cumulative patient data."
+    },
+    {
+      "title": "We3Health",
+      "domain": "health",
+      "business": "Developing an app to improve medical outcomes for preterm babies by tracking and monitoring baby activity in ICNs, and keeping parents and medical professionals in sync.",
+      "solution": "A mobile app that enables the dissemination of bite sized information via text, social media and videos through API servers, helping parents stay in touch with doctors, while monitoring the baby’s health in real time",
+      "techStack": ["ROR", "Angular"],
+      "logo": "quickinsure.png",
+      "impact": "Early user acceptance and clinical trial testing. Scalable, high performance digital platform that keeps parents engaged and improves the parents ability to care for their child. App already in use across a number of hospitals in UCSF and highly recommended across USA"
+    }
+  ],
+  "sports": [
+    {
+      "title": "England Hockey",
+      "logo": "quickinsure.png",
+      "business": "A single platform that integrates player data, player profiles and coach profiles to track player progress and understand their strengths/weakness.",
+      "solution": "A consolidated, scalable, one-click web platform that generates timely statistical reports for players, managers and coaches over 17 regions and 234 counties. Ease of communication across the entire player-coach ecosystem also enhanced, as  custom pathways are created as per player needs and messages can be broadcast by admins, coaches and managers.",
+      "techStack": ["ROR"],
+      "impact": "More than 2000 players, 60 team managers and 50 coaches reached. Improved player performance, level of the overall teams upped, and increased eligibility for sports leagues."
+    },
+    {
+      "title": "ClubBuzz",
+      "domain": "Sports",
+      "logo": "quickinsure.png",
+      "business": "An interactive website catering to specific activity groups and occupations, in order to bring together different communities, manage member requests and keep track of consumer data.",
+      "solution": "A scalable digital portal built from scratch, that facilitates member meet-ups, manages payments and generated statistical reports pertaining to group activities, attendance and member feedback.",
+      "techStack": ["ROR"],
+      "impact": "More than 16 registered groups in the first month. Streamlined member communication across various groups and communities.Enhanced organization with automated processes that track and schedule group appointments."
+    }
+  ],
+  "insurance": [
+    {
+      "title": "QuickInsure",
+      "domain": "insurance",
+      "logo": "quickinsure.png",
+      "business": "An online platform focused on retail in insurance, to simplify the process of buying and selling insurance for both, providers and consumers",
+      "solution": "An all integrated web portal with a common interface for multiple insurance providers, that connects them directly to the consumer and takes care of instant commissions as well",
+      "techStack": ["ROR", "React", "GO"],
+      "impact": [
+        "More than 7000 trained Quickinsure agents (POS) all over India",
+        "Real time comparison of best quotes and deals",
+        "Quick and transparent online transactions",
+        "Instant commissions provided to 300 agents every day"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "title": "Star",
+      "domain": "Media",
+      "logo": "quickinsure.png",
+      "business": "A digital platform to streamline budgets for advertising inventory and media spends",
+      "solution": "An automated proposal creator that optimizes the availability of advertising slots based on channel, programs, show ratings and keeps tracks the data and revenue generated from these ads",
+      "techStack": ["ROR", "React", "postgres"],
+      "impact": [
+        "Time to market for proposals reduced from two days to 10 minutes",
+        "One all-encompassing platform for salespeople instead of thousands of spreadsheets",
+        "Enhanced transparency across internal company processes"
+      ]
+    },
+    {
+      "title": "Gojek",
+      "domain": "Media",
+      "logo": "quickinsure.png",
+      "business": "Supportive modernized architecture in place of legacy systems that could not support a large number of consumer requests, leading to lags and major performance issues",
+      "solution": "A CMS backed digital platform to manage orders and inventory for GoMart, also ensuring ease of accessibility and holistic end user experiences",
+      "techStack": ["ROR", "GO", "React", "elasticsearch"],
+      "impact": [
+        "More than 100 million orders a day for GoMart",
+        "Real time inventory tracking",
+        "An integrated monitoring systems for payments, vendor management and consumer transactions"
+      ]
+    },
+    {
+      "title": "Kwikkopy",
+      "domain": "Media",
+      "logo": "quickinsure.png",
+      "business": "Upgrading pre-existing legacy Coldfusion website to create intuitive user interface, that could manage huge amounts of consumer data, queries and orders",
+      "solution": "A scalable, flexible web platform that manages orders from more than 100 locations and provides authorised access to users 24/7",
+      "techStack": ["ROR"],
+      "impact": "Reduced time to market for product orders, along with inventory tracking for weekly, monthly and yearly orders. Customized collaterals for business communication created online. Integrated QR codes, payment gateways, statistical reports for quicker turn-around time"
+    }
+  ],
+  "marketing-sales": [
+    {
+      "title": "Brandscope",
+      "domain": "Sales",
+      "logo": "quickinsure.png",
+      "business": "A dynamic platform for retailers, distributors and consumers with a holistic view of inventory to reduce transaction time for retailers.",
+      "solution": "An internet portal created from scratch, that supports high resolution product photographs, videos, catalogues and social network ratings mimicking the traditional retail experience, while tracking inventory in real time.",
+      "techStack": ["ROR"],
+      "impact": "Reduced time to market for salespeople from 3 months to 15 days.A scalable e-Commerce platform started with the Australian apparel industry, available across Europe and USA now Online catalogues across different product segments available, that significantly reduce overhead costs and further global environmental sustainability efforts."
+    },
+    {
+      "title": "Get-a-Limo",
+      "logo": "quickinsure.png",
+      "domain": "Marketing",
+      "business": "A voice messaging app to enable communication between limousine drivers and private hire vehicles in Singapore.",
+      "solution": "An all encompassing application which kept track of driver profiles, included push-to-talk features, auto played new messages, kept track of private chats and sent alert notifications in real time, built on the back of scalable API server.",
+      "techStack": ["ROR"],
+      "impact": "The app replaced the usage of the traditional walkie talkie. Built a community of more than 40 limo drivers in the first few weeks."
+    }
+  ],
+  "manufacturing": [],
+  "education": [
+    {
+      "title": "Fundamentor",
+      "logo": "quickinsure.png",
+      "domain": "Education",
+      "business": "A digital platform to enhance the students’ logical, reasoning and critical thinking skills through Gamification.",
+      "solution": "A scalable webfront and mobile app with an in built analytics engine that operates on test questions, video tutorials, incentivised learning, providing performance based user feedback in real time developed in 8 weeks.",
+      "techStack": ["ROR"],
+      "impact": "Pilot deployed in 5 schools pan India Demonstrated in 17 schools, out of which 90% converted to clients. A hassle free, intuitive learning experience for students of all ages."
+    }
+  ],
+  "travel": [
+    {
+      "title": "Tourconnect",
+      "logo": "quickinsure.png",
+      "business": "An IT framework to support the soon to be launched web portal to streamline the contracting between tour contractors, supplier and end users",
+      "solution": "A cost effective, high performing web platform that automates supplier-vendor contracts to provide customers a complete tour package at attractive rates built in three months",
+      "techStack": ["ROR", "MongoDB"],
+      "impact": [
+        "More than 10,000 suppliers registered",
+        "Judicious use of time, money and resources",
+        "Automated contracts and packages across hotels, car rentals, bike rentals, safaris, cruise rentals and more"
+      ]
+    }
+  ]
 }

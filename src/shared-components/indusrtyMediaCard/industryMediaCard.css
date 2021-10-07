@@ -1,0 +1,19 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.industry-media-card h6,
+.industry-media-card p {
+  color: #1c1c1c; }
+
+.industry-media-card .media-img {
+  width: 2.5rem;
+  height: auto; }
+
+@media (min-width: 992px) {
+  .industry-media-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; } }

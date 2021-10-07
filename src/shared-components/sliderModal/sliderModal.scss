@@ -15,7 +15,7 @@
     border-radius: 1rem;
     border: none;
 
-    img {
+    .modal-img {
       width: auto;
       height: 13.75rem;
       margin: 0 auto;
@@ -34,6 +34,12 @@
       font-size: 0.875rem;
       line-height: 1.375rem;
       color: $gray-11;
+    }
+
+    .industry-media-card {
+      p {
+        -webkit-line-clamp: unset;
+      }
     }
   }
 

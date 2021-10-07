@@ -31,25 +31,10 @@
 }
 
 .tiles-wrapper {
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // gap: 1rem;
-  padding: 3.5rem 2rem 0;
-
-  // @include media-breakpoint-up(md) {
-  //   grid-template-columns: repeat(2, 1fr);
-  // }
-
-  // @include media-breakpoint-up(lg) {
-  //   grid-template-columns: repeat(3, 1fr);
-  //   gap: 1.5rem;
-  //   padding: 7.5rem 0 0;
-  // }
-
-  // @include media-breakpoint-up(xl) {
-  //   gap: 2rem;
-  // }
-
+  padding: 2rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 5.75rem 2rem 3.75rem;
+  }
   .tiles-row {
     flex-direction: column;
 

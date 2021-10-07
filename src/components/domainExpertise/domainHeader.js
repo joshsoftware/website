@@ -39,14 +39,14 @@ const DomainHeader = (props) => {
     );
   };
   const items = domains.map((domain) => {
-    const imgExt =
-      isWebpSupported() && domain.fileType !== "svg"
-        ? `${domain.fileType}.webp`
-        : domain.fileType;
-    const domainImg =
-      domain.urlParameter === selectedDomain && changeImageOnSelect
-        ? `${domain.logo}_Red.${imgExt}`
-        : `${domain.logo}.${imgExt}`;
+    // const imgExt =
+    //   isWebpSupported() && domain.fileType !== "svg"
+    //     ? `${domain.fileType}.webp`
+    //     : domain.fileType;
+    // const domainImg =
+    //   domain.urlParameter === selectedDomain && changeImageOnSelect
+    //     ? `${domain.logo}_Red.${imgExt}`
+    //     : `${domain.logo}.${imgExt}`;
     const textClass =
       domain.urlParameter === selectedDomain ? "active-slider" : "";
     return (
@@ -120,10 +120,11 @@ DomainHeader.defaultProps = {
   imageSize: null,
   changeImageOnSelect: true,
   domains: [
-    // {
-    //   title: "All",
-    //   urlParameter: "all",
-    // },
+    {
+      title: "All",
+      logo: "",
+      urlParameter: "all",
+    },
     {
       title: "Health",
       logo: "health-icon@2x.png",

@@ -3,8 +3,12 @@ import PropTypes from "prop-types";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 import LinkButton from "../linkButton/linkButton";
 import SliderModal from "../sliderModal/sliderModal";
+import businessLogo from "../../assets/images/domainExpertise/business.svg";
+import domainLogo from "../../assets/images/domainExpertise/Solution.svg";
+import impactLogo from "../../assets/images/domainExpertise/Impact.svg";
 import TileTags from "../tileTags/tileTags";
 import "./tile.css";
+import IndustryMediaCard from "../indusrtyMediaCard/industryMediaCard";
 var colors = [
   "$mint",
   "#645844",
@@ -34,6 +38,10 @@ const Tile = ({
   horizontal,
   className,
   items,
+  business,
+  impact,
+  domain,
+  projectIndex,
 }) => {
   const [isSliderModalOpen, setisSliderModalOpen] = useState(false);
 
@@ -49,15 +57,39 @@ const Tile = ({
         <img
           src={require(`../../assets/images/revampImages/${tileImg}`)}
           alt="tile img"
+          className="tile-img"
         />
         <div className="tile-details">
           <TileTags tileTags={tileTags} />
           <CardTitle tag="h5" className="text-uppercase font-weight-bold">
             {tileTitle}
           </CardTitle>
-          <CardText className="overflow-hidden text-truncate-multi-line">
-            {tileDescription}
-          </CardText>
+          {tileDescription && (
+            <CardText className="overflow-hidden">{tileDescription}</CardText>
+          )}
+          <div className="industry-media-card-wrap">
+            {business && (
+              <IndustryMediaCard
+                mediaLogo={businessLogo}
+                mediaTitle="Business"
+                mediaDesc={business}
+              />
+            )}
+            {domain && (
+              <IndustryMediaCard
+                mediaLogo={domainLogo}
+                mediaTitle="Solution"
+                mediaDesc={domain}
+              />
+            )}
+            {impact && (
+              <IndustryMediaCard
+                mediaLogo={impactLogo}
+                mediaTitle="Impact"
+                mediaDesc={impact}
+              />
+            )}
+          </div>
         </div>
         <div className="tile-hover-wrap">
           <div className="title-box">
@@ -80,6 +112,7 @@ const Tile = ({
           toggle={toggleSliderModal}
           isOpen={isSliderModalOpen}
           items={items}
+          projectIndex={projectIndex}
         />
       )}
     </Card>
