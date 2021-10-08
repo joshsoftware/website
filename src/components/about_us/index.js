@@ -3,7 +3,7 @@ import Image from "react-image-webp";
 import Slider from "react-slick";
 import * as routes from "../../routeConstants.js";
 import "./about-us.css";
-import CtaButton from "../../shared-components/ctaButton/ctaButton";
+// import CtaButton from "../../shared-components/ctaButton/ctaButton";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -225,7 +225,7 @@ const AboutUs = () => {
           </Slider>
         </div>
 
-        <CtaButton linkListItem={linkListItem} />
+        {/* <CtaButton linkListItem={linkListItem} /> */}
       </div>
     </section>
   );
