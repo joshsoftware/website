@@ -1,8 +1,14 @@
 import React from "react";
 import LinkButton from "../linkButton/linkButton";
+import { useHistory } from "react-router-dom";
 import "./aboutUsCard.css";
 
-const AboutUsCard = ({ link }) => {
+const AboutUsCard = (props) => {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/about-us");
+  }
   return (
     <>
       <div className="about-us-box">
@@ -15,7 +21,7 @@ const AboutUsCard = ({ link }) => {
           eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
           consectetur adipisicing elit, sed do eiusmod tempor
         </p>
-        <LinkButton buttonText="view more" />
+        <LinkButton buttonText="view more" onClick={handleClick} />
       </div>
     </>
   );
