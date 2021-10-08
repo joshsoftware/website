@@ -48,10 +48,13 @@ const DomainExpertise = (props) => {
 
 const DomainExpertiseLayout = ({ match }) => {
   const selectedDomain = match.params.domain ? match.params.domain : "health";
-  const groupedIndustryProjects = _.chunk(
-    ExpertiesJSON[match.params.domain],
-    3
-  );
+  let groupedIndustryProjects = {};
+  if (match.params.domain === "all") {
+    groupedIndustryProjects = _.chunk(Object.values(ExpertiesJSON).flat(), 3);
+  } else {
+    groupedIndustryProjects = _.chunk(ExpertiesJSON[match.params.domain], 3);
+  }
+  console.log(groupedIndustryProjects);
   return (
     <div className="josh-content">
       <section className="main-banner-section position-relative">
