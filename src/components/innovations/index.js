@@ -6,7 +6,7 @@ import * as routes from "../../routeConstants.js";
 import InnovationItem from "../../shared-components/innovationItem/innovationItem";
 import "./innovations.css";
 import MainBanner from "../../shared-components/mainBanner/mainbanner";
-import CtaButton from "../../shared-components/ctaButton/ctaButton";
+// import CtaButton from "../../shared-components/ctaButton/ctaButton";
 export default function Innovation({ productList }) {
   const linkListItem = [
     {
@@ -156,7 +156,7 @@ export default function Innovation({ productList }) {
           ))}
         </div>
 
-        <CtaButton linkListItem={linkListItem} />
+        {/* <CtaButton linkListItem={linkListItem} /> */}
       </section>
     </div>
   );
