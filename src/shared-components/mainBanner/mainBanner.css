@@ -1,0 +1,47 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.main-banner {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 11.375rem;
+  background-position: center right;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  @media (min-width: 992px) {
+    .main-banner {
+      height: 15.6875rem;
+      padding: 3rem 0;
+      background-position: center; } }
+  .main-banner.innovation {
+    background-image: url("../../assets/images/revampImages/innovations-banner@2x.jpeg"); }
+  .main-banner.technology {
+    background-image: url("../../assets/images/revampImages/technology-banner@2x.jpeg"); }
+  .main-banner.industry {
+    background-image: url("../../assets/images/revampImages/industry-banner@2x.jpeg"); }
+  .main-banner.success-story {
+    background-image: url("../../assets/images/revampImages/success-story-banner@2x.jpeg"); }
+  .main-banner p {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: #fff; }
+    @media (min-width: 992px) {
+      .main-banner p {
+        font-size: 1.25rem;
+        line-height: 1.5rem; } }
+  .main-banner .pagecaption {
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+    color: #fff; }
+    @media (min-width: 992px) {
+      .main-banner .pagecaption {
+        font-size: 4.6875rem;
+        line-height: 5.5625rem; } }

@@ -6,7 +6,7 @@ import { Route, Redirect } from "react-router-dom";
 import ProjectWork from "./projectsWork.js";
 import { ProjectData } from "./projectsData.js";
 import Tile from "../../shared-components/tile/tile.js";
-import MainBanner from "../../shared-components/mainBanner/mainbanner";
+import MainBanner from "../../shared-components/mainBanner/mainBanner";
 import CtaButton from "../../shared-components/ctaButton/ctaButton.js";
 import IndustryTypeItem from "../../shared-components/industryTypeItem/industryTypeItem.js";
 import "./technologies-new.css";
