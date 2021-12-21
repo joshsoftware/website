@@ -340,7 +340,8 @@ img {
 /* shared end */
 
 .link-item-wrap {
-  padding: rem(40px) 0 rem(80px);
+  // padding: rem(40px) 0 rem(80px);
+  padding: rem(80px) 0;
 
   .link-item-list {
     flex-direction: column;
