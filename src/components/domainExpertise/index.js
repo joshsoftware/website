@@ -4,7 +4,7 @@ import _ from "lodash/array";
 import DomainHeader from "./domainHeader.js";
 import DomainWork from "./domainWork.js";
 import ExpertiesJSON from "./experties.json";
-import MainBanner from "../../shared-components/mainBanner/mainbanner";
+import MainBanner from "../../shared-components/mainBanner/mainBanner";
 import Header from "../domainExpertise/domainHeader.js";
 import CtaButton from "../../shared-components/ctaButton/ctaButton.js";
 import * as routes from "../../routeConstants";

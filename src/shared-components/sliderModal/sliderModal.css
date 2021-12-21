@@ -34,6 +34,7 @@
     -webkit-line-clamp: unset; }
 
 .slider-modal .slick-slider {
-  width: 100%; }
+  width: 100%;
+  height: 100vh; }
   .slider-modal .slick-slider .slick-slide {
     padding: 0 1.5rem; }

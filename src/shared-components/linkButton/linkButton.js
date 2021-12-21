@@ -7,7 +7,7 @@ const LinkButton = ({ className, buttonText, link, icon, onClick }) => {
     <>
       <Button
         color="link"
-        className={`${className} cta-btn text-uppercase text-white text-center font-weight-bold`}
+        className={`${className} link-btn text-uppercase text-white text-center font-weight-bold`}
         onClick={onClick}
       >
         {buttonText}
