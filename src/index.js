@@ -8,10 +8,8 @@ import Navbar from "./components/layout/Navbar";
 import Layout from "./layout";
 import Footer from "./components/layout/Footer.js";
 import ScrollToTop from "./hooks/scrollToTop.js";
-
 import "./assets/stylesheets/main.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "./assets/stylesheets/christmas-theme.css";
 ReactGA.initialize("UA-123082738-1");
 serviceWorker.register();
 
