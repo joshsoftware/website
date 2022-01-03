@@ -6,13 +6,13 @@
 /* mixins end */
 .domain-item-wrap img {
   width: 12.5rem;
-  border-radius: 0.75rem; }
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .domain-item-wrap img {
       width: 15.25rem; } }
-  @media (min-width: 1200px) {
-    .domain-item-wrap img {
-      width: 19.5rem; } }
+  .domain-item-wrap img:hover {
+    transform: scale(1.1); }
 
 .domain-item-wrap span {
   font-weight: 500;

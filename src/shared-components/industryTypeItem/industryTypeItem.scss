@@ -4,13 +4,14 @@
   img {
     width: 12.5rem;
     border-radius: 0.75rem;
+    transition: transform 0.2s ease-in-out;
 
     @include media-breakpoint-up(md) {
       width: 15.25rem;
     }
 
-    @include media-breakpoint-up(xl) {
-      width: 19.5rem;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 

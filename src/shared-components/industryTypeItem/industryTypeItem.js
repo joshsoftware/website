@@ -28,7 +28,7 @@ const IndustryTypeItem = (props) => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4.1,
+    slidesToShow: 5.1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -39,7 +39,7 @@ const IndustryTypeItem = (props) => {
         settings: {
           arrows: false,
           centerMode: true,
-          slidesToShow: 3.1,
+          slidesToShow: 4.1,
         },
       },
       {

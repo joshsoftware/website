@@ -15,6 +15,8 @@
     .industry-type-section {
       height: 43.75rem;
       padding: 3.75rem 0 3.75rem 4.5rem; } }
+  .industry-type-section .industry-slider .domain-item-wrap {
+    margin-top: 1.5rem; }
 
 .industry-type-heading {
   font-size: 2rem;
@@ -26,7 +28,6 @@
     .industry-type-heading {
       font-size: 3.125rem;
       line-height: 3.75rem;
-      margin-bottom: 3.75rem;
       padding: 0; } }
 
 .tiles-wrapper {
