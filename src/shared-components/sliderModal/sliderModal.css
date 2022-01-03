@@ -38,3 +38,19 @@
   height: 100vh; }
   .slider-modal .slick-slider .slick-slide {
     padding: 0 1.5rem; }
+
+.slider-modal .slick-arrow::before {
+  font-family: "josh-icons";
+  font-size: 1.5rem;
+  opacity: 0.5;
+  color: #000; }
+
+.slider-modal .slick-arrow:hover::before {
+  color: #e86055;
+  opacity: 1; }
+
+.slider-modal .slick-prev::before {
+  content: "\e912"; }
+
+.slider-modal .slick-next::before {
+  content: "\e913"; }

@@ -51,4 +51,29 @@
       padding: 0 1.5rem;
     }
   }
+  .slick-arrow {
+    &::before {
+      font-family: "josh-icons";
+      font-size: 1.5rem;
+      opacity: 0.5;
+      color: $black;
+    }
+
+    &:hover {
+      &::before {
+        color: $burnt-sienna;
+        opacity: 1;
+      }
+    }
+  }
+  .slick-prev {
+    &::before {
+      content: "\e912";
+    }
+  }
+  .slick-next {
+    &::before {
+      content: "\e913";
+    }
+  }
 }
