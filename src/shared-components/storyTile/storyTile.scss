@@ -11,10 +11,10 @@
   // background: url("../../assets/images/revampImages/success-bg-mobile.svg");
   background-color: gray;
   @include media-breakpoint-up(lg) {
-    // background: url("../../assets/images/revampImages/success-bg@2x.png")
-    //   no-repeat;
-    // background-size: cover;
-    // background-position: center;
+    background: url("../../assets/images/revampImages/success-bg@2x.png")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
     flex-direction: row;
     height: 541px;
   }
@@ -24,9 +24,9 @@
 }
 
 .story-tile-item {
-  padding: 1rem;
+  // padding: 1rem;
   @include media-breakpoint-up(lg) {
-    padding: 1.5rem;
+    // padding: 1.5rem;
     flex-direction: column;
   }
   &:first-child,
@@ -49,12 +49,6 @@
       height: unset;
       max-height: unset;
     }
-    .story-tile {
-      @include media-breakpoint-up(lg) {
-        height: unset;
-        max-height: unset;
-      }
-    }
   }
 
   span {
@@ -69,7 +63,9 @@
 .story-tile {
   flex: 1;
   width: 100%;
-
+  @include media-breakpoint-up(lg) {
+    padding: 1.5rem;
+  }
   img {
     width: 2rem;
     height: 2rem;
@@ -94,6 +90,7 @@
         right: 0;
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
+        padding: 1.5rem 0 1.5rem 1.5rem;
       }
     }
   }
