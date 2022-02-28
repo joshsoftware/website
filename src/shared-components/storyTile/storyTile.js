@@ -21,7 +21,7 @@ const StoryTile = ({ storyTitle, className }) => {
         <img
           src={require("../../assets/images/revampImages/plus-icon.png")}
           alt="plus icon"
-          className="mr-3"
+          className="mr-3 mt-2"
         />
         <div>
           <span className="d-block mb-3 text-white text-uppercase font-weight-bold">
@@ -33,7 +33,9 @@ const StoryTile = ({ storyTitle, className }) => {
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore Lorem ipsum dolor sit amet…
           </p>
-          <LinkButton buttonText="view" className="story-view-btn" />
+          <div className="story-view-btn-wrap position-relative d-flex w-100">
+            <LinkButton buttonText="view" className="story-view-btn" />
+          </div>
         </div>
       </div>
     </div>
