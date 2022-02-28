@@ -16,7 +16,7 @@
     // background-size: cover;
     // background-position: center;
     flex-direction: row;
-    // height: 541px;
+    height: 541px;
   }
   background-size: cover;
   background-position: center;
@@ -68,23 +68,16 @@
 
 .story-tile {
   flex: 1;
-  &:first-child,
-  &:last-child {
-    // height: 176px;
-    // max-height: 176px;
-    @include media-breakpoint-up(lg) {
-      // flex: 0 0 302px;
-      // height: 100%;
-      // max-height: 100%;
+
+  &:hover {
+    .story-tile-hover-wrap {
+      display: block;
     }
   }
-  &:nth-child(2) {
-    // height: 236px;
-    // max-height: 236px;
-    @include media-breakpoint-up(lg) {
-      // flex: 1;
-      // height: 100%;
-      // max-height: 100%;
-    }
-  }
+}
+
+.story-tile-hover-wrap {
+  position: absolute;
+  width: 100%;
+  display: none;
 }

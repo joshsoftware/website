@@ -17,7 +17,8 @@
   flex-direction: column; }
   @media (min-width: 992px) {
     .story-tile-list {
-      flex-direction: row; } }
+      flex-direction: row;
+      height: 541px; } }
 
 .story-tile-item {
   padding: 1rem; }
@@ -54,3 +55,10 @@
 
 .story-tile {
   flex: 1; }
+  .story-tile:hover .story-tile-hover-wrap {
+    display: block; }
+
+.story-tile-hover-wrap {
+  position: absolute;
+  width: 100%;
+  display: none; }
