@@ -55,10 +55,32 @@
 
 .story-tile {
   flex: 1; }
-  .story-tile:hover .story-tile-hover-wrap {
-    display: block; }
-
-.story-tile-hover-wrap {
-  position: absolute;
-  width: 100%;
-  display: none; }
+  .story-tile img {
+    width: 2rem; }
+  .story-tile .story-tile-hover-wrap {
+    display: none; }
+    .story-tile .story-tile-hover-wrap p {
+      font-size: 0.75rem; }
+  @media (min-width: 992px) {
+    .story-tile:hover .story-tile-hover-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px); } }
+  .story-tile .link-btn::after {
+    content: "";
+    position: absolute;
+    background-color: #e86055;
+    height: 0.125rem;
+    width: 50%;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1; }
