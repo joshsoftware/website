@@ -33,11 +33,10 @@ const StoryTile = ({ storyTitle, className, storyId, storyDesc }) => {
             {storyDesc}
           </p>
           <div className="story-view-btn-wrap position-relative d-flex w-100">
-            <LinkButton
+            {/* <LinkButton
               buttonText="view"
               className="story-view-btn"
-              link={`${SUCCESS_STORIES_URL}/${storyId}`}
-            />
+            /> */}
             <Link
               className="story-view-btn"
               to={`${SUCCESS_STORIES_URL}/${storyId}`}

@@ -8,8 +8,9 @@
 }
 
 .story-tile-list {
-  // background: url("../../assets/images/revampImages/success-bg-mobile.svg");
-  background-color: gray;
+  background: url("../../assets/images/revampImages/success-bg-mobile.png");
+  background-size: cover;
+  background-position: center;
   @include media-breakpoint-up(lg) {
     background: url("../../assets/images/revampImages/success-bg@2x.png")
       no-repeat;

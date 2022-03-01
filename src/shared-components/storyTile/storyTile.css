@@ -11,7 +11,9 @@
       padding: 5rem 0; } }
 
 .story-tile-list {
-  background-color: gray;
+  background: url("../../assets/images/revampImages/success-bg-mobile.png");
+  background-size: cover;
+  background-position: center;
   background-size: cover;
   background-position: center;
   flex-direction: column; }

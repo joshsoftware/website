@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import * as routes from "../../routeConstants";
 import SuccessStoriesLayout from "./successStoriesLayout.js";
-
 const SuccessStories = (props) => {
   return (
     <>
