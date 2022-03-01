@@ -25,6 +25,23 @@
 }
 
 .story-tile-item {
+  &:not(:first-child) {
+    border-top: 0.5rem solid $white;
+    @include media-breakpoint-up(lg) {
+      border-top: unset;
+    }
+  }
+
+  &:first-child {
+    @include media-breakpoint-up(lg) {
+      border-right: 0.5rem solid $white;
+    }
+  }
+  &:last-child {
+    @include media-breakpoint-up(lg) {
+      border-left: 0.5rem solid $white;
+    }
+  }
   @include media-breakpoint-up(lg) {
     flex-direction: column;
   }
@@ -48,6 +65,16 @@
       flex: 1;
       height: unset;
       max-height: unset;
+      border-left: 0.5rem solid $white;
+      border-right: 0.5rem solid $white;
+    }
+    .story-tile {
+      &:first-child {
+        border-bottom: 0.5rem solid $white;
+        @include media-breakpoint-up(lg) {
+          border-bottom: 1rem solid $white;
+        }
+      }
     }
   }
 
@@ -63,6 +90,7 @@
 .story-tile {
   flex: 1;
   width: 100%;
+
   @include media-breakpoint-up(lg) {
     padding: 1.5rem;
   }
