@@ -47,11 +47,18 @@
   z-index: 0; }
 
 .story-features img {
-  height: 11.5rem;
-  width: 100%;
+  height: auto;
+  width: 12.625rem;
   box-shadow: -3px 0px 6px rgba(230, 230, 230, 0.745);
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  object-fit: cover; }
 
 .story-features p {
   font-size: 0.875rem;
   color: #000; }
+
+.features-details {
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .features-details {
+      flex-direction: row; } }

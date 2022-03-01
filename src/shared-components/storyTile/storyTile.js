@@ -19,10 +19,10 @@ const StoryTile = ({ storyTitle, className, storyId, storyDesc }) => {
         {storyTitle}
       </span>
 
-      <div className="story-tile-hover-wrap">
+      <div className="story-tile-hover-wrap align-items-center justify-content-center position-absolute">
         <img
-          src={require("../../assets/images/revampImages/plus-icon.png")}
-          alt="plus icon"
+          src={require("../../assets/images/revampImages/minus-icon.png")}
+          alt="minus icon"
           className="mr-3 mt-2"
         />
         <div>

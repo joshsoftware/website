@@ -9,8 +9,8 @@ const StoryFeatures = (props) => {
           {props.featureTitle}
         </span>
       </div>
-      <div className="features-details d-flex">
-        <p className="mb-0 px-4">{props.details}</p>
+      <div className="features-details d-flex align-items-start px-4">
+        <p className="mb-2 mb-lg-0 mr-0 mr-lg-4">{props.details}</p>
         <img
           src={require(`../../assets/images/successStories/${props.image}.png`)}
           alt={props.imageAlt}
