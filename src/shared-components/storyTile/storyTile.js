@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import LinkButton from "../../shared-components/linkButton/linkButton";
 import "./storyTile.css";
+import { Link } from "react-router-dom";
+import { SUCCESS_STORIES_URL } from "../../routeConstants.js";
 
-const StoryTile = ({ storyTitle, className }) => {
+const StoryTile = ({ storyTitle, className, storyId, storyDesc }) => {
   return (
     <div
       className={`story-tile d-flex align-items-center justify-content-center position-relative ${className}`}
@@ -27,14 +29,21 @@ const StoryTile = ({ storyTitle, className }) => {
           <span className="d-block mb-3 text-white text-uppercase font-weight-bold">
             {storyTitle}
           </span>
-          <p className="text-white mb-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore Lorem ipsum dolor sit amet…
+          <p className="text-white text-truncate-multi-line -four-line overflow-hidden mb-3">
+            {storyDesc}
           </p>
           <div className="story-view-btn-wrap position-relative d-flex w-100">
-            <LinkButton buttonText="view" className="story-view-btn" />
+            <LinkButton
+              buttonText="view"
+              className="story-view-btn"
+              link={`${SUCCESS_STORIES_URL}/${storyId}`}
+            />
+            <Link
+              className="story-view-btn"
+              to={`${SUCCESS_STORIES_URL}/${storyId}`}
+            >
+              View
+            </Link>
           </div>
         </div>
       </div>

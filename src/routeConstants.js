@@ -4,6 +4,7 @@ export const CONTACT_US_URL = "/contact_us";
 export const SERVICES_URL = "/services";
 export const TECHNOLOGIES_URL = "/technologies";
 export const SUCCESS_STORIES_URL = "/success_stories";
+export const SUCCESS_STORIES_DETAILS_URL = "/success_stories/:storyId";
 export const DOMAIN_EXPERTISE = "/domain_expertise";
 export const TESTIMONIALS = "/testimonials";
 export const INNOVATIONS = "/innovations";

@@ -10,6 +10,9 @@ const ContactUs = lazy(() => import("./components/contact_us"));
 const Services = lazy(() => import("./components/services"));
 const Technologies = lazy(() => import("./components/technologies"));
 const SuccessStory = lazy(() => import("./components/successStories"));
+const SuccessStoryDetails = lazy(() =>
+  import("./components/successStories/SuccessStoryDetails")
+);
 const DomainExpertise = lazy(() => import("./components/domainExpertise"));
 const TestimonialsList = lazy(() =>
   import("./components/testimonials/index.js")
@@ -33,7 +36,16 @@ const Layout = ({ location }) => {
         <Route exact path={routes.CONTACT_US_URL} component={ContactUs} />
         <Route exact path={routes.SERVICES_URL} component={Services} />
         <Route path={routes.TECHNOLOGIES_URL} component={Technologies} />
-        <Route path={routes.SUCCESS_STORIES_URL} component={SuccessStory} />
+        <Route
+          exact
+          path={routes.SUCCESS_STORIES_URL}
+          component={SuccessStory}
+        />
+        <Route
+          exact
+          path={routes.SUCCESS_STORIES_DETAILS_URL}
+          component={SuccessStoryDetails}
+        />
         <Route path={routes.DOMAIN_EXPERTISE} component={DomainExpertise} />
         <Route exact path={routes.TESTIMONIALS} component={TestimonialsList} />
         <Route exact path={routes.INNOVATIONS} component={Innovation} />
