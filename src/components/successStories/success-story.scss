@@ -73,3 +73,20 @@
     flex-direction: row;
   }
 }
+
+.pagination-wrap {
+  padding: 2.5rem 0;
+  i {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #cf4338;
+    vertical-align: middle;
+  }
+
+  span {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 7.2px;
+    color: #8d9091;
+  }
+}

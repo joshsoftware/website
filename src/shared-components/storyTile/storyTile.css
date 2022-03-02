@@ -14,6 +14,7 @@
   background: url("../../assets/images/revampImages/success-bg-mobile.png");
   background-size: cover;
   background-position: center;
+  border-radius: 0.75rem;
   background-size: cover;
   background-position: center;
   flex-direction: column; }
@@ -23,7 +24,8 @@
       background-size: cover;
       background-position: center;
       flex-direction: row;
-      height: 541px; } }
+      height: 541px;
+      border-radius: 0.75rem; } }
 
 .story-tile-item:not(:first-child) {
   border-top: 0.5rem solid #fff; }

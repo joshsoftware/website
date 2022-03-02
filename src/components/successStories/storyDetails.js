@@ -9,6 +9,7 @@ import stories from "./stories.js";
 import { Col, Row } from "reactstrap";
 import StorySummary from "./storySummary";
 import StoryFeatures from "./storyFeatures";
+import IconWithLink from "../shared/iconWithLink";
 
 const StoryDetails = (props) => {
   const { match } = props;
@@ -95,6 +96,13 @@ const StoryDetails = (props) => {
             })}
           </Col>
         </Row>
+        <div className="pagination-wrap d-flex align-items-center justify-content-between">
+          <IconWithLink iconClass="icon-arrow-left" />
+          <div>
+            <span className="mr-3">N E X T</span>
+            <IconWithLink iconClass="icon-arrow-right" />
+          </div>
+        </div>
       </div>
     </div>
   );

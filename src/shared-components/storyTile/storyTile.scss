@@ -11,6 +11,7 @@
   background: url("../../assets/images/revampImages/success-bg-mobile.png");
   background-size: cover;
   background-position: center;
+  border-radius: 0.75rem;
   @include media-breakpoint-up(lg) {
     background: url("../../assets/images/revampImages/success-bg@2x.png")
       no-repeat;
@@ -18,6 +19,7 @@
     background-position: center;
     flex-direction: row;
     height: 541px;
+    border-radius: 0.75rem;
   }
   background-size: cover;
   background-position: center;
