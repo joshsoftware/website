@@ -66,12 +66,18 @@
 .pagination-wrap {
   padding: 2.5rem 0; }
   .pagination-wrap i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #cf4338;
     vertical-align: middle; }
+    @media (min-width: 992px) {
+      .pagination-wrap i {
+        font-size: 2.5rem; } }
   .pagination-wrap span {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 7.2px;
     color: #8d9091; }
+    @media (min-width: 992px) {
+      .pagination-wrap span {
+        font-size: 1.125rem; } }
