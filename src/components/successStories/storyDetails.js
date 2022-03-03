@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Media from "react-media";
-
+import * as routes from "../../routeConstants";
 import { H3Text } from "./successStoriesStyledComponents";
 import TextImage from "./textImage";
 import ImageText from "./imageText";
@@ -10,12 +10,17 @@ import { Col, Row } from "reactstrap";
 import StorySummary from "./storySummary";
 import StoryFeatures from "./storyFeatures";
 import IconWithLink from "../shared/iconWithLink";
+import { Link } from "react-router-dom";
 
 const StoryDetails = (props) => {
   const { match } = props;
-  console.log(match.params);
   const selectedStory = match.params.storyId ? match.params.storyId : "ffd";
   const story = stories[selectedStory];
+  const [storyIdIndex, setStoryIdIndex] = useState(0);
+  const handleClick = () => {
+    setStoryIdIndex(storyIdIndex + 1);
+  };
+
   return (
     // <Media query="(max-width: 900px)" key={story.title}>
     //   {(matches) =>
@@ -100,12 +105,19 @@ const StoryDetails = (props) => {
           <IconWithLink iconClass="icon-arrow-left" />
           <div>
             <span className="mr-3">N E X T</span>
-            <IconWithLink iconClass="icon-arrow-right" />
+            <IconWithLink
+              iconClass="icon-arrow-right"
+              to={`${routes.SUCCESS_STORIES_URL}/${props.storyIds[storyIdIndex].slug}`}
+              onClick={handleClick}
+            />
           </div>
         </div>
       </div>
     </div>
   );
+};
+StoryDetails.defaultProps = {
+  storyIds: [{ slug: "ffd" }, { slug: "brandscope" }, { slug: "star" }],
 };
 
 export default StoryDetails;
