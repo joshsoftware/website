@@ -52,9 +52,7 @@ const ContactUs = () => {
               />
               <h6 className="ofc-heading font-weight-bold mb-2">US Office</h6>
               <h3 className="mb-3">JOSH SOFTWARE INC.</h3>
-              <p className="mb-2">
-                7300 Lone Star Drive, Suite C200, Plano, TX 75024
-              </p>
+              <p className="mb-2">1999 BRYAN ST STE 900 DALLAS, TX 75201</p>
               <a href="tel:+1-469-300-1564" className="font-weight-bold">
                 +1 (469) 300-1564
               </a>
