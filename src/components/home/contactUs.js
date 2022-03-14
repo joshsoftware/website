@@ -1,33 +1,73 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import {isWebpSupported} from 'react-image-webp/dist/utils';
+import { isWebpSupported } from "react-image-webp/dist/utils";
 
 import { CONTACT_US_URL } from "../../routeConstants.js";
-
+import ContactUsForm from "../contact_us/contactUsForm.js";
+import socialMedia from "../../assets/images/revampImages/social-media.png";
+import socialMediaHover from "../../assets/images/revampImages/social-media-hover@2x.png";
 const ContactUs = () => {
   return (
-    <section id="contactSlide" className={`section-contact ${isWebpSupported() ? 'webp-bg-contact' : 'no-webp-bg-contact'}`}>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 col-md-12">
-            <div className="contact-wrap">
-              <p>Looking for an <br />expert technical partner?</p>
-              <div className="d-none d-lg-block">
-                <Link to={CONTACT_US_URL} className="btn btn-gray">Contact Us</Link>
+    <>
+      {/* <section
+        id="contactSlide"
+        className={`section-contact ${
+          isWebpSupported() ? "webp-bg-contact" : "no-webp-bg-contact"
+        }`}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12">
+              <div className="contact-wrap">
+                <p>
+                  Looking for an <br />
+                  expert technical partner?
+                </p>
+                <div className="d-none d-lg-block">
+                  <Link to={CONTACT_US_URL} className="btn btn-gray">
+                    Contact Us
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className={`contact-banner ${isWebpSupported() ? 'mb-webp-bg-contact' : 'mb-no-webp-bg-contact'}`}></div>
-      <div className="contact-number">
-        <div className="container">
-          <h6>Call Us</h6>
-          <p><i className="align-middle icon-phone"></i>+91-7887889902</p>
+        <div
+          className={`contact-banner ${
+            isWebpSupported() ? "mb-webp-bg-contact" : "mb-no-webp-bg-contact"
+          }`}
+        ></div>
+        <div className="contact-number">
+          <div className="container">
+            <h6>Call Us</h6>
+            <p>
+              <i className="align-middle icon-phone"></i>+91-7887889902
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-  )
-}
+      </section> */}
+      <section className="contact-section">
+        <div className="container">
+          <h1 className="font-weight-bold mb-4">Get In Touch</h1>
+          <div className="d-flex align-content-center justify-content-between flex-column flex-lg-row">
+            <ContactUsForm />
+            <div className="social-media-wrap">
+              <img
+                src={socialMedia}
+                alt="social media"
+                className="social-media-icon"
+              />
+              <img
+                src={socialMediaHover}
+                alt="socail media hover"
+                className="social-media-hover-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-export default ContactUs
+export default ContactUs;

@@ -1202,3 +1202,63 @@
     }
   }
 }
+
+//Contact us section
+.contact-section {
+  background-color: #f0f0f0;
+  padding: 3rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 5rem 0;
+  }
+
+  .contact-form-wrap {
+    flex: 1;
+  }
+
+  h1 {
+    color: #1c1c1c;
+  }
+
+  .form-floating,
+  .form-select-floating {
+    label,
+    > .form-control {
+      color: #1c1c1c !important;
+    }
+  }
+
+  .form-floating,
+  .form-select-floating {
+    > label {
+      font-size: 1.25rem;
+    }
+  }
+
+  .social-media-wrap {
+    flex: 0 0 18.5625rem;
+
+    img {
+      width: 18.25rem;
+      height: auto;
+      margin: 0 auto;
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
+    }
+    .social-media-icon {
+      display: block;
+    }
+    .social-media-hover-icon {
+      display: none;
+    }
+
+    &:hover {
+      .social-media-icon {
+        display: none;
+      }
+      .social-media-hover-icon {
+        display: block;
+      }
+    }
+  }
+}
