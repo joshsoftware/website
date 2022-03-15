@@ -9,9 +9,9 @@ const InnovationsNew = (props) => {
 
   return (
     <Fragment>
-      {/* <section className="section-home"> */}
-      {/* <div className="container"> */}
-      {/* <div className="innovation-section text-center">
+      <section className="section-home">
+        {/* <div className="container"> */}
+        <div className="innovation-section text-center">
           <Heading1>Innovations</Heading1>
           <div className="innovations-wrap">
             <ul className="innovation-buttons">
@@ -29,30 +29,8 @@ const InnovationsNew = (props) => {
                 );
               })}
             </ul>
-          </div> */}
-      {/* </div> */}
-      {/* </div>
-      </section> */}
-      <section className="section-image-wrap">
-        <div className="container">
-          <div className="content-details d-flex position-relative">
-            <div className="content-col">
-              <h1 className="font-weight-bold text-white mb-4">
-                Our Innovations
-              </h1>
-              <p className="text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                ut labore sed do eiusmod tempor incididunt ut labore sed do
-                eiusmod tempor incididunt ut labore
-              </p>
-              <LinkButton buttonText="see all" type="submit" />
-            </div>
-            <div className="image-wrapper position-absolute">
-              <img src={innovationImg} alt="innovation img" />
-            </div>
           </div>
+          {/* </div> */}
         </div>
       </section>
     </Fragment>
