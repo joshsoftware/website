@@ -1,0 +1,24 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.image-card-wrap {
+  background: transparent linear-gradient(287deg, #020449 0%, #134b6c 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.392); }
+  .image-card-wrap .content-details {
+    padding: 5rem 0 0;
+    height: 28rem; }
+    .image-card-wrap .content-details .content-col {
+      flex: 0 0 50%;
+      padding-right: 2.5rem; }
+  .image-card-wrap .image-wrapper {
+    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.098);
+    border-radius: 0.75rem;
+    right: 0;
+    bottom: -3.5rem; }
+    .image-card-wrap .image-wrapper img {
+      width: 36.625rem;
+      height: auto;
+      border-radius: 0.75rem; }

@@ -1263,33 +1263,6 @@
   }
 }
 
-//Innovation scss
-.section-image-wrap {
-  background: transparent linear-gradient(287deg, #020449 0%, #134b6c 100%) 0%
-    0% no-repeat padding-box;
-  box-shadow: 6px 8px 16px rgba($black, 0.392);
-
-  .content-details {
-    padding: 5rem 0 0;
-    height: 28rem;
-    .content-col {
-      flex: 0 0 50%;
-      padding-right: 2.5rem;
-    }
-  }
-
-  .image-wrapper {
-    box-shadow: 6px 8px 16px rgba($black, 0.098);
-    border-radius: 0.75rem;
-    right: 0;
-    bottom: -3.5rem;
-    img {
-      width: 36.625rem;
-      height: auto;
-    }
-  }
-}
-
 //client slider
 
 .client-box {
@@ -1406,5 +1379,13 @@
     p {
       font-size: 1rem;
     }
+  }
+}
+
+//About Us
+.about-section {
+  padding: 5rem 0;
+  h1 {
+    color: #1c1c1c;
   }
 }
