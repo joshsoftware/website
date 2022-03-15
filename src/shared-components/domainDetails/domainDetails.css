@@ -1,0 +1,111 @@
+/* variables */
+/* variables end */
+/* mixins */
+/* rem unit mixin */
+/* flex Sass mixin */
+/* mixins end */
+.domain-details-image {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  border-radius: 0.75rem;
+  width: 19rem;
+  height: auto;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 992px) {
+    .domain-details-image {
+      width: 20.875rem;
+      margin-bottom: 3rem; } }
+  .domain-details-image > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem; }
+
+.domain-details-card {
+  background: url("../../assets/images/revampImages/blue-bg.png") no-repeat;
+  background-size: cover;
+  background-size: 18rem;
+  background-position: left;
+  margin: 0 1.5rem; }
+  @media (min-width: 992px) {
+    .domain-details-card {
+      width: 27.125rem;
+      max-width: 27.125rem;
+      background-size: 23.25rem;
+      background-position: top center;
+      margin: 0; } }
+  @media (min-width: 992px) {
+    .domain-details-card.box1 {
+      grid-column: 2/2;
+      grid-row: 1/ 3; } }
+  @media (min-width: 992px) {
+    .domain-details-card.box2 {
+      grid-row: 2/4;
+      justify-self: end; } }
+  @media (min-width: 992px) {
+    .domain-details-card.box3 {
+      grid-row: 3/5; } }
+  @media (min-width: 992px) {
+    .domain-details-card.box4 {
+      grid-row: 4/6;
+      justify-self: end; } }
+  @media (min-width: 992px) {
+    .domain-details-card.box5 {
+      grid-row: 5/7; } }
+  @media (min-width: 992px) {
+    .domain-details-card.box6 {
+      grid-row: 6/8;
+      justify-self: end; } }
+  .domain-details-card h4 {
+    font-size: 2rem;
+    color: #333333; }
+    @media (min-width: 992px) {
+      .domain-details-card h4 {
+        font-size: 3rem; } }
+  .domain-details-card p {
+    font-size: 0.75rem;
+    color: #1c1c1c;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cf4338; }
+    @media (min-width: 992px) {
+      .domain-details-card p {
+        font-size: 0.75rem; } }
+
+.domain-card {
+  display: grid;
+  grid-template-columns: 1fr; }
+  @media (min-width: 992px) {
+    .domain-card {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, minmax(100px, max-content));
+      grid-gap: 4.5rem; } }
+  .domain-card li {
+    margin-bottom: 3rem; }
+    @media (min-width: 992px) {
+      .domain-card li {
+        margin-bottom: 0; } }
+    @media (min-width: 992px) {
+      .domain-card li:nth-child(-n + 2) {
+        margin-bottom: 3.5rem; } }
+    @media (min-width: 992px) {
+      .domain-card li:not(:nth-child(-n + 2)) {
+        margin: 3.5rem 0; } }
+  .domain-card .box {
+    background-color: #fff;
+    border-radius: 0 2rem 2rem 0;
+    padding: 1rem 1rem 1rem 2.5rem;
+    margin-right: 1.5rem; }
+    @media (min-width: 992px) {
+      .domain-card .box {
+        padding: 1.5rem 1.5rem 1.5rem 4.5rem; } }
+    .domain-card .box h1,
+    .domain-card .box p {
+      color: #1c1c1c; }
+    .domain-card .box h1 {
+      font-size: 2rem; }
+      @media (min-width: 992px) {
+        .domain-card .box h1 {
+          font-size: 3.125rem; } }
+    .domain-card .box p {
+      font-size: 0.75rem; }
+      @media (min-width: 992px) {
+        .domain-card .box p {
+          font-size: 1rem; } }
