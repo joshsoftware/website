@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 
 import { useOnClickedOutside } from "../../hooks/useOnClickedOutside.js";
 
-const NavDropdown = props => {
+const NavDropdown = (props) => {
   const [isOpen, toggle] = useState(false);
   const { title, items, closeSidebar } = props;
 
@@ -19,7 +19,7 @@ const NavDropdown = props => {
     <div className={`dropdown ${isOpen ? "show" : ""}`} ref={ref}>
       <a
         href="#company"
-        className="nav-item nav-link dropdown-toggle mb-10px"
+        className="nav-item nav-link dropdown-toggle text-uppercase"
         id="companyDropdownMenu"
         data-toggle="dropdown"
         aria-haspopup="true"
@@ -29,19 +29,25 @@ const NavDropdown = props => {
         {title}
       </a>
       <div
-        className={`dropdown-menu ${isOpen ? "show" : ""}`}
+        className={`dropdown-menu dropdown-menu-lg-right border-0 m-0 ${
+          isOpen ? "show" : ""
+        }`}
         aria-labelledby="companyDropdownMenu"
         ref={ref}
       >
-        {items.map(item => {
+        {items.map((item) => {
           return item.otherDomain ? (
-            <a href={item.url} className="dropdown-item" key={item.id}>
+            <a
+              href={item.url}
+              className="dropdown-item text-uppercase"
+              key={item.id}
+            >
               {item.title}
             </a>
           ) : (
             <Link
               to={item.url}
-              className="dropdown-item"
+              className="dropdown-item text-uppercase"
               key={item.id}
               onClick={toggleNavigations}
             >

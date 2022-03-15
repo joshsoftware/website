@@ -8,24 +8,24 @@ import * as routes from "../../routeConstants.js";
 
 const Component = (props) => {
   const [isOpenSidebar, toggleSidebar] = useState(false);
-  const { menues } = props;
+  const { menues, socialIcons } = props;
 
   const ref = useRef();
 
   return (
-    <header className="josh-header fixed-top">
+    <header className="header-josh fixed-top bg-white navbar-light d-flex align-items-center">
       <div className="container">
-        <nav className="navbar navbar-expand-lg josh-navbar">
+        <nav className="navbar navbar-expand-lg">
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="Josh Software" />
           </Link>
           <button
-            className="navbar-toggler p-0 border-0"
+            className="navbar-toggler border-0"
             type="button"
             onClick={() => toggleSidebar(!isOpenSidebar)}
             data-toggle="offcanvas"
           >
-            <i className="icon-bars"></i>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className={`navbar-collapse offcanvas-collapse ${
@@ -34,7 +34,17 @@ const Component = (props) => {
             id="joshOffcanvasNavbar"
             ref={ref}
           >
-            <div className="navbar-nav ml-auto">
+            <div className="mobile-sidebar-header d-flex justify-content-between align-items-center">
+              <button
+                className="navbar-toggler border-0"
+                type="button"
+                onClick={() => toggleSidebar(!isOpenSidebar)}
+                data-toggle="offcanvas"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <ul className="navbar-nav mr-auto align-items-lg-center">
               {menues.map((menu) => {
                 return menu.type === "dropdown" ? (
                   <NavDropdown
@@ -50,8 +60,28 @@ const Component = (props) => {
                   />
                 );
               })}
-            </div>
+            </ul>
           </div>
+          <ul className="social-media-link-wrap list-unstyled pl-0 mb-0 d-flex">
+            {socialIcons.map((socialItems, i) => {
+              return (
+                <li>
+                  <a
+                    className="fb-icon"
+                    href={socialItems.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={require(`../../assets/images/revampImages/${socialItems.icon}`)}
+                      alt="Facebook Icon"
+                      className="social-media-icon"
+                    />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </nav>
       </div>
     </header>
@@ -109,6 +139,11 @@ Component.defaultProps = {
       type: "dropdown",
     },
     {
+      id: 6,
+      title: "careers",
+      url: "https://careers.joshsoftware.com/",
+    },
+    {
       id: 7,
       title: "COMPANY",
       items: [
@@ -128,12 +163,6 @@ Component.defaultProps = {
           url: routes.INNOVATIONS,
         },
         {
-          id: 4,
-          title: "Career",
-          url: "http://careers.joshsoftware.com/",
-          otherDomain: true,
-        },
-        {
           id: 6,
           title: "Contact Us",
           url: routes.CONTACT_US_URL,
@@ -145,6 +174,25 @@ Component.defaultProps = {
         },
       ],
       type: "dropdown",
+    },
+  ],
+
+  socialIcons: [
+    {
+      icon: "instagram.png",
+      url: "https://facebook.com/joshsoftware",
+    },
+    {
+      icon: "twitter.png",
+      url: "https://twitter.com/joshsoftware",
+    },
+    {
+      icon: "linkedin.png",
+      url: "http://www.linkedin.com/company/josh-software-private-limited",
+    },
+    {
+      icon: "facebook.png",
+      url: "https://facebook.com/joshsoftware",
     },
   ],
 };

@@ -9,13 +9,16 @@ body {
 }
 
 @include media-breakpoint-down(md) {
+  .mobile-sidebar-header {
+    background-color: #e86055;
+    padding: 0.5rem 0;
+  }
   .offcanvas-collapse {
     position: fixed;
-    top: rem(54px); /* Height of navbar */
+    top: 0;
     bottom: 0;
     left: 100%;
     width: 100%;
-    padding: rem(20px 15px);
     overflow-y: auto;
     visibility: hidden;
     background-color: $white;
@@ -35,8 +38,9 @@ body {
 @include media-breakpoint-down(sm) {
   .offcanvas-collapse {
     &.open {
-      left: 18%;
-      width: 82%;
+      left: unset;
+      right: 0;
+      width: 70%;
       visibility: visible;
     }
   }
