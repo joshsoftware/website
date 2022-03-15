@@ -1,18 +1,19 @@
 /* icons */
 @font-face {
-  font-family: 'josh-icons';
-  src: url('/fonts/josh-icons.eot?3loxio');
-  src: url('/fonts/josh-icons.eot?3loxio#iefix') format('embedded-opentype'),
-  url('/fonts/josh-icons.ttf?3loxio') format('truetype'),
-  url('/fonts/josh-icons.woff?3loxio') format('woff'),
-  url('/fonts/josh-icons.svg?3loxio#josh-icons') format('svg');
+  font-family: "josh-icons";
+  src: url("/fonts/josh-icons.eot?3loxio");
+  src: url("/fonts/josh-icons.eot?3loxio#iefix") format("embedded-opentype"),
+    url("/fonts/josh-icons.ttf?3loxio") format("truetype"),
+    url("/fonts/josh-icons.woff?3loxio") format("woff"),
+    url("/fonts/josh-icons.svg?3loxio#josh-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'josh-icons' !important;
+  font-family: "josh-icons" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -97,4 +98,10 @@
   content: "\e911";
 }
 
+.icon-close:before {
+  content: "\e912";
+}
+.icon-menu:before {
+  content: "\e913";
+}
 /* icons end */
