@@ -20,12 +20,12 @@ const Component = (props) => {
             <img src={logo} alt="Josh Software" />
           </Link>
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 toggler-header"
             type="button"
             onClick={() => toggleSidebar(!isOpenSidebar)}
             data-toggle="offcanvas"
           >
-            <span className="navbar-toggler-icon"></span>
+            <i className="icon-menu" />
           </button>
           <div
             className={`navbar-collapse offcanvas-collapse ${
@@ -36,12 +36,19 @@ const Component = (props) => {
           >
             <div className="mobile-sidebar-header d-flex justify-content-between align-items-center">
               <button
-                className="navbar-toggler border-0"
+                className="bg-transparent border-0 py-0 px-2"
+                onClick={() => toggleSidebar(!isOpenSidebar)}
+                data-toggle="offcanvas"
+              >
+                <i className="icon-close" />
+              </button>
+              <button
+                className="navbar-toggler border-0 py-0 px-2"
                 type="button"
                 onClick={() => toggleSidebar(!isOpenSidebar)}
                 data-toggle="offcanvas"
               >
-                <span className="navbar-toggler-icon"></span>
+                <i className="icon-menu" />
               </button>
             </div>
             <ul className="navbar-nav mr-auto align-items-lg-center">

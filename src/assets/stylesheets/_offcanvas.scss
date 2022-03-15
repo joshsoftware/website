@@ -11,7 +11,11 @@ body {
 @include media-breakpoint-down(md) {
   .mobile-sidebar-header {
     background-color: #e86055;
-    padding: 0.5rem 0;
+    padding: 1rem 0.25rem;
+
+    i {
+      color: $white;
+    }
   }
   .offcanvas-collapse {
     position: fixed;
