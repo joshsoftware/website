@@ -1262,3 +1262,149 @@
     }
   }
 }
+
+//Innovation scss
+.section-image-wrap {
+  background: transparent linear-gradient(287deg, #020449 0%, #134b6c 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 6px 8px 16px rgba($black, 0.392);
+
+  .content-details {
+    padding: 5rem 0 0;
+    height: 28rem;
+    .content-col {
+      flex: 0 0 50%;
+      padding-right: 2.5rem;
+    }
+  }
+
+  .image-wrapper {
+    box-shadow: 6px 8px 16px rgba($black, 0.098);
+    border-radius: 0.75rem;
+    right: 0;
+    bottom: -3.5rem;
+    img {
+      width: 36.625rem;
+      height: auto;
+    }
+  }
+}
+
+//client slider
+
+.client-box {
+  box-shadow: 0px 0px 12px rgba($black, 0.063);
+  border-radius: 0.5rem;
+  width: 8.125rem;
+  height: 6.25rem;
+  padding: 0.5rem;
+  @include media-breakpoint-up(lg) {
+    width: 8.0625rem;
+    height: 6.75rem;
+  }
+  span {
+    font-size: 1.25rem;
+    color: #1c1c1c;
+  }
+
+  &.client-category {
+    border-radius: 0 0.75rem 0.75rem 0;
+    width: 10.75rem;
+    height: 10.75rem;
+    box-shadow: 6px 0px 10px #1270a817;
+
+    &.insurance-category {
+      border-left: 0.25rem solid #ffaf1d;
+    }
+
+    &.sports-category {
+      border-left: 0.25rem solid #03a8d0;
+    }
+
+    &.video-category {
+      border-left: 0.25rem solid #93ae00;
+    }
+  }
+}
+
+.client-section {
+  padding: 5rem 0;
+  h1 {
+    font-size: 2rem;
+    color: #1c1c1c;
+    @include media-breakpoint-up(lg) {
+      font-size: 3.125rem;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-slide {
+    padding: 0 1rem;
+  }
+}
+
+//testimonial
+.section-testimonial {
+  padding: 5rem 0;
+  h1 {
+    color: #1c1c1c;
+  }
+}
+
+.testimonial-slider {
+  background-color: $white;
+  box-shadow: 6px 0px 10px rgba(18, 112, 168, 0.09);
+  border-radius: 0.75rem;
+
+  .slick-list {
+    margin: 0 2.5rem;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-dots {
+    bottom: 1.5rem;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-wrap {
+    width: 7.8125rem;
+    height: 7.8125rem;
+    border-radius: 50%;
+    border: 1px solid red;
+
+    > img {
+      width: 100%;
+      height: auto;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+    }
+    h6 {
+      font-size: 0.875rem;
+    }
+    h5,
+    h6,
+    p {
+      color: #333333;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

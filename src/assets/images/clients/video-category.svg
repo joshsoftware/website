@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.457" height="19.397" viewBox="0 0 24.457 19.397">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.003" x2="0.5" y2="0.981" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#7598b9"/>
+      <stop offset="0.406" stop-color="#a15594"/>
+      <stop offset="0.808" stop-color="#ca1873"/>
+      <stop offset="1" stop-color="#db0066"/>
+    </linearGradient>
+  </defs>
+  <path id="video-player" d="M24.036,0H.422A.422.422,0,0,0,0,.422V18.975a.421.421,0,0,0,.422.421H24.036a.422.422,0,0,0,.422-.421V.422A.422.422,0,0,0,24.036,0ZM4.217,18.554H.842V14.759H4.217Zm0-4.638H.842V10.121H4.217Zm0-4.638H.842V5.482H4.217Zm0-4.639H.842V.844H4.217Zm11.19,5.417-4.638,2.952a.421.421,0,0,1-.648-.356v-5.9a.422.422,0,0,1,.649-.356l4.639,2.952a.422.422,0,0,1,.129.583.417.417,0,0,1-.129.13Zm8.207,8.5H20.239V14.759h3.375Zm0-4.638H20.239V10.121h3.375Zm0-4.638H20.239V5.482h3.375Zm0-4.639H20.239V.844h3.375Z" fill="url(#linear-gradient)"/>
+</svg>

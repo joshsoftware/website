@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import DefaultButton from "../../shared-components/defaultButton/defaultButton.js";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -97,29 +98,65 @@ export default class SimpleSlider extends Component {
       },
     ];
     return (
-      <section
-        id="clientsSlide"
-        className="section-home d-flex align-items-center"
-      >
+      // <section
+      //   id="clientsSlide"
+      //   className="section-home d-flex align-items-center"
+      // >
+      //   <div className="container">
+      //     <div className="homepage-slider">
+      //       <Heading1>Here’s what they are saying</Heading1>
+      //       <Slider {...settings}>
+      //         {testimonialData.map((slide, i) => (
+      //           <div
+      //             key={i}
+      //             className="slider-item d-flex align-items-center justify-content-center flex-column text-center"
+      //           >
+      //             <h3>{slide.clientName}</h3>
+      //             <p className="mb-2 text-truncate-multi-line overflow-hidden">
+      //               {slide.description}
+      //             </p>
+      //             <h6>{slide.designation}</h6>
+      //             <Link to="/testimonials" className="read-more">
+      //               <Button className="btn btn-outline-danger my-2">
+      //                 Read More
+      //               </Button>
+      //             </Link>
+      //           </div>
+      //         ))}
+      //       </Slider>
+      //     </div>
+      //   </div>
+      // </section>
+      <section className="section-testimonial d-flex align-items-center justify-content-center flex-column">
         <div className="container">
-          <div className="homepage-slider">
-            <Heading1>Here’s what they are saying</Heading1>
-            <Slider {...settings}>
+          <div>
+            <h1 className="font-weight-bold text-center">Testimonials</h1>
+            <DefaultButton
+              buttonText="see all"
+              link="/testimonials"
+              className="d-flex justify-content-center"
+            />
+            <Slider {...settings} className="testimonial-slider my-5 pt-4 pb-5">
               {testimonialData.map((slide, i) => (
                 <div
                   key={i}
-                  className="slider-item d-flex align-items-center justify-content-center flex-column text-center"
+                  className="slider-item d-flex align-items-center justify-content-center"
                 >
-                  <h3>{slide.clientName}</h3>
-                  <p className="mb-2 text-truncate-multi-line overflow-hidden">
-                    {slide.description}
-                  </p>
-                  <h6>{slide.designation}</h6>
-                  <Link to="/testimonials" className="read-more">
-                    <Button className="btn btn-outline-danger my-2">
-                      Read More
-                    </Button>
-                  </Link>
+                  <div className="text-center">
+                    <div className="profile-wrap mb-4">
+                      <img src="" alt="profile Pic" />
+                    </div>
+                    <h5 className="font-weight-bold mb-2">
+                      {slide.clientName}
+                    </h5>
+                    <h6>{slide.designation}</h6>
+                  </div>
+                  <div className="px-4">
+                    <p className="mb-0 text-truncate-multi-line overflow-hidden">
+                      {slide.description}
+                    </p>
+                    <Link to="/testimonials">see more...</Link>
+                  </div>
                 </div>
               ))}
             </Slider>
