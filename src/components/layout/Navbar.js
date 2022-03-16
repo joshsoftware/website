@@ -36,7 +36,7 @@ const Component = (props) => {
           >
             <div className="mobile-sidebar-header d-flex justify-content-between align-items-center">
               <button
-                className="bg-transparent border-0 py-0 px-2"
+                className="bg-transparent border-0 py-0 px-2 d-block d-lg-none"
                 onClick={() => toggleSidebar(!isOpenSidebar)}
                 data-toggle="offcanvas"
               >
