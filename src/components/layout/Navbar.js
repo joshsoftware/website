@@ -130,7 +130,7 @@ Component.defaultProps = {
         {
           id: 4,
           title: "Career",
-          url: "http://careers.joshsoftware.com/",
+          url: "https://joshsoftware.careers/",
           otherDomain: true,
         },
         {
