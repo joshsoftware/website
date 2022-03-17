@@ -1549,13 +1549,15 @@
 //What we do section
 .section-what-we-do {
   background-color: #f7f7f7;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0;
   @include media-breakpoint-up(lg) {
-    padding: 4.5rem 0;
+    padding: 4.5rem 0 0;
   }
   .domain-card {
-    background: url("../images/revampImages/pattern-bg.png") no-repeat;
-    background-size: contain;
-    background-position: left bottom;
+    @include media-breakpoint-up(lg) {
+      background: url("../images/revampImages/pattern-bg.png") no-repeat;
+      background-size: 60%;
+      background-position: left bottom -1rem;
+    }
   }
 }

@@ -108,12 +108,6 @@
         margin: 3.5rem 0;
       }
     }
-    &:last-child {
-      margin-bottom: 0;
-      @include media-breakpoint-up(lg) {
-        margin: 3.5rem 0 0;
-      }
-    }
   }
   .box {
     background-color: $white;

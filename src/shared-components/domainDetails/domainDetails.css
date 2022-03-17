@@ -88,11 +88,6 @@
     @media (min-width: 992px) {
       .domain-card li:not(:nth-child(-n + 2)) {
         margin: 3.5rem 0; } }
-    .domain-card li:last-child {
-      margin-bottom: 0; }
-      @media (min-width: 992px) {
-        .domain-card li:last-child {
-          margin: 3.5rem 0 0; } }
   .domain-card .box {
     background-color: #fff;
     border-radius: 0 2rem 2rem 0;
