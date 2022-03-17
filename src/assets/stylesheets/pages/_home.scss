@@ -1549,6 +1549,10 @@
 //What we do section
 .section-what-we-do {
   background-color: #f7f7f7;
+  padding: 2.5rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 4.5rem 0;
+  }
   .domain-card {
     background: url("../images/revampImages/pattern-bg.png") no-repeat;
     background-size: contain;

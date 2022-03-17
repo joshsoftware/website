@@ -108,6 +108,12 @@
         margin: 3.5rem 0;
       }
     }
+    &:last-child {
+      margin-bottom: 0;
+      @include media-breakpoint-up(lg) {
+        margin: 3.5rem 0 0;
+      }
+    }
   }
   .box {
     background-color: $white;
@@ -118,16 +124,8 @@
       padding: 1.5rem 1.5rem 1.5rem 4.5rem;
     }
 
-    h1,
     p {
       color: #1c1c1c;
-    }
-
-    h1 {
-      font-size: 2rem;
-      @include media-breakpoint-up(lg) {
-        font-size: 3.125rem;
-      }
     }
 
     p {

@@ -407,3 +407,12 @@ img {
     }
   }
 }
+
+//Homepage site heading
+.site-heading {
+  font-size: 2rem;
+  color: $gray-11;
+  @include media-breakpoint-up(lg) {
+    font-size: 3.125rem;
+  }
+}

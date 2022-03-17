@@ -88,6 +88,11 @@
     @media (min-width: 992px) {
       .domain-card li:not(:nth-child(-n + 2)) {
         margin: 3.5rem 0; } }
+    .domain-card li:last-child {
+      margin-bottom: 0; }
+      @media (min-width: 992px) {
+        .domain-card li:last-child {
+          margin: 3.5rem 0 0; } }
   .domain-card .box {
     background-color: #fff;
     border-radius: 0 2rem 2rem 0;
@@ -96,14 +101,8 @@
     @media (min-width: 992px) {
       .domain-card .box {
         padding: 1.5rem 1.5rem 1.5rem 4.5rem; } }
-    .domain-card .box h1,
     .domain-card .box p {
       color: #1c1c1c; }
-    .domain-card .box h1 {
-      font-size: 2rem; }
-      @media (min-width: 992px) {
-        .domain-card .box h1 {
-          font-size: 3.125rem; } }
     .domain-card .box p {
       font-size: 0.75rem; }
       @media (min-width: 992px) {
