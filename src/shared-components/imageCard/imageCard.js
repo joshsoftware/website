@@ -10,7 +10,7 @@ const ImageCard = (props) => {
       <div className="container">
         <div className="content-details d-flex position-relative">
           <div className="content-col">
-            <h1 className="site-heading font-weight-bold text-white mb-4">
+            <h1 className="site-heading font-weight-bold text-white">
               {cardTitle}
             </h1>
             <p className="text-white">{cardDescription}</p>

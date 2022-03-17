@@ -1458,6 +1458,7 @@
 
 .client-section {
   padding: 5.625rem 0 1.5rem;
+  background-color: $gray-97;
 
   .slick-track {
     display: flex;
@@ -1471,9 +1472,10 @@
 
 //testimonial
 .section-testimonial {
-  padding: 5rem 0;
-  h1 {
-    color: #1c1c1c;
+  padding: 1.5rem 0 2rem;
+  background-color: $gray-97;
+  @include media-breakpoint-up(lg) {
+    padding: 3.5rem 0;
   }
 }
 
@@ -1481,9 +1483,16 @@
   background-color: $white;
   box-shadow: 6px 0px 10px rgba(18, 112, 168, 0.09);
   border-radius: 0.75rem;
+  margin: 1.5rem 0 0;
+  @include media-breakpoint-up(lg) {
+    margin: 3rem 3rem 0;
+  }
 
   .slick-list {
-    margin: 0 2.5rem;
+    margin: 0 1rem;
+    @include media-breakpoint-up(lg) {
+      margin: 0 2.5rem;
+    }
   }
 
   .slick-prev {
@@ -1503,16 +1512,21 @@
     justify-content: center;
   }
   .profile-wrap {
-    width: 7.8125rem;
-    height: 7.8125rem;
+    width: 6.125rem;
+    height: 6.125rem;
     border-radius: 50%;
     border: 1px solid red;
+    @include media-breakpoint-up(lg) {
+      width: 7.8125rem;
+      height: 7.8125rem;
+    }
 
     > img {
       width: 100%;
       height: auto;
     }
-
+  }
+  .slider-item {
     h5 {
       font-size: 1.25rem;
     }
@@ -1522,7 +1536,7 @@
     h5,
     h6,
     p {
-      color: #333333;
+      color: $gray-20;
     }
 
     p {
@@ -1533,15 +1547,16 @@
 
 //About Us
 .about-section {
-  padding: 5rem 0;
-  h1 {
-    color: #1c1c1c;
+  padding: 5rem 0 2.5rem;
+  background-color: $gray-97;
+  @include media-breakpoint-up(lg) {
+    padding: 5rem 0;
   }
 }
 
 //What we do section
 .section-what-we-do {
-  background-color: #f7f7f7;
+  background-color: $gray-97;
   padding: 2.5rem 0 0;
   @include media-breakpoint-up(lg) {
     padding: 4.5rem 0 0;

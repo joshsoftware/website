@@ -412,7 +412,9 @@ img {
 .site-heading {
   font-size: 2rem;
   color: $gray-11;
+  margin-bottom: 1rem;
   @include media-breakpoint-up(lg) {
     font-size: 3.125rem;
+    margin-bottom: 1.5rem;
   }
 }

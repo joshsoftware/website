@@ -10,7 +10,7 @@ const WhatWeDoNew = (props) => {
     <section className="section-what-we-do">
       <ul className="domain-card p-0 mb-0 list-unstyled">
         <li className="box">
-          <h1 className="site-heading font-weight-bold mb-4">What we do?</h1>
+          <h1 className="site-heading font-weight-bold">What we do?</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,

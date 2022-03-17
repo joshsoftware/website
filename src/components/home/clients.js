@@ -69,7 +69,7 @@ export const Clients = (props) => {
     //   </div>
     // </section>
     <section className="client-section">
-      <h1 className="site-heading font-weight-bold text-center mb-4">
+      <h1 className="site-heading font-weight-bold text-center">
         Our Clientele
       </h1>
       <JoshCarousel items={items} settings={settings} />

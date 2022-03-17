@@ -130,29 +130,33 @@ export default class SimpleSlider extends Component {
       <section className="section-testimonial d-flex align-items-center justify-content-center flex-column">
         <div className="container">
           <div>
-            <h1 className="font-weight-bold text-center">Testimonials</h1>
+            <h1 className="site-heading font-weight-bold text-center">
+              Testimonials
+            </h1>
             <DefaultButton
               buttonText="see all"
               link="/testimonials"
               className="d-flex justify-content-center"
             />
-            <Slider {...settings} className="testimonial-slider my-5 pt-4 pb-5">
+            <Slider {...settings} className="testimonial-slider py-5">
               {testimonialData.map((slide, i) => (
                 <div
                   key={i}
-                  className="slider-item d-flex align-items-center justify-content-center"
+                  className="slider-item d-flex justify-content-center flex-column flex-lg-row"
                 >
-                  <div className="text-center">
+                  <div className="d-flex flex-lg-column text-lg-center">
                     <div className="profile-wrap mb-4">
                       <img src="" alt="profile Pic" />
                     </div>
-                    <h5 className="font-weight-bold mb-2">
-                      {slide.clientName}
-                    </h5>
-                    <h6>{slide.designation}</h6>
+                    <div className="ml-3 ml-lg-0">
+                      <h5 className="font-weight-bold mb-2">
+                        {slide.clientName}
+                      </h5>
+                      <h6 className="mb-0">{slide.designation}</h6>
+                    </div>
                   </div>
                   <div className="px-4">
-                    <p className="mb-0 text-truncate-multi-line overflow-hidden">
+                    <p className="mb-0 text-truncate-multi-line -four-line overflow-hidden">
                       {slide.description}
                     </p>
                     <Link to="/testimonials">see more...</Link>

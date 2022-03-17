@@ -4,7 +4,7 @@ const AboutUs = (props) => {
   return (
     <section className="about-section text-center">
       <div className="container">
-        <h1 className="font-weight-bold">About Us</h1>
+        <h1 className="site-heading font-weight-bold">About Us</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
