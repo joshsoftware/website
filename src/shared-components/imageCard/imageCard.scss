@@ -34,15 +34,17 @@
     left: 50%;
     transform: translateX(-50%);
     @include media-breakpoint-up(lg) {
-      bottom: -3.5rem;
+      bottom: -2.5rem;
       right: 0;
+      left: unset;
+      transform: unset;
     }
     img {
       width: 20rem;
       height: auto;
       border-radius: 0.75rem;
       @include media-breakpoint-up(lg) {
-        width: 36.625rem;
+        width: 33.75rem;
       }
     }
   }

@@ -31,12 +31,14 @@
     transform: translateX(-50%); }
     @media (min-width: 992px) {
       .image-card-wrap .image-wrapper {
-        bottom: -3.5rem;
-        right: 0; } }
+        bottom: -2.5rem;
+        right: 0;
+        left: unset;
+        transform: unset; } }
     .image-card-wrap .image-wrapper img {
       width: 20rem;
       height: auto;
       border-radius: 0.75rem; }
       @media (min-width: 992px) {
         .image-card-wrap .image-wrapper img {
-          width: 36.625rem; } }
+          width: 33.75rem; } }
