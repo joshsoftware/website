@@ -1213,6 +1213,10 @@
 
   .contact-form-wrap {
     flex: 1;
+    margin-bottom: 3rem;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
   }
 
   h1 {
@@ -1258,6 +1262,158 @@
       }
       .social-media-hover-icon {
         display: block;
+      }
+    }
+  }
+
+  .social-link-box {
+    @include media-breakpoint-up(lg) {
+      width: 18.25rem;
+      height: 18.25rem;
+    }
+
+    a {
+      width: 4.25rem;
+      height: 4.25rem;
+      border-radius: 1rem;
+      background: transparent linear-gradient(312deg, #f0f0f0 0%, #bcbcbc 100%)
+        0% 0% no-repeat padding-box;
+      border: 1px solid transparent;
+      z-index: 999;
+      cursor: pointer;
+      margin: 0 0.25rem;
+      @include media-breakpoint-up(lg) {
+        width: 7.5rem;
+        height: 7.5rem;
+        position: absolute;
+        border-radius: 2.125rem;
+        margin: 0;
+      }
+      img {
+        width: 1.5rem;
+        height: auto;
+        @include media-breakpoint-up(lg) {
+          width: 2.625rem;
+        }
+      }
+
+      .social-media-icon-hover {
+        display: none;
+      }
+
+      &:hover {
+        box-shadow: 6px 8px 16px rgba($black, 0.388);
+        .social-media-icon {
+          display: none;
+        }
+        .social-media-icon-hover {
+          display: block;
+        }
+
+        &.icon-insta {
+          background: transparent
+            linear-gradient(
+              312deg,
+              #fec053 0%,
+              #f2203e 33%,
+              #b729a8 65%,
+              #5342d6 100%
+            )
+            0% 0% no-repeat padding-box;
+          border: 3px solid $white;
+        }
+        &.icon-twitter {
+          background: #2aa9e0;
+          border: 3px solid $white;
+        }
+        &.icon-linked {
+          background: #0077b5;
+          border: 3px solid $white;
+        }
+        &.icon-facebook {
+          background: #4867aa;
+          border: 3px solid $white;
+        }
+      }
+
+      &.icon-insta {
+        border-color: #fb994e;
+        @include media-breakpoint-up(lg) {
+          top: 42px;
+          right: 32px;
+        }
+      }
+
+      &.icon-twitter {
+        border-color: #2aa9e0;
+        @include media-breakpoint-up(lg) {
+          bottom: 40px;
+          left: 35px;
+        }
+      }
+
+      &.icon-linked {
+        border-color: #0077b5;
+        @include media-breakpoint-up(lg) {
+          left: 42px;
+          top: 26px;
+        }
+      }
+
+      &.icon-facebook {
+        border-color: #4867aa;
+        @include media-breakpoint-up(lg) {
+          right: 32px;
+          bottom: 32px;
+        }
+      }
+    }
+
+    &:hover {
+      a {
+        &.icon-linked {
+          @include media-breakpoint-up(lg) {
+            left: 22px;
+            top: 8px;
+          }
+        }
+
+        &.icon-insta {
+          @include media-breakpoint-up(lg) {
+            top: 30px;
+            right: 20px;
+          }
+        }
+
+        &.icon-facebook {
+          @include media-breakpoint-up(lg) {
+            right: 22px;
+            bottom: 12px;
+          }
+        }
+        &.icon-twitter {
+          @include media-breakpoint-up(lg) {
+            bottom: 26px;
+            left: 22px;
+          }
+        }
+      }
+
+      .hover-box {
+        @include media-breakpoint-up(lg) {
+          display: block;
+          width: 160px;
+          background: transparent
+            linear-gradient(180deg, #e86055 0%, #bc1e12 100%) 0% 0% no-repeat
+            padding-box;
+          height: 160px;
+          display: block;
+          border-radius: 50%;
+          z-index: 0;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }

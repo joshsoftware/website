@@ -6,7 +6,8 @@ import { CONTACT_US_URL } from "../../routeConstants.js";
 import ContactUsForm from "../contact_us/contactUsForm.js";
 import socialMedia from "../../assets/images/revampImages/social-media.png";
 import socialMediaHover from "../../assets/images/revampImages/social-media-hover@2x.png";
-const ContactUs = () => {
+const ContactUs = (props) => {
+  const { socialIcons } = props;
   return (
     <>
       {/* <section
@@ -51,7 +52,7 @@ const ContactUs = () => {
           <h1 className="font-weight-bold mb-4">Get In Touch</h1>
           <div className="d-flex align-content-center justify-content-between flex-column flex-lg-row">
             <ContactUsForm />
-            <div className="social-media-wrap">
+            {/* <div className="social-media-wrap">
               <img
                 src={socialMedia}
                 alt="social media"
@@ -62,6 +63,33 @@ const ContactUs = () => {
                 alt="socail media hover"
                 className="social-media-hover-icon"
               />
+            </div> */}
+            <div className="social-link-box position-relative d-flex justify-content-center">
+              {socialIcons.map((socialItems, i) => {
+                return (
+                  <>
+                    <a
+                      href={socialItems.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${socialItems.class} d-flex align-items-center justify-content-center`}
+                    >
+                      <img
+                        src={require(`../../assets/images/revampImages/${socialItems.icon}`)}
+                        alt="social media icons"
+                        className="social-media-icon"
+                      />
+
+                      <img
+                        src={require(`../../assets/images/revampImages/${socialItems.iconhover}`)}
+                        alt="social media"
+                        className="social-media-icon-hover"
+                      />
+                    </a>
+                  </>
+                );
+              })}
+              <span className="hover-box position-absolute"></span>
             </div>
           </div>
         </div>
@@ -70,4 +98,32 @@ const ContactUs = () => {
   );
 };
 
+ContactUs.defaultProps = {
+  socialIcons: [
+    {
+      icon: "linkedin.svg",
+      iconhover: "linkedin-white.svg",
+      url: "http://www.linkedin.com/company/josh-software-private-limited",
+      class: "icon-linked",
+    },
+    {
+      icon: "instagram.svg",
+      iconhover: "instagram-white.svg",
+      url: "https://facebook.com/joshsoftware",
+      class: "icon-insta",
+    },
+    {
+      icon: "twitter.svg",
+      iconhover: "twitter-white.svg",
+      url: "https://twitter.com/joshsoftware",
+      class: "icon-twitter",
+    },
+    {
+      icon: "facebook.svg",
+      iconhover: "facebook-white.svg",
+      url: "https://facebook.com/joshsoftware",
+      class: "icon-facebook",
+    },
+  ],
+};
 export default ContactUs;
