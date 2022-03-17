@@ -186,19 +186,19 @@ Component.defaultProps = {
 
   socialIcons: [
     {
-      icon: "instagram.png",
+      icon: "instagram.svg",
       url: "https://facebook.com/joshsoftware",
     },
     {
-      icon: "twitter.png",
+      icon: "twitter.svg",
       url: "https://twitter.com/joshsoftware",
     },
     {
-      icon: "linkedin.png",
+      icon: "linkedin.svg",
       url: "http://www.linkedin.com/company/josh-software-private-limited",
     },
     {
-      icon: "facebook.png",
+      icon: "facebook.svg",
       url: "https://facebook.com/joshsoftware",
     },
   ],
