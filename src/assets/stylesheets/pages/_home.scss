@@ -1457,14 +1457,7 @@
 }
 
 .client-section {
-  padding: 5rem 0;
-  h1 {
-    font-size: 2rem;
-    color: #1c1c1c;
-    @include media-breakpoint-up(lg) {
-      font-size: 3.125rem;
-    }
-  }
+  padding: 5.625rem 0 1.5rem;
 
   .slick-track {
     display: flex;
