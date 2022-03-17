@@ -1569,3 +1569,19 @@
     }
   }
 }
+
+//Check Reviews
+.section-review {
+  background-color: $gray-94;
+  padding: 1.5rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 3.5rem 0;
+  }
+  img {
+    width: 7.875rem;
+    height: auto;
+    @include media-breakpoint-up(lg) {
+      width: 9.875rem;
+    }
+  }
+}

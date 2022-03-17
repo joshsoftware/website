@@ -19,6 +19,7 @@ import { ImageCard } from "../../shared-components/index.js";
 import innovationImg from "../../assets/images/revampImages/our-innovation.png";
 import successStoryImg from "../../assets/images/revampImages/our-success-stories.png";
 import AboutUs from "./aboutUs.js";
+import Review from "./review.js";
 const Home = () => {
   return (
     <>
@@ -41,6 +42,7 @@ const Home = () => {
         <HomepageTestimonials />
         {/* <SuccessStories /> */}
         {/* <SuccessStoriesNew /> */}
+        <Review />
         <ImageCard
           cardTitle="Our Success Stories"
           cardDescription="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore sed do eiusmod tempor incididunt ut labore sed do eiusmod tempor incididunt ut labore"
