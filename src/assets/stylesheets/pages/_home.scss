@@ -1545,3 +1545,13 @@
     color: #1c1c1c;
   }
 }
+
+//What we do section
+.section-what-we-do {
+  background-color: #f7f7f7;
+  .domain-card {
+    background: url("../images/revampImages/pattern-bg.png") no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+  }
+}

@@ -7,7 +7,7 @@ const WhatWeDoNew = (props) => {
   const { domains } = props;
 
   return (
-    <section>
+    <section className="section-what-we-do">
       <ul className="domain-card p-0 mb-0 list-unstyled">
         <li className="box">
           <h1 className="font-weight-bold">What we do?</h1>
