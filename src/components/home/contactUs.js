@@ -49,7 +49,7 @@ const ContactUs = (props) => {
       </section> */}
       <section className="contact-section">
         <div className="container">
-          <h1 className="font-weight-bold mb-4">Get In Touch</h1>
+          <h1 className="site-heading font-weight-bold">Get In Touch</h1>
           <div className="d-flex align-content-center justify-content-between flex-column flex-lg-row">
             <ContactUsForm />
             {/* <div className="social-media-wrap">

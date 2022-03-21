@@ -1205,7 +1205,7 @@
 
 //Contact us section
 .contact-section {
-  background-color: #f0f0f0;
+  background-color: $gray-94;
   padding: 3rem 0;
   @include media-breakpoint-up(lg) {
     padding: 5rem 0;
@@ -1219,22 +1219,29 @@
     }
   }
 
-  h1 {
-    color: #1c1c1c;
+  .site-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
   }
 
   .form-floating,
   .form-select-floating {
     label,
     > .form-control {
-      color: #1c1c1c !important;
+      color: $gray-11 !important;
     }
   }
 
   .form-floating,
   .form-select-floating {
     > label {
-      font-size: 1.25rem;
+      font-size: 0.875rem;
+      @include media-breakpoint-up(lg) {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -1433,7 +1440,7 @@
   }
   span {
     font-size: 1.25rem;
-    color: #1c1c1c;
+    color: $gray-11;
   }
 
   &.client-category {

@@ -76,7 +76,7 @@
 
   p {
     font-size: 0.75rem;
-    color: #1c1c1c;
+    color: $gray-11;
     padding-bottom: 1rem;
     border-bottom: 1px solid #cf4338;
     @include media-breakpoint-up(lg) {
@@ -119,7 +119,7 @@
     }
 
     p {
-      color: #1c1c1c;
+      color: $gray-11;
     }
 
     p {
