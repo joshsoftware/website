@@ -5,10 +5,12 @@ const Review = (props) => {
     <section className="section-review text-center">
       <div className="container">
         <h1 className="site-heading font-weight-bold">Check Our Reviews</h1>
-        <img
-          src={require(`../../assets/images/revampImages/clutch@2x.png`)}
-          alt="clutch img"
-        />
+        <div className="review-item bg-white d-inline-block">
+          <img
+            src={require(`../../assets/images/revampImages/clutch.png`)}
+            alt="clutch img"
+          />
+        </div>
       </div>
     </section>
   );

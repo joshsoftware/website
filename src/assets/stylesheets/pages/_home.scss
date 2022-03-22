@@ -1585,10 +1585,13 @@
     padding: 3.5rem 0;
   }
   img {
-    width: 7.875rem;
+    width: 7rem;
     height: auto;
-    @include media-breakpoint-up(lg) {
-      width: 9.875rem;
-    }
+  }
+
+  .review-item {
+    box-shadow: 0px 0px 12px rgba($black, 0.063);
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
   }
 }
