@@ -31,7 +31,7 @@ const AboutUs = () => {
                  alt="Josh Software Team" className="img-fluid img-mobile" />
                 <div className="btn-wrap">
                   <a href="/team" className="btn btn-gray">Meet Our Team</a>
-                  <a href="http://careers.joshsoftware.com/" className="btn btn-outline-gray">Job Openings</a></div>
+                  <a href="https://joshsoftware.careers/" className="btn btn-outline-gray">Job Openings</a></div>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">

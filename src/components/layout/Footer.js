@@ -70,7 +70,7 @@ const Footer = () => {
 
             <a href="https://blog.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
 
-            <a href="https://careers.joshsoftware.com/" target="_blank" rel="noopener noreferrer" className="nav-link">Career</a>
+            <a href="https://joshsoftware.careers/" target="_blank" rel="noopener noreferrer" className="nav-link">Career</a>
             <Link to="/contact_us" className="nav-link">Contact Us</Link>
           </nav>
         </div>
